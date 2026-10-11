@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_aa672db9c8269b92_0", DisableEvent);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, DisableEvent,
+    (long arg0),
+    0xb0, 0xd
+);

@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_bc0b1ce1cfb2fff0_0", IsEndPrim);
+#include "common.h"
+
+s32 IsEndPrim(s32 *arg0) {
+    return (*arg0 & 0xFFFFFF) == 0xFFFFFF;
+}

@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_9892ffc60cdee207_0", _96_init);
+PSX_BIOS_FUNCTION(
+    void, _96_init,
+    (void),
+    0xa0, 0x71
+);

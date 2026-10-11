@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_728786c34304a0db_0", SsGetNck);
+#include "common.h"
+
+s16 SpuGetNoiseClock();                             /* extern */
+
+s16 SsGetNck(void) {
+    return SpuGetNoiseClock();
+}

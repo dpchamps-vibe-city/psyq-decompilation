@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_32732db954d36deb_0", Exception);
+#include "library/psx_bios.h"
+
+void Exception(void) {
+    (void)PSX_BIOS_SYSCALL(0);
+}

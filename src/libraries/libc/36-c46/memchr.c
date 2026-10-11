@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_f454e81a9a7d6540_0", memchr);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    void *, memchr,
+    (const unsigned char *arg0, unsigned char arg1, int arg2),
+    0xa0, 0x2e
+);

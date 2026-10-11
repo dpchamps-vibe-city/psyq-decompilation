@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_a8f7345a144556eb_0", ReadInitPadFlag);
+#include "common.h"
+
+extern s32 D_00000300;
+
+s32 ReadInitPadFlag(void) {
+    return D_00000300;
+}

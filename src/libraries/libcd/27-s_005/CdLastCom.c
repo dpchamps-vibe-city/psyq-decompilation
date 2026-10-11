@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_1e12bcfc3bf3521a_0", CdLastCom);
+#include "common.h"
+
+extern u8 CD_com;
+
+u8 CdLastCom(void) {
+    return CD_com;
+}

@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_024ef351f059f7fb_0", DecDCTBufSize);
+#include "common.h"
+
+u16 DecDCTBufSize(u16 *arg0) {
+    return *arg0;
+}

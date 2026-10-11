@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d5087259dd50b667_0", _new_card);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    void, _new_card,
+    (void),
+    0xb0, 0x50
+);

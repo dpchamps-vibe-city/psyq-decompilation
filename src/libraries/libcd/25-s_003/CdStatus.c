@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_085fc4d01e640a50_0", CdStatus);
+#include "common.h"
+
+extern u8 CD_status;
+
+u8 CdStatus(void) {
+    return CD_status;
+}

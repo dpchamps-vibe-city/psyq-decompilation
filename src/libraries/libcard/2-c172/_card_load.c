@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_89a83813f47cf7c2_0", _card_load);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, _card_load,
+    (long chan),
+    0xa0, 0xac
+);

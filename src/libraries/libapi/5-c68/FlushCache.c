@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_2d7ac8403b3f3f2b_0", FlushCache);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    void, FlushCache,
+    (void),
+    0xa0, 0x44
+);

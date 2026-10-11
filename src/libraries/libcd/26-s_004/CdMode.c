@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_600f2cbb0100c879_0", CdMode);
+#include "common.h"
+
+extern u8 CD_mode;
+
+u8 CdMode(void) {
+    return CD_mode;
+}

@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_f37e65f86fcaba14_0", CatPrim);
+#include "common.h"
+
+void CatPrim(s32 *arg0, s32 arg1) {
+    *arg0 = (*arg0 & 0xFF000000) | (arg1 & 0xFFFFFF);
+}

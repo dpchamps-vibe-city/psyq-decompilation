@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_46795067df85e40c_0", SsGetMute);
+#include "common.h"
+
+s32 SpuGetMute();                                   /* extern */
+
+s32 SsGetMute(void) {
+    return SpuGetMute() != 0;
+}

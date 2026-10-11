@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_88adff699a58dcc7_0", _get_errno);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, _get_errno,
+    (void),
+    0xb0, 0x54
+);

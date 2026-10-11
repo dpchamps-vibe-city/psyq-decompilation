@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_519ff9a415705cbd_0", Krom2RawAdd);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, Krom2RawAdd,
+    (unsigned long arg0),
+    0xb0, 0x51
+);

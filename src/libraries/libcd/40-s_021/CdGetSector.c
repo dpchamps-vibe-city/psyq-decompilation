@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_32476e5bb04ebe58_0", CdGetSector);
+#include "common.h"
+
+s32 CD_getsector();                                 /* extern */
+
+s32 CdGetSector(void) {
+    return CD_getsector() == 0;
+}

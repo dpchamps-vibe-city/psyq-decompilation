@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_28e31358d65e4c23_0", TermPrim);
+#include "common.h"
+
+void TermPrim(s32 *arg0) {
+    *arg0 |= 0xFFFFFF;
+}

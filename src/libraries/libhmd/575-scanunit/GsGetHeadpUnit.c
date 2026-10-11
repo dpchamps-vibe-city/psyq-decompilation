@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_ed0eebebae6499a6_0", GsGetHeadpUnit);
+#include "common.h"
+
+extern u32 *D_00000248;
+
+u32 *GsGetHeadpUnit(void) {
+    return D_00000248;
+}

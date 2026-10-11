@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d798b3dc1379a119_0", DsLastCom);
+#include "common.h"
+
+s32 DS_lastcom();                                   /* extern */
+
+s32 DsLastCom(void) {
+    return DS_lastcom() & 0xFF;
+}

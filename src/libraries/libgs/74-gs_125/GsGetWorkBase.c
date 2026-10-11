@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_376ac3906a8f503f_0", GsGetWorkBase);
+#include "common.h"
+
+extern s32 GsOUT_PACKET_P;
+
+s32 GsGetWorkBase(void) {
+    return GsOUT_PACKET_P;
+}

@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d138dfff6215b35c_0", _card_wait);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, _card_wait,
+    (long drv),
+    0xb0, 0x5d
+);

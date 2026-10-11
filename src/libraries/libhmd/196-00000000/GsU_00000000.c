@@ -1,1 +1,8 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d23e0ea3bc112a49_0", GsU_00000000);
+#include "common.h"
+
+void *GsU_00000000(u16 **arg0) {
+    u16 *temp_v1;
+
+    temp_v1 = *arg0;
+    return (void *) ((u8 *) temp_v1 + (*temp_v1 * 4));
+}

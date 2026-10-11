@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_1a41aa802552a808_0", EnterCriticalSection);
+#include "library/psx_bios.h"
+
+int EnterCriticalSection(void) {
+    return PSX_BIOS_SYSCALL(1);
+}

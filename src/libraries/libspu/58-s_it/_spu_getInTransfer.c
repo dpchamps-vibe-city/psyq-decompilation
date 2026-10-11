@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_b10ef9bfc233ef62_0", _spu_getInTransfer);
+#include "common.h"
+
+extern s32 _spu_inTransfer;
+
+s32 _spu_getInTransfer(void) {
+    return _spu_inTransfer != 1;
+}

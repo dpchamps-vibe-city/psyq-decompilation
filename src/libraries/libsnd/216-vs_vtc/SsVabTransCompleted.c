@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d2022acbac8a9659_0", SsVabTransCompleted);
+#include "common.h"
+
+s16 SpuIsTransferCompleted(s16);                    /* extern */
+
+s16 SsVabTransCompleted(s16 arg0) {
+    return SpuIsTransferCompleted(arg0);
+}

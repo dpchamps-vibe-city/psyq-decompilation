@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d4c86df9dcace437_0", _card_write);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, _card_write,
+    (long chan, long block, unsigned char *buf),
+    0xb0, 0x4e
+);

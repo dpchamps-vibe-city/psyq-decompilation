@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_dc8ebaedbfe4ad7d_0", bcopy);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    void *, bcopy,
+    (const unsigned char *arg0, unsigned char *arg1, int arg2),
+    0xa0, 0x27
+);

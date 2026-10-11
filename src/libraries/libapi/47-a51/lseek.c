@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_1d1ed7c47eecde85_0", lseek);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    long, lseek,
+    (long arg0, long arg1, long arg2),
+    0xb0, 0x33
+);

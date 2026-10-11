@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_74485b1ba1cde4a3_0", srand);
+#include "library/psx_bios_tailjump.h"
+
+PSX_BIOS_FUNCTION(
+    void, srand,
+    (unsigned int arg0),
+    0xa0, 0x30
+);
