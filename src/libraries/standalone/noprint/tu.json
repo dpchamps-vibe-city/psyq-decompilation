@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3ac40a61581db436_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "printf.c",
+      "symbol": "printf"
+    },
+    {
+      "path": "puts.c",
+      "symbol": "puts"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bc0b1ce1cfb2fff0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "IsEndPrim.c",
+      "symbol": "IsEndPrim"
+    }
+  ]
+}

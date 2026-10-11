@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_050d59fdd5a96b20_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtChangePitch.c",
+      "symbol": "SsUtChangePitch"
+    }
+  ]
+}

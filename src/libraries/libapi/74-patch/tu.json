@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4031394e3bdde1bc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "EnablePAD.c",
+      "symbol": "EnablePAD"
+    },
+    {
+      "path": "DisablePAD.c",
+      "symbol": "DisablePAD"
+    },
+    {
+      "path": "_patch_pad.c",
+      "symbol": "_patch_pad"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

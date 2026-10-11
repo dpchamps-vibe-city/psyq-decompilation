@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_eb71d5e3594570a9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsGetLsUnit.c",
+      "symbol": "GsGetLsUnit"
+    }
+  ]
+}

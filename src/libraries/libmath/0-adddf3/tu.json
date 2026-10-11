@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_29f16fc0033a57e9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__adddf3.c",
+      "symbol": "__adddf3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e263a701e107b1f9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "KeyOnCheck.c",
+      "symbol": "KeyOnCheck"
+    }
+  ]
+}

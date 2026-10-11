@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_46ee2b27685c7e59_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_spu_note2pitch.c",
+      "symbol": "_spu_note2pitch"
+    },
+    {
+      "path": "_spu_pitch2note.c",
+      "symbol": "_spu_pitch2note"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

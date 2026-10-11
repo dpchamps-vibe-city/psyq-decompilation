@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f68a346d0fb72054_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsGetMetaEvent.c",
+      "symbol": "_SsGetMetaEvent"
+    }
+  ]
+}

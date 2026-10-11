@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_00d3c3b9bccc0508_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsInitCoord2param.c",
+      "symbol": "GsInitCoord2param"
+    }
+  ]
+}

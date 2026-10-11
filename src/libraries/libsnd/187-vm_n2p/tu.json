@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e6a9bd0390aafc75_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "note2pitch.c",
+      "symbol": "note2pitch"
+    },
+    {
+      "path": "note2pitch2.c",
+      "symbol": "note2pitch2"
+    },
+    {
+      "path": "SsPitchFromNote.c",
+      "symbol": "SsPitchFromNote"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

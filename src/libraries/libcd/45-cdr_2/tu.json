@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_06d8336ac3550f88_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdReadCallback.c",
+      "symbol": "CdReadCallback"
+    }
+  ]
+}

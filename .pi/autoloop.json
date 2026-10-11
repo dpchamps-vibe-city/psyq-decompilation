@@ -8,6 +8,7 @@
       "checkpointAtTokens": 350000
     }
   ],
+  "singleTier": true,
   "commitOnMatch": false,
   "commitOnPark": false,
   "runtimeDir": "run_output/autoloop",

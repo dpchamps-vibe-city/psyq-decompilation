@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_cdc8b9a907527c2a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_flat_fog3.c",
+      "symbol": "gte_flat_fog3"
+    }
+  ]
+}

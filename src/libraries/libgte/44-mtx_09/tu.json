@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b13395f27f30f3f8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetRotMatrix.c",
+      "symbol": "SetRotMatrix"
+    }
+  ]
+}

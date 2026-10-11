@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_081515e6f78dd930_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "todigit.c",
+      "symbol": "todigit"
+    }
+  ]
+}

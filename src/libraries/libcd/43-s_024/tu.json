@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_19e261f1809529b6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdDataSync.c",
+      "symbol": "CdDataSync"
+    }
+  ]
+}

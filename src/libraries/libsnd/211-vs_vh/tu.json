@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7be279ab6de29dd0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsVabOpenHeadSticky.c",
+      "symbol": "SsVabOpenHeadSticky"
+    },
+    {
+      "path": "SsVabFakeHead.c",
+      "symbol": "SsVabFakeHead"
+    },
+    {
+      "path": "_SsVabOpenHeadWithMode.c",
+      "symbol": "_SsVabOpenHeadWithMode"
+    }
+  ]
+}

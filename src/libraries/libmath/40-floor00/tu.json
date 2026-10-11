@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0e8fd5d4b9f96344_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "floor.c",
+      "symbol": "floor"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a4d5d8dbc5b23f76_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SePitchBend.c",
+      "symbol": "SePitchBend"
+    }
+  ]
+}

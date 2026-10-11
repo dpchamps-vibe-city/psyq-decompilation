@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_271c7ce05e430873_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__gtsf2.c",
+      "symbol": "__gtsf2"
+    }
+  ]
+}

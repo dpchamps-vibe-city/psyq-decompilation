@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2972bfb819b98a4c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVVol.c",
+      "symbol": "SsUtGetVVol"
+    }
+  ]
+}

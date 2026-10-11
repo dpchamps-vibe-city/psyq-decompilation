@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ca3a074248a2258f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetShadeTex.c",
+      "symbol": "SetShadeTex"
+    }
+  ]
+}

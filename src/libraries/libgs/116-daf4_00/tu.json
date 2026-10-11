@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a54e6ed75fd5c2f9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsA4divF4L.c",
+      "symbol": "GsA4divF4L"
+    }
+  ]
+}

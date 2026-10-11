@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7d79dc2d600bc3cf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "tolower.c",
+      "symbol": "tolower"
+    }
+  ]
+}

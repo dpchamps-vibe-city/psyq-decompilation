@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a296e655899a8fc0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadInitGun.c",
+      "symbol": "PadInitGun"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_babc052caf00c448_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "csqrt_1.c",
+      "symbol": "csqrt_1"
+    },
+    {
+      "path": "csqrt.c",
+      "symbol": "csqrt"
+    }
+  ]
+}

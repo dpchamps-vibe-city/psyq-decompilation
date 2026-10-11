@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_24d34cd2029e7011_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ResetGraph.c",
+      "symbol": "ResetGraph"
+    },
+    {
+      "path": "SetGraphDebug.c",
+      "symbol": "SetGraphDebug"
+    },
+    {
+      "path": "SetGraphQueue.c",
+      "symbol": "SetGraphQueue"
+    },
+    {
+      "path": "GetGraphDebug.c",
+      "symbol": "GetGraphDebug"
+    },
+    {
+      "path": "DrawSyncCallback.c",
+      "symbol": "DrawSyncCallback"
+    },
+    {
+      "path": "SetDispMask.c",
+      "symbol": "SetDispMask"
+    },
+    {
+      "path": "DrawSync.c",
+      "symbol": "DrawSync"
+    },
+    {
+      "path": "ClearImage.c",
+      "symbol": "ClearImage"
+    },
+    {
+      "path": "ClearImage2.c",
+      "symbol": "ClearImage2"
+    },
+    {
+      "path": "LoadImage.c",
+      "symbol": "LoadImage"
+    },
+    {
+      "path": "StoreImage.c",
+      "symbol": "StoreImage"
+    },
+    {
+      "path": "MoveImage.c",
+      "symbol": "MoveImage"
+    },
+    {
+      "path": "ClearOTag.c",
+      "symbol": "ClearOTag"
+    },
+    {
+      "path": "ClearOTagR.c",
+      "symbol": "ClearOTagR"
+    },
+    {
+      "path": "DrawPrim.c",
+      "symbol": "DrawPrim"
+    },
+    {
+      "path": "DrawOTag.c",
+      "symbol": "DrawOTag"
+    },
+    {
+      "path": "PutDrawEnv.c",
+      "symbol": "PutDrawEnv"
+    },
+    {
+      "path": "DrawOTagEnv.c",
+      "symbol": "DrawOTagEnv"
+    },
+    {
+      "path": "GetDrawEnv.c",
+      "symbol": "GetDrawEnv"
+    },
+    {
+      "path": "PutDispEnv.c",
+      "symbol": "PutDispEnv"
+    },
+    {
+      "path": "GetDispEnv.c",
+      "symbol": "GetDispEnv"
+    },
+    {
+      "path": "GetODE.c",
+      "symbol": "GetODE"
+    },
+    {
+      "path": "SetDrawArea.c",
+      "symbol": "SetDrawArea"
+    },
+    {
+      "path": "SetDrawOffset.c",
+      "symbol": "SetDrawOffset"
+    },
+    {
+      "path": "SetDrawEnv.c",
+      "symbol": "SetDrawEnv"
+    },
+    {
+      "path": "LoadImage2.c",
+      "symbol": "LoadImage2"
+    },
+    {
+      "path": "StoreImage2.c",
+      "symbol": "StoreImage2"
+    },
+    {
+      "path": "MoveImage2.c",
+      "symbol": "MoveImage2"
+    },
+    {
+      "path": "DrawOTag2.c",
+      "symbol": "DrawOTag2"
+    },
+    {
+      "path": "_GPU_ResetCallback.c",
+      "symbol": "_GPU_ResetCallback"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

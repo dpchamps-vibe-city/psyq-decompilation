@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e2e8fbdbc20fa54d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsMix.c",
+      "symbol": "DsMix"
+    }
+  ]
+}

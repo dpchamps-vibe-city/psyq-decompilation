@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_67affdfc1113e87d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_nothing1.c",
+      "symbol": "dmy_nothing1"
+    }
+  ]
+}

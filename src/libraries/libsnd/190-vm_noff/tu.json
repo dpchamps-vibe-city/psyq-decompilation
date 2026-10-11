@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_845f3a38b988d7ff_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "vmNoiseOff.c",
+      "symbol": "vmNoiseOff"
+    }
+  ]
+}

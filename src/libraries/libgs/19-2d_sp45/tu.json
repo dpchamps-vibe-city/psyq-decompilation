@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e39e8c4542f2b8dc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetFastSpriteArray.c",
+      "symbol": "GsSetFastSpriteArray"
+    }
+  ]
+}

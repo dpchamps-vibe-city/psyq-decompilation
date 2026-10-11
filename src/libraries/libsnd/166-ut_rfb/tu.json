@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2f6a848198734726_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtSetReverbFeedback.c",
+      "symbol": "SsUtSetReverbFeedback"
+    }
+  ]
+}

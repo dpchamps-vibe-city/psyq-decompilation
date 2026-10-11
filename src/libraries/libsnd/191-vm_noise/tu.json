@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ad8cc552e1bc3f49_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmNoiseOnWithAdsr.c",
+      "symbol": "_SsVmNoiseOnWithAdsr"
+    },
+    {
+      "path": "_SsVmNoiseOn.c",
+      "symbol": "_SsVmNoiseOn"
+    }
+  ]
+}

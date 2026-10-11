@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5f0b12128b644c32_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadInfoAct.c",
+      "symbol": "PadInfoAct"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ef70639fd907db15_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__cmpdi2.c",
+      "symbol": "__cmpdi2"
+    }
+  ]
+}

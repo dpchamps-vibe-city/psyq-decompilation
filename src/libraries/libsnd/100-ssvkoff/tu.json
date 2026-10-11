@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c076aafecc1394e3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsVoKeyOff.c",
+      "symbol": "SsVoKeyOff"
+    }
+  ]
+}

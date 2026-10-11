@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ae112d03c2f6d237_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsPlay.c",
+      "symbol": "DsPlay"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

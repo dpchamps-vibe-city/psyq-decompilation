@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_033d4f3f087a4c4b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetVideoMode.c",
+      "symbol": "SetVideoMode"
+    },
+    {
+      "path": "GetVideoMode.c",
+      "symbol": "GetVideoMode"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

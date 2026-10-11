@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5247c2bd0adb5de2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__sn_cpp_structors.c",
+      "symbol": "__sn_cpp_structors"
+    }
+  ]
+}

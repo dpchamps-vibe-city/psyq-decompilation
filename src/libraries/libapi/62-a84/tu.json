@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_88adff699a58dcc7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_get_errno.c",
+      "symbol": "_get_errno"
+    }
+  ]
+}

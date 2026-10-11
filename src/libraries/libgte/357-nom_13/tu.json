@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fd8ba8c3b1703821_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "NormalColor3_nom.c",
+      "symbol": "NormalColor3_nom"
+    }
+  ]
+}

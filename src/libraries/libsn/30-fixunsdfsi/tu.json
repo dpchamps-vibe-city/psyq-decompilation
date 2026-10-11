@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a4ce911bdb4f4519_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__fixunsdfsi.c",
+      "symbol": "__fixunsdfsi"
+    }
+  ]
+}

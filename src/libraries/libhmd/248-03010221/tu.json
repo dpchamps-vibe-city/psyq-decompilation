@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f6955bed33500a67_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsU_03010221.c",
+      "symbol": "GsU_03010221"
+    }
+  ]
+}

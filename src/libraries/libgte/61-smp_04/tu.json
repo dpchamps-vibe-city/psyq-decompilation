@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2c0c064c94cafc0a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotTrans.c",
+      "symbol": "RotTrans"
+    }
+  ]
+}

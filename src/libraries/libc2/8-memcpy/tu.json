@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_68fc7e5e742e5a20_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "memcpy.c",
+      "symbol": "memcpy"
+    }
+  ]
+}

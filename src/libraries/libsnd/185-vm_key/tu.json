@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2f4d2af802c2f524_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmKeyOn.c",
+      "symbol": "_SsVmKeyOn"
+    },
+    {
+      "path": "_SsVmKeyOff.c",
+      "symbol": "_SsVmKeyOff"
+    },
+    {
+      "path": "_SsVmSeKeyOn.c",
+      "symbol": "_SsVmSeKeyOn"
+    },
+    {
+      "path": "_SsVmSeKeyOff.c",
+      "symbol": "_SsVmSeKeyOff"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e7cede2c54c77f95_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_add_mant_d.c",
+      "symbol": "_add_mant_d"
+    }
+  ]
+}

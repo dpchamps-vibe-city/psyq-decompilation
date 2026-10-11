@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8cbc4df7fa75a1a5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContExpression.c",
+      "symbol": "dmy_SsContExpression"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

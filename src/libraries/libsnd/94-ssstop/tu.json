@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_79b90cbbf441341b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndStop.c",
+      "symbol": "_SsSndStop"
+    },
+    {
+      "path": "SsSeqStop.c",
+      "symbol": "SsSeqStop"
+    },
+    {
+      "path": "SsSepStop.c",
+      "symbol": "SsSepStop"
+    }
+  ]
+}

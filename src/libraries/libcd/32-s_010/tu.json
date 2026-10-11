@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_49b2f026e2c311b6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdComstr.c",
+      "symbol": "CdComstr"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

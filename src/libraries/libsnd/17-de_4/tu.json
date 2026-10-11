@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_95b3def31abaf9c5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSetNrpnVabAttr4.c",
+      "symbol": "_SsSetNrpnVabAttr4"
+    }
+  ]
+}

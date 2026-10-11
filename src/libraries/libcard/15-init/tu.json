@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3ae860858c832977_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "InitCARD.c",
+      "symbol": "InitCARD"
+    },
+    {
+      "path": "StartCARD.c",
+      "symbol": "StartCARD"
+    },
+    {
+      "path": "StopCARD.c",
+      "symbol": "StopCARD"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

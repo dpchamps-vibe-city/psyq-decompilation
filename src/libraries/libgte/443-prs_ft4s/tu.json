@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4146d647f0a5222e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsPrstTF4NLD.c",
+      "symbol": "GsPrstTF4NLD"
+    }
+  ]
+}

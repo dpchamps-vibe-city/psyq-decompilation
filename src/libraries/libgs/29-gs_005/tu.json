@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_277b734a618f247a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetClip.c",
+      "symbol": "GsSetClip"
+    }
+  ]
+}

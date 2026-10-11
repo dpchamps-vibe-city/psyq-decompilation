@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_02ac02b0a8f9922a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetLightMatrix2.c",
+      "symbol": "GsSetLightMatrix2"
+    }
+  ]
+}

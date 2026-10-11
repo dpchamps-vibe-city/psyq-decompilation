@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_486ca628856db4c4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmGetSeqLVol.c",
+      "symbol": "_SsVmGetSeqLVol"
+    },
+    {
+      "path": "_SsVmGetSeqRVol.c",
+      "symbol": "_SsVmGetSeqRVol"
+    }
+  ]
+}

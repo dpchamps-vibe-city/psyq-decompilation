@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_77192503b3110ce7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "data_ready_callback.c",
+      "symbol": "data_ready_callback"
+    },
+    {
+      "path": "StGetBackloc.c",
+      "symbol": "StGetBackloc"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

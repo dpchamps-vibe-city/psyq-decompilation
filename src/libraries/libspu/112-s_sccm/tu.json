@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ae1334989d08a519_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetCommonCDMix.c",
+      "symbol": "SpuSetCommonCDMix"
+    }
+  ]
+}

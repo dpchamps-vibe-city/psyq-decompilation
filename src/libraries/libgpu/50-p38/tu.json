@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8a15ad771f77e8e1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetTexWindow.c",
+      "symbol": "SetTexWindow"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e93ede57d4316c5a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetCres.c",
+      "symbol": "_SsSndSetCres"
+    },
+    {
+      "path": "SsSeqSetCrescendo.c",
+      "symbol": "SsSeqSetCrescendo"
+    },
+    {
+      "path": "SsSepSetCrescendo.c",
+      "symbol": "SsSepSetCrescendo"
+    }
+  ]
+}

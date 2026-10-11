@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e1d5093108585c89_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsUtResolveADSR.c",
+      "symbol": "_SsUtResolveADSR"
+    },
+    {
+      "path": "_SsUtBuildADSR.c",
+      "symbol": "_SsUtBuildADSR"
+    }
+  ]
+}

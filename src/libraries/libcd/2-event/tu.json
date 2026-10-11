@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2f056fc8307b53d1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdInit.c",
+      "symbol": "CdInit"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

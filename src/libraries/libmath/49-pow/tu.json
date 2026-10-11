@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_adc01702f12dad5c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "pow.c",
+      "symbol": "pow"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

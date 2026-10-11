@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b5c0ad21b7a5e153_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_card_format.c",
+      "symbol": "_card_format"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

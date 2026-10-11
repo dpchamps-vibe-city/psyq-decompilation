@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b59d39e4e028754b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContDataEntry.c",
+      "symbol": "dmy_SsContDataEntry"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b5f9556495dcc97f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdIntToPos.c",
+      "symbol": "CdIntToPos"
+    }
+  ]
+}

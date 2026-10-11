@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fe92ce516bba1b5d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsClose.c",
+      "symbol": "DsClose"
+    }
+  ]
+}

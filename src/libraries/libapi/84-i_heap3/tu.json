@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2405c148f7fb0718_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "InitHeap3.c",
+      "symbol": "InitHeap3"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7a8788d2f28275cc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strlen.c",
+      "symbol": "strlen"
+    }
+  ]
+}

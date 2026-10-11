@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f5adeaa85c8cdec1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

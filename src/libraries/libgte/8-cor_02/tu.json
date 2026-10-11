@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_37a3c9a02b407bcf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ccos.c",
+      "symbol": "ccos"
+    }
+  ]
+}

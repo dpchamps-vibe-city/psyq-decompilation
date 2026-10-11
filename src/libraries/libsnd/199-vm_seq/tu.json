@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4666b60ae910aa69_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmSetSeqVol.c",
+      "symbol": "_SsVmSetSeqVol"
+    },
+    {
+      "path": "_SsVmGetSeqVol.c",
+      "symbol": "_SsVmGetSeqVol"
+    },
+    {
+      "path": "_SsVmSeqKeyOff.c",
+      "symbol": "_SsVmSeqKeyOff"
+    }
+  ]
+}

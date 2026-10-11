@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_84c7dd52ba105452_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "InitClip.c",
+      "symbol": "InitClip"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

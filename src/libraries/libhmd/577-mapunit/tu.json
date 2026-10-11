@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3587a5ee468bd4e1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsMapUnit.c",
+      "symbol": "GsMapUnit"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

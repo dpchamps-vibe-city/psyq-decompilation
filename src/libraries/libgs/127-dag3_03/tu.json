@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_30cd179f108615cc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsA4divNG3.c",
+      "symbol": "GsA4divNG3"
+    }
+  ]
+}

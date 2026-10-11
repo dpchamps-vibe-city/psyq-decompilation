@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3a8eb3f67ed31c59_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "labs.c",
+      "symbol": "labs"
+    }
+  ]
+}

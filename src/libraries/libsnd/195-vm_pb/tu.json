@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c3085194c272e100_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmPBVoice.c",
+      "symbol": "_SsVmPBVoice"
+    },
+    {
+      "path": "_SsVmPitchBend.c",
+      "symbol": "_SsVmPitchBend"
+    }
+  ]
+}

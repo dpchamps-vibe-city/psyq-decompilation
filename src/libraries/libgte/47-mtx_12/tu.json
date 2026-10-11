@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_146a9973ba470ec2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetTransMatrix.c",
+      "symbol": "SetTransMatrix"
+    }
+  ]
+}

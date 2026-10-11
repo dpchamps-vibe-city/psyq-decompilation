@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_96a837089b6104ab_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadInitMtap.c",
+      "symbol": "PadInitMtap"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_14f39fe3406540f0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortObject4J.c",
+      "symbol": "GsSortObject4J"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

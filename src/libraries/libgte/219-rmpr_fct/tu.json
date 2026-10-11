@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e75900184532e5fb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotMeshPrimR_FCT3.c",
+      "symbol": "RotMeshPrimR_FCT3"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

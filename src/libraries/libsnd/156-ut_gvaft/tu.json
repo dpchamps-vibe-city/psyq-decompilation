@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fa17257e33c9d1b4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVagAddrFromTone.c",
+      "symbol": "SsUtGetVagAddrFromTone"
+    }
+  ]
+}

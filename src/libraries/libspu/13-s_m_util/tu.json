@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2bd3d9cc99181f9d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SpuIsInAllocateArea.c",
+      "symbol": "_SpuIsInAllocateArea"
+    },
+    {
+      "path": "_SpuIsInAllocateArea_.c",
+      "symbol": "_SpuIsInAllocateArea_"
+    }
+  ]
+}

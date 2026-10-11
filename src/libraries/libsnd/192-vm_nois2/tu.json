@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_120397e47da1bb73_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmNoiseOff.c",
+      "symbol": "_SsVmNoiseOff"
+    }
+  ]
+}

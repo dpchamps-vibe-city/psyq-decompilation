@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_79f4d2356f886f5b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_dbl_shift_us.c",
+      "symbol": "_dbl_shift_us"
+    }
+  ]
+}

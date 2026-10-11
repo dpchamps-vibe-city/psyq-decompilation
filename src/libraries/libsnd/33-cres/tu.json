@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_83f9a011849b366d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndCrescendo.c",
+      "symbol": "_SsSndCrescendo"
+    }
+  ]
+}

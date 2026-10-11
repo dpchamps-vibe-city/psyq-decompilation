@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_cbdceb8b60c61c07_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetMarkCallback.c",
+      "symbol": "SsSetMarkCallback"
+    }
+  ]
+}

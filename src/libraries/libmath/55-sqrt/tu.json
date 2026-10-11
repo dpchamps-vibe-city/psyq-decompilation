@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8008a036e1e77f77_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "sqrt.c",
+      "symbol": "sqrt"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

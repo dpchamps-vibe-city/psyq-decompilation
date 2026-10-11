@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_55fbf6eed978186c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "malloc3.c",
+      "symbol": "malloc3"
+    }
+  ]
+}

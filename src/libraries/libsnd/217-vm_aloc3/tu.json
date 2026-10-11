@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6aae66ecd948ad49_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsBlockVoiceAllocation.c",
+      "symbol": "SsBlockVoiceAllocation"
+    }
+  ]
+}

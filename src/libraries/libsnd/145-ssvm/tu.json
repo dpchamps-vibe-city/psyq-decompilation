@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c7e8d7bb415d9b0b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetVoiceMask.c",
+      "symbol": "SsSetVoiceMask"
+    }
+  ]
+}

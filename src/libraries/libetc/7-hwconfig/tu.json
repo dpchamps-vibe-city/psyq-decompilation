@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e7be76925831d5bc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "get_hwconfig.c",
+      "symbol": "get_hwconfig"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_76d4b20ecbc163cf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetReverbModeFeedback.c",
+      "symbol": "SpuSetReverbModeFeedback"
+    }
+  ]
+}

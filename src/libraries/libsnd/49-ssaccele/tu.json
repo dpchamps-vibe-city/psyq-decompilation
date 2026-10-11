@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_525be5b3550a6f6d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetAccele.c",
+      "symbol": "_SsSndSetAccele"
+    },
+    {
+      "path": "SsSeqSetAccelerando.c",
+      "symbol": "SsSeqSetAccelerando"
+    },
+    {
+      "path": "SsSepSetAccelerando.c",
+      "symbol": "SsSepSetAccelerando"
+    }
+  ]
+}

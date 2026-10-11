@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3e89c9737204c731_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StCdInterrupt.c",
+      "symbol": "StCdInterrupt"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

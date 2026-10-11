@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_cbfabe010ae28fb4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__register_frame.c",
+      "symbol": "__register_frame"
+    },
+    {
+      "path": "__register_frame_table.c",
+      "symbol": "__register_frame_table"
+    },
+    {
+      "path": "__deregister_frame.c",
+      "symbol": "__deregister_frame"
+    }
+  ]
+}

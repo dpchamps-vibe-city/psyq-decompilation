@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b87a1d6542ef3443_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetVoiceLoopStartAddr.c",
+      "symbol": "SpuGetVoiceLoopStartAddr"
+    }
+  ]
+}

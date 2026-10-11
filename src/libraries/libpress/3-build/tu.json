@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4e0cac8512130c49_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DecDCTvlcBuild.c",
+      "symbol": "DecDCTvlcBuild"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

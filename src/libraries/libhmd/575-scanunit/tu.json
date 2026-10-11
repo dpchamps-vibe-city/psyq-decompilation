@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ed0eebebae6499a6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsScanUnit.c",
+      "symbol": "GsScanUnit"
+    },
+    {
+      "path": "GsGetHeadpUnit.c",
+      "symbol": "GsGetHeadpUnit"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

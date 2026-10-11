@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_963d64166742d731_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__divdf3.c",
+      "symbol": "__divdf3"
+    },
+    {
+      "path": "_comp_mant.c",
+      "symbol": "_comp_mant"
+    }
+  ]
+}

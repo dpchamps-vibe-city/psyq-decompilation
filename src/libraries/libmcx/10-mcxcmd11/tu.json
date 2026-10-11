@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_186eda8c4e3da5ae_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxWriteDev.c",
+      "symbol": "McxWriteDev"
+    }
+  ]
+}

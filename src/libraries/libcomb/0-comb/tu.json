@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_399eb8d315af2e11_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "AddCOMB.c",
+      "symbol": "AddCOMB"
+    },
+    {
+      "path": "_comb_control.c",
+      "symbol": "_comb_control"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

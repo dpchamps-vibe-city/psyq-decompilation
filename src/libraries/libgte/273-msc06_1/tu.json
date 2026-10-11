@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f5acf52ded7dc8ef_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "LoadAverage12.c",
+      "symbol": "LoadAverage12"
+    }
+  ]
+}

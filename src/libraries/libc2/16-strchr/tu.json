@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1f8b599632534f63_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strchr.c",
+      "symbol": "strchr"
+    }
+  ]
+}

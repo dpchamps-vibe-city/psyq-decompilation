@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5424f2efdcf90655_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsInitGraph.c",
+      "symbol": "GsInitGraph"
+    },
+    {
+      "path": "GsInitGraph2.c",
+      "symbol": "GsInitGraph2"
+    },
+    {
+      "path": "GsSortClear.c",
+      "symbol": "GsSortClear"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6cb573202232dc42_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ceil.c",
+      "symbol": "ceil"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

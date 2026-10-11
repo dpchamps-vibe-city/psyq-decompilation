@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ea2b6acf584284cc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetMute.c",
+      "symbol": "SpuGetMute"
+    }
+  ]
+}

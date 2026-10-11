@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_247689645dacd7de_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DrawOTagIO.c",
+      "symbol": "DrawOTagIO"
+    },
+    {
+      "path": "DumpOTag.c",
+      "symbol": "DumpOTag"
+    },
+    {
+      "path": "CheckPrim.c",
+      "symbol": "CheckPrim"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

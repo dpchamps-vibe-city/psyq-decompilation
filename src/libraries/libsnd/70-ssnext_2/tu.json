@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5323d5f80865a809_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSeqSetNext.c",
+      "symbol": "SsSeqSetNext"
+    }
+  ]
+}

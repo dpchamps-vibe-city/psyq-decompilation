@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d138dfff6215b35c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_card_wait.c",
+      "symbol": "_card_wait"
+    }
+  ]
+}

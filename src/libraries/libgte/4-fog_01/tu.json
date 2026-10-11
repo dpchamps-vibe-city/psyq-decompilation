@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_845eb7b4cbf77b88_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetFogNear.c",
+      "symbol": "SetFogNear"
+    }
+  ]
+}

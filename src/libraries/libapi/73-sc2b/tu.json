@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b98fea1557178089_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetConf.c",
+      "symbol": "SetConf"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

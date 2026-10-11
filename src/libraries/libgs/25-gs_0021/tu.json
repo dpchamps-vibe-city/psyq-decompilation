@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_33d9135d89fa4b93_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsGetActiveBuff.c",
+      "symbol": "GsGetActiveBuff"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1073c34cd3aba4a1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "bzero.c",
+      "symbol": "bzero"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_10646a63b78e6361_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsSystemStatus.c",
+      "symbol": "DsSystemStatus"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_314af6df7b6d3d26_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MulRotMatrix0.c",
+      "symbol": "MulRotMatrix0"
+    }
+  ]
+}

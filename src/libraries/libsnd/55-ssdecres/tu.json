@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_243fd82197e1a9c0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetDecres.c",
+      "symbol": "_SsSndSetDecres"
+    },
+    {
+      "path": "SsSeqSetDecrescendo.c",
+      "symbol": "SsSeqSetDecrescendo"
+    },
+    {
+      "path": "SsSepSetDecrescendo.c",
+      "symbol": "SsSepSetDecrescendo"
+    }
+  ]
+}

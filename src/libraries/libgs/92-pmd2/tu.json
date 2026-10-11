@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4fb68a140ac4031a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortObject3.c",
+      "symbol": "GsSortObject3"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

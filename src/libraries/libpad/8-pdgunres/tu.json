@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2c04459bebe379c9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_padSetIntH2000.c",
+      "symbol": "_padSetIntH2000"
+    },
+    {
+      "path": "_padGetGunPos.c",
+      "symbol": "_padGetGunPos"
+    },
+    {
+      "path": "_padSetGunPort.c",
+      "symbol": "_padSetGunPort"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

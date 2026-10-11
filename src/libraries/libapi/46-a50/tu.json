@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_51c33a0f7e06ff30_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "open.c",
+      "symbol": "open"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_505ca68fba8a3b2b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuStTransfer.c",
+      "symbol": "SpuStTransfer"
+    },
+    {
+      "path": "SpuStInit.c",
+      "symbol": "SpuStInit"
+    },
+    {
+      "path": "SpuStQuit.c",
+      "symbol": "SpuStQuit"
+    },
+    {
+      "path": "SpuStGetStatus.c",
+      "symbol": "SpuStGetStatus"
+    },
+    {
+      "path": "SpuStGetVoiceStatus.c",
+      "symbol": "SpuStGetVoiceStatus"
+    },
+    {
+      "path": "SpuStSetPreparationFinishedCallback.c",
+      "symbol": "SpuStSetPreparationFinishedCallback"
+    },
+    {
+      "path": "SpuStSetTransferFinishedCallback.c",
+      "symbol": "SpuStSetTransferFinishedCallback"
+    },
+    {
+      "path": "SpuStSetStreamFinishedCallback.c",
+      "symbol": "SpuStSetStreamFinishedCallback"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

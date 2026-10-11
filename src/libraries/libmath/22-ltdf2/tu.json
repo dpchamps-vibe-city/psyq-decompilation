@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3a9b8e7f6a52dc9a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__ltdf2.c",
+      "symbol": "__ltdf2"
+    }
+  ]
+}

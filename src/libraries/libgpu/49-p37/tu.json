@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_95345b80f731634d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DumpDrawEnv.c",
+      "symbol": "DumpDrawEnv"
+    },
+    {
+      "path": "DumpDispEnv.c",
+      "symbol": "DumpDispEnv"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

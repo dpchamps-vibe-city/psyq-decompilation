@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_74485b1ba1cde4a3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "srand.c",
+      "symbol": "srand"
+    }
+  ]
+}

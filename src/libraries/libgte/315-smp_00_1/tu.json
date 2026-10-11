@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1248c0c8d56b0c64_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "LightColor.c",
+      "symbol": "LightColor"
+    }
+  ]
+}

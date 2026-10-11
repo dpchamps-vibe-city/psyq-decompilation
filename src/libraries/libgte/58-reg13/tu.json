@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_30e78aeed539293c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetGeomScreen.c",
+      "symbol": "SetGeomScreen"
+    }
+  ]
+}

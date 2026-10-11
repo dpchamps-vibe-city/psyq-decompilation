@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_38ada9a9a296248d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strncat.c",
+      "symbol": "strncat"
+    }
+  ]
+}

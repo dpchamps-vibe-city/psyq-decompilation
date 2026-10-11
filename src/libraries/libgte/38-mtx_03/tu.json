@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_014752e0c77e0f38_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MulMatrix.c",
+      "symbol": "MulMatrix"
+    }
+  ]
+}

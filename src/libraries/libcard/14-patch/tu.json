@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8131e1e9741808b1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_patch_card_info.c",
+      "symbol": "_patch_card_info"
+    },
+    {
+      "path": "_patch_card.c",
+      "symbol": "_patch_card"
+    },
+    {
+      "path": "_patch_card2.c",
+      "symbol": "_patch_card2"
+    },
+    {
+      "path": "_copy_memcard_patch.c",
+      "symbol": "_copy_memcard_patch"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

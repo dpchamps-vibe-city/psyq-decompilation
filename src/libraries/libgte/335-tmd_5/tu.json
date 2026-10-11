@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f1196e2299639944_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_flat3.c",
+      "symbol": "gte_flat3"
+    }
+  ]
+}

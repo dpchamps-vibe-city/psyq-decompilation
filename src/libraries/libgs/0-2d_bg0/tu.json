@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3503be123c6104ea_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortBg.c",
+      "symbol": "GsSortBg"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

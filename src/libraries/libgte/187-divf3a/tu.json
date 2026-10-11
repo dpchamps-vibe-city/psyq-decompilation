@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0b3dbfbb75d2de35_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RCpolyF3.c",
+      "symbol": "RCpolyF3"
+    },
+    {
+      "path": "RCpolyF3A.c",
+      "symbol": "RCpolyF3A"
+    }
+  ]
+}

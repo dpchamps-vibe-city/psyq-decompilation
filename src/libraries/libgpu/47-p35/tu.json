@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3871d65b86539151_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetDrawLoad.c",
+      "symbol": "SetDrawLoad"
+    }
+  ]
+}

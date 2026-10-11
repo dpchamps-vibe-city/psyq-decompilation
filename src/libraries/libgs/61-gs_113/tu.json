@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_64baaa53edc59c49_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsClearOt.c",
+      "symbol": "GsClearOt"
+    }
+  ]
+}

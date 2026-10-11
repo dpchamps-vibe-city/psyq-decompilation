@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_feebab3b84578321_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ClipFT.c",
+      "symbol": "ClipFT"
+    },
+    {
+      "path": "ZClipFT.c",
+      "symbol": "ZClipFT"
+    }
+  ]
+}

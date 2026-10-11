@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1eea3efacf65c0cd_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetRit.c",
+      "symbol": "_SsSndSetRit"
+    },
+    {
+      "path": "SsSeqSetRitardando.c",
+      "symbol": "SsSeqSetRitardando"
+    },
+    {
+      "path": "SsSepSetRitardando.c",
+      "symbol": "SsSepSetRitardando"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9d4ac7a78dfae1a5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsRead.c",
+      "symbol": "DsRead"
+    },
+    {
+      "path": "DsReadSync.c",
+      "symbol": "DsReadSync"
+    },
+    {
+      "path": "DsReadCallback.c",
+      "symbol": "DsReadCallback"
+    },
+    {
+      "path": "DsReadBreak.c",
+      "symbol": "DsReadBreak"
+    },
+    {
+      "path": "DsReadMode.c",
+      "symbol": "DsReadMode"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

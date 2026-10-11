@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fb6d3c7670d66a73_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "firstfile2.c",
+      "symbol": "firstfile2"
+    }
+  ]
+}

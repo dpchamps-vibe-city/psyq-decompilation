@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_56af8e085c63031b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdSearchFile.c",
+      "symbol": "CdSearchFile"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

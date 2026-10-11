@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_abf11e8139dd2152_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strstr.c",
+      "symbol": "strstr"
+    }
+  ]
+}

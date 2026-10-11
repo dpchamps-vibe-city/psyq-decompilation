@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_99544713c434988e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdReadExec.c",
+      "symbol": "CdReadExec"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

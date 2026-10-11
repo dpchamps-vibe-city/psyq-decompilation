@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_01ac8db59f7d9ffe_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "print_vector.c",
+      "symbol": "print_vector"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

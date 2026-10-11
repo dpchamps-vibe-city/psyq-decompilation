@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_08327a923a4f2903_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ratan2.c",
+      "symbol": "ratan2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

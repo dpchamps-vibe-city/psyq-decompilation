@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8761c93334dedc99_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__divdi3.c",
+      "symbol": "__divdi3"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

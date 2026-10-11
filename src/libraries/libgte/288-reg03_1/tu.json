@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ccd141bcfe1b3d97_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetVertex0.c",
+      "symbol": "SetVertex0"
+    }
+  ]
+}

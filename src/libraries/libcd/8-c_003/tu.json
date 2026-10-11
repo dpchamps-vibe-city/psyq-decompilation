@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6e004bc33c980f40_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StUnSetRing.c",
+      "symbol": "StUnSetRing"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

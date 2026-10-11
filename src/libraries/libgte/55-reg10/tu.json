@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3a5bd0d0fc36b156_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetBackColor.c",
+      "symbol": "SetBackColor"
+    }
+  ]
+}

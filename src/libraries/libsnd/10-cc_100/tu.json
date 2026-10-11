@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_723072bceacfbac3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsContRpn1.c",
+      "symbol": "_SsContRpn1"
+    }
+  ]
+}

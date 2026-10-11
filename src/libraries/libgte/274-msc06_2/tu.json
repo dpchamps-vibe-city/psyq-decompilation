@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e3bb34b55c28f543_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "LoadAverage0.c",
+      "symbol": "LoadAverage0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0f6b21fcd7b8924c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "InterpolShort.c",
+      "symbol": "InterpolShort"
+    }
+  ]
+}

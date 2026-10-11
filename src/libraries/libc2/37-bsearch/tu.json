@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2748800d843f72a0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "bsearch.c",
+      "symbol": "bsearch"
+    }
+  ]
+}

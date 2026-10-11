@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_05053791eb52dd50_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "NormalColorCol.c",
+      "symbol": "NormalColorCol"
+    }
+  ]
+}

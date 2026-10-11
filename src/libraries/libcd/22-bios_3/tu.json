@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ca73b899615f6ff8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CD_getsector2.c",
+      "symbol": "CD_getsector2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

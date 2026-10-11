@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a8f658d752c79702_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadRemoveGun.c",
+      "symbol": "PadRemoveGun"
+    }
+  ]
+}

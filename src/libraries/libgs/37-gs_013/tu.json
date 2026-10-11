@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_30493b31936d8d4f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetOrign.c",
+      "symbol": "GsSetOrign"
+    }
+  ]
+}

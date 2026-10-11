@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f624c0ca5d778f32_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StopPAD.c",
+      "symbol": "StopPAD"
+    }
+  ]
+}

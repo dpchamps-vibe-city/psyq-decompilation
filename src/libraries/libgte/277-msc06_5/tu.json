@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e2d82fcb22c7130c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "LoadAverageByte.c",
+      "symbol": "LoadAverageByte"
+    }
+  ]
+}

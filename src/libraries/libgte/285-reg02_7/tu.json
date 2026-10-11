@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_862ad5297be86537_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ReadORGB.c",
+      "symbol": "ReadORGB"
+    }
+  ]
+}

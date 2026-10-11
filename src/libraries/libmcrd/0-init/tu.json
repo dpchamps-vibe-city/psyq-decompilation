@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4e71e740429a1551_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MemCardInit.c",
+      "symbol": "MemCardInit"
+    },
+    {
+      "path": "MemCardEnd.c",
+      "symbol": "MemCardEnd"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

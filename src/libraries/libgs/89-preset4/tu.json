@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1b1c38cdd46852c2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmyGsPrstF3NL.c",
+      "symbol": "dmyGsPrstF3NL"
+    },
+    {
+      "path": "dmyGsPrstF3LFG.c",
+      "symbol": "dmyGsPrstF3LFG"
+    },
+    {
+      "path": "dmyGsPrstF3L.c",
+      "symbol": "dmyGsPrstF3L"
+    },
+    {
+      "path": "dmyGsPrstNF3.c",
+      "symbol": "dmyGsPrstNF3"
+    },
+    {
+      "path": "dmyGsTMDdivF3NL.c",
+      "symbol": "dmyGsTMDdivF3NL"
+    },
+    {
+      "path": "dmyGsTMDdivF3LFG.c",
+      "symbol": "dmyGsTMDdivF3LFG"
+    },
+    {
+      "path": "dmyGsTMDdivF3L.c",
+      "symbol": "dmyGsTMDdivF3L"
+    },
+    {
+      "path": "dmyGsTMDdivNF3.c",
+      "symbol": "dmyGsTMDdivNF3"
+    },
+    {
+      "path": "dmyGsPrstG3NL.c",
+      "symbol": "dmyGsPrstG3NL"
+    },
+    {
+      "path": "dmyGsPrstG3LFG.c",
+      "symbol": "dmyGsPrstG3LFG"
+    },
+    {
+      "path": "dmyGsPrstG3L.c",
+      "symbol": "dmyGsPrstG3L"
+    },
+    {
+      "path": "dmyGsPrstNG3.c",
+      "symbol": "dmyGsPrstNG3"
+    },
+    {
+      "path": "dmyGsTMDdivG3NL.c",
+      "symbol": "dmyGsTMDdivG3NL"
+    },
+    {
+      "path": "dmyGsTMDdivG3LFG.c",
+      "symbol": "dmyGsTMDdivG3LFG"
+    },
+    {
+      "path": "dmyGsTMDdivG3L.c",
+      "symbol": "dmyGsTMDdivG3L"
+    },
+    {
+      "path": "dmyGsTMDdivNG3.c",
+      "symbol": "dmyGsTMDdivNG3"
+    },
+    {
+      "path": "dmyGsPrstTF3NL.c",
+      "symbol": "dmyGsPrstTF3NL"
+    },
+    {
+      "path": "dmyGsPrstTF3LFG.c",
+      "symbol": "dmyGsPrstTF3LFG"
+    },
+    {
+      "path": "dmyGsPrstTF3L.c",
+      "symbol": "dmyGsPrstTF3L"
+    },
+    {
+      "path": "dmyGsPrstTNF3.c",
+      "symbol": "dmyGsPrstTNF3"
+    },
+    {
+      "path": "dmyGsTMDdivTF3NL.c",
+      "symbol": "dmyGsTMDdivTF3NL"
+    },
+    {
+      "path": "dmyGsTMDdivTF3LFG.c",
+      "symbol": "dmyGsTMDdivTF3LFG"
+    },
+    {
+      "path": "dmyGsTMDdivTF3L.c",
+      "symbol": "dmyGsTMDdivTF3L"
+    },
+    {
+      "path": "dmyGsTMDdivTNF3.c",
+      "symbol": "dmyGsTMDdivTNF3"
+    },
+    {
+      "path": "dmyGsPrstTG3NL.c",
+      "symbol": "dmyGsPrstTG3NL"
+    },
+    {
+      "path": "dmyGsPrstTG3LFG.c",
+      "symbol": "dmyGsPrstTG3LFG"
+    },
+    {
+      "path": "dmyGsPrstTG3L.c",
+      "symbol": "dmyGsPrstTG3L"
+    },
+    {
+      "path": "dmyGsPrstTNG3.c",
+      "symbol": "dmyGsPrstTNG3"
+    },
+    {
+      "path": "dmyGsTMDdivTG3NL.c",
+      "symbol": "dmyGsTMDdivTG3NL"
+    },
+    {
+      "path": "dmyGsTMDdivTG3LFG.c",
+      "symbol": "dmyGsTMDdivTG3LFG"
+    },
+    {
+      "path": "dmyGsTMDdivTG3L.c",
+      "symbol": "dmyGsTMDdivTG3L"
+    },
+    {
+      "path": "dmyGsTMDdivTNG3.c",
+      "symbol": "dmyGsTMDdivTNG3"
+    },
+    {
+      "path": "dmyGsPrstF4NL.c",
+      "symbol": "dmyGsPrstF4NL"
+    },
+    {
+      "path": "dmyGsPrstF4LFG.c",
+      "symbol": "dmyGsPrstF4LFG"
+    },
+    {
+      "path": "dmyGsPrstF4L.c",
+      "symbol": "dmyGsPrstF4L"
+    },
+    {
+      "path": "dmyGsPrstNF4.c",
+      "symbol": "dmyGsPrstNF4"
+    },
+    {
+      "path": "dmyGsTMDdivF4NL.c",
+      "symbol": "dmyGsTMDdivF4NL"
+    },
+    {
+      "path": "dmyGsTMDdivF4LFG.c",
+      "symbol": "dmyGsTMDdivF4LFG"
+    },
+    {
+      "path": "dmyGsTMDdivF4L.c",
+      "symbol": "dmyGsTMDdivF4L"
+    },
+    {
+      "path": "dmyGsTMDdivNF4.c",
+      "symbol": "dmyGsTMDdivNF4"
+    },
+    {
+      "path": "dmyGsPrstG4NL.c",
+      "symbol": "dmyGsPrstG4NL"
+    },
+    {
+      "path": "dmyGsPrstG4LFG.c",
+      "symbol": "dmyGsPrstG4LFG"
+    },
+    {
+      "path": "dmyGsPrstG4L.c",
+      "symbol": "dmyGsPrstG4L"
+    },
+    {
+      "path": "dmyGsPrstNG4.c",
+      "symbol": "dmyGsPrstNG4"
+    },
+    {
+      "path": "dmyGsTMDdivG4NL.c",
+      "symbol": "dmyGsTMDdivG4NL"
+    },
+    {
+      "path": "dmyGsTMDdivG4LFG.c",
+      "symbol": "dmyGsTMDdivG4LFG"
+    },
+    {
+      "path": "dmyGsTMDdivG4L.c",
+      "symbol": "dmyGsTMDdivG4L"
+    },
+    {
+      "path": "dmyGsTMDdivNG4.c",
+      "symbol": "dmyGsTMDdivNG4"
+    },
+    {
+      "path": "dmyGsPrstTF4NL.c",
+      "symbol": "dmyGsPrstTF4NL"
+    },
+    {
+      "path": "dmyGsPrstTF4LFG.c",
+      "symbol": "dmyGsPrstTF4LFG"
+    },
+    {
+      "path": "dmyGsPrstTF4L.c",
+      "symbol": "dmyGsPrstTF4L"
+    },
+    {
+      "path": "dmyGsPrstTNF4.c",
+      "symbol": "dmyGsPrstTNF4"
+    },
+    {
+      "path": "dmyGsTMDdivTF4NL.c",
+      "symbol": "dmyGsTMDdivTF4NL"
+    },
+    {
+      "path": "dmyGsTMDdivTF4LFG.c",
+      "symbol": "dmyGsTMDdivTF4LFG"
+    },
+    {
+      "path": "dmyGsTMDdivTF4L.c",
+      "symbol": "dmyGsTMDdivTF4L"
+    },
+    {
+      "path": "dmyGsTMDdivTNF4.c",
+      "symbol": "dmyGsTMDdivTNF4"
+    },
+    {
+      "path": "dmyGsPrstTG4NL.c",
+      "symbol": "dmyGsPrstTG4NL"
+    },
+    {
+      "path": "dmyGsPrstTG4LFG.c",
+      "symbol": "dmyGsPrstTG4LFG"
+    },
+    {
+      "path": "dmyGsPrstTG4L.c",
+      "symbol": "dmyGsPrstTG4L"
+    },
+    {
+      "path": "dmyGsPrstTNG4.c",
+      "symbol": "dmyGsPrstTNG4"
+    },
+    {
+      "path": "dmyGsTMDdivTG4NL.c",
+      "symbol": "dmyGsTMDdivTG4NL"
+    },
+    {
+      "path": "dmyGsTMDdivTG4LFG.c",
+      "symbol": "dmyGsTMDdivTG4LFG"
+    },
+    {
+      "path": "dmyGsTMDdivTG4L.c",
+      "symbol": "dmyGsTMDdivTG4L"
+    },
+    {
+      "path": "dmyGsTMDdivTNG4.c",
+      "symbol": "dmyGsTMDdivTNG4"
+    },
+    {
+      "path": "dmyGsTMDfastF3NL.c",
+      "symbol": "dmyGsTMDfastF3NL"
+    },
+    {
+      "path": "dmyGsTMDfastF3LFG.c",
+      "symbol": "dmyGsTMDfastF3LFG"
+    },
+    {
+      "path": "dmyGsTMDfastF3L.c",
+      "symbol": "dmyGsTMDfastF3L"
+    },
+    {
+      "path": "dmyGsTMDfastNF3.c",
+      "symbol": "dmyGsTMDfastNF3"
+    },
+    {
+      "path": "dmyGsTMDfastG3NL.c",
+      "symbol": "dmyGsTMDfastG3NL"
+    },
+    {
+      "path": "dmyGsTMDfastG3LFG.c",
+      "symbol": "dmyGsTMDfastG3LFG"
+    },
+    {
+      "path": "dmyGsTMDfastG3L.c",
+      "symbol": "dmyGsTMDfastG3L"
+    },
+    {
+      "path": "dmyGsTMDfastNG3.c",
+      "symbol": "dmyGsTMDfastNG3"
+    },
+    {
+      "path": "dmyGsTMDfastTF3NL.c",
+      "symbol": "dmyGsTMDfastTF3NL"
+    },
+    {
+      "path": "dmyGsTMDfastTF3LFG.c",
+      "symbol": "dmyGsTMDfastTF3LFG"
+    },
+    {
+      "path": "dmyGsTMDfastTF3L.c",
+      "symbol": "dmyGsTMDfastTF3L"
+    },
+    {
+      "path": "dmyGsTMDfastTNF3.c",
+      "symbol": "dmyGsTMDfastTNF3"
+    },
+    {
+      "path": "dmyGsTMDfastTG3NL.c",
+      "symbol": "dmyGsTMDfastTG3NL"
+    },
+    {
+      "path": "dmyGsTMDfastTG3LFG.c",
+      "symbol": "dmyGsTMDfastTG3LFG"
+    },
+    {
+      "path": "dmyGsTMDfastTG3L.c",
+      "symbol": "dmyGsTMDfastTG3L"
+    },
+    {
+      "path": "dmyGsTMDfastTNG3.c",
+      "symbol": "dmyGsTMDfastTNG3"
+    },
+    {
+      "path": "dmyGsTMDfastF4NL.c",
+      "symbol": "dmyGsTMDfastF4NL"
+    },
+    {
+      "path": "dmyGsTMDfastF4LFG.c",
+      "symbol": "dmyGsTMDfastF4LFG"
+    },
+    {
+      "path": "dmyGsTMDfastF4L.c",
+      "symbol": "dmyGsTMDfastF4L"
+    },
+    {
+      "path": "dmyGsTMDfastNF4.c",
+      "symbol": "dmyGsTMDfastNF4"
+    },
+    {
+      "path": "dmyGsTMDfastG4NL.c",
+      "symbol": "dmyGsTMDfastG4NL"
+    },
+    {
+      "path": "dmyGsTMDfastG4LFG.c",
+      "symbol": "dmyGsTMDfastG4LFG"
+    },
+    {
+      "path": "dmyGsTMDfastG4L.c",
+      "symbol": "dmyGsTMDfastG4L"
+    },
+    {
+      "path": "dmyGsTMDfastNG4.c",
+      "symbol": "dmyGsTMDfastNG4"
+    },
+    {
+      "path": "dmyGsTMDfastTF4NL.c",
+      "symbol": "dmyGsTMDfastTF4NL"
+    },
+    {
+      "path": "dmyGsTMDfastTF4LFG.c",
+      "symbol": "dmyGsTMDfastTF4LFG"
+    },
+    {
+      "path": "dmyGsTMDfastTF4L.c",
+      "symbol": "dmyGsTMDfastTF4L"
+    },
+    {
+      "path": "dmyGsTMDfastTNF4.c",
+      "symbol": "dmyGsTMDfastTNF4"
+    },
+    {
+      "path": "dmyGsTMDfastTG4NL.c",
+      "symbol": "dmyGsTMDfastTG4NL"
+    },
+    {
+      "path": "dmyGsTMDfastTG4LFG.c",
+      "symbol": "dmyGsTMDfastTG4LFG"
+    },
+    {
+      "path": "dmyGsTMDfastTG4L.c",
+      "symbol": "dmyGsTMDfastTG4L"
+    },
+    {
+      "path": "dmyGsTMDfastTNG4.c",
+      "symbol": "dmyGsTMDfastTNG4"
+    },
+    {
+      "path": "dmyGsTMDfastF3GL.c",
+      "symbol": "dmyGsTMDfastF3GL"
+    },
+    {
+      "path": "dmyGsTMDfastF3GLFG.c",
+      "symbol": "dmyGsTMDfastF3GLFG"
+    },
+    {
+      "path": "dmyGsTMDfastF3GNL.c",
+      "symbol": "dmyGsTMDfastF3GNL"
+    },
+    {
+      "path": "dmyGsTMDfastG3GL.c",
+      "symbol": "dmyGsTMDfastG3GL"
+    },
+    {
+      "path": "dmyGsTMDfastG3GLFG.c",
+      "symbol": "dmyGsTMDfastG3GLFG"
+    },
+    {
+      "path": "dmyGsTMDfastG3GNL.c",
+      "symbol": "dmyGsTMDfastG3GNL"
+    },
+    {
+      "path": "dmyGsPrstF3GL.c",
+      "symbol": "dmyGsPrstF3GL"
+    },
+    {
+      "path": "dmyGsPrstF3GLFG.c",
+      "symbol": "dmyGsPrstF3GLFG"
+    },
+    {
+      "path": "dmyGsPrstF3GNL.c",
+      "symbol": "dmyGsPrstF3GNL"
+    },
+    {
+      "path": "dmyGsPrstG3GL.c",
+      "symbol": "dmyGsPrstG3GL"
+    },
+    {
+      "path": "dmyGsPrstG3GLFG.c",
+      "symbol": "dmyGsPrstG3GLFG"
+    },
+    {
+      "path": "dmyGsPrstG3GNL.c",
+      "symbol": "dmyGsPrstG3GNL"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

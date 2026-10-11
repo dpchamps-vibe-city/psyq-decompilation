@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_dc61a30b5c1f175a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "AverageSZ4.c",
+      "symbol": "AverageSZ4"
+    }
+  ]
+}

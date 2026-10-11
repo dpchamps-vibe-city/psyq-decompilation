@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_cad4afe9926d3f11_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RCpolyFT3.c",
+      "symbol": "RCpolyFT3"
+    },
+    {
+      "path": "RCpolyFT3A.c",
+      "symbol": "RCpolyFT3A"
+    }
+  ]
+}

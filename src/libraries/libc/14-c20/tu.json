@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f957728adb2fc246_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "longjmp.c",
+      "symbol": "longjmp"
+    }
+  ]
+}

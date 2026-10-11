@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a516a20d8dd4110f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DS_ready.c",
+      "symbol": "DS_ready"
+    }
+  ]
+}

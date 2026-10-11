@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_48d0094e453be00f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuNSetVoiceAttr.c",
+      "symbol": "SpuNSetVoiceAttr"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

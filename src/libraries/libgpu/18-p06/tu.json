@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_693bbcd0539952cf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "AddPrim.c",
+      "symbol": "AddPrim"
+    }
+  ]
+}

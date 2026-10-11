@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_755692be2dd7e22e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortOt.c",
+      "symbol": "GsSortOt"
+    }
+  ]
+}

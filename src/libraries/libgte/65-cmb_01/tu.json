@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_170e1c968327fc22_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotAverage3.c",
+      "symbol": "RotAverage3"
+    }
+  ]
+}

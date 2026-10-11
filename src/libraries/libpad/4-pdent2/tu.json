@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fd4bccf2931214c0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadGetState.c",
+      "symbol": "PadGetState"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c111b0bc4de489f7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "prnt.c",
+      "symbol": "prnt"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

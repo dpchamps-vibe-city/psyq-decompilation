@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_dcff1ea9a13e5114_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuQuit.c",
+      "symbol": "SpuQuit"
+    }
+  ]
+}

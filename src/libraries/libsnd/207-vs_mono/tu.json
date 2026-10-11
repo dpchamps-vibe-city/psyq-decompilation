@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_15b0bb659f12bb30_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetMono.c",
+      "symbol": "SsSetMono"
+    },
+    {
+      "path": "SsSetStereo.c",
+      "symbol": "SsSetStereo"
+    }
+  ]
+}

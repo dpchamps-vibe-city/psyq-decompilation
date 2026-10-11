@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e8f44334482979d4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuWritePartly.c",
+      "symbol": "SpuWritePartly"
+    }
+  ]
+}

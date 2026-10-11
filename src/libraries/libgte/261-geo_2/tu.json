@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0fd98f790545540e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotMatrix_C.c",
+      "symbol": "RotMatrix_C"
+    }
+  ]
+}

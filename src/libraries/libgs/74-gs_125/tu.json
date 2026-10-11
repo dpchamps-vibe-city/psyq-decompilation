@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_376ac3906a8f503f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsGetWorkBase.c",
+      "symbol": "GsGetWorkBase"
+    }
+  ]
+}

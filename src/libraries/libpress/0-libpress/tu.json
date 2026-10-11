@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bfb85f5dc9a8fe96_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DecDCTReset.c",
+      "symbol": "DecDCTReset"
+    },
+    {
+      "path": "DecDCTGetEnv.c",
+      "symbol": "DecDCTGetEnv"
+    },
+    {
+      "path": "DecDCTPutEnv.c",
+      "symbol": "DecDCTPutEnv"
+    },
+    {
+      "path": "DecDCTin.c",
+      "symbol": "DecDCTin"
+    },
+    {
+      "path": "DecDCTout.c",
+      "symbol": "DecDCTout"
+    },
+    {
+      "path": "DecDCTinSync.c",
+      "symbol": "DecDCTinSync"
+    },
+    {
+      "path": "DecDCToutSync.c",
+      "symbol": "DecDCToutSync"
+    },
+    {
+      "path": "DecDCTinCallback.c",
+      "symbol": "DecDCTinCallback"
+    },
+    {
+      "path": "DecDCToutCallback.c",
+      "symbol": "DecDCToutCallback"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

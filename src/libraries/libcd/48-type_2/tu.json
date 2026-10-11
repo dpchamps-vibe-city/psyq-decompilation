@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_abbbcba7f1410205_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdGetDiskType.c",
+      "symbol": "CdGetDiskType"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

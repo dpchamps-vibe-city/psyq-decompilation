@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b9a58e7f5d7907e9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDdivTF3LB.c",
+      "symbol": "GsTMDdivTF3LB"
+    }
+  ]
+}

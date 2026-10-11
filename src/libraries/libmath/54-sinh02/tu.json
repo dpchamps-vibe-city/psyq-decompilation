@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f1e8ede7a00a1f9c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "tanh.c",
+      "symbol": "tanh"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

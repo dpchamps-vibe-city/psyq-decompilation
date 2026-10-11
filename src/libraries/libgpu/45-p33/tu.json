@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4ace7f9867cb10d7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetDrawTPage.c",
+      "symbol": "SetDrawTPage"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4dfd2d659dd28d83_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsLinkObject5.c",
+      "symbol": "GsLinkObject5"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d8ba9768dac2a995_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "startIntrVSync.c",
+      "symbol": "startIntrVSync"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

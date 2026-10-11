@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_74f209c930d8152a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxGetMem.c",
+      "symbol": "McxGetMem"
+    }
+  ]
+}

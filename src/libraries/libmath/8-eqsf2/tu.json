@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b9a8bf14614def19_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__eqsf2.c",
+      "symbol": "__eqsf2"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_664296158bca2e59_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetVolData.c",
+      "symbol": "_SsSndSetVolData"
+    }
+  ]
+}

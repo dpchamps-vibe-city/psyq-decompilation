@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_78845ad4fbd7dbb0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContResetAll.c",
+      "symbol": "dmy_SsContResetAll"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_994b68eb2269d34b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CD_sync.c",
+      "symbol": "CD_sync"
+    },
+    {
+      "path": "CD_ready.c",
+      "symbol": "CD_ready"
+    },
+    {
+      "path": "CD_cw.c",
+      "symbol": "CD_cw"
+    },
+    {
+      "path": "CD_vol.c",
+      "symbol": "CD_vol"
+    },
+    {
+      "path": "CD_flush.c",
+      "symbol": "CD_flush"
+    },
+    {
+      "path": "CD_initvol.c",
+      "symbol": "CD_initvol"
+    },
+    {
+      "path": "CD_initintr.c",
+      "symbol": "CD_initintr"
+    },
+    {
+      "path": "CD_init.c",
+      "symbol": "CD_init"
+    },
+    {
+      "path": "CD_datasync.c",
+      "symbol": "CD_datasync"
+    },
+    {
+      "path": "CD_set_test_parmnum.c",
+      "symbol": "CD_set_test_parmnum"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

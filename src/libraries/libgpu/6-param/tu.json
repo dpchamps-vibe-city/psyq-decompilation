@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2fe37dde6fdb35b3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GetDrawEnv2.c",
+      "symbol": "GetDrawEnv2"
+    },
+    {
+      "path": "GetDrawMode.c",
+      "symbol": "GetDrawMode"
+    },
+    {
+      "path": "GetTexWindow.c",
+      "symbol": "GetTexWindow"
+    },
+    {
+      "path": "GetDrawArea.c",
+      "symbol": "GetDrawArea"
+    },
+    {
+      "path": "GetDrawOffset.c",
+      "symbol": "GetDrawOffset"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

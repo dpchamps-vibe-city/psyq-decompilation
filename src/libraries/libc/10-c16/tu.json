@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_742a074e865847ac_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "atoi.c",
+      "symbol": "atoi"
+    }
+  ]
+}

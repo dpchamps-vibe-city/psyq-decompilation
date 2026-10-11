@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_96ca8b693d46b2e0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "siocons.c",
+      "symbol": "siocons"
+    },
+    {
+      "path": "DelSIO.c",
+      "symbol": "DelSIO"
+    },
+    {
+      "path": "AddSIO.c",
+      "symbol": "AddSIO"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

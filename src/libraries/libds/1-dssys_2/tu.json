@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1f0d42cee4801325_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DS_CQ_flush.c",
+      "symbol": "DS_CQ_flush"
+    },
+    {
+      "path": "DsInit.c",
+      "symbol": "DsInit"
+    },
+    {
+      "path": "DsReset.c",
+      "symbol": "DsReset"
+    },
+    {
+      "path": "DsCommand.c",
+      "symbol": "DsCommand"
+    },
+    {
+      "path": "DsPacket.c",
+      "symbol": "DsPacket"
+    },
+    {
+      "path": "_DsPacket2.c",
+      "symbol": "_DsPacket2"
+    },
+    {
+      "path": "DsSync.c",
+      "symbol": "DsSync"
+    },
+    {
+      "path": "DsReady.c",
+      "symbol": "DsReady"
+    },
+    {
+      "path": "DsQueueLen.c",
+      "symbol": "DsQueueLen"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

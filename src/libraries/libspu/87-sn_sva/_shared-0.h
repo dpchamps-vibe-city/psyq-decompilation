@@ -1,0 +1,8 @@
+/* Original TU: library-input/redux/libspu/87-sn_sva.o[0] 87-sn_sva.o
+ * sha256: bb22dac10552b72778ca6a667c6a29aa4c5a2da5ae8d7f0fe845256ee466cfa0
+ * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
+ * Functions: SpuNSetVoiceAttr
+ */
+#include "common.h"
+#include "include_asm.h"
+

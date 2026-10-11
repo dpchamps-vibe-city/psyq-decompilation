@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9a3f040c2f7768f8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SquareSL0.c",
+      "symbol": "SquareSL0"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6fa7155f8679459c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SquareRoot0.c",
+      "symbol": "SquareRoot0"
+    }
+  ]
+}

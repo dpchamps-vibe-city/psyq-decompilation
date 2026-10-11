@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6e26ef22da0559de_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ClipG.c",
+      "symbol": "ClipG"
+    },
+    {
+      "path": "ZClipG.c",
+      "symbol": "ZClipG"
+    }
+  ]
+}

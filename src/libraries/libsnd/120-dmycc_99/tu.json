@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_287b75886e863c4f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContNrpn2.c",
+      "symbol": "dmy_SsContNrpn2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

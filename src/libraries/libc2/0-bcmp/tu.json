@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d63a7705927267f4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "bcmp.c",
+      "symbol": "bcmp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e182b29092345869_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_mcxChkRsrv.c",
+      "symbol": "_mcxChkRsrv"
+    },
+    {
+      "path": "_mcxStepSio.c",
+      "symbol": "_mcxStepSio"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

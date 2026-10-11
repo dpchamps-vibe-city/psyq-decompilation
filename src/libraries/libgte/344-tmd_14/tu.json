@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c8a7ac38b20c0330_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_scope_tf4.c",
+      "symbol": "gte_scope_tf4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a596ed93fe1f7bfe_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "vmNoiseOn.c",
+      "symbol": "vmNoiseOn"
+    }
+  ]
+}

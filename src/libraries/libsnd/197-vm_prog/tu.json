@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_960a3ceda21c4df5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsVmGetProgVol.c",
+      "symbol": "_SsVmGetProgVol"
+    },
+    {
+      "path": "_SsVmSetProgPan.c",
+      "symbol": "_SsVmSetProgPan"
+    },
+    {
+      "path": "_SsVmGetProgPan.c",
+      "symbol": "_SsVmGetProgPan"
+    }
+  ]
+}

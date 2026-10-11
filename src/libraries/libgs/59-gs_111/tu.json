@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b0f97a8b02322457_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsDrawOt.c",
+      "symbol": "GsDrawOt"
+    }
+  ]
+}

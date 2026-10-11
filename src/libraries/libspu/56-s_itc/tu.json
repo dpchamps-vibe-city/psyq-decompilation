@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7d77f0a21886d0c2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuIsTransferCompleted.c",
+      "symbol": "SpuIsTransferCompleted"
+    }
+  ]
+}

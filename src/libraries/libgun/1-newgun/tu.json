@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0f663e15dc9457aa_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_InitGun.c",
+      "symbol": "_InitGun"
+    },
+    {
+      "path": "_ExitGun.c",
+      "symbol": "_ExitGun"
+    },
+    {
+      "path": "_check_gun_flag.c",
+      "symbol": "_check_gun_flag"
+    },
+    {
+      "path": "_clear_gun_flag.c",
+      "symbol": "_clear_gun_flag"
+    },
+    {
+      "path": "read_gun_v.c",
+      "symbol": "read_gun_v"
+    },
+    {
+      "path": "read_gun_h.c",
+      "symbol": "read_gun_h"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

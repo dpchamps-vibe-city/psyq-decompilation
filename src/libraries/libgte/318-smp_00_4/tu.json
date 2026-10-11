@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ede3a7a75697c722_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Intpl.c",
+      "symbol": "Intpl"
+    }
+  ]
+}

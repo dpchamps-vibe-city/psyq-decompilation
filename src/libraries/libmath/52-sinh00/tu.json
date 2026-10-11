@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3d552e7a372f9928_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "sinh.c",
+      "symbol": "sinh"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

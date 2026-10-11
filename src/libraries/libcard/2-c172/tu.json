@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_89a83813f47cf7c2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_card_load.c",
+      "symbol": "_card_load"
+    }
+  ]
+}

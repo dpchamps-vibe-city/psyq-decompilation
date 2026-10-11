@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_af4e859e6569ffc6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortFlipSprite.c",
+      "symbol": "GsSortFlipSprite"
+    }
+  ]
+}

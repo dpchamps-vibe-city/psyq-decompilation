@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_77590a7d3aeadd51_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdDiskReady.c",
+      "symbol": "CdDiskReady"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4f5d48d34686841f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsControlB.c",
+      "symbol": "DsControlB"
+    }
+  ]
+}

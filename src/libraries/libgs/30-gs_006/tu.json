@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_88dda2108ccab705_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetClip2D.c",
+      "symbol": "GsSetClip2D"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_09886d7ef15dbeac_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsPrstTG3LFG.c",
+      "symbol": "GsPrstTG3LFG"
+    }
+  ]
+}

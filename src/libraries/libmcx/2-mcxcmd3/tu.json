@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0142dd6194136bac_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_mcxRxRestLen.c",
+      "symbol": "_mcxRxRestLen"
+    }
+  ]
+}

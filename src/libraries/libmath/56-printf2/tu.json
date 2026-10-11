@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5bbb2bb29d0fef72_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "printf2.c",
+      "symbol": "printf2"
+    },
+    {
+      "path": "sprintf2.c",
+      "symbol": "sprintf2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

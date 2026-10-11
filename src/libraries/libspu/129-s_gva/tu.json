@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a1e088068a48a953_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetVoiceAttr.c",
+      "symbol": "SpuGetVoiceAttr"
+    }
+  ]
+}

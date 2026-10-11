@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9eac122cc36aa525_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetLightMode.c",
+      "symbol": "GsSetLightMode"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

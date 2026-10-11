@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ce3a3f5480029809_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVagAddr.c",
+      "symbol": "SsUtGetVagAddr"
+    }
+  ]
+}

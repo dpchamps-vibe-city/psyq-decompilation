@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_afa9444b7aaa8fbd_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetKeyOnWithAttr.c",
+      "symbol": "SpuSetKeyOnWithAttr"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_377008fe4d87392a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetVoiceAR.c",
+      "symbol": "SpuGetVoiceAR"
+    }
+  ]
+}

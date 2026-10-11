@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b84b02e450cdb49c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "OpenTIM.c",
+      "symbol": "OpenTIM"
+    },
+    {
+      "path": "ReadTIM.c",
+      "symbol": "ReadTIM"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7cb87e7873fb1c7c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_mcxTxReadDev.c",
+      "symbol": "_mcxTxReadDev"
+    },
+    {
+      "path": "_mcxRxReadDev.c",
+      "symbol": "_mcxRxReadDev"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

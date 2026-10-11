@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_694542ace33f9b45_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RemoveGUN.c",
+      "symbol": "RemoveGUN"
+    },
+    {
+      "path": "2-StartGun.c",
+      "symbol": "StartGun"
+    },
+    {
+      "path": "1-StopGun.c",
+      "symbol": "StopGun"
+    },
+    {
+      "path": "SelectGUN.c",
+      "symbol": "SelectGUN"
+    },
+    {
+      "path": "4-StartGUN.c",
+      "symbol": "StartGUN"
+    },
+    {
+      "path": "5-StopGUN.c",
+      "symbol": "StopGUN"
+    },
+    {
+      "path": "InitGUN.c",
+      "symbol": "InitGUN"
+    },
+    {
+      "path": "SendGUN.c",
+      "symbol": "SendGUN"
+    },
+    {
+      "path": "EnableGUN.c",
+      "symbol": "EnableGUN"
+    },
+    {
+      "path": "DisableGUN.c",
+      "symbol": "DisableGUN"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

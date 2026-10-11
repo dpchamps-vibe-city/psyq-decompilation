@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a0f58cdb4cd04ff1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetDrawBuffClip.c",
+      "symbol": "GsSetDrawBuffClip"
+    }
+  ]
+}

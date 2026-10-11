@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c84a4332c05f86db_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__nedf2.c",
+      "symbol": "__nedf2"
+    }
+  ]
+}

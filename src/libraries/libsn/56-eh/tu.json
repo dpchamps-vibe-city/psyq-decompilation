@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c7a612f9d80f3853_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__sjthrow.c",
+      "symbol": "__sjthrow"
+    },
+    {
+      "path": "find_exception_handler.c",
+      "symbol": "find_exception_handler"
+    },
+    {
+      "path": "__throw.c",
+      "symbol": "__throw"
+    },
+    {
+      "path": "__default_terminate.c",
+      "symbol": "__default_terminate"
+    },
+    {
+      "path": "__terminate.c",
+      "symbol": "__terminate"
+    },
+    {
+      "path": "__throw_type_match.c",
+      "symbol": "__throw_type_match"
+    },
+    {
+      "path": "__empty.c",
+      "symbol": "__empty"
+    },
+    {
+      "path": "__get_dynamic_handler_chain.c",
+      "symbol": "__get_dynamic_handler_chain"
+    },
+    {
+      "path": "__sjpopnthrow.c",
+      "symbol": "__sjpopnthrow"
+    },
+    {
+      "path": "get_reg.c",
+      "symbol": "get_reg"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

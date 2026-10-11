@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f6bdf6eb55adbd24_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "TimerCallback.c",
+      "symbol": "TimerCallback"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

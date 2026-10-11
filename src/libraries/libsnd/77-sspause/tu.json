@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ecd91bc6d3bd5532_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetPauseMode.c",
+      "symbol": "_SsSndSetPauseMode"
+    },
+    {
+      "path": "SsSeqPause.c",
+      "symbol": "SsSeqPause"
+    },
+    {
+      "path": "SsSepPause.c",
+      "symbol": "SsSepPause"
+    }
+  ]
+}

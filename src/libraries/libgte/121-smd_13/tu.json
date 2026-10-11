@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_96f8d6b1c92d297a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotSMD_SV_G4.c",
+      "symbol": "RotSMD_SV_G4"
+    }
+  ]
+}

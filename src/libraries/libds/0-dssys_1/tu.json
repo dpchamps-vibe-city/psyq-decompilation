@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_087ace597cc5e2d0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DS_init.c",
+      "symbol": "DS_init"
+    },
+    {
+      "path": "DS_reset_members.c",
+      "symbol": "DS_reset_members"
+    },
+    {
+      "path": "DS_close.c",
+      "symbol": "DS_close"
+    },
+    {
+      "path": "DS_cw.c",
+      "symbol": "DS_cw"
+    },
+    {
+      "path": "DS_vsync_callback.c",
+      "symbol": "DS_vsync_callback"
+    },
+    {
+      "path": "DS_sync_callback.c",
+      "symbol": "DS_sync_callback"
+    },
+    {
+      "path": "DS_ready_callback.c",
+      "symbol": "DS_ready_callback"
+    },
+    {
+      "path": "DS_start_callback.c",
+      "symbol": "DS_start_callback"
+    },
+    {
+      "path": "DS_system_status.c",
+      "symbol": "DS_system_status"
+    },
+    {
+      "path": "DS_lastcom.c",
+      "symbol": "DS_lastcom"
+    },
+    {
+      "path": "DS_lastmode.c",
+      "symbol": "DS_lastmode"
+    },
+    {
+      "path": "DS_lastpos.c",
+      "symbol": "DS_lastpos"
+    },
+    {
+      "path": "DS_lastseek.c",
+      "symbol": "DS_lastseek"
+    },
+    {
+      "path": "DS_lastread.c",
+      "symbol": "DS_lastread"
+    },
+    {
+      "path": "DS_status.c",
+      "symbol": "DS_status"
+    },
+    {
+      "path": "DS_shell_open.c",
+      "symbol": "DS_shell_open"
+    },
+    {
+      "path": "DS_cw_system.c",
+      "symbol": "DS_cw_system"
+    },
+    {
+      "path": "DS_stop.c",
+      "symbol": "DS_stop"
+    },
+    {
+      "path": "DS_restart.c",
+      "symbol": "DS_restart"
+    },
+    {
+      "path": "DS_system_active.c",
+      "symbol": "DS_system_active"
+    },
+    {
+      "path": "parcpy.c",
+      "symbol": "parcpy"
+    },
+    {
+      "path": "rescpy.c",
+      "symbol": "rescpy"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

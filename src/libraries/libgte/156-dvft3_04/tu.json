@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_aedc92926cf683e9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DivideFT3.c",
+      "symbol": "DivideFT3"
+    }
+  ]
+}

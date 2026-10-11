@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_659d49fa1e846092_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsSetProgramChange.c",
+      "symbol": "dmy_SsSetProgramChange"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

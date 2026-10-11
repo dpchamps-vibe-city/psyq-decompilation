@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_219a79c9e2a61970_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "atol.c",
+      "symbol": "atol"
+    }
+  ]
+}

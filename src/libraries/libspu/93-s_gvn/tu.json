@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_42a24aad0c155115_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetVoiceNote.c",
+      "symbol": "SpuGetVoiceNote"
+    }
+  ]
+}

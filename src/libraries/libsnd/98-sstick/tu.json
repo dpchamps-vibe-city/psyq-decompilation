@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d7eea72214599b4e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetTickMode.c",
+      "symbol": "SsSetTickMode"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

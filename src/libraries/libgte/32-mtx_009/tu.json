@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_edfaca6ae6127dc3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ReadRotMatrix.c",
+      "symbol": "ReadRotMatrix"
+    }
+  ]
+}

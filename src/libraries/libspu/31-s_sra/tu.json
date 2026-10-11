@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3c62204eb5c0797a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_spu_setReverbAttr.c",
+      "symbol": "_spu_setReverbAttr"
+    }
+  ]
+}

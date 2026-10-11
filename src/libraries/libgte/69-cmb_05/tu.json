@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ec1badbfa5a5dec4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotNclip4.c",
+      "symbol": "RotNclip4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ea40107b0861f119_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVagAtr.c",
+      "symbol": "SsUtGetVagAtr"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4602f888d8fd229f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxGetInfo.c",
+      "symbol": "McxGetInfo"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

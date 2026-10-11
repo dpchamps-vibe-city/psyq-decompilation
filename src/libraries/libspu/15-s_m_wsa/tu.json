@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ca52a15a8ccf6b6f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuMallocWithStartAddr.c",
+      "symbol": "SpuMallocWithStartAddr"
+    }
+  ]
+}

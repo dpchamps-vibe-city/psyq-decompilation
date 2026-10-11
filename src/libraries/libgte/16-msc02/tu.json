@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d4d00636e606a8e1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "InvSquareRoot.c",
+      "symbol": "InvSquareRoot"
+    },
+    {
+      "path": "VectorNormalS.c",
+      "symbol": "VectorNormalS"
+    },
+    {
+      "path": "VectorNormal.c",
+      "symbol": "VectorNormal"
+    },
+    {
+      "path": "VectorNormalSS.c",
+      "symbol": "VectorNormalSS"
+    },
+    {
+      "path": "MatrixNormal.c",
+      "symbol": "MatrixNormal"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

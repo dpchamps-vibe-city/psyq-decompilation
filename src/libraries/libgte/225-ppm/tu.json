@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ca63f844d38731f8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ScanXY0.c",
+      "symbol": "ScanXY0"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

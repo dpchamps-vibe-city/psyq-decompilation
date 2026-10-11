@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d7573a8d0e6d6034_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetVoiceAttr.c",
+      "symbol": "SpuSetVoiceAttr"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

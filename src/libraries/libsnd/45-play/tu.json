@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c1a188f21030cc3e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndPlay.c",
+      "symbol": "_SsSndPlay"
+    }
+  ]
+}

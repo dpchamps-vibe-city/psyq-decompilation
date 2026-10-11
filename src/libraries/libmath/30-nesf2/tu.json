@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_723021e2770158e9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__nesf2.c",
+      "symbol": "__nesf2"
+    }
+  ]
+}

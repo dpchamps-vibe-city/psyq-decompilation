@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_45abd6430e5091bf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetPolyF4.c",
+      "symbol": "SetPolyF4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c9110967380a8017_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadInfoMode.c",
+      "symbol": "PadInfoMode"
+    }
+  ]
+}

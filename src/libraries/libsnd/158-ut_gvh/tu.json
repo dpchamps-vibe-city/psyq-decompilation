@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_04d9bd6e00e03fc8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVabHdr.c",
+      "symbol": "SsUtGetVabHdr"
+    }
+  ]
+}

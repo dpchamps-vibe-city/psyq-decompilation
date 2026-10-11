@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e48728d991d83cd3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadInit.c",
+      "symbol": "PadInit"
+    },
+    {
+      "path": "PadRead.c",
+      "symbol": "PadRead"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

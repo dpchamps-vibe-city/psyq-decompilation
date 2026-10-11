@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_34d23d38aa7d3e93_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Gssub_make_matrix.c",
+      "symbol": "Gssub_make_matrix"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bec2cecf52efdd87_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SpuInit.c",
+      "symbol": "_SpuInit"
+    },
+    {
+      "path": "SpuStart.c",
+      "symbol": "SpuStart"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

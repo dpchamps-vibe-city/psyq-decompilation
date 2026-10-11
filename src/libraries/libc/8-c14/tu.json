@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_99f0d60f7112a013_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "abs.c",
+      "symbol": "abs"
+    }
+  ]
+}

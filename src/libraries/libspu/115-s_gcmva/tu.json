@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ee13963d4ced9cae_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetCommonMasterVolumeAttr.c",
+      "symbol": "SpuGetCommonMasterVolumeAttr"
+    }
+  ]
+}

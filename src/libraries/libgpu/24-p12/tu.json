@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_36d62a3e7dd73497_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetPolyF3.c",
+      "symbol": "SetPolyF3"
+    }
+  ]
+}

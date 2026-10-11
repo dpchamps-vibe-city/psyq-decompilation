@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e0c398b2827a1be6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetVBaddrInSB.c",
+      "symbol": "SsUtGetVBaddrInSB"
+    }
+  ]
+}

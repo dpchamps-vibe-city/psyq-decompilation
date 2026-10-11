@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c4ac4b16230624d6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetIRQ.c",
+      "symbol": "SpuSetIRQ"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

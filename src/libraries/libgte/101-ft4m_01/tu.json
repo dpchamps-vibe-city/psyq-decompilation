@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_45d3e8921c331115_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDfastTF4NLM.c",
+      "symbol": "GsTMDfastTF4NLM"
+    }
+  ]
+}

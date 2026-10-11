@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_92ce41595502e7b8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsContMainVol.c",
+      "symbol": "_SsContMainVol"
+    }
+  ]
+}

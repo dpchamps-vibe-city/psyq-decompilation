@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_171bd197bb620b97_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_spu_init.c",
+      "symbol": "_spu_init"
+    },
+    {
+      "path": "_spu_FiDMA.c",
+      "symbol": "_spu_FiDMA"
+    },
+    {
+      "path": "_spu_Fr_.c",
+      "symbol": "_spu_Fr_"
+    },
+    {
+      "path": "_spu_t.c",
+      "symbol": "_spu_t"
+    },
+    {
+      "path": "_spu_Fw.c",
+      "symbol": "_spu_Fw"
+    },
+    {
+      "path": "_spu_Fr.c",
+      "symbol": "_spu_Fr"
+    },
+    {
+      "path": "_spu_FsetRXX.c",
+      "symbol": "_spu_FsetRXX"
+    },
+    {
+      "path": "_spu_FsetRXXa.c",
+      "symbol": "_spu_FsetRXXa"
+    },
+    {
+      "path": "_spu_FgetRXXa.c",
+      "symbol": "_spu_FgetRXXa"
+    },
+    {
+      "path": "_spu_FsetPCR.c",
+      "symbol": "_spu_FsetPCR"
+    },
+    {
+      "path": "_spu_Fw1ts.c",
+      "symbol": "_spu_Fw1ts"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

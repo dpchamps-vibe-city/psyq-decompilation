@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5b2d846833163e71_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetReservedVoice.c",
+      "symbol": "SsSetReservedVoice"
+    }
+  ]
+}

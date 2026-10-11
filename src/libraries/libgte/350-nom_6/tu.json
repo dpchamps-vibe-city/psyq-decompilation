@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a26028d31bb52374_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotNclip3_nom.c",
+      "symbol": "RotNclip3_nom"
+    }
+  ]
+}

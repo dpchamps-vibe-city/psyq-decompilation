@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9f7ea9a6babfa599_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetLsMatrix.c",
+      "symbol": "GsSetLsMatrix"
+    }
+  ]
+}

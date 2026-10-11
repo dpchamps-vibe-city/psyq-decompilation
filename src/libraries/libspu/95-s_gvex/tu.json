@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3d384c02f50d9887_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetVoiceEnvelope.c",
+      "symbol": "SpuGetVoiceEnvelope"
+    }
+  ]
+}

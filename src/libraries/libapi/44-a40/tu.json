@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f6d989f4cd086248_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SwEnterCriticalSection.c",
+      "symbol": "SwEnterCriticalSection"
+    }
+  ]
+}

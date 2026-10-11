@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9f6c1bc0a9ed1203_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_remove_ChgclrPAD.c",
+      "symbol": "_remove_ChgclrPAD"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

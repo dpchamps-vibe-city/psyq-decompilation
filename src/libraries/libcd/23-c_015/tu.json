@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_95196b6337569b83_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StRingStatus.c",
+      "symbol": "StRingStatus"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1d56ee9c52f7792b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsGetLwUnit.c",
+      "symbol": "GsGetLwUnit"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6de14255f4599671_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "csin_1.c",
+      "symbol": "csin_1"
+    },
+    {
+      "path": "csin.c",
+      "symbol": "csin"
+    }
+  ]
+}

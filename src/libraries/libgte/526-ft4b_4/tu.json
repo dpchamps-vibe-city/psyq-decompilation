@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_13bd2dc7139e584f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDfastTF4LFGB.c",
+      "symbol": "GsTMDfastTF4LFGB"
+    }
+  ]
+}

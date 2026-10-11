@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_67122a02f9127eab_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SeAutoVol.c",
+      "symbol": "SeAutoVol"
+    },
+    {
+      "path": "SetAutoVol.c",
+      "symbol": "SetAutoVol"
+    }
+  ]
+}

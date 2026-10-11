@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6bc0dde42d6488de_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsPrstNF4.c",
+      "symbol": "GsPrstNF4"
+    }
+  ]
+}

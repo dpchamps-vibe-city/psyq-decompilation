@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_36ca7f1201f14932_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_get_error.c",
+      "symbol": "_get_error"
+    }
+  ]
+}

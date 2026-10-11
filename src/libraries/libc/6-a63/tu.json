@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d2bdbe092a757b47_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "puts.c",
+      "symbol": "puts"
+    }
+  ]
+}

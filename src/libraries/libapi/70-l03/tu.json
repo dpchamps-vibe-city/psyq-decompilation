@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f89676b72943d23f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SysDeqIntRP.c",
+      "symbol": "SysDeqIntRP"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0e9861b03e9d8d51_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsGetTimInfo.c",
+      "symbol": "GsGetTimInfo"
+    }
+  ]
+}

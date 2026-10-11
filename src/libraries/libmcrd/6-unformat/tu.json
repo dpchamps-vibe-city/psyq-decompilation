@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2d876541e1963a63_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MemCardUnformat.c",
+      "symbol": "MemCardUnformat"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

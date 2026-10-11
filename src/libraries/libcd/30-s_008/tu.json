@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7411831899bb1c17_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdFlush.c",
+      "symbol": "CdFlush"
+    }
+  ]
+}

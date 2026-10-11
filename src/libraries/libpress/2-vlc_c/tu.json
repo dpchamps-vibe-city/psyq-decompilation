@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1685ba7539f4e5f3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DecDCTvlcSize2.c",
+      "symbol": "DecDCTvlcSize2"
+    },
+    {
+      "path": "DecDCTvlc2.c",
+      "symbol": "DecDCTvlc2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

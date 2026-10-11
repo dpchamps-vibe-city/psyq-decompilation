@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_13a9d2731264305c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotMeshH.c",
+      "symbol": "RotMeshH"
+    }
+  ]
+}

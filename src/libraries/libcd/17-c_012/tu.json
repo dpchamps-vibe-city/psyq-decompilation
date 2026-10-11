@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_21d42e579d633d23_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StSetChannel.c",
+      "symbol": "StSetChannel"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

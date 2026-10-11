@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_81327fd90517a9ff_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "atan2.c",
+      "symbol": "atan2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

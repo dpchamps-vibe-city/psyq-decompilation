@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bb204c5fe58b0c66_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetIRQAddr.c",
+      "symbol": "SpuGetIRQAddr"
+    }
+  ]
+}

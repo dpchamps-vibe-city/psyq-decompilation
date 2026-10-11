@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fcb0c28a20e76491_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "acos.c",
+      "symbol": "acos"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

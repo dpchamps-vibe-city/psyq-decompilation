@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4f34e616bfe84f22_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PAD_init2.c",
+      "symbol": "PAD_init2"
+    }
+  ]
+}

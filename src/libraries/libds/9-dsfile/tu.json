@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_01dbccef3244c423_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsSearchFile.c",
+      "symbol": "DsSearchFile"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a3f357a0f158deca_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_padIsVsync.c",
+      "symbol": "_padIsVsync"
+    },
+    {
+      "path": "_padIntPad.c",
+      "symbol": "_padIntPad"
+    },
+    {
+      "path": "_padInitSioMode.c",
+      "symbol": "_padInitSioMode"
+    },
+    {
+      "path": "_padSioRW.c",
+      "symbol": "_padSioRW"
+    },
+    {
+      "path": "_padSioRW2.c",
+      "symbol": "_padSioRW2"
+    },
+    {
+      "path": "_padClrIntSio0.c",
+      "symbol": "_padClrIntSio0"
+    },
+    {
+      "path": "_padWaitRXready.c",
+      "symbol": "_padWaitRXready"
+    },
+    {
+      "path": "_padSetCmd.c",
+      "symbol": "_padSetCmd"
+    },
+    {
+      "path": "_padSendAtLoadInfo.c",
+      "symbol": "_padSendAtLoadInfo"
+    },
+    {
+      "path": "_padRecvAtLoadInfo.c",
+      "symbol": "_padRecvAtLoadInfo"
+    },
+    {
+      "path": "_padGetActSize.c",
+      "symbol": "_padGetActSize"
+    },
+    {
+      "path": "_padLoadActInfo.c",
+      "symbol": "_padLoadActInfo"
+    },
+    {
+      "path": "_padCmdParaMode.c",
+      "symbol": "_padCmdParaMode"
+    },
+    {
+      "path": "_padSetRC2wait.c",
+      "symbol": "_padSetRC2wait"
+    },
+    {
+      "path": "_padChkRC2wait.c",
+      "symbol": "_padChkRC2wait"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

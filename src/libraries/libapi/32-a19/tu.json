@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_249d23c916a7e6bf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StartPAD2.c",
+      "symbol": "StartPAD2"
+    }
+  ]
+}

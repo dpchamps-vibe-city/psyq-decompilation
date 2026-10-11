@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3bc1c1172246fe8e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetESA.c",
+      "symbol": "SpuSetESA"
+    }
+  ]
+}

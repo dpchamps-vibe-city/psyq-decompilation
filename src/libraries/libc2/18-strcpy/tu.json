@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5cfffaa9ca3e5b34_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strcpy.c",
+      "symbol": "strcpy"
+    }
+  ]
+}

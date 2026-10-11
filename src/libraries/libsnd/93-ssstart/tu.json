@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b77fc8c27e40e792_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsStart.c",
+      "symbol": "SsStart"
+    },
+    {
+      "path": "SsStart2.c",
+      "symbol": "SsStart2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

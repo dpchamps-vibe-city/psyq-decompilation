@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_630a6abc6bdae97a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetCommonCDReverb.c",
+      "symbol": "SpuGetCommonCDReverb"
+    }
+  ]
+}

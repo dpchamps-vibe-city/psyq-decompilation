@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0a80d902e875c54a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PushCallbackFunc.c",
+      "symbol": "PushCallbackFunc"
+    },
+    {
+      "path": "PullCallbackFunc.c",
+      "symbol": "PullCallbackFunc"
+    },
+    {
+      "path": "McrdGetGlobalStructure.c",
+      "symbol": "McrdGetGlobalStructure"
+    },
+    {
+      "path": "MemCardStart.c",
+      "symbol": "MemCardStart"
+    },
+    {
+      "path": "MemCardStop.c",
+      "symbol": "MemCardStop"
+    },
+    {
+      "path": "MemCardExist.c",
+      "symbol": "MemCardExist"
+    },
+    {
+      "path": "MemCardAccept.c",
+      "symbol": "MemCardAccept"
+    },
+    {
+      "path": "MemCardOpen.c",
+      "symbol": "MemCardOpen"
+    },
+    {
+      "path": "MemCardClose.c",
+      "symbol": "MemCardClose"
+    },
+    {
+      "path": "MemCardReadData.c",
+      "symbol": "MemCardReadData"
+    },
+    {
+      "path": "MemCardWriteData.c",
+      "symbol": "MemCardWriteData"
+    },
+    {
+      "path": "MemCardReadFile.c",
+      "symbol": "MemCardReadFile"
+    },
+    {
+      "path": "MemCardWriteFile.c",
+      "symbol": "MemCardWriteFile"
+    },
+    {
+      "path": "MemCardGetDirentry.c",
+      "symbol": "MemCardGetDirentry"
+    },
+    {
+      "path": "MemCardCallback.c",
+      "symbol": "MemCardCallback"
+    },
+    {
+      "path": "MemCardSync.c",
+      "symbol": "MemCardSync"
+    },
+    {
+      "path": "MemCardCreateFile.c",
+      "symbol": "MemCardCreateFile"
+    },
+    {
+      "path": "MemCardFormat.c",
+      "symbol": "MemCardFormat"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

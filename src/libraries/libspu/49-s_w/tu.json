@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_00f42c01d9569e3a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuWrite.c",
+      "symbol": "SpuWrite"
+    }
+  ]
+}

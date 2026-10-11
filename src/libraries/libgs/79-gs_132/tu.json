@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0dd02485c585135a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetView2.c",
+      "symbol": "GsSetView2"
+    }
+  ]
+}

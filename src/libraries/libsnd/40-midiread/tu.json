@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b536a6a949a5617f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSeqPlay.c",
+      "symbol": "_SsSeqPlay"
+    },
+    {
+      "path": "_SsSeqGetEof.c",
+      "symbol": "_SsSeqGetEof"
+    },
+    {
+      "path": "_SsGetSeqData.c",
+      "symbol": "_SsGetSeqData"
+    }
+  ]
+}

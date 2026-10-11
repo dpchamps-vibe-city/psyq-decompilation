@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0f8aa760c1ebd687_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GetTimSize.c",
+      "symbol": "GetTimSize"
+    }
+  ]
+}

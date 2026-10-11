@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5f678b4bdf40ea77_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotTransPers4_nom.c",
+      "symbol": "RotTransPers4_nom"
+    }
+  ]
+}

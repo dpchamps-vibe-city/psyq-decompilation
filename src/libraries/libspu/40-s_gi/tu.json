@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d2d9166c9f072015_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetIRQ.c",
+      "symbol": "SpuGetIRQ"
+    }
+  ]
+}

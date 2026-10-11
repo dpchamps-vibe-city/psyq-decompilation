@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e6f010b84c007644_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxSetMem.c",
+      "symbol": "McxSetMem"
+    }
+  ]
+}

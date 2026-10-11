@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_23ddf5fb97e90a69_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MatrixNormal_1.c",
+      "symbol": "MatrixNormal_1"
+    }
+  ]
+}

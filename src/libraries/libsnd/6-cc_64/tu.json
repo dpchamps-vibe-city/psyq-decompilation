@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_89bc8093e9ccff61_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsContDamper.c",
+      "symbol": "_SsContDamper"
+    }
+  ]
+}

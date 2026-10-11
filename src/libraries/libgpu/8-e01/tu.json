@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_761de4dfcbd1bbf7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "LoadClut.c",
+      "symbol": "LoadClut"
+    }
+  ]
+}

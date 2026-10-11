@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f37e65f86fcaba14_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CatPrim.c",
+      "symbol": "CatPrim"
+    }
+  ]
+}

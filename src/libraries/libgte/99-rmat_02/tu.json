@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4771879e2cc9fe13_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotMatrixYXZ_gte.c",
+      "symbol": "RotMatrixYXZ_gte"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a19c816175da6173_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtSetVagAtr.c",
+      "symbol": "SsUtSetVagAtr"
+    }
+  ]
+}

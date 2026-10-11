@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0f1675e503e91f4f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsLinkObject4.c",
+      "symbol": "GsLinkObject4"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

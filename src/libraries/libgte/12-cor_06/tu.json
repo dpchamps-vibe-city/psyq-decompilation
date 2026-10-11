@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bd863e3409ad46d7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "catan.c",
+      "symbol": "catan"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

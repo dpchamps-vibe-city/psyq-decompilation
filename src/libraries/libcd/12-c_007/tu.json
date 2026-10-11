@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_57f7dc685bb819a5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StFreeRing.c",
+      "symbol": "StFreeRing"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

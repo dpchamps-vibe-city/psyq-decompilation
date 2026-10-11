@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7b4135ea9796fe8b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_padInitMtapPort.c",
+      "symbol": "_padInitMtapPort"
+    },
+    {
+      "path": "_mtapFailAuto.c",
+      "symbol": "_mtapFailAuto"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c3105fdced92c4e1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsPrstNG3.c",
+      "symbol": "GsPrstNG3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bea0b1ac53b09b9f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DeliverEvent.c",
+      "symbol": "DeliverEvent"
+    }
+  ]
+}

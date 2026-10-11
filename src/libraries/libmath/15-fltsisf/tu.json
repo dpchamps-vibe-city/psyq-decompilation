@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_954a793d53fd47f2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__floatsisf.c",
+      "symbol": "__floatsisf"
+    }
+  ]
+}

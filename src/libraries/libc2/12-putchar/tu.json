@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c3818fe9e2f04977_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_putchar.c",
+      "symbol": "_putchar"
+    },
+    {
+      "path": "_putchar_flash.c",
+      "symbol": "_putchar_flash"
+    },
+    {
+      "path": "putchar.c",
+      "symbol": "putchar"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

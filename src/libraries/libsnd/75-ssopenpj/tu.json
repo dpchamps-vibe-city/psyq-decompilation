@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0c910b9b77406557_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSepOpenJ.c",
+      "symbol": "SsSepOpenJ"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

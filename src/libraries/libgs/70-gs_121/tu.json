@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_81b56ab6d399de8e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_init.c",
+      "symbol": "gte_init"
+    }
+  ]
+}

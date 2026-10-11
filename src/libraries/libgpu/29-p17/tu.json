@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_148d954150f79a66_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetPolyFT4.c",
+      "symbol": "SetPolyFT4"
+    }
+  ]
+}

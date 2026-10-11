@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_617da1591efbd634_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "log.c",
+      "symbol": "log"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_610ac7e55a124da8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsGetActualProgFromProg.c",
+      "symbol": "SsGetActualProgFromProg"
+    }
+  ]
+}

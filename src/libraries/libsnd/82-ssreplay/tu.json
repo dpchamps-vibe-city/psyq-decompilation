@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a05970edafb02330_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSndSetReplayMode.c",
+      "symbol": "_SsSndSetReplayMode"
+    },
+    {
+      "path": "SsSeqReplay.c",
+      "symbol": "SsSeqReplay"
+    },
+    {
+      "path": "SsSepReplay.c",
+      "symbol": "SsSepReplay"
+    }
+  ]
+}

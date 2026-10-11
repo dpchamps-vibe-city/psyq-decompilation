@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a7273ac836ef77cd_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsInitSoundSep.c",
+      "symbol": "_SsInitSoundSep"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

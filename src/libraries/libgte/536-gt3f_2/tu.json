@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8c6db43f976fdc6d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDfastTG3NL_FLIP.c",
+      "symbol": "GsTMDfastTG3NL_FLIP"
+    }
+  ]
+}

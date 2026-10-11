@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_04a376c51bd9d2d5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "atob.c",
+      "symbol": "atob"
+    }
+  ]
+}

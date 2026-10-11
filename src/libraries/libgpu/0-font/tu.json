@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_075047f8eb255969_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetDumpFnt.c",
+      "symbol": "SetDumpFnt"
+    },
+    {
+      "path": "FntLoad.c",
+      "symbol": "FntLoad"
+    },
+    {
+      "path": "FntOpen.c",
+      "symbol": "FntOpen"
+    },
+    {
+      "path": "FntFlush.c",
+      "symbol": "FntFlush"
+    },
+    {
+      "path": "FntPrint.c",
+      "symbol": "FntPrint"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

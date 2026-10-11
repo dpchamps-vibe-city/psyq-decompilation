@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2bdc9cc2754f4402_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "KanjiFntOpen.c",
+      "symbol": "KanjiFntOpen"
+    },
+    {
+      "path": "KanjiFntClose.c",
+      "symbol": "KanjiFntClose"
+    },
+    {
+      "path": "KanjiFntFlush.c",
+      "symbol": "KanjiFntFlush"
+    },
+    {
+      "path": "KanjiFntPrint.c",
+      "symbol": "KanjiFntPrint"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

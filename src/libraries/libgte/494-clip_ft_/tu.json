@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d66d446e8f6a82bf_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Clip4FTP.c",
+      "symbol": "Clip4FTP"
+    },
+    {
+      "path": "Clip4FT.c",
+      "symbol": "Clip4FT"
+    }
+  ]
+}

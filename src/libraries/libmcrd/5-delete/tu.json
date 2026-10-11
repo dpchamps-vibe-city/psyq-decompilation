@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c139061cdb34dcc3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "MemCardDeleteFile.c",
+      "symbol": "MemCardDeleteFile"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

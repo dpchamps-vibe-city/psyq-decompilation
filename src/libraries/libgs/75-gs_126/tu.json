@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c200436c335a5a20_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsCutOt.c",
+      "symbol": "GsCutOt"
+    }
+  ]
+}

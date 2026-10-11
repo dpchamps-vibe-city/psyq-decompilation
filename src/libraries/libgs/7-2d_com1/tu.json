@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a61060fec77e381a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_make_packet.c",
+      "symbol": "_make_packet"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

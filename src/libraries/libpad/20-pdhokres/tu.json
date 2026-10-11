@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c17f88069058fe71_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_padGunInitHook.c",
+      "symbol": "_padGunInitHook"
+    },
+    {
+      "path": "_padGunExitHook.c",
+      "symbol": "_padGunExitHook"
+    },
+    {
+      "path": "_padGetHitCount.c",
+      "symbol": "_padGetHitCount"
+    },
+    {
+      "path": "_padClrHitCount.c",
+      "symbol": "_padClrHitCount"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

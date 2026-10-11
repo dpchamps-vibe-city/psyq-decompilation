@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8aa7812b69617a05_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortFixBg16.c",
+      "symbol": "GsSortFixBg16"
+    }
+  ]
+}

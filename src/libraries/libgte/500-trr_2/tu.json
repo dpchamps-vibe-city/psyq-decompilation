@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9fb0471d7fab4aa8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "TransRotPers.c",
+      "symbol": "TransRotPers"
+    }
+  ]
+}

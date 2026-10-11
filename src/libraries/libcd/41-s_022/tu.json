@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e2606a30f996bc3d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdGetSector2.c",
+      "symbol": "CdGetSector2"
+    }
+  ]
+}

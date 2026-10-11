@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_cb5b8243d9301134_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetFlatLight.c",
+      "symbol": "GsSetFlatLight"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_19a94ee76e350978_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "PadSetMainMode.c",
+      "symbol": "PadSetMainMode"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a1629925a1dbffab_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "hankanjitrans.c",
+      "symbol": "hankanjitrans"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1bb658a4345ab8c3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__mulsf3.c",
+      "symbol": "__mulsf3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a08c1d1242fc2931_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDfastTG4L.c",
+      "symbol": "GsTMDfastTG4L"
+    }
+  ]
+}

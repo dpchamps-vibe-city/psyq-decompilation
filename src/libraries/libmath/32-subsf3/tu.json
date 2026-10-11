@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7ddc29a0908cce89_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__subsf3.c",
+      "symbol": "__subsf3"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7dbae19f15e59b22_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_spu_print.c",
+      "symbol": "_spu_print"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

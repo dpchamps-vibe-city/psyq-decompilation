@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_937b53994b24dff4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsSetControlChange.c",
+      "symbol": "_SsSetControlChange"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4766283db5960ac6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "getchar.c",
+      "symbol": "getchar"
+    }
+  ]
+}

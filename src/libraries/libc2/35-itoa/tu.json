@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4177d352b10a704b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "itoa.c",
+      "symbol": "itoa"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

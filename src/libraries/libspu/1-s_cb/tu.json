@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_aac5b6576be6ab3c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SpuCallback.c",
+      "symbol": "_SpuCallback"
+    }
+  ]
+}

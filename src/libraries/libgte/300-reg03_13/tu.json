@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_305f138ca9f78e77_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetData32.c",
+      "symbol": "SetData32"
+    }
+  ]
+}

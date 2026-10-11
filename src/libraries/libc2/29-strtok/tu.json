@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_13483b10fd096166_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strtok.c",
+      "symbol": "strtok"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

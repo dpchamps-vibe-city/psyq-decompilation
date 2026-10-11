@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ecd92534f52564ce_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetNoiseVoice.c",
+      "symbol": "SpuGetNoiseVoice"
+    }
+  ]
+}

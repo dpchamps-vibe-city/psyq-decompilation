@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2c90443875239758_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsStartReadySystem.c",
+      "symbol": "DsStartReadySystem"
+    },
+    {
+      "path": "DsEndReadySystem.c",
+      "symbol": "DsEndReadySystem"
+    },
+    {
+      "path": "DsReadySystemMode.c",
+      "symbol": "DsReadySystemMode"
+    },
+    {
+      "path": "ER_active.c",
+      "symbol": "ER_active"
+    },
+    {
+      "path": "ER_clear.c",
+      "symbol": "ER_clear"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

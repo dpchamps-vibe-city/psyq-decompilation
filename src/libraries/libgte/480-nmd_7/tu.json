@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_73e04db097c29498_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotNMD_FT4.c",
+      "symbol": "RotNMD_FT4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a1161df64383f3b2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strtol.c",
+      "symbol": "strtol"
+    }
+  ]
+}

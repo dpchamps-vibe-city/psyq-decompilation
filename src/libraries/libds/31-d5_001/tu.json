@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a877de353b549f5c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsIntstr.c",
+      "symbol": "DsIntstr"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

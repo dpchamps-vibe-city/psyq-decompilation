@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a6ab55221f5ff6e2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdGetToc.c",
+      "symbol": "CdGetToc"
+    },
+    {
+      "path": "CdGetToc2.c",
+      "symbol": "CdGetToc2"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

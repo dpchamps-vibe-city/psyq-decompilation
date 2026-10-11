@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_060571dd1d8a0ee3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetTile1.c",
+      "symbol": "SetTile1"
+    }
+  ]
+}

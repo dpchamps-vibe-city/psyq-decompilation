@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_09ba3349a3299639_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsNoteOn.c",
+      "symbol": "dmy_SsNoteOn"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

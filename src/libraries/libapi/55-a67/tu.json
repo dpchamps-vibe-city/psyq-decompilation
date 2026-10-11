@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_65602c19fad7a5c1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "nextfile.c",
+      "symbol": "nextfile"
+    }
+  ]
+}

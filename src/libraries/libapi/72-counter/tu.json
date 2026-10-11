@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f5b70e00e12530c5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetRCnt.c",
+      "symbol": "SetRCnt"
+    },
+    {
+      "path": "GetRCnt.c",
+      "symbol": "GetRCnt"
+    },
+    {
+      "path": "StartRCnt.c",
+      "symbol": "StartRCnt"
+    },
+    {
+      "path": "StopRCnt.c",
+      "symbol": "StopRCnt"
+    },
+    {
+      "path": "ResetRCnt.c",
+      "symbol": "ResetRCnt"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

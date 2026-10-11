@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_48caa9ace7c90cef_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__gesf2.c",
+      "symbol": "__gesf2"
+    }
+  ]
+}

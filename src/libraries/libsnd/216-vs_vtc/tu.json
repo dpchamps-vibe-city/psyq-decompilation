@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d2022acbac8a9659_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsVabTransCompleted.c",
+      "symbol": "SsVabTransCompleted"
+    }
+  ]
+}

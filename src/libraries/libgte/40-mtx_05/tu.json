@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_37547a9faa3d1b1b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ApplyMatrix.c",
+      "symbol": "ApplyMatrix"
+    }
+  ]
+}

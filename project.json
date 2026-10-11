@@ -27,7 +27,7 @@
   },
   "output": {
     "sourceDir": "src/libraries",
-    "sourceLayout": "grouped",
+    "sourceLayout": "tu-directory",
     "inputRoot": "library-input/redux"
   },
   "memberProfiles": {}

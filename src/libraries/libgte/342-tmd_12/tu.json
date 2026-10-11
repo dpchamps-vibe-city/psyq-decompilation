@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b65fe05d6deb5578_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_texture_gouraud_fog3.c",
+      "symbol": "gte_texture_gouraud_fog3"
+    }
+  ]
+}

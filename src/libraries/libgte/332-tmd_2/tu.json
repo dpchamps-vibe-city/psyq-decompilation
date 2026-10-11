@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3f973150da3ddd73_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_scope_tf3.c",
+      "symbol": "gte_scope_tf3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3400c6b373c75a71_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "OpenTh.c",
+      "symbol": "OpenTh"
+    }
+  ]
+}

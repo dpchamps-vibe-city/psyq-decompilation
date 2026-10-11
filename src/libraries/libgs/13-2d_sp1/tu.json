@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_809d9716fad85b6c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortFastSprite.c",
+      "symbol": "GsSortFastSprite"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_13e6b223116a0406_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__negdi2.c",
+      "symbol": "__negdi2"
+    }
+  ]
+}

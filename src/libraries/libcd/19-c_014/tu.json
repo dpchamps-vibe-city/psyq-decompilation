@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6f2a9f5a5b9406c7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StNextStatus.c",
+      "symbol": "StNextStatus"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

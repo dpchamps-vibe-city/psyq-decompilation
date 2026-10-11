@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4e4f6f0b554d1b4d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsDefDispBuff.c",
+      "symbol": "GsDefDispBuff"
+    }
+  ]
+}

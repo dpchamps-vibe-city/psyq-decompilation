@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d798b3dc1379a119_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsLastCom.c",
+      "symbol": "DsLastCom"
+    }
+  ]
+}

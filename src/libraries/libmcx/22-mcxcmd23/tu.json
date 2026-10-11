@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d33b7cb7d57eb547_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxCardType.c",
+      "symbol": "McxCardType"
+    },
+    {
+      "path": "McxGetMcxInfo.c",
+      "symbol": "McxGetMcxInfo"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5102bc11cd89d257_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ReadSZfifo4.c",
+      "symbol": "ReadSZfifo4"
+    }
+  ]
+}

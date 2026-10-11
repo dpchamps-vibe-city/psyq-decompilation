@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8fa527352017d3be_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsSetControlChange.c",
+      "symbol": "dmy_SsSetControlChange"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

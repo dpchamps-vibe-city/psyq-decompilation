@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_22cf44ab082e7eb6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "memcmp.c",
+      "symbol": "memcmp"
+    }
+  ]
+}

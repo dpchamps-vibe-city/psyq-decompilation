@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fbc4033c901d25a3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContRpn1.c",
+      "symbol": "dmy_SsContRpn1"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

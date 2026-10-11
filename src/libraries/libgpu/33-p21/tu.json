@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f63e993f6dc140da_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetSprt16.c",
+      "symbol": "SetSprt16"
+    }
+  ]
+}

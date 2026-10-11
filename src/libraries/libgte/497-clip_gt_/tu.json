@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8cdd9691f4e04ca5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Clip4GTP.c",
+      "symbol": "Clip4GTP"
+    },
+    {
+      "path": "Clip4GT.c",
+      "symbol": "Clip4GT"
+    }
+  ]
+}

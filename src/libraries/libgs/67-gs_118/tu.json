@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_589197762c41407a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gte_rotate_y_matrix.c",
+      "symbol": "gte_rotate_y_matrix"
+    }
+  ]
+}

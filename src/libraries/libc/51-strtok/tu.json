@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_dc101a825c1340c8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strtok.c",
+      "symbol": "strtok"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

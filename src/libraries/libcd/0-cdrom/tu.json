@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4139d06d480dfbe6_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StSetRing.c",
+      "symbol": "StSetRing"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

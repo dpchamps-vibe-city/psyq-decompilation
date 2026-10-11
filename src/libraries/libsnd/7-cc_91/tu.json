@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_159b8195d789b376_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_SsContExternal.c",
+      "symbol": "_SsContExternal"
+    }
+  ]
+}

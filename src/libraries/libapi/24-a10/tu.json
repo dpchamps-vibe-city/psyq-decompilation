@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5f27de881972c7fc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "WaitEvent.c",
+      "symbol": "WaitEvent"
+    }
+  ]
+}

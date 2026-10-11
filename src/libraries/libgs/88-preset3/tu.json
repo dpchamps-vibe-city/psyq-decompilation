@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_269f4a1bac422e89_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortObject5J.c",
+      "symbol": "GsSortObject5J"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

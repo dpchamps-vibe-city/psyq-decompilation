@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6855a805b5dc3a70_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsSetNrpnVabAttr8.c",
+      "symbol": "dmy_SsSetNrpnVabAttr8"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

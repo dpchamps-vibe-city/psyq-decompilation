@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2a713d4fb70172a9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuRGetAllKeysStatus.c",
+      "symbol": "SpuRGetAllKeysStatus"
+    },
+    {
+      "path": "SpuGetAllKeysStatus.c",
+      "symbol": "SpuGetAllKeysStatus"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_349458f652f40019_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GetCr.c",
+      "symbol": "GetCr"
+    }
+  ]
+}

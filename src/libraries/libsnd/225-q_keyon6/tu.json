@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fe51d056b73a9b86_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsVoiceCheck.c",
+      "symbol": "SsVoiceCheck"
+    }
+  ]
+}

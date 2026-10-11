@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_2ef4686ceb3761ea_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DelCOMB.c",
+      "symbol": "DelCOMB"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

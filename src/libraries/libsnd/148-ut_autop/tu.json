@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f8ec5b883e376bdb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtAutoPan.c",
+      "symbol": "SsUtAutoPan"
+    }
+  ]
+}

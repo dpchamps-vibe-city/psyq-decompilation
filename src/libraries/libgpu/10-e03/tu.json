@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a3953b6c71216ca4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetDefDrawEnv.c",
+      "symbol": "SetDefDrawEnv"
+    }
+  ]
+}

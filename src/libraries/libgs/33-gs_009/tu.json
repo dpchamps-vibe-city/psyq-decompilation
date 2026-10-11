@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3524805616a4c8a7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsClearVcount.c",
+      "symbol": "GsClearVcount"
+    }
+  ]
+}

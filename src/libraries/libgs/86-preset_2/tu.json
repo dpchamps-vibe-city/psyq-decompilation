@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3be02f0e1dfe1bc5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsPresetObject.c",
+      "symbol": "GsPresetObject"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

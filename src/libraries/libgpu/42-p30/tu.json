@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8e0c86b80f6b4510_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetLineG3.c",
+      "symbol": "SetLineG3"
+    }
+  ]
+}

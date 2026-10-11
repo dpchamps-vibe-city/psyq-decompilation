@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d206f0432e2e8e93_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "VSync.c",
+      "symbol": "VSync"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

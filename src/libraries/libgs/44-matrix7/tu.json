@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3a37e30a0a6147bb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsMulCoord0.c",
+      "symbol": "GsMulCoord0"
+    }
+  ]
+}

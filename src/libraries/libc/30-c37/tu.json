@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_bb1114ce3b9743fa_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "toupper.c",
+      "symbol": "toupper"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_77227a6f2529cec1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxReadDev.c",
+      "symbol": "McxReadDev"
+    }
+  ]
+}

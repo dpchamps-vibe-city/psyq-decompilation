@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_29a607627cb8e095_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__fixunssfdi.c",
+      "symbol": "__fixunssfdi"
+    }
+  ]
+}

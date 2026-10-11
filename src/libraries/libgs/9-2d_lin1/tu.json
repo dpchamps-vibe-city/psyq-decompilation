@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_465cae8ce816553f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSortGLine.c",
+      "symbol": "GsSortGLine"
+    }
+  ]
+}

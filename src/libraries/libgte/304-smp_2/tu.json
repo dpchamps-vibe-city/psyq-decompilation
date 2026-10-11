@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_077ea1b99e6758fc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DpqColor.c",
+      "symbol": "DpqColor"
+    }
+  ]
+}

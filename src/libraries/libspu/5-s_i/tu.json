@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c788825672336f73_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuInit.c",
+      "symbol": "SpuInit"
+    }
+  ]
+}

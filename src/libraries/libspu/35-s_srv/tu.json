@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_64cdf0c14929a432_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetReverbVoice.c",
+      "symbol": "SpuSetReverbVoice"
+    }
+  ]
+}

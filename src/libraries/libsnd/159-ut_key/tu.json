@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4b323b4e651a5d56_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtKeyOn.c",
+      "symbol": "SsUtKeyOn"
+    },
+    {
+      "path": "SsUtKeyOff.c",
+      "symbol": "SsUtKeyOff"
+    }
+  ]
+}

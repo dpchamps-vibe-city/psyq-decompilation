@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e11bb7444e1c1588_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotNMD_SV_FT3.c",
+      "symbol": "RotNMD_SV_FT3"
+    }
+  ]
+}

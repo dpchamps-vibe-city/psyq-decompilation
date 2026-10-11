@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e18beae334248dab_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsInitRstVtxMIMe.c",
+      "symbol": "GsInitRstVtxMIMe"
+    },
+    {
+      "path": "GsInitRstNrmMIMe.c",
+      "symbol": "GsInitRstNrmMIMe"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4d5b2e3cc4fc9947_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSeqCalledTbyT.c",
+      "symbol": "SsSeqCalledTbyT"
+    }
+  ]
+}

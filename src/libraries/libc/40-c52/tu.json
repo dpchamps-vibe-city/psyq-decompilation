@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_624ce68ab31130d2_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "free.c",
+      "symbol": "free"
+    }
+  ]
+}

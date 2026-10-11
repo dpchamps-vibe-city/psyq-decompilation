@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a488d3c9a5b65a68_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetTableSize.c",
+      "symbol": "SsSetTableSize"
+    }
+  ]
+}

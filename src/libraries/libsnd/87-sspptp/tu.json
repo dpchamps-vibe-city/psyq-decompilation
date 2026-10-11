@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e9977d510f90cb7b_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSeqPlayPtoP.c",
+      "symbol": "SsSeqPlayPtoP"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

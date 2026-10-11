@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3e48a06d295b88f8_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsSetDebug.c",
+      "symbol": "DsSetDebug"
+    }
+  ]
+}

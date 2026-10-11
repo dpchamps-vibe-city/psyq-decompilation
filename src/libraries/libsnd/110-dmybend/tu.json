@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_45db644e82908a62_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsSetPitchBend.c",
+      "symbol": "dmy_SsSetPitchBend"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

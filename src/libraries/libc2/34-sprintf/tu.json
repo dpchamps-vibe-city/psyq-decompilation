@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_44f881123df2c306_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "sprintf.c",
+      "symbol": "sprintf"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

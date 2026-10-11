@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_036817d95f91fe34_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetKeyStatus.c",
+      "symbol": "SpuGetKeyStatus"
+    }
+  ]
+}

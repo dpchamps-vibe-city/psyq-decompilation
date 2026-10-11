@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_542b0bbafd0034d3_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__dummy.c",
+      "symbol": "__dummy"
+    }
+  ]
+}

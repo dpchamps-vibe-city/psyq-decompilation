@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_aaf10fd25fdc34ee_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__builtin_vec_new.c",
+      "symbol": "__builtin_vec_new"
+    }
+  ]
+}

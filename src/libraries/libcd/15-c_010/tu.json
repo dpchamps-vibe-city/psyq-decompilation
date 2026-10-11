@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_682ba4d410cb273d_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StSetMask.c",
+      "symbol": "StSetMask"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

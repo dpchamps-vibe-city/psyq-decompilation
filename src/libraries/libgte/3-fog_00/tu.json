@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c360da69c55deb52_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetFogFar.c",
+      "symbol": "SetFogFar"
+    }
+  ]
+}

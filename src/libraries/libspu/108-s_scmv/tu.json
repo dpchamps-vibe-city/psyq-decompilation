@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_8b69df2115e323a0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetCommonMasterVolume.c",
+      "symbol": "SpuSetCommonMasterVolume"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a79c9a5dfcc39277_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsInitFixBg32.c",
+      "symbol": "GsInitFixBg32"
+    }
+  ]
+}

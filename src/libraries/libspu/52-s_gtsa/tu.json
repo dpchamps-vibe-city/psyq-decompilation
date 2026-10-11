@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_35b5022272f9bbf5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetTransferStartAddr.c",
+      "symbol": "SpuGetTransferStartAddr"
+    }
+  ]
+}

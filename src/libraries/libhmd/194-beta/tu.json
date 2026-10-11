@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_74c5ccbd75a8bf72_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "setBetaCof.c",
+      "symbol": "setBetaCof"
+    }
+  ]
+}

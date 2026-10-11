@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_189a0217de794003_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetSprt8.c",
+      "symbol": "SetSprt8"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9b2f5a2604092674_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StSetEmulate.c",
+      "symbol": "StSetEmulate"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

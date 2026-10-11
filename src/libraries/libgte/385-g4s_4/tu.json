@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_fecc121152eab060_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsTMDfastG4LFGD.c",
+      "symbol": "GsTMDfastG4LFGD"
+    }
+  ]
+}

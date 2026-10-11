@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_31ec0be783c2edc9_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsMapModelingData.c",
+      "symbol": "GsMapModelingData"
+    }
+  ]
+}

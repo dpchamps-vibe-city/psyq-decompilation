@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6f7b502006b1cda5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetPolyGT4.c",
+      "symbol": "SetPolyGT4"
+    }
+  ]
+}

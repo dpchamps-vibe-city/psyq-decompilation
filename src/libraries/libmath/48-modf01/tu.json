@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a6f12cb4bbe400cb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "fmod.c",
+      "symbol": "fmod"
+    }
+  ]
+}

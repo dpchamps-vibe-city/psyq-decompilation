@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_09d95e0c92776166_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdSetDebug.c",
+      "symbol": "CdSetDebug"
+    }
+  ]
+}

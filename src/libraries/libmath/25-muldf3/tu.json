@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ab36079e76800bd5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "__muldf3.c",
+      "symbol": "__muldf3"
+    },
+    {
+      "path": "_mul_mant_d.c",
+      "symbol": "_mul_mant_d"
+    }
+  ]
+}

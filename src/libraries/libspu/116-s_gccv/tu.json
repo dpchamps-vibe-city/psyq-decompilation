@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5c187144cb70b2cd_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetCommonCDVolume.c",
+      "symbol": "SpuGetCommonCDVolume"
+    }
+  ]
+}

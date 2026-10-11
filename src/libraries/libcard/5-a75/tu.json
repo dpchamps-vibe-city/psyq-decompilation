@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_32b448641673aadb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StartCARD2.c",
+      "symbol": "StartCARD2"
+    }
+  ]
+}

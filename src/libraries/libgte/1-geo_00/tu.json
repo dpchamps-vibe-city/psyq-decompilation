@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_ae2dfb524b14c5ec_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "rsin.c",
+      "symbol": "rsin"
+    },
+    {
+      "path": "sin_1.c",
+      "symbol": "sin_1"
+    }
+  ]
+}

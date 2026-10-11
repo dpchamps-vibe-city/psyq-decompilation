@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_f6b6353b18b3814a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetNoiseClock.c",
+      "symbol": "SpuGetNoiseClock"
+    }
+  ]
+}

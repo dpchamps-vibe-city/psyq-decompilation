@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9c6073fa1efec462_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "bufs_cb_1.c",
+      "symbol": "bufs_cb_1"
+    }
+  ]
+}

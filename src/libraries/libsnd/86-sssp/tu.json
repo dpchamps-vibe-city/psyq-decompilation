@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d45a80629058ffb7_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSetCurrentPoint.c",
+      "symbol": "SsSetCurrentPoint"
+    }
+  ]
+}

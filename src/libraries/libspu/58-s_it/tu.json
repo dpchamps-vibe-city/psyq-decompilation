@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b10ef9bfc233ef62_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_spu_setInTransfer.c",
+      "symbol": "_spu_setInTransfer"
+    },
+    {
+      "path": "_spu_getInTransfer.c",
+      "symbol": "_spu_getInTransfer"
+    }
+  ]
+}

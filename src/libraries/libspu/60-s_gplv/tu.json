@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_10751ee88fc02919_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuGetPitchLFOVoice.c",
+      "symbol": "SpuGetPitchLFOVoice"
+    }
+  ]
+}

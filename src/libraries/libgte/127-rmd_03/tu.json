@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_a7bc5d9be989e039_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotRMD_GT3.c",
+      "symbol": "RotRMD_GT3"
+    }
+  ]
+}

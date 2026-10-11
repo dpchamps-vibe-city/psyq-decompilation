@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6892f0f57154771a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RotAverageNclip3_1.c",
+      "symbol": "RotAverageNclip3_1"
+    }
+  ]
+}

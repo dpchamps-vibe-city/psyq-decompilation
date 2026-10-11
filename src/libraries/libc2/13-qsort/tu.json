@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_0406d2805f41de09_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "qsort.c",
+      "symbol": "qsort"
+    }
+  ]
+}

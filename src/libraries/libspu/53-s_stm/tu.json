@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b1e024bba694a061_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuSetTransferMode.c",
+      "symbol": "SpuSetTransferMode"
+    }
+  ]
+}

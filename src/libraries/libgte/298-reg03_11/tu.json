@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_aee6e26b81715727_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SetRii.c",
+      "symbol": "SetRii"
+    }
+  ]
+}

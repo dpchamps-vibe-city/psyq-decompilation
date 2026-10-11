@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c2d1d39e4be0cc5c_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DsComstr.c",
+      "symbol": "DsComstr"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

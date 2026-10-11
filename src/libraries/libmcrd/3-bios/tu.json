@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5123119bcc314526_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "funcEvSpIOE.c",
+      "symbol": "funcEvSpIOE"
+    },
+    {
+      "path": "funcEvSpError.c",
+      "symbol": "funcEvSpError"
+    },
+    {
+      "path": "funcEvSpTimeout.c",
+      "symbol": "funcEvSpTimeout"
+    },
+    {
+      "path": "funcEvSpNewcard.c",
+      "symbol": "funcEvSpNewcard"
+    },
+    {
+      "path": "funcEvSpIOEx.c",
+      "symbol": "funcEvSpIOEx"
+    },
+    {
+      "path": "funcEvSpErrorx.c",
+      "symbol": "funcEvSpErrorx"
+    },
+    {
+      "path": "funcEvSpTimeoutx.c",
+      "symbol": "funcEvSpTimeoutx"
+    },
+    {
+      "path": "funcEvSpNewcardx.c",
+      "symbol": "funcEvSpNewcardx"
+    },
+    {
+      "path": "_card_open.c",
+      "symbol": "_card_open"
+    },
+    {
+      "path": "_card_start.c",
+      "symbol": "_card_start"
+    },
+    {
+      "path": "_card_close.c",
+      "symbol": "_card_close"
+    },
+    {
+      "path": "_card_stop.c",
+      "symbol": "_card_stop"
+    },
+    {
+      "path": "_clr_card_event.c",
+      "symbol": "_clr_card_event"
+    },
+    {
+      "path": "_get_card_event.c",
+      "symbol": "_get_card_event"
+    },
+    {
+      "path": "_get_card_event_x.c",
+      "symbol": "_get_card_event_x"
+    },
+    {
+      "path": "_chk_card_event.c",
+      "symbol": "_chk_card_event"
+    },
+    {
+      "path": "_chk_card_event_x.c",
+      "symbol": "_chk_card_event_x"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e1e7b0f3feb9249f_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuMalloc.c",
+      "symbol": "SpuMalloc"
+    }
+  ]
+}

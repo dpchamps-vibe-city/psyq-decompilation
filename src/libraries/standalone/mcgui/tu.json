@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_833a9435c1088afc_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "AdjustSprtData.c",
+      "symbol": "AdjustSprtData"
+    },
+    {
+      "path": "SsVabTransfer.c",
+      "symbol": "SsVabTransfer"
+    },
+    {
+      "path": "voice_key_on2.c",
+      "symbol": "voice_key_on2"
+    },
+    {
+      "path": "_make_bg_sprt.c",
+      "symbol": "_make_bg_sprt"
+    },
+    {
+      "path": "UsGetTotalWidth.c",
+      "symbol": "UsGetTotalWidth"
+    },
+    {
+      "path": "UsGetTotalWidth2.c",
+      "symbol": "UsGetTotalWidth2"
+    },
+    {
+      "path": "IsMcguiExternal.c",
+      "symbol": "IsMcguiExternal"
+    },
+    {
+      "path": "McGuiSave.c",
+      "symbol": "McGuiSave"
+    },
+    {
+      "path": "McGuiLoad.c",
+      "symbol": "McGuiLoad"
+    },
+    {
+      "path": "_McGuiSetExternalFont.c",
+      "symbol": "_McGuiSetExternalFont"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

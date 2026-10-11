@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1ec7db44715a9114_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Krom2Tim.c",
+      "symbol": "Krom2Tim"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

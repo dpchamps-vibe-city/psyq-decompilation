@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_7ca17795e47a0010_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "McxSetUIFS.c",
+      "symbol": "McxSetUIFS"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

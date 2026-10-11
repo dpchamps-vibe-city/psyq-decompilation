@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5b4b172090dc1fe0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsContBankChange.c",
+      "symbol": "dmy_SsContBankChange"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

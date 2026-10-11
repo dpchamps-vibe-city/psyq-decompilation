@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_b22f29afb70eac18_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SeAutoPan.c",
+      "symbol": "SeAutoPan"
+    },
+    {
+      "path": "SetAutoPan.c",
+      "symbol": "SetAutoPan"
+    }
+  ]
+}

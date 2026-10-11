@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_e539decf5110548a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "GsSetFarClip.c",
+      "symbol": "GsSetFarClip"
+    }
+  ]
+}

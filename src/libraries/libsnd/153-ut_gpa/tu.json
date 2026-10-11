@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_c879aaa15f64f7c1_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsUtGetProgAtr.c",
+      "symbol": "SsUtGetProgAtr"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_4d4044e7fe2bc59e_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ChangeTh.c",
+      "symbol": "ChangeTh"
+    }
+  ]
+}

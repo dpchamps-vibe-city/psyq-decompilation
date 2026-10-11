@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6efc13198f81e611_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "RCpolyGT3.c",
+      "symbol": "RCpolyGT3"
+    },
+    {
+      "path": "RCpolyGT3A.c",
+      "symbol": "RCpolyGT3A"
+    }
+  ]
+}

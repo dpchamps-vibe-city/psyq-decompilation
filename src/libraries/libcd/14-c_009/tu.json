@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1e13b480fee597ca_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "StGetNext.c",
+      "symbol": "StGetNext"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

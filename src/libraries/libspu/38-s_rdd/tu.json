@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_5ced2bfe18d32163_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SpuReadDecodedData.c",
+      "symbol": "SpuReadDecodedData"
+    }
+  ]
+}

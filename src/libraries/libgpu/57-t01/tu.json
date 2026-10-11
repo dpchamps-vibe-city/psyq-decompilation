@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_dbf10dc43f27a014_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "OpenTMD.c",
+      "symbol": "OpenTMD"
+    },
+    {
+      "path": "ReadTMD.c",
+      "symbol": "ReadTMD"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

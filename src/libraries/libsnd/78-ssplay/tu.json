@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3ec15649e44a173a_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSeqPlay.c",
+      "symbol": "SsSeqPlay"
+    }
+  ]
+}

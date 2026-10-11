@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_26e2e3173c6fd7ed_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Clip3GTP.c",
+      "symbol": "Clip3GTP"
+    },
+    {
+      "path": "Clip3GT.c",
+      "symbol": "Clip3GT"
+    }
+  ]
+}

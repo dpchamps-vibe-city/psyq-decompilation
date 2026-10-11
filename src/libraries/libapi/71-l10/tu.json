@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1403e340f066dee5_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ChangeClearRCnt.c",
+      "symbol": "ChangeClearRCnt"
+    }
+  ]
+}

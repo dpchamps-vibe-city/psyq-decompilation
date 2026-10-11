@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_9e2e7f2169214720_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "strcspn.c",
+      "symbol": "strcspn"
+    }
+  ]
+}

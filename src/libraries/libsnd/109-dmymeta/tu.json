@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_6b5ce955d6529c90_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "dmy_SsGetMetaEvent.c",
+      "symbol": "dmy_SsGetMetaEvent"
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
+    }
+  ]
+}

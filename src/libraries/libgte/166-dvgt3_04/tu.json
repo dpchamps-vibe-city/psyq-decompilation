@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_37e842e19995d5d4_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "DivideGT3.c",
+      "symbol": "DivideGT3"
+    }
+  ]
+}

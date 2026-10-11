@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_36ef129fc05efb58_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "index.c",
+      "symbol": "index"
+    },
+    {
+      "path": "rindex.c",
+      "symbol": "rindex"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_d54eaa3c6fb04732_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "SsSeqClose.c",
+      "symbol": "SsSeqClose"
+    },
+    {
+      "path": "SsSepClose.c",
+      "symbol": "SsSepClose"
+    }
+  ]
+}

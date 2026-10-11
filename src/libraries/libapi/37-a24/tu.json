@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_3da76e1921dcbfe0_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "ResetEntryInt.c",
+      "symbol": "ResetEntryInt"
+    }
+  ]
+}

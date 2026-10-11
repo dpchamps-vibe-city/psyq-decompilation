@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1df9447c6ae1d339_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "CdReadMode.c",
+      "symbol": "CdReadMode"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_1ca83601c3252cfb_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "Clip3FP.c",
+      "symbol": "Clip3FP"
+    }
+  ]
+}

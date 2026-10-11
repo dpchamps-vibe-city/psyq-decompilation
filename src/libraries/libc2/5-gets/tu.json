@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "member": "lib_24aa349d68140413_0",
+  "parts": [
+    {
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "gets.c",
+      "symbol": "gets"
+    }
+  ]
+}
