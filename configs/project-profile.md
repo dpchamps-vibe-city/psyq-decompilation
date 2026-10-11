@@ -23,9 +23,9 @@ configuration, then regenerate this file.
 
 ## Toolchain
 
-- **Configured compiler:** gcc 2.95.2 (`cc1`) — byte-identity NOT confirmed at generation time (generate a fresh owning-TU verdict with the normal diff/finalization tools)
-- **Flags:** `-O2 -G8 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mgas -fgnu-linker -quiet`
-- **Small-data threshold:** `-G8` — a global can be reached GP-relatively (single `lw/sw %gp_rel(sym)($gp)`) only if it is declared **8 bytes or smaller**, *and* the file **defines** it (a tentative definition, so cc1 emits `.comm`). A file that only declares it `extern` gets absolute addressing (`lui` + `lw/sw %lo(sym)`) whatever the size. Never enlarge a declaration to force absolute addressing; derive ownership from the target's sections and symbols
+- **Configured compiler:** gcc 2.7.2 (`cc1`) — byte-identity NOT confirmed at generation time (generate a fresh owning-TU verdict with the normal diff/finalization tools)
+- **Flags:** `-O2 -G0 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mgas -fgnu-linker -quiet`
+- **Small-data threshold:** `-G0` — a global can be reached GP-relatively (single `lw/sw %gp_rel(sym)($gp)`) only if it is declared **0 bytes or smaller**, *and* the file **defines** it (a tentative definition, so cc1 emits `.comm`). A file that only declares it `extern` gets absolute addressing (`lui` + `lw/sw %lo(sym)`) whatever the size. Never enlarge a declaration to force absolute addressing; derive ownership from the target's sections and symbols
 - **Assembler semantics:** ASPSX 2.80 via maspsx (`tools/vendor/maspsx`) — emulates macro expansion and relocation behavior; unlike cc1, byte identity with real ASPSX is not established for every input
 - **SDK:** configured SDK 470; reference headers are evidence, not compiler identity
 - **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: none

@@ -4,6 +4,8 @@
  * Functions: SpuGetTransferStartAddr
  */
 #include "common.h"
-#include "include_asm.h"
+#include "library/libspu_internal.h"
 
-INCLUDE_ASM("build/libraries/nonmatchings/lib_35b5022272f9bbf5_0", SpuGetTransferStartAddr);
+unsigned long SpuGetTransferStartAddr(void) {
+    return (unsigned long)_spu_tsa << _spu_mem_mode_plus;
+}
