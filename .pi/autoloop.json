@@ -20,6 +20,8 @@
   "sourcePolicy": {
     "allowEmptyMemoryBarrier": true,
     "allowStackPointerSwitch": true,
+    "allowBiosSyscallMacro": true,
+    "allowBiosTailJumpMacro": true,
     "allowlist": {}
   }
 }
