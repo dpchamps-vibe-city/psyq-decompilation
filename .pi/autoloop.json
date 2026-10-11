@@ -1,4 +1,13 @@
 {
+  "ladder": [
+    {
+      "provider": "qwen36-llama",
+      "model": "qwen3.8-27b",
+      "thinking": "medium",
+      "label": "qwen3.8-27b (local)",
+      "checkpointAtTokens": 350000
+    }
+  ],
   "commitOnMatch": false,
   "commitOnPark": false,
   "runtimeDir": "run_output/autoloop",
@@ -11,8 +20,6 @@
   "sourcePolicy": {
     "allowEmptyMemoryBarrier": true,
     "allowStackPointerSwitch": true,
-    "allowBiosSyscallMacro": true,
-    "allowBiosTailJumpMacro": true,
     "allowlist": {}
   }
 }

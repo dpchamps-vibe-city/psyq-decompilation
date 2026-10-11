@@ -3,7 +3,10 @@
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: InitHeap
  */
-#include "common.h"
-#include "include_asm.h"
+#include "library/psx_bios_tailjump.h"
 
-INCLUDE_ASM("build/libraries/nonmatchings/lib_6f830259724bafe6_0", InitHeap);
+PSX_BIOS_FUNCTION(
+    void, InitHeap,
+    (unsigned long *arg0, unsigned long arg1),
+    0xa0, 0x39
+);
