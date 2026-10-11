@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "target": {
+    "kind": "relocatable-library",
+    "format": "elf-ar",
+    "archives": [],
+    "standaloneObjects": [
+      "library-input/redux/**/*.o"
+    ]
+  },
+  "headers": {
+    "reference": [
+      "library-input/psyq/INCLUDE"
+    ],
+    "owned": [
+      "include/library"
+    ],
+    "context": [
+      "common.h"
+    ]
+  },
+  "selection": {
+    "scope": "all-code-members"
+  },
+  "verification": {
+    "mode": "relocatable-object"
+  },
+  "output": {
+    "sourceDir": "src/libraries",
+    "sourceLayout": "grouped",
+    "inputRoot": "library-input/redux"
+  },
+  "memberProfiles": {}
+}

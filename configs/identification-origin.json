@@ -1,0 +1,487 @@
+{
+  "userAssertedOriginalRoot": "../btn-decompilation/tools/vendor/psyq47",
+  "originalFiles": [
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/2MBYTE.OBJ",
+      "size": 591,
+      "sha256": "b4ed8b2e76bc841f7a81132906d846877aefa8f6233fb738600c8b1ebd032a46"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/8MBYTE.OBJ",
+      "size": 591,
+      "sha256": "0c0ccb91c6d059a88b5ec5ac8f34c65a717c636a911247c31faa0df4ae2e599e"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBAPI.LIB",
+      "size": 22836,
+      "sha256": "f4c2d61cbe1c55f01f7e0fdfe652a0771fc943f0e95e002ea1069a2774e7c41f"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBC.LIB",
+      "size": 14250,
+      "sha256": "8f841cefc030f4956514b2093995efd5620ccf95e65093a48dc0fb940973d72e"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBC2.LIB",
+      "size": 23443,
+      "sha256": "3965220b722b90beb14445ee99591c344c05e338e7e7af2063c19f5fc5853e4f"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBCARD.LIB",
+      "size": 6148,
+      "sha256": "99b6b3f584836ddf156656f06c4b6d94108b802198dd2c3ef4c177e6376b7a38"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBCOMB.LIB",
+      "size": 9345,
+      "sha256": "a3736c31b3c00d4638325a9d4f358d6db2d9b3314c21e34844cb26614a5a50fe"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBDS.LIB",
+      "size": 43582,
+      "sha256": "4ebedb1161887598c2cffe3b3d5c8ee94bd30a72fe6d4b61ed1712098f4b644d"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBETC.LIB",
+      "size": 13500,
+      "sha256": "d8d6e5ad670ae6811c261bc2253c1df595a1d461d04282e9cebc8d967c6ddb8a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBGPU.LIB",
+      "size": 71370,
+      "sha256": "a52baa4d226b3bcbd64277a3c751929286eda4ab0492d98a2b956a4c0ba28f32"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBGS.LIB",
+      "size": 292660,
+      "sha256": "a9333b1ad279fd17b26e66e3c2144d10badaf543378dfecdb4d13547f50561cf"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBGTE.LIB",
+      "size": 364068,
+      "sha256": "fe3987823fe668f36b572ebceec017f930881c9480eab786e2ca9219573ea48f"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBGUN.LIB",
+      "size": 8203,
+      "sha256": "c9074581340554b8977ff1cab711f6accf9af2366f4a62121c1e7d218886afc1"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBHMD.LIB",
+      "size": 623564,
+      "sha256": "17334b3514754485aaed0a2d597a98ae20e3f9c9c2f3405730bf72034ea17d49"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBMATH.LIB",
+      "size": 45563,
+      "sha256": "6cf49043247bc423018e30d905ffaf2e991e2b14efb67752192612b6dbdf793a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBMCRD.LIB",
+      "size": 27378,
+      "sha256": "a6eb4b2faaee869ace4fd9ad6719fadd90ad52c1a6ae357284738b937e9dbbcb"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBMCX.LIB",
+      "size": 38435,
+      "sha256": "7db40e2b17a007f36e28a8bfbe4407159c571a46360c1018e36ce8c97a0e14e1"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBPAD.LIB",
+      "size": 39671,
+      "sha256": "211b6285a453b60c92a4dae4c6b35d05bc051fdec7c09c67952ddec081050547"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBPRESS.LIB",
+      "size": 85916,
+      "sha256": "3ecae73df3378c8af731bcda3e0272dd60d782e6ca4b23cc6fa9f7cd943b10a3"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBSIO.LIB",
+      "size": 6741,
+      "sha256": "237aa9b949b9182d328301dda796f8a07e2a14028bf9c53c740f7c8dad50a0f7"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBSND.LIB",
+      "size": 135054,
+      "sha256": "561b99b1a17472170408b494caeee5d7213fb5b5a0e0783c8459c783c0f16f84"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBSPU.LIB",
+      "size": 91916,
+      "sha256": "f6b454af1755e0dc5a6f186b0051f8a66d12f43d0cf79468f3755432f2b593b5"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/LIBTAP.LIB",
+      "size": 6720,
+      "sha256": "a06100668af8eb65622036d441413e301f3ffe3e90166ace78e31f701922f7ca"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/Libcd.lib",
+      "size": 53563,
+      "sha256": "225c25a4566a68924cf1d9b6467ecf5daa1611410cda16c241c606553314f361"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/Libsn.lib",
+      "size": 32994,
+      "sha256": "e5f898168d7232e7c459a70776b679d73cf9f3680d37c65506c06e7ea78553f3"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/MCGUI.OBJ",
+      "size": 60110,
+      "sha256": "bab909218c23c1c3deff177d86dd81f1e297ae6c0320292ca024b28b7fa235e7"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/MCGUI_E.OBJ",
+      "size": 24976,
+      "sha256": "9809a91d2795b509a14b1e945b38d0b678d3e3cea6258e55c6521fdeadad5bcf"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/NOHEAP.OBJ",
+      "size": 1243,
+      "sha256": "d429e72ab30f18df31e8df73230c30c11f1eefcfc4eb9385104ce9ebf73a0d02"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/NONE3.OBJ",
+      "size": 295,
+      "sha256": "063efc868877ca84fcbe1fdc3afe9656e6c7933cb68156e08d04d35b76166899"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/NOPRINT.OBJ",
+      "size": 151,
+      "sha256": "a1751042b1649694eb883319f7f9343e07bf27c7386765142a355c5569636e0e"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/POWERON.OBJ",
+      "size": 185,
+      "sha256": "f3d7ecabb8efd0ba88e9da52d3639151d85d394b9511766806f7c548fdb463e0"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/LIB/readme.txt",
+      "size": 6300,
+      "sha256": "d59fc441ef50171e9bd74f8484e7c21c0223c047895fb9480e554f743645dd23"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/ABS.H",
+      "size": 422,
+      "sha256": "d4d7bb08215957b868a418c4ace610cb17fd8f472bc795c9a71811e2b41b8fc2"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/ASM.H",
+      "size": 2980,
+      "sha256": "876d97d90a623b0200204ad5afcceec97f78c7c89774497793de5537816b9428"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/ASSERT.H",
+      "size": 375,
+      "sha256": "a5c2787819eff4d9766ea347a338dd2c3ce32d1ae59f5d74ce4e72aef9519b2a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/CONVERT.H",
+      "size": 522,
+      "sha256": "4796512cfd765045b0b836ec0baf3c6acee705bb56f580e94797035ee2d276b6"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/CTYPE.H",
+      "size": 1711,
+      "sha256": "42c2ceb16e567429a167064b11fae75127e8d482d6b14f7edb0709ee3d336318"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/ERRNO.H",
+      "size": 1977,
+      "sha256": "f5e3d5c49bca8f7332cfa01117372e32d5ba4cac75778db69853d67e067c2c23"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/FCNTL.H",
+      "size": 776,
+      "sha256": "b45382190640ed51effba910703a570441535bab87b04b4bd1dd09e426086c4c"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/FILE.H",
+      "size": 691,
+      "sha256": "503ba54ebcd3864500e79a007363e09b799cfa785950542186665b26b1370056"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/FS.H",
+      "size": 3081,
+      "sha256": "14f8775759984141e8f8d8c34b24b555b643866bd8082a8b958e5725a51bc43d"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/GTEMAC.H",
+      "size": 8997,
+      "sha256": "829bac86a2aa5f8128035ad6ed847dc7a5387629f651e882dc2080145cab4f23"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/GTENOM.H",
+      "size": 2436,
+      "sha256": "78881c89701bcc25039d4da3b0164acc4de7bbca563a0feb0fa466dd7767b58a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/GTEREG.H",
+      "size": 1517,
+      "sha256": "f21af49766ec303a56224b00e4c69bc9e20a8cad8bf60973a738405d10189256"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/GTEREG_S.H",
+      "size": 1590,
+      "sha256": "18b55a68522601542ec159e1b647ae928a9dfc6d09179ea2e0d15507187f5d4e"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/INLINE_A.H",
+      "size": 2487,
+      "sha256": "16d3bde47f0ddecbccb2dbee428a28c68d13efc53b9393f5619062ff91ce27fd"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/INLINE_C.H",
+      "size": 36440,
+      "sha256": "a06858b721b803ff8f44f29e2790cb55f1aaae9068ead56048925cc0f66b0778"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/INLINE_O.H",
+      "size": 70573,
+      "sha256": "5e34cb9d9deca6db77428cb0f9c7ff17d6c28e0095e1869f943bd7b9376e61ba"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/INLINE_S.H",
+      "size": 2673,
+      "sha256": "dee9157ed8999f6e791332bdd97c223201cf4a240ff7b13ef19bd406af8890d0"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/IOCTL.H",
+      "size": 1264,
+      "sha256": "40ed180687f44afe82b7aed36cbd12734c66b7f657a811b65c50e5c630c30222"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/KERNEL.H",
+      "size": 4641,
+      "sha256": "42e3d77483f4beae2e7365e3a49da92dd76e42da7a04fc0722b4b2184fddf652"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBAPI.H",
+      "size": 3891,
+      "sha256": "ec884711f1f471d8d82a0f23c0dd195894d3681185cce4ea0c8c4a89d3e0da20"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBCD.H",
+      "size": 9081,
+      "sha256": "400da600fd53ec2e60a99b7ba40b90da8917e02fc9695dc7fa8c6eba293709d8"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBCOMB.H",
+      "size": 2528,
+      "sha256": "bacc082dd4cd25eab48c3eac5801ccd17cd3d346e406e9f5409023cda18f0e72"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBDS.H",
+      "size": 8183,
+      "sha256": "3e84d0b98f699c7fe9ec1ec36ce51baca81fe403edb00bddcc3852fc545f6a27"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBETC.H",
+      "size": 1932,
+      "sha256": "88b94fcf4c6e4d672a4b1e95c80288328c15789d0ce28193e084fc2a433fd623"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBGPU.H",
+      "size": 24447,
+      "sha256": "a77997bb6b247d339f45fbd340794e3a3621e09e7915f2303f59e40f7834cc17"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBGS.H",
+      "size": 55218,
+      "sha256": "7fc3b7c07f5608448b186d8edc3a22c72e4181b4843fb15099a81c9c1b70caa4"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBGTE.H",
+      "size": 32047,
+      "sha256": "bd5590f283bfdb4c6d30c59794bdae96a7ac49fe4f404b185b6938011a238dff"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBGUN.H",
+      "size": 664,
+      "sha256": "d92ca0feb14273c35ca957acaaaf54bd1f5b39c130c54629715307ef21f96dd0"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBHMD.H",
+      "size": 45248,
+      "sha256": "30e73637739998b6192beefc5c57f4808ba3b1fcd6011b39d28a9a90bf6ee999"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBMATH.H",
+      "size": 1037,
+      "sha256": "b98b22e291d89754ff15eda13ad1f30fa07aaf67b30edc6650bf37452a60d9cf"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBMCRD.H",
+      "size": 1824,
+      "sha256": "44c256799c06c635b1ad12c0518bc1a3ac43b0fea340df03f3b5f19b3c03beee"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBMCX.H",
+      "size": 2284,
+      "sha256": "75856db93b24471ad6bb58190986a1255d9b578c05c2fcd42304257237c58056"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBPAD.H",
+      "size": 1832,
+      "sha256": "36912a3d7c6f03660f2d988f391e89f5e8b983d271e75d47476103c209dedb7a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBPRESS.H",
+      "size": 2461,
+      "sha256": "1c78fc7a23d4f1d4450e0744cd5c7d8c953fcaec6ec3d09fdd0b6279d3ab4de7"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBSIO.H",
+      "size": 1776,
+      "sha256": "929e05edb1d99aca348f866b186201d2fdaee35b835d1a95ad257ec099b9db1a"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBSND.H",
+      "size": 21455,
+      "sha256": "8cb696adf902966ca4c7ef857d6a7cb0e9f186538a80f46aec80575ae0427928"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBSPU.H",
+      "size": 21592,
+      "sha256": "82633daf69cc9834795aa87b6428e058bcc5591c8b56d7b7d285e83fce608418"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIBTAP.H",
+      "size": 622,
+      "sha256": "3925609462f787bd035e5e1658ad386b9a33286cc76eb0ecf3ba8501ea7622cc"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/LIMITS.H",
+      "size": 854,
+      "sha256": "da1ec56d7b6335f41952f35bf6a9078933b14c5ea2806ac8c5f695fa19da6639"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/Libsn.h",
+      "size": 4706,
+      "sha256": "562078af8b29213f76c2ba93bfd703ffa8d4db2abdcfaf4cb79d9ef625192c9f"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/MALLOC.H",
+      "size": 1115,
+      "sha256": "444a45de05dd557e38c38046ce5c451cc48d7ea0d5e92785db740698a03f7901"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/MCGUI.H",
+      "size": 2689,
+      "sha256": "87d685cbfcd4a93cc70c0642a93c64ad52eec027441fe8dc28c3120ccad331cb"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/MEMORY.H",
+      "size": 1190,
+      "sha256": "4c10e0543595ea304d17432f4b17bc0020121a743e88f57f94fe563fa9405bb4"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/QSORT.H",
+      "size": 638,
+      "sha256": "4d4e072d0f8a98b6bb76772b38a4462a16254164fd1e2c3defdc652f39999327"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/R3000.H",
+      "size": 8214,
+      "sha256": "0954c9e52bf02c554468c066f50858f57b9199408ce193afffe6f625c07d6a06"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/RAND.H",
+      "size": 416,
+      "sha256": "93a0befb8c97e9467d604a6841b6a5f3dcbcacd5e31c9cad3a6d49b8c84cae0d"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/ROMIO.H",
+      "size": 186,
+      "sha256": "69e39cc9c8cd8c7e2211d2c5d9570c19575ec6b3f45082f884dfb17484ee1dbc"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SETJMP.H",
+      "size": 885,
+      "sha256": "ac786a71204b6bb17bce318bb4acd7cca9c957a0730d0039611a999a3073cd0b"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STDARG.H",
+      "size": 578,
+      "sha256": "9fe32f74b755cab8ff18b2455f29a50f01796db1fc91cd96ec6fa78aa1c3f92e"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STDDEF.H",
+      "size": 818,
+      "sha256": "88aa741837f062ce28bb32e2a6710b975ef14b1e30c7fef91e96f1f88378cbcb"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STDIO.H",
+      "size": 958,
+      "sha256": "6ac9675fc18c611811728270607114944199decdc9fc66fe13dd9f6cd15138ba"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STDLIB.H",
+      "size": 588,
+      "sha256": "b963e8c1028dd8482f75a68e3786d421fe9790f46be0fa19a0cb079942617597"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STRING.H",
+      "size": 667,
+      "sha256": "a2982586bc0d933a07076fe4bffb1e0cbc77f260bfb4758f8ab4dcc32468ee4c"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/STRINGS.H",
+      "size": 1529,
+      "sha256": "f3557bebde8e1a785e2ead6d5f0c47dc5caa83a8d2fea8aa11f29ea8a7bb1625"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SYS/ERRNO.H",
+      "size": 1977,
+      "sha256": "f88f7d222193b790ef64bc2235b0f92aa980e591f8c9fa44291f98d4f96c0792"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SYS/FCNTL.H",
+      "size": 776,
+      "sha256": "251157b2093a4a7c482e2025959a73396d6df65918a39275936dc41de691cae1"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SYS/FILE.H",
+      "size": 691,
+      "sha256": "1a80560456111bdc3d58a55b826d7076187826a78ed3414e20f3db51cb0295d1"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SYS/IOCTL.H",
+      "size": 1264,
+      "sha256": "2aa11df687834cf51667fc5638213ece936cb5eee6d574fffb166f4d8a69f7f0"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/SYS/TYPES.H",
+      "size": 1668,
+      "sha256": "f407cde8543f4fb80897b92eb1be6df967645f8a99b7b2625bb9293be236891d"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/TYPES.H",
+      "size": 1668,
+      "sha256": "3ace26359cb16e7101f4e0927091a681e8602134224ed64f8328fed432a1e76b"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/pad.h",
+      "size": 1033,
+      "sha256": "822a4f97af7a5046b0be99e721f1c3bede0d2900fb46d3640fa61dcf8260815c"
+    },
+    {
+      "path": "../btn-decompilation/tools/vendor/psyq47/INCLUDE/readme.txt",
+      "size": 6300,
+      "sha256": "d59fc441ef50171e9bd74f8484e7c21c0223c047895fb9480e554f743645dd23"
+    }
+  ],
+  "converterCheckout": {
+    "path": "../psyq2elf",
+    "repository": "https://gitlab.com/jype/psyq2elf.git",
+    "commit": "cba9b60d2f349a55e49530a28e01a10cae8771f1",
+    "workingTreeClean": true
+  },
+  "comparisonWithDesignatedTreeConvertedDirectory": {
+    "matchingFiles": 2231,
+    "missingCounterparts": [],
+    "differentFiles": []
+  },
+  "note": "Read-only provenance inventory. No outside-project original was imported or configured as a target. The user considers this SDK 4.7, not a independently established historical distribution identity."
+}

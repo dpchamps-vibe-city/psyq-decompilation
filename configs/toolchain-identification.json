@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "status": "partial-historical-identification",
+  "selectedConverter": {
+    "schemaVersion": 1,
+    "implementation": "PCSX-Redux psyq-obj-parser",
+    "repository": "https://github.com/grumpycoders/pcsx-redux",
+    "commit": "78e777e160d840c37b17872d864a8d896681d191",
+    "configuredTool": "tools.psyq2elf",
+    "wrapper": "tools/psyq2elf-redux",
+    "wrapperSha256": "0d625a79bd961e90c4d7bf5b7ed0550822eb20f8e2d226ed0523b7516e8ef1d8",
+    "wrapperArgvContract": [
+      "INPUT.OBJ",
+      "OUTPUT.o"
+    ],
+    "upstreamArgvContract": [
+      "INPUT.OBJ",
+      "-c",
+      "-o",
+      "OUTPUT.o"
+    ],
+    "options": [
+      "-c"
+    ],
+    "commonPolicy": "preserve ELF COMMON",
+    "binaryPath": "build/converters/pcsx-redux/78e777e160d840c37b17872d864a8d896681d191/psyq-obj-parser",
+    "binarySha256": "3826e1d565ef28d76a4b27d641ef8bf8f99bf075527d4b2655fa3858f1cbafa7",
+    "unsupportedManifest": "configs/deferred-sdk-objects.json",
+    "scopeNote": "Selected for subsequent conversion; the existing legacy converted targets have not been replaced or migrated. Original-LNK fidelity remains distinct from converted-ELF identity."
+  },
+  "deferredObjectsManifest": "configs/deferred-sdk-objects.json",
+  "historicalEvidence": {
+    "suppliedSdkRelease": "4.7",
+    "basis": "supplied February 2000 release readme and packaged-content comparison",
+    "packageSha256": "e3df241adde663fba1f5bff1f0070e0d32d9518ebb11d60a914e5e016f704745",
+    "packageOriginalFilesMatched": 94,
+    "distributedCompilerFamily": "GCC 2.95 (release-document evidence; point release unknown)",
+    "runtimeSourceProvenance": {
+      "sourceVersion": "GCC 2.8.0",
+      "members": 45,
+      "scope": "LIBSN filename records; not proof of compiler executable version"
+    },
+    "historicalAssemblerVersion": "undetermined",
+    "historicalFlags": "undetermined"
+  },
+  "configuredCompilerCandidate": {
+    "compiler": {
+      "family": "gcc",
+      "version": "2.95.2",
+      "source": {
+        "origin": "harness",
+        "path": "tools/vendor/gcc/2.95.2"
+      },
+      "capabilities": [
+        "gcc-rtl-dumps",
+        "gcc-emission-attribution",
+        "gcc-implicit-declarations"
+      ]
+    },
+    "executable": "build/dependencies/compiler/gcc-2.95.2-psx/cc1",
+    "versionProbe": "GNU C version 2.95.2 19991024 (release) (mips-sony-psx) compiled by GNU C version 9.4.0.",
+    "provenance": {
+      "schemaVersion": 1,
+      "version": "2.95.2-psx",
+      "recipeHash": "df58477447cbd4982c256783a0dd561b12bfec22309dc3dbfaa951de0f45d861",
+      "compilerHash": "2aa85925dfa10855107c78e29ec36965b953976a45b1a47fb68beb5a74096079",
+      "probe": "\t.file\t1 \"stdin\"\ngcc2_compiled.:\n__gnu_compiled_c:\n"
+    },
+    "verifiedAgainstOriginalMembers": false,
+    "testedAgainstOriginalMembers": true
+  },
+  "configuredAssemblerCandidate": {
+    "implementation": "maspsx",
+    "aspsxVersion": "2.80",
+    "verifiedAgainstOriginalMembers": false
+  },
+  "activeLegacyInventory": {
+    "members": 2142,
+    "historicalDetectionStatus": "undetermined",
+    "targetSetMigrated": false
+  },
+  "nextWork": "Resolve strict ELF representation differences, then reviewed ordinal-preserving Redux target migration and additional real-member compiler/assembler/ABI comparisons. No matching campaign or integration started.",
+  "realMemberProbe": {
+    "function": "SpuGetTransferStartAddr",
+    "originalMember": "libspu/52-s_gtsa",
+    "source": "build/identification/toolchain/SpuGetTransferStartAddr.c",
+    "sourceSha256": "ec572d1b84bce1c62d6881be374800e904f6bc5081178909075be58477238c4f",
+    "report": "build/identification/toolchain/redux-real-member-probe.json",
+    "strictComparison": {
+      "verdict": "mismatch",
+      "matchedWords": 6,
+      "totalWords": 8,
+      "candidateWords": 6,
+      "differences": [
+        "ELF architecture/ABI flags: 1000 != 1001",
+        ".text: section type/flags/size/alignment/entry-size differ",
+        ".text: initialized bytes (including encoded relocation addends) differ",
+        ".data: section type/flags/size/alignment/entry-size differ",
+        ".bss: section type/flags/size/alignment/entry-size differ",
+        ".reginfo: section type/flags/size/alignment/entry-size differ",
+        ".MIPS.abiflags: section type/flags/size/alignment/entry-size differ"
+      ]
+    },
+    "codeAssessment": "Six executable instruction words and symbolic relocations agree; remaining two target words are zero padding. This is not unique compiler-version identification or a whole-member match.",
+    "nextGate": "Review and resolve LNK/ELF versus GCC/GAS ABI/section/alignment/padding representation, without weakening the oracle."
+  }
+}

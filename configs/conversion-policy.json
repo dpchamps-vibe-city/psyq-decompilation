@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "implementation": "PCSX-Redux psyq-obj-parser",
+  "repository": "https://github.com/grumpycoders/pcsx-redux",
+  "commit": "78e777e160d840c37b17872d864a8d896681d191",
+  "configuredTool": "tools.psyq2elf",
+  "wrapper": "tools/psyq2elf-redux",
+  "wrapperSha256": "0d625a79bd961e90c4d7bf5b7ed0550822eb20f8e2d226ed0523b7516e8ef1d8",
+  "wrapperArgvContract": [
+    "INPUT.OBJ",
+    "OUTPUT.o"
+  ],
+  "upstreamArgvContract": [
+    "INPUT.OBJ",
+    "-c",
+    "-o",
+    "OUTPUT.o"
+  ],
+  "options": [
+    "-c"
+  ],
+  "commonPolicy": "preserve ELF COMMON",
+  "binaryPath": "build/converters/pcsx-redux/78e777e160d840c37b17872d864a8d896681d191/psyq-obj-parser",
+  "binarySha256": "3826e1d565ef28d76a4b27d641ef8bf8f99bf075527d4b2655fa3858f1cbafa7",
+  "unsupportedManifest": "configs/deferred-sdk-objects.json",
+  "selectedTargets": "library-input/redux/**/*.o",
+  "originals": "library-input/psyq/LIB",
+  "memberMapping": "library-input/redux/original-members.json",
+  "conversionReport": "library-input/redux/conversion-report.json",
+  "convertedEntryCount": 2224,
+  "deferredEntryCount": 6,
+  "scopeNote": "project.json selects fresh Redux/COMMON outputs, with original ordinals retained in their pathnames. Legacy conversions and their partial source stubs are preserved but unselected. The six deferred originals remain in the full-SDK completion ledger. Original-LNK fidelity remains distinct from converted-ELF identity."
+}

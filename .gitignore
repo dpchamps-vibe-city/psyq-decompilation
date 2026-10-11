@@ -1,0 +1,21 @@
+# BEGIN PSX harness
+/build/
+/extracted/
+/library-input/
+/include/psyq/
+/run_output/
+/node_modules/
+/coverage/
+/.pi/git/
+/.pi/npm/
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.tsbuildinfo
+*.m2c
+__pycache__/
+*.pyc
+src/**/*.c.*
+# END PSX harness

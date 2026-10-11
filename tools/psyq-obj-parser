@@ -1,0 +1,10 @@
+#!/bin/sh
+# Unmodified upstream parser; pass -c explicitly to preserve ELF COMMON.
+set -eu
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+BIN="$ROOT/build/converters/pcsx-redux/78e777e160d840c37b17872d864a8d896681d191/psyq-obj-parser"
+if [ ! -x "$BIN" ]; then
+    echo "Parser not built. Run tools/build-psyq-obj-parser.sh first." >&2
+    exit 1
+fi
+exec "$BIN" "$@"

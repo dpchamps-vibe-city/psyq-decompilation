@@ -1,0 +1,120 @@
+{
+  "repositories": {
+    "tools/pcsx-redux": {
+      "commit": "78e777e160d840c37b17872d864a8d896681d191",
+      "workingTreeStatus": ""
+    },
+    "tools/pcsx-redux/third_party/ELFIO": {
+      "commit": "8ae6cec5d60495822ecd57d736f66149da9b1830",
+      "workingTreeStatus": ""
+    },
+    "tools/pcsx-redux/third_party/fmt": {
+      "commit": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+      "workingTreeStatus": ""
+    },
+    "tools/pcsx-redux/third_party/magic_enum": {
+      "commit": "e55b9b54d5cf61f8e117cafb17846d7d742dd3b4",
+      "workingTreeStatus": ""
+    },
+    "../psyq2elf": {
+      "commit": "cba9b60d2f349a55e49530a28e01a10cae8771f1",
+      "workingTreeStatus": ""
+    }
+  },
+  "hostCompilers": {
+    "g++": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "tools": [
+    {
+      "name": "redux-default",
+      "executable": "/home/dave/Documents/code/psyq-decomp/build/converters/pcsx-redux/78e777e160d840c37b17872d864a8d896681d191/psyq-obj-parser",
+      "flags": [],
+      "sha256": "3826e1d565ef28d76a4b27d641ef8bf8f99bf075527d4b2655fa3858f1cbafa7"
+    },
+    {
+      "name": "redux-common",
+      "executable": "/home/dave/Documents/code/psyq-decomp/build/converters/pcsx-redux/78e777e160d840c37b17872d864a8d896681d191/psyq-obj-parser",
+      "flags": [
+        "-c"
+      ],
+      "sha256": "3826e1d565ef28d76a4b27d641ef8bf8f99bf075527d4b2655fa3858f1cbafa7"
+    },
+    {
+      "name": "jype",
+      "executable": "/home/dave/Documents/code/psyq-decomp/build/converters/jype-cba9b60/psyq2elf",
+      "flags": [],
+      "sha256": "75f0040d14913a2d949b67fefa9f7d1547503a766840c73935d9d9de69abae95"
+    }
+  ],
+  "reports": {
+    "full": "build/converters/exploration/all/report.json",
+    "focused": "build/converters/exploration/focused/report.json",
+    "commonEffect": "build/converters/exploration/common-effect.json"
+  },
+  "fullSummary": {
+    "redux-default": {
+      "attempted": 2230,
+      "succeeded": 2224,
+      "failed": 6,
+      "adapterRejected": 0,
+      "baselineCompared": 2176,
+      "wholeObjectMatches": 1238,
+      "rawByteIdentical": 0,
+      "objectsWithCommon": 0,
+      "failures": {
+        "Unsupported relocation expression type: 22": 4,
+        "Section .sbss looks like bss, but has data": 1,
+        "Unknown expression type 54": 1
+      }
+    },
+    "redux-common": {
+      "attempted": 2230,
+      "succeeded": 2224,
+      "failed": 6,
+      "adapterRejected": 0,
+      "baselineCompared": 2176,
+      "wholeObjectMatches": 1238,
+      "rawByteIdentical": 0,
+      "objectsWithCommon": 36,
+      "failures": {
+        "Unsupported relocation expression type: 22": 4,
+        "Section .sbss looks like bss, but has data": 1,
+        "Unknown expression type 54": 1
+      }
+    },
+    "jype": {
+      "attempted": 2230,
+      "succeeded": 2224,
+      "failed": 6,
+      "adapterRejected": 0,
+      "baselineCompared": 2175,
+      "wholeObjectMatches": 0,
+      "rawByteIdentical": 0,
+      "objectsWithCommon": 0,
+      "failures": {
+        "psyq2elf: ../psyq2elf/src/psyq_obj.c:515: psyq_parse_link: Assertion `handler != NULL' failed.": 3,
+        "psyq2elf: ../psyq2elf/src/psyq_obj.c:201: read_state_patch: Assertion `0' failed.": 2,
+        "psyq2elf: ../psyq2elf/src/psyq_obj.c:226: read_state_patch: Assertion `(node->right->type == psyq_patch_value) && (node->op == psyq_patch_op_add)' failed.": 1
+      }
+    }
+  },
+  "commands": [
+    "tools/build-psyq-obj-parser.sh",
+    "gcc -g -Os -std=c99 -Wall -Wextra ../psyq2elf/src/elf_obj.c ../psyq2elf/src/psyq2elf.c ../psyq2elf/src/psyq_obj.c ../psyq2elf/src/utils.c -o build/converters/jype-cba9b60/psyq2elf",
+    "node --import /home/dave/Documents/code/psx-decompilation-harness/node_modules/tsx/dist/loader.mjs tools/explore-psyq-converters.mjs /home/dave/Documents/code/psx-decompilation-harness ../btn-decompilation/tools/vendor/psyq47/LIB --all"
+  ],
+  "targetConfigUnchanged": true,
+  "buildScriptSha256": "600d2ce3a9e8ea32a039de762d50dbd08a462ba2015b7b43462ca17208be257d",
+  "jypeSources": {
+    "../psyq2elf/src/elf_obj.c": "74d44cfaa837900c0e3e33dce29d93a3544ea9512db1b82e95ad7979fd490e82",
+    "../psyq2elf/src/elf_obj.h": "8daf71dbfab7e3df4f38d46504f3302548ec23db8aec01dc6cdf5860fae5169d",
+    "../psyq2elf/src/psyq2elf.c": "cc1cf7eb9c9aece92059cc9e14ff1dcef8035fa726c9a0d572180460db9b75fc",
+    "../psyq2elf/src/psyq_obj.c": "169b264388acb2d34bb24cb26939c49e46d032959017cfce857cf5d09dbe9efe",
+    "../psyq2elf/src/psyq_obj.h": "3d9e0ea57e4ceee7da5c5d762947583a867304c670de3228a99e088b3c05fb7d",
+    "../psyq2elf/src/psyqdump.c": "83c9439ed3f15a2512f92381801d3e2691a4ee30e0449d5cfb23bdeacc03ae11",
+    "../psyq2elf/src/slist.h": "70add50fe849f495a1d1cb8c9550db36aeab2384c27b1abebbc80bd167db1751",
+    "../psyq2elf/src/utils.c": "6ca2ef8cc0c7d8e5051803a5ec662e8059a8eda85787c49355d401bd39bae73d",
+    "../psyq2elf/src/utils.h": "07c18d706f1217eb01ea186ee85033b729a404a2187d7a8caa13225853e4173b"
+  }
+}

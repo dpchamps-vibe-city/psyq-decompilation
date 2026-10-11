@@ -1,0 +1,10 @@
+#!/bin/sh
+# Harness converter ABI: INPUT.OBJ OUTPUT.o (two positional arguments).
+# Selected policy: pinned PCSX-Redux parser, preserving ELF COMMON with -c.
+set -eu
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 INPUT.OBJ OUTPUT.o" >&2
+    exit 2
+fi
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec "$ROOT/tools/psyq-obj-parser" "$1" -c -o "$2"
