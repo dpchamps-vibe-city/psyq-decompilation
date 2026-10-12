@@ -16,6 +16,7 @@
     "library": "node tools/harness-proxy.mjs tools/agent/library.ts",
     "prepare": "node tools/harness-proxy.mjs tools/agent/library.ts prepare",
     "diff": "node tools/harness-proxy.mjs tools/agent/library.ts diff",
+    "analysis-support": "node tools/harness-proxy.mjs tools/agent/analysisSupport.ts",
     "compiler-source": "node tools/harness-proxy.mjs tools/agent/compilerSource.ts",
     "prepare-compiler-source": "node tools/harness-proxy.mjs tools/build/prepareCompilerSource.ts"
   }

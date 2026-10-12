@@ -7,7 +7,13 @@
       "origin": "project",
       "path": "tools/vendor/gcc/2.7.2-psx"
     },
-    "capabilities": []
+    "analysis": {
+      "provider": "gcc-rtl",
+      "profile": {
+        "origin": "runtime",
+        "path": "analysis/compiler.json"
+      }
+    }
   },
   "tools": {
     "cc1": {
