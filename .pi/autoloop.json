@@ -15,7 +15,7 @@
   "approvalsDir": "notes/human-needed-approvals",
   "integration": {
     "mode": "patch",
-    "allowCommits": true,
+    "allowCommits": false,
     "allowedRoots": ["src", "include", "configs", "notes", "plans"]
   },
   "sourcePolicy": {
