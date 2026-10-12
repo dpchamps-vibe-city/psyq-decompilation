@@ -96,8 +96,57 @@
       "little"
     ]
   },
-  "profiles": {},
-  "containerProfiles": {},
+  "profiles": {
+    "unpadded-original-sections": {
+      "as": [
+        "-march=r3000",
+        "-mtune=r3000",
+        "-EL",
+        "-G0",
+        "-no-pad-sections"
+      ]
+    }
+  },
+  "containerProfiles": {
+    "lib_9d60be61c08b31b1_0": "unpadded-original-sections",
+    "lib_5247c2bd0adb5de2_0": "unpadded-original-sections",
+    "lib_fd54b0e3548785eb_0": "unpadded-original-sections",
+    "lib_dc5870faf2510c4f_0": "unpadded-original-sections",
+    "lib_b290ef0de3b0f44d_0": "unpadded-original-sections",
+    "lib_8761c93334dedc99_0": "unpadded-original-sections",
+    "lib_42f9a44297caf96b_0": "unpadded-original-sections",
+    "lib_f3c730159c03d3ab_0": "unpadded-original-sections",
+    "lib_ee231489c77ed268_0": "unpadded-original-sections",
+    "lib_13e6b223116a0406_0": "unpadded-original-sections",
+    "lib_3490a783ba36853b_0": "unpadded-original-sections",
+    "lib_579c9115d112fa3b_0": "unpadded-original-sections",
+    "lib_1241b9ed9b7ea516_0": "unpadded-original-sections",
+    "lib_ec2238b818cf7cb3_0": "unpadded-original-sections",
+    "lib_80f5b374a9f77a7b_0": "unpadded-original-sections",
+    "lib_68c9e96369c0fa66_0": "unpadded-original-sections",
+    "lib_ef70639fd907db15_0": "unpadded-original-sections",
+    "lib_ac1b471355cf3a4e_0": "unpadded-original-sections",
+    "lib_6d5a97fd9af876e1_0": "unpadded-original-sections",
+    "lib_a4ce911bdb4f4519_0": "unpadded-original-sections",
+    "lib_3f031d855c415918_0": "unpadded-original-sections",
+    "lib_7eb88b9dd66509ba_0": "unpadded-original-sections",
+    "lib_73374a9e5a43ba22_0": "unpadded-original-sections",
+    "lib_29a607627cb8e095_0": "unpadded-original-sections",
+    "lib_1fb606ad1db19cd6_0": "unpadded-original-sections",
+    "lib_4d88ac3464b40ae3_0": "unpadded-original-sections",
+    "lib_542b0bbafd0034d3_0": "unpadded-original-sections",
+    "lib_874667cc712bc2e8_0": "unpadded-original-sections",
+    "lib_438a6e3ef979d633_0": "unpadded-original-sections",
+    "lib_07feb99b6061a47c_0": "unpadded-original-sections",
+    "lib_30887daf344d1199_0": "unpadded-original-sections",
+    "lib_c762fed246442559_0": "unpadded-original-sections",
+    "lib_c7a612f9d80f3853_0": "unpadded-original-sections",
+    "lib_cbfabe010ae28fb4_0": "unpadded-original-sections",
+    "lib_ad66f84a018bda5b_0": "unpadded-original-sections",
+    "lib_9b8fb260ce66e220_0": "unpadded-original-sections",
+    "lib_6ff1bdb9be2e6834_0": "unpadded-original-sections",
+    "lib_97dea4e103dfff3a_0": "unpadded-original-sections"
+  },
   "sdk": {
     "version": "470",
     "convertedDir": "library-input/redux",
