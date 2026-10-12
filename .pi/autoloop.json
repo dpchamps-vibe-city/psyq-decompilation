@@ -9,13 +9,13 @@
     }
   ],
   "singleTier": true,
-  "commitOnMatch": false,
-  "commitOnPark": false,
+  "commitOnMatch": true,
+  "commitOnPark": true,
   "runtimeDir": "run_output/autoloop",
   "approvalsDir": "notes/human-needed-approvals",
   "integration": {
     "mode": "patch",
-    "allowCommits": false,
+    "allowCommits": true,
     "allowedRoots": ["src", "include", "configs", "notes", "plans"]
   },
   "sourcePolicy": {

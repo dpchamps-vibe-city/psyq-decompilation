@@ -19,3 +19,32 @@ Implementation is supplied by the Pi-installed PSX package, not copied into this
 8. For an EXE, identification must create configs/splat/exe.yaml using the measured header. For a library, review project.json input/header roles before psx_split_project. Verification regenerates the project profile only after successful byte identity.
 
 Bootstrap never clears inputs or overwrites existing project configuration.
+
+## Project commands
+
+These npm scripts forward to the local harness configured in `.pi/settings.json`,
+using this repository's `project.json` and `toolchain.json`. They reuse the harness's
+installed dependencies; no separate `npm install` is needed here.
+
+```sh
+npm run                         # list available commands
+npm run build                   # build every configured whole TU
+npm run verify                  # build and verify every configured member
+npm run check                   # same verification as verify
+npm run progress                # fresh, verified reconstruction progress
+npm --silent run progress -- --json  # JSON-only progress output
+npm run progress -- --remaining  # remaining members
+npm run split                   # regenerate configured splits; preserve existing bodies
+npm run disassemble             # library disassembly/split route
+npm run inventory               # configured member inventory
+npm run graph                   # regenerate the call graph
+npm run prepare -- MEMBER::SYMBOL
+npm run diff -- MEMBER::SYMBOL
+npm run compiler-source -- verify --json
+```
+
+`check-all` and `split-all` are also available. Full verification still uses the
+ordered whole-TU production pipeline; assembly-backed backlog does not count as
+decompiled C. For a deliberately scoped owning-member check, use
+`npm run library -- check --member MEMBER_ID`. To see the library CLI options, use
+`npm run library -- --help`.

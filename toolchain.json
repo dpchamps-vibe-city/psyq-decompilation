@@ -3,6 +3,10 @@
   "compiler": {
     "family": "gcc",
     "version": "2.7.2",
+    "source": {
+      "origin": "project",
+      "path": "tools/vendor/gcc/2.7.2-psx"
+    },
     "capabilities": []
   },
   "tools": {

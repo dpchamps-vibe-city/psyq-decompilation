@@ -5,6 +5,7 @@
 /include/psyq/
 /run_output/
 /node_modules/
+/tools/vendor/
 /coverage/
 /.pi/git/
 /.pi/npm/

@@ -1,0 +1,22 @@
+{
+  "name": "psyq-decomp",
+  "private": true,
+  "description": "Project-local command proxies to the installed PSX decompilation harness",
+  "scripts": {
+    "build": "node tools/harness-proxy.mjs tools/build/pipeline.ts build",
+    "check": "node tools/harness-proxy.mjs tools/build/pipeline.ts check",
+    "verify": "node tools/harness-proxy.mjs tools/build/pipeline.ts check",
+    "check-all": "node tools/harness-proxy.mjs tools/build/pipeline.ts check-all",
+    "split": "node tools/harness-proxy.mjs tools/build/pipeline.ts split",
+    "split-all": "node tools/harness-proxy.mjs tools/build/pipeline.ts split-all",
+    "disassemble": "node tools/harness-proxy.mjs tools/build/pipeline.ts disassemble",
+    "progress": "node tools/harness-proxy.mjs tools/diagnostics/progress.ts",
+    "inventory": "node tools/harness-proxy.mjs tools/agent/library.ts inventory",
+    "graph": "node tools/harness-proxy.mjs tools/agent/library.ts graph",
+    "library": "node tools/harness-proxy.mjs tools/agent/library.ts",
+    "prepare": "node tools/harness-proxy.mjs tools/agent/library.ts prepare",
+    "diff": "node tools/harness-proxy.mjs tools/agent/library.ts diff",
+    "compiler-source": "node tools/harness-proxy.mjs tools/agent/compilerSource.ts",
+    "prepare-compiler-source": "node tools/harness-proxy.mjs tools/build/prepareCompilerSource.ts"
+  }
+}

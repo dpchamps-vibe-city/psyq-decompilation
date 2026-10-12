@@ -85,6 +85,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/23-a09`, identifies `LIBAPI.LIB` / `A09.OBJ`, ordinal 23. `src/libraries/libapi/23-a09/_shared-0.h` records one original member, one TU, functions: `CloseEvent`; baseline `library-input/converted/lib/libapi/a09.o` is unambiguously named. `build/libraries/disassembly/lib_941bb7f9e78a6638_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x9`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x9)` arguments. Shares the `0xB0` BIOS entry table page and contiguous link-order ordinals (A07/A08/A09 = 21/22/23) with `DeliverEvent` and `OpenEvent` — the three form the event-handler binding cluster in the library's original member order.
 - Verification: passed (agent origin, verified identity `02318a37423b1b2a98fa33df5bd34a238041d8ac76666a2befed7ab347fef32b`); full finalize gate passed.
 
+## LIBAPI.LIB — COUNTER.OBJ (ordinal 72)
+
+- TU directory: `src/libraries/libapi/72-counter/`; target `lib_f5b70e00e12530c5_0`.
+- Original functions: `SetRCnt`, `GetRCnt`, `StartRCnt`, `StopRCnt`, `ResetRCnt`.
+- Recovered: `GetRCnt` — reads the `count` field of the root-counter record selected by the low argument half-word, returning 0 for counter indices 3 and above. `StartRCnt` — ORs the per-counter enable bit from `D_000001E8` into the enable register at `D_000001E0`, returning whether the index is below 3.
+- Remaining functions (`SetRCnt`, `StopRCnt`, `ResetRCnt`) and the shared member data remain original assembly backlog.
+- Same-file evidence: all five functions share one original object and one `.data` cluster — `D_000001E0` (MMIO 0x1F801070 enable register pointer), `D_000001E4` (MMIO 0x1F801100 counter-array pointer), `D_000001E8` (enable-bit table `{0x10, 0x20, 0x40, 0x100}`) — declared once in `_shared-0.h` and stored in `_data.c`.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/72-counter`, identifies `LIBAPI.LIB` / `COUNTER.OBJ`, ordinal 72. `_shared-0.h` records one original member, one TU, and object sha256 `f9696b5b2525f5948c2e265374583b643e5fe7484870ce81a921db325f1c6c2b`; `tu.json` lists the ordered parts.
+- Verification: `StartRCnt` passed the full finalize gate (agent origin, verified identity `11f9ac41d9aeac777ba8bdd106a803dc911f518e6829e823cd99eb3be19ae7e2`); `GetRCnt` was integrated in the same verified change set.
+
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
