@@ -1,10 +1,10 @@
 {
   "ladder": [
     {
-      "provider": "qwen36-llama",
-      "model": "qwen3.8-27b",
+      "provider": "runinfra",
+      "model": "deepseek-v4-1-flash",
       "thinking": "medium",
-      "label": "qwen3.8-27b (local)",
+      "label": "deepseek-v4-1-flash",
       "checkpointAtTokens": 350000
     }
   ],
