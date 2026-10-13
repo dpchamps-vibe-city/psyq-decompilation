@@ -1,1 +1,6 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_f5b70e00e12530c5_0", StopRCnt);
+#include "common.h"
+
+s32 StopRCnt(u32 counter) {
+    D_000001E0[1] &= ~D_000001E8[counter & 0xFFFF];
+    return 1;
+}
