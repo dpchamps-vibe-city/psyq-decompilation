@@ -104,6 +104,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/73-sc2b`, identifies `LIBAPI.LIB` / `SC2B.OBJ`, ordinal 73, `ambiguousNamedBaseline: false`; `src/libraries/libapi/73-sc2b/_shared-0.h` records one original member, one TU, functions: `SetConf`, and `tu.json` lists the ordered parts.
 - Verification: passed (agent origin, verified identity `346b829e5b9a4cde3149c54eee56768112f34882ab87a7bf7d914b20f9ba8f58`); full finalize gate passed.
 
+## LIBAPI.LIB — PATCH.OBJ (ordinal 74)
+
+- TU directory: `src/libraries/libapi/74-patch/`; target `lib_4031394e3bdde1bc_0`.
+- Original functions: `_patch_pad`, `EnablePAD`, `DisablePAD`.
+- Recovered: `EnablePAD` — BIOS tail-jump binding that loads the member's `B_00000118` vector and transfers to it; the real PAD-enable implementation lives in ROM, not this object.
+- `DisablePAD` (loads the sibling `B_0000011C` vector) and `_patch_pad` remain assembly backlog.
+- Same-file evidence: the recovered `EnablePAD` body reads the member's own `B_00000118` vector, one of the three-function `.bss` cluster (`B_00000110` saved `$ra`, `B_00000118`, `B_0000011C`) that `_patch_pad` populates from the BIOS PAD table and that `DisablePAD` reads, tying the recovered body to this member rather than to another LIBAPI object.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/74-patch`, identifies `LIBAPI.LIB` / `PATCH.OBJ`, ordinal 74. `src/libraries/libapi/74-patch/_shared-0.h` records one original member, one TU, functions: `_patch_pad`, `EnablePAD`, `DisablePAD`, and object sha256 `88562458770e8b1986ea038b0699e1f614fcc9804808de4e3165f50acee731f1`; baseline `library-input/converted/lib/libapi/patch.o` is unambiguously named (`ambiguousNamedBaseline: false`).
+- Verification: passed (agent origin, identity `28d8633b4899dd426de111eea9f5ee2ae8b72f16d66fb6bff5632b3e7a6a58ba`); full finalize gate passed.
+
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
