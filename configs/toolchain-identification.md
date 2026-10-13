@@ -1,4 +1,67 @@
-# Toolchain identification — first evidence pass
+# Toolchain identification — evidence and configured decisions
+
+## Configured assembler adoption (2026-10-13)
+
+The initial-pass sections below are historical, not the current target or
+compiler configuration. `project.json` now selects the 2,224 ordinal-preserving
+Redux/COMMON objects under `library-input/redux`; the compiler candidate remains
+GCC 2.7.2, with compiler and assembler `-G0`.
+
+The configurable-backend harness is adopted in `toolchain.json`:
+- Base: direct GNU as, `inputRewrites: ["move-addu"]`, default optimization.
+- `sn-aspsx`: MASPSX, retaining the former unpadded profile and its 38 libsn
+  selections. MASPSX's public pin and ASPSX 2.80 candidate mode are unchanged.
+- `sn-aspsx-padded`: MASPSX with base padded assembler flags, assigned to the
+  remaining 16 converted members with independently witnessed native packaging.
+  Keeping a separate padded profile avoids borrowing the unpadded-section rule.
+
+Fresh harness identification reproduces the original-word census:
+**455 indexed integer loads with destination != index use the destination as
+scratch (GAS rule), zero use $at (ASPSX rule), and 160 destination == index sites
+use $at (ambiguous between both)**. The 455 discriminating sites span 133
+members and 19 libraries. Absolute destination-reusing loads are expected under
+both assemblers, not a compiler address-splitting fingerprint.
+
+The native LIB/LNK record census reports **2,167 GNU-converter-style objects**
+(section IDs in the 0xF000 family, no file records or constructors), **48
+ASPSX-native-style objects**, **14 ambiguous objects**, and **one incomplete
+object**. The four converter-style members whose first section is 0xF004 also
+use 0xF000 for .text; a first-section-only 0xF001 test would miss them. The
+incomplete libsn CACHE object contains unsupported expression opcode 54;
+absence of later records is not asserted and its semantics were not guessed.
+
+All 48 native-style libsn objects are present in the converted selection.
+Thirty-two already had the unpadded profile; sixteen now receive the padded
+MASPSX profile. Six additional original unpadded selections (ordinals 2, 4, 6,
+7, 8 and 10) are retained for compatibility, **not newly identified as native
+ASPSX builds**. The remaining three converted libsn members have ambiguous
+packaging and inherit base; no further historical-family claim is made.
+
+This SDK-wide GNU-built Sony-library conclusion combines independent indexed
+load rules, converter-style packaging and actual same-input assembler tests;
+release-tool distribution metadata alone did not establish it. Real ASPSX 2.86
+and MASPSX agree on the former StopRCnt residual, so MASPSX is not defective.
+The macro delay-slot census (590 swap sites, including 210 $at sites) and
+SetInitPadFlag's three-word leaf require GAS's default reorder optimization,
+not `-O1`. Compiler-version identification remains outside this change.
+
+All **123** previously accepted members were re-verified as whole-member
+MATCHes. StopRCnt (**92/92**) and SetInitPadFlag (**164/164**) were separately
+integrated and passed the official full member, scope, source-policy and context
+publication gates. Both members already belonged to the accepted set through
+matched neighbors. No warnings occurred in 125 retained GAS production
+receipts; both new expansion listings reproduce their production objects
+byte-for-byte. This does not verify or reconstruct the 2,101 backlog members.
+
+Evidence: `build/assembler-backend-evidence/configured-identification.json`,
+`reverification.log`, the two `*.finalization.json` reports,
+`expansion-captures.jsonlog`, and `assembler-warnings.json`.
+See `notes/stoprcnt-investigation.md` §19 and
+`plans/configurable-assembler-backend.md`. Generated project-profile wording now
+reports the actual assembler per profile rather than asserting universal ASPSX
+semantics. Target-specific conclusions stay in this project, not harness docs.
+
+## Historical initial evidence pass
 
 ## Scope and configured decisions
 
