@@ -95,6 +95,15 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/72-counter`, identifies `LIBAPI.LIB` / `COUNTER.OBJ`, ordinal 72. `_shared-0.h` records one original member, one TU, and object sha256 `f9696b5b2525f5948c2e265374583b643e5fe7484870ce81a921db325f1c6c2b`; `tu.json` lists the ordered parts.
 - Verification: `StartRCnt` passed the full finalize gate (agent origin, verified identity `11f9ac41d9aeac777ba8bdd106a803dc911f518e6829e823cd99eb3be19ae7e2`); `GetRCnt` was integrated in the same verified change set. `SetRCnt` passed the full finalize gate (agent origin, verified identity `2605376483c945b31829ee60d1506aae9d9707f395f690c995462ceb614bc67a`); the verified body reuses the already-documented `D_000001E4` record cluster, so no new TU-membership evidence was introduced.
 
+## LIBAPI.LIB — SC2B.OBJ (ordinal 73)
+
+- TU directory: `src/libraries/libapi/73-sc2b/`; target `lib_b98fea1557178089_0`.
+- Original function: `SetConf` (the only named function); same-object neighbors `func_00000290`, `func_000002AC`, `func_000002C8`, `func_000002E4`, `func_00000300`, `func_0000031C`, `func_00000350`, `func_0000036C` remain assembly backlog.
+- Recovered: `SetConf` — initializes the member's root configuration record `D_000003A0` and its header/index/sub-tables, returning 1 on success.
+- Same-file evidence: the verified body reads and writes the member's own root record `D_000003A0` (offset 0x3A0, the SC2B `.data` cluster declared in `_shared-0.h` and stored in `_data.c`), tying the recovered body to this member rather than to another LIBAPI object.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/73-sc2b`, identifies `LIBAPI.LIB` / `SC2B.OBJ`, ordinal 73, `ambiguousNamedBaseline: false`; `src/libraries/libapi/73-sc2b/_shared-0.h` records one original member, one TU, functions: `SetConf`, and `tu.json` lists the ordered parts.
+- Verification: passed (agent origin, verified identity `346b829e5b9a4cde3149c54eee56768112f34882ab87a7bf7d914b20f9ba8f58`); full finalize gate passed.
+
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
