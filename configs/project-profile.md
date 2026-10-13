@@ -25,8 +25,9 @@ configuration, then regenerate this file.
 
 - **Configured compiler:** gcc 2.7.2 (`cc1`) — byte-identity NOT confirmed at generation time (generate a fresh owning-TU verdict with the normal diff/finalization tools)
 - **Flags:** `-O2 -G0 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mgas -fgnu-linker -quiet`
-- **Small-data threshold:** `-G0` — a global can be reached GP-relatively (single `lw/sw %gp_rel(sym)($gp)`) only if it is declared **0 bytes or smaller**, *and* the file **defines** it (a tentative definition, so cc1 emits `.comm`). A file that only declares it `extern` gets absolute addressing (`lui` + `lw/sw %lo(sym)`) whatever the size. Never enlarge a declaration to force absolute addressing; derive ownership from the target's sections and symbols
-- **Assembler semantics:** configured MASPSX → GAS production protocol, ASPSX mode 2.80. Source experiments use this unchanged route. Original compiler input is unknown; candidate expansion alone cannot establish what produced the original words
+- **Small-data threshold:** direct GAS requires explicit `-G0`; undeclared-extern small-data rules at nonzero thresholds are not modeled
+- **Assembler semantics:** direct GNU as, default reorder-mode optimization; compiler-input rewrites: move-addu. The configured assembler is the acceptance path
+- **Assembler profiles:** base: gas; sn-aspsx: maspsx (ASPSX 2.80); sn-aspsx-padded: maspsx (ASPSX 2.80)
 - **SDK:** configured SDK 470; reference headers are evidence, not compiler identity
 - **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: none
 - **Preprocessor flags:** `-I/home/dave/Documents/code/psyq-decomp/include -I/home/dave/Documents/code/psyq-decomp/include/library -I/home/dave/Documents/code/psyq-decomp/library-input/psyq/INCLUDE -undef -D__GNUC__=2 -DINCLUDE_ASM_USE_MACRO_INC=1 -lang-c -D_LANGUAGE_C`
