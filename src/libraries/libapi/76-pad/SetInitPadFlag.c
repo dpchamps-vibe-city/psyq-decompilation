@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_a8f7345a144556eb_0", SetInitPadFlag);
+#include "library/api-pad.h"
+
+void SetInitPadFlag(s32 flag) {
+    D_00000300 = flag;
+}
