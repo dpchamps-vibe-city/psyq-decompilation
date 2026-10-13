@@ -6,6 +6,18 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_000001D0.c",
+      "symbol": "func_000001D0"
+    },
+    {
+      "path": "func_00000384.c",
+      "symbol": "func_00000384"
+    },
+    {
+      "path": "func_00000C8C.c",
+      "symbol": "func_00000C8C"
+    },
+    {
       "path": "SpuStTransfer.c",
       "symbol": "SpuStTransfer"
     },

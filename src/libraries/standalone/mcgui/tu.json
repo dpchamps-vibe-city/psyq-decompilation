@@ -6,20 +6,196 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000090.c",
+      "symbol": "func_00000090"
+    },
+    {
+      "path": "func_00000250.c",
+      "symbol": "func_00000250"
+    },
+    {
       "path": "AdjustSprtData.c",
       "symbol": "AdjustSprtData"
+    },
+    {
+      "path": "func_00000438.c",
+      "symbol": "func_00000438"
+    },
+    {
+      "path": "func_000006EC.c",
+      "symbol": "func_000006EC"
+    },
+    {
+      "path": "func_00000A50.c",
+      "symbol": "func_00000A50"
+    },
+    {
+      "path": "func_00000A8C.c",
+      "symbol": "func_00000A8C"
+    },
+    {
+      "path": "func_00000B54.c",
+      "symbol": "func_00000B54"
+    },
+    {
+      "path": "func_00000B9C.c",
+      "symbol": "func_00000B9C"
     },
     {
       "path": "SsVabTransfer.c",
       "symbol": "SsVabTransfer"
     },
     {
+      "path": "func_00000C54.c",
+      "symbol": "func_00000C54"
+    },
+    {
+      "path": "func_00000DDC.c",
+      "symbol": "func_00000DDC"
+    },
+    {
+      "path": "func_00000E44.c",
+      "symbol": "func_00000E44"
+    },
+    {
       "path": "voice_key_on2.c",
       "symbol": "voice_key_on2"
     },
     {
+      "path": "func_00000FAC.c",
+      "symbol": "func_00000FAC"
+    },
+    {
+      "path": "func_00000FCC.c",
+      "symbol": "func_00000FCC"
+    },
+    {
+      "path": "func_00001088.c",
+      "symbol": "func_00001088"
+    },
+    {
+      "path": "func_0000113C.c",
+      "symbol": "func_0000113C"
+    },
+    {
+      "path": "func_0000116C.c",
+      "symbol": "func_0000116C"
+    },
+    {
+      "path": "func_00001348.c",
+      "symbol": "func_00001348"
+    },
+    {
+      "path": "func_00001578.c",
+      "symbol": "func_00001578"
+    },
+    {
+      "path": "func_00001804.c",
+      "symbol": "func_00001804"
+    },
+    {
+      "path": "func_00001944.c",
+      "symbol": "func_00001944"
+    },
+    {
+      "path": "func_00001B10.c",
+      "symbol": "func_00001B10"
+    },
+    {
+      "path": "func_00001C50.c",
+      "symbol": "func_00001C50"
+    },
+    {
+      "path": "func_00001C6C.c",
+      "symbol": "func_00001C6C"
+    },
+    {
+      "path": "func_00001D10.c",
+      "symbol": "func_00001D10"
+    },
+    {
+      "path": "func_00001DA4.c",
+      "symbol": "func_00001DA4"
+    },
+    {
+      "path": "func_00001DD8.c",
+      "symbol": "func_00001DD8"
+    },
+    {
+      "path": "func_00001FA8.c",
+      "symbol": "func_00001FA8"
+    },
+    {
+      "path": "func_00002078.c",
+      "symbol": "func_00002078"
+    },
+    {
+      "path": "func_0000209C.c",
+      "symbol": "func_0000209C"
+    },
+    {
+      "path": "func_000020A4.c",
+      "symbol": "func_000020A4"
+    },
+    {
+      "path": "func_00002144.c",
+      "symbol": "func_00002144"
+    },
+    {
+      "path": "func_0000277C.c",
+      "symbol": "func_0000277C"
+    },
+    {
+      "path": "func_00002A10.c",
+      "symbol": "func_00002A10"
+    },
+    {
       "path": "_make_bg_sprt.c",
       "symbol": "_make_bg_sprt"
+    },
+    {
+      "path": "func_00002C30.c",
+      "symbol": "func_00002C30"
+    },
+    {
+      "path": "func_00002E10.c",
+      "symbol": "func_00002E10"
+    },
+    {
+      "path": "func_00002E90.c",
+      "symbol": "func_00002E90"
+    },
+    {
+      "path": "func_00002F54.c",
+      "symbol": "func_00002F54"
+    },
+    {
+      "path": "func_000033B0.c",
+      "symbol": "func_000033B0"
+    },
+    {
+      "path": "func_00003460.c",
+      "symbol": "func_00003460"
+    },
+    {
+      "path": "func_00003614.c",
+      "symbol": "func_00003614"
+    },
+    {
+      "path": "func_0000364C.c",
+      "symbol": "func_0000364C"
+    },
+    {
+      "path": "func_00003658.c",
+      "symbol": "func_00003658"
+    },
+    {
+      "path": "func_00003900.c",
+      "symbol": "func_00003900"
+    },
+    {
+      "path": "func_0000390C.c",
+      "symbol": "func_0000390C"
     },
     {
       "path": "UsGetTotalWidth.c",
@@ -30,12 +206,156 @@
       "symbol": "UsGetTotalWidth2"
     },
     {
+      "path": "func_0000399C.c",
+      "symbol": "func_0000399C"
+    },
+    {
+      "path": "func_00003ACC.c",
+      "symbol": "func_00003ACC"
+    },
+    {
+      "path": "func_00003B90.c",
+      "symbol": "func_00003B90"
+    },
+    {
+      "path": "func_00003DE8.c",
+      "symbol": "func_00003DE8"
+    },
+    {
+      "path": "func_00003F74.c",
+      "symbol": "func_00003F74"
+    },
+    {
+      "path": "func_000041AC.c",
+      "symbol": "func_000041AC"
+    },
+    {
+      "path": "func_00004218.c",
+      "symbol": "func_00004218"
+    },
+    {
+      "path": "func_000046C4.c",
+      "symbol": "func_000046C4"
+    },
+    {
+      "path": "func_0000471C.c",
+      "symbol": "func_0000471C"
+    },
+    {
+      "path": "func_00004940.c",
+      "symbol": "func_00004940"
+    },
+    {
       "path": "IsMcguiExternal.c",
       "symbol": "IsMcguiExternal"
     },
     {
+      "path": "func_00004E20.c",
+      "symbol": "func_00004E20"
+    },
+    {
+      "path": "func_00004E98.c",
+      "symbol": "func_00004E98"
+    },
+    {
+      "path": "func_00004EB8.c",
+      "symbol": "func_00004EB8"
+    },
+    {
+      "path": "func_00004ECC.c",
+      "symbol": "func_00004ECC"
+    },
+    {
+      "path": "func_00004FBC.c",
+      "symbol": "func_00004FBC"
+    },
+    {
+      "path": "func_00005054.c",
+      "symbol": "func_00005054"
+    },
+    {
+      "path": "func_00005060.c",
+      "symbol": "func_00005060"
+    },
+    {
+      "path": "func_00005070.c",
+      "symbol": "func_00005070"
+    },
+    {
+      "path": "func_00005088.c",
+      "symbol": "func_00005088"
+    },
+    {
+      "path": "func_000054FC.c",
+      "symbol": "func_000054FC"
+    },
+    {
+      "path": "func_0000556C.c",
+      "symbol": "func_0000556C"
+    },
+    {
+      "path": "func_00005600.c",
+      "symbol": "func_00005600"
+    },
+    {
+      "path": "func_0000567C.c",
+      "symbol": "func_0000567C"
+    },
+    {
+      "path": "func_000058B4.c",
+      "symbol": "func_000058B4"
+    },
+    {
+      "path": "func_00005928.c",
+      "symbol": "func_00005928"
+    },
+    {
+      "path": "func_0000597C.c",
+      "symbol": "func_0000597C"
+    },
+    {
+      "path": "func_00005AF8.c",
+      "symbol": "func_00005AF8"
+    },
+    {
+      "path": "func_00005CA8.c",
+      "symbol": "func_00005CA8"
+    },
+    {
+      "path": "func_000066F4.c",
+      "symbol": "func_000066F4"
+    },
+    {
+      "path": "func_000067B4.c",
+      "symbol": "func_000067B4"
+    },
+    {
       "path": "McGuiSave.c",
       "symbol": "McGuiSave"
+    },
+    {
+      "path": "func_000068D4.c",
+      "symbol": "func_000068D4"
+    },
+    {
+      "path": "func_000068DC.c",
+      "symbol": "func_000068DC"
+    },
+    {
+      "path": "func_00006924.c",
+      "symbol": "func_00006924"
+    },
+    {
+      "path": "func_00006B4C.c",
+      "symbol": "func_00006B4C"
+    },
+    {
+      "path": "func_00007238.c",
+      "symbol": "func_00007238"
+    },
+    {
+      "path": "func_00007304.c",
+      "symbol": "func_00007304"
     },
     {
       "path": "McGuiLoad.c",
@@ -44,6 +364,14 @@
     {
       "path": "_McGuiSetExternalFont.c",
       "symbol": "_McGuiSetExternalFont"
+    },
+    {
+      "path": "func_00007470.c",
+      "symbol": "func_00007470"
+    },
+    {
+      "path": "func_00007924.c",
+      "symbol": "func_00007924"
     },
     {
       "path": "_data.c",

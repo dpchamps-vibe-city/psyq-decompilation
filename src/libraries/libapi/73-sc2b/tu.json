@@ -10,6 +10,38 @@
       "symbol": "SetConf"
     },
     {
+      "path": "func_00000290.c",
+      "symbol": "func_00000290"
+    },
+    {
+      "path": "func_000002AC.c",
+      "symbol": "func_000002AC"
+    },
+    {
+      "path": "func_000002C8.c",
+      "symbol": "func_000002C8"
+    },
+    {
+      "path": "func_000002E4.c",
+      "symbol": "func_000002E4"
+    },
+    {
+      "path": "func_00000300.c",
+      "symbol": "func_00000300"
+    },
+    {
+      "path": "func_0000031C.c",
+      "symbol": "func_0000031C"
+    },
+    {
+      "path": "func_00000350.c",
+      "symbol": "func_00000350"
+    },
+    {
+      "path": "func_0000036C.c",
+      "symbol": "func_0000036C"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

@@ -22,6 +22,10 @@
       "symbol": "DsReadBreak"
     },
     {
+      "path": "func_000004C4.c",
+      "symbol": "func_000004C4"
+    },
+    {
       "path": "DsReadMode.c",
       "symbol": "DsReadMode"
     },

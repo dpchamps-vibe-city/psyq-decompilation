@@ -10,7 +10,7 @@
   },
   "headers": {
     "reference": [
-      "library-input/psyq/INCLUDE"
+      "library-input/converted/include"
     ],
     "owned": [
       "include/library"

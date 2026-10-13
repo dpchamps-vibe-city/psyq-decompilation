@@ -30,13 +30,13 @@ configuration, then regenerate this file.
 - **Assembler profiles:** base: gas; sn-aspsx: maspsx (ASPSX 2.80); sn-aspsx-padded: maspsx (ASPSX 2.80)
 - **SDK:** configured SDK 470; reference headers are evidence, not compiler identity
 - **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: none
-- **Preprocessor flags:** `-I/home/dave/Documents/code/psyq-decomp/include -I/home/dave/Documents/code/psyq-decomp/include/library -I/home/dave/Documents/code/psyq-decomp/library-input/psyq/INCLUDE -undef -D__GNUC__=2 -DINCLUDE_ASM_USE_MACRO_INC=1 -lang-c -D_LANGUAGE_C`
+- **Preprocessor flags:** `-I/home/dave/Documents/code/psyq-decomp/include -I/home/dave/Documents/code/psyq-decomp/include/library -I/home/dave/Documents/code/psyq-decomp/library-input/converted/include -nostdinc -undef -D__GNUC__=2 -DINCLUDE_ASM_USE_MACRO_INC=1 -lang-c -D_LANGUAGE_C`
 
 ## Headers — where a declaration or type belongs
 
 | Role | File | Status |
 |---|---|---|
-| reference declarations/types | `library-input/psyq/INCLUDE` | reference — **never edit** |
+| reference declarations/types | `library-input/converted/include` | reference — **never edit** |
 | owned declarations/types | `include/library` | hand-edited directory (inspect file banners) |
 | generated m2c context only (not a compiler include) | `build/libraries/context/<member-id>/` | generated — **never hand-edit** |
 

@@ -6,6 +6,14 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000068.c",
+      "symbol": "func_00000068"
+    },
+    {
+      "path": "func_000002A4.c",
+      "symbol": "func_000002A4"
+    },
+    {
       "path": "GsU_04010010.c",
       "symbol": "GsU_04010010"
     }

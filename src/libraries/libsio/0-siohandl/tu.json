@@ -6,6 +6,18 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000090.c",
+      "symbol": "func_00000090"
+    },
+    {
+      "path": "func_000004E4.c",
+      "symbol": "func_000004E4"
+    },
+    {
+      "path": "func_000005B4.c",
+      "symbol": "func_000005B4"
+    },
+    {
       "path": "siocons.c",
       "symbol": "siocons"
     },

@@ -10,6 +10,10 @@
       "symbol": "_padInitMtapPort"
     },
     {
+      "path": "func_00000754.c",
+      "symbol": "func_00000754"
+    },
+    {
       "path": "_mtapFailAuto.c",
       "symbol": "_mtapFailAuto"
     },

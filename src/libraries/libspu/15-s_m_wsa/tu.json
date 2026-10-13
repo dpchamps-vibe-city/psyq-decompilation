@@ -8,6 +8,10 @@
     {
       "path": "SpuMallocWithStartAddr.c",
       "symbol": "SpuMallocWithStartAddr"
+    },
+    {
+      "path": "func_000003AC.c",
+      "symbol": "func_000003AC"
     }
   ]
 }

@@ -8,6 +8,18 @@
     {
       "path": "GsU_07030100.c",
       "symbol": "GsU_07030100"
+    },
+    {
+      "path": "func_000004D0.c",
+      "symbol": "func_000004D0"
+    },
+    {
+      "path": "func_000005C8.c",
+      "symbol": "func_000005C8"
+    },
+    {
+      "path": "func_00000690.c",
+      "symbol": "func_00000690"
     }
   ]
 }

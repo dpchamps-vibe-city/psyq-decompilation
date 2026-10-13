@@ -42,6 +42,34 @@
       "symbol": "DecDCToutCallback"
     },
     {
+      "path": "func_00000338.c",
+      "symbol": "func_00000338"
+    },
+    {
+      "path": "func_00000428.c",
+      "symbol": "func_00000428"
+    },
+    {
+      "path": "func_000004B8.c",
+      "symbol": "func_000004B8"
+    },
+    {
+      "path": "func_00000544.c",
+      "symbol": "func_00000544"
+    },
+    {
+      "path": "func_000005D8.c",
+      "symbol": "func_000005D8"
+    },
+    {
+      "path": "func_0000066C.c",
+      "symbol": "func_0000066C"
+    },
+    {
+      "path": "func_00000684.c",
+      "symbol": "func_00000684"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

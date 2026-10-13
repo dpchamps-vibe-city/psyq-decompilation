@@ -10,6 +10,10 @@
       "symbol": "CdInit"
     },
     {
+      "path": "func_00000108.c",
+      "symbol": "func_00000108"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

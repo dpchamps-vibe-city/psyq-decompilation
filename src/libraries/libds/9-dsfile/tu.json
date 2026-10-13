@@ -10,6 +10,26 @@
       "symbol": "DsSearchFile"
     },
     {
+      "path": "func_00000358.c",
+      "symbol": "func_00000358"
+    },
+    {
+      "path": "func_00000378.c",
+      "symbol": "func_00000378"
+    },
+    {
+      "path": "func_0000063C.c",
+      "symbol": "func_0000063C"
+    },
+    {
+      "path": "func_000006E0.c",
+      "symbol": "func_000006E0"
+    },
+    {
+      "path": "func_0000097C.c",
+      "symbol": "func_0000097C"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

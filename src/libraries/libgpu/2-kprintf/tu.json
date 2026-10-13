@@ -6,6 +6,14 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000090.c",
+      "symbol": "func_00000090"
+    },
+    {
+      "path": "func_000001D0.c",
+      "symbol": "func_000001D0"
+    },
+    {
       "path": "KanjiFntOpen.c",
       "symbol": "KanjiFntOpen"
     },

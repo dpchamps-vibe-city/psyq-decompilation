@@ -10,8 +10,16 @@
       "symbol": "GsInitGraph"
     },
     {
+      "path": "func_000000E4.c",
+      "symbol": "func_000000E4"
+    },
+    {
       "path": "GsInitGraph2.c",
       "symbol": "GsInitGraph2"
+    },
+    {
+      "path": "func_00000268.c",
+      "symbol": "func_00000268"
     },
     {
       "path": "GsSortClear.c",

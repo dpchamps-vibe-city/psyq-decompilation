@@ -10,6 +10,22 @@
       "symbol": "AddCOMB"
     },
     {
+      "path": "func_000000D4.c",
+      "symbol": "func_000000D4"
+    },
+    {
+      "path": "func_0000012C.c",
+      "symbol": "func_0000012C"
+    },
+    {
+      "path": "func_00000380.c",
+      "symbol": "func_00000380"
+    },
+    {
+      "path": "func_000003D8.c",
+      "symbol": "func_000003D8"
+    },
+    {
       "path": "_comb_control.c",
       "symbol": "_comb_control"
     },

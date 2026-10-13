@@ -8,6 +8,10 @@
     {
       "path": "malloc2.c",
       "symbol": "malloc2"
+    },
+    {
+      "path": "func_00000220.c",
+      "symbol": "func_00000220"
     }
   ]
 }

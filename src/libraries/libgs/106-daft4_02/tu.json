@@ -8,6 +8,22 @@
     {
       "path": "GsA4divTF4NL.c",
       "symbol": "GsA4divTF4NL"
+    },
+    {
+      "path": "func_00000474.c",
+      "symbol": "func_00000474"
+    },
+    {
+      "path": "func_000008D4.c",
+      "symbol": "func_000008D4"
+    },
+    {
+      "path": "func_000009EC.c",
+      "symbol": "func_000009EC"
+    },
+    {
+      "path": "func_00000BA8.c",
+      "symbol": "func_00000BA8"
     }
   ]
 }

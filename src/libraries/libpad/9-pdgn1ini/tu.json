@@ -10,6 +10,10 @@
       "symbol": "PadInitGun"
     },
     {
+      "path": "func_000001B8.c",
+      "symbol": "func_000001B8"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

@@ -8,6 +8,10 @@
     {
       "path": "qsort.c",
       "symbol": "qsort"
+    },
+    {
+      "path": "func_000001B8.c",
+      "symbol": "func_000001B8"
     }
   ]
 }

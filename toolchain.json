@@ -46,10 +46,11 @@
   "includeDirs": [
     "include",
     "include/library",
-    "library-input/psyq/INCLUDE"
+    "library-input/converted/include"
   ],
   "flags": {
     "cpp": [
+      "-nostdinc",
       "-undef",
       "-D__GNUC__=2",
       "-DINCLUDE_ASM_USE_MACRO_INC=1",
@@ -187,7 +188,7 @@
     },
     "headers": {
       "origin": "project",
-      "path": "library-input/psyq/INCLUDE"
+      "path": "library-input/converted/include"
     }
   },
   "assembler": {

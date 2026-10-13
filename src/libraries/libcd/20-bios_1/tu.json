@@ -6,6 +6,10 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000090.c",
+      "symbol": "func_00000090"
+    },
+    {
       "path": "CD_sync.c",
       "symbol": "CD_sync"
     },

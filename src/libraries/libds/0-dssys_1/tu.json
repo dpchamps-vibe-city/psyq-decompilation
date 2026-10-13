@@ -74,6 +74,30 @@
       "symbol": "DS_cw_system"
     },
     {
+      "path": "func_000003B8.c",
+      "symbol": "func_000003B8"
+    },
+    {
+      "path": "func_00000860.c",
+      "symbol": "func_00000860"
+    },
+    {
+      "path": "func_000009F8.c",
+      "symbol": "func_000009F8"
+    },
+    {
+      "path": "func_00000BDC.c",
+      "symbol": "func_00000BDC"
+    },
+    {
+      "path": "func_00000E64.c",
+      "symbol": "func_00000E64"
+    },
+    {
+      "path": "func_00000FE4.c",
+      "symbol": "func_00000FE4"
+    },
+    {
       "path": "DS_stop.c",
       "symbol": "DS_stop"
     },

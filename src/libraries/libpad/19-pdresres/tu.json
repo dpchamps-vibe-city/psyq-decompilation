@@ -18,6 +18,10 @@
       "symbol": "_padInitSioMode"
     },
     {
+      "path": "func_000005AC.c",
+      "symbol": "func_000005AC"
+    },
+    {
       "path": "_padSioRW.c",
       "symbol": "_padSioRW"
     },
@@ -56,6 +60,26 @@
     {
       "path": "_padCmdParaMode.c",
       "symbol": "_padCmdParaMode"
+    },
+    {
+      "path": "func_000014C4.c",
+      "symbol": "func_000014C4"
+    },
+    {
+      "path": "func_000014D8.c",
+      "symbol": "func_000014D8"
+    },
+    {
+      "path": "func_000014F8.c",
+      "symbol": "func_000014F8"
+    },
+    {
+      "path": "func_00001518.c",
+      "symbol": "func_00001518"
+    },
+    {
+      "path": "func_00001538.c",
+      "symbol": "func_00001538"
     },
     {
       "path": "_padSetRC2wait.c",

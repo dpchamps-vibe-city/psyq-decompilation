@@ -12,6 +12,10 @@
     {
       "path": "RCpolyG4A.c",
       "symbol": "RCpolyG4A"
+    },
+    {
+      "path": "func_00000544.c",
+      "symbol": "func_00000544"
     }
   ]
 }

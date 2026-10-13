@@ -8,6 +8,22 @@
     {
       "path": "GsA4divTNF4.c",
       "symbol": "GsA4divTNF4"
+    },
+    {
+      "path": "func_00000478.c",
+      "symbol": "func_00000478"
+    },
+    {
+      "path": "func_000008D8.c",
+      "symbol": "func_000008D8"
+    },
+    {
+      "path": "func_000009F0.c",
+      "symbol": "func_000009F0"
+    },
+    {
+      "path": "func_00000BAC.c",
+      "symbol": "func_00000BAC"
     }
   ]
 }

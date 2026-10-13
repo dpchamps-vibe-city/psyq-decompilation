@@ -78,6 +78,14 @@
       "symbol": "MemCardFormat"
     },
     {
+      "path": "func_000017FC.c",
+      "symbol": "func_000017FC"
+    },
+    {
+      "path": "func_000018FC.c",
+      "symbol": "func_000018FC"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

@@ -14,6 +14,14 @@
       "symbol": "ReadTMD"
     },
     {
+      "path": "func_00000360.c",
+      "symbol": "func_00000360"
+    },
+    {
+      "path": "func_000004D4.c",
+      "symbol": "func_000004D4"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

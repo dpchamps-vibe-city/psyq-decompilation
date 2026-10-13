@@ -8,6 +8,10 @@
     {
       "path": "StopPAD.c",
       "symbol": "StopPAD"
+    },
+    {
+      "path": "func_000000A0.c",
+      "symbol": "func_000000A0"
     }
   ]
 }

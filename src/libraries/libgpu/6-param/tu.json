@@ -26,6 +26,10 @@
       "symbol": "GetDrawOffset"
     },
     {
+      "path": "func_00000238.c",
+      "symbol": "func_00000238"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

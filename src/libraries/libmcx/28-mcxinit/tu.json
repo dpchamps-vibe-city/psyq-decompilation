@@ -14,6 +14,10 @@
       "symbol": "McxStopCom"
     },
     {
+      "path": "func_00000120.c",
+      "symbol": "func_00000120"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

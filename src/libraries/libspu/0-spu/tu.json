@@ -10,6 +10,10 @@
       "symbol": "_spu_init"
     },
     {
+      "path": "func_000002F8.c",
+      "symbol": "func_000002F8"
+    },
+    {
       "path": "_spu_FiDMA.c",
       "symbol": "_spu_FiDMA"
     },
@@ -44,6 +48,14 @@
     {
       "path": "_spu_FsetPCR.c",
       "symbol": "_spu_FsetPCR"
+    },
+    {
+      "path": "func_00000B00.c",
+      "symbol": "func_00000B00"
+    },
+    {
+      "path": "func_00000B28.c",
+      "symbol": "func_00000B28"
     },
     {
       "path": "_spu_Fw1ts.c",

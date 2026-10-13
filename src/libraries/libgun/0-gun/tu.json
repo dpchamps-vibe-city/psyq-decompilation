@@ -6,8 +6,32 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000080.c",
+      "symbol": "func_00000080"
+    },
+    {
+      "path": "func_00000098.c",
+      "symbol": "func_00000098"
+    },
+    {
+      "path": "func_0000010C.c",
+      "symbol": "func_0000010C"
+    },
+    {
+      "path": "func_00000148.c",
+      "symbol": "func_00000148"
+    },
+    {
+      "path": "func_00000618.c",
+      "symbol": "func_00000618"
+    },
+    {
       "path": "RemoveGUN.c",
       "symbol": "RemoveGUN"
+    },
+    {
+      "path": "func_00000824.c",
+      "symbol": "func_00000824"
     },
     {
       "path": "2-StartGun.c",
@@ -22,6 +46,18 @@
       "symbol": "SelectGUN"
     },
     {
+      "path": "func_00000A4C.c",
+      "symbol": "func_00000A4C"
+    },
+    {
+      "path": "func_00000A80.c",
+      "symbol": "func_00000A80"
+    },
+    {
+      "path": "func_00000B28.c",
+      "symbol": "func_00000B28"
+    },
+    {
       "path": "4-StartGUN.c",
       "symbol": "StartGUN"
     },
@@ -32,6 +68,18 @@
     {
       "path": "InitGUN.c",
       "symbol": "InitGUN"
+    },
+    {
+      "path": "func_00000C40.c",
+      "symbol": "func_00000C40"
+    },
+    {
+      "path": "func_00000C50.c",
+      "symbol": "func_00000C50"
+    },
+    {
+      "path": "func_00000C5C.c",
+      "symbol": "func_00000C5C"
     },
     {
       "path": "SendGUN.c",

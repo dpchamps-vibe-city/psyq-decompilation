@@ -10,6 +10,26 @@
       "symbol": "CdSearchFile"
     },
     {
+      "path": "func_00000350.c",
+      "symbol": "func_00000350"
+    },
+    {
+      "path": "func_00000370.c",
+      "symbol": "func_00000370"
+    },
+    {
+      "path": "func_00000634.c",
+      "symbol": "func_00000634"
+    },
+    {
+      "path": "func_000006D8.c",
+      "symbol": "func_000006D8"
+    },
+    {
+      "path": "func_00000974.c",
+      "symbol": "func_00000974"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

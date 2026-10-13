@@ -18,6 +18,10 @@
       "symbol": "DsReadySystemMode"
     },
     {
+      "path": "func_00000500.c",
+      "symbol": "func_00000500"
+    },
+    {
       "path": "ER_active.c",
       "symbol": "ER_active"
     },

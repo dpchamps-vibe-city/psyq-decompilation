@@ -34,6 +34,10 @@
       "symbol": "DrawSync"
     },
     {
+      "path": "func_0000046C.c",
+      "symbol": "func_0000046C"
+    },
+    {
       "path": "ClearImage.c",
       "symbol": "ClearImage"
     },
@@ -106,6 +110,62 @@
       "symbol": "SetDrawEnv"
     },
     {
+      "path": "func_00001448.c",
+      "symbol": "func_00001448"
+    },
+    {
+      "path": "func_000016B8.c",
+      "symbol": "func_000016B8"
+    },
+    {
+      "path": "func_000016D8.c",
+      "symbol": "func_000016D8"
+    },
+    {
+      "path": "func_00001770.c",
+      "symbol": "func_00001770"
+    },
+    {
+      "path": "func_00001808.c",
+      "symbol": "func_00001808"
+    },
+    {
+      "path": "func_00001824.c",
+      "symbol": "func_00001824"
+    },
+    {
+      "path": "func_000020E4.c",
+      "symbol": "func_000020E4"
+    },
+    {
+      "path": "func_0000212C.c",
+      "symbol": "func_0000212C"
+    },
+    {
+      "path": "func_00002180.c",
+      "symbol": "func_00002180"
+    },
+    {
+      "path": "func_00002430.c",
+      "symbol": "func_00002430"
+    },
+    {
+      "path": "func_00002690.c",
+      "symbol": "func_00002690"
+    },
+    {
+      "path": "func_00002908.c",
+      "symbol": "func_00002908"
+    },
+    {
+      "path": "func_0000293C.c",
+      "symbol": "func_0000293C"
+    },
+    {
+      "path": "func_00002A80.c",
+      "symbol": "func_00002A80"
+    },
+    {
       "path": "LoadImage2.c",
       "symbol": "LoadImage2"
     },
@@ -124,6 +184,10 @@
     {
       "path": "_GPU_ResetCallback.c",
       "symbol": "_GPU_ResetCallback"
+    },
+    {
+      "path": "func_00002F60.c",
+      "symbol": "func_00002F60"
     },
     {
       "path": "_data.c",

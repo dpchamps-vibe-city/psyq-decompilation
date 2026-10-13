@@ -6,8 +6,32 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000088.c",
+      "symbol": "func_00000088"
+    },
+    {
+      "path": "func_000000B8.c",
+      "symbol": "func_000000B8"
+    },
+    {
       "path": "DS_CQ_flush.c",
       "symbol": "DS_CQ_flush"
+    },
+    {
+      "path": "func_00000204.c",
+      "symbol": "func_00000204"
+    },
+    {
+      "path": "func_0000028C.c",
+      "symbol": "func_0000028C"
+    },
+    {
+      "path": "func_0000047C.c",
+      "symbol": "func_0000047C"
+    },
+    {
+      "path": "func_00000710.c",
+      "symbol": "func_00000710"
     },
     {
       "path": "DsInit.c",

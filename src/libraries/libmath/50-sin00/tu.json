@@ -6,6 +6,10 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000070.c",
+      "symbol": "func_00000070"
+    },
+    {
       "path": "tan.c",
       "symbol": "tan"
     },

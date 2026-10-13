@@ -10,6 +10,10 @@
       "symbol": "strtod"
     },
     {
+      "path": "func_00000544.c",
+      "symbol": "func_00000544"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

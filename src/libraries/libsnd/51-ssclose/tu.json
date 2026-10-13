@@ -6,6 +6,10 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000068.c",
+      "symbol": "func_00000068"
+    },
+    {
       "path": "SsSeqClose.c",
       "symbol": "SsSeqClose"
     },

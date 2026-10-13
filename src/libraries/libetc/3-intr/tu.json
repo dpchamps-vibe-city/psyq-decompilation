@@ -46,6 +46,14 @@
       "symbol": "SetIntrMask"
     },
     {
+      "path": "func_000002EC.c",
+      "symbol": "func_000002EC"
+    },
+    {
+      "path": "func_0000071C.c",
+      "symbol": "func_0000071C"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

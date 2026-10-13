@@ -10,6 +10,10 @@
       "symbol": "_padInitDirPort"
     },
     {
+      "path": "func_000002BC.c",
+      "symbol": "func_000002BC"
+    },
+    {
       "path": "_dirFailAuto.c",
       "symbol": "_dirFailAuto"
     },

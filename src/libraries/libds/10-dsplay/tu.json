@@ -10,6 +10,14 @@
       "symbol": "DsPlay"
     },
     {
+      "path": "func_000001B8.c",
+      "symbol": "func_000001B8"
+    },
+    {
+      "path": "func_000002B4.c",
+      "symbol": "func_000002B4"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

@@ -14,6 +14,22 @@
       "symbol": "sprintf2"
     },
     {
+      "path": "func_000000EC.c",
+      "symbol": "func_000000EC"
+    },
+    {
+      "path": "func_00000AD8.c",
+      "symbol": "func_00000AD8"
+    },
+    {
+      "path": "func_00001374.c",
+      "symbol": "func_00001374"
+    },
+    {
+      "path": "func_00001528.c",
+      "symbol": "func_00001528"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

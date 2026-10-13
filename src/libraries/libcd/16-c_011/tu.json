@@ -10,6 +10,14 @@
       "symbol": "StCdInterrupt"
     },
     {
+      "path": "func_00000994.c",
+      "symbol": "func_00000994"
+    },
+    {
+      "path": "func_000009C0.c",
+      "symbol": "func_000009C0"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

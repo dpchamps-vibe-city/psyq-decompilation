@@ -8,6 +8,14 @@
     {
       "path": "realloc3.c",
       "symbol": "realloc3"
+    },
+    {
+      "path": "func_0000014C.c",
+      "symbol": "func_0000014C"
+    },
+    {
+      "path": "func_000001A0.c",
+      "symbol": "func_000001A0"
     }
   ]
 }

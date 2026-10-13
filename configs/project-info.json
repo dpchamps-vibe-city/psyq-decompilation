@@ -1,7 +1,7 @@
 {
-  "evidence": "configs/identification.md",
+  "evidence": "configs/compatibility-correction.md",
   "headers": [
-    { "role": "Immutable supplied SDK reference headers; release markers include 4.7 and sys/4.6", "path": "library-input/psyq/INCLUDE", "readonly": true },
+    { "role": "Immutable supplied SDK reference headers, case-normalized filenames; contents verified against packaged originals", "path": "library-input/converted/include", "readonly": true },
     { "role": "Project-owned library declarations and types", "path": "include/library" },
     { "role": "Umbrella header included by source files", "path": "include/common.h" },
     { "role": "Generated declarations for data symbols", "path": "include/globals.h", "generated": true },

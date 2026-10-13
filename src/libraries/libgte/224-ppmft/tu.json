@@ -6,8 +6,56 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000080.c",
+      "symbol": "func_00000080"
+    },
+    {
+      "path": "func_000000D0.c",
+      "symbol": "func_000000D0"
+    },
+    {
+      "path": "func_00000120.c",
+      "symbol": "func_00000120"
+    },
+    {
+      "path": "func_00000324.c",
+      "symbol": "func_00000324"
+    },
+    {
+      "path": "func_00000528.c",
+      "symbol": "func_00000528"
+    },
+    {
+      "path": "func_000006BC.c",
+      "symbol": "func_000006BC"
+    },
+    {
       "path": "pers_map.c",
       "symbol": "pers_map"
+    },
+    {
+      "path": "func_00000C84.c",
+      "symbol": "func_00000C84"
+    },
+    {
+      "path": "func_00001310.c",
+      "symbol": "func_00001310"
+    },
+    {
+      "path": "func_000013D8.c",
+      "symbol": "func_000013D8"
+    },
+    {
+      "path": "func_000013FC.c",
+      "symbol": "func_000013FC"
+    },
+    {
+      "path": "func_00001AFC.c",
+      "symbol": "func_00001AFC"
+    },
+    {
+      "path": "func_00001B80.c",
+      "symbol": "func_00001B80"
     },
     {
       "path": "_data.c",

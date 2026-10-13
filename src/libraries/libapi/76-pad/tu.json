@@ -26,6 +26,10 @@
       "symbol": "StartPAD"
     },
     {
+      "path": "func_000001DC.c",
+      "symbol": "func_000001DC"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

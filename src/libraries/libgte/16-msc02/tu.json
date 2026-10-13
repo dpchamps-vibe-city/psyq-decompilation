@@ -22,6 +22,10 @@
       "symbol": "VectorNormalSS"
     },
     {
+      "path": "func_00000170.c",
+      "symbol": "func_00000170"
+    },
+    {
       "path": "MatrixNormal.c",
       "symbol": "MatrixNormal"
     },

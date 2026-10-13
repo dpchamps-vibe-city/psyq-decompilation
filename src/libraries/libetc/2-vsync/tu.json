@@ -10,6 +10,10 @@
       "symbol": "VSync"
     },
     {
+      "path": "func_000001F0.c",
+      "symbol": "func_000001F0"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

@@ -10,6 +10,18 @@
       "symbol": "EncSPU2"
     },
     {
+      "path": "func_000000DC.c",
+      "symbol": "func_000000DC"
+    },
+    {
+      "path": "func_000003F8.c",
+      "symbol": "func_000003F8"
+    },
+    {
+      "path": "func_000006CC.c",
+      "symbol": "func_000006CC"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

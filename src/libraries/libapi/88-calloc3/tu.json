@@ -8,6 +8,10 @@
     {
       "path": "calloc3.c",
       "symbol": "calloc3"
+    },
+    {
+      "path": "func_000000BC.c",
+      "symbol": "func_000000BC"
     }
   ]
 }

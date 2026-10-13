@@ -6,6 +6,50 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000080.c",
+      "symbol": "func_00000080"
+    },
+    {
+      "path": "func_00000098.c",
+      "symbol": "func_00000098"
+    },
+    {
+      "path": "func_0000010C.c",
+      "symbol": "func_0000010C"
+    },
+    {
+      "path": "func_00000148.c",
+      "symbol": "func_00000148"
+    },
+    {
+      "path": "func_00001084.c",
+      "symbol": "func_00001084"
+    },
+    {
+      "path": "func_000010B8.c",
+      "symbol": "func_000010B8"
+    },
+    {
+      "path": "func_00001160.c",
+      "symbol": "func_00001160"
+    },
+    {
+      "path": "func_00001180.c",
+      "symbol": "func_00001180"
+    },
+    {
+      "path": "func_00001200.c",
+      "symbol": "func_00001200"
+    },
+    {
+      "path": "func_00001244.c",
+      "symbol": "func_00001244"
+    },
+    {
+      "path": "func_00001254.c",
+      "symbol": "func_00001254"
+    },
+    {
       "path": "InitTAP.c",
       "symbol": "InitTAP"
     },
