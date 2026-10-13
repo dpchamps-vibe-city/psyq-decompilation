@@ -4,7 +4,7 @@ extern void func_000002C8(unsigned int);
 extern void func_00000300(unsigned int);
 extern void func_000002AC(unsigned int);
 extern void func_00000290(void);
-extern void func_0000036C(unsigned int, unsigned int, unsigned int);
+extern void *func_0000036C(unsigned int, unsigned int, unsigned int);
 
 s32 SetConf(s32 arg0, s32 arg1, s32 arg2) {
     s32 var_s0_2;
