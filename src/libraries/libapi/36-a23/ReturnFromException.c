@@ -1,7 +1,5 @@
 #include "library/psx_bios_tailjump.h"
 
-PSX_BIOS_FUNCTION(
-    void, ReturnFromException,
-    (void),
-    0xb0, 0x17
-);
+void ReturnFromException(void) {
+    PSX_BIOS_TAILJUMP(0xb0, 0x17);
+}

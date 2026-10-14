@@ -1,5 +1,3 @@
-PSX_BIOS_FUNCTION(
-    void, _96_init,
-    (void),
-    0xa0, 0x71
-);
+void _96_init(void) {
+    PSX_BIOS_TAILJUMP(0xa0, 0x71);
+}

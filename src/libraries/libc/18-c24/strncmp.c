@@ -1,7 +1,5 @@
 #include "library/psx_bios_tailjump.h"
 
-PSX_BIOS_FUNCTION(
-    int, strncmp,
-    (const char *arg0, const char *arg1, int arg2),
-    0xa0, 0x18
-);
+int strncmp(const char *arg0, const char *arg1, int arg2) {
+    PSX_BIOS_TAILJUMP(0xa0, 0x18);
+}

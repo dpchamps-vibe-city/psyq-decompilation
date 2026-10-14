@@ -1,7 +1,5 @@
 #include "library/psx_bios_tailjump.h"
 
-PSX_BIOS_FUNCTION(
-    void, srand,
-    (unsigned int arg0),
-    0xa0, 0x30
-);
+void srand(unsigned int arg0) {
+    PSX_BIOS_TAILJUMP(0xa0, 0x30);
+}
