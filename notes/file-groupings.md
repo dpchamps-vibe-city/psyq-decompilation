@@ -116,6 +116,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/74-patch`, identifies `LIBAPI.LIB` / `PATCH.OBJ`, ordinal 74. `src/libraries/libapi/74-patch/_shared-0.h` records one original member, one TU, functions: `_patch_pad`, `EnablePAD`, `DisablePAD`, and object sha256 `88562458770e8b1986ea038b0699e1f614fcc9804808de4e3165f50acee731f1`; baseline `library-input/converted/lib/libapi/patch.o` is unambiguously named (`ambiguousNamedBaseline: false`).
 - Verification: passed (agent origin, identity `28d8633b4899dd426de111eea9f5ee2ae8b72f16d66fb6bff5632b3e7a6a58ba`); full finalize gate passed.
 
+## LIBAPI.LIB — FIRST.OBJ (ordinal 75)
+
+- TU directory: `src/libraries/libapi/75-first/`; target `lib_c5a3d475e9914347_0`.
+- Original functions: `firstfile` (exported) plus one unexported file-static companion with no original symbol, reconstructed as `firstfile_hook`; both occupy the member's single `.text` block under the `firstfile` symbol.
+- Recovered: `firstfile` — copies the device name into the member's `B_00000318` buffer, scans the BIOS device table for a matching `dt_string`, saves the current `dt_firstfile` in `B_00000310`, installs the companion hook as the new directory-search routine, then delegates to `firstfile2`.
+- Same-file evidence: `firstfile` and the companion share the member's `.bss` cluster (`B_00000310` saved routine pointer, `B_00000318` device-name buffer, both declared in `_shared-0.h`); the companion at `.text` offset 0x20C is contiguous with `firstfile` and carries no original symbol, marking it as a file-static helper of the same object rather than a separate member.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/75-first`, identifies `LIBAPI.LIB` / `FIRST.OBJ`, ordinal 75, `ambiguousNamedBaseline: false`; `src/libraries/libapi/75-first/_shared-0.h` records one original member and one TU; `tu.json` lists the ordered parts; baseline `library-input/converted/lib/libapi/first.o` is unambiguously named.
+- The call to `firstfile2` is a cross-object call into `A66.OBJ` (ordinal 54), which stays a separate TU and is not merged by this entry.
+- Verification: passed (agent origin, verified identity `04b2a47706b64284c98a6d78cfa55b26dbc054efd4bfd7cd2aa8a42f380747f5`); full finalize gate passed.
+
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.

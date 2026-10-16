@@ -1,16 +1,4 @@
 {
   "version": 1,
-  "macros": [
-    {
-      "name": "PSX_BIOS_TAILJUMP_LOAD",
-      "header": "include/library/psx_bios_tailjump.h",
-      "definitionSha256": "d68cab0088e9f7ccd207e537a78eabb255df522201141ba328b0e306688c1b67",
-      "operation": "Transfer control to a BIOS entry loaded from a pointer slot, preserving the caller's return address and arguments",
-      "rationale": "EnablePAD and DisablePAD independently load their entry slots into $9 and execute lui/lw/nop/jr/nop. This is an ABI transfer, not an ordinary C call or a scalar allocation workaround. The local register binding is confined to the shared operation definition.",
-      "witnesses": [
-        "lib_4031394e3bdde1bc_0::EnablePAD",
-        "lib_4031394e3bdde1bc_0::DisablePAD"
-      ]
-    }
-  ]
+  "macros": []
 }

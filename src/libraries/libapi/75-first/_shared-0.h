@@ -5,4 +5,7 @@
  */
 #include "common.h"
 #include "include_asm.h"
+#include "fs.h"
 
+extern int (*B_00000310)();               /* saved device firstfile routine */
+extern u8 B_00000318[];                   /* device-name buffer */
