@@ -145,6 +145,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/77-padstop` (`PADSTOP.OBJ`, ordinal 77, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `func_000000A0` passed the full finalize gate (agent origin, verified identity `2496bb782afe8484a780e99f6a72f3b5f5272b9b55858d0295b0bcd233a070da`); `StopPAD` documentation completed (agent origin, verified identity `e10cc73cbf5cb591d5e3d8195745ad7253b88a1b8eb17ed039aef0ed3a179735`).
 
+## LIBAPI.LIB — MALLOC2.OBJ (ordinal 79)
+
+- TU directory: `src/libraries/libapi/79-malloc2/`; target `lib_5225df047a945df0_0`.
+- Original function: `malloc2` plus the unnamed file-static companion `func_00000220` (a separate `.c` part, still assembly backlog).
+- Recovered: `malloc2` — first-fit allocator over the heap block list reached from `_Candidate`/`_TopAllocArea`; splits or advances through blocks and calls the companion when it reaches the `-2` terminator.
+- Same-file evidence: `malloc2` calls the unnamed local routine at `.text` offset 0x220, contiguous with `malloc2` (0x68–0x220) and not exported in the object, marking it as a file-static helper of this same TU rather than a separate member. The verified `malloc2.o` carries no `.data`/`.bss`: every heap-state global the body touches is undefined (extern), so this object owns no allocator state.
+- Link adjacency: the heap-state cluster `_AllocRestBlockTop`, `_Candidate`, `_TopAllocArea`, `_max_heap` is undefined in `malloc2.o` and defined in the neighboring `I_HEAP2.OBJ` (ordinal 78) `.bss`; the call direction (initialize → allocate) and contiguous link order (78 → 79) agree. The shared extern cluster does not merge the two members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/79-malloc2` (`MALLOC2.OBJ`, ordinal 79, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `malloc2` passed the full finalize gate (agent origin, verified identity `409514070f886c52139ecd1bead0e7ed9a70bfdd0671d7898b2406ec1b5c5b9c`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
