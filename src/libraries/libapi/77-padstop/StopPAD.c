@@ -1,1 +1,13 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_f624c0ca5d778f32_0", StopPAD);
+#include "common.h"
+
+void DisablePAD(void);
+void StopPAD2(void);
+s32 func_000000A0(void);
+void SetInitPadFlag(s32);
+
+void StopPAD(void) {
+    DisablePAD();
+    StopPAD2();
+    func_000000A0();
+    SetInitPadFlag(0);
+}
