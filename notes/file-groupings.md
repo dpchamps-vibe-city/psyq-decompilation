@@ -135,6 +135,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Same-file evidence: `InitPAD` and `PAD_init` are instruction-for-instruction twins within one member, and both write the member's own `D_00000300` flag that `SetInitPadFlag`/`ReadInitPadFlag` also touch; both also call the member-local unexported helper `func_000001DC`, tying the recovered bodies to this object. Their delegated callees `InitPAD2` (`A18.OBJ`, ordinal 31) and `PAD_init2` (`A21.OBJ`, ordinal 34) are distinct single-function binding members and are not merged here.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member passes whole-member verification after the private-entry split (`build/libraries/verified/lib_a8f7345a144556eb_0.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
 
+## LIBAPI.LIB — PADSTOP.OBJ (ordinal 77)
+
+- TU directory: `src/libraries/libapi/77-padstop/`; target `lib_f624c0ca5d778f32_0`.
+- Original functions: `StopPAD` plus the unexported file-static companion `func_000000A0`; separate from `PAD.OBJ` (ordinal 76).
+- Recovered: `StopPAD` — disables PAD, runs the second stop routine, invokes the companion, then clears the init flag. `func_000000A0` — enters a critical section, dequeues the interrupt-routine queue headed by the common `_apiPadPatch` at priority 1, exits, and returns 1.
+- Same-file evidence: `func_000000A0` is an unnamed static at `.text` offset 0xA0, contiguous with `StopPAD` (offset 0x68) and called only from it, marking it as a file-static helper of this object rather than a separate member.
+- Link adjacency: `func_000000A0` reads the 16-byte common `_apiPadPatch` owned by `PAD.OBJ` (ordinal 76), the same queue that `PAD.OBJ`'s `func_000001DC` enqueues at priority 1; the call graph and the contiguous link order (76 → 77) agree. The shared common symbol does not merge the two members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/77-padstop` (`PADSTOP.OBJ`, ordinal 77, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `func_000000A0` passed the full finalize gate (agent origin, verified identity `2496bb782afe8484a780e99f6a72f3b5f5272b9b55858d0295b0bcd233a070da`); `StopPAD` documentation completed (agent origin, verified identity `e10cc73cbf5cb591d5e3d8195745ad7253b88a1b8eb17ed039aef0ed3a179735`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
