@@ -8,6 +8,14 @@
     {
       "path": "McxGetApl.c",
       "symbol": "McxGetApl"
+    },
+    {
+      "path": "func_000000E8.c",
+      "symbol": "func_000000E8"
+    },
+    {
+      "path": "func_0000012C.c",
+      "symbol": "func_0000012C"
     }
   ]
 }

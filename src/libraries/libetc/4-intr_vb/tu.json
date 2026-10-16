@@ -10,6 +10,14 @@
       "symbol": "startIntrVSync"
     },
     {
+      "path": "func_000000C8.c",
+      "symbol": "func_000000C8"
+    },
+    {
+      "path": "func_00000134.c",
+      "symbol": "func_00000134"
+    },
+    {
       "path": "func_00000160.c",
       "symbol": "func_00000160"
     },

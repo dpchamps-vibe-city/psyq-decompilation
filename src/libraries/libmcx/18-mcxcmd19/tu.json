@@ -8,6 +8,10 @@
     {
       "path": "McxCurrCtrl.c",
       "symbol": "McxCurrCtrl"
+    },
+    {
+      "path": "func_00000110.c",
+      "symbol": "func_00000110"
     }
   ]
 }

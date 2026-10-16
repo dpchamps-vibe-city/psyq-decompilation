@@ -119,21 +119,21 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 ## LIBAPI.LIB — FIRST.OBJ (ordinal 75)
 
 - TU directory: `src/libraries/libapi/75-first/`; target `lib_c5a3d475e9914347_0`.
-- Original functions: `firstfile` (exported) plus one unexported file-static companion with no original symbol, reconstructed as `firstfile_hook`; both occupy the member's single `.text` block under the `firstfile` symbol.
+- Original functions: `firstfile` (exported) plus the unexported file-static companion `func_0000020C` (formerly reconstructed as `firstfile_hook`); the companion's entry is witnessed by the member's section-relative callback-address relocation and now owns its own `.c` part.
 - Recovered: `firstfile` — copies the device name into the member's `B_00000318` buffer, scans the BIOS device table for a matching `dt_string`, saves the current `dt_firstfile` in `B_00000310`, installs the companion hook as the new directory-search routine, then delegates to `firstfile2`.
-- Same-file evidence: `firstfile` and the companion share the member's `.bss` cluster (`B_00000310` saved routine pointer, `B_00000318` device-name buffer, both declared in `_shared-0.h`); the companion at `.text` offset 0x20C is contiguous with `firstfile` and carries no original symbol, marking it as a file-static helper of the same object rather than a separate member.
+- Same-file evidence: `firstfile` and the companion share the member's `.bss` cluster (`B_00000310` saved routine pointer, `B_00000318` device-name buffer, both declared in `_shared-0.h`); the companion at `.text` offset 0x19C (listing coordinate 0x20C) is contiguous with `firstfile` and carries no original symbol, marking it as a file-static helper of the same object rather than a separate member.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/75-first`, identifies `LIBAPI.LIB` / `FIRST.OBJ`, ordinal 75, `ambiguousNamedBaseline: false`; `src/libraries/libapi/75-first/_shared-0.h` records one original member and one TU; `tu.json` lists the ordered parts; baseline `library-input/converted/lib/libapi/first.o` is unambiguously named.
 - The call to `firstfile2` is a cross-object call into `A66.OBJ` (ordinal 54), which stays a separate TU and is not merged by this entry.
-- Verification: passed (agent origin, verified identity `04b2a47706b64284c98a6d78cfa55b26dbc054efd4bfd7cd2aa8a42f380747f5`); full finalize gate passed.
+- Verification: whole-member byte identity rechecked by `npm run check-all` after the separate-function migration; the reviewed C refactor passes its scoped source-policy audit. Historical `firstfile` full-finalize identity: `04b2a47706b64284c98a6d78cfa55b26dbc054efd4bfd7cd2aa8a42f380747f5`.
 
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
-- Original functions: `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`.
-- Recovered: `SetInitPadFlag` (writes the flag) and `ReadInitPadFlag` (reads it); `PAD_init` and `InitPAD` — twin buffer-initialization wrappers that remove the BIOS clear-pad hook, patch PAD under a critical section, invoke the member-local `func_000001DC`, delegate to a separate `*_init2` binding, and set the flag.
-- Remaining functions (`StartPAD`, the `func_000001DC` static helper) and member data are still original assembly backlog.
+- Original functions: `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`, plus private entries `func_000001DC`, `func_00000254` and `func_000002BC`.
+- Recovered: `SetInitPadFlag` (writes the flag) and `ReadInitPadFlag` (reads it); `PAD_init` and `InitPAD` — twin buffer-initialization wrappers that remove the BIOS clear-pad hook, patch PAD under a critical section, invoke the member-local `func_000001DC`, delegate to a separate `*_init2` binding, and set the flag. `StartPAD` delegates startup and enables PAD.
+- Remaining code: initializer `func_000001DC` and its two address-taken callbacks `func_00000254`/`func_000002BC`, installed into `_apiPadPatch+4`/`+8`; each now has a separate source part. These and member data remain original assembly backlog.
 - Same-file evidence: `InitPAD` and `PAD_init` are instruction-for-instruction twins within one member, and both write the member's own `D_00000300` flag that `SetInitPadFlag`/`ReadInitPadFlag` also touch; both also call the member-local unexported helper `func_000001DC`, tying the recovered bodies to this object. Their delegated callees `InitPAD2` (`A18.OBJ`, ordinal 31) and `PAD_init2` (`A21.OBJ`, ordinal 34) are distinct single-function binding members and are not merged here.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member now passes whole-member verification (`build/libraries/verified/lib_a8f7345a144556eb_0.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member passes whole-member verification after the private-entry split (`build/libraries/verified/lib_a8f7345a144556eb_0.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
 
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 

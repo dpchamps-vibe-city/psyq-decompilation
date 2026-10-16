@@ -8,6 +8,14 @@
     {
       "path": "McxExecFlag.c",
       "symbol": "McxExecFlag"
+    },
+    {
+      "path": "func_00000104.c",
+      "symbol": "func_00000104"
+    },
+    {
+      "path": "func_000002AC.c",
+      "symbol": "func_000002AC"
     }
   ]
 }

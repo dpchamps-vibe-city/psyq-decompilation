@@ -10,6 +10,10 @@
       "symbol": "firstfile"
     },
     {
+      "path": "func_0000020C.c",
+      "symbol": "func_0000020C"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

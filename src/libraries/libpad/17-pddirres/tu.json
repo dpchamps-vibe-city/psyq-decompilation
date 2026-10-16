@@ -10,12 +10,44 @@
       "symbol": "_padInitDirPort"
     },
     {
+      "path": "func_00000160.c",
+      "symbol": "func_00000160"
+    },
+    {
+      "path": "func_000001C8.c",
+      "symbol": "func_000001C8"
+    },
+    {
       "path": "func_000002BC.c",
       "symbol": "func_000002BC"
     },
     {
+      "path": "func_000002CC.c",
+      "symbol": "func_000002CC"
+    },
+    {
+      "path": "func_00000388.c",
+      "symbol": "func_00000388"
+    },
+    {
+      "path": "func_00000604.c",
+      "symbol": "func_00000604"
+    },
+    {
+      "path": "func_00000624.c",
+      "symbol": "func_00000624"
+    },
+    {
+      "path": "func_00000734.c",
+      "symbol": "func_00000734"
+    },
+    {
       "path": "_dirFailAuto.c",
       "symbol": "_dirFailAuto"
+    },
+    {
+      "path": "func_00000A80.c",
+      "symbol": "func_00000A80"
     },
     {
       "path": "_data.c",

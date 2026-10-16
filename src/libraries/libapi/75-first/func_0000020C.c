@@ -1,11 +1,7 @@
-/*
- * Static device-table interposer used by firstfile. The original member's
- * .text holds two functions under the single `firstfile` symbol; the second
- * has no original symbol and is defined here so the production translation
- * unit reproduces the member's full .text.
- */
+/* Unexported device-table interposer used by firstfile. Its original entry is
+ * witnessed by the section-relative callback-address relocation. */
 
-static int firstfile_hook(int *arg0, int arg1, int arg2) {
+static int func_0000020C(int *arg0, int arg1, int arg2) {
     struct device_table *dev;
     struct device_table *end;
     struct device_table *limit;

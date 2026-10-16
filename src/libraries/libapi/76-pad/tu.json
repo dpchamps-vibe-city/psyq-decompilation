@@ -30,6 +30,14 @@
       "symbol": "func_000001DC"
     },
     {
+      "path": "func_00000254.c",
+      "symbol": "func_00000254"
+    },
+    {
+      "path": "func_000002BC.c",
+      "symbol": "func_000002BC"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

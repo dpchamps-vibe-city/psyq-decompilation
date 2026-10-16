@@ -30,6 +30,10 @@
       "symbol": "MemCardExist"
     },
     {
+      "path": "func_000001FC.c",
+      "symbol": "func_000001FC"
+    },
+    {
       "path": "MemCardAccept.c",
       "symbol": "MemCardAccept"
     },
@@ -46,16 +50,32 @@
       "symbol": "MemCardReadData"
     },
     {
+      "path": "func_00000AAC.c",
+      "symbol": "func_00000AAC"
+    },
+    {
       "path": "MemCardWriteData.c",
       "symbol": "MemCardWriteData"
+    },
+    {
+      "path": "func_00000D14.c",
+      "symbol": "func_00000D14"
     },
     {
       "path": "MemCardReadFile.c",
       "symbol": "MemCardReadFile"
     },
     {
+      "path": "func_00000FD8.c",
+      "symbol": "func_00000FD8"
+    },
+    {
       "path": "MemCardWriteFile.c",
       "symbol": "MemCardWriteFile"
+    },
+    {
+      "path": "func_000011F8.c",
+      "symbol": "func_000011F8"
     },
     {
       "path": "MemCardGetDirentry.c",
@@ -80,6 +100,10 @@
     {
       "path": "func_000017FC.c",
       "symbol": "func_000017FC"
+    },
+    {
+      "path": "func_00001850.c",
+      "symbol": "func_00001850"
     },
     {
       "path": "func_000018FC.c",

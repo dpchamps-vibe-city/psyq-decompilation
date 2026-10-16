@@ -8,6 +8,10 @@
     {
       "path": "McxFlashAcs.c",
       "symbol": "McxFlashAcs"
+    },
+    {
+      "path": "func_000000E0.c",
+      "symbol": "func_000000E0"
     }
   ]
 }

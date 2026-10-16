@@ -78,8 +78,16 @@
       "symbol": "func_000003B8"
     },
     {
+      "path": "func_00000590.c",
+      "symbol": "func_00000590"
+    },
+    {
       "path": "func_00000860.c",
       "symbol": "func_00000860"
+    },
+    {
+      "path": "func_000008E8.c",
+      "symbol": "func_000008E8"
     },
     {
       "path": "func_000009F8.c",
@@ -92,6 +100,10 @@
     {
       "path": "func_00000E64.c",
       "symbol": "func_00000E64"
+    },
+    {
+      "path": "func_00000F50.c",
+      "symbol": "func_00000F50"
     },
     {
       "path": "func_00000FE4.c",

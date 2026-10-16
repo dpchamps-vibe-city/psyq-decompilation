@@ -8,6 +8,14 @@
     {
       "path": "McxGetTime.c",
       "symbol": "McxGetTime"
+    },
+    {
+      "path": "func_000000DC.c",
+      "symbol": "func_000000DC"
+    },
+    {
+      "path": "func_000000FC.c",
+      "symbol": "func_000000FC"
     }
   ]
 }

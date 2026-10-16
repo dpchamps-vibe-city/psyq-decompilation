@@ -4,7 +4,7 @@
 extern int strcmp();
 extern int firstfile2(char *, int);
 
-static int firstfile_hook(int *, int, int);
+static int func_0000020C(int *, int, int);
 
 int firstfile(char *name, int dir) {
     struct device_table *dev;
@@ -52,7 +52,7 @@ done:
         limit = end;
         do {
             if ((dev->dt_string != 0) && (strcmp(dev->dt_string, (char *)B_00000318) == 0)) {
-                dev->dt_firstfile = firstfile_hook;
+                dev->dt_firstfile = func_0000020C;
                 break;
             }
             dev++;
@@ -60,5 +60,3 @@ done:
     }
     return firstfile2(name, dir);
 }
-
-#include "_firstfile_hook.h"

@@ -8,6 +8,10 @@
     {
       "path": "DsRead2.c",
       "symbol": "DsRead2"
+    },
+    {
+      "path": "func_0000013C.c",
+      "symbol": "func_0000013C"
     }
   ]
 }

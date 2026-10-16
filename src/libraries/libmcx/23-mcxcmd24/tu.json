@@ -10,6 +10,10 @@
       "symbol": "McxAllInfo"
     },
     {
+      "path": "func_000000EC.c",
+      "symbol": "func_000000EC"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

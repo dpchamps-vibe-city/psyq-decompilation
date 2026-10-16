@@ -18,6 +18,14 @@
       "symbol": "func_000002B4"
     },
     {
+      "path": "func_000002F4.c",
+      "symbol": "func_000002F4"
+    },
+    {
+      "path": "func_00000344.c",
+      "symbol": "func_00000344"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

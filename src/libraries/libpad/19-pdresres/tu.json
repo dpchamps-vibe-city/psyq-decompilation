@@ -58,6 +58,14 @@
       "symbol": "_padLoadActInfo"
     },
     {
+      "path": "func_00001004.c",
+      "symbol": "func_00001004"
+    },
+    {
+      "path": "func_000010AC.c",
+      "symbol": "func_000010AC"
+    },
+    {
       "path": "_padCmdParaMode.c",
       "symbol": "_padCmdParaMode"
     },

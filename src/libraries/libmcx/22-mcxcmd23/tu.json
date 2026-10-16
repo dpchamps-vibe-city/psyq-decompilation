@@ -14,6 +14,14 @@
       "symbol": "McxGetMcxInfo"
     },
     {
+      "path": "func_00000124.c",
+      "symbol": "func_00000124"
+    },
+    {
+      "path": "func_00000148.c",
+      "symbol": "func_00000148"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

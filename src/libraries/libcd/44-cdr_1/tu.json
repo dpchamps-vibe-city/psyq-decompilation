@@ -6,6 +6,10 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_000000AC.c",
+      "symbol": "func_000000AC"
+    },
+    {
       "path": "func_000003F0.c",
       "symbol": "func_000003F0"
     },

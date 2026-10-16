@@ -10,6 +10,14 @@
       "symbol": "DsRead"
     },
     {
+      "path": "func_000001A0.c",
+      "symbol": "func_000001A0"
+    },
+    {
+      "path": "func_000001D4.c",
+      "symbol": "func_000001D4"
+    },
+    {
       "path": "DsReadSync.c",
       "symbol": "DsReadSync"
     },

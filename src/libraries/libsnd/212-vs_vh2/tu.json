@@ -8,6 +8,10 @@
     {
       "path": "SsVabOpenHead.c",
       "symbol": "SsVabOpenHead"
+    },
+    {
+      "path": "func_0000009C.c",
+      "symbol": "func_0000009C"
     }
   ]
 }

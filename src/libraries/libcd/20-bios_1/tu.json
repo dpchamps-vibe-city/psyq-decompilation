@@ -50,6 +50,10 @@
       "symbol": "CD_set_test_parmnum"
     },
     {
+      "path": "func_00001534.c",
+      "symbol": "func_00001534"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

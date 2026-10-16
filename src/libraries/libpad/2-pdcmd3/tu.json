@@ -8,6 +8,14 @@
     {
       "path": "PadSetMainMode.c",
       "symbol": "PadSetMainMode"
+    },
+    {
+      "path": "func_00000104.c",
+      "symbol": "func_00000104"
+    },
+    {
+      "path": "func_0000015C.c",
+      "symbol": "func_0000015C"
     }
   ]
 }

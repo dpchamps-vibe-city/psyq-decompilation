@@ -8,6 +8,10 @@
     {
       "path": "McxExecApl.c",
       "symbol": "McxExecApl"
+    },
+    {
+      "path": "func_00000114.c",
+      "symbol": "func_00000114"
     }
   ]
 }

@@ -8,6 +8,14 @@
     {
       "path": "PadSetActAlign.c",
       "symbol": "PadSetActAlign"
+    },
+    {
+      "path": "func_000000E4.c",
+      "symbol": "func_000000E4"
+    },
+    {
+      "path": "func_0000010C.c",
+      "symbol": "func_0000010C"
     }
   ]
 }

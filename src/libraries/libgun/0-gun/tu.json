@@ -26,6 +26,10 @@
       "symbol": "func_00000618"
     },
     {
+      "path": "func_0000072C.c",
+      "symbol": "func_0000072C"
+    },
+    {
       "path": "RemoveGUN.c",
       "symbol": "RemoveGUN"
     },
@@ -44,6 +48,10 @@
     {
       "path": "SelectGUN.c",
       "symbol": "SelectGUN"
+    },
+    {
+      "path": "func_000009D0.c",
+      "symbol": "func_000009D0"
     },
     {
       "path": "func_00000A4C.c",

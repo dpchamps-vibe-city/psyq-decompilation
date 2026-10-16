@@ -10,6 +10,14 @@
       "symbol": "startIntrDMA"
     },
     {
+      "path": "func_000000C4.c",
+      "symbol": "func_000000C4"
+    },
+    {
+      "path": "func_00000244.c",
+      "symbol": "func_00000244"
+    },
+    {
       "path": "func_000002F0.c",
       "symbol": "func_000002F0"
     },

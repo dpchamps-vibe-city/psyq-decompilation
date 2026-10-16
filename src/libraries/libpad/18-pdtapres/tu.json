@@ -10,12 +10,44 @@
       "symbol": "_padInitMtapPort"
     },
     {
+      "path": "func_00000188.c",
+      "symbol": "func_00000188"
+    },
+    {
+      "path": "func_000001FC.c",
+      "symbol": "func_000001FC"
+    },
+    {
+      "path": "func_00000314.c",
+      "symbol": "func_00000314"
+    },
+    {
+      "path": "func_00000358.c",
+      "symbol": "func_00000358"
+    },
+    {
+      "path": "func_00000468.c",
+      "symbol": "func_00000468"
+    },
+    {
+      "path": "func_000006E4.c",
+      "symbol": "func_000006E4"
+    },
+    {
       "path": "func_00000754.c",
       "symbol": "func_00000754"
     },
     {
+      "path": "func_000009C4.c",
+      "symbol": "func_000009C4"
+    },
+    {
       "path": "_mtapFailAuto.c",
       "symbol": "_mtapFailAuto"
+    },
+    {
+      "path": "func_000010F8.c",
+      "symbol": "func_000010F8"
     },
     {
       "path": "_data.c",
