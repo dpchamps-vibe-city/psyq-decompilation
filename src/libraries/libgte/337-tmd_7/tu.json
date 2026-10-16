@@ -3,11 +3,10 @@
   "member": "lib_d666c729822d4bdd_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "gte_gouraud3.c",
-      "symbol": "gte_gouraud3"
+      "path": "tmd_7.s",
+      "symbols": [
+        "gte_gouraud3"
+      ]
     }
   ]
 }

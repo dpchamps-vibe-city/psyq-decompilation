@@ -3,11 +3,10 @@
   "member": "lib_795aba2f39c9b6d8_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ColorDpq.c",
-      "symbol": "ColorDpq"
+      "path": "smp_9.s",
+      "symbols": [
+        "ColorDpq"
+      ]
     }
   ]
 }

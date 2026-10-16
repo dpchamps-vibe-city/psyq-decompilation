@@ -3,11 +3,10 @@
   "member": "lib_ea7b83ec7256b874_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotNMD_GT4.c",
-      "symbol": "RotNMD_GT4"
+      "path": "nmd_8.s",
+      "symbols": [
+        "RotNMD_GT4"
+      ]
     }
   ]
 }

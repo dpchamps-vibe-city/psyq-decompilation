@@ -3,11 +3,10 @@
   "member": "lib_05053791eb52dd50_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalColorCol.c",
-      "symbol": "NormalColorCol"
+      "path": "smp_7.s",
+      "symbols": [
+        "NormalColorCol"
+      ]
     }
   ]
 }

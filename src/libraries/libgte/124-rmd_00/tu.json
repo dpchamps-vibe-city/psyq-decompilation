@@ -3,11 +3,10 @@
   "member": "lib_56b6fea11cd60ae4_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotRMD_F3.c",
-      "symbol": "RotRMD_F3"
+      "path": "rmd_00.s",
+      "symbols": [
+        "RotRMD_F3"
+      ]
     }
   ]
 }

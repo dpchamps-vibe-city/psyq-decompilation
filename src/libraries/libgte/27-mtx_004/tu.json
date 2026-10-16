@@ -3,11 +3,10 @@
   "member": "lib_da31079ea423913d_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ApplyMatrixLV.c",
-      "symbol": "ApplyMatrixLV"
+      "path": "mtx_004.s",
+      "symbols": [
+        "ApplyMatrixLV"
+      ]
     }
   ]
 }

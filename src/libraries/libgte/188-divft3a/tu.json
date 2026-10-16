@@ -3,19 +3,12 @@
   "member": "lib_cad4afe9926d3f11_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RCpolyFT3.c",
-      "symbol": "RCpolyFT3"
-    },
-    {
-      "path": "RCpolyFT3A.c",
-      "symbol": "RCpolyFT3A"
-    },
-    {
-      "path": "func_000003E4.c",
-      "symbol": "func_000003E4"
+      "path": "divft3a.s",
+      "symbols": [
+        "RCpolyFT3",
+        "RCpolyFT3A",
+        "func_000003E4"
+      ]
     }
   ]
 }

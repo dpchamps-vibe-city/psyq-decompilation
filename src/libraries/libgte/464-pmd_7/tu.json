@@ -3,11 +3,10 @@
   "member": "lib_86d1ab705882752a_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotPMD_FT4.c",
-      "symbol": "RotPMD_FT4"
+      "path": "pmd_7.s",
+      "symbols": [
+        "RotPMD_FT4"
+      ]
     }
   ]
 }

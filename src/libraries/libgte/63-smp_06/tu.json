@@ -3,11 +3,10 @@
   "member": "lib_fbcc9a663362b33c_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalClipS.c",
-      "symbol": "NormalClipS"
+      "path": "smp_06.s",
+      "symbols": [
+        "NormalClipS"
+      ]
     }
   ]
 }

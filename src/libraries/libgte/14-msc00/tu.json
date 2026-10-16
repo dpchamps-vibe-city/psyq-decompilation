@@ -3,15 +3,10 @@
   "member": "lib_3a0866b8694d5ca2_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "InitGeom.c",
-      "symbol": "InitGeom"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "msc00.s",
+      "symbols": [
+        "InitGeom"
+      ]
     }
   ]
 }

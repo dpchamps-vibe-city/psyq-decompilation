@@ -3,11 +3,10 @@
   "member": "lib_aebbf8749ea9859f_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsTMDfastTF4LM.c",
-      "symbol": "GsTMDfastTF4LM"
+      "path": "ft4m_02.s",
+      "symbols": [
+        "GsTMDfastTF4LM"
+      ]
     }
   ]
 }

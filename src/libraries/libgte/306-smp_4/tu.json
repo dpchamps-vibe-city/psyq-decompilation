@@ -3,11 +3,10 @@
   "member": "lib_3fc03715284a29f0_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalColor3.c",
-      "symbol": "NormalColor3"
+      "path": "smp_4.s",
+      "symbols": [
+        "NormalColor3"
+      ]
     }
   ]
 }

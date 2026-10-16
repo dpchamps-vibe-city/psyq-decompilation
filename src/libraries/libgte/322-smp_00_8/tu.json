@@ -3,11 +3,10 @@
   "member": "lib_f0990c5e0b3ec626_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "AverageZ4.c",
-      "symbol": "AverageZ4"
+      "path": "smp_00_8.s",
+      "symbols": [
+        "AverageZ4"
+      ]
     }
   ]
 }

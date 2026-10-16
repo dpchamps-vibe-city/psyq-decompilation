@@ -3,11 +3,10 @@
   "member": "lib_5162e9075972d409_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotSMD_SV_GT4.c",
-      "symbol": "RotSMD_SV_GT4"
+      "path": "smd_15.s",
+      "symbols": [
+        "RotSMD_SV_GT4"
+      ]
     }
   ]
 }

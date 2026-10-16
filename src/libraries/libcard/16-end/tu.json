@@ -3,15 +3,10 @@
   "member": "lib_497770463d1e2a21_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_ExitCard.c",
-      "symbol": "_ExitCard"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "end.s",
+      "symbols": [
+        "_ExitCard"
+      ]
     }
   ]
 }

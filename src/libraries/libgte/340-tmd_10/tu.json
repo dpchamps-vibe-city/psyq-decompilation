@@ -3,11 +3,10 @@
   "member": "lib_22e88570c52a42d8_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "gte_texture_flat_fog3.c",
-      "symbol": "gte_texture_flat_fog3"
+      "path": "tmd_10.s",
+      "symbols": [
+        "gte_texture_flat_fog3"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_170e1c968327fc22_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotAverage3.c",
-      "symbol": "RotAverage3"
+      "path": "cmb_01.s",
+      "symbols": [
+        "RotAverage3"
+      ]
     }
   ]
 }

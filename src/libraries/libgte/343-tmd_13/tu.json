@@ -3,11 +3,10 @@
   "member": "lib_2c0e17c1c3f910e3_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "gte_scope_tf4_B.c",
-      "symbol": "gte_scope_tf4_B"
+      "path": "tmd_13.s",
+      "symbols": [
+        "gte_scope_tf4_B"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_b0198f0b4ad3391f_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "LoadAverageCol.c",
-      "symbol": "LoadAverageCol"
+      "path": "msc06_6.s",
+      "symbols": [
+        "LoadAverageCol"
+      ]
     }
   ]
 }

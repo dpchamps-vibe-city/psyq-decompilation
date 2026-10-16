@@ -3,11 +3,10 @@
   "member": "lib_e1db9cbc88a8be2d_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "OuterProduct12.c",
-      "symbol": "OuterProduct12"
+      "path": "smp_00_9.s",
+      "symbols": [
+        "OuterProduct12"
+      ]
     }
   ]
 }

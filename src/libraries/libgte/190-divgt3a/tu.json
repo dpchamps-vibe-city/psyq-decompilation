@@ -3,19 +3,12 @@
   "member": "lib_6efc13198f81e611_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RCpolyGT3.c",
-      "symbol": "RCpolyGT3"
-    },
-    {
-      "path": "RCpolyGT3A.c",
-      "symbol": "RCpolyGT3A"
-    },
-    {
-      "path": "func_00000474.c",
-      "symbol": "func_00000474"
+      "path": "divgt3a.s",
+      "symbols": [
+        "RCpolyGT3",
+        "RCpolyGT3A",
+        "func_00000474"
+      ]
     }
   ]
 }

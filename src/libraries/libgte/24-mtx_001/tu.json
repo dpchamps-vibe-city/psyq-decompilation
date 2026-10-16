@@ -3,11 +3,10 @@
   "member": "lib_2da391633ba4f385_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "MulRotMatrix.c",
-      "symbol": "MulRotMatrix"
+      "path": "mtx_001.s",
+      "symbols": [
+        "MulRotMatrix"
+      ]
     }
   ]
 }

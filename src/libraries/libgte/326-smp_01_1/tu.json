@@ -3,11 +3,10 @@
   "member": "lib_217bd405fa1789be_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotTransSV.c",
-      "symbol": "RotTransSV"
+      "path": "smp_01_1.s",
+      "symbols": [
+        "RotTransSV"
+      ]
     }
   ]
 }

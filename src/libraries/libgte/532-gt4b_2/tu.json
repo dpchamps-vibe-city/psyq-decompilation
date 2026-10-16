@@ -3,11 +3,10 @@
   "member": "lib_d653deab8a16d7c5_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsTMDfastTG4NLB.c",
-      "symbol": "GsTMDfastTG4NLB"
+      "path": "gt4b_2.s",
+      "symbols": [
+        "GsTMDfastTG4NLB"
+      ]
     }
   ]
 }

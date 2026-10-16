@@ -3,11 +3,10 @@
   "member": "lib_2296e660482b0d8a_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ApplyTransposeMatrixLV.c",
-      "symbol": "ApplyTransposeMatrixLV"
+      "path": "trr_4.s",
+      "symbols": [
+        "ApplyTransposeMatrixLV"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_33adb1222b185008_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DivPloyFT4.c",
-      "symbol": "DivPloyFT4"
+      "path": "divp.s",
+      "symbols": [
+        "DivPloyFT4"
+      ]
     }
   ]
 }

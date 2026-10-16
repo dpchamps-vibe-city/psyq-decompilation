@@ -3,11 +3,10 @@
   "member": "lib_31710f485a9a7ae3_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsPrstNF3.c",
-      "symbol": "GsPrstNF3"
+      "path": "prs_f3_1.s",
+      "symbols": [
+        "GsPrstNF3"
+      ]
     }
   ]
 }

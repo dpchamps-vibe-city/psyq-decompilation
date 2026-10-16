@@ -3,11 +3,10 @@
   "member": "lib_e4e96958ea696c59_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotMeshPrimS_GCT3.c",
-      "symbol": "RotMeshPrimS_GCT3"
+      "path": "rmps_gct.s",
+      "symbols": [
+        "RotMeshPrimS_GCT3"
+      ]
     }
   ]
 }

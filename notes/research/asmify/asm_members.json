@@ -1,0 +1,5670 @@
+{
+ "lib_497770463d1e2a21_0": {
+  "tu": "src/libraries/libcard/16-end",
+  "lib": "libcard",
+  "functions": [
+   "_ExitCard"
+  ],
+  "ninstr": 32,
+  "nop": null
+ },
+ "lib_8131e1e9741808b1_0": {
+  "tu": "src/libraries/libcard/14-patch",
+  "lib": "libcard",
+  "functions": [
+   "_patch_card_info",
+   "_patch_card",
+   "_patch_card2",
+   "_copy_memcard_patch"
+  ],
+  "ninstr": 136,
+  "nop": null
+ },
+ "lib_c17f88069058fe71_0": {
+  "tu": "src/libraries/libpad/20-pdhokres",
+  "lib": "libpad",
+  "functions": [
+   "_padGunInitHook",
+   "_padGunExitHook",
+   "_padGetHitCount",
+   "_padClrHitCount"
+  ],
+  "ninstr": 168,
+  "nop": null
+ },
+ "lib_1685ba7539f4e5f3_0": {
+  "tu": "src/libraries/libpress/2-vlc_c",
+  "lib": "libpress",
+  "functions": [
+   "DecDCTvlcSize2",
+   "DecDCTvlc2"
+  ],
+  "ninstr": 224,
+  "nop": null
+ },
+ "lib_e182860cd5f8c93e_0": {
+  "tu": "src/libraries/libpress/1-vlc",
+  "lib": "libpress",
+  "functions": [
+   "DecDCTvlcSize",
+   "DecDCTvlc"
+  ],
+  "ninstr": 224,
+  "nop": null
+ },
+ "lib_588ecf52534c6c91_0": {
+  "tu": "src/libraries/libhmd/317-00140049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140049"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_88410cfd41253b0c_0": {
+  "tu": "src/libraries/libhmd/73-0004024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004024d"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_951b4b1522695836_0": {
+  "tu": "src/libraries/libhmd/17-00000019",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000019"
+  ],
+  "ninstr": 168,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d3089afcac9020df_0": {
+  "tu": "src/libraries/libhmd/181-0124004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0124004c"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_85380262c2b5bcfa_0": {
+  "tu": "src/libraries/libhmd/382-00300016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300016"
+  ],
+  "ninstr": 212,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fa36aaa2f3f9b7d8_0": {
+  "tu": "src/libraries/libhmd/113-00240049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240049"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_63292115a7831a25_0": {
+  "tu": "src/libraries/libhmd/355-0134004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0134004d"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2cb6a6e9a7c2b8fd_0": {
+  "tu": "src/libraries/libhmd/162-01040049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040049"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_603f687a7c160d33_0": {
+  "tu": "src/libraries/libhmd/374-00200213",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200213"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7814225228a5112e_0": {
+  "tu": "src/libraries/libhmd/171-01040251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040251"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e1fde8c083ecb011_0": {
+  "tu": "src/libraries/libhmd/41-00020015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020015"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2c861d34ab3ed2d9_0": {
+  "tu": "src/libraries/libhmd/84-00100010",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100010"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e23d190cb7e72385_0": {
+  "tu": "src/libraries/libhmd/388-0120000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120000e"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f88f3e392f212117_0": {
+  "tu": "src/libraries/libhmd/180-01240049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240049"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_08d5ea021309c2a1_0": {
+  "tu": "src/libraries/libhmd/390-01200016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200016"
+  ],
+  "ninstr": 284,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a4cc96f3927f51db_0": {
+  "tu": "src/libraries/libhmd/64-00040148",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040148"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f276b3d2638a4712_0": {
+  "tu": "src/libraries/libhmd/108-00200209",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200209"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e1583289c06d05c9_0": {
+  "tu": "src/libraries/libhmd/75-00040255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040255"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0544c263150afb78_0": {
+  "tu": "src/libraries/libhmd/79-0010000b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000b"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8fd25f787ab4b877_0": {
+  "tu": "src/libraries/libhmd/127-0030000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000d"
+  ],
+  "ninstr": 164,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9cd056a52b28169e_0": {
+  "tu": "src/libraries/libhmd/392-0120020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120020f"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_98850eccfbf70a7c_0": {
+  "tu": "src/libraries/libhmd/366-0020000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000e"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b8f4447a4b8b6a92_0": {
+  "tu": "src/libraries/libhmd/356-01340050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340050"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ab37a0cd7dac9aea_0": {
+  "tu": "src/libraries/libhmd/332-00340050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340050"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2b94f68ad962a397_0": {
+  "tu": "src/libraries/libhmd/376-0030000a",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000a"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c684a9d4a0bc3784_0": {
+  "tu": "src/libraries/libhmd/146-0100020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100020f"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f14d6ff0c98aac9b_0": {
+  "tu": "src/libraries/libhmd/182-0124004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0124004d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c3c476ca090c7273_0": {
+  "tu": "src/libraries/libhmd/23-0000020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000020f"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6d471ae65a79936e_0": {
+  "tu": "src/libraries/libhmd/336-00340249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340249"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0fca04dbdc611d4b_0": {
+  "tu": "src/libraries/libhmd/2-0000000a",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000a"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4b6207715ee7a38b_0": {
+  "tu": "src/libraries/libhmd/52-00040048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040048"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3f734feb877f9122_0": {
+  "tu": "src/libraries/libhmd/78-0010000a",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000a"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c99cdfef2096161b_0": {
+  "tu": "src/libraries/libhmd/384-0030020b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030020b"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f256071ba1ea1dfb_0": {
+  "tu": "src/libraries/libhmd/189-01240251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240251"
+  ],
+  "ninstr": 164,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6bc92a78aeb281a0_0": {
+  "tu": "src/libraries/libhmd/86-00100012",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100012"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_effb7fb2bf48a873_0": {
+  "tu": "src/libraries/libhmd/135-00300215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300215"
+  ],
+  "ninstr": 216,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_bdc8db7c0f5df30d_0": {
+  "tu": "src/libraries/libhmd/128-00300010",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300010"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_147a08958a45f54a_0": {
+  "tu": "src/libraries/libhmd/327-00140255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140255"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_61cadaab5167de38_0": {
+  "tu": "src/libraries/libhmd/133-0030020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030020d"
+  ],
+  "ninstr": 168,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3551ec64a2fc7577_0": {
+  "tu": "src/libraries/libhmd/119-00240055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240055"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f2ea79c7abef97bb_0": {
+  "tu": "src/libraries/libhmd/74-00040251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040251"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6ed09afe3e554c5e_0": {
+  "tu": "src/libraries/libhmd/323-00140055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140055"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ceeb487435c54689_0": {
+  "tu": "src/libraries/libhmd/83-0010000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000f"
+  ],
+  "ninstr": 176,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_bb6e44f4ec742970_0": {
+  "tu": "src/libraries/libhmd/329-00340049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340049"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_84826a0192fa786f_0": {
+  "tu": "src/libraries/libhmd/98-00100215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100215"
+  ],
+  "ninstr": 216,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_17f4691d2069bc7f_0": {
+  "tu": "src/libraries/libhmd/393-01200217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200217"
+  ],
+  "ninstr": 316,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_96b8baa3b448d2cd_0": {
+  "tu": "src/libraries/libhmd/173-0120000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120000c"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7b99de36a89d541a_0": {
+  "tu": "src/libraries/libhmd/153-01020014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01020014"
+  ],
+  "ninstr": 304,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0b478240b6c6714e_0": {
+  "tu": "src/libraries/libhmd/354-0134004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0134004c"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4eb93897f641fa77_0": {
+  "tu": "src/libraries/libhmd/166-01040051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040051"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cd920dfe2bcb3c40_0": {
+  "tu": "src/libraries/libhmd/168-01040055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040055"
+  ],
+  "ninstr": 164,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_844dd12c5b42ed82_0": {
+  "tu": "src/libraries/libhmd/353-01340049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340049"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9149939e171681a8_0": {
+  "tu": "src/libraries/libhmd/25-00000213",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000213"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_08111353936ce4f4_0": {
+  "tu": "src/libraries/libhmd/137-0100000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100000c"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_910e67e1b9a40748_0": {
+  "tu": "src/libraries/libhmd/93-0010020b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010020b"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_145e3181744b5426_0": {
+  "tu": "src/libraries/libhmd/334-00340054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340054"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5529d6640ee2a61c_0": {
+  "tu": "src/libraries/libhmd/111-00200215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200215"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_527ce52fbebd4a36_0": {
+  "tu": "src/libraries/libhmd/164-0104004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0104004d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6d9de62822592ac2_0": {
+  "tu": "src/libraries/libhmd/387-00300217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300217"
+  ],
+  "ninstr": 224,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d1c5be03369757c6_0": {
+  "tu": "src/libraries/libhmd/169-01040249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040249"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e71da60ebb78512e_0": {
+  "tu": "src/libraries/libhmd/358-01340054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340054"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5ea156ffd4d9403a_0": {
+  "tu": "src/libraries/libhmd/117-00240051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240051"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_af27e4003bf7546f_0": {
+  "tu": "src/libraries/libhmd/101-00200009",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200009"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7d4b57bc670d32fc_0": {
+  "tu": "src/libraries/libhmd/12-00000014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000014"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5b06ee0051b8f704_0": {
+  "tu": "src/libraries/libhmd/318-0014004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0014004c"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_644d0801032afdc1_0": {
+  "tu": "src/libraries/libhmd/5-0000000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000d"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7a9b16f80e4d0cca_0": {
+  "tu": "src/libraries/libhmd/176-01200015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200015"
+  ],
+  "ninstr": 252,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_df4734759e23147a_0": {
+  "tu": "src/libraries/libhmd/143-01000016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000016"
+  ],
+  "ninstr": 284,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e9cbc7732263cf2f_0": {
+  "tu": "src/libraries/libhmd/0-00000008",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000008"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_687fd45f90837061_0": {
+  "tu": "src/libraries/libhmd/357-01340051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340051"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e08b563b474d3550_0": {
+  "tu": "src/libraries/libhmd/160-01020217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01020217"
+  ],
+  "ninstr": 348,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c8903e9deb114e27_0": {
+  "tu": "src/libraries/libhmd/159-01020215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01020215"
+  ],
+  "ninstr": 292,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7b952590c6846060_0": {
+  "tu": "src/libraries/libhmd/57-00040051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040051"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_56888fbde241ef01_0": {
+  "tu": "src/libraries/libhmd/22-0000020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000020d"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ea0eaddf1356546c_0": {
+  "tu": "src/libraries/libhmd/72-00040249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040249"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_97fade73de202b60_0": {
+  "tu": "src/libraries/libhmd/94-0010020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010020d"
+  ],
+  "ninstr": 168,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cb6761c008acc483_0": {
+  "tu": "src/libraries/libhmd/386-00300213",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300213"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_eadee17e21b1dba9_0": {
+  "tu": "src/libraries/libhmd/161-01040048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040048"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8b772530cedf9a8f_0": {
+  "tu": "src/libraries/libhmd/31-0002000b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000b"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4a7b0d49c05b2622_0": {
+  "tu": "src/libraries/libhmd/56-00040050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040050"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_879925e7274983ce_0": {
+  "tu": "src/libraries/libhmd/95-0010020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010020f"
+  ],
+  "ninstr": 180,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4b209b6da9cdaa0d_0": {
+  "tu": "src/libraries/libhmd/54-0004004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004004c"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5e0c32ed609b0047_0": {
+  "tu": "src/libraries/libhmd/10-00000012",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000012"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b0362e52c4789796_0": {
+  "tu": "src/libraries/libhmd/43-00020017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020017"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_118c1caffd78b05d_0": {
+  "tu": "src/libraries/libhmd/316-00140048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140048"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_17e7d1687b3874ad_0": {
+  "tu": "src/libraries/libhmd/14-00000016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000016"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_68f7f315260bd3ab_0": {
+  "tu": "src/libraries/libhmd/330-0034004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0034004c"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_78af3e8a4a82dc52_0": {
+  "tu": "src/libraries/libhmd/350-01140251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140251"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7fff4c6af71bc46b_0": {
+  "tu": "src/libraries/libhmd/378-0030000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000e"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6b6c7b3397bc4477_0": {
+  "tu": "src/libraries/libhmd/362-01340251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340251"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a7a8df4eca678ba9_0": {
+  "tu": "src/libraries/libhmd/325-0014024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0014024d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e0499246e187bb61_0": {
+  "tu": "src/libraries/libhmd/170-0104024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0104024d"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_de3e83d9fad97a61_0": {
+  "tu": "src/libraries/libhmd/51-00020217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020217"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_77e589fe167f32b3_0": {
+  "tu": "src/libraries/libhmd/186-01240055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240055"
+  ],
+  "ninstr": 164,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_003a24719c3f03da_0": {
+  "tu": "src/libraries/libhmd/178-01200215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200215"
+  ],
+  "ninstr": 260,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b40e600052b5bf2a_0": {
+  "tu": "src/libraries/libhmd/19-0000001d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000001d"
+  ],
+  "ninstr": 196,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7c45cf266d9f626f_0": {
+  "tu": "src/libraries/libhmd/343-0114004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0114004d"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ff1a51782231d044_0": {
+  "tu": "src/libraries/libhmd/379-0030000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000f"
+  ],
+  "ninstr": 180,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5462c1f0d6d4fa0b_0": {
+  "tu": "src/libraries/libhmd/337-0034024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0034024d"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a57b5578668db3ee_0": {
+  "tu": "src/libraries/libhmd/154-01020015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01020015"
+  ],
+  "ninstr": 284,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_889eb3e7304a87fb_0": {
+  "tu": "src/libraries/libhmd/76-00100008",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100008"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fa7ee3481b74a7be_0": {
+  "tu": "src/libraries/libhmd/82-0010000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000e"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4cb71f47c76c4db2_0": {
+  "tu": "src/libraries/libhmd/1-00000009",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000009"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4398bdc90e4fbcb3_0": {
+  "tu": "src/libraries/libhmd/165-01040050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040050"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ba7f610f4e429e3f_0": {
+  "tu": "src/libraries/libhmd/360-01340249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340249"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0c8978f27aba05f0_0": {
+  "tu": "src/libraries/libhmd/50-00020215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020215"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ccefdaf3b119cdaf_0": {
+  "tu": "src/libraries/libhmd/340-01140048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140048"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ecbcece8e71a0cad_0": {
+  "tu": "src/libraries/libhmd/190-01240255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240255"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_288f060cf8f8fbc1_0": {
+  "tu": "src/libraries/libhmd/60-00040058",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040058"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_973889b29abb08fc_0": {
+  "tu": "src/libraries/libhmd/368-00200012",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200012"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cadf6fcce7164400_0": {
+  "tu": "src/libraries/libhmd/364-0020000a",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000a"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_921f3885221eead2_0": {
+  "tu": "src/libraries/libhmd/115-0024004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0024004d"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9a19aff9f411b760_0": {
+  "tu": "src/libraries/libhmd/381-00300013",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300013"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a0b92de4bec3a93d_0": {
+  "tu": "src/libraries/libhmd/177-0120020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120020d"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1a1c11400eb1d3bb_0": {
+  "tu": "src/libraries/libhmd/342-0114004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0114004c"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a2bd88e9c132b34f_0": {
+  "tu": "src/libraries/libhmd/129-00300011",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300011"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d4d65179251c5013_0": {
+  "tu": "src/libraries/libhmd/18-0000001c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000001c"
+  ],
+  "ninstr": 184,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3db2c8d84dd7f1f9_0": {
+  "tu": "src/libraries/libhmd/183-01240050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240050"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_07bea22897418c5f_0": {
+  "tu": "src/libraries/libhmd/47-0002020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002020f"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_40d1eea4a84a7324_0": {
+  "tu": "src/libraries/libhmd/99-00100217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100217"
+  ],
+  "ninstr": 224,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_49146061bcbb8408_0": {
+  "tu": "src/libraries/libhmd/338-00340251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340251"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_917182a967c31ba2_0": {
+  "tu": "src/libraries/libhmd/70-00040154",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040154"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9a6729fc01d0ffb7_0": {
+  "tu": "src/libraries/libhmd/53-00040049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040049"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_be582ea2207db016_0": {
+  "tu": "src/libraries/libhmd/174-0120000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120000d"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c5767bc4b31c720b_0": {
+  "tu": "src/libraries/libhmd/89-00100015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100015"
+  ],
+  "ninstr": 212,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f75573943ff4f7e9_0": {
+  "tu": "src/libraries/libhmd/35-0002000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000f"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_506f9499a2ac078c_0": {
+  "tu": "src/libraries/libhmd/331-0034004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0034004d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6a7c5613a4fdf898_0": {
+  "tu": "src/libraries/libhmd/346-01140054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140054"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_36621507512241bc_0": {
+  "tu": "src/libraries/libhmd/46-0002020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002020d"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7373c11c67e65596_0": {
+  "tu": "src/libraries/libhmd/69-00040151",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040151"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_651d702541255ce9_0": {
+  "tu": "src/libraries/libhmd/371-00200017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200017"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_84623bf16a05a70f_0": {
+  "tu": "src/libraries/libhmd/32-0002000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000c"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6e176abd9b6875e9_0": {
+  "tu": "src/libraries/libhmd/59-00040055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040055"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_39f68b2e0ac07cb9_0": {
+  "tu": "src/libraries/libhmd/48-00020211",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020211"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3812b6bb0d8d4e2f_0": {
+  "tu": "src/libraries/libhmd/341-01140049",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140049"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c4d56801d4687825_0": {
+  "tu": "src/libraries/libhmd/375-00200217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200217"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6898481391ca0ea6_0": {
+  "tu": "src/libraries/libhmd/147-01000215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000215"
+  ],
+  "ninstr": 260,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2acd3e8d043328ec_0": {
+  "tu": "src/libraries/libhmd/144-01000017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000017"
+  ],
+  "ninstr": 308,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8a2485fe54337ca3_0": {
+  "tu": "src/libraries/libhmd/106-00200014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200014"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_42e9a28315be947e_0": {
+  "tu": "src/libraries/libhmd/55-0004004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004004d"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ec337420df3fa284_0": {
+  "tu": "src/libraries/libhmd/333-00340051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340051"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_571b5d539c48c692_0": {
+  "tu": "src/libraries/libhmd/100-00200008",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200008"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b14b9bc4915a4d49_0": {
+  "tu": "src/libraries/libhmd/322-00140054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140054"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6542c87fc1b13347_0": {
+  "tu": "src/libraries/libhmd/87-00100013",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100013"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8e693784c611a214_0": {
+  "tu": "src/libraries/libhmd/63-0004005d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004005d"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d9d9fd144935664f_0": {
+  "tu": "src/libraries/libhmd/34-0002000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000e"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_70a3953363c364cf_0": {
+  "tu": "src/libraries/libhmd/344-01140050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140050"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_39b86b853fc5e536_0": {
+  "tu": "src/libraries/libhmd/145-0100020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100020d"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_36a685932e12e47c_0": {
+  "tu": "src/libraries/libhmd/90-00100016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100016"
+  ],
+  "ninstr": 212,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_baadb7a737dcd856_0": {
+  "tu": "src/libraries/libhmd/20-00000209",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000209"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_67418063887fbe51_0": {
+  "tu": "src/libraries/libhmd/156-01020017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01020017"
+  ],
+  "ninstr": 340,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_74a961d9a54b7d51_0": {
+  "tu": "src/libraries/libhmd/367-0020000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000f"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_50ee6420194d9a74_0": {
+  "tu": "src/libraries/libhmd/120-00240249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240249"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3e88053f83f52a2c_0": {
+  "tu": "src/libraries/libhmd/62-0004005c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004005c"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_713b4dab4f2fccd8_0": {
+  "tu": "src/libraries/libhmd/372-0020020b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020020b"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6ba5b9d264ae0a9d_0": {
+  "tu": "src/libraries/libhmd/33-0002000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000d"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d8f961fc81f62a25_0": {
+  "tu": "src/libraries/libhmd/9-00000011",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000011"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_16a175d41df71b2d_0": {
+  "tu": "src/libraries/libhmd/24-00000211",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000211"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cce029bb94a91b60_0": {
+  "tu": "src/libraries/libhmd/184-01240051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240051"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_af7fcb729f877d4e_0": {
+  "tu": "src/libraries/libhmd/348-01140249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140249"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ce46796d5d69eb35_0": {
+  "tu": "src/libraries/libhmd/121-0024024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0024024d"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e914bf206f69e809_0": {
+  "tu": "src/libraries/libhmd/16-00000018",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000018"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_49d302daa327bc64_0": {
+  "tu": "src/libraries/libhmd/324-00140249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140249"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9e9bb0243ba5daf1_0": {
+  "tu": "src/libraries/libhmd/163-0104004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0104004c"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ae32f089d1245935_0": {
+  "tu": "src/libraries/libhmd/138-0100000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100000d"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c237fc0cafc04ffc_0": {
+  "tu": "src/libraries/libhmd/363-01340255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340255"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_86ce54305a9e7578_0": {
+  "tu": "src/libraries/libhmd/21-0000020b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000020b"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c53fdc7f7326fb68_0": {
+  "tu": "src/libraries/libhmd/347-01140055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140055"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b04195024078401f_0": {
+  "tu": "src/libraries/libhmd/126-0030000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000c"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7df304be7e3adb4a_0": {
+  "tu": "src/libraries/libhmd/118-00240054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240054"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e012d1e126431b70_0": {
+  "tu": "src/libraries/libhmd/377-0030000b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030000b"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6a2ad66d780a422e_0": {
+  "tu": "src/libraries/libhmd/335-00340055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340055"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_30fef10191a6ef6d_0": {
+  "tu": "src/libraries/libhmd/351-01140255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140255"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5e643ac1179a00d9_0": {
+  "tu": "src/libraries/libhmd/105-00200011",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200011"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b37de8a117302876_0": {
+  "tu": "src/libraries/libhmd/352-01340048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340048"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_eb77259dbe5c1de7_0": {
+  "tu": "src/libraries/libhmd/124-00300008",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300008"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8fdaffa72525f42d_0": {
+  "tu": "src/libraries/libhmd/96-00100211",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100211"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_29a32a0f7111c019_0": {
+  "tu": "src/libraries/libhmd/61-00040059",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040059"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5909db556e1ea7b1_0": {
+  "tu": "src/libraries/libhmd/320-00140050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140050"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f8cb1f99feed3675_0": {
+  "tu": "src/libraries/libhmd/373-0020020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020020f"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b1463267e50d1e12_0": {
+  "tu": "src/libraries/libhmd/122-00240251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240251"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_68c877f43a5342ea_0": {
+  "tu": "src/libraries/libhmd/142-01000015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000015"
+  ],
+  "ninstr": 252,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_eecd49a95105f5eb_0": {
+  "tu": "src/libraries/libhmd/116-00240050",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240050"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_dedc70d8742fc7f7_0": {
+  "tu": "src/libraries/libhmd/574-mime_s",
+  "lib": "libhmd",
+  "functions": [
+   "GsVNMIMeFunc",
+   "GsRestoreOrgsVNMIMe"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a4e62cafea285d87_0": {
+  "tu": "src/libraries/libhmd/40-00020014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020014"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cf58656d209c8ea4_0": {
+  "tu": "src/libraries/libhmd/102-0020000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000c"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2c532968e3fecc19_0": {
+  "tu": "src/libraries/libhmd/36-00020010",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020010"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_76f7ca6712cdc0a4_0": {
+  "tu": "src/libraries/libhmd/49-00020213",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020213"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5802d78b149ded6b_0": {
+  "tu": "src/libraries/libhmd/27-00000217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000217"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6a65f8f5c4e76e70_0": {
+  "tu": "src/libraries/libhmd/104-00200010",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200010"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c4e4367720da7a3b_0": {
+  "tu": "src/libraries/libhmd/58-00040054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040054"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_bb67039d600ff1e9_0": {
+  "tu": "src/libraries/libhmd/81-0010000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000d"
+  ],
+  "ninstr": 164,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_976063af26dde6cb_0": {
+  "tu": "src/libraries/libhmd/188-0124024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0124024d"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8e8599059f746d43_0": {
+  "tu": "src/libraries/libhmd/148-01000217",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000217"
+  ],
+  "ninstr": 316,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0b19cd1dc8e82a01_0": {
+  "tu": "src/libraries/libhmd/391-01200017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200017"
+  ],
+  "ninstr": 308,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8b7ce2892152fcaf_0": {
+  "tu": "src/libraries/libhmd/15-00000017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000017"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5e019a62901ddcfd_0": {
+  "tu": "src/libraries/libhmd/132-00300209",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300209"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_573e4aa79d4f1e01_0": {
+  "tu": "src/libraries/libhmd/349-0114024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0114024d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3edc49bc4c3f2714_0": {
+  "tu": "src/libraries/libhmd/385-0030020f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0030020f"
+  ],
+  "ninstr": 180,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4f43d5906575ff71_0": {
+  "tu": "src/libraries/libhmd/7-0000000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000f"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4845c8a653486f4e_0": {
+  "tu": "src/libraries/libhmd/361-0134024d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0134024d"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1e7df0cd2e9480e1_0": {
+  "tu": "src/libraries/libhmd/45-0002020b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002020b"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e57a8737ff02f301_0": {
+  "tu": "src/libraries/libhmd/71-00040155",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040155"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2e4e7aa9e3a3889b_0": {
+  "tu": "src/libraries/libhmd/389-0120000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0120000f"
+  ],
+  "ninstr": 168,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0bbe3f27f02a497b_0": {
+  "tu": "src/libraries/libhmd/140-0100000f",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100000f"
+  ],
+  "ninstr": 168,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f551677837612669_0": {
+  "tu": "src/libraries/libhmd/65-00040149",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040149"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7fa159288a5c520c_0": {
+  "tu": "src/libraries/libhmd/345-01140051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01140051"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4e03bc3cbb151bd0_0": {
+  "tu": "src/libraries/libhmd/77-00100009",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100009"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_27537d8ceecee708_0": {
+  "tu": "src/libraries/libhmd/109-0020020d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020020d"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f7a27de6c800cfce_0": {
+  "tu": "src/libraries/libhmd/112-00240048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240048"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a98af912e5378402_0": {
+  "tu": "src/libraries/libhmd/42-00020016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020016"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6cdc00ef24d8c412_0": {
+  "tu": "src/libraries/libhmd/125-00300009",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300009"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ef34dad49a2d1bf1_0": {
+  "tu": "src/libraries/libhmd/13-00000015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000015"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_61781a25bf84bc9c_0": {
+  "tu": "src/libraries/libhmd/107-00200015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200015"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0dd441e24730022f_0": {
+  "tu": "src/libraries/libhmd/131-00300015",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300015"
+  ],
+  "ninstr": 212,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8670b852545f4e5a_0": {
+  "tu": "src/libraries/libhmd/139-0100000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0100000e"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_91f1d3a408106737_0": {
+  "tu": "src/libraries/libhmd/66-0004014c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004014c"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f7d5eb43c39d8872_0": {
+  "tu": "src/libraries/libhmd/92-00100209",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100209"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6ed0372480df0724_0": {
+  "tu": "src/libraries/libhmd/179-01240048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240048"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3e75e7e71a42845e_0": {
+  "tu": "src/libraries/libhmd/28-00020008",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020008"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9b8a536d24b22dc3_0": {
+  "tu": "src/libraries/libhmd/383-00300017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300017"
+  ],
+  "ninstr": 220,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5f401d42dfe1643c_0": {
+  "tu": "src/libraries/libhmd/187-01240249",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240249"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0141ab4ca97b6af6_0": {
+  "tu": "src/libraries/libhmd/11-00000013",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000013"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e209800274e91b41_0": {
+  "tu": "src/libraries/libhmd/85-00100011",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100011"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_14cc6d9c9ddd18d9_0": {
+  "tu": "src/libraries/libhmd/3-0000000b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000b"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1f3843d1a361ec70_0": {
+  "tu": "src/libraries/libhmd/38-00020012",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020012"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4e62f301e247e6ea_0": {
+  "tu": "src/libraries/libhmd/369-00200013",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200013"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ceddcc22830059f9_0": {
+  "tu": "src/libraries/libhmd/37-00020011",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020011"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a66ec1de48f3bcf3_0": {
+  "tu": "src/libraries/libhmd/321-00140051",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140051"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_065f140224fa0faf_0": {
+  "tu": "src/libraries/libhmd/175-01200014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01200014"
+  ],
+  "ninstr": 276,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_87ef15173864b537_0": {
+  "tu": "src/libraries/libhmd/8-00000010",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000010"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_645d75839a17c7fd_0": {
+  "tu": "src/libraries/libhmd/29-00020009",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020009"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_aece238fc4878a7f_0": {
+  "tu": "src/libraries/libhmd/30-0002000a",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0002000a"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_074748304957a1f5_0": {
+  "tu": "src/libraries/libhmd/110-00200211",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200211"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b136e1d4d58067b6_0": {
+  "tu": "src/libraries/libhmd/172-01040255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040255"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4be3c16855f7f6fa_0": {
+  "tu": "src/libraries/libhmd/88-00100014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100014"
+  ],
+  "ninstr": 204,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0ffc9f14f999913c_0": {
+  "tu": "src/libraries/libhmd/328-00340048",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340048"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7e1356b91d4a14f1_0": {
+  "tu": "src/libraries/libhmd/185-01240054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01240054"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2db1ecc6056dd164_0": {
+  "tu": "src/libraries/libhmd/80-0010000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0010000c"
+  ],
+  "ninstr": 160,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_abc9680510d9ef66_0": {
+  "tu": "src/libraries/libhmd/130-00300014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300014"
+  ],
+  "ninstr": 208,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b53aa96f5acd3385_0": {
+  "tu": "src/libraries/libhmd/114-0024004c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0024004c"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a7a47e408eee2d74_0": {
+  "tu": "src/libraries/libhmd/141-01000014",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01000014"
+  ],
+  "ninstr": 276,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c661bce2a378aac3_0": {
+  "tu": "src/libraries/libhmd/365-0020000b",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000b"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_57fb1683b2570422_0": {
+  "tu": "src/libraries/libhmd/44-00020209",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020209"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_54543b45c4b3a85e_0": {
+  "tu": "src/libraries/libhmd/103-0020000d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0020000d"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_70bee06550fba3fd_0": {
+  "tu": "src/libraries/libhmd/91-00100017",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100017"
+  ],
+  "ninstr": 220,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_943bc2e730912ea1_0": {
+  "tu": "src/libraries/libhmd/319-0014004d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0014004d"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_996ef84ac0e58abf_0": {
+  "tu": "src/libraries/libhmd/326-00140251",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00140251"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f8843445d04fedcf_0": {
+  "tu": "src/libraries/libhmd/26-00000215",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00000215"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2f097d852a7f6cac_0": {
+  "tu": "src/libraries/libhmd/134-00300211",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300211"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ec43153d91d11c14_0": {
+  "tu": "src/libraries/libhmd/339-00340255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00340255"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7190c180835c478b_0": {
+  "tu": "src/libraries/libhmd/123-00240255",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00240255"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f4329ba0e958c686_0": {
+  "tu": "src/libraries/libhmd/39-00020013",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00020013"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_06da6c2f8b69d37b_0": {
+  "tu": "src/libraries/libhmd/67-0004014d",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0004014d"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0ab6491f21c68e91_0": {
+  "tu": "src/libraries/libhmd/370-00200016",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00200016"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7c87a7a2ca3029d1_0": {
+  "tu": "src/libraries/libhmd/4-0000000c",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000c"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4fce4cf189d1aa9a_0": {
+  "tu": "src/libraries/libhmd/6-0000000e",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_0000000e"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_eedf99dc232b4097_0": {
+  "tu": "src/libraries/libhmd/97-00100213",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00100213"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_02534853b5732941_0": {
+  "tu": "src/libraries/libhmd/380-00300012",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00300012"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2e35916cddf1f760_0": {
+  "tu": "src/libraries/libhmd/167-01040054",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01040054"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5548502047af6d80_0": {
+  "tu": "src/libraries/libhmd/68-00040150",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_00040150"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_91e49d3b1306c0bc_0": {
+  "tu": "src/libraries/libhmd/359-01340055",
+  "lib": "libhmd",
+  "functions": [
+   "GsU_01340055"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0f663e15dc9457aa_0": {
+  "tu": "src/libraries/libgun/1-newgun",
+  "lib": "libgun",
+  "functions": [
+   "_InitGun",
+   "_ExitGun",
+   "_check_gun_flag",
+   "_clear_gun_flag",
+   "read_gun_v",
+   "read_gun_h"
+  ],
+  "ninstr": 188,
+  "nop": null
+ },
+ "lib_5cd9d9a868f594eb_0": {
+  "tu": "src/libraries/libgte/366-f4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNF4"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_67a09a43b13a9146_0": {
+  "tu": "src/libraries/libgte/189-divg3a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyG3",
+   "RCpolyG3A",
+   "func_00000414"
+  ],
+  "ninstr": 260,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c0bba408cc181e19_0": {
+  "tu": "src/libraries/libgte/426-prs_g4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNG4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_50c93ab797e6fac3_0": {
+  "tu": "src/libraries/libgte/324-smp_00_1",
+  "lib": "libgte",
+  "functions": [
+   "OuterProduct0"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e11bb7444e1c1588_0": {
+  "tu": "src/libraries/libgte/484-nmd_11",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_FT3"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3207513b8bc189c7_0": {
+  "tu": "src/libraries/libgte/80-cmb_16",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPersN"
+  ],
+  "ninstr": 28,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_84c46f1140feb5d6_0": {
+  "tu": "src/libraries/libgte/453-prs_gt4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4LFG"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ec1badbfa5a5dec4_0": {
+  "tu": "src/libraries/libgte/69-cmb_05",
+  "lib": "libgte",
+  "functions": [
+   "RotNclip4"
+  ],
+  "ninstr": 44,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fb62d51566bde9ad_0": {
+  "tu": "src/libraries/libgte/437-prs_ft3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF3LFG"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ef85e5d940eb8244_0": {
+  "tu": "src/libraries/libgte/390-ft4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF4"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b9dd4923fddf00c5_0": {
+  "tu": "src/libraries/libgte/379-g4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4NL"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4b6c5e0296d18f87_0": {
+  "tu": "src/libraries/libgte/458-pmd_1",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_F3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_56b6fea11cd60ae4_0": {
+  "tu": "src/libraries/libgte/124-rmd_00",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_F3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d5514ff806175ff4_0": {
+  "tu": "src/libraries/libgte/204-rmps_f",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_F3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_75048cfd5d9bce25_0": {
+  "tu": "src/libraries/libgte/516-g4b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4NLB"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_43fa4e1a73f50ef6_0": {
+  "tu": "src/libraries/libgte/506-f3b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3LFGB"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ea0b5c07a6cc3ff6_0": {
+  "tu": "src/libraries/libgte/213-rmpr_f",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_F3"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4b64e17f6c12a537_0": {
+  "tu": "src/libraries/libgte/214-rmpr_g",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_G3"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_67d4ca4b4087d5e5_0": {
+  "tu": "src/libraries/libgte/412-prs_f3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF3L"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a3afec6d606f54a6_0": {
+  "tu": "src/libraries/libgte/76-cmb_12",
+  "lib": "libgte",
+  "functions": [
+   "RotColorDpq"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fafb540c014e4a6c_0": {
+  "tu": "src/libraries/libgte/510-f4b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4LFGB"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_227bcf95905b0189_0": {
+  "tu": "src/libraries/libgte/406-gt4s_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG4D"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d706b817df6f1868_0": {
+  "tu": "src/libraries/libgte/369-f4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4LFG"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b0198f0b4ad3391f_0": {
+  "tu": "src/libraries/libgte/278-msc06_6",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverageCol"
+  ],
+  "ninstr": 32,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8b9b3083c49c00c4_0": {
+  "tu": "src/libraries/libgte/530-gt3b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3LFGB"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c999c3d5fa1fe1b9_0": {
+  "tu": "src/libraries/libgte/448-prs_gt3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG3L"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_834123644b9748ef_0": {
+  "tu": "src/libraries/libgte/103-ft4m_03",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LFGM"
+  ],
+  "ninstr": 192,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_09886d7ef15dbeac_0": {
+  "tu": "src/libraries/libgte/449-prs_gt3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG3LFG"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_71b67f249863c7ce_0": {
+  "tu": "src/libraries/libgte/407-gt4s_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4NLD"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_568adce046c41e82_0": {
+  "tu": "src/libraries/libgte/67-cmb_03",
+  "lib": "libgte",
+  "functions": [
+   "RotNclip"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_24a1fa50d92abe40_0": {
+  "tu": "src/libraries/libgte/365-f3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3LFG"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_06f00a80c4e877fd_0": {
+  "tu": "src/libraries/libgte/459-pmd_2",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_G3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_94f0a7046d6e6a35_0": {
+  "tu": "src/libraries/libgte/312-smp_10",
+  "lib": "libgte",
+  "functions": [
+   "ColorCol"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7299e2c511c33e03_0": {
+  "tu": "src/libraries/libgte/384-g4s_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4LD"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_45908840ecea265e_0": {
+  "tu": "src/libraries/libgte/525-ft4b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LB"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_192b96500300bb61_0": {
+  "tu": "src/libraries/libgte/346-nom_2",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fd8ba8c3b1703821_0": {
+  "tu": "src/libraries/libgte/357-nom_13",
+  "lib": "libgte",
+  "functions": [
+   "NormalColor3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1cf6836adedf9763_0": {
+  "tu": "src/libraries/libgte/206-rmps_ft",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_FT3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2c0c064c94cafc0a_0": {
+  "tu": "src/libraries/libgte/61-smp_04",
+  "lib": "libgte",
+  "functions": [
+   "RotTrans"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_41e84418cfe59d41_0": {
+  "tu": "src/libraries/libgte/66-cmb_02",
+  "lib": "libgte",
+  "functions": [
+   "RotAverage4"
+  ],
+  "ninstr": 32,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2296e660482b0d8a_0": {
+  "tu": "src/libraries/libgte/502-trr_4",
+  "lib": "libgte",
+  "functions": [
+   "ApplyTransposeMatrixLV"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_61d6b6d58d59e506_0": {
+  "tu": "src/libraries/libgte/469-pmd_12",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_GT3"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d5204a44064633a5_0": {
+  "tu": "src/libraries/libgte/468-pmd_11",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_FT3"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0f1a825d7b7f5e64_0": {
+  "tu": "src/libraries/libgte/107-gt4m_03",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LFGM"
+  ],
+  "ninstr": 216,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f010b2ae25fbfa1a_0": {
+  "tu": "src/libraries/libgte/210-rmps_fct",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_FCT3"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7c40495f4a0e71f9_0": {
+  "tu": "src/libraries/libgte/397-ft4s_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LFGD"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_04d766eece0b4b05_0": {
+  "tu": "src/libraries/libgte/472-pmd_15",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_FT4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_428700435e6145fd_0": {
+  "tu": "src/libraries/libgte/137-rmd_13",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_G4"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ce3cdebe39f89fa2_0": {
+  "tu": "src/libraries/libgte/446-prs_gt3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNG3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a5dd1da3254c9e4a_0": {
+  "tu": "src/libraries/libgte/478-nmd_5",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_F4"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ce028a37a76b10c6_0": {
+  "tu": "src/libraries/libgte/398-gt3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG3"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9f8c25939d36ae90_0": {
+  "tu": "src/libraries/libgte/22-msc09",
+  "lib": "libgte",
+  "functions": [
+   "SquareRoot12"
+  ],
+  "ninstr": 40,
+  "nop": null
+ },
+ "lib_4cf121cb9d83c838_0": {
+  "tu": "src/libraries/libgte/483-nmd_10",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_G3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c489e0dc6f05c5c9_0": {
+  "tu": "src/libraries/libgte/331-tmd_1",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_f3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6fa7155f8679459c_0": {
+  "tu": "src/libraries/libgte/15-msc01",
+  "lib": "libgte",
+  "functions": [
+   "SquareRoot0"
+  ],
+  "ninstr": 36,
+  "nop": null
+ },
+ "lib_bd1f9f3bcb6f75c1_0": {
+  "tu": "src/libraries/libgte/507-f4b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNF4B"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e3bb34b55c28f543_0": {
+  "tu": "src/libraries/libgte/274-msc06_2",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverage0"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_57a2baa5b37edfb2_0": {
+  "tu": "src/libraries/libgte/473-pmd_16",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_GT4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_732414dd1a6465b6_0": {
+  "tu": "src/libraries/libgte/333-tmd_3",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_g3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_438ede1451d732ca_0": {
+  "tu": "src/libraries/libgte/59-smp_02",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_15097414ab056beb_0": {
+  "tu": "src/libraries/libgte/487-nmd_14",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_G4"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3ca5b8844e30b569_0": {
+  "tu": "src/libraries/libgte/113-smd_05",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_G4"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2a85531fc37d63ca_0": {
+  "tu": "src/libraries/libgte/353-nom_9",
+  "lib": "libgte",
+  "functions": [
+   "RotColorDpq3_nom"
+  ],
+  "ninstr": 28,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1248c0c8d56b0c64_0": {
+  "tu": "src/libraries/libgte/315-smp_00_1",
+  "lib": "libgte",
+  "functions": [
+   "LightColor"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_91f99bba44655e33_0": {
+  "tu": "src/libraries/libgte/75-cmb_11",
+  "lib": "libgte",
+  "functions": [
+   "ColorMatCol"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b5228438784f6e68_0": {
+  "tu": "src/libraries/libgte/441-prs_ft4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4LFG"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c9eb79b180e4e737_0": {
+  "tu": "src/libraries/libgte/420-prs_f4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4LD"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_96f8d6b1c92d297a_0": {
+  "tu": "src/libraries/libgte/121-smd_13",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_G4"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_59639e43ed6ce8b7_0": {
+  "tu": "src/libraries/libgte/328-smp_01_3",
+  "lib": "libgte",
+  "functions": [
+   "SquareSS0"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1b39f5b5257a74a3_0": {
+  "tu": "src/libraries/libgte/115-smd_07",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_GT4"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1c09c5f0984a68b8_0": {
+  "tu": "src/libraries/libgte/531-gt4b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG4B"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_014752e0c77e0f38_0": {
+  "tu": "src/libraries/libgte/38-mtx_03",
+  "lib": "libgte",
+  "functions": [
+   "MulMatrix"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fe45d7645ca0a147_0": {
+  "tu": "src/libraries/libgte/427-prs_g4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4NL"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_acc2951fffdf2873_0": {
+  "tu": "src/libraries/libgte/501-trr_3",
+  "lib": "libgte",
+  "functions": [
+   "TransRotPers3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_077ea1b99e6758fc_0": {
+  "tu": "src/libraries/libgte/304-smp_2",
+  "lib": "libgte",
+  "functions": [
+   "DpqColor"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0912b0e97bb7a69f_0": {
+  "tu": "src/libraries/libgte/367-f4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4NL"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e15b6ac784df5585_0": {
+  "tu": "src/libraries/libgte/488-nmd_15",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_FT4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8d06abdb02268d2d_0": {
+  "tu": "src/libraries/libgte/375-g3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3NL"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_127c636017129f30_0": {
+  "tu": "src/libraries/libgte/460-pmd_3",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_FT3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_18f5dcf91bdd5762_0": {
+  "tu": "src/libraries/libgte/467-pmd_10",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_G3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1ef587fb7c90f49f_0": {
+  "tu": "src/libraries/libgte/108-smd_00",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_F3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b220089bb7e8626e_0": {
+  "tu": "src/libraries/libgte/212-rmps_t",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_T3"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2f398f4e1e55bd3f_0": {
+  "tu": "src/libraries/libgte/363-f3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3NL"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6fe7af0014efc6d8_0": {
+  "tu": "src/libraries/libgte/451-prs_gt4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4NL"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_586de06602537900_0": {
+  "tu": "src/libraries/libgte/98-rmat_01",
+  "lib": "libgte",
+  "functions": [
+   "RotMatrix_gte"
+  ],
+  "ninstr": 132,
+  "nop": "sdk-macro (>=2 nops)"
+ },
+ "lib_5eac32cf8df76f27_0": {
+  "tu": "src/libraries/libgte/308-smp_6",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorDpq3"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_73ed9234e2c14635_0": {
+  "tu": "src/libraries/libgte/313-smp_11",
+  "lib": "libgte",
+  "functions": [
+   "AverageSZ3"
+  ],
+  "ninstr": 4,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a7bc5d9be989e039_0": {
+  "tu": "src/libraries/libgte/127-rmd_03",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_GT3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_13bd2dc7139e584f_0": {
+  "tu": "src/libraries/libgte/526-ft4b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LFGB"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_505ef54a7171a340_0": {
+  "tu": "src/libraries/libgte/97-rmat_00",
+  "lib": "libgte",
+  "functions": [
+   "RotMatrixZYX_gte"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e75900184532e5fb_0": {
+  "tu": "src/libraries/libgte/219-rmpr_fct",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_FCT3"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_20cfff86d578b732_0": {
+  "tu": "src/libraries/libgte/60-smp_03",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers3"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7d3e1ad10b8a0dc0_0": {
+  "tu": "src/libraries/libgte/81-cmb_17",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers3N"
+  ],
+  "ninstr": 32,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4cb5d17645bb7daa_0": {
+  "tu": "src/libraries/libgte/320-smp_00_6",
+  "lib": "libgte",
+  "functions": [
+   "Square0"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4df5901c9a3d8a5c_0": {
+  "tu": "src/libraries/libgte/405-gt4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LFG"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_427007cab7a87e3b_0": {
+  "tu": "src/libraries/libgte/455-prs_gt4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4NLD"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8a0ddbed83b82e28_0": {
+  "tu": "src/libraries/libgte/227-phn",
+  "lib": "libgte",
+  "functions": [
+   "PhongLine"
+  ],
+  "ninstr": 188,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f2f14acf662b45b7_0": {
+  "tu": "src/libraries/libgte/430-prs_g4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNG4D"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_95aa87281f1e6db1_0": {
+  "tu": "src/libraries/libgte/317-smp_00_3",
+  "lib": "libgte",
+  "functions": [
+   "DpqColor3"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1fd6d72d815313c3_0": {
+  "tu": "src/libraries/libgte/504-f3b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3NLB"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e1db9cbc88a8be2d_0": {
+  "tu": "src/libraries/libgte/323-smp_00_9",
+  "lib": "libgte",
+  "functions": [
+   "OuterProduct12"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ba764639103b59eb_0": {
+  "tu": "src/libraries/libgte/327-smp_01_2",
+  "lib": "libgte",
+  "functions": [
+   "SquareSS12"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f366e33d493e58b6_0": {
+  "tu": "src/libraries/libgte/376-g3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3L"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3679a816335b49a6_0": {
+  "tu": "src/libraries/libgte/489-nmd_16",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_GT4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1ec89a799770d084_0": {
+  "tu": "src/libraries/libgte/415-prs_f4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4NL"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9cd4ba0c901be7c1_0": {
+  "tu": "src/libraries/libgte/329-smp_01_4",
+  "lib": "libgte",
+  "functions": [
+   "SquareSL12"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c8a7ac38b20c0330_0": {
+  "tu": "src/libraries/libgte/344-tmd_14",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_tf4"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cdc8b9a907527c2a_0": {
+  "tu": "src/libraries/libgte/339-tmd_9",
+  "lib": "libgte",
+  "functions": [
+   "gte_flat_fog3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ca659cb607a0d065_0": {
+  "tu": "src/libraries/libgte/400-gt3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3L"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_39dc49214a9d27a2_0": {
+  "tu": "src/libraries/libgte/471-pmd_14",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_G4"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_293fa4d1b64671c8_0": {
+  "tu": "src/libraries/libgte/447-prs_gt3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG3NL"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c17cf553e450928e_0": {
+  "tu": "src/libraries/libgte/462-pmd_5",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_F4"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6efc13198f81e611_0": {
+  "tu": "src/libraries/libgte/190-divgt3a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyGT3",
+   "RCpolyGT3A",
+   "func_00000474"
+  ],
+  "ninstr": 296,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_29d070621a3bbfe9_0": {
+  "tu": "src/libraries/libgte/135-rmd_11",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_GT3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4ca7e1b4078551b0_0": {
+  "tu": "src/libraries/libgte/129-rmd_05",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_G4"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_106bcdcd667767e2_0": {
+  "tu": "src/libraries/libgte/439-prs_ft4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4NL"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5677a2cfe6afa72f_0": {
+  "tu": "src/libraries/libgte/508-f4b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4NLB"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6e7a9c5278a40335_0": {
+  "tu": "src/libraries/libgte/381-g4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4LFG"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cfca88997b222516_0": {
+  "tu": "src/libraries/libgte/354-nom_10",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclipColorDpq3_nom"
+  ],
+  "ninstr": 28,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_14b5584401b6f9ce_0": {
+  "tu": "src/libraries/libgte/524-ft4b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4NLB"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7db841b787bd0ef3_0": {
+  "tu": "src/libraries/libgte/37-mtx_02",
+  "lib": "libgte",
+  "functions": [
+   "SetMulRotMatrix"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a5533b63f9aaafdc_0": {
+  "tu": "src/libraries/libgte/191-divf4a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyF4",
+   "RCpolyF4A",
+   "func_00000490"
+  ],
+  "ninstr": 288,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5aafcea7940dcae7_0": {
+  "tu": "src/libraries/libgte/409-gt4s_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LFGD"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9d9c2e6e3dba48fa_0": {
+  "tu": "src/libraries/libgte/361-nom_17",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorCol3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5665d89b0ac16cc3_0": {
+  "tu": "src/libraries/libgte/518-g4b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4LFGB"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4da8ea976a1ca68e_0": {
+  "tu": "src/libraries/libgte/336-tmd_6",
+  "lib": "libgte",
+  "functions": [
+   "gte_texture_flat3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9545cf08347cacc9_0": {
+  "tu": "src/libraries/libgte/111-smd_03",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_GT3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_dc61a30b5c1f175a_0": {
+  "tu": "src/libraries/libgte/314-smp_12",
+  "lib": "libgte",
+  "functions": [
+   "AverageSZ4"
+  ],
+  "ninstr": 4,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_da31079ea423913d_0": {
+  "tu": "src/libraries/libgte/27-mtx_004",
+  "lib": "libgte",
+  "functions": [
+   "ApplyMatrixLV"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_72843f4754d5470e_0": {
+  "tu": "src/libraries/libgte/431-prs_g4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4NLD"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_83117b3482c41e63_0": {
+  "tu": "src/libraries/libgte/399-gt3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3NL"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_26ddf9cd85218439_0": {
+  "tu": "src/libraries/libgte/19-msc05",
+  "lib": "libgte",
+  "functions": [
+   "gteMIMefunc"
+  ],
+  "ninstr": 32,
+  "nop": "sdk-macro (>=2 nops)"
+ },
+ "lib_1e53484b7fde7a0e_0": {
+  "tu": "src/libraries/libgte/114-smd_06",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_FT4"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a1195d72b5500967_0": {
+  "tu": "src/libraries/libgte/521-ft3b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3LB"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ea7b83ec7256b874_0": {
+  "tu": "src/libraries/libgte/481-nmd_8",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_GT4"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_de51bad737e96620_0": {
+  "tu": "src/libraries/libgte/452-prs_gt4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4L"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_27e93db2c33b2458_0": {
+  "tu": "src/libraries/libgte/39-mtx_04",
+  "lib": "libgte",
+  "functions": [
+   "MulMatrix2"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4be8ac7662e0b669_0": {
+  "tu": "src/libraries/libgte/418-prs_f4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNF4D"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f6b80089b79abbd5_0": {
+  "tu": "src/libraries/libgte/509-f4b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4LB"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e2d82fcb22c7130c_0": {
+  "tu": "src/libraries/libgte/277-msc06_5",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverageByte"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6bc0dde42d6488de_0": {
+  "tu": "src/libraries/libgte/414-prs_f4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNF4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_987ed52c7682c0a8_0": {
+  "tu": "src/libraries/libgte/116-smd_08",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_F3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c3105fdced92c4e1_0": {
+  "tu": "src/libraries/libgte/422-prs_g3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNG3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7a58955776ff0cee_0": {
+  "tu": "src/libraries/libgte/486-nmd_13",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_F4"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fd9101ed63af4da2_0": {
+  "tu": "src/libraries/libgte/416-prs_f4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4L"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3f973150da3ddd73_0": {
+  "tu": "src/libraries/libgte/332-tmd_2",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_tf3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ed441e4a6f6c3b04_0": {
+  "tu": "src/libraries/libgte/413-prs_f3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF3LFG"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_58c488371af3e47f_0": {
+  "tu": "src/libraries/libgte/389-ft3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3LFG"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_673628d255bb5731_0": {
+  "tu": "src/libraries/libgte/130-rmd_06",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_FT4"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_373fcd6e678c7d77_0": {
+  "tu": "src/libraries/libgte/474-nmd_1",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_F3"
+  ],
+  "ninstr": 56,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_795aba2f39c9b6d8_0": {
+  "tu": "src/libraries/libgte/311-smp_9",
+  "lib": "libgte",
+  "functions": [
+   "ColorDpq"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a0ab44776f7773aa_0": {
+  "tu": "src/libraries/libgte/421-prs_f4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4LFGD"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c85830c86c8cf468_0": {
+  "tu": "src/libraries/libgte/476-nmd_3",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_FT3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_15e9500accd6aa48_0": {
+  "tu": "src/libraries/libgte/71-cmb_07",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclip4"
+  ],
+  "ninstr": 44,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_549d2926fdccb3bb_0": {
+  "tu": "src/libraries/libgte/28-mtx_005",
+  "lib": "libgte",
+  "functions": [
+   "ApplyRotMatrix"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_458f2adda3de33f0_0": {
+  "tu": "src/libraries/libgte/378-g4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNG4"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_73e04db097c29498_0": {
+  "tu": "src/libraries/libgte/480-nmd_7",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_FT4"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_314af6df7b6d3d26_0": {
+  "tu": "src/libraries/libgte/25-mtx_002",
+  "lib": "libgte",
+  "functions": [
+   "MulRotMatrix0"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_41eb8f1cda1413e8_0": {
+  "tu": "src/libraries/libgte/408-gt4s_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LD"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_37e0456c9426d5c3_0": {
+  "tu": "src/libraries/libgte/529-gt3b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3LB"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3198257053d9c278_0": {
+  "tu": "src/libraries/libgte/110-smd_02",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_FT3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fbcc9a663362b33c_0": {
+  "tu": "src/libraries/libgte/63-smp_06",
+  "lib": "libgte",
+  "functions": [
+   "NormalClipS"
+  ],
+  "ninstr": 4,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_98eb4da5dfeba4cf_0": {
+  "tu": "src/libraries/libgte/528-gt3b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3NLB"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8c6db43f976fdc6d_0": {
+  "tu": "src/libraries/libgte/536-gt3f_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3NL_FLIP"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cf51f619c6b9b8a6_0": {
+  "tu": "src/libraries/libgte/133-rmd_09",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_G3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_51a3184fdea9c7c2_0": {
+  "tu": "src/libraries/libgte/428-prs_g4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4L"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4ec142a00162cc3f_0": {
+  "tu": "src/libraries/libgte/382-g4s_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNG4D"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_86d1ab705882752a_0": {
+  "tu": "src/libraries/libgte/464-pmd_7",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_FT4"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0205dcac7a576178_0": {
+  "tu": "src/libraries/libgte/122-smd_14",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_FT4"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_33adb1222b185008_0": {
+  "tu": "src/libraries/libgte/195-divp",
+  "lib": "libgte",
+  "functions": [
+   "DivPloyFT4"
+  ],
+  "ninstr": 304,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5f678b4bdf40ea77_0": {
+  "tu": "src/libraries/libgte/348-nom_4",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers4_nom"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f5acf52ded7dc8ef_0": {
+  "tu": "src/libraries/libgte/273-msc06_1",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverage12"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_21a376840e865d9f_0": {
+  "tu": "src/libraries/libgte/26-mtx_003",
+  "lib": "libgte",
+  "functions": [
+   "CompMatrix"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ac4caf6b70aa40bc_0": {
+  "tu": "src/libraries/libgte/100-ft4m_00",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF4M"
+  ],
+  "ninstr": 188,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_993ee1c804b59c03_0": {
+  "tu": "src/libraries/libgte/72-cmb_08",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclipColorDpq3"
+  ],
+  "ninstr": 52,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b2a358e186a7995b_0": {
+  "tu": "src/libraries/libgte/445-prs_ft4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4LFGD"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_56d23d7ff83b5d48_0": {
+  "tu": "src/libraries/libgte/386-ft3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF3"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_408c110f261b73da_0": {
+  "tu": "src/libraries/libgte/377-g3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3LFG"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3b6b9dcd20d8d7ec_0": {
+  "tu": "src/libraries/libgte/112-smd_04",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_F4"
+  ],
+  "ninstr": 140,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8634a5e47024a1bb_0": {
+  "tu": "src/libraries/libgte/134-rmd_10",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_FT3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3d27ddf3b57e0a45_0": {
+  "tu": "src/libraries/libgte/457-prs_gt4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4LFGD"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_92783dddf97da44a_0": {
+  "tu": "src/libraries/libgte/351-nom_7",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclip3_nom"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ca63f844d38731f8_0": {
+  "tu": "src/libraries/libgte/225-ppm",
+  "lib": "libgte",
+  "functions": [
+   "ScanXY0"
+  ],
+  "ninstr": 188,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7f4860f8a9231475_0": {
+  "tu": "src/libraries/libgte/119-smd_11",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_GT3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a63296bf5d0b09a9_0": {
+  "tu": "src/libraries/libgte/380-g4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4L"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6431c7450feb7148_0": {
+  "tu": "src/libraries/libgte/345-nom_1",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers_nom"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_af132988f496f49c_0": {
+  "tu": "src/libraries/libgte/364-f3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3L"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b30257abb6052cd5_0": {
+  "tu": "src/libraries/libgte/35-mtx_00c",
+  "lib": "libgte",
+  "functions": [
+   "CompMatrixLV"
+  ],
+  "ninstr": 148,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c4e89603374d02c5_0": {
+  "tu": "src/libraries/libgte/117-smd_09",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_G3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_04866b1123f0ba6c_0": {
+  "tu": "src/libraries/libgte/535-gt3f_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG3_FLIP"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5cd43c002cd1db57_0": {
+  "tu": "src/libraries/libgte/120-smd_12",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_F4"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d666c729822d4bdd_0": {
+  "tu": "src/libraries/libgte/337-tmd_7",
+  "lib": "libgte",
+  "functions": [
+   "gte_gouraud3"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_24d489da58e1882c_0": {
+  "tu": "src/libraries/libgte/209-rmps_gc",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_GC3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_370d53d902403438_0": {
+  "tu": "src/libraries/libgte/470-pmd_13",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_F4"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_57e0d248b574f77d_0": {
+  "tu": "src/libraries/libgte/394-ft4s_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF4D"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9befcc54a91a6c6a_0": {
+  "tu": "src/libraries/libgte/485-nmd_12",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_GT3"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_79889536768784e9_0": {
+  "tu": "src/libraries/libgte/29-mtx_006",
+  "lib": "libgte",
+  "functions": [
+   "PushMatrix",
+   "PopMatrix"
+  ],
+  "ninstr": 84,
+  "nop": null
+ },
+ "lib_7604b7fe645322cb_0": {
+  "tu": "src/libraries/libgte/387-ft3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3NL"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4218114e23f9b4e6_0": {
+  "tu": "src/libraries/libgte/360-nom_16",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorCol_nom"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_051af7866b8085e2_0": {
+  "tu": "src/libraries/libgte/434-prs_ft3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNF3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7c2ef96698c1545b_0": {
+  "tu": "src/libraries/libgte/527-gt3b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG3B"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6697f736f5114fb8_0": {
+  "tu": "src/libraries/libgte/221-rmpr_t",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_T3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f539bbdec9bb7fef_0": {
+  "tu": "src/libraries/libgte/338-tmd_8",
+  "lib": "libgte",
+  "functions": [
+   "gte_texture_gouraud3"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ec1f795a27c84fd9_0": {
+  "tu": "src/libraries/libgte/442-prs_ft4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNF4D"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_656095d1da87cee7_0": {
+  "tu": "src/libraries/libgte/23-mtx_000",
+  "lib": "libgte",
+  "functions": [
+   "MulMatrix0"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_96f1bf053be8797f_0": {
+  "tu": "src/libraries/libgte/216-rmpr_gt",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_GT3"
+  ],
+  "ninstr": 144,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d1362bd42e455b7b_0": {
+  "tu": "src/libraries/libgte/222-rmpq_t",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimQ_T"
+  ],
+  "ninstr": 516,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_22e88570c52a42d8_0": {
+  "tu": "src/libraries/libgte/340-tmd_10",
+  "lib": "libgte",
+  "functions": [
+   "gte_texture_flat_fog3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_da64b41d5b5e93e6_0": {
+  "tu": "src/libraries/libgte/356-nom_12",
+  "lib": "libgte",
+  "functions": [
+   "NormalColor_nom"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_693a33b7a17ff285_0": {
+  "tu": "src/libraries/libgte/461-pmd_4",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_GT3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ec7b75568b3fd11b_0": {
+  "tu": "src/libraries/libgte/440-prs_ft4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4L"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3ccbf40c11b4a9b9_0": {
+  "tu": "src/libraries/libgte/505-f3b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF3LB"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_52f0aebce7ad2452_0": {
+  "tu": "src/libraries/libgte/425-prs_g3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG3LFG"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_03afdc32842a6051_0": {
+  "tu": "src/libraries/libgte/73-cmb_09",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclipColorCol3"
+  ],
+  "ninstr": 52,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4146d647f0a5222e_0": {
+  "tu": "src/libraries/libgte/443-prs_ft4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4NLD"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_faa4f61064ebcab9_0": {
+  "tu": "src/libraries/libgte/456-prs_gt4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTG4LD"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a08c1d1242fc2931_0": {
+  "tu": "src/libraries/libgte/404-gt4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4L"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_73b8380b460f7845_0": {
+  "tu": "src/libraries/libgte/401-gt3_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3LFG"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2b792ebe1602350f_0": {
+  "tu": "src/libraries/libgte/515-g4b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNG4B"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_37547a9faa3d1b1b_0": {
+  "tu": "src/libraries/libgte/40-mtx_05",
+  "lib": "libgte",
+  "functions": [
+   "ApplyMatrix"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7425e736957f286d_0": {
+  "tu": "src/libraries/libgte/132-rmd_08",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_F3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_db2a46e099030608_0": {
+  "tu": "src/libraries/libgte/511-g3b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNG3B"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_45d3e8921c331115_0": {
+  "tu": "src/libraries/libgte/101-ft4m_01",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4NLM"
+  ],
+  "ninstr": 188,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f135ca0c42602790_0": {
+  "tu": "src/libraries/libgte/371-f4s_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4NLD"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_8f1f7b7fca3832e0_0": {
+  "tu": "src/libraries/libgte/466-pmd_9",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_SV_F3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3a0866b8694d5ca2_0": {
+  "tu": "src/libraries/libgte/14-msc00",
+  "lib": "libgte",
+  "functions": [
+   "InitGeom"
+  ],
+  "ninstr": 34,
+  "nop": null
+ },
+ "lib_7a962f2706a781b4_0": {
+  "tu": "src/libraries/libgte/372-f4s_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4LD"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e4e96958ea696c59_0": {
+  "tu": "src/libraries/libgte/211-rmps_gct",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_GCT3"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f2bd37021cadf751_0": {
+  "tu": "src/libraries/libgte/215-rmpr_ft",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_FT3"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_bbe2136e09260efb_0": {
+  "tu": "src/libraries/libgte/465-pmd_8",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_GT4"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_69970c89a7c31f90_0": {
+  "tu": "src/libraries/libgte/533-gt4b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LB"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ce1438e35357ca2f_0": {
+  "tu": "src/libraries/libgte/429-prs_g4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4LFG"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b891124101d398a5_0": {
+  "tu": "src/libraries/libgte/383-g4s_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4NLD"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_30ffdac0b0e2555c_0": {
+  "tu": "src/libraries/libgte/41-mtx_06",
+  "lib": "libgte",
+  "functions": [
+   "ApplyMatrixSV"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4771879e2cc9fe13_0": {
+  "tu": "src/libraries/libgte/99-rmat_02",
+  "lib": "libgte",
+  "functions": [
+   "RotMatrixYXZ_gte"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7c91ea167acacb87_0": {
+  "tu": "src/libraries/libgte/352-nom_8",
+  "lib": "libgte",
+  "functions": [
+   "RotColorDpq_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ef851c9ed7c7a0e1_0": {
+  "tu": "src/libraries/libgte/503-f3b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNF3B"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7fc58adc9c9835cf_0": {
+  "tu": "src/libraries/libgte/109-smd_01",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_G3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ebaf44f6063410d4_0": {
+  "tu": "src/libraries/libgte/128-rmd_04",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_F4"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0f87948cf443ad04_0": {
+  "tu": "src/libraries/libgte/433-prs_g4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4LFGD"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_946ab1f8db5530d7_0": {
+  "tu": "src/libraries/libgte/538-gt3f_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3LFG_FLIP"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_549e03d5d660aded_0": {
+  "tu": "src/libraries/libgte/370-f4s_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNF4D"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d653deab8a16d7c5_0": {
+  "tu": "src/libraries/libgte/532-gt4b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4NLB"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_54beaaef51042442_0": {
+  "tu": "src/libraries/libgte/499-trr_1",
+  "lib": "libgte",
+  "functions": [
+   "TransRot_32"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7d2c223ca742c7fc_0": {
+  "tu": "src/libraries/libgte/305-smp_3",
+  "lib": "libgte",
+  "functions": [
+   "NormalColor"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9a3f040c2f7768f8_0": {
+  "tu": "src/libraries/libgte/330-smp_01_5",
+  "lib": "libgte",
+  "functions": [
+   "SquareSL0"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_df0e298ca6a78ec2_0": {
+  "tu": "src/libraries/libgte/218-rmpr_gc",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_GC3"
+  ],
+  "ninstr": 132,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5e5a703aa607df1d_0": {
+  "tu": "src/libraries/libgte/319-smp_00_5",
+  "lib": "libgte",
+  "functions": [
+   "Square12"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3de6d8d34ee898cf_0": {
+  "tu": "src/libraries/libgte/355-nom_11",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclipColorCol3_nom"
+  ],
+  "ninstr": 28,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_745a74268a8310bb_0": {
+  "tu": "src/libraries/libgte/520-ft3b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3NLB"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0b3dbfbb75d2de35_0": {
+  "tu": "src/libraries/libgte/187-divf3a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyF3",
+   "RCpolyF3A",
+   "func_00000388"
+  ],
+  "ninstr": 220,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a39f74944b520992_0": {
+  "tu": "src/libraries/libgte/105-gt4m_01",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4NLM"
+  ],
+  "ninstr": 184,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9fb0471d7fab4aa8_0": {
+  "tu": "src/libraries/libgte/500-trr_2",
+  "lib": "libgte",
+  "functions": [
+   "TransRotPers"
+  ],
+  "ninstr": 32,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b65fe05d6deb5578_0": {
+  "tu": "src/libraries/libgte/342-tmd_12",
+  "lib": "libgte",
+  "functions": [
+   "gte_texture_gouraud_fog3"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_31710f485a9a7ae3_0": {
+  "tu": "src/libraries/libgte/410-prs_f3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstNF3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2fdd957af94672cb_0": {
+  "tu": "src/libraries/libgte/402-gt4_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG4"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_95deeb9160ee78d9_0": {
+  "tu": "src/libraries/libgte/393-ft4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LFG"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5fe735c62410484d_0": {
+  "tu": "src/libraries/libgte/303-smp_1",
+  "lib": "libgte",
+  "functions": [
+   "LocalLight"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_54dc93937bdd8a53_0": {
+  "tu": "src/libraries/libgte/321-smp_00_7",
+  "lib": "libgte",
+  "functions": [
+   "AverageZ3"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d6a33ba940543b94_0": {
+  "tu": "src/libraries/libgte/435-prs_ft3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF3NL"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a8c8f3a9093b43e3_0": {
+  "tu": "src/libraries/libgte/512-g3b_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3NLB"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a26028d31bb52374_0": {
+  "tu": "src/libraries/libgte/350-nom_6",
+  "lib": "libgte",
+  "functions": [
+   "RotNclip3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cb47f9956ffff703_0": {
+  "tu": "src/libraries/libgte/347-nom_3",
+  "lib": "libgte",
+  "functions": [
+   "RotTrans_nom"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c2884000759395bb_0": {
+  "tu": "src/libraries/libgte/475-nmd_2",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_G3"
+  ],
+  "ninstr": 56,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_965fed0a7a87fa7f_0": {
+  "tu": "src/libraries/libgte/125-rmd_01",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_G3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9e8b4d4d2f6714b9_0": {
+  "tu": "src/libraries/libgte/454-prs_gt4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNG4D"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d17b5b8f08a31ba5_0": {
+  "tu": "src/libraries/libgte/341-tmd_11",
+  "lib": "libgte",
+  "functions": [
+   "gte_gouraud_fog3"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c2a1f7a31bfd1546_0": {
+  "tu": "src/libraries/libgte/118-smd_10",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_FT3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5740fc1acfe49c3c_0": {
+  "tu": "src/libraries/libgte/534-gt4b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LFGB"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6a80745572f4256c_0": {
+  "tu": "src/libraries/libgte/450-prs_gt4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNG4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_15d6cde786416091_0": {
+  "tu": "src/libraries/libgte/514-g3b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3LFGB"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c02b878167403fd9_0": {
+  "tu": "src/libraries/libgte/482-nmd_9",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_SV_F3"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fecc121152eab060_0": {
+  "tu": "src/libraries/libgte/385-g4s_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4LFGD"
+  ],
+  "ninstr": 128,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c7aebd98c6f73e8a_0": {
+  "tu": "src/libraries/libgte/192-divft4a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyFT4",
+   "RCpolyFT4A",
+   "func_000004F8"
+  ],
+  "ninstr": 328,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_05ac02e269162d19_0": {
+  "tu": "src/libraries/libgte/207-rmps_gt",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_GT3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_761414a455d37966_0": {
+  "tu": "src/libraries/libgte/537-gt3f_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG3L_FLIP"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_1b1c440e2595713b_0": {
+  "tu": "src/libraries/libgte/358-nom_14",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorDpq_nom"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e6cdda6a2f01713e_0": {
+  "tu": "src/libraries/libgte/82-cmb_18",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclipColorDpq3_1"
+  ],
+  "ninstr": 64,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_4e0c237209ba2a6e_0": {
+  "tu": "src/libraries/libgte/226-patchgte",
+  "lib": "libgte",
+  "functions": [
+   "_patch_gte"
+  ],
+  "ninstr": 56,
+  "nop": null
+ },
+ "lib_de2ffd65712f8e67_0": {
+  "tu": "src/libraries/libgte/36-mtx_01",
+  "lib": "libgte",
+  "functions": [
+   "ApplyRotMatrixLV"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f1d40130cd24a0ab_0": {
+  "tu": "src/libraries/libgte/392-ft4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4L"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cbb7e1cf7dffffde_0": {
+  "tu": "src/libraries/libgte/138-rmd_14",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_FT4"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e5a885c984e63ab4_0": {
+  "tu": "src/libraries/libgte/368-f4_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4L"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9a7bf7a4aeaa3709_0": {
+  "tu": "src/libraries/libgte/68-cmb_04",
+  "lib": "libgte",
+  "functions": [
+   "RotNclip3"
+  ],
+  "ninstr": 36,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_d4d00636e606a8e1_0": {
+  "tu": "src/libraries/libgte/16-msc02",
+  "lib": "libgte",
+  "functions": [
+   "InvSquareRoot",
+   "VectorNormalS",
+   "VectorNormal",
+   "VectorNormalSS",
+   "func_00000170",
+   "MatrixNormal"
+  ],
+  "ninstr": 172,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_aebbf8749ea9859f_0": {
+  "tu": "src/libraries/libgte/102-ft4m_02",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LM"
+  ],
+  "ninstr": 192,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_292598606dd0febf_0": {
+  "tu": "src/libraries/libgte/106-gt4m_02",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4LM"
+  ],
+  "ninstr": 216,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3111899b34cf643e_0": {
+  "tu": "src/libraries/libgte/131-rmd_07",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_GT4"
+  ],
+  "ninstr": 136,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f8dad42089097d84_0": {
+  "tu": "src/libraries/libgte/517-g4b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG4LB"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5162e9075972d409_0": {
+  "tu": "src/libraries/libgte/123-smd_15",
+  "lib": "libgte",
+  "functions": [
+   "RotSMD_SV_GT4"
+  ],
+  "ninstr": 156,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f1196e2299639944_0": {
+  "tu": "src/libraries/libgte/335-tmd_5",
+  "lib": "libgte",
+  "functions": [
+   "gte_flat3"
+  ],
+  "ninstr": 64,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_170e1c968327fc22_0": {
+  "tu": "src/libraries/libgte/65-cmb_01",
+  "lib": "libgte",
+  "functions": [
+   "RotAverage3"
+  ],
+  "ninstr": 24,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b98903ac8671ee3a_0": {
+  "tu": "src/libraries/libgte/373-f4s_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastF4LFGD"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_67fb2e1a87031a59_0": {
+  "tu": "src/libraries/libgte/205-rmps_g",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_G3"
+  ],
+  "ninstr": 124,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9c0057c38e5e5fed_0": {
+  "tu": "src/libraries/libgte/403-gt4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTG4NL"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c951581bcd90a377_0": {
+  "tu": "src/libraries/libgte/396-ft4s_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4LD"
+  ],
+  "ninstr": 112,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_13a9d2731264305c_0": {
+  "tu": "src/libraries/libgte/83-hgt",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshH"
+  ],
+  "ninstr": 40,
+  "nop": "sdk-macro (>=2 nops)"
+ },
+ "lib_95a2e91a1efaf23a_0": {
+  "tu": "src/libraries/libgte/419-prs_f4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4NLD"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_bdb95ad26fba0808_0": {
+  "tu": "src/libraries/libgte/310-smp_8",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorCol3"
+  ],
+  "ninstr": 20,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_c5ece95e83b32b53_0": {
+  "tu": "src/libraries/libgte/334-tmd_4",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_tg3"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_b1f8bc8ebf527b0c_0": {
+  "tu": "src/libraries/libgte/74-cmb_10",
+  "lib": "libgte",
+  "functions": [
+   "ColorMatDpq"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9b16b242aa091c40_0": {
+  "tu": "src/libraries/libgte/126-rmd_02",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_FT3"
+  ],
+  "ninstr": 116,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2c0e17c1c3f910e3_0": {
+  "tu": "src/libraries/libgte/343-tmd_13",
+  "lib": "libgte",
+  "functions": [
+   "gte_scope_tf4_B"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5a68fd9b20fea016_0": {
+  "tu": "src/libraries/libgte/220-rmpr_gct",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_GCT3"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_a7b5e0cb2d142953_0": {
+  "tu": "src/libraries/libgte/374-g3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNG3"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cad4afe9926d3f11_0": {
+  "tu": "src/libraries/libgte/188-divft3a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyFT3",
+   "RCpolyFT3A",
+   "func_000003E4"
+  ],
+  "ninstr": 256,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_18101c910bcd9269_0": {
+  "tu": "src/libraries/libgte/139-rmd_15",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_GT4"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e21388f459584adc_0": {
+  "tu": "src/libraries/libgte/463-pmd_6",
+  "lib": "libgte",
+  "functions": [
+   "RotPMD_G4"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_590c8cf91266c4c8_0": {
+  "tu": "src/libraries/libgte/423-prs_g3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG3NL"
+  ],
+  "ninstr": 72,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_76bd79aebd53ee28_0": {
+  "tu": "src/libraries/libgte/388-ft3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3L"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3fc03715284a29f0_0": {
+  "tu": "src/libraries/libgte/306-smp_4",
+  "lib": "libgte",
+  "functions": [
+   "NormalColor3"
+  ],
+  "ninstr": 16,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ede3a7a75697c722_0": {
+  "tu": "src/libraries/libgte/318-smp_00_4",
+  "lib": "libgte",
+  "functions": [
+   "Intpl"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ef0f30897fb500cc_0": {
+  "tu": "src/libraries/libgte/522-ft3b_4",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF3LFGB"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_12b1f7c8926dabce_0": {
+  "tu": "src/libraries/libgte/523-ft4b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF4B"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_217bd405fa1789be_0": {
+  "tu": "src/libraries/libgte/326-smp_01_1",
+  "lib": "libgte",
+  "functions": [
+   "RotTransSV"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0601499d82e87ecf_0": {
+  "tu": "src/libraries/libgte/194-divgt4a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyGT4",
+   "RCpolyGT4A",
+   "func_000005D4"
+  ],
+  "ninstr": 392,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_061ee7b4f54ee8ca_0": {
+  "tu": "src/libraries/libgte/104-gt4m_00",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNG4M"
+  ],
+  "ninstr": 196,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cc211079c84239db_0": {
+  "tu": "src/libraries/libgte/436-prs_ft3_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF3L"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_cfecd581b58d5d0c_0": {
+  "tu": "src/libraries/libgte/411-prs_f3_2",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF3NL"
+  ],
+  "ninstr": 76,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3ca35db4694b7e16_0": {
+  "tu": "src/libraries/libgte/359-nom_15",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorDpq3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e9a60f5040605241_0": {
+  "tu": "src/libraries/libgte/64-cmb_00",
+  "lib": "libgte",
+  "functions": [
+   "RotTransPers4"
+  ],
+  "ninstr": 32,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_286f84a57ac97c9a_0": {
+  "tu": "src/libraries/libgte/208-rmps_fc",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimS_FC3"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_05af9d56315f0369_0": {
+  "tu": "src/libraries/libgte/349-nom_5",
+  "lib": "libgte",
+  "functions": [
+   "RotAverage3_nom"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f301a736b74d7e59_0": {
+  "tu": "src/libraries/libgte/34-mtx_00b",
+  "lib": "libgte",
+  "functions": [
+   "SetMulMatrix"
+  ],
+  "ninstr": 68,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ed280d921929745d_0": {
+  "tu": "src/libraries/libgte/444-prs_ft4s",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTF4LD"
+  ],
+  "ninstr": 100,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_131c251fd4b2ac7e_0": {
+  "tu": "src/libraries/libgte/432-prs_g4s_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG4LD"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_7db2b4eb11254868_0": {
+  "tu": "src/libraries/libgte/362-f3_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastNF3"
+  ],
+  "ninstr": 80,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_2da391633ba4f385_0": {
+  "tu": "src/libraries/libgte/24-mtx_001",
+  "lib": "libgte",
+  "functions": [
+   "MulRotMatrix"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9d0de1667d00a52e_0": {
+  "tu": "src/libraries/libgte/424-prs_g3_3",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstG3L"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ab81209bbc66b645_0": {
+  "tu": "src/libraries/libgte/217-rmpr_fc",
+  "lib": "libgte",
+  "functions": [
+   "RotMeshPrimR_FC3"
+  ],
+  "ninstr": 120,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_f0990c5e0b3ec626_0": {
+  "tu": "src/libraries/libgte/322-smp_00_8",
+  "lib": "libgte",
+  "functions": [
+   "AverageZ4"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_112e7260f2117422_0": {
+  "tu": "src/libraries/libgte/193-divg4a",
+  "lib": "libgte",
+  "functions": [
+   "RCpolyG4",
+   "RCpolyG4A",
+   "func_00000544"
+  ],
+  "ninstr": 340,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e3ebfa10f0ddca4f_0": {
+  "tu": "src/libraries/libgte/307-smp_5",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorDpq"
+  ],
+  "ninstr": 12,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_baff8e19fb64b72a_0": {
+  "tu": "src/libraries/libgte/276-msc06_4",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverageShort0"
+  ],
+  "ninstr": 36,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_5a05094eec84ab41_0": {
+  "tu": "src/libraries/libgte/519-ft3b_1",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTNF3B"
+  ],
+  "ninstr": 88,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_e9556a9659511f38_0": {
+  "tu": "src/libraries/libgte/275-msc06_3",
+  "lib": "libgte",
+  "functions": [
+   "LoadAverageShort12"
+  ],
+  "ninstr": 36,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_05053791eb52dd50_0": {
+  "tu": "src/libraries/libgte/309-smp_7",
+  "lib": "libgte",
+  "functions": [
+   "NormalColorCol"
+  ],
+  "ninstr": 8,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_60c4f6af5c189990_0": {
+  "tu": "src/libraries/libgte/391-ft4_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4NL"
+  ],
+  "ninstr": 104,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fbb418c582bdd36f_0": {
+  "tu": "src/libraries/libgte/479-nmd_6",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_G4"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_fb4584d769bc2028_0": {
+  "tu": "src/libraries/libgte/438-prs_ft4_",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstTNF4"
+  ],
+  "ninstr": 84,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_9fcc131a5e7837cc_0": {
+  "tu": "src/libraries/libgte/136-rmd_12",
+  "lib": "libgte",
+  "functions": [
+   "RotRMD_SV_F4"
+  ],
+  "ninstr": 152,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_42eeb5e110a454a8_0": {
+  "tu": "src/libraries/libgte/77-cmb_13",
+  "lib": "libgte",
+  "functions": [
+   "RotColorDpq3"
+  ],
+  "ninstr": 40,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3c7f2aeff2e61d8b_0": {
+  "tu": "src/libraries/libgte/417-prs_f4_4",
+  "lib": "libgte",
+  "functions": [
+   "GsPrstF4LFG"
+  ],
+  "ninstr": 92,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_0f97ffad35bdbec0_0": {
+  "tu": "src/libraries/libgte/395-ft4s_2",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastTF4NLD"
+  ],
+  "ninstr": 108,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_6892f0f57154771a_0": {
+  "tu": "src/libraries/libgte/79-cmb_15",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclip3_1"
+  ],
+  "ninstr": 40,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_60686bfaa481f104_0": {
+  "tu": "src/libraries/libgte/477-nmd_4",
+  "lib": "libgte",
+  "functions": [
+   "RotNMD_GT3"
+  ],
+  "ninstr": 60,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3b7303203bc8b56b_0": {
+  "tu": "src/libraries/libgte/78-cmb_14",
+  "lib": "libgte",
+  "functions": [
+   "RotColorMatDpq"
+  ],
+  "ninstr": 28,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ea9e20b1993b36ac_0": {
+  "tu": "src/libraries/libgte/70-cmb_06",
+  "lib": "libgte",
+  "functions": [
+   "RotAverageNclip3"
+  ],
+  "ninstr": 36,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_3e59dd3d4f8c5c75_0": {
+  "tu": "src/libraries/libgte/513-g3b_3",
+  "lib": "libgte",
+  "functions": [
+   "GsTMDfastG3LB"
+  ],
+  "ninstr": 96,
+  "nop": "hand (0/1 nop)"
+ },
+ "lib_ae672d28456ecc9a_0": {
+  "tu": "src/libraries/libmcx/30-mcxdsr",
+  "lib": "libmcx",
+  "functions": [
+   "_mcxStartFastDsr",
+   "_mcxStopFastDsr",
+   "_mcxVecDsr",
+   "_mcxFastDsrEnt",
+   "_mcxVecSave"
+  ],
+  "ninstr": 204,
+  "nop": null
+ },
+ "lib_f6d989f4cd086248_0": {
+  "tu": "src/libraries/libapi/44-a40",
+  "lib": "libapi",
+  "functions": [
+   "SwEnterCriticalSection"
+  ],
+  "ninstr": 8,
+  "nop": null
+ },
+ "lib_06aabb52b8bcc72c_0": {
+  "tu": "src/libraries/libapi/45-a41",
+  "lib": "libapi",
+  "functions": [
+   "SwExitCriticalSection"
+  ],
+  "ninstr": 8,
+  "nop": null
+ },
+ "lib_4031394e3bdde1bc_0": {
+  "tu": "src/libraries/libapi/74-patch",
+  "lib": "libapi",
+  "functions": [
+   "EnablePAD",
+   "DisablePAD",
+   "_patch_pad"
+  ],
+  "ninstr": 40,
+  "nop": null
+ },
+ "lib_22bb8cc07c2d3b97_0": {
+  "tu": "src/libraries/libapi/68-a97",
+  "lib": "libapi",
+  "functions": [
+   "GetSr"
+  ],
+  "ninstr": 4,
+  "nop": null
+ },
+ "lib_349458f652f40019_0": {
+  "tu": "src/libraries/libapi/67-a96",
+  "lib": "libapi",
+  "functions": [
+   "GetCr"
+  ],
+  "ninstr": 4,
+  "nop": null
+ },
+ "lib_9f6c1bc0a9ed1203_0": {
+  "tu": "src/libraries/libapi/83-chclrpad",
+  "lib": "libapi",
+  "functions": [
+   "_remove_ChgclrPAD"
+  ],
+  "ninstr": 28,
+  "nop": null
+ },
+ "lib_f7a26da463214377_0": {
+  "tu": "src/libraries/libc2/39-setjmp",
+  "lib": "libc2",
+  "functions": [
+   "setjmp",
+   "longjmp"
+  ],
+  "ninstr": 32,
+  "nop": null
+ }
+}

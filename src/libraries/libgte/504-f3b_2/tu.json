@@ -3,11 +3,10 @@
   "member": "lib_1fd6d72d815313c3_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsTMDfastF3NLB.c",
-      "symbol": "GsTMDfastF3NLB"
+      "path": "f3b_2.s",
+      "symbols": [
+        "GsTMDfastF3NLB"
+      ]
     }
   ]
 }

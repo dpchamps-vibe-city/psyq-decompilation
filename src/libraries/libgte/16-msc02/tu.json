@@ -3,35 +3,15 @@
   "member": "lib_d4d00636e606a8e1_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "InvSquareRoot.c",
-      "symbol": "InvSquareRoot"
-    },
-    {
-      "path": "VectorNormalS.c",
-      "symbol": "VectorNormalS"
-    },
-    {
-      "path": "VectorNormal.c",
-      "symbol": "VectorNormal"
-    },
-    {
-      "path": "VectorNormalSS.c",
-      "symbol": "VectorNormalSS"
-    },
-    {
-      "path": "func_00000170.c",
-      "symbol": "func_00000170"
-    },
-    {
-      "path": "MatrixNormal.c",
-      "symbol": "MatrixNormal"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "msc02.s",
+      "symbols": [
+        "InvSquareRoot",
+        "VectorNormalS",
+        "VectorNormal",
+        "VectorNormalSS",
+        "func_00000170",
+        "MatrixNormal"
+      ]
     }
   ]
 }

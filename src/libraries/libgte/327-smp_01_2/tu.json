@@ -3,11 +3,10 @@
   "member": "lib_ba764639103b59eb_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SquareSS12.c",
-      "symbol": "SquareSS12"
+      "path": "smp_01_2.s",
+      "symbols": [
+        "SquareSS12"
+      ]
     }
   ]
 }

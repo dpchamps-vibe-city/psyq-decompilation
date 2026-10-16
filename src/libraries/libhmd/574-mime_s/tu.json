@@ -3,15 +3,11 @@
   "member": "lib_dedc70d8742fc7f7_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsVNMIMeFunc.c",
-      "symbol": "GsVNMIMeFunc"
-    },
-    {
-      "path": "GsRestoreOrgsVNMIMe.c",
-      "symbol": "GsRestoreOrgsVNMIMe"
+      "path": "mime_s.s",
+      "symbols": [
+        "GsVNMIMeFunc",
+        "GsRestoreOrgsVNMIMe"
+      ]
     }
   ]
 }

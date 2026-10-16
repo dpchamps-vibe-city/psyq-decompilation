@@ -3,11 +3,10 @@
   "member": "lib_e9556a9659511f38_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "LoadAverageShort12.c",
-      "symbol": "LoadAverageShort12"
+      "path": "msc06_3.s",
+      "symbols": [
+        "LoadAverageShort12"
+      ]
     }
   ]
 }

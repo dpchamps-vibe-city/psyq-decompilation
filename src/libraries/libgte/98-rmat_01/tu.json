@@ -3,11 +3,10 @@
   "member": "lib_586de06602537900_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotMatrix_gte.c",
-      "symbol": "RotMatrix_gte"
+      "path": "rmat_01.s",
+      "symbols": [
+        "RotMatrix_gte"
+      ]
     }
   ]
 }

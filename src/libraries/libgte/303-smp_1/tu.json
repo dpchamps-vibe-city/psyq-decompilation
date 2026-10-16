@@ -3,11 +3,10 @@
   "member": "lib_5fe735c62410484d_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "LocalLight.c",
-      "symbol": "LocalLight"
+      "path": "smp_1.s",
+      "symbols": [
+        "LocalLight"
+      ]
     }
   ]
 }

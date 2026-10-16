@@ -3,11 +3,10 @@
   "member": "lib_26ddf9cd85218439_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "gteMIMefunc.c",
-      "symbol": "gteMIMefunc"
+      "path": "msc05.s",
+      "symbols": [
+        "gteMIMefunc"
+      ]
     }
   ]
 }

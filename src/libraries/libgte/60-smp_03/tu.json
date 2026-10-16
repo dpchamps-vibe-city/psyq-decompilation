@@ -3,11 +3,10 @@
   "member": "lib_20cfff86d578b732_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotTransPers3.c",
-      "symbol": "RotTransPers3"
+      "path": "smp_03.s",
+      "symbols": [
+        "RotTransPers3"
+      ]
     }
   ]
 }

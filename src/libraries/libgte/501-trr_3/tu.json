@@ -3,11 +3,10 @@
   "member": "lib_acc2951fffdf2873_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "TransRotPers3.c",
-      "symbol": "TransRotPers3"
+      "path": "trr_3.s",
+      "symbols": [
+        "TransRotPers3"
+      ]
     }
   ]
 }

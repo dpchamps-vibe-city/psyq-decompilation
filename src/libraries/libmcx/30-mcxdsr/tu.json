@@ -3,31 +3,14 @@
   "member": "lib_ae672d28456ecc9a_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_mcxStartFastDsr.c",
-      "symbol": "_mcxStartFastDsr"
-    },
-    {
-      "path": "_mcxStopFastDsr.c",
-      "symbol": "_mcxStopFastDsr"
-    },
-    {
-      "path": "_mcxVecDsr.c",
-      "symbol": "_mcxVecDsr"
-    },
-    {
-      "path": "_mcxFastDsrEnt.c",
-      "symbol": "_mcxFastDsrEnt"
-    },
-    {
-      "path": "_mcxVecSave.c",
-      "symbol": "_mcxVecSave"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "mcxdsr.s",
+      "symbols": [
+        "_mcxStartFastDsr",
+        "_mcxStopFastDsr",
+        "_mcxVecDsr",
+        "_mcxFastDsrEnt",
+        "_mcxVecSave"
+      ]
     }
   ]
 }

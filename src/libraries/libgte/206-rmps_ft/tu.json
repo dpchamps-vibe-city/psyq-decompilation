@@ -3,11 +3,10 @@
   "member": "lib_1cf6836adedf9763_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotMeshPrimS_FT3.c",
-      "symbol": "RotMeshPrimS_FT3"
+      "path": "rmps_ft.s",
+      "symbols": [
+        "RotMeshPrimS_FT3"
+      ]
     }
   ]
 }

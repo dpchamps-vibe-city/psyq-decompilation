@@ -3,11 +3,10 @@
   "member": "lib_e21388f459584adc_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotPMD_G4.c",
-      "symbol": "RotPMD_G4"
+      "path": "pmd_6.s",
+      "symbols": [
+        "RotPMD_G4"
+      ]
     }
   ]
 }

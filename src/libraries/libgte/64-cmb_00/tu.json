@@ -3,11 +3,10 @@
   "member": "lib_e9a60f5040605241_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotTransPers4.c",
-      "symbol": "RotTransPers4"
+      "path": "cmb_00.s",
+      "symbols": [
+        "RotTransPers4"
+      ]
     }
   ]
 }

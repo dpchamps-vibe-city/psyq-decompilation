@@ -3,11 +3,10 @@
   "member": "lib_15097414ab056beb_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotNMD_SV_G4.c",
-      "symbol": "RotNMD_SV_G4"
+      "path": "nmd_14.s",
+      "symbols": [
+        "RotNMD_SV_G4"
+      ]
     }
   ]
 }

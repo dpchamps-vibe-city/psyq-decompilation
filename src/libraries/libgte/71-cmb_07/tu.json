@@ -3,11 +3,10 @@
   "member": "lib_15e9500accd6aa48_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotAverageNclip4.c",
-      "symbol": "RotAverageNclip4"
+      "path": "cmb_07.s",
+      "symbols": [
+        "RotAverageNclip4"
+      ]
     }
   ]
 }

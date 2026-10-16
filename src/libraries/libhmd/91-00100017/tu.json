@@ -3,11 +3,10 @@
   "member": "lib_70bee06550fba3fd_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsU_00100017.c",
-      "symbol": "GsU_00100017"
+      "path": "00100017.s",
+      "symbols": [
+        "GsU_00100017"
+      ]
     }
   ]
 }

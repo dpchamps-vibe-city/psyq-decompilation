@@ -3,11 +3,10 @@
   "member": "lib_95a2e91a1efaf23a_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsPrstF4NLD.c",
-      "symbol": "GsPrstF4NLD"
+      "path": "prs_f4s_.s",
+      "symbols": [
+        "GsPrstF4NLD"
+      ]
     }
   ]
 }

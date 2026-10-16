@@ -3,11 +3,10 @@
   "member": "lib_42eeb5e110a454a8_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotColorDpq3.c",
-      "symbol": "RotColorDpq3"
+      "path": "cmb_13.s",
+      "symbols": [
+        "RotColorDpq3"
+      ]
     }
   ]
 }

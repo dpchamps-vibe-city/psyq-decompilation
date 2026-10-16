@@ -3,11 +3,10 @@
   "member": "lib_4cb5d17645bb7daa_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "Square0.c",
-      "symbol": "Square0"
+      "path": "smp_00_6.s",
+      "symbols": [
+        "Square0"
+      ]
     }
   ]
 }

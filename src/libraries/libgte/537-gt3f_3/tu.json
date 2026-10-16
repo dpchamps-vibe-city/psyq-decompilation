@@ -3,11 +3,10 @@
   "member": "lib_761414a455d37966_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsTMDfastTG3L_FLIP.c",
-      "symbol": "GsTMDfastTG3L_FLIP"
+      "path": "gt3f_3.s",
+      "symbols": [
+        "GsTMDfastTG3L_FLIP"
+      ]
     }
   ]
 }

@@ -3,19 +3,11 @@
   "member": "lib_79889536768784e9_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "PushMatrix.c",
-      "symbol": "PushMatrix"
-    },
-    {
-      "path": "PopMatrix.c",
-      "symbol": "PopMatrix"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "mtx_006.s",
+      "symbols": [
+        "PushMatrix",
+        "PopMatrix"
+      ]
     }
   ]
 }

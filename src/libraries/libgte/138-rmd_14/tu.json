@@ -3,11 +3,10 @@
   "member": "lib_cbb7e1cf7dffffde_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotRMD_SV_FT4.c",
-      "symbol": "RotRMD_SV_FT4"
+      "path": "rmd_14.s",
+      "symbols": [
+        "RotRMD_SV_FT4"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_373fcd6e678c7d77_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotNMD_F3.c",
-      "symbol": "RotNMD_F3"
+      "path": "nmd_1.s",
+      "symbols": [
+        "RotNMD_F3"
+      ]
     }
   ]
 }

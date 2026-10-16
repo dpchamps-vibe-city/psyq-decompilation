@@ -3,11 +3,10 @@
   "member": "lib_993ee1c804b59c03_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotAverageNclipColorDpq3.c",
-      "symbol": "RotAverageNclipColorDpq3"
+      "path": "cmb_08.s",
+      "symbols": [
+        "RotAverageNclipColorDpq3"
+      ]
     }
   ]
 }

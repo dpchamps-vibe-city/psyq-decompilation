@@ -3,11 +3,10 @@
   "member": "lib_9f8c25939d36ae90_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SquareRoot12.c",
-      "symbol": "SquareRoot12"
+      "path": "msc09.s",
+      "symbols": [
+        "SquareRoot12"
+      ]
     }
   ]
 }

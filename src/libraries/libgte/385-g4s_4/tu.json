@@ -3,11 +3,10 @@
   "member": "lib_fecc121152eab060_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsTMDfastG4LFGD.c",
-      "symbol": "GsTMDfastG4LFGD"
+      "path": "g4s_4.s",
+      "symbols": [
+        "GsTMDfastG4LFGD"
+      ]
     }
   ]
 }

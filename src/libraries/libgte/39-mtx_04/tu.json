@@ -3,11 +3,10 @@
   "member": "lib_27e93db2c33b2458_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "MulMatrix2.c",
-      "symbol": "MulMatrix2"
+      "path": "mtx_04.s",
+      "symbols": [
+        "MulMatrix2"
+      ]
     }
   ]
 }

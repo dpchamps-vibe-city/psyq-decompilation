@@ -3,11 +3,10 @@
   "member": "lib_fbb418c582bdd36f_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotNMD_G4.c",
-      "symbol": "RotNMD_G4"
+      "path": "nmd_6.s",
+      "symbols": [
+        "RotNMD_G4"
+      ]
     }
   ]
 }

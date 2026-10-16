@@ -3,11 +3,10 @@
   "member": "lib_21a376840e865d9f_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CompMatrix.c",
-      "symbol": "CompMatrix"
+      "path": "mtx_003.s",
+      "symbols": [
+        "CompMatrix"
+      ]
     }
   ]
 }

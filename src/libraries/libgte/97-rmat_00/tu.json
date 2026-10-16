@@ -3,11 +3,10 @@
   "member": "lib_505ef54a7171a340_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotMatrixZYX_gte.c",
-      "symbol": "RotMatrixZYX_gte"
+      "path": "rmat_00.s",
+      "symbols": [
+        "RotMatrixZYX_gte"
+      ]
     }
   ]
 }

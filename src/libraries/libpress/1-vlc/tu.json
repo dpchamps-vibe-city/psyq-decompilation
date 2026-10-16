@@ -3,19 +3,11 @@
   "member": "lib_e182860cd5f8c93e_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DecDCTvlcSize.c",
-      "symbol": "DecDCTvlcSize"
-    },
-    {
-      "path": "DecDCTvlc.c",
-      "symbol": "DecDCTvlc"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "vlc.s",
+      "symbols": [
+        "DecDCTvlcSize",
+        "DecDCTvlc"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_5eac32cf8df76f27_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalColorDpq3.c",
-      "symbol": "NormalColorDpq3"
+      "path": "smp_6.s",
+      "symbols": [
+        "NormalColorDpq3"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "lib_9d9c2e6e3dba48fa_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalColorCol3_nom.c",
-      "symbol": "NormalColorCol3_nom"
+      "path": "nom_17.s",
+      "symbols": [
+        "NormalColorCol3_nom"
+      ]
     }
   ]
 }

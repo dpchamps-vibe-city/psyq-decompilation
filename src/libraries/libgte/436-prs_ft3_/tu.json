@@ -3,11 +3,10 @@
   "member": "lib_cc211079c84239db_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsPrstTF3L.c",
-      "symbol": "GsPrstTF3L"
+      "path": "prs_ft3_.s",
+      "symbols": [
+        "GsPrstTF3L"
+      ]
     }
   ]
 }

@@ -3,19 +3,12 @@
   "member": "lib_a5533b63f9aaafdc_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RCpolyF4.c",
-      "symbol": "RCpolyF4"
-    },
-    {
-      "path": "RCpolyF4A.c",
-      "symbol": "RCpolyF4A"
-    },
-    {
-      "path": "func_00000490.c",
-      "symbol": "func_00000490"
+      "path": "divf4a.s",
+      "symbols": [
+        "RCpolyF4",
+        "RCpolyF4A",
+        "func_00000490"
+      ]
     }
   ]
 }

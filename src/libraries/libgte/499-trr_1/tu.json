@@ -3,11 +3,10 @@
   "member": "lib_54beaaef51042442_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "TransRot_32.c",
-      "symbol": "TransRot_32"
+      "path": "trr_1.s",
+      "symbols": [
+        "TransRot_32"
+      ]
     }
   ]
 }

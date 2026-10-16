@@ -3,11 +3,10 @@
   "member": "lib_06aabb52b8bcc72c_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SwExitCriticalSection.c",
-      "symbol": "SwExitCriticalSection"
+      "path": "a41.s",
+      "symbols": [
+        "SwExitCriticalSection"
+      ]
     }
   ]
 }

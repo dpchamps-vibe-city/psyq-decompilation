@@ -3,11 +3,10 @@
   "member": "lib_95aa87281f1e6db1_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DpqColor3.c",
-      "symbol": "DpqColor3"
+      "path": "smp_00_3.s",
+      "symbols": [
+        "DpqColor3"
+      ]
     }
   ]
 }
