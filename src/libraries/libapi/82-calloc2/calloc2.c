@@ -1,7 +1,7 @@
 #include "common.h"
 
 void *malloc2(u32);
-void func_000000BC(s8 *, s32);
+static void *func_000000BC(s8 *, s32);
 
 void *calloc2(s32 arg0, s32 arg1) {
     s32 size;

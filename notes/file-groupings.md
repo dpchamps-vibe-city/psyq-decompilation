@@ -187,12 +187,12 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 ## LIBAPI.LIB — CALLOC2.OBJ (ordinal 82)
 
 - TU directory: `src/libraries/libapi/82-calloc2/`; target `lib_dd5293adbfd08d1d_0`.
-- Original function: `calloc2` plus the unnamed file-static companion `func_000000BC` (a separate `.c` part, still assembly backlog).
-- Recovered: `calloc2` — multiplies the two size arguments, allocates through `malloc2`, then zero-fills the result through the local helper, returning null when the allocation fails.
+- Original function: `calloc2` plus the unnamed file-static companion `func_000000BC` (a separate `.c` part, now recovered).
+- Recovered: `calloc2` — multiplies the two size arguments, allocates through `malloc2`, then zero-fills the result through the local helper, returning null when the allocation fails. `func_000000BC` — zero-fills `arg1` bytes at `arg0`, returning `arg0`, or null when `arg0` is null or `arg1` is zero.
 - Same-file evidence: `calloc2` calls the unnamed local routine at `.text` offset 0xBC, contiguous with `calloc2` (0x68–0xBC) and not exported in the object, marking it as a file-static helper of this same TU rather than a separate member. The verified `calloc2.o` carries only `.text` and leaves `malloc2` undefined (extern), so this object owns no allocator state — the same no-state pattern as `MALLOC2.OBJ` (79), `FREE2.OBJ` (80) and `REALLOC2.OBJ` (81).
 - Link adjacency: `calloc2` calls `malloc2`, defined in the neighboring `MALLOC2.OBJ` (ordinal 79); the allocator call direction (initialize → allocate → free → realloc → calloc) and contiguous link order (78 → 79 → 80 → 81 → 82) agree. The shared extern does not merge these members, which remain distinct TUs.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/82-calloc2` (`CALLOC2.OBJ`, ordinal 82, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
-- Verification: `calloc2` passed the full finalize gate (agent origin, verified identity `e4a61c9a0639d8d40d28b1c388beb7fd8b2c97d36ce89fa9a7359906ed921fb6`).
+- Verification: `calloc2` passed the full finalize gate (agent origin, verified identity `e4a61c9a0639d8d40d28b1c388beb7fd8b2c97d36ce89fa9a7359906ed921fb6`); `func_000000BC` passed the full finalize gate (agent origin, verified identity `32277ab11a50a7db7a0a549e92aecbdb2000048e48247968a7609689c82e1f28`).
 
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
