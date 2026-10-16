@@ -164,6 +164,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/79-malloc2` (`MALLOC2.OBJ`, ordinal 79, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `malloc2` passed the full finalize gate (agent origin, verified identity `409514070f886c52139ecd1bead0e7ed9a70bfdd0671d7898b2406ec1b5c5b9c`).
 
+## LIBAPI.LIB — FREE2.OBJ (ordinal 80)
+
+- TU directory: `src/libraries/libapi/80-free2/`; target `lib_9ae1aae5ce990b26_0`.
+- Original function: `free2`.
+- Recovered: `free2` — sets the allocated-block header immediately before the supplied pointer to free, then lowers the first-fit `_Candidate` hint when the freed block precedes it.
+- Same-file evidence: the verified `free2.o` carries only `.text` and leaves `_Candidate` undefined (extern), so this single-function object owns no allocator state of its own — the same no-state pattern as `MALLOC2.OBJ` (ordinal 79).
+- Link adjacency: `free2` reads/writes `_Candidate`, the same heap-state cluster that `MALLOC2.OBJ` shares and that the neighboring `I_HEAP2.OBJ` (ordinal 78) `.bss` defines; the allocator call direction (initialize → allocate → free) and contiguous link order (78 → 79 → 80) agree. The shared extern cluster does not merge these members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/80-free2` (`FREE2.OBJ`, ordinal 80, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `free2` passed the full finalize gate (agent origin, verified identity `a79f07d7bc40e4b7dec2c9674e620dc86d75837e5b8476417b3c90484544be1f`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
