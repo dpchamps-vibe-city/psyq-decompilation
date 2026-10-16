@@ -5,7 +5,7 @@ extern s32 D_00000300;
 void _remove_ChgclrPAD(void);
 void _patch_pad(void);
 void PAD_init2(char *buf1, long siz1, char *buf2, long siz2);
-void func_000001DC(void);                           /* static */
+int func_000001DC(void);                            /* static */
 int EnterCriticalSection(void);
 void ExitCriticalSection(void);
 void ChangeClearPAD(long arg0);
