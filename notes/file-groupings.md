@@ -184,6 +184,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/81-realloc2` (`REALLOC2.OBJ`, ordinal 81, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `realloc2` passed the full finalize gate (agent origin, verified identity `6bcbc28f40a3d3e04836b43fdba667c6a91706cf46d2230e97a489fbbaf6f4ef`); `func_000000F8` also passed exact diff, full build, scope and clean-source gates (verified identity `bb1acc6ce421e5592ddbfcca337c96d98b427c9632f11bc9a282872751453ef1`); `func_00000280` passed the full finalize gate (agent origin, verified identity `00ab69aed02aec5054a54a71dad762d3d5ec3be1f776deea82497db9683776a7`). Existing member boundaries are unchanged; matching details are in [the resize-helper case study](research/realloc2-private-resize-control-shape.md).
 
+## LIBAPI.LIB — CALLOC2.OBJ (ordinal 82)
+
+- TU directory: `src/libraries/libapi/82-calloc2/`; target `lib_dd5293adbfd08d1d_0`.
+- Original function: `calloc2` plus the unnamed file-static companion `func_000000BC` (a separate `.c` part, still assembly backlog).
+- Recovered: `calloc2` — multiplies the two size arguments, allocates through `malloc2`, then zero-fills the result through the local helper, returning null when the allocation fails.
+- Same-file evidence: `calloc2` calls the unnamed local routine at `.text` offset 0xBC, contiguous with `calloc2` (0x68–0xBC) and not exported in the object, marking it as a file-static helper of this same TU rather than a separate member. The verified `calloc2.o` carries only `.text` and leaves `malloc2` undefined (extern), so this object owns no allocator state — the same no-state pattern as `MALLOC2.OBJ` (79), `FREE2.OBJ` (80) and `REALLOC2.OBJ` (81).
+- Link adjacency: `calloc2` calls `malloc2`, defined in the neighboring `MALLOC2.OBJ` (ordinal 79); the allocator call direction (initialize → allocate → free → realloc → calloc) and contiguous link order (78 → 79 → 80 → 81 → 82) agree. The shared extern does not merge these members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/82-calloc2` (`CALLOC2.OBJ`, ordinal 82, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `calloc2` passed the full finalize gate (agent origin, verified identity `e4a61c9a0639d8d40d28b1c388beb7fd8b2c97d36ce89fa9a7359906ed921fb6`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
