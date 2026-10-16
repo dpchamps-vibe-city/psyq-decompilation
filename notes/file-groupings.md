@@ -177,12 +177,12 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 ## LIBAPI.LIB — REALLOC2.OBJ (ordinal 81)
 
 - TU directory: `src/libraries/libapi/81-realloc2/`; target `lib_51928ac182d7ab42_0`.
-- Original functions: `realloc2` plus the unnamed file-static companions `func_000000F8` (in-place resize/split) and `func_00000280` (byte copy); the two statics remain assembly backlog.
-- Recovered: `realloc2` — on a null pointer allocates via `malloc2`; otherwise resizes in place through `func_000000F8`, falling back to `malloc2` + `func_00000280` copy + `free2` when that fails; frees the block on a zero size.
+- Original functions: `realloc2` plus the unnamed file-static companions `func_000000F8` (in-place resize/split) and `func_00000280` (byte copy); only `func_00000280` remains assembly backlog.
+- Recovered: `realloc2` — on a null pointer allocates via `malloc2`; otherwise resizes in place through `func_000000F8`, falling back to `malloc2` + `func_00000280` copy + `free2` when that fails; frees the block on a zero size. `func_000000F8` — coalesces following free blocks or extends the end block, splits excess space, and returns the original pointer or null.
 - Same-file evidence: the verified object exports only `realloc2` (`T`); `func_000000F8` (0xF8–0x280) and `func_00000280` (0x280–0x2B4) are local labels (`t`) contiguous with `realloc2` (0x68–0xF8), marking them as file-static helpers of this object rather than separate members.
 - Link adjacency: the heap-state cluster `_AllocRestBlockTop`, `_Candidate`, `_max_heap` is undefined in `realloc2.o` and defined in the neighboring `I_HEAP2.OBJ` (ordinal 78) `.bss`, exactly as in `MALLOC2.OBJ` (79) and `FREE2.OBJ` (80); the allocator call direction (allocate → free → realloc) and contiguous link order (78 → 79 → 80 → 81) agree. The verified object carries only `.text` (no `.data`/`.bss`), the same no-state pattern as its two neighbors. The shared extern cluster does not merge these members, which remain distinct TUs.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/81-realloc2` (`REALLOC2.OBJ`, ordinal 81, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
-- Verification: `realloc2` passed the full finalize gate (agent origin, verified identity `6bcbc28f40a3d3e04836b43fdba667c6a91706cf46d2230e97a489fbbaf6f4ef`).
+- Verification: `realloc2` passed the full finalize gate (agent origin, verified identity `6bcbc28f40a3d3e04836b43fdba667c6a91706cf46d2230e97a489fbbaf6f4ef`); `func_000000F8` also passed exact diff, full build, scope and clean-source gates (verified identity `bb1acc6ce421e5592ddbfcca337c96d98b427c9632f11bc9a282872751453ef1`). Existing member boundaries are unchanged; matching details are in [the resize-helper case study](research/realloc2-private-resize-control-shape.md).
 
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
