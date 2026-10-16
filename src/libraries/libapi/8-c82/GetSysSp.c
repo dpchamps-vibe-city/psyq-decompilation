@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_26566e189ff22fa5_0", GetSysSp);
+#include "library/psx_bios_tailjump.h"
+
+unsigned long GetSysSp(void) {
+    PSX_BIOS_TAILJUMP(0xa0, 0x52);
+}

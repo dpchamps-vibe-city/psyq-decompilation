@@ -15,6 +15,15 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/0-c57`, identifies `LIBAPI.LIB` / `C57.OBJ`, ordinal 0. The selected converted object, `library-input/redux/libapi/0-c57.o`, contains only `InitHeap`; see `build/libraries/disassembly/lib_6f830259724bafe6_0/member.s`.
 - Verification: `build/finalization/InitHeap.json` records exact function and whole-member MATCH, passing scope/source-policy gates, and published context. Converted target SHA-256: `75de3c620e849a420e64f9a62a0806f94bfb7d6956753d8bb430ee526406949a`.
 
+## LIBAPI.LIB — C82.OBJ (ordinal 8)
+
+- Reconstructed source: `src/libraries/libapi/8-c82/GetSysSp.c`
+- Target member: `lib_26566e189ff22fa5_0`
+- Members:
+  - `GetSysSp` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Another member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) / `DeliverEvent` (A07) / `OpenEvent` (A08) / `CloseEvent` (A09) pattern of a library member that is a binding rather than an implementation.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/8-c82`, identifies `LIBAPI.LIB` / `C82.OBJ`, ordinal 8 (`ambiguousNamedBaseline: false`). `src/libraries/libapi/8-c82/_shared-0.h` records one original member, one TU, functions: `GetSysSp`, and object sha256 `ca2bc90fa6bcc883d32404163a393bf39404d6b9565bc5c7620ceafec5c8aaac`; baseline `library-input/converted/lib/libapi/c82.o` is unambiguously named. `build/libraries/disassembly/lib_26566e189ff22fa5_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x52`), consistent with a binding-only TU and matching the stub's `(0xa0, 0x52)` arguments.
+- Verification: passed (agent origin, verified identity `dd9141d59aaadcf1c639e6ad90cd2e2ed0bac4c2dfdb09fd01dbd225d9c8c4ed`); full finalize gate passed.
+
 ## LIBAPI.LIB — C113.OBJ (ordinal 10)
 
 - Reconstructed source: `src/libraries/libapi/10-c113/_96_init.c`
