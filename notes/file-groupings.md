@@ -194,6 +194,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/82-calloc2` (`CALLOC2.OBJ`, ordinal 82, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `calloc2` passed the full finalize gate (agent origin, verified identity `e4a61c9a0639d8d40d28b1c388beb7fd8b2c97d36ce89fa9a7359906ed921fb6`); `func_000000BC` passed the full finalize gate (agent origin, verified identity `32277ab11a50a7db7a0a549e92aecbdb2000048e48247968a7609689c82e1f28`).
 
+## LIBAPI.LIB — I_HEAP3.OBJ (ordinal 84)
+
+- TU directory: `src/libraries/libapi/84-i_heap3/`; target `lib_2405c148f7fb0718_0`.
+- Original function: `InitHeap3` (the object's unnamed `.data` remains original assembly backlog).
+- Recovered: `InitHeap3` — aligns the requested heap size down to a multiple of 8, writes the tail block header pointing back at `head`, zeroes the block's next/size fields, stores the free-list pointer into the head block, publishes the free-list head to `_freep`, and records the block count in `head[1]`.
+- Same-file evidence: `_freep` is *defined* in this object's own `.data` (`objdump -t library-input/redux/libapi/84-i_heap3.o`: `.data` 0x10 bytes, `_freep` at offset 0), and the verified body's `sw $a0, %lo(_freep)($at)` is the object's only `.data__base` relocation, tying the recovered body to this member rather than to another LIBAPI object.
+- Link adjacency: `_freep` is undefined (extern) in the neighboring `MALLOC3.OBJ` (85), `FREE3.OBJ` (86) and `REALLOC3.OBJ` (87); `FREE3.OBJ` defines the companion common symbols `_r_freep`/`_r_p`/`_r_bp`, and `malloc3` is called by `REALLOC3.OBJ`/`CALLOC3.OBJ` (87/88); the allocator call direction (initialize → allocate → free → realloc → calloc) and the contiguous link order (84 → 85 → 86 → 87 → 88) agree. This heap3 state set is distinct from the heap2 set (`_AllocRestBlockTop`, `_TopAllocArea`, `_max_heap`, `_Candidate`, defined in `I_HEAP2.OBJ`, ordinal 78), so the two allocator generations remain separate TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/84-i_heap3` (`I_HEAP3.OBJ`, ordinal 84, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `InitHeap3` passed the full finalize gate (agent origin, verified identity `bd1e4a06ea28d170e3b8bf0bbbdd45223729023856fe6ebb353d62514c8440e9`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
