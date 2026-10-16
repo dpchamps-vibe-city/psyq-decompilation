@@ -130,9 +130,10 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 - TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
 - Original functions: `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`.
-- Recovered: `ReadInitPadFlag` — reads the member's `D_00000300` initialization flag.
-- Remaining functions and member data are still original assembly backlog.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. Sweep finalization passed for `ReadInitPadFlag`, including the owning member with its unrecovered neighbors.
+- Recovered: `SetInitPadFlag` (writes the flag) and `ReadInitPadFlag` (reads it); `PAD_init` and `InitPAD` — twin buffer-initialization wrappers that remove the BIOS clear-pad hook, patch PAD under a critical section, invoke the member-local `func_000001DC`, delegate to a separate `*_init2` binding, and set the flag.
+- Remaining functions (`StartPAD`, the `func_000001DC` static helper) and member data are still original assembly backlog.
+- Same-file evidence: `InitPAD` and `PAD_init` are instruction-for-instruction twins within one member, and both write the member's own `D_00000300` flag that `SetInitPadFlag`/`ReadInitPadFlag` also touch; both also call the member-local unexported helper `func_000001DC`, tying the recovered bodies to this object. Their delegated callees `InitPAD2` (`A18.OBJ`, ordinal 31) and `PAD_init2` (`A21.OBJ`, ordinal 34) are distinct single-function binding members and are not merged here.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member now passes whole-member verification (`build/libraries/verified/lib_a8f7345a144556eb_0.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
 
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
