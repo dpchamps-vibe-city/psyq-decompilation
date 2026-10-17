@@ -284,6 +284,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Link adjacency: ordinal 53 immediately follows `LIBC.LIB` `QSORT.OBJ` (ordinal 52), and the two are the archive's stateless, comparator-driven standard search/sort members, both reconstructed from C under the trunk-19970318 compiler. They share no symbol, data or helper, so the adjacency places them in one source family in link order but does not merge them into one TU. `bsearch` must also not be merged with `C53.OBJ` (ordinal 41), the digit-coincident BIOS tail-jump binding for `lsearch`; the ordinal gap and the completely different member bytes keep them apart.
 - Verification: `bsearch` passed the full finalize gate (agent origin, verified source/evidence identity `1596fe366353e062a110862d0956eac1f40e20f31c595987540a7419f022b3db`); whole-member `MATCH` (48/48 words) in `build/libraries/verified/lib_25f493c082078483_0.json` (record identity `aaa23c6f5dc0d9ef85968cae962b099eb935d3896d2dfde7d19b8f981aaf5fad`) against original hash `070d3d964c2a879847d85074fe94a0691b9e157853c44d70c97fd7e9c4fbafa9`.
 
+## LIBC.LIB — STRTOUL.OBJ (ordinal 54)
+
+- TU directory: `src/libraries/libc/54-strtoul/`; target `lib_c1713ec35e93517a_0`.
+- Members:
+  - `strtoul` — unsigned integer parse from a string with optional base prefix, returning the accumulated value and the end pointer through the out-parameter.
+- Same-file evidence: `library-input/converted/lib/libc/strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note`, exports only `strtoul` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_c1713ec35e93517a_0/member.s` shows the single function, consistent with a one-member, one-function TU.
+- Call/link adjacency: the verified body calls `todigit` (`C10.OBJ`, ordinal 7), `toupper` (`C37.OBJ`, ordinal 30) and reads `_ctype_` (`CTYPE0.OBJ`, ordinal 45) — all earlier LIBC.LIB members. The immediately following `STRTOL.OBJ` (ordinal 55) uses the same three externs and the same whitespace/base-prefix/digit-accumulation structure plus sign handling, placing the pair in one signed/unsigned string-to-integer source family in link order; the shared externs do not merge the two members into one TU.
+- Cross-library duplicate: `libc/54-strtoul` `sourceSha256` `4e6890e32e8d8f34fe845bab8a256696283110db9e749b358b71f86601c3dff3` equals that of `libc2/30-strtoul` (`LIBC2.LIB` / `STRTOUL.OBJ`, ordinal 30), matching the already-recorded LIBC↔LIBC2 identical-byte member run; duplicated archive bytes do not merge the members.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/54-strtoul` (`STRTOUL.OBJ`, ordinal 54, `ambiguousNamedBaseline: false`), object sha256 `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`, and the ordered `tu.json` (`_shared-0.h` + `strtoul.c`).
+- Verification: `strtoul` passed the full finalize gate (agent origin, verified source/evidence identity `7d2c44b00a92482031b3e8151aaefbea7df83faec7b14a812d591d0e6bb989a8`); whole-member `MATCH` (84/84 words) in `build/libraries/verified/lib_c1713ec35e93517a_0.json` against original hash `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
