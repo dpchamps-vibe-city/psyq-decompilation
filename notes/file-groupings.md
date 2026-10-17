@@ -411,6 +411,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `STRCPY.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
 - Verification: whole-member `MATCH` (20/20 words) in `build/libraries/verified/lib_5cfffaa9ca3e5b34_0.json`; finalize gate passed with agent origin and verified source/evidence identity `9384078dede949092d1ed71e67eb1f77abcabc58631a281fe4fe4b7099e0d7b3`.
 
+## LIBC2.LIB — STRCSPN.OBJ (ordinal 19)
+
+- TU directory: `src/libraries/libc2/19-strcspn/`; target `lib_9e2e7f2169214720_0`.
+- Original function: `strcspn` — returns the length of the leading prefix of the first string that contains no byte from the second string.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/19-strcspn` (`STRCSPN.OBJ`, ordinal 19, `ambiguousNamedBaseline: false`), member `sourceSha256` `78c3f96936dbe90afc71ad40a38e57e94309cd1c251b3ae623a41f126cfd4b25`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcspn.c`).
+- Same-file evidence: original `19-strcspn.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcspn` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_9e2e7f2169214720_0/member.s` shows the single 32-word function. The character-class scan is inlined rather than issuing a call to `STRCHR.OBJ` (ordinal 16), so there is no intra-library call edge tying this member to a neighbour's TU.
+- Source-family/link adjacency: ordinal 19 sits in the LIBC2 string-primitive run between `STRCPY.OBJ` (18) and `STRNCAT.OBJ` (22) already recorded above; the placement is archive adjacency, not shared state, and the members are not merged.
+- Cross-library: no LIBC.LIB member is named `STRCSPN.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCSPN.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_9e2e7f2169214720_0.json`; finalize gate passed with agent origin and verified source/evidence identity `f2f8fc499be05de170e9bcf046e45bbc67b79e13aad61f9cb05874f129b98939`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
