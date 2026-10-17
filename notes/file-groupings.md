@@ -253,6 +253,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library duplicate: the `libc/49-bcmp` member `sourceSha256` `2d85252d036b1b85cb8d15d64e1af65c403f31e3d6719db2a8d96fde0e003188` equals that of `libc2/0-bcmp` (`LIBC2.LIB` / `BCMP.OBJ`, ordinal 0), so both archives embed the same original member bytes; the staged objects differ only in their embedded source-path strings. They remain separate archive members for grouping purposes and do not merge LIBC.LIB's `BCMP.OBJ` with LIBC2.LIB's duplicate.
 - Verification: `bcmp` passed the full finalize gate (agent origin, verified source/evidence identity `a116b4bbea1a982cc6fb228d1893ede0f22f60e21e928fa08e0671d22064ceaf`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8234752d656fa68f_0.json` against original hash `49aad70bb673be9250ae4a4dd143a06683faa4c0358c04a6e42f29cfff4fe0f0`.
 
+## LIBC.LIB — MEMCMP.OBJ (ordinal 50)
+
+- TU directory: `src/libraries/libc/50-memcmp/`; target `lib_22cf44ab082e7eb6_0`.
+- Members:
+  - `memcmp` — byte comparison of two length-bounded buffers, returning the first differing byte difference or zero.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/50-memcmp` (`MEMCMP.OBJ`, ordinal 50, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json` (`_shared-0.h` + `memcmp.c` only, no `_data` part). `build/libraries/disassembly/lib_22cf44ab082e7eb6_0/member.s` shows one 16-word (0x40-byte) function at `.text` 0 with no local-symbol or data reference, consistent with a one-member, one-function TU that owns no state.
+- Same-file/adjacency evidence: the reconstructed body is instruction-for-instruction identical (16/16 words) to the immediately preceding `LIBC.LIB` `BCMP.OBJ` (`lib_8234752d656fa68f_0`) — same loop shape, same `subu` in the `bne` delay slot, same trailing `nop` pair. Identical code plus adjacent archive ordinals 49/50 places `bcmp` and `memcmp` in one byte-comparison source family in link order, but each member exports exactly one symbol under a different name and carries its own `sourceSha256` (`2d85252d…` vs `b1ed1f35…`), so the two remain separate TUs and must not be merged on body identity.
+- Cross-library duplicate: `libc/50-memcmp` `sourceSha256` `b1ed1f35bc336e1fdda8247981cfdeb013e9d48f6c5f7083ba95d49876bce46d` equals that of `libc2/7-memcmp` (`LIBC2.LIB` / `MEMCMP.OBJ`, ordinal 7), the same replication pattern already recorded for `libc/49-bcmp` ↔ `libc2/0-bcmp`. MEMCMP.OBJ therefore belongs to the LIBC↔LIBC2 duplicated member run (LIBC ordinals 48–55 each have an identical-byte LIBC2 counterpart); the shared bytes are archive replication, not one shared TU.
+- Verification: `memcmp` passed the full finalize gate (agent origin, verified source/evidence identity `b74969f0dcbd6bed7cb4b5717fa84e57083e8371ce5d84696a4eaf254dfcf43d`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_22cf44ab082e7eb6_0.json` against original hash `8d84d97929f8b52413ed04a2d877a22b0569f8f88d0304655035b02a20c54760`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
