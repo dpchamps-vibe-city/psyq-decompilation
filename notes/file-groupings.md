@@ -295,6 +295,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/54-strtoul` (`STRTOUL.OBJ`, ordinal 54, `ambiguousNamedBaseline: false`), object sha256 `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`, and the ordered `tu.json` (`_shared-0.h` + `strtoul.c`).
 - Verification: `strtoul` passed the full finalize gate (agent origin, verified source/evidence identity `7d2c44b00a92482031b3e8151aaefbea7df83faec7b14a812d591d0e6bb989a8`); whole-member `MATCH` (84/84 words) in `build/libraries/verified/lib_c1713ec35e93517a_0.json` against original hash `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`.
 
+## LIBC.LIB — STRTOL.OBJ (ordinal 55)
+
+- TU directory: `src/libraries/libc/55-strtol/`; target `lib_7edc433fe11f0100_0`.
+- Members:
+  - `strtol` — signed integer parse from a string, handling leading whitespace, repeated sign characters and an optional base prefix, and returning the accumulated value plus the end pointer through the out-parameter.
+- Same-file evidence: `library-input/converted/lib/libc/strtol.o` has only `.text` (0x190 bytes, 100 words) and `.note`, exports only `strtol` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_7edc433fe11f0100_0/member.s` shows the single function, consistent with a one-member, one-function TU.
+- Call/link adjacency: the verified body calls `todigit` (`C10.OBJ`, ordinal 7), `toupper` (`C37.OBJ`, ordinal 30) and reads `_ctype_` (`CTYPE0.OBJ`, ordinal 45), the same three externs used by the immediately preceding `STRTOUL.OBJ` (ordinal 54). The two share the whitespace/base-prefix/digit-accumulation structure, with `strtol` adding sign handling, placing the pair in one signed/unsigned string-to-integer source family in link order; the shared externs do not merge the two members into one TU.
+- Cross-library duplicate: `libc/55-strtol` `sourceSha256` `5b00a79584d533fd211694bb0b5c778f98a116a311fdf53ab502baa20b68eef1` equals that of `libc2/49-strtol_0` (`LIBC2.LIB` / `STRTOL_0.OBJ`, ordinal 49), extending the LIBC↔LIBC2 identical-byte member run recorded for `strtoul`, `bsearch`, `bcmp` and `memcmp`; duplicated archive bytes do not merge the members.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/55-strtol` (`STRTOL.OBJ`, ordinal 55, `ambiguousNamedBaseline: false`), object sha256 `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`, and the ordered `tu.json` (`_shared-0.h` + `strtol.c`).
+- Verification: `strtol` passed the full finalize gate (agent origin, verified source/evidence identity `9bd9a3dbb7f8edaea46d91a541a0d29d0a4f55c8949a8783fa6de86db5094239`); whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_7edc433fe11f0100_0.json` against original hash `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
