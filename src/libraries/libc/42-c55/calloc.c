@@ -1,1 +1,6 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_34140ee7365e5a2d_0", calloc);
+#include <malloc.h>
+#include "library/psx_bios_tailjump.h"
+
+void *calloc(u32 arg0, u32 arg1) {
+    PSX_BIOS_TAILJUMP(0xa0, 0x37);
+}
