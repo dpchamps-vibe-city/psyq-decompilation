@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_44f881123df2c306_0", __library_member_data);
+/* Member data is reconstructed in _shared-0.h so strings precede its jump table. */
