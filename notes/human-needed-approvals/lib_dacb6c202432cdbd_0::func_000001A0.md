@@ -1,4 +1,23 @@
-# lib_dacb6c202432cdbd_0::func_000001A0 — human decision needed
+# lib_dacb6c202432cdbd_0::func_000001A0 — resolved
+
+**Resolved 2026-10-17.** The function is now ordinary C
+(`src/libraries/libapi/87-realloc3/func_000001A0.c`, the common-return byte
+copy) and the whole member verifies under the production compiler, which was
+changed the same day to the identified 1997 trunk snapshot. No park, waiver,
+flag override or compiler patch applies. See
+[compiler-identification-1997-trunk.md](../research/compiler-identification-1997-trunk.md).
+The earlier reopening note and the historical park follow.
+
+## Earlier reopening note (2026-10-17, before the compiler change)
+
+**Reopened 2026-10-17 at the user's request.** The earlier escalation exhaustion
+is not an assembly-policy finding. The function is not finalized; a measured
+CDK compiler candidate matches its original section range, while the owning TU
+still differs in the rollback helper. See
+[the current evidence and compiler-selection limitation](../research/realloc3-copy-compiler-variant.md).
+No new park or policy waiver is implied. The historical report follows.
+
+## Historical park
 
 - **Parked:** 2026-10-17T01:22:02.965Z
 - **Reason:** escalation-exhausted
