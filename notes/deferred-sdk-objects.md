@@ -9,6 +9,14 @@ archive/member ordinals, SHA-256 hashes and observed failures are in
 Selected converter: pinned PCSX-Redux `psyq-obj-parser`, preserving ELF COMMON
 with `-c`. Configuration and executable identity: `configs/conversion-policy.json`.
 
+Excluded, not deferred: `Libsn.lib` (57 objects) was removed from the project
+on 2026-10-17 because it is SN Systems' runtime, not Sony code, and its source
+is available and reproduces it (54 of 57 confirmed). It is recorded under
+`excludedArchives` in `configs/conversion-policy.json` with the evidence in
+`notes/research/libsn-libgcc-provenance.md`; the original archive stays in
+`library-input/psyq/LIB`. The completeness denominator for Sony's SDK is now
+2167 selected members plus the six deferred originals below.
+
 | Original | Current blocker | Required work |
 |---|---|---|
 | `2MBYTE.OBJ` | Section-end expression (opcode 22) | Translate section start/end/size expressions and define an explicit linker-boundary symbol contract. Validate startup addresses against original-tool evidence. |
