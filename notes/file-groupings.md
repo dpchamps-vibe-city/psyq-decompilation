@@ -533,6 +533,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Source-family/link adjacency: ordinal 29 continues the LIBC2 string-primitive run between `STRSTR.OBJ` (28) and `STRTOUL.OBJ` (30); the delimiter scan repeats the `lb` / `lbu` / `sll` / `sra` signed-byte idiom already recorded for `STRSPN.OBJ` (27), `STRPBRK.OBJ` (25), `STRCSPN.OBJ` (19) and `STRCHR.OBJ` (16), while the saved pointer is private to this object. This is idiom, private state and archive adjacency only; no merge.
 - Verification: whole-member `MATCH` (72/72 words) in `build/libraries/verified/lib_13483b10fd096166_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `603fa5a89c2cab0c0b7d6727e9763cf40f849962b47e9b872b0d630d75e4c3d3`.
 
+## LIBC2.LIB — STRTOUL.OBJ (ordinal 30)
+
+- TU directory: `src/libraries/libc2/30-strtoul/`; target `lib_b4dd899542bea38e_0`.
+- Original function: `strtoul` — unsigned integer parse from a string with optional base prefix, returning the accumulated value and the end pointer through the out-parameter.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/30-strtoul` (`STRTOUL.OBJ`, ordinal 30, `ambiguousNamedBaseline: false`), member `sourceSha256` `4e6890e32e8d8f34fe845bab8a256696283110db9e749b358b71f86601c3dff3`, and the ordered `tu.json` (`_shared-0.h` + `strtoul.c`); `src/libraries/libc2/30-strtoul/_shared-0.h` records object sha256 `9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2`.
+- Same-file evidence: original `30-strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note` — no `.data`/`.bss` — and exports only `strtoul` (`T`), leaving `_ctype_`, `toupper` and `todigit` undefined, so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_b4dd899542bea38e_0/member.s` shows the single 84-word function, consistent with a one-member, one-function TU.
+- Cross-library duplicate: member `sourceSha256` `4e6890e3…01c3dff3` equals that of LIBC.LIB `STRTOUL.OBJ` (`libc/54-strtoul`, ordinal 54), the already-recorded LIBC↔LIBC2 identical-byte replication run; `.text` (84/84 words) is identical and only the embedded source-path strings differ. Duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
+- Call/link adjacency: ordinal 30 sits between `STRTOK.OBJ` (29) and `TODIGIT.OBJ` (31); the body calls `todigit` (ordinal 31, immediately following in link order) and leaves `toupper` (CTYPE_1.OBJ, ordinal 47) and `_ctype_` (CTYPE_0.OBJ, ordinal 46) undefined for later LIBC2 members. Its whitespace/base-prefix/digit-accumulation structure matches LIBC.LIB `STRTOL.OBJ` (ordinal 55) plus sign handling, but shared externs and duplicated bytes do not merge the members.
+- Verification: whole-member `MATCH` (84/84 words) in `build/libraries/verified/lib_b4dd899542bea38e_0.json` against original hash `9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2`; full finalize gate passed with agent origin and verified source/evidence identity `5fbac456a6832eed525704efdbc4d7ecb90a0d9faa05909d5ddd5ac66e8940d6`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
