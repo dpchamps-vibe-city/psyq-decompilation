@@ -244,6 +244,15 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Same-file evidence: `build/libraries/disassembly/lib_1541083c1d7b8934_0/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x38; nop`) with no local-symbol reference, consistent with a binding-only single-member TU. The `$t1` index follows the same C-object-number-in-hex pattern as the neighboring LIBC.LIB binding members C47/C48/C52/C53/C55, extending that link-order cluster (37–44) without merging the TUs.
 - Verification: `realloc` passed the full finalize gate (agent origin, verified identity `3dbd4d17c17081390ad3dedd9a7739f6797a8dd47e7d769bba8c027ebfe1c5a5`).
 
+## LIBC.LIB — BCMP.OBJ (ordinal 49)
+
+- TU directory: `src/libraries/libc/49-bcmp/`; target `lib_8234752d656fa68f_0`.
+- Members:
+  - `bcmp` — byte comparison of two buffers, returning the first differing byte difference or zero.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/49-bcmp` (`BCMP.OBJ`, ordinal 49, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline `library-input/converted/lib/libc/bcmp.o` has only `.text` (0x40 bytes) and `.note`, and its symbol table exports only `bcmp` (`T`), so the object owns no data/state and no file-static helper. `build/libraries/disassembly/lib_8234752d656fa68f_0/member.s` shows the single 16-word function at `.text` 0, consistent with a one-member, one-function TU.
+- Cross-library duplicate: the `libc/49-bcmp` member `sourceSha256` `2d85252d036b1b85cb8d15d64e1af65c403f31e3d6719db2a8d96fde0e003188` equals that of `libc2/0-bcmp` (`LIBC2.LIB` / `BCMP.OBJ`, ordinal 0), so both archives embed the same original member bytes; the staged objects differ only in their embedded source-path strings. They remain separate archive members for grouping purposes and do not merge LIBC.LIB's `BCMP.OBJ` with LIBC2.LIB's duplicate.
+- Verification: `bcmp` passed the full finalize gate (agent origin, verified source/evidence identity `a116b4bbea1a982cc6fb228d1893ede0f22f60e21e928fa08e0671d22064ceaf`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8234752d656fa68f_0.json` against original hash `49aad70bb673be9250ae4a4dd143a06683faa4c0358c04a6e42f29cfff4fe0f0`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
