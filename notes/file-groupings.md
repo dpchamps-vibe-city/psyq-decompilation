@@ -306,6 +306,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/55-strtol` (`STRTOL.OBJ`, ordinal 55, `ambiguousNamedBaseline: false`), object sha256 `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`, and the ordered `tu.json` (`_shared-0.h` + `strtol.c`).
 - Verification: `strtol` passed the full finalize gate (agent origin, verified source/evidence identity `9bd9a3dbb7f8edaea46d91a541a0d29d0a4f55c8949a8783fa6de86db5094239`); whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_7edc433fe11f0100_0.json` against original hash `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`.
 
+## LIBC2.LIB — BCOPY.OBJ (ordinal 1)
+
+- TU directory: `src/libraries/libc2/1-bcopy/`; target `lib_8129d7844e04b42c_0`.
+- Members:
+  - `bcopy` — byte copy from a source buffer to a destination buffer, returning the source base, or zero when the source pointer is null.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/1-bcopy` (`BCOPY.OBJ`, ordinal 1, `ambiguousNamedBaseline: false`), object sha256 `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`, and the single-part ordered `tu.json` (`_shared-0.h` + `bcopy.c`).
+- Same-file evidence: `library-input/redux/libc2/1-bcopy.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bcopy` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_8129d7844e04b42c_0/member.s` shows the single 16-word function at `.text` 0x60.
+- Source-family/link adjacency: the `bcopy` instruction sequence (16/16 words, same opcodes and layout, source/destination register roles swapped) matches LIBC2 `MEMCPY.OBJ` (`libc2/8-memcpy`, ordinal 8), and both share the null-guard / return-preserved-base idiom with `BZERO.OBJ` (ordinal 2), `MEMMOVE.OBJ` (9) and `MEMSET.OBJ` (10). Ordinals 1, 2, 8, 9, 10 therefore form one LIBC2 memory-primitive source family in link order; each remains a separate archive member exporting one symbol under its own name with its own `sourceSha256`.
+- Cross-library: no LIBC.LIB member is named `BCOPY.OBJ`, and no member in `library-input/redux/original-members.json` shares BCOPY's `sourceSha256` `4edbfed0f2fbd9b874ad2e576633043de7f97b4da5f8122875f6c2a4fe00fe64`, so BCOPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`/`memcmp`/`bsearch`/`strtoul`/`strtol` and must not be merged with any LIBC member.
+- Verification: `bcopy` passed the full finalize gate (agent origin, verified source/evidence identity `2615948f7885332dadd39ffb0c1aae50598584806bcd748be4a07cb246e3f974`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8129d7844e04b42c_0.json` against original hash `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
