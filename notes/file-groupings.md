@@ -553,6 +553,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `TODIGIT.OBJ` and no member in `library-input/redux/original-members.json` shares TODIGIT's `sourceSha256` `f075f60c…42c68a5f`, so it lies outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_7c988ccce0366b12_0.json` against original hash `00bff85f45110112fcbdb4eb267eb190eb9d629e029aa377b8d4569634a9bf12`; full finalize gate passed with agent origin and verified source/evidence identity `e8348b5e813fd8ca036ce9c2e6c47021ae10a50e9997fcc05905271266d0f621`.
 
+## LIBC2.LIB — PRINTF.OBJ (ordinal 32)
+
+- TU directory: `src/libraries/libc2/32-printf/`; target `lib_d985b6c930f2b946_0`.
+- Original function: `printf` — fixed four-argument wrapper that stages `a1`–`a3` as a stack `va_list` and forwards `(1, fmt, ap)` to `prnt`; it is not the formatter itself.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/32-printf` (`PRINTF.OBJ`, ordinal 32, `ambiguousNamedBaseline: false`), member `sourceSha256` `d8f605926eccb543e4d2d046f74d9c5c4b310616514ab5918cfdd398f14cc36a`, and the ordered single-function `tu.json` (`_shared-0.h` + `printf.c`); `src/libraries/libc2/32-printf/_shared-0.h` records object sha256 `9bac8e5a79f553ba9ca68635c8dae4feabf4e36d260794a983ff70ec6a278f81`.
+- Same-file evidence: original `32-printf.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `printf` (`T`), and leaves `prnt` undefined (`*UND*`) through its sole `.rel.text` entry, an `R_MIPS_26` at offset 0x24; the object owns no state and has no file-static companion, and `build/libraries/disassembly/lib_d985b6c930f2b946_0/member.s` shows the single 16-word function.
+- Call/link adjacency: ordinal 32 immediately precedes `PRNT.OBJ` (ordinal 33), the callee named by `printf`'s sole external relocation; the next member `SPRINTF.OBJ` (34) is a separate self-contained formatter that does not call `prnt`. Link order and the call graph therefore agree that `printf` is a thin single-function member distinct from the formatter, and it must not be merged with `PRNT.OBJ` or `SPRINTF.OBJ`.
+- Cross-library: member `sourceSha256` `d8f60592…14cc36a` occurs only in `libc2/32-printf`; LIBC.LIB has its own `SPRINTF.OBJ` (`libc/46-sprintf`) but no `PRINTF.OBJ`, and no LIBC.LIB member shares this member's `sourceSha256`, so PRINTF.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_d985b6c930f2b946_0.json` against original hash `9bac8e5a79f553ba9ca68635c8dae4feabf4e36d260794a983ff70ec6a278f81`; full finalize gate passed with agent origin and verified source/evidence identity `a9137a3fa5a0380ac9891bb10396979088b42ebc8b07f77a763d2bfc0ecd9e06`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
