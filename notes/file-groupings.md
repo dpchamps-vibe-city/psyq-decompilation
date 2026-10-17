@@ -328,6 +328,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `MEMSET.OBJ` and no member in `library-input/redux/original-members.json` shares MEMSET's `sourceSha256` `a27db6e485b21e296987474246289b9bf76b3dd125fe44b183b40535a1c1192b`, so MEMSET.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Verification: `memset` passed the full finalize gate (agent origin, verified source/evidence identity `342a262daf83dd44be562d2e4d314af43f431c200a03c292947edcaa16329154`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_ad73e3e825e58564_0.json`.
 
+## LIBC2.LIB — PUTC.OBJ (ordinal 11)
+
+- TU directory: `src/libraries/libc2/11-putc/`; target `lib_a3428c892acd047f_0`.
+- Members:
+  - `putc` — unbuffered single-character output: writes the character value through its own stack slot to file descriptor `fd` with a one-byte `write`.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/11-putc` (`PUTC.OBJ`, ordinal 11, `ambiguousNamedBaseline: false`), member `sourceSha256` `7f2c4b2a15ea2636528e6d61fd83b35cedc167f93fa880ab7df7ebb820b3b07d`, and the ordered `tu.json` (`_shared-0.h` + `putc.c`).
+- Same-file evidence: the converted object `library-input/converted/lib/libc2/putc.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — exports only `putc` (`T`) and leaves `write` undefined (`*UND*`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_a3428c892acd047f_0/member.s` shows the single 12-word function.
+- SDK idiom / call adjacency: the body is the two-argument `write(fd, &c, 1)` wrapper around the libapi `write` binding (`libapi/49-a53`, `A53.OBJ`, ordinal 49), itself a BIOS tail jump to service 0x35. The neighboring `PUTCHAR.OBJ` (ordinal 12) calls the same `write`, but its body uses its own buffered `_putchar`/`_putchar_flash` routines and its own `D_000002D0`/`D_000002D4`/`B_000002E0` state and never calls `putc`; link order (11 → 12) and the call graph agree that the two members are distinct TUs, and no member disassembled under `build/libraries/disassembly/` issues a `jal putc`. Do not merge `PUTC.OBJ` with the buffered putchar/printf cluster merely because they share the `write` binding.
+- Cross-library: no LIBC.LIB member is named `PUTC.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so PUTC.OBJ has no LIBC counterpart to merge with.
+- Verification: `putc` passed the full finalize gate (agent origin, verified source/evidence identity `57278684de191d35de2187685315767a755abc652062fe7c7931482a62c3814a`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_a3428c892acd047f_0.json` against original hash `4191f3883055fda795c3bb5a34161c969e571cb681fd54c0f0efeee5b6ab49a4`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
