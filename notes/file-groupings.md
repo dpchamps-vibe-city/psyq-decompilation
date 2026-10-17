@@ -263,6 +263,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library duplicate: `libc/50-memcmp` `sourceSha256` `b1ed1f35bc336e1fdda8247981cfdeb013e9d48f6c5f7083ba95d49876bce46d` equals that of `libc2/7-memcmp` (`LIBC2.LIB` / `MEMCMP.OBJ`, ordinal 7), the same replication pattern already recorded for `libc/49-bcmp` ↔ `libc2/0-bcmp`. MEMCMP.OBJ therefore belongs to the LIBC↔LIBC2 duplicated member run (LIBC ordinals 48–55 each have an identical-byte LIBC2 counterpart); the shared bytes are archive replication, not one shared TU.
 - Verification: `memcmp` passed the full finalize gate (agent origin, verified source/evidence identity `b74969f0dcbd6bed7cb4b5717fa84e57083e8371ce5d84696a4eaf254dfcf43d`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_22cf44ab082e7eb6_0.json` against original hash `8d84d97929f8b52413ed04a2d877a22b0569f8f88d0304655035b02a20c54760`.
 
+## LIBC.LIB — QSORT.OBJ (ordinal 52)
+
+- TU directory: `src/libraries/libc/52-qsort/`; target `lib_07b11d80dde84c53_0`.
+- Original functions: `qsort` plus the unnamed file-static companion at `.text` offset 0x1B8, recovered as `func_000001B8`; both are recovered.
+- Recovered: `qsort` — in-place recursive quicksort over fixed-size records using a caller comparator; `func_000001B8` — byte-wise exchange of two `size`-byte buffers, used for the pivot and partition swaps.
+- Same-file evidence: the original `52-qsort.o` symbol table exports only `qsort` (`T`) and carries no symbol for the routine at `.text` 0x1B8; `qsort` (0x68–0x1B8) reaches that routine through section-local `R_MIPS_26` relocations against `.text`, marking it as a file-static helper of this object rather than a separate member. The object has only `.text`/`.note` (no `.data`/`.bss`), so it owns no state.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/52-qsort` (`QSORT.OBJ`, ordinal 52, `ambiguousNamedBaseline: false`), and the ordered `tu.json` (`_shared-0.h` + `qsort.c` + `func_000001B8.c`).
+- Cross-library: `libc2/13-qsort` is a separate archive member (`LIBC2.LIB` / `QSORT.OBJ`, ordinal 13) with its own original bytes; sharing the member name `QSORT.OBJ` does not merge the two TUs.
+- Verification: whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_07b11d80dde84c53_0.json`, completed functions `qsort` and `func_000001B8`, against original hash `82d016933ade74138ab823bf269f7c42e18e56c42faeec3bd0e776f912169e6e`. `qsort` passed the full finalize gate (agent origin, verified identity `06c74028d9e708ea24445834dd0cd4aeb28c97e71f18a8184b960a984f8c2b00`); `func_000001B8` passed the full finalize gate (agent origin, verified identity `60eef90b9096029640a88e3b69be59a193dc3728dc31066ca40cce0056052e7b`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
