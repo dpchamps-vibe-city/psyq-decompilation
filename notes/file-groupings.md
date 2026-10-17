@@ -339,6 +339,19 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `PUTC.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so PUTC.OBJ has no LIBC counterpart to merge with.
 - Verification: `putc` passed the full finalize gate (agent origin, verified source/evidence identity `57278684de191d35de2187685315767a755abc652062fe7c7931482a62c3814a`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_a3428c892acd047f_0.json` against original hash `4191f3883055fda795c3bb5a34161c969e571cb681fd54c0f0efeee5b6ab49a4`.
 
+## LIBC2.LIB — PUTCHAR.OBJ (ordinal 12)
+
+- TU directory: `src/libraries/libc2/12-putchar/`; target `lib_c3818fe9e2f04977_0`.
+- Members (one archive member, three exported functions, one TU):
+  - `putchar` — buffered single-character output: `'\n'` → `'\r'` plus column reset, `'\t'` → pad to the next 8-column stop then flush, otherwise buffer the byte and flush once the 0x20-byte line buffer fills.
+  - `_putchar` — the same buffered core routine without the trailing flush on the tab path, so callers can accumulate columns.
+  - `_putchar_flash` — flush-only entry point: writes whatever the shared line buffer holds and resets its count.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/12-putchar` (`PUTCHAR.OBJ`, ordinal 12, `ambiguousNamedBaseline: false`), member `sourceSha256` `0321e871b5251797e1b3a11e1be011bd3bfb5e78133346c346733f6b6904691f`, and the five-part ordered `tu.json` (`_shared-0.h`, `_putchar.c`, `_putchar_flash.c`, `putchar.c`, `_data.c`); `build/libraries/inventory.json` lists all three functions under the single id `lib_c3818fe9e2f04977_0`.
+- Shared-state / same-file evidence: the converted object `library-input/converted/lib/libc2/putchar.o` has one `.text` (0x2D0 bytes), one `.data` holding the column counter `D_000002D0` (0x2D0) and the buffer count `D_000002D4` (0x2D4), and one `.bss` holding the 0x20-byte line buffer `B_000002E0`; its symbol table exports exactly `_putchar`, `_putchar_flash`, `putchar` (`T`) and leaves only `_ctype_` and `write` undefined (`*UND*`). All three functions in that one object read and write the same private counter/buffer cluster (`build/libraries/disassembly/lib_c3818fe9e2f04977_0/member.s` labels them `static variable` at 0x2D0/0x2D4/0x2E0), and no other member disassembled under `build/libraries/disassembly/` references `D_000002D0`, `D_000002D4` or `B_000002E0`. The state cluster is therefore TU-private and binds the three functions into this single member rather than into separate PUTC-style members.
+- Call adjacency: the callers are outside the member, matching the links: `GETS.OBJ` (LIBC2 ordinal 5) issues `jal putchar`; `PUTS.OBJ` (ordinal 36) issues `jal _putchar` and `jal _putchar_flash`. This confirms the three symbols are entry points of one object, not one object each, and keeps the ordinal 11 (PUTC) → 12 (PUTCHAR) → 13 (QSORT) link run intact.
+- Cross-library: `sourceSha256` `0321e871…4691f` occurs only in `libc2/12-putchar`, so PUTCHAR.OBJ is outside the LIBC↔LIBC2 identical-byte replication run. Do not merge it with LIBC.LIB `A61.OBJ` (`libc/4-a61`, ordinal 4), whose `putchar` is an unrelated BIOS tail jump (service 0xB0/0x3D) and shares no bytes with this buffered implementation.
+- Verification: the whole member passed the full finalize gate (agent origin, verified source/evidence identity `1a6bfd5b36d510d60fd964b2b03b0d16aff1af49ae43f4ad9c9a41f42b5bfdb6`); `build/libraries/verified/lib_c3818fe9e2f04977_0.json` records whole-member `MATCH` (152/152 words) with `form: "c"` and completed functions `_putchar`, `_putchar_flash`, `putchar` against original hash `551eac73a44959e4847f92f5299417c298ec6ae7b80b756d3978ab5fab6d00fd`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
