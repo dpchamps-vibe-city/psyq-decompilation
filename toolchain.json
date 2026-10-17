@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "compiler": {
     "family": "gcc",
-    "version": "2.7.2",
+    "version": "trunk-19970318",
     "source": {
       "origin": "project",
-      "path": "tools/vendor/gcc/2.7.2-psx"
+      "path": "tools/vendor/gcc/trunk-19970318-psx"
     },
     "analysis": {
       "provider": "gcc-rtl",
@@ -18,7 +18,7 @@
   "tools": {
     "cc1": {
       "origin": "runtime",
-      "path": "dependencies/compiler/gcc-2.7.2-psx/cc1"
+      "path": "dependencies/compiler/gcc-trunk-19970318-psx/cc1"
     },
     "cpp": "mips-linux-gnu-cpp",
     "as": "mips-linux-gnu-as",
@@ -69,7 +69,8 @@
       "-fcommon",
       "-fverbose-asm",
       "-msoft-float",
-      "-mgas",
+      "-mmips-as",
+      "-fno-exceptions",
       "-fgnu-linker",
       "-quiet"
     ],

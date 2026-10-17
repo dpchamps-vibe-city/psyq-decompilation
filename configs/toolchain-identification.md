@@ -7,6 +7,15 @@ compiler configuration. `project.json` now selects the 2,224 ordinal-preserving
 Redux/COMMON objects under `library-input/redux`; the compiler candidate remains
 GCC 2.7.2, with compiler and assembler `-G0`.
 
+> **Update 2026-10-17.** The compiler identification below is superseded. The
+> library objects were produced by a GCC development-trunk snapshot dated
+> between 1997-02-05 and 1997-03-18, run in MIPS-assembler output mode; the
+> production compiler is now `tools/gcc-recipes/trunk-19970318-psx/` with
+> `-mmips-as -fno-exceptions`, and both per-TU flag overrides are retired. See
+> `notes/research/compiler-identification-1997-trunk.md` (evidence) and
+> `notes/research/compiler-identification-methodology.md` (method). The
+> assembler findings below stand.
+
 The configurable-backend harness is adopted in `toolchain.json`:
 - Base: direct GNU as, `inputRewrites: ["move-addu"]`, default optimization.
 - `sn-aspsx`: MASPSX, retaining the former unpadded profile and its 38 libsn

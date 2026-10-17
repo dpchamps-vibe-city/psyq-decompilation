@@ -1,0 +1,13 @@
+#!/bin/sh
+# byacc 1.9 requires options before the grammar file; GCC's 1997 Makefile passes "-d file.y -o file.c".
+out=""; d=""; in=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -o) out="$2"; shift ;;
+    -d) d="-d" ;;
+    -*) ;;
+    *) in="$1" ;;
+  esac
+  shift
+done
+if [ -n "$out" ]; then exec byacc $d -o "$out" "$in"; else exec byacc $d "$in"; fi
