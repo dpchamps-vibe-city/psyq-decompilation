@@ -472,6 +472,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/23-strncmp` (`STRNCMP.OBJ`, ordinal 23, `ambiguousNamedBaseline: false`), member `sourceSha256` `aab80f4186301b69692026173e39b80003a226afc1c2aa56b111dd04bbc34dbe`, and the ordered single-function `tu.json` (`_shared-0.h` + `strncmp.c`); `src/libraries/libc2/23-strncmp/_shared-0.h` records object sha256 `c7c0802232c62945b2acbe99289a94e4dcf9c192b2174537eb9d358d13e966da`.
 - Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_468f566272839f4d_0.json`; finalize gate passed with agent origin and verified source/evidence identity `5cd7b0e7ab51b9d209a6135cba2f75de92750957f5431dcac6615f4836f89055`.
 
+## LIBC2.LIB — STRNCPY.OBJ (ordinal 24)
+
+- TU directory: `src/libraries/libc2/24-strncpy/`; target `lib_e1828ca43cda138a_0`.
+- Original function: `strncpy` — copies at most `arg2` bytes from `arg1` to `arg0`, zero-filling the remainder of the destination once a terminator is copied, and returns the destination base (0 when either pointer is null); a non-positive count returns the base without copying.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/24-strncpy` (`STRNCPY.OBJ`, ordinal 24, `ambiguousNamedBaseline: false`), member `sourceSha256` `ea44e99696475ece4caaa40e0c4b23338524262f7fdacf3467aea31277081eea`, and the ordered single-function `tu.json` (`_shared-0.h` + `strncpy.c`); `src/libraries/libc2/24-strncpy/_shared-0.h` records object sha256 `3489a7b3c5ed5a0dc2e4122c37b95d9b603bc3e47fb7ffe2e0c5f330de2495b7`.
+- Same-file evidence: original `24-strncpy.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `strncpy` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text`, so the object owns no state, has no external callee and no file-static companion. The terminator zero-fill and the bounded copy loop are inlined rather than issued as calls to `MEMSET.OBJ`/`STRCPY.OBJ`, so no intra-library call edge ties it to a neighbour's TU; `build/libraries/disassembly/lib_e1828ca43cda138a_0/member.s` shows the single 28-word function.
+- Source-family/link adjacency: ordinal 24 continues the LIBC2 string-primitive run between `STRNCMP.OBJ` (23) and `STRPBRK.OBJ` (25); the placement is archive adjacency only and, together with the lack of shared state or relocations, keeps STRNCPY.OBJ a separate single-symbol member rather than part of either neighbour or of `MEMCPY.OBJ` (8).
+- Cross-library: member `sourceSha256` `ea44e996…081eea` occurs only in `libc2/24-strncpy`, so STRNCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_e1828ca43cda138a_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2a7253397c033aa62f8eb7784c3dd442eb5f044bfbcbb444548370a5fedee3ec`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
