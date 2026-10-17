@@ -391,6 +391,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `STRCHR.OBJ` and no entry in `library-input/redux/original-members.json` shares STRCHR's `sourceSha256` `ddf8488e…0460b`, so STRCHR.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Verification: whole member byte-exact (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `57039c4c696b58680ce5280e5ad00766a560c0a1a9e2c54253e5667e7972d1b6`.
 
+## LIBC2.LIB — STRCMP.OBJ (ordinal 17)
+
+- TU directory: `src/libraries/libc2/17-strcmp/`; target `lib_75cd70abb161b49c_0`.
+- Original function: `strcmp` — null-argument guard (both null → 0, `arg0` null → -1, `arg1` null → 1), then compares bytes as signed chars and returns their difference, stopping at the first mismatch or terminating byte.
+- Same-file evidence: original `17-strcmp.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — exports only `strcmp` (`T`), and its only relocations are two `R_MIPS_26` entries against its own `.text` (the internal forward jumps), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_75cd70abb161b49c_0/member.s` shows the single 28-word function at `.text` 0x68.
+- Source-family/link adjacency: `strcmp` reproduces the exact null-argument guard sequence of `STRNCMP.OBJ` (ordinal 23) — `beqz $a0` / `bnez $a1` / `beq $a0,$a1` with the `-1`/`1` constants — and the same signed-byte mismatch epilogue (`lb` / `lb -1($a1)` / `subu`), marking both as members of one LIBC2 signed-string-comparison source family. They are separate archive members at ordinals 17 and 23 and are not merged. In link order, ordinal 17 also sits contiguously between `STRCHR.OBJ` (16) and `STRCPY.OBJ` (18) in the LIBC2 string-primitive run; that placement is archive adjacency, not shared state.
+- Cross-library: no LIBC.LIB member is named `STRCMP.OBJ` and no entry in `library-input/redux/original-members.json` shares STRCMP's `sourceSha256` `422833d543e8081dc57e7fe362ace5d2f3c0876f22b1014790abd002a5a50eb8`, so STRCMP.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/17-strcmp` (`STRCMP.OBJ`, ordinal 17, `ambiguousNamedBaseline: false`), member `sourceSha256` `422833d543e8081dc57e7fe362ace5d2f3c0876f22b1014790abd002a5a50eb8`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcmp.c`).
+- Verification: whole member byte-exact (28/28 words, `build/libraries/verified/lib_75cd70abb161b49c_0.json`); finalize gate passed with agent origin and verified source/evidence identity `3e416408ed237d0e1c942212013996992d414f22a394b1d5b8009a0fbe12a39b`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
