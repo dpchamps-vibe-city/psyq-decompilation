@@ -482,6 +482,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: member `sourceSha256` `ea44e996…081eea` occurs only in `libc2/24-strncpy`, so STRNCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
 - Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_e1828ca43cda138a_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2a7253397c033aa62f8eb7784c3dd442eb5f044bfbcbb444548370a5fedee3ec`.
 
+## LIBC2.LIB — STRPBRK.OBJ (ordinal 25)
+
+- TU directory: `src/libraries/libc2/25-strpbrk/`; target `lib_0f18f6d55e79a610_0`.
+- Original function: `strpbrk` — returns a pointer to the first byte of `arg0` that occurs in `arg1`, or 0 when no byte matches or `arg0` is empty.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/25-strpbrk` (`STRPBRK.OBJ`, ordinal 25, `ambiguousNamedBaseline: false`), member `sourceSha256` `ecb7d82f15646784a182e2128cabe35171ef212462574f10ba30e62952e6c731`, and the ordered single-function `tu.json` (`_shared-0.h` + `strpbrk.c`); `src/libraries/libc2/25-strpbrk/_shared-0.h` records object sha256 `bca6d62bc0f91c2ec535d5dae15448c74c5adfae45aaa09129c6abab0f64258f`.
+- Same-file evidence: original `25-strpbrk.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strpbrk` (`T`), so the object owns no state, has no external callee and no file-static companion. `strpbrk` inlines its own NUL-terminated set scan rather than calling `STRCHR.OBJ`/`STRCSPN.OBJ`, so no intra-library call edge ties it to a neighbour's TU.
+- Source-family/link adjacency: ordinal 25 continues the LIBC2 string-primitive run between `STRNCPY.OBJ` (24) and `STRRCHR.OBJ` (26); the set scan repeats the `lb` plus `sll`/`sra` signed-byte comparison idiom already recorded for `STRCHR.OBJ` (16), `STRCSPN.OBJ` (19) and `STRRCHR.OBJ` (26). This is idiom and archive adjacency only, not shared state, and does not merge the members.
+- Cross-library: member `sourceSha256` `ecb7d82f…52e6c731` occurs only in `libc2/25-strpbrk`, so STRPBRK.OBJ is outside the LIBC↔LIBC2 identical-byte replication run. LIBC.LIB `C32.OBJ` (`libc/26-c32`, ordinal 26) exports its own `strpbrk`, but it is a three-instruction BIOS tail transfer (excluding padding; `0xA0`/`0x20`) rather than this implementation, so the two must not be merged.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_0f18f6d55e79a610_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2c4e43111bad931c92aae3d1e269374a2b47889c6f894f532ac20180617a8e99`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
