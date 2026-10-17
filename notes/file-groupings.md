@@ -214,6 +214,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/87-realloc3` (`REALLOC3.OBJ`, ordinal 87, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `func_0000014C` passed the full finalize gate (agent origin, verified identity `7d012100ba38685b363cc7874db8d6eaaec1a19e2eea7c29205d2019bafe26d6`).
 
+## LIBAPI.LIB — CALLOC3.OBJ (ordinal 88)
+
+- TU directory: `src/libraries/libapi/88-calloc3/`; target `lib_c2748a458169d9ec_0`.
+- Original function: `calloc3` plus the unnamed file-static companion at `.text` 0xBC (a separate `.c` part, still assembly backlog).
+- Recovered: `calloc3` — multiplies the two size arguments, allocates through `malloc3`, then zero-fills the result through the local helper, returning null when the allocation fails.
+- Same-file evidence: `calloc3` calls the unnamed local routine at `.text` offset 0xBC, contiguous with `calloc3` (0x68–0xBC); the original `88-calloc3.o` symbol table exports only `calloc3` (`T`) and carries no symbol for the 0xBC routine, marking it as a file-static helper of this same TU rather than a separate member. The verified `calloc3.o` carries only `.text` and leaves `malloc3` undefined (extern), so this object owns no allocator state — the same no-state pattern as its heap2 counterparts `MALLOC2.OBJ` (79), `FREE2.OBJ` (80), `REALLOC2.OBJ` (81) and `CALLOC2.OBJ` (82).
+- Link adjacency: `calloc3` calls `malloc3`, defined in the neighboring `MALLOC3.OBJ` (ordinal 85); the heap3 allocator call direction (initialize → allocate → free → realloc → calloc) and contiguous link order (84 → 85 → 86 → 87 → 88) agree. The shared extern does not merge these members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/88-calloc3` (`CALLOC3.OBJ`, ordinal 88, `ambiguousNamedBaseline: false`), object sha256 `189cdf8cdeba5fddea38a01a6232c8295607d25d92e2ef4239a12b19b3483828`, and the ordered `tu.json`.
+- Verification: `calloc3` passed the full finalize gate (agent origin, verified identity `878b8a35c906d910939bc3bd7877dc89725cedfbcfb862260e86b478dc6d34c4`); whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_c2748a458169d9ec_0.json`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.

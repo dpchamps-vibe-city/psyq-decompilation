@@ -2,9 +2,9 @@
   "ladder": [
     {
       "provider": "runinfra",
-      "model": "deepseek-v4-1-flash",
-      "thinking": "medium",
-      "label": "deepseek-v4-1-flash",
+      "model": "deepseek-v4-1-flash-1017",
+      "thinking": "high",
+      "label": "deepseek-v4-1-flash-1017",
       "checkpointAtTokens": 350000
     }
   ],
