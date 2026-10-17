@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_caa9d705cf395a2f_0", srand);
+#include "common.h"
+
+void srand(u32 arg0) {
+    B_000000B0 = arg0;
+}
