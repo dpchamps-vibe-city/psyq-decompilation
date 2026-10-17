@@ -204,6 +204,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/84-i_heap3` (`I_HEAP3.OBJ`, ordinal 84, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
 - Verification: `InitHeap3` passed the full finalize gate (agent origin, verified identity `bd1e4a06ea28d170e3b8bf0bbbdd45223729023856fe6ebb353d62514c8440e9`).
 
+## LIBAPI.LIB — REALLOC3.OBJ (ordinal 87)
+
+- TU directory: `src/libraries/libapi/87-realloc3/`; target `lib_dacb6c202432cdbd_0`.
+- Original functions: `realloc3` plus the unnamed file-static companions `func_0000014C` (free-list rollback) and `func_000001A0` (byte copy); `func_0000014C` is recovered, the other two remain assembly backlog.
+- Recovered: `func_0000014C` — restores `_freep` and the two saved block headers from the `_r_p`/`_r_bp`/`_r_freep` snapshot slots, undoing `free3`'s free-list edit when the reallocation cannot grow in place.
+- Same-file evidence: `realloc3` calls the unnamed local routine at `.text` offset 0x14C (its only caller, at `realloc3+0x8C`), and `func_000001A0` is contiguous at 0x1A0; the original `87-realloc3.o` exports only `realloc3` (`T`) and its object carries only `.text` with every free-list symbol undefined (extern), marking both as file-static helpers of this same TU. `func_0000014C.c` includes the shared `include/library/86-free3.h` for the `Block`/`BlockReg` layouts and the extern snapshots; sharing that header does not merge the two members.
+- Link adjacency: `func_0000014C` reads the `_r_p`/`_r_bp`/`_r_freep` COMMON snapshot set that `FREE3.OBJ` (ordinal 86) defines and writes `_freep`, defined in the neighboring `I_HEAP3.OBJ` (ordinal 84) `.data`; the save (`free3`) → restore (`realloc3` rollback) direction and contiguous link order (84 → 85 → 86 → 87) agree. The shared extern cluster does not merge these members, which remain distinct TUs.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/87-realloc3` (`REALLOC3.OBJ`, ordinal 87, `ambiguousNamedBaseline: false`), and the ordered `tu.json`.
+- Verification: `func_0000014C` passed the full finalize gate (agent origin, verified identity `7d012100ba38685b363cc7874db8d6eaaec1a19e2eea7c29205d2019bafe26d6`).
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
