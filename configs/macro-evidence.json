@@ -1,15 +1,4 @@
 {
   "version": 1,
-  "macros": [
-    {
-      "name": "UDIVMOD_GUARDED",
-      "header": "include/operations.h",
-      "definitionSha256": "90a66398640f97c2479feea6a54da319494143e841d004b5c493576f429a91cd",
-      "operation": "Unsigned divide-and-remainder with the historical MIPS divide-by-zero guard",
-      "rationale": "Original words at libc2/33-prnt 0x46C are divu/bnez/nop/break/mflo/mfhi; modern GNU as reorders the guard, and the historical expansion as a shared operation makes the whole member byte-exact while removing it compiles to a non-match",
-      "witnesses": [
-        "lib_c111b0bc4de489f7_0::prnt"
-      ]
-    }
-  ]
+  "macros": []
 }
