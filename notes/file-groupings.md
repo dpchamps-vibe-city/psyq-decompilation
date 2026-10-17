@@ -224,6 +224,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/88-calloc3` (`CALLOC3.OBJ`, ordinal 88, `ambiguousNamedBaseline: false`), object sha256 `189cdf8cdeba5fddea38a01a6232c8295607d25d92e2ef4239a12b19b3483828`, and the ordered `tu.json`.
 - Verification: `calloc3` passed the full finalize gate (agent origin, verified identity `878b8a35c906d910939bc3bd7877dc89725cedfbcfb862260e86b478dc6d34c4`); `func_000000BC` verified 2026-10-17 under the trunk-19970318 compiler with both parts compiled from C; whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_c2748a458169d9ec_0.json`.
 
+## LIBC.LIB — C51.OBJ (ordinal 39)
+
+- TU directory: `src/libraries/libc/39-c51/`; target `lib_20f6929cc5610bf6_0`.
+- Members:
+  - `malloc` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_TAILJUMP` stub) to BIOS entry-table page `0xA0`, function index `0x33`; the allocator implementation lives in ROM, not this object.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/39-c51` (`C51.OBJ`, ordinal 39, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline `library-input/converted/lib/libc/c51.o` has only `.text` (0x10 bytes) and `.note` — no `.data`/`.bss` — and its symbol table exports only `malloc` (`T`), so the object owns no allocator state and has no second function or file-static helper.
+- Same-file evidence: `build/libraries/disassembly/lib_20f6929cc5610bf6_0/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x33; nop`) with no reference to any local symbol, consistent with a binding-only single-member TU.
+- Cluster evidence (BIOS index = hex of the C-object number): the same four-word `0xA0` template with `$t1` equal to the object's own `Cnn` value in hex is shared by the neighboring LIBC.LIB members `C47` `rand` (0x2F), `C48` `srand` (0x30), `C52` `free` (0x34), `C53` `lsearch` (0x35) and `C55` `calloc` (0x37); each is a separate one-function archive member at its own ordinal (37–44), so the shared binding idiom confirms a LIBC.LIB memory/string BIOS-binding cluster in link order but does **not** merge those objects into one TU. This also corroborates the existing LIBC2 `RAND.OBJ` entry's note that the C47/C48 bindings are distinct TUs from LIBC2's `rand`/`srand` implementations.
+- Cross-library: the `0xA0` page is likewise the one used by the LIBAPI.LIB `InitHeap` (C57) / `GetSysSp` (C82) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) binding cluster; a shared BIOS entry page across archives is not TU membership.
+- Verification: `malloc` passed the full finalize gate (agent origin, verified identity `30911083e5c9ffd8c5d424fee15ad1d28d35e3e5eeb2afa26b07d8db45a15a5c`); whole-member `MATCH` (4/4 words) in `build/libraries/verified/lib_20f6929cc5610bf6_0.json` against original hash `e497abe80fa0066895c7b3c94939474328da44614ce2bee7f416d48a81b7bc50`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
