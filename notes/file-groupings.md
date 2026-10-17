@@ -372,6 +372,15 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/14-rand`, `tu.json`, and `build/libraries/disassembly/lib_caa9d705cf395a2f_0/member.s`. Sweep finalization passed for `rand`.
 - Do not merge this implementation with LIBC.LIB's separate C47.OBJ / C48.OBJ `rand` / `srand` BIOS bindings merely because the public names agree.
 
+## LIBC2.LIB — STRCAT.OBJ (ordinal 15)
+
+- TU directory: `src/libraries/libc2/15-strcat/`; target `lib_efe9eac03253e10e_0`.
+- Original function: `strcat` — appends `arg1` to the end of `arg0` and returns the original `arg0`; returns 0 for a null argument or when the two computed end addresses coincide.
+- Same-file evidence: original `15-strcat.o` has only `.text` (0xB0 bytes, 44 words) and `.note` — no `.data`/`.bss` — exports only `strcat` (`T`) and leaves only `strlen` undefined (`*UND*`), so the object owns no state and has no file-static companion.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/15-strcat` (`STRCAT.OBJ`, ordinal 15, `ambiguousNamedBaseline: false`), member `sourceSha256` `cd2365f66aa823500b789d40068ac43e2124c09cc3292eabe046f1a064a493a5`, and the ordered `tu.json` (`_shared-0.h` + `strcat.c`).
+- Source-family/link adjacency: `strcat` calls `strlen` (`LIBC2.LIB` ordinal 21, a separate member) through an external relocation and shares the two-null-guard / return-preserved-base idiom with `STRCPY.OBJ` (ordinal 18) and `STRNCAT.OBJ` (ordinal 22), placing it in the LIBC2 string-primitive run alongside `STRCHR.OBJ` (16) and `STRCMP.OBJ` (17); each remains its own archive member.
+- Verification: whole member byte-exact (44/44 words); finalize gate passed with agent origin and verified source/evidence identity `c052985f08cb342f5a901429ddaf1fbefed01b59452465972bfb35c05c23f30d`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
