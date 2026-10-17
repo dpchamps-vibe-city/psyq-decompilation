@@ -1,1 +1,20 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_0b70d24a83a4e393_0", strrchr);
+#include "common.h"
+
+s8 *strrchr(s8 *s, s8 c) {
+    s8 *start;
+
+    if (s == 0) {
+        return 0;
+    }
+    start = s;
+    do {
+        ;
+    } while (*s++);
+    s -= 1;
+    do {
+        if (*s == c) {
+            return s;
+        }
+    } while (s-- > start);
+    return 0;
+}
