@@ -512,6 +512,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: LIBC.LIB `C36.OBJ` (`libc/29-c36`, ordinal 29) also exports `strstr`, but it is a BIOS tail-jump binding (`0xA0`/`0x24`) with a different `sourceSha256` (`c9f4718f…95acbbe7`), so the two must not be merged; STRSTR's `sourceSha256` occurs only in `libc2/28-strstr`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
 - Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_abf11e8139dd2152_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `a9408064d50ff95f349406762fb65cff35dc51adabd8e3f27ed6b1f35be1ba30`.
 
+## LIBC2.LIB — STRTOK.OBJ (ordinal 29)
+
+- TU directory: `src/libraries/libc2/29-strtok/`; target `lib_13483b10fd096166_0`.
+- Original function: `strtok` — splits `arg0` on the bytes of `arg1`, returning successive tokens and resuming from a file-private saved pointer when `arg0` is 0; single-symbol member with one private data slot.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/29-strtok` (`STRTOK.OBJ`, ordinal 29, `ambiguousNamedBaseline: false`), member `sourceSha256` `70812bde3c6ba30126605630f4f88b17b3ca43ca080f9958e359a90b310f04ba`, and the ordered `tu.json` (`_shared-0.h` + `strtok.c` + `_data.c`); `src/libraries/libc2/29-strtok/_shared-0.h` records object sha256 `be857474fd8b6b8bc98f4b87b8abac1764fdb6d495d8e6441dffe38572ce3504`.
+- Same-file evidence: original `29-strtok.o` has `.text` (0x120 bytes), `.data` (0x10 bytes) and `.note`; it exports only `strtok` (`T`), the data slot is an unnamed local `$libc2/strtok.rel.data@00000000`, and every `.text` relocation targets that slot or its own local text labels, so the resumption pointer is TU-private state rather than a shared global; the object has no external callee and no separate statics beyond that slot.
+- Cross-library duplicate: member `sourceSha256` `70812bde…310f04ba` equals that of LIBC.LIB `STRTOK.OBJ` (`libc/51-strtok`, ordinal 51), extending the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`, `memcmp`, `qsort`, `bsearch`, `strtoul` and `strtol`. `.text` (72/72 words) and `.data` are identical; only the embedded source-path strings differ. The duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
+- Source-family/link adjacency: ordinal 29 continues the LIBC2 string-primitive run between `STRSTR.OBJ` (28) and `STRTOUL.OBJ` (30); the delimiter scan repeats the `lb` / `lbu` / `sll` / `sra` signed-byte idiom already recorded for `STRSPN.OBJ` (27), `STRPBRK.OBJ` (25), `STRCSPN.OBJ` (19) and `STRCHR.OBJ` (16), while the saved pointer is private to this object. This is idiom, private state and archive adjacency only; no merge.
+- Verification: whole-member `MATCH` (72/72 words) in `build/libraries/verified/lib_13483b10fd096166_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `603fa5a89c2cab0c0b7d6727e9763cf40f849962b47e9b872b0d630d75e4c3d3`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
