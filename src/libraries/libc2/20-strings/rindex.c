@@ -1,1 +1,20 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_36ef129fc05efb58_0", rindex);
+#include "common.h"
+
+s8 *rindex(s8 *s, s8 c) {
+    s8 *start;
+
+    if (s == 0) {
+        return 0;
+    }
+    start = s;
+    do {
+        ;
+    } while (*s++);
+    s -= 1;
+    do {
+        if (*s == c) {
+            return s;
+        }
+    } while (s-- > start);
+    return 0;
+}
