@@ -452,6 +452,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: LIBC.LIB also has an ordinal-21 member `C27.OBJ` (`libc/21-c27`, target `lib_143d4fb7aa9cb0bc_0`) exporting `strlen`, but it is a BIOS tail-jump binding (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x1B`) with a different `sourceSha256` (`2af0ed2ef2c346b1b936cd652d9be5b000c7036a83806e448547006f827cc2f5`); the shared name and archive ordinal are coincidence, not one TU, and the two members are not merged.
 - Verification: `build/libraries/verified/lib_7a8788d2f28275cc_0.json` records the whole-member match (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `bcc38a0d18e874face42f54a552eb761dbaae7c6cc75b40323bdf16fd2bad3f8`.
 
+## LIBC2.LIB — STRNCAT.OBJ (ordinal 22)
+
+- TU directory: `src/libraries/libc2/22-strncat/`; target `lib_38ada9a9a296248d_0`.
+- Original function: `strncat` — appends up to `arg2` bytes of `arg1` to the end of `arg0` and returns the original `arg0`, or 0 for a null pointer argument.
+- Same-file evidence: original `22-strncat.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss` — and exports only `strncat` (`T`); all three `.rel.text` entries are `R_MIPS_26` against its own `.text` (the internal jumps at 0x10, 0x18 and 0x40), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_38ada9a9a296248d_0/member.s` shows the single 32-word function.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/22-strncat` (`STRNCAT.OBJ`, ordinal 22, `ambiguousNamedBaseline: false`), member `sourceSha256` `ea0f654503e614b6015582a820de31ee828b7c2e8e902d670fb1d48d8ecabe1f`, and the ordered `tu.json` (`_shared-0.h` + `strncat.c`); `src/libraries/libc2/22-strncat/_shared-0.h` records object sha256 `282142441ca3b0760f03adf3a797af8ab9ea40638e104849236cf7a1d5996328`.
+- Source-family/link adjacency: ordinal 22 closes the LIBC2 string-primitive run at the position between `STRLEN.OBJ` (21) and `STRNCMP.OBJ` (23) already cited by the `STRCAT`/`STRCPY`/`STRLEN` entries. `strncat` keeps the two-null-guard / return-preserved-base idiom of `STRCAT.OBJ` (15) and `STRCPY.OBJ` (18) but inlines its own terminator scan and bounded copy loop, issuing no `strlen` call or any other external relocation, so it is a self-contained archive member rather than part of those TUs.
+- Cross-library: member `sourceSha256` `ea0f6545…cabe1f` occurs only in `libc2/22-strncat`, so STRNCAT.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: `build/libraries/verified/lib_38ada9a9a296248d_0.json` records the whole-member match (32/32 words); finalize gate passed with agent origin and verified source/evidence identity `8a6c565db84b4d7c23fcae9a73f77e13e2a01eeaa83c74318cba6513270fe4fe`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
