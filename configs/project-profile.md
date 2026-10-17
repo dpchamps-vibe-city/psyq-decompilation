@@ -26,7 +26,7 @@ configuration, then regenerate this file.
 - **Configured compiler:** gcc trunk-19970318 (`cc1`) — byte-identity NOT confirmed at generation time (generate a fresh owning-TU verdict with the normal diff/finalization tools)
 - **Flags:** `-O2 -G0 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mmips-as -fno-exceptions -fgnu-linker -quiet`
 - **Small-data threshold:** direct GAS requires explicit `-G0`; undeclared-extern small-data rules at nonzero thresholds are not modeled
-- **Assembler semantics:** direct GNU as, default reorder-mode optimization; compiler-input rewrites: move-addu. The configured assembler is the acceptance path
+- **Assembler semantics:** direct GNU as, default reorder-mode optimization; compiler-input rewrites: move-addu, rdata-section. The configured assembler is the acceptance path
 - **Assembler profiles:** base: gas; sn-aspsx: maspsx (ASPSX 2.80); sn-aspsx-padded: maspsx (ASPSX 2.80)
 - **SDK:** configured SDK 470; reference headers are evidence, not compiler identity
 - **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: none

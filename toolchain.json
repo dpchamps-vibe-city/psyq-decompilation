@@ -195,7 +195,8 @@
   "assembler": {
     "kind": "gas",
     "inputRewrites": [
-      "move-addu"
+      "move-addu",
+      "rdata-section"
     ]
   }
 }

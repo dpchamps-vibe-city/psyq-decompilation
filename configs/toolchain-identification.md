@@ -17,7 +17,11 @@ GCC 2.7.2, with compiler and assembler `-G0`.
 > assembler findings below stand.
 
 The configurable-backend harness is adopted in `toolchain.json`:
-- Base: direct GNU as, `inputRewrites: ["move-addu"]`, default optimization.
+- Base: direct GNU as, `inputRewrites: ["move-addu", "rdata-section"]`, default optimization.
+  The read-only-data rewrite preserves the `.rdata` name witnessed in 154
+  originals (40 with switch tables), rather than ELF GAS's `.rodata` alias;
+  see `plans/harness-rdata-section-rewrite.md`. It changes assembler input,
+  not the strict whole-member oracle.
 - `sn-aspsx`: MASPSX, retaining the former unpadded profile and its 38 libsn
   selections. MASPSX's public pin and ASPSX 2.80 candidate mode are unchanged.
 - `sn-aspsx-padded`: MASPSX with base padded assembler flags, assigned to the
