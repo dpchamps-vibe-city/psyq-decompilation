@@ -381,6 +381,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Source-family/link adjacency: `strcat` calls `strlen` (`LIBC2.LIB` ordinal 21, a separate member) through an external relocation and shares the two-null-guard / return-preserved-base idiom with `STRCPY.OBJ` (ordinal 18) and `STRNCAT.OBJ` (ordinal 22), placing it in the LIBC2 string-primitive run alongside `STRCHR.OBJ` (16) and `STRCMP.OBJ` (17); each remains its own archive member.
 - Verification: whole member byte-exact (44/44 words); finalize gate passed with agent origin and verified source/evidence identity `c052985f08cb342f5a901429ddaf1fbefed01b59452465972bfb35c05c23f30d`.
 
+## LIBC2.LIB — STRCHR.OBJ (ordinal 16)
+
+- TU directory: `src/libraries/libc2/16-strchr/`; target `lib_1f8b599632534f63_0`.
+- Original function: `strchr` — returns a pointer to the first occurrence of `arg1` in `arg0`, or 0 for a null string or absent character.
+- Same-file evidence: original `16-strchr.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strchr` (`T`), leaves nothing undefined (`*UND*`), and its single `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x8C), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_1f8b599632534f63_0/member.s` shows the single 16-word function at `.text` 0x68.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/16-strchr` (`STRCHR.OBJ`, ordinal 16, `ambiguousNamedBaseline: false`), member `sourceSha256` `ddf8488eb361d84a2b2dfe790b989ceb3cd59d60ac7b328504a0b90b1cc0460b`, and the ordered `tu.json` (`_shared-0.h` + `strchr.c`).
+- Source-family/link adjacency: `strchr` shares the char-argument sign-extension idiom (`sll $vN,$a1,24` / `sra $vN,$vN,24`) and the null-string `return 0` guard with LIBC2 `STRRCHR.OBJ` (ordinal 26) and `STRCSPN.OBJ` (19), placing it in the LIBC2 string-primitive run already noted for ordinals 15–22; each remains a separate archive member with its own symbol.
+- Cross-library: no LIBC.LIB member is named `STRCHR.OBJ` and no entry in `library-input/redux/original-members.json` shares STRCHR's `sourceSha256` `ddf8488e…0460b`, so STRCHR.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
+- Verification: whole member byte-exact (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `57039c4c696b58680ce5280e5ad00766a560c0a1a9e2c54253e5667e7972d1b6`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
