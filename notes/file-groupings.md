@@ -432,6 +432,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `STRCSPN.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCSPN.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
 - Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_9e2e7f2169214720_0.json`; finalize gate passed with agent origin and verified source/evidence identity `f2f8fc499be05de170e9bcf046e45bbc67b79e13aad61f9cb05874f129b98939`.
 
+## LIBC2.LIB — STRINGS.OBJ (ordinal 20)
+
+- TU directory: `src/libraries/libc2/20-strings/`; target `lib_36ef129fc05efb58_0`.
+- Original functions: `index` and `rindex`; `index` is recovered, while `rindex` remains assembly backlog.
+- Recovered: `index` — returns a pointer to the first occurrence of the sign-extended character argument in the string, or 0 for a null string or absent character.
+- Same-file evidence: original `strings.o` has one `.text` (0x90 bytes, 36 words) and `.note`, no `.data`/`.bss`, and exports both `index` (`T`, `.text` 0x68) and `rindex` (`T`, `.text` 0xA0) from the same object; its only relocation is an internal `R_MIPS_26` into the same `.text`. The two entries are contiguous with no unnamed helper, and the recovered `index` body occupies the first 14 words of that shared section, tying it to this two-function TU rather than to another LIBC2 member.
+- Source-family/link adjacency: the recovered `index` body is instruction-for-instruction identical to LIBC2 `STRCHR.OBJ` (`libc2/16-strchr`, ordinal 16), including the char sign-extension and null-string guard, placing it in the LIBC2 string-primitive run; the two are separate archive members with separate `sourceSha256` values and are not merged. The companion `rindex` mirrors the reverse-search role of `STRRCHR.OBJ` (ordinal 26), also a separate member.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/20-strings` (`STRINGS.OBJ`, ordinal 20, `ambiguousNamedBaseline: false`), member `sourceSha256` `08456701a2c5e461d1d5292e2e68a842ddb754497367d30faf0941c7d5e80498`, and the ordered `tu.json` (`_shared-0.h` + `index.c` + `rindex.c`).
+- Verification: finalize gate passed with agent origin and verified source/evidence identity `31790e751596daf7ccf7698fe4aa76fefe5d28a2bd75b3594a80b05e8fd94253`; `build/libraries/verified/lib_36ef129fc05efb58_0.json` records the whole-member match with `index` as the completed function and `rindex` still supplied from original assembly.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
