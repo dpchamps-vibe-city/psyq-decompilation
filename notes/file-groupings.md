@@ -442,6 +442,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/20-strings` (`STRINGS.OBJ`, ordinal 20, `ambiguousNamedBaseline: false`), member `sourceSha256` `08456701a2c5e461d1d5292e2e68a842ddb754497367d30faf0941c7d5e80498`, and the ordered `tu.json` (`_shared-0.h` + `index.c` + `rindex.c`).
 - Verification: finalize gate passed with agent origin and verified source/evidence identity `10f38094b691adf7b7f1d289ec6c399328033d7ed897a776cb5860fd6ba8cbda`; `build/libraries/verified/lib_36ef129fc05efb58_0.json` records the whole-member match (36/36 words) with both `index` and `rindex` completed.
 
+## LIBC2.LIB — STRLEN.OBJ (ordinal 21)
+
+- TU directory: `src/libraries/libc2/21-strlen/`; target `lib_7a8788d2f28275cc_0`.
+- Original function: `strlen` — returns the length of a null-terminated string, or 0 when the pointer is null.
+- Same-file evidence: original `21-strlen.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strlen` (`T`), leaves nothing undefined, and its sole `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x74), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_7a8788d2f28275cc_0/member.s` shows the single 16-word function at `.text` 0x68.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/21-strlen` (`STRLEN.OBJ`, ordinal 21, `ambiguousNamedBaseline: false`), member `sourceSha256` `09c32e826d0419e49a27ac5ff27140db65207753faab6634b187ff861ac9c670`, and the ordered single-function `tu.json` (`_shared-0.h` + `strlen.c`); `src/libraries/libc2/21-strlen/_shared-0.h` records object sha256 `e10b2cf4f2ff8196cbe2e85f7b4170583c2214905f89240b889e5bcccae00c61`.
+- Source-family/link adjacency: ordinal 21 sits in the LIBC2 string-primitive run between `STRINGS.OBJ` (20) and `STRNCAT.OBJ` (22), and `STRCAT.OBJ` (15), `PRNT.OBJ` (33) and `SPRINTF.OBJ` (34) each reference `strlen` as an undefined global through an `R_MIPS_26` relocation, so this member is a separately linked callee rather than part of those TUs; all remain separate archive members.
+- Cross-library: LIBC.LIB also has an ordinal-21 member `C27.OBJ` (`libc/21-c27`, target `lib_143d4fb7aa9cb0bc_0`) exporting `strlen`, but it is a BIOS tail-jump binding (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x1B`) with a different `sourceSha256` (`2af0ed2ef2c346b1b936cd652d9be5b000c7036a83806e448547006f827cc2f5`); the shared name and archive ordinal are coincidence, not one TU, and the two members are not merged.
+- Verification: `build/libraries/verified/lib_7a8788d2f28275cc_0.json` records the whole-member match (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `bcc38a0d18e874face42f54a552eb761dbaae7c6cc75b40323bdf16fd2bad3f8`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.

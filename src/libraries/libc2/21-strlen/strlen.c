@@ -1,1 +1,13 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_7a8788d2f28275cc_0", strlen);
+#include "common.h"
+
+u32 strlen(s8 *s) {
+    u32 len = 0;
+
+    if (s == 0) {
+        return 0;
+    }
+    while (*s++) {
+        len++;
+    }
+    return len;
+}
