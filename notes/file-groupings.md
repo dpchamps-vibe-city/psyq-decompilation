@@ -328,6 +328,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no member in `library-input/redux/original-members.json` shares BZERO's `sourceSha256` `7cd6c53977f8ccc700d353280dc961a33f8eb1f7bd47e3f5c0c2e2ee0808003a`, so BZERO.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Verification: `bzero` passed the full finalize gate (agent origin, verified source/evidence identity `5ba1e47f3625a03532d7aaef02ef4b17b06cfe1b89d6221f48adc3b3996a3f4b`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_de2dd52281b4f483_0.json` against original hash `e7496c15a9aaeadc5af8978529ef11e4931dddc611e5bd34aa6598d6c84e3063`.
 
+## LIBC2.LIB — GETC.OBJ (ordinal 3)
+
+- TU directory: `src/libraries/libc2/3-getc/`; target `lib_9621c4421abd2f33_0`.
+- Members:
+  - `getc` — unbuffered single-character input: reads one byte from `fd` through its own stack slot and returns it as `s8`, or `-1` when `read` reports nothing.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/3-getc` (`GETC.OBJ`, ordinal 3, `ambiguousNamedBaseline: false`), member `sourceSha256` `bbf435ef09ec58ebe8dd5d297becbe067905bdc278455115ab1e720c17470dab`, and the ordered two-part `tu.json` (`_shared-0.h` + `getc.c`); `src/libraries/libc2/3-getc/_shared-0.h` records object sha256 `ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c`.
+- Same-file evidence: `library-input/redux/libc2/3-getc.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — exports only `getc` (`T`) and leaves `read` undefined (`*UND*`), so the object owns no data and has no file-static companion.
+- SDK idiom / call adjacency: the body is the one-byte `read(fd, &c, 1)` wrapper around the libapi `read` binding (`libapi/48-a52`, `A52.OBJ`, ordinal 48; BIOS service 0x34) and is the character-input counterpart of `PUTC.OBJ` (ordinal 11, `write`/0x35). It is not the same TU as the neighboring `GETCHAR.OBJ` (ordinal 4): `getchar` calls `read` directly without checking the return, masks the byte with 0x7F and hardcodes fd 0, while `GETS.OBJ` (ordinal 5) calls `getchar` and no disassembled member issues `jal getc`; link order (3 → 4 → 5) and the call graph agree the three are separate archive members.
+- Cross-library: LIBC.LIB `A58.OBJ` (`libc/1-a58`, ordinal 1) also exports `getc`, but it is a three-instruction BIOS tail transfer (`0xB0`/`0x3A`) with a different `sourceSha256` (`377b6521…204c10`), so the two must not be merged; GETC's `sourceSha256` occurs only in `libc2/3-getc`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: `getc` passed the full finalize gate (agent origin, verified source/evidence identity `c254a1b43107a11c927c86dc408415b3ec625f469c310a8d382700fb817c7caf`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_9621c4421abd2f33_0.json` against original hash `ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c`.
+
 ## LIBC2.LIB — MEMSET.OBJ (ordinal 10)
 
 - TU directory: `src/libraries/libc2/10-memset/`; target `lib_ad73e3e825e58564_0`.
