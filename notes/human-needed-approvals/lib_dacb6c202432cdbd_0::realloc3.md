@@ -1,4 +1,14 @@
-# lib_dacb6c202432cdbd_0::realloc3 — human decision needed
+# lib_dacb6c202432cdbd_0::realloc3 — resolved
+
+**Resolved 2026-10-17:** clean C is byte-exact (57/57) and passed the full
+finalization gate, identity
+`2b232023496cad13043cd7ae57fb0a22ce4c3e0d4b7626e5cb9c554a41ad7230`.
+No additional flag override or policy exception was needed. See
+[the measured repair](../research/realloc3-cse-loop-boundary.md).
+The historical park below is retained for provenance; it is not an outstanding
+approval request.
+
+## Historical park
 
 - **Parked:** 2026-10-17T00:52:31.326Z
 - **Reason:** asm-needs-human-approval
