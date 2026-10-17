@@ -492,6 +492,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: member `sourceSha256` `ecb7d82f…52e6c731` occurs only in `libc2/25-strpbrk`, so STRPBRK.OBJ is outside the LIBC↔LIBC2 identical-byte replication run. LIBC.LIB `C32.OBJ` (`libc/26-c32`, ordinal 26) exports its own `strpbrk`, but it is a three-instruction BIOS tail transfer (excluding padding; `0xA0`/`0x20`) rather than this implementation, so the two must not be merged.
 - Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_0f18f6d55e79a610_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2c4e43111bad931c92aae3d1e269374a2b47889c6f894f532ac20180617a8e99`.
 
+## LIBC2.LIB — STRSPN.OBJ (ordinal 27)
+
+- TU directory: `src/libraries/libc2/27-strspn/`; target `lib_a5fa7dc9e501027a_0`.
+- Original function: `strspn` — returns the length of the initial `arg0` prefix made up only of bytes present in `arg1`.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/27-strspn` (`STRSPN.OBJ`, ordinal 27, `ambiguousNamedBaseline: false`), member `sourceSha256` `0332817fb631646794e8d11e9af2ff567b33bd1aff2c9b64f5507888289c4c24`, and the ordered single-function `tu.json` (`_shared-0.h` + `strspn.c`); `src/libraries/libc2/27-strspn/_shared-0.h` records object sha256 `d77dff3923c6de66d3079d0242ee62d834087cda12b9a44e85cc383c642b40be`.
+- Same-file evidence: original `27-strspn.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strspn` (`T`), so the object owns no state, has no external callee and no file-static companion.
+- Source-family/link adjacency: ordinal 27 continues the LIBC2 string-primitive run between `STRRCHR.OBJ` (26) and `STRSTR.OBJ` (28); the scan shares the set-membership idiom already recorded for `STRCHR.OBJ` (16), `STRCSPN.OBJ` (19), `STRPBRK.OBJ` (25) and `STRRCHR.OBJ` (26). This is idiom and archive adjacency only, not shared state, and does not merge the members.
+- Cross-library: LIBC.LIB `C33.OBJ` (`libc/27-c33`, ordinal 27) also exports `strspn`, but it is a BIOS tail-jump binding (`0xA0`/`0x21`) with a different `sourceSha256` (`d2b022c6…9e79e7`), so the two must not be merged; STRSPN's `sourceSha256` occurs only in `libc2/27-strspn`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_a5fa7dc9e501027a_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `8cf3a2c69d47065cdb56b2f404c45471ff2ab7050fdfc2f768f7c8ff8b0af1fd`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
