@@ -317,6 +317,17 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Cross-library: no LIBC.LIB member is named `BCOPY.OBJ`, and no member in `library-input/redux/original-members.json` shares BCOPY's `sourceSha256` `4edbfed0f2fbd9b874ad2e576633043de7f97b4da5f8122875f6c2a4fe00fe64`, so BCOPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`/`memcmp`/`bsearch`/`strtoul`/`strtol` and must not be merged with any LIBC member.
 - Verification: `bcopy` passed the full finalize gate (agent origin, verified source/evidence identity `2615948f7885332dadd39ffb0c1aae50598584806bcd748be4a07cb246e3f974`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8129d7844e04b42c_0.json` against original hash `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`.
 
+## LIBC2.LIB — MEMSET.OBJ (ordinal 10)
+
+- TU directory: `src/libraries/libc2/10-memset/`; target `lib_ad73e3e825e58564_0`.
+- Members:
+  - `memset` — byte-fill of a destination buffer, returning the original destination base, or zero when the destination pointer is null or the count is non-positive.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/10-memset` (`MEMSET.OBJ`, ordinal 10, `ambiguousNamedBaseline: false`), object sha256 `7e36f50cbda8d1a5477ec547e16892f07860a1c99b985826236f41932eefefe6`, and the single-part ordered `tu.json` (`_shared-0.h` + `memset.c`).
+- Same-file evidence: `library-input/redux/libc2/10-memset.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `memset` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_ad73e3e825e58564_0/member.s` shows the single 12-word function.
+- Source-family/link adjacency: `memset` keeps the same null-guard / return-preserved-base idiom already recorded for LIBC2 `BCOPY.OBJ` (ordinal 1), `BZERO.OBJ` (2), `MEMCPY.OBJ` (8) and `MEMMOVE.OBJ` (9), so it is a member of that one LIBC2 memory-primitive source family in link order; each remains a separate archive member exporting one symbol under its own name.
+- Cross-library: no LIBC.LIB member is named `MEMSET.OBJ` and no member in `library-input/redux/original-members.json` shares MEMSET's `sourceSha256` `a27db6e485b21e296987474246289b9bf76b3dd125fe44b183b40535a1c1192b`, so MEMSET.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
+- Verification: `memset` passed the full finalize gate (agent origin, verified source/evidence identity `342a262daf83dd44be562d2e4d314af43f431c200a03c292947edcaa16329154`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_ad73e3e825e58564_0.json`.
+
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
 - TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
