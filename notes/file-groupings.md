@@ -401,6 +401,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/17-strcmp` (`STRCMP.OBJ`, ordinal 17, `ambiguousNamedBaseline: false`), member `sourceSha256` `422833d543e8081dc57e7fe362ace5d2f3c0876f22b1014790abd002a5a50eb8`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcmp.c`).
 - Verification: whole member byte-exact (28/28 words, `build/libraries/verified/lib_75cd70abb161b49c_0.json`); finalize gate passed with agent origin and verified source/evidence identity `3e416408ed237d0e1c942212013996992d414f22a394b1d5b8009a0fbe12a39b`.
 
+## LIBC2.LIB — STRCPY.OBJ (ordinal 18)
+
+- TU directory: `src/libraries/libc2/18-strcpy/`; target `lib_5cfffaa9ca3e5b34_0`.
+- Original function: `strcpy` — copies a null-terminated source string to the destination buffer and returns the destination base, or zero when either pointer is null.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/18-strcpy` (`STRCPY.OBJ`, ordinal 18, `ambiguousNamedBaseline: false`), member `sourceSha256` `ac1a9baec29cd15fda538722bfdaf95ce22eccae5f8d818b7b46d3220b01ee8c`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcpy.c`).
+- Same-file evidence: original `18-strcpy.o` has only `.text` (0x50 bytes, 20 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcpy` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_5cfffaa9ca3e5b34_0/member.s` shows the single 20-word function.
+- Source-family/link adjacency: `strcpy` shares the two-null-guard / return-preserved-base idiom and byte-copy loop with `STRCAT.OBJ` (ordinal 15) and `STRNCAT.OBJ` (22), and sits between `STRCMP.OBJ` (17) and `STRCSPN.OBJ` (19) in the LIBC2 string-primitive run; these remain separate archive members and are not merged.
+- Cross-library: no LIBC.LIB member is named `STRCPY.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
+- Verification: whole-member `MATCH` (20/20 words) in `build/libraries/verified/lib_5cfffaa9ca3e5b34_0.json`; finalize gate passed with agent origin and verified source/evidence identity `9384078dede949092d1ed71e67eb1f77abcabc58631a281fe4fe4b7099e0d7b3`.
+
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
 - TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
