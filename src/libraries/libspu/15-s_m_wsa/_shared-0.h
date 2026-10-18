@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/15-s_m_wsa.o[0] 15-s_m_wsa.o
- * sha256: ac4e2155146508e806e7bca9b08262fa21412e71c9f31db5ed53943b7a055f4d
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[15] S_M_WSA.OBJ
+ * sha256: ff2d4c4cd8ca78a23623522e8d6170fe1044c0e9ab008d6d475f04f199610a11
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuMallocWithStartAddr
  */

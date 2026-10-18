@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_440a41f78cf21f98_0",
+  "member": "libapi_60",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DelDrv.c",
-      "symbol": "DelDrv"
+      "path": "backlog.ASM",
+      "symbols": [
+        "DelDrv"
+      ],
+      "backlog": true
     }
   ]
 }

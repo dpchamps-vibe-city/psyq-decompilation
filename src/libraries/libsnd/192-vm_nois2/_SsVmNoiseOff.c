@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_120397e47da1bb73_0", _SsVmNoiseOff);
+INCLUDE_ASM("build/libraries/nonmatchings/libsnd_192", _SsVmNoiseOff);

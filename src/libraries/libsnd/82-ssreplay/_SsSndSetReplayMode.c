@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_a05970edafb02330_0", _SsSndSetReplayMode);
+INCLUDE_ASM("build/libraries/nonmatchings/libsnd_82", _SsSndSetReplayMode);

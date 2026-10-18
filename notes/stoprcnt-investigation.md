@@ -42,7 +42,7 @@ This document records the current investigation, the separately audited fresh De
 
 | Item | Identity |
 |---|---|
-| Function key | `lib_f5b70e00e12530c5_0::StopRCnt` |
+| Function key | `libapi_72::StopRCnt` |
 | Selected input | `library-input/redux/libapi/72-counter.o` |
 | Original PSY-Q member | `LIBAPI.LIB`, ordinal 72, `COUNTER.OBJ` |
 | Live function fragment | `src/libraries/libapi/72-counter/StopRCnt.c` |
@@ -163,7 +163,7 @@ s32 StopRCnt(u32 counter) {
 
 A fresh production diff of this exact source produced the whole-member 89/92 MISMATCH above. Evidence:
 
-`build/libraries/candidates/lib_f5b70e00e12530c5_0/f3346f53-d25f-4486-9757-ade0c9a092be/comparison.json`
+`build/libraries/candidates/libapi_72/f3346f53-d25f-4486-9757-ade0c9a092be/comparison.json`
 
 The subsequent ASPSX-mode sweep also compiled a fresh production baseline through the normal whole-TU helper before varying assembler compatibility settings.
 
@@ -293,11 +293,11 @@ s32 StopRCnt(s32 arg0) {
 
 This rendering simplifies the saved draft's redundant outer cast. The exact saved draft is at:
 
-`build/preparation/lib_f5b70e00e12530c5_0::StopRCnt/1791862949012-855230/draft.c`.
+`build/preparation/libapi_72::StopRCnt/1791862949012-855230/draft.c`.
 
 Refreshed handoff/context/evidence are under:
 
-`build/preparation/lib_f5b70e00e12530c5_0::StopRCnt/1791863940513-869430/`.
+`build/preparation/libapi_72::StopRCnt/1791863940513-869430/`.
 
 Preparation reported compilation succeeded, comparison mismatching, no finalization, zero blockers and one unresolved fact. No SDK asm-template match or COP2 instruction was found.
 
@@ -310,12 +310,12 @@ All these experiments used the original ordered TU. None was integrated into the
 For the residual-objective measurements, use this common artifact prefix:
 
 ```text
-build/pipelineReversal/lib_f5b70e00e12530c5_0::StopRCnt/objective/
+build/pipelineReversal/libapi_72::StopRCnt/objective/
 ```
 
 The ledger is:
 
-`build/experimentLedger/lib_f5b70e00e12530c5_0::StopRCnt.jsonl`.
+`build/experimentLedger/libapi_72::StopRCnt.jsonl`.
 
 It currently contains 19 source-measurement rows, including eight deduplicated initial rows and eleven subsequent C-form tests. The literal project-alias candidate was later measured through the direct whole-member diff and the fresh compatibility sweep, rather than added to that ledger.
 
@@ -410,7 +410,7 @@ Some ledger/objective records show a zero key `[0,0,0,0]` while also recording `
 
 Evidence:
 
-`build/pipelineReversal/lib_f5b70e00e12530c5_0::StopRCnt/report.json`
+`build/pipelineReversal/libapi_72::StopRCnt/report.json`
 
 and the individual immutable objective reports listed in section 8.
 
@@ -426,7 +426,7 @@ Lifetime endpoints, hard-register hazards and reconstructed scheduler/allocation
 
 Evidence:
 
-`build/compilerTrace/lib_f5b70e00e12530c5_0::StopRCnt/report.json`.
+`build/compilerTrace/libapi_72::StopRCnt/report.json`.
 
 ### 9.3 Compiler-source inspection actually performed
 
@@ -462,7 +462,7 @@ The target decode itself records 13 supported words, no back edge, no direct/ind
 
 Evidence:
 
-`build/matchingReconstruction/lib_f5b70e00e12530c5_0::StopRCnt/result.json`
+`build/matchingReconstruction/libapi_72::StopRCnt/result.json`
 
 and `target.json` beside it.
 
@@ -655,7 +655,7 @@ Evidence:
 
 - `build/stoprcnt-config-heuristics/flags.txt`: initial stub-primary/advisory observation.
 - `build/stoprcnt-config-heuristics/candidate-flags.txt`: corrected actual-C result.
-- `build/flagProbe/lib_f5b70e00e12530c5_0::StopRCnt/report.json`: last primary-C report.
+- `build/flagProbe/libapi_72::StopRCnt/report.json`: last primary-C report.
 - `build/stoprcnt-config-heuristics/triage.json`: corrected original-word triage signal.
 
 ## 14. Other-project ASPSX notes inspected
@@ -902,7 +902,7 @@ HOST=/home/dave/Documents/code/psx-decompilation-harness/tools/lib/scriptHost.ts
 LOADER=/home/dave/Documents/code/psx-decompilation-harness/node_modules/tsx/dist/loader.mjs
 
 node --import "$LOADER" "$HOST" tools/agent/diffFunc.ts \
-  --project "$PWD" 'lib_f5b70e00e12530c5_0::StopRCnt' \
+  --project "$PWD" 'libapi_72::StopRCnt' \
   --src build/stoprcnt-solve/project_aliases.c
 ```
 
@@ -910,7 +910,7 @@ The current primary-C flag-probe form is:
 
 ```bash
 node --import "$LOADER" "$HOST" tools/agent/flagProbe.ts \
-  --project "$PWD" 'lib_f5b70e00e12530c5_0::StopRCnt' \
+  --project "$PWD" 'libapi_72::StopRCnt' \
   --src build/stoprcnt-solve/sdk_long_types.c
 ```
 
@@ -928,18 +928,18 @@ It generates a new immutable run directory and does not change production flags.
 |---|---|
 | Original TU and source fragments | `src/libraries/libapi/72-counter/` |
 | Original converted input | `library-input/redux/libapi/72-counter.o` |
-| Materialized original object | `build/libraries/originals/lib_f5b70e00e12530c5_0/f9696b5b2525f5948c2e265374583b643e5fe7484870ce81a921db325f1c6c2b.o` |
-| Original nonmatching/disassembly views | `build/libraries/nonmatchings/lib_f5b70e00e12530c5_0/`; `build/libraries/disassembly/lib_f5b70e00e12530c5_0/member.s` |
+| Materialized original object | `build/libraries/originals/libapi_72/f9696b5b2525f5948c2e265374583b643e5fe7484870ce81a921db325f1c6c2b.o` |
+| Original nonmatching/disassembly views | `build/libraries/nonmatchings/libapi_72/`; `build/libraries/disassembly/libapi_72/member.s` |
 | Prepared source/context | Two preparation directories in section 7.3 |
 | Initial C variants | `build/stoprcnt_variants/` |
 | Subsequent C variants | `build/stoprcnt-solve/` |
-| Ledger and immutable source snapshots | `build/experimentLedger/lib_f5b70e00e12530c5_0::StopRCnt.jsonl`; `build/experimentLedger/sources/` |
+| Ledger and immutable source snapshots | `build/experimentLedger/libapi_72::StopRCnt.jsonl`; `build/experimentLedger/sources/` |
 | Residual reports | Objective directories in section 8; root reverse-pipeline report in section 9 |
-| Compiler trace | `build/compilerTrace/lib_f5b70e00e12530c5_0::StopRCnt/report.json` |
-| Automatic reconstruction refusal | `build/matchingReconstruction/lib_f5b70e00e12530c5_0::StopRCnt/result.json` |
+| Compiler trace | `build/compilerTrace/libapi_72::StopRCnt/report.json` |
+| Automatic reconstruction refusal | `build/matchingReconstruction/libapi_72::StopRCnt/result.json` |
 | Manual compiler/flag matrices | Two UUID reports in section 12 |
 | Heuristic-tool observations/repair checks | `build/stoprcnt-config-heuristics/` |
-| Last primary-C flag report | `build/flagProbe/lib_f5b70e00e12530c5_0::StopRCnt/report.json` |
+| Last primary-C flag report | `build/flagProbe/libapi_72::StopRCnt/report.json` |
 | Original-word fingerprints | `build/aspsx-version-fingerprints/` |
 | Native COUNTER.OBJ word provenance | `build/aspsx-version-fingerprints/counter-lnk-provenance.json` |
 | 201-setting compatibility sweep | `build/stoprcnt-aspsx-sweep/latest.json` and its referenced run directory |
@@ -998,7 +998,7 @@ Evidence under `build/assembler-backend-evidence/`:
   official gate results and context publication.
 - `expansion-captures.jsonlog`, `assembler-warnings.json`: input/listing/object
   hash receipts and empty warning streams.
-- `build/pipelineReversal/lib_f5b70e00e12530c5_0::StopRCnt/report.json`: exact
+- `build/pipelineReversal/libapi_72::StopRCnt/report.json`: exact
   reversal with complete web correspondence.
 
 Former source/allocator/flag no-go results are conditional on their old MASPSX

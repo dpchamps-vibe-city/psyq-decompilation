@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/34-ferr.o[0] 34-ferr.o
- * sha256: 02aae13fd05052b3e75e2950a060f0956004ef114333c874663eba7cb253e7b1
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[34] FERR.OBJ
+ * sha256: a88739f198b1f8e7de8b82fdfe09031632c6a993584f3364890dea7570e5c698
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _err_math
  */

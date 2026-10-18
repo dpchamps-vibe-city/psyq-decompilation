@@ -11,7 +11,7 @@
 FROM ubuntu:focal AS build
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates build-essential gcc gcc-multilib byacc patch wget
+    ca-certificates build-essential gcc gcc-multilib byacc bison patch wget
 
 ENV TRUNK_COMMIT=2b3600acb4eceda3000312002ec78fecd5a39d30
 ENV TRUNK_SHA256=a28c8f57d53c8a8196375ce82dcbfcabcb61547804f91169c242c577b52effa6
@@ -61,14 +61,20 @@ RUN ./cc1 -quiet -O2 -fno-exceptions /work/tests/section_attribute.c
 RUN ./cc1 -version -quiet -o /dev/null /work/tests/little_endian.c 2>&1 | grep 'trunk-19970318'
 
 RUN mkdir -p /build && cp cc1 /build/
+# The preprocessor grammar uses focal's bison 3.5.1 in yacc mode. cc1's
+# separate C parser above continues to use byacc, unchanged.
+RUN make cccp BISON="bison -y" CFLAGS="-std=gnu89 -m32 -static" \
+    && cp cccp /build/cccp
 
 # Preserve the inputs and generated C/headers of this exact build, as the
 # harness's own source capture does, so the source pin and binary correspond.
 RUN set -eu; root=/work/gcc-trunk-19970318; dest=/build/compiler-source; \
     mkdir -p "$dest/src/gcc" "$dest/src/gcc/config"; \
-    find "$root" -maxdepth 1 -type f \( -name '*.c' -o -name '*.h' -o -name '*.md' -o -name '*.def' -o -name '*.y' -o -name '*.in' -o -name '*.sh' -o -name '*.texi' -o -name 'Makefile*' -o -name 'configure*' -o -name 'config.*' -o -name 'COPYING*' -o -name 'ChangeLog*' -o -name 'README*' -o -name 'INSTALL*' \) -exec cp -p {} "$dest/src/gcc/" \; ; \
+    find "$root" -maxdepth 1 -type f \( -name '*.c' -o -name '*.h' -o -name '*.md' -o -name '*.def' -o -name '*.y' -o -name '*.in' -o -name '*.sh' -o -name '*.texi' -o -name 'Makefile*' -o -name 'move-if-change' -o -name 'configure*' -o -name 'config.*' -o -name 'COPYING*' -o -name 'ChangeLog*' -o -name 'README*' -o -name 'INSTALL*' \) -exec cp -p {} "$dest/src/gcc/" \; ; \
     find "$root/config" -maxdepth 1 -type f -exec cp -p {} "$dest/src/gcc/config/" \; ; \
     for arch in mips i386; do cp -a "$root/config/$arch" "$dest/src/gcc/config/"; done; \
+    mkdir -p "$dest/src/gcc/cp"; \
+    cp -p "$root/cp/lang-options.h" "$root/cp/Make-lang.in" "$dest/src/gcc/cp/"; \
     (cd /work && sha256sum gcc-trunk-19970318.tar.gz cdk-gcc-b18.tar.gz) > "$dest/upstream.sha256"
 
 FROM scratch AS export

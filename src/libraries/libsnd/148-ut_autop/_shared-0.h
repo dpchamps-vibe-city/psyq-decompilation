@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/148-ut_autop.o[0] 148-ut_autop.o
- * sha256: 095d2ec1f1d67325c77b0cc005f5cb5e33b8fb20a566bfe8d87bbe80a4453c83
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[148] UT_AUTOP.OBJ
+ * sha256: b7546578419557b21e80b96dc8520158cfd991e746446b9fd6b1fcabada97b27
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtAutoPan
  */

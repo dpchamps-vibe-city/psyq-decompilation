@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/25-strpbrk.o[0] 25-strpbrk.o
- * sha256: bca6d62bc0f91c2ec535d5dae15448c74c5adfae45aaa09129c6abab0f64258f
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[25] STRPBRK.OBJ
+ * sha256: ecb7d82f15646784a182e2128cabe35171ef212462574f10ba30e62952e6c731
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strpbrk
  */

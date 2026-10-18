@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_ba57cb092e0a6283_0", SpuSetCommonCDVolume);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_110", SpuSetCommonCDVolume);

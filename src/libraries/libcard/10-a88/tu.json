@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_d9802e5ef4de3731_0",
+  "member": "libcard_10",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_card_chan.c",
-      "symbol": "_card_chan"
+      "path": "backlog.ASM",
+      "symbols": [
+        "_card_chan"
+      ],
+      "backlog": true
     }
   ]
 }

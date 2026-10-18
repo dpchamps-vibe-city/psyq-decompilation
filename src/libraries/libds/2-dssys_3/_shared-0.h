@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/2-dssys_3.o[0] 2-dssys_3.o
- * sha256: d13604eefc299eae073325e5073d5b6344d2290118052cca48784b596fec4470
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[2] DSSYS_3.OBJ
+ * sha256: d70053539c31e79c10350a3a706a6ce7afa0e6b617bde2b215873e4d4239096c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsMix
  */

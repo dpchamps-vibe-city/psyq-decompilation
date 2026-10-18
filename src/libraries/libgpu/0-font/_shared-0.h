@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libgpu/0-font.o[0] 0-font.o
- * sha256: d0650c7a78055097e1c7eb86dd816d33c6a78f323da994683cc02cfbca1d1e56
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[0] FONT.OBJ
+ * sha256: b8d50d7d5bc6fbc4b8ba61fc10c0fee835e3a28f94379709519f7561defea4d7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: SetDumpFnt, FntPrint, FntLoad, FntOpen, FntFlush
+ * Functions: SetDumpFnt, FntLoad, FntOpen, FntFlush, FntPrint
  */
 #include "common.h"
 #include "include_asm.h"

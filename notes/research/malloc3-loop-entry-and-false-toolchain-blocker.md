@@ -2,13 +2,13 @@
 
 ## Verified result (2026-10-16)
 
-`lib_55fbf6eed978186c_0::malloc3`, in
+`libapi_85::malloc3`, in
 `src/libraries/libapi/85-malloc3/malloc3.c`, is **44/44 words exact**.
 `psx_finalize_function` passed exact diff, full configured build, scope and
 clean-source gates. Documentation handoff identity:
 `8b7cf1e6b1081788957b7399bc068044159b4d80ac97af714461fa705ec8d7cc`.
 The owning-member receipt is
-`build/libraries/verified/lib_55fbf6eed978186c_0.json` (whole-member match,
+`build/libraries/verified/libapi_85.json` (whole-member match,
 including symbolic relocations), identity
 `87b0b44353eaba7543aab82ab333e333f1dca42b7f543950563ec03f35428dfe`.
 These are different identity domains, not interchangeable hashes.
@@ -57,7 +57,7 @@ compiler input.
 
 All paths below are under `build/malloc3-reopened/` and use production settings.
 The measurements are under
-`build/pipelineReversal/lib_55fbf6eed978186c_0::malloc3/objective/`.
+`build/pipelineReversal/libapi_85::malloc3/objective/`.
 
 | Source / measurement | Observed result |
 | --- | --- |
@@ -74,7 +74,7 @@ that every other statement or failure-join spelling is necessary.
 ## What the native dumps actually establish
 
 The exact candidate's dumps are in
-`build/loopTrace/lib_55fbf6eed978186c_0::malloc3/`. At documentation time they
+`build/loopTrace/libapi_85::malloc3/`. At documentation time they
 correspond to `alignment-do-entry.c`, which differs from the live source only
 in whitespace. These scratch dumps can be overwritten; check provenance before
 reusing them.
@@ -213,8 +213,8 @@ Original member: `library-input/redux/libapi/85-malloc3.o`, SHA-256
 `00a3b77463e2e7978591be0c5fcd6a8bc9bb3c7b12240219f6cb47711941cf14`.
 TU manifest: `src/libraries/libapi/85-malloc3/tu.json`.
 Original listing:
-`build/libraries/nonmatchings/lib_55fbf6eed978186c_0/malloc3.s`.
-Ledger: `build/experimentLedger/lib_55fbf6eed978186c_0::malloc3.jsonl`.
+`build/libraries/nonmatchings/libapi_85/malloc3.s`.
+Ledger: `build/experimentLedger/libapi_85::malloc3.jsonl`.
 
 The old `manual-cc1-sweep`, `sdk-cc1-comparison` and
 `differential-cc1-compile` records remain historical measurements. Their

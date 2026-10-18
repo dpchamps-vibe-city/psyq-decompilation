@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/85-ssp.o[0] 85-ssp.o
- * sha256: c70ca3a8e82f374192c65eb540d6151fcf990f045a8740d7ba87e0ff225df62a
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[85] SSP.OBJ
+ * sha256: 172c4709ab1ab557b964fb73671898735c02da4c8c3b562ba812155a49122edf
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSeqSkip
  */

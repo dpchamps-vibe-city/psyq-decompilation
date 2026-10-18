@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_693a33b7a17ff285_0",
+  "member": "libgte_461",
   "parts": [
     {
-      "path": "pmd_4.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotPMD_GT3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libcomb/0-comb.o[0] 0-comb.o
- * sha256: 014f0df2b0ba67ae5fcb37d395040bf75764c836912548372f40ad74a606061b
+/* Original TU: library-input/psyq/LIB/LIBCOMB.LIB[0] COMB.OBJ
+ * sha256: 3acb466c8147bf7dacb78f812ec83e3d285ed88f4ddba329a44ac1801a99dc6f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: AddCOMB, _comb_control
+ * Functions: AddCOMB, func_000000D4, func_0000012C, func_00000380, func_000003D8, _comb_control
  */
 #include "common.h"
 #include "include_asm.h"

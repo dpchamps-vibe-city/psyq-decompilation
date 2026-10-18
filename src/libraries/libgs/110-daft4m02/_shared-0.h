@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/110-daft4m02.o[0] 110-daft4m02.o
- * sha256: bbcb185fda2cad96fe96f2935af3162c1c86ce675a505d289d999b27b7887ccb
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[110] DAFT4M02.OBJ
+ * sha256: b629a67c0701a6d384a32a2820716699429a0122e25f4139ac229c24998e06e6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsA4divTF4NLM
  */

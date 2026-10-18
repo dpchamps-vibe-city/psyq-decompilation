@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/44-s_sk.o[0] 44-s_sk.o
- * sha256: 076e03bad8ee5e57c14b839e5a7a6704d2892205035207841965dec183d6a18c
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[44] S_SK.OBJ
+ * sha256: 74584ab1d48a5d1c8cc3ea801d945b2f7efbb5832f2aa4356be6131603d6e123
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetKey
  */

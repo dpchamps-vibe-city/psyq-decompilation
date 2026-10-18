@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/15-p03.o[0] 15-p03.o
- * sha256: ceabd3a71948919b0d32451d6cb258c7a8ffb98117b03cbda4324ebd1c3ce8cf
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[15] P03.OBJ
+ * sha256: 45f98a080ffb82f89150cf3238814073b2e172a1482dd9610095a837f2ee461c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DumpClut
  */

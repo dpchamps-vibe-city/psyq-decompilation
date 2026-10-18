@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_4da8ea976a1ca68e_0",
+  "member": "libgte_336",
   "parts": [
     {
-      "path": "tmd_6.s",
+      "path": "backlog.ASM",
       "symbols": [
         "gte_texture_flat3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

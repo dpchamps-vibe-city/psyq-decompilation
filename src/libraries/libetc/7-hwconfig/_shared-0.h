@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libetc/7-hwconfig.o[0] 7-hwconfig.o
- * sha256: cfdde13af33d379dba2aa437129892bdd2e320db823611c8948d45d3ce27dc76
+/* Original TU: library-input/psyq/LIB/LIBETC.LIB[7] HWCONFIG.OBJ
+ * sha256: f469119812670d27687b3a818245893673d216a5e3bf694ce0f5f9c791553720
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: get_hwconfig
  */

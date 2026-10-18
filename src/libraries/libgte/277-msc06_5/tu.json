@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_e2d82fcb22c7130c_0",
+  "member": "libgte_277",
   "parts": [
     {
-      "path": "msc06_5.s",
+      "path": "backlog.ASM",
       "symbols": [
         "LoadAverageByte"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

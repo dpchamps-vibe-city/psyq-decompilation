@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/13-dscb.o[0] 13-dscb.o
- * sha256: 9c5051463e04c9df5eda6c0d516033b3c27f860e1736ef55ba4f720526747f8a
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[13] DSCB.OBJ
+ * sha256: 7e3e45dbfa1e3260e545bae51dfac70621988fc59a173b47bea3875c8479c2f1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

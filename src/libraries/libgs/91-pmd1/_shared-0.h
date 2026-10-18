@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/91-pmd1.o[0] 91-pmd1.o
- * sha256: 1a74242f75d0e219dd900791d7c644037db9802ecd114f2e129554d193f47d5b
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[91] PMD1.OBJ
+ * sha256: f48e18343e1ace5a7aac009026f16f6eedc92687b79b748ec302c68b660d4513
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsLinkObject3
  */

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5f8472114973507c_0",
+  "member": "libgte_301",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetDQA.c",
-      "symbol": "SetDQA"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetDQA"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/32-p20.o[0] 32-p20.o
- * sha256: dd7596c36fa41085bec89c78b13557d0c9b8658b3de9f52f968cf54d33724d43
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[32] P20.OBJ
+ * sha256: 297a7ca34e6dcc0e2a5831468a4c32acf77d9ff30a456cb38b54a190653d93f9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetSprt8
  */

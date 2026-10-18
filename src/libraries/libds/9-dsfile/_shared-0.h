@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libds/9-dsfile.o[0] 9-dsfile.o
- * sha256: 030f8504f24c1dae989b2cd73ca8b224c97146a5382d4b9aa0c7de55eddab88d
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[9] DSFILE.OBJ
+ * sha256: 2e03f4fa036a11c6b29c65258b510252557ba48a79be8831ecebae6b5ea3fd90
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: DsSearchFile
+ * Functions: DsSearchFile, func_00000358, func_00000378, func_0000063C, func_000006E0, func_0000097C
  */
 #include "common.h"
 #include "include_asm.h"

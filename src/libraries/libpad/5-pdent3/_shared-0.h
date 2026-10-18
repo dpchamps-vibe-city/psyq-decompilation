@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpad/5-pdent3.o[0] 5-pdent3.o
- * sha256: 9d0f541951b535f73d76b72482469f3bba71f1f167f68fb8fdd07b1d457e82a6
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[5] PDENT3.OBJ
+ * sha256: 3f36ec6c71e8310e8b4f60e9ff70a3e16b6a3b636bd91c2713df3f8e481284de
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadInfoMode
  */

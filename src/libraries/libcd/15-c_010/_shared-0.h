@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/15-c_010.o[0] 15-c_010.o
- * sha256: 21f8528fa105e874889e4d5ee63d883c511b039b3dec122fc3fd92c83ae69241
+/* Original TU: library-input/psyq/LIB/Libcd.lib[15] C_010.OBJ
+ * sha256: 632c2b99e6decf78dcd973f5f62f8a163bcb3176a6dc7e2956c04996bf4d91d5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StSetMask
  */

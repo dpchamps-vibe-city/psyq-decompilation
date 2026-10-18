@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/20-msc07.o[0] 20-msc07.o
- * sha256: 6e9f2d63cc44bde1b3b71e96be82ef7450c5f17c5b37e11a0ba2b9cb5a75c9a4
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[20] MSC07.OBJ
+ * sha256: 15e4d4b26cdbc3c3d26f225480c380b7c2a91ae6417d066dd419032240befe33
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: p2otz
  */

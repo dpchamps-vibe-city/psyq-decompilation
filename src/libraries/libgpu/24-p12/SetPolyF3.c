@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_36d62a3e7dd73497_0", SetPolyF3);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_24", SetPolyF3);

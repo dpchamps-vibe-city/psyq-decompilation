@@ -191,10 +191,10 @@ int sprintf(char *buf, const char *fmt, ...) {
       st.lng = 1;
       /* FALLTHROUGH */
     case 'X':
-      digits = upper_digits;
+      digits = (const unsigned char *)"0123456789ABCDEF";
       goto hex;
     case 'x':
-      digits = lower_digits;
+      digits = (const unsigned char *)"0123456789abcdef";
     hex:
       if (st.lng) {
         v = *(*(long **)&ap)++;

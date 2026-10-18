@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "member": "lib_8131e1e9741808b1_0",
+  "member": "libcard_14",
   "parts": [
     {
-      "path": "patch.s",
+      "path": "backlog.ASM",
       "symbols": [
         "_patch_card_info",
         "_patch_card",
         "_patch_card2",
         "_copy_memcard_patch"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

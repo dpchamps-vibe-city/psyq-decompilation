@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/113-s_gcmv.o[0] 113-s_gcmv.o
- * sha256: 5d16aabbf158a2d6d33bbf151324e12a526aa3291e7ca2db0e4dacf6144909a3
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[113] S_GCMV.OBJ
+ * sha256: fbeb4128ee319a50725abb3757f9e36c7250687532aecdb85964d60c58f2986e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetCommonMasterVolume
  */

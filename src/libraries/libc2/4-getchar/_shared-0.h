@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/4-getchar.o[0] 4-getchar.o
- * sha256: b5bbbc8d63b678576d355aa500daeaafdfa829ab0daf5fea3ee47f5b5110077d
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[4] GETCHAR.OBJ
+ * sha256: f45f41f372910ea69a6efe4eee4897c34d940e5fcb7d7b3255f17c598cd11f2a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: getchar
  */

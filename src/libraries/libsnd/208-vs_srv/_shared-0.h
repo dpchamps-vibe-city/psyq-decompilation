@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/208-vs_srv.o[0] 208-vs_srv.o
- * sha256: f284fbf4f1a56082e605aea2b9a2a6ee61e0170fde87dc447ead7ee0d97369b2
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[208] VS_SRV.OBJ
+ * sha256: f15e07234953206578765e2e0caaedd58955bb68f4097aff5b63a1f830f15657
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetReservedVoice
  */

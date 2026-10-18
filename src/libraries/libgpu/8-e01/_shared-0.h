@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/8-e01.o[0] 8-e01.o
- * sha256: b94362d0f20d2fe53995141b92ce0063274faaedb8382b2de12d21d7f3966ef2
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[8] E01.OBJ
+ * sha256: 26f698b18ca06ad3ba8d435a70b374734888f551698b2e19ea7362baeecd2f80
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: LoadClut
  */

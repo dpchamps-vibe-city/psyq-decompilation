@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/62-gs_114.o[0] 62-gs_114.o
- * sha256: 6999a333e71c27ed4a79c07edbf0395670449e508050655c4b2d28e08b7055b9
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[62] GS_114.OBJ
+ * sha256: 89fbbef0a02c0c2b7b9cb661e2fdde7268903364eb1c1cf35338ffc5421f447a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortOt
  */

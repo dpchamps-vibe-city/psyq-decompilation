@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_003da759d6863124_0", func_0000087C);
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_124", func_0000087C);

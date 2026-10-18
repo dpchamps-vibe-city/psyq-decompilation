@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/11-dsready.o[0] 11-dsready.o
- * sha256: 91c0861a3e83d60146096e8d423174feac9adbc1b190b65409b632b8b0def076
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[11] DSREADY.OBJ
+ * sha256: 4e05f0df18ae940c0408c65eacdbe89d1cd44edd65180158c31739576f728dfe
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsStartReadySystem, DsEndReadySystem, DsReadySystemMode, ER_active, ER_clear
  */

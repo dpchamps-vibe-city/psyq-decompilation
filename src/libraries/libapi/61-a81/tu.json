@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_519ff9a415705cbd_0",
+  "member": "libapi_61",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "Krom2RawAdd.c",
-      "symbol": "Krom2RawAdd"
+      "path": "backlog.ASM",
+      "symbols": [
+        "Krom2RawAdd"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/39-matrix2.o[0] 39-matrix2.o
- * sha256: 41205350fa7817a1d33b573d58bc544b4554367926bcb2d9f52816f150119640
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[39] MATRIX2.OBJ
+ * sha256: 131f180daef48f3eefb9cb1fe1a9ca429bf1a05659d714decce97314aa12ca65
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsInitCoordinate2
  */

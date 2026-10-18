@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/153-ut_gpa.o[0] 153-ut_gpa.o
- * sha256: 09daddb51fd73291eda512b795046fef71d213a445945ef86084a7321e762328
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[153] UT_GPA.OBJ
+ * sha256: a03767fa16381acaea9410ff858c577b07d1f03c59ff335de3c6032318392720
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetProgAtr
  */

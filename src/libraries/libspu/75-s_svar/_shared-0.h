@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/75-s_svar.o[0] 75-s_svar.o
- * sha256: 29fe5045c2e0c858efb2b08efda5a2ed11a3d7d6045965e32809d3a853517a6e
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[75] S_SVAR.OBJ
+ * sha256: 0ce7e9ea3b83b1b9400db092426afb5462e5ac15cf115dc6e765e5d1b011c6dc
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetVoiceAR
  */

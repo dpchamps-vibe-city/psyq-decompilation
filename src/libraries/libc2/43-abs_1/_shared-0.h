@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/43-abs_1.o[0] 43-abs_1.o
- * sha256: 6e8d833e04703c2ced1364ed211761fc2525e4e52a45dacfdac0ddfac5ec95c3
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[43] ABS_1.OBJ
+ * sha256: 2f27cbf984f071d0ad94d81f34f1d9dc72626f1be58a060a0842cf5744d1e907
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: labs
  */

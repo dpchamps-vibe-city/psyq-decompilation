@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_79f4d2356f886f5b_0",
+  "member": "libmath_4",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

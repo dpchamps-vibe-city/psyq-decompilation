@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcard/15-init.o[0] 15-init.o
- * sha256: f809a481555fd47e617bc4eb4ae99f3c856b6fefe5cb6a51824c30b87de73899
+/* Original TU: library-input/psyq/LIB/LIBCARD.LIB[15] INIT.OBJ
+ * sha256: b0142acdf1be48a08903b162be46da20acf4d712900a6a2465faea3cc58788da
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: InitCARD, StartCARD, StopCARD
  */

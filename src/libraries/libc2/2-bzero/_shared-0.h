@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/2-bzero.o[0] 2-bzero.o
- * sha256: e7496c15a9aaeadc5af8978529ef11e4931dddc611e5bd34aa6598d6c84e3063
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[2] BZERO.OBJ
+ * sha256: 7cd6c53977f8ccc700d353280dc961a33f8eb1f7bd47e3f5c0c2e2ee0808003a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: bzero
  */

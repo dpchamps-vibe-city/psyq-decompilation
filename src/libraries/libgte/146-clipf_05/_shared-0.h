@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/146-clipf_05.o[0] 146-clipf_05.o
- * sha256: 1a136a9ea5811257dfd4d72572bc34b6eb0c556d9c0fd9de226aa1b4e7732f70
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[146] CLIPF_05.OBJ
+ * sha256: fb7d878ed186e138230bd7a4d0feb9dc52821252bccb3c4d055f5d59388b5082
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ZClipF
  */

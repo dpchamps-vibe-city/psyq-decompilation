@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/5-gets.o[0] 5-gets.o
- * sha256: 05e19cd49172df4b12cb845382ac0e9e35932986babf8d5eb73283df6c30311e
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[5] GETS.OBJ
+ * sha256: 5cda04c786e2f88469c0c001a9803996cc4aba462bfa50a5be4aa6df0a28aa30
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: gets
  */

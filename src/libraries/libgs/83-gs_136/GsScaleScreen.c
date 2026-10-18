@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_b1db35a2666a078f_0", GsScaleScreen);
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_83", GsScaleScreen);

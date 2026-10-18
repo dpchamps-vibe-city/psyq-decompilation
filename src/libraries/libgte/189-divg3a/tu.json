@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "member": "lib_67a09a43b13a9146_0",
+  "member": "libgte_189",
   "parts": [
     {
-      "path": "divg3a.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RCpolyG3",
         "RCpolyG3A",
         "func_00000414"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

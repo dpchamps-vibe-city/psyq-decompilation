@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1a1a02338213b1df_0",
+  "member": "libmcrd_2",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

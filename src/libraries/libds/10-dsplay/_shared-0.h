@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libds/10-dsplay.o[0] 10-dsplay.o
- * sha256: 81d8103041fe280c942d6ee307a1f6d8fb54e8e0f5e3334d5e76b8a9122563a1
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[10] DSPLAY.OBJ
+ * sha256: a92d244a288aeff422de9553f0f026558a3923d7a855d3419ee26022e823d5db
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: DsPlay
+ * Functions: DsPlay, func_000001B8, func_000002B4, func_000002F4, func_00000344
  */
 #include "common.h"
 #include "include_asm.h"

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/19-d2_004.o[0] 19-d2_004.o
- * sha256: d104daec1597a50b21a2cc4e9b5f41a6f6a68e1fabed112b82fbb1b694a39509
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[19] D2_004.OBJ
+ * sha256: 9ed8e8fdff5a02ce4187af4bb3d1e6f6da98bc172770acae18c7726f22e2f71d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsLastCom
  */

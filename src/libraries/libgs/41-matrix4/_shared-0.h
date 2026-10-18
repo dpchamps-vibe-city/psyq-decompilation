@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/41-matrix4.o[0] 41-matrix4.o
- * sha256: 4aad2b66a6016dacd3c8acd917ac5682510a6e424e05b1ee515121511dd036a5
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[41] MATRIX4.OBJ
+ * sha256: c995d34d9f95c6bc2bc1052a2fc46eeb0ea818f9845fbc1d00be19751cf57ad1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetLsMatrix
  */

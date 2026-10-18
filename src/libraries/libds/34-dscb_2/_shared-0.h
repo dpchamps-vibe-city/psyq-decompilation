@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/34-dscb_2.o[0] 34-dscb_2.o
- * sha256: 52bf8b8226c18f1eaddbcd31b0d4d9643cde891a6e55976bdacd4138818523b6
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[34] DSCB_2.OBJ
+ * sha256: d28f17f0e720ae59129bb92d74b27456cbf486ae8bc87a6c4fb931c40cabea6d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsReadyCallback
  */

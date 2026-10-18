@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libspu/64-st.o[0] 64-st.o
- * sha256: 0b04fa29584b15ae6c2a7178a4f01bb12c1b9b9722a2fa54247a21148fbd2a3a
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[64] ST.OBJ
+ * sha256: d97e17c5a32be193a37946195f391500f86bd96ce915306aaa894eb61eb27dad
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: SpuStTransfer, SpuStInit, SpuStQuit, SpuStGetStatus, SpuStGetVoiceStatus, SpuStSetPreparationFinishedCallback, SpuStSetTransferFinishedCallback, SpuStSetStreamFinishedCallback
+ * Functions: func_00000070, func_000001D0, func_00000384, func_00000A04, func_00000C8C, SpuStTransfer, SpuStInit, SpuStQuit, SpuStGetStatus, SpuStGetVoiceStatus, SpuStSetPreparationFinishedCallback, SpuStSetTransferFinishedCallback, SpuStSetStreamFinishedCallback
  */
 #include "common.h"
 #include "include_asm.h"

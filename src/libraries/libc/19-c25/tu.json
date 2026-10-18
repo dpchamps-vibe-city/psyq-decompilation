@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a9781215d6214e57_0",
+  "member": "libc_19",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "strcpy.c",
-      "symbol": "strcpy"
+      "path": "backlog.ASM",
+      "symbols": [
+        "strcpy"
+      ],
+      "backlog": true
     }
   ]
 }

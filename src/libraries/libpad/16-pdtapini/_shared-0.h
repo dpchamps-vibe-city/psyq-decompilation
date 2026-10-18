@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpad/16-pdtapini.o[0] 16-pdtapini.o
- * sha256: 00f079dbf8c32ceea7fb0e15994b1c3682682a540f5952dfbe78c13ea3989da0
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[16] PDTAPINI.OBJ
+ * sha256: 1a4c6667573fcfd1b825f88b5896a8a3a78daf81cd2421616b0cae2466590d32
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadInitMtap
  */

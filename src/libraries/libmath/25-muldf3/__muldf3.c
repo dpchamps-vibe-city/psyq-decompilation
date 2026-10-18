@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_ab36079e76800bd5_0", __muldf3);
+INCLUDE_ASM("build/libraries/nonmatchings/libmath_25", __muldf3);

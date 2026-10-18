@@ -1,0 +1,24 @@
+Upstream commit: reviewed-release-delta
+ChangeLog / commit message:
+Reviewed release-only delta: tc-mips.c nopic_need_relax #ifdef/zero-value condition; research section 3. Exact input/output hashes are in manifest.json.
+Files: gas/config/tc-mips.c
+
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -9725,15 +9725,11 @@
+ #ifndef NO_ECOFF_DEBUGGING
+ 		   || (sym->ecoff_extern_size != 0
+ 		       && sym->ecoff_extern_size <= g_switch_value)
+-#endif
+ 		   /* We must defer this decision until after the whole
+ 		      file has been read, since there might be a .extern
+ 		      after the first use of this symbol.  */
+-		   || (before_relaxing
+-#ifndef NO_ECOFF_DEBUGGING
+-		       && sym->ecoff_extern_size == 0
++		   || (sym->ecoff_extern_size == 0 && before_relaxing)
+ #endif
+-		       && S_GET_VALUE (sym) == 0)
+ 		   || (S_GET_VALUE (sym) != 0
+ 		       && S_GET_VALUE (sym) <= g_switch_value)))
+ 	change = 0;

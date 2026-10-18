@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1b739a2e5f928375_0",
+  "member": "libgte_49",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadSZfifo3.c",
-      "symbol": "ReadSZfifo3"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadSZfifo3"
+      ],
+      "backlog": true
     }
   ]
 }

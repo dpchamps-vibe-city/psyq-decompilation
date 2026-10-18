@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_66622e3898ddcb5a_0", GsSortFastSprite2);
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_15", GsSortFastSprite2);

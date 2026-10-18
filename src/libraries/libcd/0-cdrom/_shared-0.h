@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/0-cdrom.o[0] 0-cdrom.o
- * sha256: 45fe1d9874c340cde5b2f4e85223f1417c21b8b107263846cf4bf09e30dc3089
+/* Original TU: library-input/psyq/LIB/Libcd.lib[0] CDROM.OBJ
+ * sha256: 030806aaa26ab816053ac7571eeaccc57cae5f4049508cc6584bddcd4d4869f6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StSetRing
  */

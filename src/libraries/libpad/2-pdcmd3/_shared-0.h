@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libpad/2-pdcmd3.o[0] 2-pdcmd3.o
- * sha256: 062649f3a787a90506676ae14470d2f9d878567a4422526d0be847e476530a50
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[2] PDCMD3.OBJ
+ * sha256: cb3d5d5f234d02023554054baca553529799b74dcdbf560bab7b0415a5e549d6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: PadSetMainMode
+ * Functions: PadSetMainMode, func_00000104, func_0000015C
  */
 #include "common.h"
 #include "include_asm.h"

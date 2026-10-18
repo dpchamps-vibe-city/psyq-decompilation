@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/8-dsreade.o[0] 8-dsreade.o
- * sha256: ff3290972c1d42c01191f8e23381165b1ac329283c96c29a1b41dafa085fb03e
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[8] DSREADE.OBJ
+ * sha256: 2ae1f0f185655480968ab41995cd34435ec1323c562bb131f5fed027ad029364
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsReadFile
  */

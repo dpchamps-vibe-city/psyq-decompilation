@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libetc/2-vsync.o[0] 2-vsync.o
- * sha256: 54acc505029a3a7f614c41f6024cf472c1e131b79627b1f1203c95d525c6643f
+/* Original TU: library-input/psyq/LIB/LIBETC.LIB[2] VSYNC.OBJ
+ * sha256: 8f9cda62a131bedd431c23b188005f9116271e7a0f4760a710667b63814b4e79
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: VSync
+ * Functions: VSync, func_000001F0
  */
 #include "common.h"
 #include "include_asm.h"

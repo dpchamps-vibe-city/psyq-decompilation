@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/20-zerobuf.o[0] 20-zerobuf.o
- * sha256: e416039d3ca405ee937d3cc15d24a102e1d135de43adfbee56404c754c6a46e1
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[20] ZEROBUF.OBJ
+ * sha256: f5f1db0ca4e7e3964655eca3cbba0e1f0aa63e3da8d6995c5dfe88ec752cfffe
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

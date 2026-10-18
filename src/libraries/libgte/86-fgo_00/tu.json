@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a4066eb9a4691513_0",
+  "member": "libgte_86",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "TransposeMatrix.c",
-      "symbol": "TransposeMatrix"
+      "path": "backlog.ASM",
+      "symbols": [
+        "TransposeMatrix"
+      ],
+      "backlog": true
     }
   ]
 }

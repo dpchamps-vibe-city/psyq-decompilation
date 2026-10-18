@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/156-ut_gvaft.o[0] 156-ut_gvaft.o
- * sha256: ff0d6dd691ef95cb1e6cc6a5fbedff0afe8fa275ac051d42e3dd6f37e85400bb
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[156] UT_GVAFT.OBJ
+ * sha256: e1192a948fcfffa1614a0ffbc88c0dbb9876badc6c25fe91297357dac4d779f4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetVagAddrFromTone
  */

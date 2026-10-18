@@ -2,7 +2,7 @@
 
 ## Verified result (2026-10-17)
 
-`lib_dacb6c202432cdbd_0::realloc3` is recovered in
+`libapi_87::realloc3` is recovered in
 `src/libraries/libapi/87-realloc3/realloc3.c`: **57/57 words exact**.
 `psx_finalize_function` passed exact diff, full build, scope and clean-source
 checks. Documentation handoff identity:
@@ -11,7 +11,7 @@ Verified source SHA-256:
 `a91fb06f4e53c73f0fb1cabf0e40527c95801cda42bb3d6e2eb8373e62a70071`.
 
 The owning-member receipt is
-`build/libraries/verified/lib_dacb6c202432cdbd_0.json`, whole-member **108/108**,
+`build/libraries/verified/libapi_87.json`, whole-member **108/108**,
 identity `9ec5b129043bf4154a5d6c30e6b17e0e14357b791936ccd156209f40fd326676`.
 At this verification the rollback helper was C and the byte-copy helper was
 still assembly-backed. A whole-member match does not mean all its functions
@@ -61,7 +61,7 @@ Native evidence:
   UID 48 defining pseudo 74 as `pseudo72 - 8`, but UID 53 loads through
   `pseudo72 - 4` rather than pseudo 74.
 - The integrated source's dumps under
-  `build/loopTrace/lib_dacb6c202432cdbd_0::realloc3/` retain
+  `build/loopTrace/libapi_87::realloc3/` retain
   `NOTE_INSN_LOOP_END` UID 65 between the header definition and UID 71's load
   through `pseudo74 + 4`. These scratch artifacts can be overwritten; check
   their source provenance before reusing them.
@@ -83,7 +83,7 @@ Leaving the final `+ 1` after the field load fixes scheduling. Reusing
 `rounded_units` temporary removes it.
 
 Measurements under
-`build/pipelineReversal/lib_dacb6c202432cdbd_0::realloc3/objective/`:
+`build/pipelineReversal/libapi_87::realloc3/objective/`:
 
 | Source under `build/realloc3-reopened/` | Measurement | Result |
 | --- | --- | --- |

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/45-cdr_2.o[0] 45-cdr_2.o
- * sha256: f89e346d9d68cd4a0d26207b897a51182a6ed24ce74f0839c3a69bba52b6e159
+/* Original TU: library-input/psyq/LIB/Libcd.lib[45] CDR_2.OBJ
+ * sha256: 3945ee36760b2ac28786a902e57f1296e289fec59ce3c4b1b7c40d3dff13fc3c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdReadCallback
  */

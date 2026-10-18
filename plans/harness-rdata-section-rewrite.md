@@ -1,12 +1,19 @@
 # Plan: let compiler-generated read-only data verify for library members
 
-Status: implemented and validated, 2026-10-17 (decompilation loop not resumed).
+Status: **superseded 2026-10-17.**
+- The rewrite is removed from `toolchain.json`.
+- The originals' `.rdata` is the native section name of the ECOFF-writing
+  1997 GNU as that assembled them. See
+  `notes/research/assembler-identification-1997-trunk.md`.
+- The history below is kept for the record.
+
+Former status: implemented and validated, 2026-10-17 (decompilation loop not resumed).
 Owner: the user. Decision taken: fix it with an assembler-input rewrite in the
 harness (`../psx-decompilation-harness`), not with a section-name alias in the
 oracle. Background: the sprintf assessment of
 2026-10-17 (session notes below), the loop's draft `build/sprintf_draft_v32.c`,
 and its measurement under
-`build/pipelineReversal/lib_ca09da668c8c891f_0::sprintf/objective/measurement-JSpEhI/`.
+`build/pipelineReversal/libc_46::sprintf/objective/measurement-JSpEhI/`.
 
 Goal: a library member whose original carries a `.rdata` section (string
 tables, constant arrays, switch jump tables) can reach a whole-member MATCH
@@ -74,13 +81,13 @@ spelling can change a section name. The consequences, measured on 2026-10-17:
 | members with a `_data.c` part | 277 |
 | `_data.c` parts converted from `INCLUDE_ASM` to C | 0 |
 
-`lib_ca09da668c8c891f_0::sprintf` is the first attempt at any of them. The
+`libc_46::sprintf` is the first attempt at any of them. The
 solver converged from 474 to 496 of 539 words in 32 drafts, but its candidates
 carry **both** sections: the compiler's tables in `.rodata` and the original's
 tables in `.rdata`, pulled in by the still-stubbed `_data.c`. Even a perfect
 text match will read MISMATCH, `finalizeWorkspace` will refuse it, and the
 autoloop will park the function as "needs harness repair" (compare the parked
-`lib_b98fea1557178089_0::func_0000031C` in `run_output/autoloop/state.json`).
+`libapi_73::func_0000031C` in `run_output/autoloop/state.json`).
 
 The residual objective makes it worse: its instruction-population site lists
 `lui/addiu %hi/%lo(.rdata@0)` as target-only and `(.rodata@0)` as
@@ -284,7 +291,7 @@ import { configuredTool, configuredFlags } from '../psx-decompilation-harness/to
 import { assemble } from '../psx-decompilation-harness/tools/lib/assembler.ts';
 import { compareRelocatableObjects } from '../psx-decompilation-harness/tools/lib/relocatableObject.ts';
 
-const root = process.cwd(), S = process.argv[2], id = 'lib_ca09da668c8c891f_0';
+const root = process.cwd(), S = process.argv[2], id = 'libc_46';
 const run = (exe: string, args: string[], cwd: string) => { const p = spawnSync(exe, args, { cwd, encoding: 'utf8' }); if (p.status !== 0) throw new Error(p.stderr); };
 inRuntimeContext(createRuntimeContext(root), () => withContentMemo(() => {
   const members = libraryMembers(root);

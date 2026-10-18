@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_4d234b73f22797cb_0", SpuGetReverbVoice);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_36", SpuGetReverbVoice);

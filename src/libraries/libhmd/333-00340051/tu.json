@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ec337420df3fa284_0",
+  "member": "libhmd_333",
   "parts": [
     {
-      "path": "00340051.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsU_00340051"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

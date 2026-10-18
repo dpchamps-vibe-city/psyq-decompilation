@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/48-p36.o[0] 48-p36.o
- * sha256: 12584616ca4cd74f1a25ed86a42f16478569a8defd7390a445d18a053ccce9f3
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[48] P36.OBJ
+ * sha256: cd7cde9d6b52fb4ca0c9c77f21b885c1c597f822a2e0dca05bac16b09dee0bd2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: MargePrim
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/39-exp.o[0] 39-exp.o
- * sha256: f3c9a6f79445330d674992e230d459ed6d6c6e3ac595a778c16d0d96e0008390
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[39] EXP.OBJ
+ * sha256: 711ada776534d53a5488d08c412f316d0b13afc11e70de7072e053e4d69780a9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: exp
  */

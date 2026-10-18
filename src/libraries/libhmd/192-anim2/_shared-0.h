@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/192-anim2.o[0] 192-anim2.o
- * sha256: bfa0e41d878156331ed6efcee63e06373a1e72e4c561b0de9a3c1c9d2e1ce190
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[192] ANIM2.OBJ
+ * sha256: ece4491c70973b6b548a7d039e8ddde0e13f910d015332e7c5e9c56051534575
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetBetaParam
  */

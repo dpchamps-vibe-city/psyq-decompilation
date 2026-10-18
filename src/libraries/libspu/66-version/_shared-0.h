@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/66-version.o[0] 66-version.o
- * sha256: a1c72fc3e55ad978874b0f101bc90c55731b993006b60a86360e647a61e680d3
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[66] VERSION.OBJ
+ * sha256: 7a9268e7b6487255b8a2f25beb3653500bbb8363a1758701b1ec8b3184f83fb5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

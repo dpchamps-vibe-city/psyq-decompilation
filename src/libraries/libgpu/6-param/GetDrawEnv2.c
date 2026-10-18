@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_2fe37dde6fdb35b3_0", GetDrawEnv2);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_6", GetDrawEnv2);

@@ -1,1 +1,6 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_c3818fe9e2f04977_0", __library_member_data);
+INCLUDE_ASM("build/libraries/nonmatchings/libc2_12", __library_member_data);
+
+/* PSX parked attempt: preserved reconstruction from before the provenance switch. */
+#if 0
+INCLUDE_ASM("build/libraries/nonmatchings/libc2_12", __library_member_data);
+#endif

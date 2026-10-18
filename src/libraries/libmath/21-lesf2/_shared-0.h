@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/21-lesf2.o[0] 21-lesf2.o
- * sha256: 596dcfb25ea9731cbbe306f7e6054595c68db8bb4e17cc69d0678fad2d5b4b95
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[21] LESF2.OBJ
+ * sha256: 759fa4e8ffc0bde18bc58d8fcadda642938d76d6d0e9dee8f4f420228ecd7eb9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __lesf2
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/114-s_gcmvx.o[0] 114-s_gcmvx.o
- * sha256: 1444a04c770b4d05591eb62e8d33a4ae048c7139680f1cb1d353b7c850eecd6f
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[114] S_GCMVX.OBJ
+ * sha256: 4797f745f811dc3ebf9341be0d428ae54c778a7c998c0f76ce04f43c27170ad3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetCommonMasterVolumeX
  */

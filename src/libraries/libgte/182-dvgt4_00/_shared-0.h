@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/182-dvgt4_00.o[0] 182-dvgt4_00.o
- * sha256: 86c48eb0d5e29af74927b1244341438377f8691e5f4ad9552dc7198bed836374
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[182] DVGT4_00.OBJ
+ * sha256: c50c1ea3a9d28366db6b0f43ffb82ada11062694a0af90b5f967cd167cf4d331
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsTMDdivTG4L
  */

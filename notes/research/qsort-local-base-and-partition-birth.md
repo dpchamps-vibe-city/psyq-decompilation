@@ -2,14 +2,14 @@
 
 ## Verified result
 
-- Target: `lib_07b11d80dde84c53_0::qsort`, LIBC's `52-qsort.o`.
+- Target: `libc_52::qsort`, LIBC's `52-qsort.o`.
 - Source: `src/libraries/libc/52-qsort/qsort.c`.
 - Owned header: `include/library/52-qsort.h`. It includes the reference
   `qsort.h` and declares the member's private byte-swap helper.
 - `psx_finalize_function` passed exact diff, full configured build, scope and
   clean-source gates on 2026-10-17. Supplied source/evidence identity:
   `06c74028d9e708ea24445834dd0cd4aeb28c97e71f18a8184b960a984f8c2b00`.
-- Whole-member receipt: `build/libraries/verified/lib_07b11d80dde84c53_0.json`,
+- Whole-member receipt: `build/libraries/verified/libc_52.json`,
   `MATCH`, **100/100 words**, no section/symbol/relocation differences.
   Its separate whole-member identity is
   `f37ea2723a1baf7b008ba556c2e238f2eed44ea7f6b103b048e70fac4e6e3698`.
@@ -115,14 +115,14 @@ Scratch artifacts are ignored and may be cleaned; the integrated source above
 preserves the decisive construction.
 
 - Prepared m2c draft and diagnostics:
-  `build/preparation/lib_07b11d80dde84c53_0::qsort/1792265012866-2880284/`.
+  `build/preparation/libc_52::qsort/1792265012866-2880284/`.
 - Original assembly:
-  `build/libraries/nonmatchings/lib_07b11d80dde84c53_0/qsort.s` and
+  `build/libraries/nonmatchings/libc_52/qsort.s` and
   `func_000001B8.s` in the same directory.
 - Earlier best candidate: `build/experiments/qsort/c2.c`.
 - Local-base candidate: `build/experiments/qsort/c7-local-base.c`, measurement
   `measurement-0RxIyk`; its native trace is under
-  `build/compilerTrace/lib_07b11d80dde84c53_0::qsort/`.
+  `build/compilerTrace/libc_52::qsort/`.
 - Partition-after-swap candidate:
   `build/experiments/qsort/c8-partition-after-swap.c`, measurement
   `measurement-eYAht9/v2`.
@@ -130,9 +130,9 @@ preserves the decisive construction.
   `measurement-1hqaWU/v1`.
 - Integrated source: measurement `measurement-XxZ0nF/baseline`.
 - Measurements above are under
-  `build/pipelineReversal/lib_07b11d80dde84c53_0::qsort/objective/`.
+  `build/pipelineReversal/libc_52::qsort/objective/`.
 - Experiment history:
-  `build/experimentLedger/lib_07b11d80dde84c53_0::qsort.jsonl`.
+  `build/experimentLedger/libc_52::qsort.jsonl`.
 
 No new original-TU grouping evidence was established: qsort and its private
 helper already belong to the explicit `52-qsort.o` member. Consequently,

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/36-dscb_4.o[0] 36-dscb_4.o
- * sha256: c760e85e33a3422876088fb5f41f0a119dc47917e7bbf54b3056894333086039
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[36] DSCB_4.OBJ
+ * sha256: a50fa79dee62e871485b0f2054a63661b7b0cc136ab6a57ee26f713400253a38
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsDataCallback
  */

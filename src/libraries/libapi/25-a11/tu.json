@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_b76a114e05da9605_0",
+  "member": "libapi_25",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "TestEvent.c",
-      "symbol": "TestEvent"
+      "path": "backlog.ASM",
+      "symbols": [
+        "TestEvent"
+      ],
+      "backlog": true
     }
   ]
 }

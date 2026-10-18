@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/24-mainasu.o[0] 24-mainasu.o
- * sha256: 4aa325b032581f3998a46ce8bbdd6cf93c43b549b97ed5f2aa99f995aa114aa6
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[24] MAINASU.OBJ
+ * sha256: b47c0b61e35f4893a1ca6eff158adbc8e62462d752bdfbaaff31ac70c3a950e4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _mainasu
  */

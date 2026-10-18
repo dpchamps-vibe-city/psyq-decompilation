@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/59-ssgnc.o[0] 59-ssgnc.o
- * sha256: cb9ec9278b6ebeedf9f80e51a908ef72d7172a236d4ed6b1bb03bbd0de00a838
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[59] SSGNC.OBJ
+ * sha256: a9f6c5f115be51a72ef6dde4d7c74c83484ec3f73ff19591e648f82fa4d8e1a7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsGetNck
  */

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_f539bbdec9bb7fef_0",
+  "member": "libgte_338",
   "parts": [
     {
-      "path": "tmd_8.s",
+      "path": "backlog.ASM",
       "symbols": [
         "gte_texture_gouraud3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

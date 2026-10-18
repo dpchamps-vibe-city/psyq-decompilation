@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_b65fe05d6deb5578_0",
+  "member": "libgte_342",
   "parts": [
     {
-      "path": "tmd_12.s",
+      "path": "backlog.ASM",
       "symbols": [
         "gte_texture_gouraud_fog3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

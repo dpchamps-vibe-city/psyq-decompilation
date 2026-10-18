@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/38-arc03.o[0] 38-arc03.o
- * sha256: ab4d47b38449eb4880ed042572aa71235955ab71e254d87ba119b0ba406dc6b9
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[38] ARC03.OBJ
+ * sha256: b154a3905356fea7467da2b5ee95dccbcc63fe9630eff999d36d8e7bf7d31e93
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: acos
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/54-s_gtm.o[0] 54-s_gtm.o
- * sha256: d7d0d02530430417416f3557bed6bcf473a944f0789de49ada91267dcbf965b4
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[54] S_GTM.OBJ
+ * sha256: d79a7708e0ade45e33e9e38fda49bcf89e8662520dbf8eeb2e69653e799293b2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetTransferMode
  */

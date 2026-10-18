@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/28-strstr.o[0] 28-strstr.o
- * sha256: 14559e9b845aeff755a86ca10741f1a4c663e350066fe03278c740af971e4666
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[28] STRSTR.OBJ
+ * sha256: 3e4574892f7f1ce5d311ea039d8d11e0c6960dfad74277dae97df4d18c6495ba
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strstr
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/44-atoi_0.o[0] 44-atoi_0.o
- * sha256: 533c51e8b26225d273178d91f0b0b1da147ff51e4545afc706456801ae3de100
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[44] ATOI_0.OBJ
+ * sha256: 43bc676c3871c7ea1913349ccaa4de7e2a9f21c6f626b80eb5cba57e35cfc764
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: atoi
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/74-gs_125.o[0] 74-gs_125.o
- * sha256: 96577293a5671d9af68b958925ca731710a5041e62193e375b6f178af94832ed
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[74] GS_125.OBJ
+ * sha256: a9905f8eaf56fe52496d014285e0fb2e3a4f47d994d84efcc5dd0d118082b897
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetWorkBase
  */

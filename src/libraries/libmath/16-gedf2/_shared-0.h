@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/16-gedf2.o[0] 16-gedf2.o
- * sha256: d9c2f1fcc4ba9362cbecebdb4b82f54a784a02f7b137b73fb53c4b2c007ba33a
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[16] GEDF2.OBJ
+ * sha256: a730742667cc72817605dfcb8f323432c6dda777c0d3ea76d56d71c8a1e392e0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __gedf2
  */

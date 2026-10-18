@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_dc61a30b5c1f175a_0",
+  "member": "libgte_314",
   "parts": [
     {
-      "path": "smp_12.s",
+      "path": "backlog.ASM",
       "symbols": [
         "AverageSZ4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

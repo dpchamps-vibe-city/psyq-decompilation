@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/160-daf4mf00.o[0] 160-daf4mf00.o
- * sha256: dc273dc5c1b7d11bc359021710e646a6f92eca9a0c6a1178751ec5b5c280f81f
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[160] DAF4MF00.OBJ
+ * sha256: 9fa6d247a1c56b82b458df2e7d8f38c11bab52ff82368e9ec6371141117229aa
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsTMDfastF4M
  */

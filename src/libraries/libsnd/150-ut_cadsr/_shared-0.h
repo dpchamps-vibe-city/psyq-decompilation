@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/150-ut_cadsr.o[0] 150-ut_cadsr.o
- * sha256: 79104a4aaa9cf5d47e3a953dfee61afd7cc1fbfef5c46f47cea4cd698211a4f4
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[150] UT_CADSR.OBJ
+ * sha256: 54538ad06aef353b3e22986d9cfc319c11ebd2e5fa9685cbe333f8524fe984b6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtChangeADSR
  */

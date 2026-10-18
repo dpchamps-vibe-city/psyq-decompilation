@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/10-mcxcmd11.o[0] 10-mcxcmd11.o
- * sha256: b08fec7adfb6772b491e9c3efa2b61de67a419e0d84d5ef40ae995bb0a6e4d72
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[10] MCXCMD11.OBJ
+ * sha256: d934ba5a379b8cc851a7ab52a526c7fe424d947865778df9c4b158dff9286b9d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McxWriteDev
  */

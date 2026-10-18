@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/2-s_dcb.o[0] 2-s_dcb.o
- * sha256: a313c2ca0a35ec469ed8c92a9409b1343f151eb09912b8b8b0197391cd22b96c
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[2] S_DCB.OBJ
+ * sha256: f0d1766a5b3ea7c3049836400d5a3c5440bbd5824683e6bac6b34a7b2dc9abec
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SpuDataCallback
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libetc/1-padstop.o[0] 1-padstop.o
- * sha256: fa1389f4909a136fc7bcff796428ca9fc9fd94a256d07c500f8132f96492ef59
+/* Original TU: library-input/psyq/LIB/LIBETC.LIB[1] PADSTOP.OBJ
+ * sha256: faef261987810ab3e2b77ca42a3e858ab9691dd3427df4649ba6233c786ba847
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadStop
  */

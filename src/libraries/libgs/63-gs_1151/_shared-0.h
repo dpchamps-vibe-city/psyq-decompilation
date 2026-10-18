@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/63-gs_1151.o[0] 63-gs_1151.o
- * sha256: ed92af0ce114dd3f704b0a7c4034e1de4a136dffb11dffd88820422fb2fb9157
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[63] GS_1151.OBJ
+ * sha256: af58c1b61ac6cf8a6165bd14ff726cc3ba55976aaf4e0846c1b4f58ff1dc8d9a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: gte_apply_matrixl
  */

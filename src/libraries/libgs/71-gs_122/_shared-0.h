@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/71-gs_122.o[0] 71-gs_122.o
- * sha256: 69a304a5de0abac3b9324dcc49372c8fb9c2a81a1362c7c49cbc7642f3d9feb6
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[71] GS_122.OBJ
+ * sha256: bf8b8224859bd5355ebdd7a0fdcd40d6ed57019e81b94b9b33dc81d80b2ecdd6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetTimInfo
  */

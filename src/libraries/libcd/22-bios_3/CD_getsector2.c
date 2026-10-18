@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_ca73b899615f6ff8_0", CD_getsector2);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_22", CD_getsector2);

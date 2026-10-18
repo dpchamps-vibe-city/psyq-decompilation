@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/203-vm_vib.o[0] 203-vm_vib.o
- * sha256: 9d6bb96a4c2928fc3d4388a24f87430cc17b94480ef671fecb00b1eed5bacf3f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[203] VM_VIB.OBJ
+ * sha256: af12e1cb2bcb48812d9f7be08ff7c2ca3258b986aa9fa63da6d88ea28bfc012b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SeVibOn, SetVib, SsUtVibrateOn, SsUtVibrateOff
  */

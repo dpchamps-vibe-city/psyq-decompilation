@@ -1,3 +1,7 @@
+INCLUDE_ASM("build/libraries/nonmatchings/libc2_12", putchar);
+
+/* PSX parked attempt: preserved reconstruction from before the provenance switch. */
+#if 0
 #include "common.h"
 #include <ctype.h>
 
@@ -37,3 +41,4 @@ flush:
         D_000002D4 = 0;
     }
 }
+#endif

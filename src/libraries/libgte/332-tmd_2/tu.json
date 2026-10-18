@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_3f973150da3ddd73_0",
+  "member": "libgte_332",
   "parts": [
     {
-      "path": "tmd_2.s",
+      "path": "backlog.ASM",
       "symbols": [
         "gte_scope_tf3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

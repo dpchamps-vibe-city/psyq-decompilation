@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/192-vm_nois2.o[0] 192-vm_nois2.o
- * sha256: 8e355ae40c145eaa07bf120f639f9d513e39b2b34037935416692ae23ea8f88a
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[192] VM_NOIS2.OBJ
+ * sha256: e8fe269c02d7a6ff42c1083ec971312207315ea03574ffa9accf82d89b6a13b7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmNoiseOff
  */

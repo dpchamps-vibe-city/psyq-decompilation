@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_56a126ce73aa01b7_0",
+  "member": "libgte_30",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadLightMatrix.c",
-      "symbol": "ReadLightMatrix"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadLightMatrix"
+      ],
+      "backlog": true
     }
   ]
 }

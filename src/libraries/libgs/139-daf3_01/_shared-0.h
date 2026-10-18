@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/139-daf3_01.o[0] 139-daf3_01.o
- * sha256: fed3153ac50e02da6c37a374d5fe98fb31ac48048ba7c3d0d3c59060b3c1a833
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[139] DAF3_01.OBJ
+ * sha256: 6900bc6ac1b24b74e11720f4a7c764959e0fd9c0ede0a4acd05d1f42b2fe61a8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsA4divF3LFG
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/7-e00.o[0] 7-e00.o
- * sha256: a1a514d323dd0b9501dc52aa35086a9e3f0162b0cadfac973df4d2a7ce178b53
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[7] E00.OBJ
+ * sha256: ef24b7e6ac8f3e7968c4d9ce3367e9f6feedc705fdd8406a38d454018cf9ccb0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: LoadTPage
  */

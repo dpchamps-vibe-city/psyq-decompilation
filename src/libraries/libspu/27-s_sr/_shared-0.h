@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/27-s_sr.o[0] 27-s_sr.o
- * sha256: ede54bf08b3a30f5c2327a29bfaf2c80b11ec89825e24917842c776c158aed8d
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[27] S_SR.OBJ
+ * sha256: e43d0b5678774e6c59d9fc2ebe6ccefb0dfecaf92b2b3905a74a36d996cfdf87
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetReverb
  */

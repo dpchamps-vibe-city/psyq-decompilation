@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/76-gs_127.o[0] 76-gs_127.o
- * sha256: 8d5491e3056e33d063728d71d9b2185698e43ef5268d1160ef6dcfcbd2546bf9
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[76] GS_127.OBJ
+ * sha256: 2a3909e007f87e7bab3aef2e5a613dcae2c6b2986e289cd666d0dcd79b262e1b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsDefDispBuff2
  */

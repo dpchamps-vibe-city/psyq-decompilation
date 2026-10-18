@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/46-replay.o[0] 46-replay.o
- * sha256: fb381456e9613b6c14b06b7f5ea8e57431e0a8e02d7e16512155fc9cb00dc248
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[46] REPLAY.OBJ
+ * sha256: 09fdb865733d7a309f86c141daa361edca3aff42160885f6703c06e37701b8b6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndReplay
  */

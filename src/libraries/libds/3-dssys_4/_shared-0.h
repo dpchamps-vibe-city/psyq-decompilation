@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/3-dssys_4.o[0] 3-dssys_4.o
- * sha256: 5b270fe3aba5c4bfd900a0f2fb4f550818e0a2ce0ddf043c86c14dc7e48ae7cd
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[3] DSSYS_4.OBJ
+ * sha256: 9434af7e188f611b9a4b1551267dcffee714db90b0ff8d91d02f1b9d0acf67d5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsControlF
  */

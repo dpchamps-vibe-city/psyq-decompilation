@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_862ad5297be86537_0",
+  "member": "libgte_285",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadORGB.c",
-      "symbol": "ReadORGB"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadORGB"
+      ],
+      "backlog": true
     }
   ]
 }

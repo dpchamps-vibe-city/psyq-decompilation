@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/19-gtsf2.o[0] 19-gtsf2.o
- * sha256: fd6c4044d74e47f0eb28dff6d4c22123ca6e82f8a7c5e45ebc5c15f273b97211
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[19] GTSF2.OBJ
+ * sha256: a2a0c0c447fd51cf925755c7633fe4843a124e1592bfd5af3248af6827c64e01
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __gtsf2
  */

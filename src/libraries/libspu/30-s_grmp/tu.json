@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_0bf5d3b926b4d320_0",
+  "member": "libspu_30",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

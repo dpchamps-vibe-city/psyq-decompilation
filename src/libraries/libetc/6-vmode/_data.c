@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_033d4f3f087a4c4b_0", __library_member_data);
+INCLUDE_ASM("build/libraries/nonmatchings/libetc_6", __library_member_data);

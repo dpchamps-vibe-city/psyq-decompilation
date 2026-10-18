@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/182-vm_f.o[0] 182-vm_f.o
- * sha256: 926531d1c1afbd7969ae57201da07529d11435fc1d1f37715f8710054f42a79c
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[182] VM_F.OBJ
+ * sha256: a43ef1084d1f1ada5e2b2b61127f1722136140f7425ec186eceb59ba2ffc7835
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmFlush
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/216-vs_vtc.o[0] 216-vs_vtc.o
- * sha256: f3a35eda89fcd84a75ecd74840e818664b1a428fec50c954fa2e5f2210515ccd
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[216] VS_VTC.OBJ
+ * sha256: 36a7ef6ed3757cbfc7747714a8b2ab1470717bdb8be09239e5c1046297fb7fa4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsVabTransCompleted
  */

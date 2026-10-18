@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/3-spu_gex.o[0] 3-spu_gex.o
- * sha256: a806767797576872757588e87c06428edf0c16976e592e7a7e3d112d916fcc08
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[3] SPU_GEX.OBJ
+ * sha256: c0ff983a58f3b68cb3c6667c708b77f5bd6cc44f80f940a06881a632058a5849
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

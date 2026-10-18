@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcrd/5-delete.o[0] 5-delete.o
- * sha256: cf0ce7b794634217627bd190ef1b8b2434fb118d50c373131b2bd0134a4d9701
+/* Original TU: library-input/psyq/LIB/LIBMCRD.LIB[5] DELETE.OBJ
+ * sha256: d9b39ee0565e3fa59dbf97f88df299c096d3d5bcdc543d56c11c50a93f67ac5f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: MemCardDeleteFile
  */

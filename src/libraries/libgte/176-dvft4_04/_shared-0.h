@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/176-dvft4_04.o[0] 176-dvft4_04.o
- * sha256: e8365cdf21b9537783e8e32edfb4d4691280a6e1339bb4beea0aa68fb97504c9
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[176] DVFT4_04.OBJ
+ * sha256: 9fd100073b8a4240538890714ac262b2bcbe0e74df7431ed70e3062543933ce8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DivideFT4
  */

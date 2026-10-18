@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_c2195a897f602305_0",
+  "member": "libgte_297",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetSXSYfifo.c",
-      "symbol": "SetSXSYfifo"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetSXSYfifo"
+      ],
+      "backlog": true
     }
   ]
 }

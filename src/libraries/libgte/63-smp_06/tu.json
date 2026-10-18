@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_fbcc9a663362b33c_0",
+  "member": "libgte_63",
   "parts": [
     {
-      "path": "smp_06.s",
+      "path": "backlog.ASM",
       "symbols": [
         "NormalClipS"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

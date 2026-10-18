@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/103-ssvol_2.o[0] 103-ssvol_2.o
- * sha256: 5ba3b0155bf5a71e2590d19f11c929c828fff0ce6e6c16b47cbb5a4b89842486
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[103] SSVOL_2.OBJ
+ * sha256: 39ec0dfabd6eadb0e2c7a543dd1f7beef9efcda256aff378ca79ccab01ad045e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSeqGetVol
  */

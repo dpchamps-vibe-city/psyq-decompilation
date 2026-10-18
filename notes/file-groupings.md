@@ -9,25 +9,25 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 ## LIBAPI.LIB — C57.OBJ (ordinal 0)
 
 - Reconstructed source: `src/libraries/libapi/0-c57/InitHeap.c`
-- Target member: `lib_6f830259724bafe6_0`
+- Target member: `libapi_0`
 - Members:
   - `InitHeap` — BIOS heap-initialization binding; the allocator implementation is in ROM, not this object.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/0-c57`, identifies `LIBAPI.LIB` / `C57.OBJ`, ordinal 0. The selected converted object, `library-input/redux/libapi/0-c57.o`, contains only `InitHeap`; see `build/libraries/disassembly/lib_6f830259724bafe6_0/member.s`.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/0-c57`, identifies `LIBAPI.LIB` / `C57.OBJ`, ordinal 0. The selected converted object, `library-input/redux/libapi/0-c57.o`, contains only `InitHeap`; see `build/libraries/disassembly/libapi_0/member.s`.
 - Verification: `build/finalization/InitHeap.json` records exact function and whole-member MATCH, passing scope/source-policy gates, and published context. Converted target SHA-256: `75de3c620e849a420e64f9a62a0806f94bfb7d6956753d8bb430ee526406949a`.
 
 ## LIBAPI.LIB — C82.OBJ (ordinal 8)
 
 - Reconstructed source: `src/libraries/libapi/8-c82/GetSysSp.c`
-- Target member: `lib_26566e189ff22fa5_0`
+- Target member: `libapi_8`
 - Members:
   - `GetSysSp` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Another member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) / `DeliverEvent` (A07) / `OpenEvent` (A08) / `CloseEvent` (A09) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/8-c82`, identifies `LIBAPI.LIB` / `C82.OBJ`, ordinal 8 (`ambiguousNamedBaseline: false`). `src/libraries/libapi/8-c82/_shared-0.h` records one original member, one TU, functions: `GetSysSp`, and object sha256 `ca2bc90fa6bcc883d32404163a393bf39404d6b9565bc5c7620ceafec5c8aaac`; baseline `library-input/converted/lib/libapi/c82.o` is unambiguously named. `build/libraries/disassembly/lib_26566e189ff22fa5_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x52`), consistent with a binding-only TU and matching the stub's `(0xa0, 0x52)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/8-c82`, identifies `LIBAPI.LIB` / `C82.OBJ`, ordinal 8 (`ambiguousNamedBaseline: false`). `src/libraries/libapi/8-c82/_shared-0.h` records one original member, one TU, functions: `GetSysSp`, and object sha256 `ca2bc90fa6bcc883d32404163a393bf39404d6b9565bc5c7620ceafec5c8aaac`; baseline `library-input/converted/lib/libapi/c82.o` is unambiguously named. `build/libraries/disassembly/libapi_8/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x52`), consistent with a binding-only TU and matching the stub's `(0xa0, 0x52)` arguments.
 - Verification: passed (agent origin, verified identity `dd9141d59aaadcf1c639e6ad90cd2e2ed0bac4c2dfdb09fd01dbd225d9c8c4ed`); full finalize gate passed.
 
 ## LIBAPI.LIB — C113.OBJ (ordinal 10)
 
 - Reconstructed source: `src/libraries/libapi/10-c113/_96_init.c`
-- Target member: `lib_9892ffc60cdee207_0`
+- Target member: `libapi_10`
 - Members:
   - `_96_init` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Mirrors the `InitHeap` (C57) pattern of a library member that is a binding rather than an implementation.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/10-c113`, identifies `LIBAPI.LIB` / `C113.OBJ`, ordinal 10. `src/libraries/libapi/10-c113/_shared-0.h` records one original member, one TU, functions: `_96_init`; baseline `library-input/converted/lib/libapi/c113.o` is unambiguously named.
@@ -36,69 +36,69 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 ## LIBAPI.LIB — C157.OBJ (ordinal 12)
 
 - Reconstructed source: `src/libraries/libapi/12-c157/GetConf.c`
-- Target member: `lib_8e5deca6a8677a9b_0`
+- Target member: `libapi_12`
 - Members:
   - `GetConf` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Third member of the `InitHeap` (C57) / `_96_init` (C113) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/12-c157`, identifies `LIBAPI.LIB` / `C157.OBJ`, ordinal 12. `src/libraries/libapi/12-c157/_shared-0.h` records one original member, one TU, functions: `GetConf`; baseline `library-input/converted/lib/libapi/c157.o` is unambiguously named. `build/libraries/disassembly/lib_8e5deca6a8677a9b_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x9D`), consistent with a binding-only TU.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/12-c157`, identifies `LIBAPI.LIB` / `C157.OBJ`, ordinal 12. `src/libraries/libapi/12-c157/_shared-0.h` records one original member, one TU, functions: `GetConf`; baseline `library-input/converted/lib/libapi/c157.o` is unambiguously named. `build/libraries/disassembly/libapi_12/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x9D`), consistent with a binding-only TU.
 - Verification: passed (agent origin, verified identity `123bf07d18fdeb186d5ff089a85d6bfac37863412948bbe1b0af985125d4e479`); completion recorded in `run_output/autoloop/state.json`.
 
 ## LIBAPI.LIB — C159.OBJ (ordinal 13)
 
 - Reconstructed source: `src/libraries/libapi/13-c159/SetMem.c`
-- Target member: `lib_82945d725a26a936_0`
+- Target member: `libapi_13`
 - Members:
   - `SetMem` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Fourth member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/13-c159`, identifies `LIBAPI.LIB` / `C159.OBJ`, ordinal 13. `src/libraries/libapi/13-c159/_shared-0.h` records one original member, one TU, functions: `SetMem`; baseline `library-input/converted/lib/libapi/c159.o` is unambiguously named. `build/libraries/disassembly/lib_82945d725a26a936_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x9F`), consistent with a binding-only TU and matching the stub's `(0xa0, 0x9f)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/13-c159`, identifies `LIBAPI.LIB` / `C159.OBJ`, ordinal 13. `src/libraries/libapi/13-c159/_shared-0.h` records one original member, one TU, functions: `SetMem`; baseline `library-input/converted/lib/libapi/c159.o` is unambiguously named. `build/libraries/disassembly/libapi_13/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x9F`), consistent with a binding-only TU and matching the stub's `(0xa0, 0x9f)` arguments.
 - Verification: passed (agent origin, verified identity `b398b9a5e873942db3adf0771e8b876eb4840ba59ec7f3ab5b18a9c31939569b`); completion recorded in `run_output/autoloop/state.json`.
 
 ## LIBAPI.LIB — C160.OBJ (ordinal 14)
 
 - Reconstructed source: `src/libraries/libapi/14-c160/_boot.c`
-- Target member: `lib_bdf210249fec3f5f_0`
+- Target member: `libapi_14`
 - Members:
   - `_boot` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Fifth member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/14-c160`, identifies `LIBAPI.LIB` / `C160.OBJ`, ordinal 14. `src/libraries/libapi/14-c160/_shared-0.h` records one original member, one TU, functions: `_boot`; baseline `library-input/converted/lib/libapi/c160.o` is unambiguously named. `build/libraries/disassembly/lib_bdf210249fec3f5f_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0xA0`), consistent with a binding-only TU and matching the stub's `(0xa0, 0xa0)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/14-c160`, identifies `LIBAPI.LIB` / `C160.OBJ`, ordinal 14. `src/libraries/libapi/14-c160/_shared-0.h` records one original member, one TU, functions: `_boot`; baseline `library-input/converted/lib/libapi/c160.o` is unambiguously named. `build/libraries/disassembly/libapi_14/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0xA0`), consistent with a binding-only TU and matching the stub's `(0xa0, 0xa0)` arguments.
 - Verification: passed (agent origin, verified identity `bbcff67ec3bd705749fe61faeb869ba767d8cb60f1355257fc7453901553f908`); completion recorded in `run_output/autoloop/state.json`.
 
 ## LIBAPI.LIB — C161.OBJ (ordinal 15)
 
 - Reconstructed source: `src/libraries/libapi/15-c161/SystemError.c`
-- Target member: `lib_bbb00513fa69c2d0_0`
+- Target member: `libapi_15`
 - Members:
   - `SystemError` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Sixth member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/15-c161`, identifies `LIBAPI.LIB` / `C161.OBJ`, ordinal 15. `src/libraries/libapi/15-c161/_shared-0.h` records one original member, one TU, functions: `SystemError`; baseline `library-input/converted/lib/libapi/c161.o` is unambiguously named. `build/libraries/disassembly/lib_bbb00513fa69c2d0_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0xA1`), consistent with a binding-only TU and matching the stub's `(0xa0, 0xa1)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/15-c161`, identifies `LIBAPI.LIB` / `C161.OBJ`, ordinal 15. `src/libraries/libapi/15-c161/_shared-0.h` records one original member, one TU, functions: `SystemError`; baseline `library-input/converted/lib/libapi/c161.o` is unambiguously named. `build/libraries/disassembly/libapi_15/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0xA1`), consistent with a binding-only TU and matching the stub's `(0xa0, 0xa1)` arguments.
 - Verification: passed (agent origin, verified identity `fedfc64925281aadf539324a35bc2d9f7d2c85c43160f26b80543325c5224409`); completion recorded in `run_output/autoloop/state.json`.
 
 ## LIBAPI.LIB — A07.OBJ (ordinal 21)
 
 - Reconstructed source: `src/libraries/libapi/21-a07/DeliverEvent.c`
-- Target member: `lib_bea0b1ac53b09b9f_0`
+- Target member: `libapi_21`
 - Members:
   - `DeliverEvent` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Seventh member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/21-a07`, identifies `LIBAPI.LIB` / `A07.OBJ`, ordinal 21. `src/libraries/libapi/21-a07/_shared-0.h` records one original member, one TU, functions: `DeliverEvent`; baseline `library-input/converted/lib/libapi/a07.o` is unambiguously named. `build/libraries/disassembly/lib_bea0b1ac53b09b9f_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x7`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x7)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/21-a07`, identifies `LIBAPI.LIB` / `A07.OBJ`, ordinal 21. `src/libraries/libapi/21-a07/_shared-0.h` records one original member, one TU, functions: `DeliverEvent`; baseline `library-input/converted/lib/libapi/a07.o` is unambiguously named. `build/libraries/disassembly/libapi_21/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x7`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x7)` arguments.
 - Verification: passed (agent origin, verified identity `0c54693c349f0c7898f0c6e3b48d02726230017aa989d24353252a01463b9f79`); completion recorded in `run_output/autoloop/state.json`.
 
 ## LIBAPI.LIB — A08.OBJ (ordinal 22)
 
 - Reconstructed source: `src/libraries/libapi/22-a08/OpenEvent.c`
-- Target member: `lib_86954338232a7c1b_0`
+- Target member: `libapi_22`
 - Members:
   - `OpenEvent` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Eighth member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) / `DeliverEvent` (A07) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/22-a08`, identifies `LIBAPI.LIB` / `A08.OBJ`, ordinal 22. `src/libraries/libapi/22-a08/_shared-0.h` records one original member, one TU, functions: `OpenEvent`; baseline `library-input/converted/lib/libapi/a08.o` is unambiguously named. `build/libraries/disassembly/lib_86954338232a7c1b_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x8`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x8)` arguments.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/22-a08`, identifies `LIBAPI.LIB` / `A08.OBJ`, ordinal 22. `src/libraries/libapi/22-a08/_shared-0.h` records one original member, one TU, functions: `OpenEvent`; baseline `library-input/converted/lib/libapi/a08.o` is unambiguously named. `build/libraries/disassembly/libapi_22/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x8`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x8)` arguments.
 - Verification: passed (agent origin, verified identity `fbf9ac3ee507c1c61a2c6cb25a77d924d11b7174d116f45e9e988df9012a33bd`); full finalize gate passed.
 
 ## LIBAPI.LIB — A09.OBJ (ordinal 23)
 
 - Reconstructed source: `src/libraries/libapi/23-a09/CloseEvent.c`
-- Target member: `lib_941bb7f9e78a6638_0`
+- Target member: `libapi_23`
 - Members:
   - `CloseEvent` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_FUNCTION` stub); the real implementation lives in ROM, not this object. Ninth member of the `InitHeap` (C57) / `_96_init` (C113) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) / `DeliverEvent` (A07) / `OpenEvent` (A08) pattern of a library member that is a binding rather than an implementation.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/23-a09`, identifies `LIBAPI.LIB` / `A09.OBJ`, ordinal 23. `src/libraries/libapi/23-a09/_shared-0.h` records one original member, one TU, functions: `CloseEvent`; baseline `library-input/converted/lib/libapi/a09.o` is unambiguously named. `build/libraries/disassembly/lib_941bb7f9e78a6638_0/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x9`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x9)` arguments. Shares the `0xB0` BIOS entry table page and contiguous link-order ordinals (A07/A08/A09 = 21/22/23) with `DeliverEvent` and `OpenEvent` — the three form the event-handler binding cluster in the library's original member order.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/23-a09`, identifies `LIBAPI.LIB` / `A09.OBJ`, ordinal 23. `src/libraries/libapi/23-a09/_shared-0.h` records one original member, one TU, functions: `CloseEvent`; baseline `library-input/converted/lib/libapi/a09.o` is unambiguously named. `build/libraries/disassembly/libapi_23/member.s` shows a three-instruction BIOS tail transfer (excluding padding) (`addiu $t2,0,0xB0; jr $t2; addiu $t1,0,0x9`), consistent with a binding-only TU and matching the stub's `(0xb0, 0x9)` arguments. Shares the `0xB0` BIOS entry table page and contiguous link-order ordinals (A07/A08/A09 = 21/22/23) with `DeliverEvent` and `OpenEvent` — the three form the event-handler binding cluster in the library's original member order.
 - Verification: passed (agent origin, verified identity `02318a37423b1b2a98fa33df5bd34a238041d8ac76666a2befed7ab347fef32b`); full finalize gate passed.
 
 ## LIBAPI.LIB — COUNTER.OBJ (ordinal 72)
 
-- TU directory: `src/libraries/libapi/72-counter/`; target `lib_f5b70e00e12530c5_0`.
+- TU directory: `src/libraries/libapi/72-counter/`; target `libapi_72`.
 - Original functions: `SetRCnt`, `GetRCnt`, `StartRCnt`, `StopRCnt`, `ResetRCnt`.
 - Recovered: `GetRCnt` — reads the `count` field of the root-counter record selected by the low argument half-word, returning 0 for counter indices 3 and above. `StartRCnt` — ORs the per-counter enable bit from `D_000001E8` into the enable register at `D_000001E0`, returning whether the index is below 3. `SetRCnt` — writes the selected root-counter record's `mode` and `target` fields (via the shared `D_000001E4` struct) from the value and flags arguments, returning 0 for counter indices 3 and above.
 - Remaining functions (`StopRCnt`, `ResetRCnt`) and the shared member data remain original assembly backlog.
@@ -108,7 +108,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — SC2B.OBJ (ordinal 73)
 
-- TU directory: `src/libraries/libapi/73-sc2b/`; target `lib_b98fea1557178089_0`.
+- TU directory: `src/libraries/libapi/73-sc2b/`; target `libapi_73`.
 - Original function: `SetConf` (the only named function); same-object neighbors `func_00000290`, `func_000002AC`, `func_000002C8`, `func_000002E4`, `func_00000300`, `func_0000031C`, `func_00000350`, `func_0000036C` remain assembly backlog.
 - Recovered: `SetConf` — initializes the member's root configuration record `D_000003A0` and its header/index/sub-tables, returning 1 on success.
 - Same-file evidence: the verified body reads and writes the member's own root record `D_000003A0` (offset 0x3A0, the SC2B `.data` cluster declared in `_shared-0.h` and stored in `_data.c`), tying the recovered body to this member rather than to another LIBAPI object.
@@ -117,7 +117,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — PATCH.OBJ (ordinal 74)
 
-- TU directory: `src/libraries/libapi/74-patch/`; target `lib_4031394e3bdde1bc_0`.
+- TU directory: `src/libraries/libapi/74-patch/`; target `libapi_74`.
 - Original functions: `_patch_pad`, `EnablePAD`, `DisablePAD`.
 - Recovered: `EnablePAD` — BIOS tail-jump binding that loads the member's `B_00000118` vector and transfers to it; the real PAD-enable implementation lives in ROM, not this object.
 - `DisablePAD` (loads the sibling `B_0000011C` vector) and `_patch_pad` remain assembly backlog.
@@ -127,7 +127,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — FIRST.OBJ (ordinal 75)
 
-- TU directory: `src/libraries/libapi/75-first/`; target `lib_c5a3d475e9914347_0`.
+- TU directory: `src/libraries/libapi/75-first/`; target `libapi_75`.
 - Original functions: `firstfile` (exported) plus the unexported file-static companion `func_0000020C` (formerly reconstructed as `firstfile_hook`); the companion's entry is witnessed by the member's section-relative callback-address relocation and now owns its own `.c` part.
 - Recovered: `firstfile` — copies the device name into the member's `B_00000318` buffer, scans the BIOS device table for a matching `dt_string`, saves the current `dt_firstfile` in `B_00000310`, installs the companion hook as the new directory-search routine, then delegates to `firstfile2`.
 - Same-file evidence: `firstfile` and the companion share the member's `.bss` cluster (`B_00000310` saved routine pointer, `B_00000318` device-name buffer, both declared in `_shared-0.h`); the companion at `.text` offset 0x19C (listing coordinate 0x20C) is contiguous with `firstfile` and carries no original symbol, marking it as a file-static helper of the same object rather than a separate member.
@@ -137,16 +137,16 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — PAD.OBJ (ordinal 76)
 
-- TU directory: `src/libraries/libapi/76-pad/`; target `lib_a8f7345a144556eb_0`.
+- TU directory: `src/libraries/libapi/76-pad/`; target `libapi_76`.
 - Original functions: `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`, plus private entries `func_000001DC`, `func_00000254` and `func_000002BC`.
 - Recovered: `SetInitPadFlag` (writes the flag) and `ReadInitPadFlag` (reads it); `PAD_init` and `InitPAD` — twin buffer-initialization wrappers that remove the BIOS clear-pad hook, patch PAD under a critical section, invoke the member-local `func_000001DC`, delegate to a separate `*_init2` binding, and set the flag. `StartPAD` delegates startup and enables PAD.
 - Remaining code: initializer `func_000001DC` and its two address-taken callbacks `func_00000254`/`func_000002BC`, installed into `_apiPadPatch+4`/`+8`; each now has a separate source part. These and member data remain original assembly backlog.
 - Same-file evidence: `InitPAD` and `PAD_init` are instruction-for-instruction twins within one member, and both write the member's own `D_00000300` flag that `SetInitPadFlag`/`ReadInitPadFlag` also touch; both also call the member-local unexported helper `func_000001DC`, tying the recovered bodies to this object. Their delegated callees `InitPAD2` (`A18.OBJ`, ordinal 31) and `PAD_init2` (`A21.OBJ`, ordinal 34) are distinct single-function binding members and are not merged here.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member passes whole-member verification after the private-entry split (`build/libraries/verified/lib_a8f7345a144556eb_0.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
+- Membership evidence: `library-input/redux/original-members.json`, entry `libapi/76-pad`, and the ordered `tu.json`. The member passes whole-member verification after the private-entry split (`build/libraries/verified/libapi_76.json`, completed functions `SetInitPadFlag`, `ReadInitPadFlag`, `PAD_init`, `InitPAD`, `StartPAD`); `InitPAD` passed the full finalize gate (agent origin, verified identity `dd2c1cfa2ec454e33de7d03507abaf70317050bafb0bb6ac75d620dfdfd80701`).
 
 ## LIBAPI.LIB — PADSTOP.OBJ (ordinal 77)
 
-- TU directory: `src/libraries/libapi/77-padstop/`; target `lib_f624c0ca5d778f32_0`.
+- TU directory: `src/libraries/libapi/77-padstop/`; target `libapi_77`.
 - Original functions: `StopPAD` plus the unexported file-static companion `func_000000A0`; separate from `PAD.OBJ` (ordinal 76).
 - Recovered: `StopPAD` — disables PAD, runs the second stop routine, invokes the companion, then clears the init flag. `func_000000A0` — enters a critical section, dequeues the interrupt-routine queue headed by the common `_apiPadPatch` at priority 1, exits, and returns 1.
 - Same-file evidence: `func_000000A0` is an unnamed static at `.text` offset 0xA0, contiguous with `StopPAD` (offset 0x68) and called only from it, marking it as a file-static helper of this object rather than a separate member.
@@ -156,7 +156,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — MALLOC2.OBJ (ordinal 79)
 
-- TU directory: `src/libraries/libapi/79-malloc2/`; target `lib_5225df047a945df0_0`.
+- TU directory: `src/libraries/libapi/79-malloc2/`; target `libapi_79`.
 - Original function: `malloc2` plus the unnamed file-static companion `func_00000220` (a separate `.c` part, still assembly backlog).
 - Recovered: `malloc2` — first-fit allocator over the heap block list reached from `_Candidate`/`_TopAllocArea`; splits or advances through blocks and calls the companion when it reaches the `-2` terminator.
 - Same-file evidence: `malloc2` calls the unnamed local routine at `.text` offset 0x220, contiguous with `malloc2` (0x68–0x220) and not exported in the object, marking it as a file-static helper of this same TU rather than a separate member. The verified `malloc2.o` carries no `.data`/`.bss`: every heap-state global the body touches is undefined (extern), so this object owns no allocator state.
@@ -166,7 +166,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — FREE2.OBJ (ordinal 80)
 
-- TU directory: `src/libraries/libapi/80-free2/`; target `lib_9ae1aae5ce990b26_0`.
+- TU directory: `src/libraries/libapi/80-free2/`; target `libapi_80`.
 - Original function: `free2`.
 - Recovered: `free2` — sets the allocated-block header immediately before the supplied pointer to free, then lowers the first-fit `_Candidate` hint when the freed block precedes it.
 - Same-file evidence: the verified `free2.o` carries only `.text` and leaves `_Candidate` undefined (extern), so this single-function object owns no allocator state of its own — the same no-state pattern as `MALLOC2.OBJ` (ordinal 79).
@@ -176,7 +176,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — REALLOC2.OBJ (ordinal 81)
 
-- TU directory: `src/libraries/libapi/81-realloc2/`; target `lib_51928ac182d7ab42_0`.
+- TU directory: `src/libraries/libapi/81-realloc2/`; target `libapi_81`.
 - Original functions: `realloc2` plus the unnamed file-static companions `func_000000F8` (in-place resize/split) and `func_00000280` (byte copy); all three are recovered.
 - Recovered: `realloc2` — on a null pointer allocates via `malloc2`; otherwise resizes in place through `func_000000F8`, falling back to `malloc2` + `func_00000280` copy + `free2` when that fails; frees the block on a zero size. `func_000000F8` — coalesces following free blocks or extends the end block, splits excess space, and returns the original pointer or null. `func_00000280` — forward byte copy of `arg2` bytes from `arg0` to `arg1`, returning `arg0` (or null when `arg0` is null); the copy is skipped when `arg2` is zero.
 - Same-file evidence: the verified object exports only `realloc2` (`T`); `func_000000F8` (0xF8–0x280) and `func_00000280` (0x280–0x2B4) are local labels (`t`) contiguous with `realloc2` (0x68–0xF8), marking them as file-static helpers of this object rather than separate members.
@@ -186,7 +186,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — CALLOC2.OBJ (ordinal 82)
 
-- TU directory: `src/libraries/libapi/82-calloc2/`; target `lib_dd5293adbfd08d1d_0`.
+- TU directory: `src/libraries/libapi/82-calloc2/`; target `libapi_82`.
 - Original function: `calloc2` plus the unnamed file-static companion `func_000000BC` (a separate `.c` part, now recovered).
 - Recovered: `calloc2` — multiplies the two size arguments, allocates through `malloc2`, then zero-fills the result through the local helper, returning null when the allocation fails. `func_000000BC` — zero-fills `arg1` bytes at `arg0`, returning `arg0`, or null when `arg0` is null or `arg1` is zero.
 - Same-file evidence: `calloc2` calls the unnamed local routine at `.text` offset 0xBC, contiguous with `calloc2` (0x68–0xBC) and not exported in the object, marking it as a file-static helper of this same TU rather than a separate member. The verified `calloc2.o` carries only `.text` and leaves `malloc2` undefined (extern), so this object owns no allocator state — the same no-state pattern as `MALLOC2.OBJ` (79), `FREE2.OBJ` (80) and `REALLOC2.OBJ` (81).
@@ -196,7 +196,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — I_HEAP3.OBJ (ordinal 84)
 
-- TU directory: `src/libraries/libapi/84-i_heap3/`; target `lib_2405c148f7fb0718_0`.
+- TU directory: `src/libraries/libapi/84-i_heap3/`; target `libapi_84`.
 - Original function: `InitHeap3` (the object's unnamed `.data` remains original assembly backlog).
 - Recovered: `InitHeap3` — aligns the requested heap size down to a multiple of 8, writes the tail block header pointing back at `head`, zeroes the block's next/size fields, stores the free-list pointer into the head block, publishes the free-list head to `_freep`, and records the block count in `head[1]`.
 - Same-file evidence: `_freep` is *defined* in this object's own `.data` (`objdump -t library-input/redux/libapi/84-i_heap3.o`: `.data` 0x10 bytes, `_freep` at offset 0), and the verified body's `sw $a0, %lo(_freep)($at)` is the object's only `.data__base` relocation, tying the recovered body to this member rather than to another LIBAPI object.
@@ -206,7 +206,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — REALLOC3.OBJ (ordinal 87)
 
-- TU directory: `src/libraries/libapi/87-realloc3/`; target `lib_dacb6c202432cdbd_0`.
+- TU directory: `src/libraries/libapi/87-realloc3/`; target `libapi_87`.
 - Original functions: `realloc3` plus the unnamed file-static companions `func_0000014C` (free-list rollback) and `func_000001A0` (byte copy); `func_0000014C` is recovered, the other two remain assembly backlog.
 - Recovered: `func_0000014C` — restores `_freep` and the two saved block headers from the `_r_p`/`_r_bp`/`_r_freep` snapshot slots, undoing `free3`'s free-list edit when the reallocation cannot grow in place.
 - Same-file evidence: `realloc3` calls the unnamed local routine at `.text` offset 0x14C (its only caller, at `realloc3+0x8C`), and `func_000001A0` is contiguous at 0x1A0; the original `87-realloc3.o` exports only `realloc3` (`T`) and its object carries only `.text` with every free-list symbol undefined (extern), marking both as file-static helpers of this same TU. `func_0000014C.c` includes the shared `include/library/86-free3.h` for the `Block`/`BlockReg` layouts and the extern snapshots; sharing that header does not merge the two members.
@@ -216,187 +216,187 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBAPI.LIB — CALLOC3.OBJ (ordinal 88)
 
-- TU directory: `src/libraries/libapi/88-calloc3/`; target `lib_c2748a458169d9ec_0`.
+- TU directory: `src/libraries/libapi/88-calloc3/`; target `libapi_88`.
 - Original functions: `calloc3` plus the unnamed file-static companion at `.text` 0xBC, recovered as `func_000000BC` (a separate `.c` part).
 - Recovered: `calloc3` — multiplies the two size arguments, allocates through `malloc3`, then zero-fills the result through the local helper, returning null when the allocation fails. `func_000000BC` — the zero-fill helper: a byte pointer walked from the block start to start plus length, storing zero, guarded against an empty range. It is `static`, since the original exports no symbol for it; a global definition reproduces the same 32 words but fails the whole-member symbol population.
 - Same-file evidence: `calloc3` calls the unnamed local routine at `.text` offset 0xBC, contiguous with `calloc3` (0x68–0xBC); the original `88-calloc3.o` symbol table exports only `calloc3` (`T`) and carries no symbol for the 0xBC routine, marking it as a file-static helper of this same TU rather than a separate member. The verified `calloc3.o` carries only `.text` and leaves `malloc3` undefined (extern), so this object owns no allocator state — the same no-state pattern as its heap2 counterparts `MALLOC2.OBJ` (79), `FREE2.OBJ` (80), `REALLOC2.OBJ` (81) and `CALLOC2.OBJ` (82).
 - Link adjacency: `calloc3` calls `malloc3`, defined in the neighboring `MALLOC3.OBJ` (ordinal 85); the heap3 allocator call direction (initialize → allocate → free → realloc → calloc) and contiguous link order (84 → 85 → 86 → 87 → 88) agree. The shared extern does not merge these members, which remain distinct TUs.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/88-calloc3` (`CALLOC3.OBJ`, ordinal 88, `ambiguousNamedBaseline: false`), object sha256 `189cdf8cdeba5fddea38a01a6232c8295607d25d92e2ef4239a12b19b3483828`, and the ordered `tu.json`.
-- Verification: `calloc3` passed the full finalize gate (agent origin, verified identity `878b8a35c906d910939bc3bd7877dc89725cedfbcfb862260e86b478dc6d34c4`); `func_000000BC` verified 2026-10-17 under the trunk-19970318 compiler with both parts compiled from C; whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_c2748a458169d9ec_0.json`.
+- Verification: `calloc3` passed the full finalize gate (agent origin, verified identity `878b8a35c906d910939bc3bd7877dc89725cedfbcfb862260e86b478dc6d34c4`); `func_000000BC` verified 2026-10-17 under the trunk-19970318 compiler with both parts compiled from C; whole-member `MATCH` (32/32 words) in `build/libraries/verified/libapi_88.json`.
 
 ## LIBC.LIB — C51.OBJ (ordinal 39)
 
-- TU directory: `src/libraries/libc/39-c51/`; target `lib_20f6929cc5610bf6_0`.
+- TU directory: `src/libraries/libc/39-c51/`; target `libc_39`.
 - Members:
   - `malloc` — BIOS tail-jump binding (reconstructed as a `PSX_BIOS_TAILJUMP` stub) to BIOS entry-table page `0xA0`, function index `0x33`; the allocator implementation lives in ROM, not this object.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/39-c51` (`C51.OBJ`, ordinal 39, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline `library-input/converted/lib/libc/c51.o` has only `.text` (0x10 bytes) and `.note` — no `.data`/`.bss` — and its symbol table exports only `malloc` (`T`), so the object owns no allocator state and has no second function or file-static helper.
-- Same-file evidence: `build/libraries/disassembly/lib_20f6929cc5610bf6_0/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x33; nop`) with no reference to any local symbol, consistent with a binding-only single-member TU.
+- Same-file evidence: `build/libraries/disassembly/libc_39/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x33; nop`) with no reference to any local symbol, consistent with a binding-only single-member TU.
 - Cluster evidence (BIOS index = hex of the C-object number): the same four-word `0xA0` template with `$t1` equal to the object's own `Cnn` value in hex is shared by the neighboring LIBC.LIB members `C47` `rand` (0x2F), `C48` `srand` (0x30), `C52` `free` (0x34), `C53` `lsearch` (0x35), `C55` `calloc` (0x37) and `C56` `realloc` (0x38); each is a separate one-function archive member at its own ordinal (37–44), so the shared binding idiom confirms a LIBC.LIB memory/string BIOS-binding cluster in link order but does **not** merge those objects into one TU. This also corroborates the existing LIBC2 `RAND.OBJ` entry's note that the C47/C48 bindings are distinct TUs from LIBC2's `rand`/`srand` implementations.
 - Cross-library: the `0xA0` page is likewise the one used by the LIBAPI.LIB `InitHeap` (C57) / `GetSysSp` (C82) / `GetConf` (C157) / `SetMem` (C159) / `_boot` (C160) / `SystemError` (C161) binding cluster; a shared BIOS entry page across archives is not TU membership.
-- Verification: `malloc` passed the full finalize gate (agent origin, verified identity `30911083e5c9ffd8c5d424fee15ad1d28d35e3e5eeb2afa26b07d8db45a15a5c`); whole-member `MATCH` (4/4 words) in `build/libraries/verified/lib_20f6929cc5610bf6_0.json` against original hash `e497abe80fa0066895c7b3c94939474328da44614ce2bee7f416d48a81b7bc50`.
+- Verification: `malloc` passed the full finalize gate (agent origin, verified identity `30911083e5c9ffd8c5d424fee15ad1d28d35e3e5eeb2afa26b07d8db45a15a5c`); whole-member `MATCH` (4/4 words) in `build/libraries/verified/libc_39.json` against original hash `e497abe80fa0066895c7b3c94939474328da44614ce2bee7f416d48a81b7bc50`.
 
 ## LIBC.LIB — C56.OBJ (ordinal 43)
 
-- TU directory: `src/libraries/libc/43-c56/`; target `lib_1541083c1d7b8934_0`.
+- TU directory: `src/libraries/libc/43-c56/`; target `libc_43`.
 - Members:
   - `realloc` — BIOS tail-jump binding to BIOS entry-table page `0xA0`, function index `0x38`; the allocator implementation lives in ROM, not this object.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/43-c56` (`C56.OBJ`, ordinal 43, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline has only `.text`, exports only `realloc` (`T`), and owns no allocator state.
-- Same-file evidence: `build/libraries/disassembly/lib_1541083c1d7b8934_0/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x38; nop`) with no local-symbol reference, consistent with a binding-only single-member TU. The `$t1` index follows the same C-object-number-in-hex pattern as the neighboring LIBC.LIB binding members C47/C48/C52/C53/C55, extending that link-order cluster (37–44) without merging the TUs.
+- Same-file evidence: `build/libraries/disassembly/libc_43/member.s` is four words (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x38; nop`) with no local-symbol reference, consistent with a binding-only single-member TU. The `$t1` index follows the same C-object-number-in-hex pattern as the neighboring LIBC.LIB binding members C47/C48/C52/C53/C55, extending that link-order cluster (37–44) without merging the TUs.
 - Verification: `realloc` passed the full finalize gate (agent origin, verified identity `3dbd4d17c17081390ad3dedd9a7739f6797a8dd47e7d769bba8c027ebfe1c5a5`).
 
 ## LIBC.LIB — BCMP.OBJ (ordinal 49)
 
-- TU directory: `src/libraries/libc/49-bcmp/`; target `lib_8234752d656fa68f_0`.
+- TU directory: `src/libraries/libc/49-bcmp/`; target `libc_49`.
 - Members:
   - `bcmp` — byte comparison of two buffers, returning the first differing byte difference or zero.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libc/49-bcmp` (`BCMP.OBJ`, ordinal 49, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline `library-input/converted/lib/libc/bcmp.o` has only `.text` (0x40 bytes) and `.note`, and its symbol table exports only `bcmp` (`T`), so the object owns no data/state and no file-static helper. `build/libraries/disassembly/lib_8234752d656fa68f_0/member.s` shows the single 16-word function at `.text` 0, consistent with a one-member, one-function TU.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/49-bcmp` (`BCMP.OBJ`, ordinal 49, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json`. The converted baseline `library-input/converted/lib/libc/bcmp.o` has only `.text` (0x40 bytes) and `.note`, and its symbol table exports only `bcmp` (`T`), so the object owns no data/state and no file-static helper. `build/libraries/disassembly/libc_49/member.s` shows the single 16-word function at `.text` 0, consistent with a one-member, one-function TU.
 - Cross-library duplicate: the `libc/49-bcmp` member `sourceSha256` `2d85252d036b1b85cb8d15d64e1af65c403f31e3d6719db2a8d96fde0e003188` equals that of `libc2/0-bcmp` (`LIBC2.LIB` / `BCMP.OBJ`, ordinal 0), so both archives embed the same original member bytes; the staged objects differ only in their embedded source-path strings. They remain separate archive members for grouping purposes and do not merge LIBC.LIB's `BCMP.OBJ` with LIBC2.LIB's duplicate.
-- Verification: `bcmp` passed the full finalize gate (agent origin, verified source/evidence identity `a116b4bbea1a982cc6fb228d1893ede0f22f60e21e928fa08e0671d22064ceaf`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8234752d656fa68f_0.json` against original hash `49aad70bb673be9250ae4a4dd143a06683faa4c0358c04a6e42f29cfff4fe0f0`.
+- Verification: `bcmp` passed the full finalize gate (agent origin, verified source/evidence identity `a116b4bbea1a982cc6fb228d1893ede0f22f60e21e928fa08e0671d22064ceaf`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/libc_49.json` against original hash `49aad70bb673be9250ae4a4dd143a06683faa4c0358c04a6e42f29cfff4fe0f0`.
 
 ## LIBC.LIB — MEMCMP.OBJ (ordinal 50)
 
-- TU directory: `src/libraries/libc/50-memcmp/`; target `lib_22cf44ab082e7eb6_0`.
+- TU directory: `src/libraries/libc/50-memcmp/`; target `libc_50`.
 - Members:
   - `memcmp` — byte comparison of two length-bounded buffers, returning the first differing byte difference or zero.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libc/50-memcmp` (`MEMCMP.OBJ`, ordinal 50, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json` (`_shared-0.h` + `memcmp.c` only, no `_data` part). `build/libraries/disassembly/lib_22cf44ab082e7eb6_0/member.s` shows one 16-word (0x40-byte) function at `.text` 0 with no local-symbol or data reference, consistent with a one-member, one-function TU that owns no state.
-- Same-file/adjacency evidence: the reconstructed body is instruction-for-instruction identical (16/16 words) to the immediately preceding `LIBC.LIB` `BCMP.OBJ` (`lib_8234752d656fa68f_0`) — same loop shape, same `subu` in the `bne` delay slot, same trailing `nop` pair. Identical code plus adjacent archive ordinals 49/50 places `bcmp` and `memcmp` in one byte-comparison source family in link order, but each member exports exactly one symbol under a different name and carries its own `sourceSha256` (`2d85252d…` vs `b1ed1f35…`), so the two remain separate TUs and must not be merged on body identity.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/50-memcmp` (`MEMCMP.OBJ`, ordinal 50, `ambiguousNamedBaseline: false`), and the single-part ordered `tu.json` (`_shared-0.h` + `memcmp.c` only, no `_data` part). `build/libraries/disassembly/libc_50/member.s` shows one 16-word (0x40-byte) function at `.text` 0 with no local-symbol or data reference, consistent with a one-member, one-function TU that owns no state.
+- Same-file/adjacency evidence: the reconstructed body is instruction-for-instruction identical (16/16 words) to the immediately preceding `LIBC.LIB` `BCMP.OBJ` (`libc_49`) — same loop shape, same `subu` in the `bne` delay slot, same trailing `nop` pair. Identical code plus adjacent archive ordinals 49/50 places `bcmp` and `memcmp` in one byte-comparison source family in link order, but each member exports exactly one symbol under a different name and carries its own `sourceSha256` (`2d85252d…` vs `b1ed1f35…`), so the two remain separate TUs and must not be merged on body identity.
 - Cross-library duplicate: `libc/50-memcmp` `sourceSha256` `b1ed1f35bc336e1fdda8247981cfdeb013e9d48f6c5f7083ba95d49876bce46d` equals that of `libc2/7-memcmp` (`LIBC2.LIB` / `MEMCMP.OBJ`, ordinal 7), the same replication pattern already recorded for `libc/49-bcmp` ↔ `libc2/0-bcmp`. MEMCMP.OBJ therefore belongs to the LIBC↔LIBC2 duplicated member run (LIBC ordinals 48–55 each have an identical-byte LIBC2 counterpart); the shared bytes are archive replication, not one shared TU.
-- Verification: `memcmp` passed the full finalize gate (agent origin, verified source/evidence identity `b74969f0dcbd6bed7cb4b5717fa84e57083e8371ce5d84696a4eaf254dfcf43d`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_22cf44ab082e7eb6_0.json` against original hash `8d84d97929f8b52413ed04a2d877a22b0569f8f88d0304655035b02a20c54760`.
+- Verification: `memcmp` passed the full finalize gate (agent origin, verified source/evidence identity `b74969f0dcbd6bed7cb4b5717fa84e57083e8371ce5d84696a4eaf254dfcf43d`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/libc_50.json` against original hash `8d84d97929f8b52413ed04a2d877a22b0569f8f88d0304655035b02a20c54760`.
 
 ## LIBC.LIB — QSORT.OBJ (ordinal 52)
 
-- TU directory: `src/libraries/libc/52-qsort/`; target `lib_07b11d80dde84c53_0`.
+- TU directory: `src/libraries/libc/52-qsort/`; target `libc_52`.
 - Original functions: `qsort` plus the unnamed file-static companion at `.text` offset 0x1B8, recovered as `func_000001B8`; both are recovered.
 - Recovered: `qsort` — in-place recursive quicksort over fixed-size records using a caller comparator; `func_000001B8` — byte-wise exchange of two `size`-byte buffers, used for the pivot and partition swaps.
 - Same-file evidence: the original `52-qsort.o` symbol table exports only `qsort` (`T`) and carries no symbol for the routine at `.text` 0x1B8; `qsort` (0x68–0x1B8) reaches that routine through section-local `R_MIPS_26` relocations against `.text`, marking it as a file-static helper of this object rather than a separate member. The object has only `.text`/`.note` (no `.data`/`.bss`), so it owns no state.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/52-qsort` (`QSORT.OBJ`, ordinal 52, `ambiguousNamedBaseline: false`), and the ordered `tu.json` (`_shared-0.h` + `qsort.c` + `func_000001B8.c`).
 - Cross-library duplicate: `libc/52-qsort` `sourceSha256` `2f00244d41eec9ce6990826ba55cc8652d7be82a6698daae5ea6a91cf1721143` equals that of `libc2/13-qsort` (`LIBC2.LIB` / `QSORT.OBJ`, ordinal 13), adding QSORT.OBJ to the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`, `memcmp`, `bsearch`, `strtoul` and `strtol`; sharing the member name `QSORT.OBJ` and the original bytes does not merge the two TUs. See the `LIBC2.LIB — QSORT.OBJ` entry below.
-- Verification: whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_07b11d80dde84c53_0.json`, completed functions `qsort` and `func_000001B8`, against original hash `82d016933ade74138ab823bf269f7c42e18e56c42faeec3bd0e776f912169e6e`. `qsort` passed the full finalize gate (agent origin, verified identity `06c74028d9e708ea24445834dd0cd4aeb28c97e71f18a8184b960a984f8c2b00`); `func_000001B8` passed the full finalize gate (agent origin, verified identity `60eef90b9096029640a88e3b69be59a193dc3728dc31066ca40cce0056052e7b`).
+- Verification: whole-member `MATCH` (100/100 words) in `build/libraries/verified/libc_52.json`, completed functions `qsort` and `func_000001B8`, against original hash `82d016933ade74138ab823bf269f7c42e18e56c42faeec3bd0e776f912169e6e`. `qsort` passed the full finalize gate (agent origin, verified identity `06c74028d9e708ea24445834dd0cd4aeb28c97e71f18a8184b960a984f8c2b00`); `func_000001B8` passed the full finalize gate (agent origin, verified identity `60eef90b9096029640a88e3b69be59a193dc3728dc31066ca40cce0056052e7b`).
 
 ## LIBC.LIB — BSEARCH.OBJ (ordinal 53)
 
-- TU directory: `src/libraries/libc/53-bsearch/`; target `lib_25f493c082078483_0`.
+- TU directory: `src/libraries/libc/53-bsearch/`; target `libc_53`.
 - Members:
   - `bsearch` — binary search returning a record pointer, over `nmemb` fixed-size records, ordered by a caller-supplied comparator.
 - Same-file evidence: `library-input/converted/lib/libc/bsearch.o` has only `.text` (0xC0 bytes) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bsearch` (`T`). The two local labels at `.text` 0x84/0x94 are section-relative `R_MIPS_26` jump targets inside the same function (loop test and epilogue), not helpers or separate symbols; the function's only state is its stack frame, so the object owns no data and has no file-static companion (unlike the neighboring QSORT.OBJ).
-- Membership evidence: `library-input/redux/original-members.json`, entry `libc/53-bsearch` (`BSEARCH.OBJ`, ordinal 53, `ambiguousNamedBaseline: false`), object sha256 `070d3d964c2a879847d85074fe94a0691b9e157853c44d70c97fd7e9c4fbafa9`, and the single-part ordered `tu.json` (`_shared-0.h` + `bsearch.c`); `build/libraries/disassembly/lib_25f493c082078483_0/member.s` shows one 48-word function at `.text` 0x68, consistent with a one-member, one-function TU.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc/53-bsearch` (`BSEARCH.OBJ`, ordinal 53, `ambiguousNamedBaseline: false`), object sha256 `070d3d964c2a879847d85074fe94a0691b9e157853c44d70c97fd7e9c4fbafa9`, and the single-part ordered `tu.json` (`_shared-0.h` + `bsearch.c`); `build/libraries/disassembly/libc_53/member.s` shows one 48-word function at `.text` 0x68, consistent with a one-member, one-function TU.
 - Cross-library duplicate: `libc/53-bsearch` `sourceSha256` `93e7a1ae41ad0095d2c731ce675fdbabf6873acb4dd159f5c32b323e8e007127` equals that of `libc2/37-bsearch` (`LIBC2.LIB` / `BSEARCH.OBJ`, ordinal 37), the same replication pattern recorded for `libc/49-bcmp` ↔ `libc2/0-bcmp` and `libc/50-memcmp` ↔ `libc2/7-memcmp`; BSEARCH.OBJ therefore belongs to the LIBC↔LIBC2 identical-byte member run. Duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
 - Link adjacency: ordinal 53 immediately follows `LIBC.LIB` `QSORT.OBJ` (ordinal 52), and the two are the archive's stateless, comparator-driven standard search/sort members, both reconstructed from C under the trunk-19970318 compiler. They share no symbol, data or helper, so the adjacency places them in one source family in link order but does not merge them into one TU. `bsearch` must also not be merged with `C53.OBJ` (ordinal 41), the digit-coincident BIOS tail-jump binding for `lsearch`; the ordinal gap and the completely different member bytes keep them apart.
-- Verification: `bsearch` passed the full finalize gate (agent origin, verified source/evidence identity `1596fe366353e062a110862d0956eac1f40e20f31c595987540a7419f022b3db`); whole-member `MATCH` (48/48 words) in `build/libraries/verified/lib_25f493c082078483_0.json` (record identity `aaa23c6f5dc0d9ef85968cae962b099eb935d3896d2dfde7d19b8f981aaf5fad`) against original hash `070d3d964c2a879847d85074fe94a0691b9e157853c44d70c97fd7e9c4fbafa9`.
+- Verification: `bsearch` passed the full finalize gate (agent origin, verified source/evidence identity `1596fe366353e062a110862d0956eac1f40e20f31c595987540a7419f022b3db`); whole-member `MATCH` (48/48 words) in `build/libraries/verified/libc_53.json` (record identity `aaa23c6f5dc0d9ef85968cae962b099eb935d3896d2dfde7d19b8f981aaf5fad`) against original hash `070d3d964c2a879847d85074fe94a0691b9e157853c44d70c97fd7e9c4fbafa9`.
 
 ## LIBC.LIB — STRTOUL.OBJ (ordinal 54)
 
-- TU directory: `src/libraries/libc/54-strtoul/`; target `lib_c1713ec35e93517a_0`.
+- TU directory: `src/libraries/libc/54-strtoul/`; target `libc_54`.
 - Members:
   - `strtoul` — unsigned integer parse from a string with optional base prefix, returning the accumulated value and the end pointer through the out-parameter.
-- Same-file evidence: `library-input/converted/lib/libc/strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note`, exports only `strtoul` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_c1713ec35e93517a_0/member.s` shows the single function, consistent with a one-member, one-function TU.
+- Same-file evidence: `library-input/converted/lib/libc/strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note`, exports only `strtoul` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/libc_54/member.s` shows the single function, consistent with a one-member, one-function TU.
 - Call/link adjacency: the verified body calls `todigit` (`C10.OBJ`, ordinal 7), `toupper` (`C37.OBJ`, ordinal 30) and reads `_ctype_` (`CTYPE0.OBJ`, ordinal 45) — all earlier LIBC.LIB members. The immediately following `STRTOL.OBJ` (ordinal 55) uses the same three externs and the same whitespace/base-prefix/digit-accumulation structure plus sign handling, placing the pair in one signed/unsigned string-to-integer source family in link order; the shared externs do not merge the two members into one TU.
 - Cross-library duplicate: `libc/54-strtoul` `sourceSha256` `4e6890e32e8d8f34fe845bab8a256696283110db9e749b358b71f86601c3dff3` equals that of `libc2/30-strtoul` (`LIBC2.LIB` / `STRTOUL.OBJ`, ordinal 30), matching the already-recorded LIBC↔LIBC2 identical-byte member run; duplicated archive bytes do not merge the members.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/54-strtoul` (`STRTOUL.OBJ`, ordinal 54, `ambiguousNamedBaseline: false`), object sha256 `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`, and the ordered `tu.json` (`_shared-0.h` + `strtoul.c`).
-- Verification: `strtoul` passed the full finalize gate (agent origin, verified source/evidence identity `7d2c44b00a92482031b3e8151aaefbea7df83faec7b14a812d591d0e6bb989a8`); whole-member `MATCH` (84/84 words) in `build/libraries/verified/lib_c1713ec35e93517a_0.json` against original hash `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`.
+- Verification: `strtoul` passed the full finalize gate (agent origin, verified source/evidence identity `7d2c44b00a92482031b3e8151aaefbea7df83faec7b14a812d591d0e6bb989a8`); whole-member `MATCH` (84/84 words) in `build/libraries/verified/libc_54.json` against original hash `8953cf274f85ff874117dbacbeaf290b46237774d958129c8e8e5970b2cc2938`.
 
 ## LIBC.LIB — STRTOL.OBJ (ordinal 55)
 
-- TU directory: `src/libraries/libc/55-strtol/`; target `lib_7edc433fe11f0100_0`.
+- TU directory: `src/libraries/libc/55-strtol/`; target `libc_55`.
 - Members:
   - `strtol` — signed integer parse from a string, handling leading whitespace, repeated sign characters and an optional base prefix, and returning the accumulated value plus the end pointer through the out-parameter.
-- Same-file evidence: `library-input/converted/lib/libc/strtol.o` has only `.text` (0x190 bytes, 100 words) and `.note`, exports only `strtol` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_7edc433fe11f0100_0/member.s` shows the single function, consistent with a one-member, one-function TU.
+- Same-file evidence: `library-input/converted/lib/libc/strtol.o` has only `.text` (0x190 bytes, 100 words) and `.note`, exports only `strtol` (`T`), and leaves `toupper`, `todigit` and `_ctype_` undefined — so the object owns no data and no file-static companion; `build/libraries/disassembly/libc_55/member.s` shows the single function, consistent with a one-member, one-function TU.
 - Call/link adjacency: the verified body calls `todigit` (`C10.OBJ`, ordinal 7), `toupper` (`C37.OBJ`, ordinal 30) and reads `_ctype_` (`CTYPE0.OBJ`, ordinal 45), the same three externs used by the immediately preceding `STRTOUL.OBJ` (ordinal 54). The two share the whitespace/base-prefix/digit-accumulation structure, with `strtol` adding sign handling, placing the pair in one signed/unsigned string-to-integer source family in link order; the shared externs do not merge the two members into one TU.
 - Cross-library duplicate: `libc/55-strtol` `sourceSha256` `5b00a79584d533fd211694bb0b5c778f98a116a311fdf53ab502baa20b68eef1` equals that of `libc2/49-strtol_0` (`LIBC2.LIB` / `STRTOL_0.OBJ`, ordinal 49), extending the LIBC↔LIBC2 identical-byte member run recorded for `strtoul`, `bsearch`, `bcmp` and `memcmp`; duplicated archive bytes do not merge the members.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc/55-strtol` (`STRTOL.OBJ`, ordinal 55, `ambiguousNamedBaseline: false`), object sha256 `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`, and the ordered `tu.json` (`_shared-0.h` + `strtol.c`).
-- Verification: `strtol` passed the full finalize gate (agent origin, verified source/evidence identity `9bd9a3dbb7f8edaea46d91a541a0d29d0a4f55c8949a8783fa6de86db5094239`); whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_7edc433fe11f0100_0.json` against original hash `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`.
+- Verification: `strtol` passed the full finalize gate (agent origin, verified source/evidence identity `9bd9a3dbb7f8edaea46d91a541a0d29d0a4f55c8949a8783fa6de86db5094239`); whole-member `MATCH` (100/100 words) in `build/libraries/verified/libc_55.json` against original hash `7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a`.
 
 ## LIBC2.LIB — BCOPY.OBJ (ordinal 1)
 
-- TU directory: `src/libraries/libc2/1-bcopy/`; target `lib_8129d7844e04b42c_0`.
+- TU directory: `src/libraries/libc2/1-bcopy/`; target `libc2_1`.
 - Members:
   - `bcopy` — byte copy from a source buffer to a destination buffer, returning the source base, or zero when the source pointer is null.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/1-bcopy` (`BCOPY.OBJ`, ordinal 1, `ambiguousNamedBaseline: false`), object sha256 `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`, and the single-part ordered `tu.json` (`_shared-0.h` + `bcopy.c`).
-- Same-file evidence: `library-input/redux/libc2/1-bcopy.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bcopy` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_8129d7844e04b42c_0/member.s` shows the single 16-word function at `.text` 0x60.
+- Same-file evidence: `library-input/redux/libc2/1-bcopy.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bcopy` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/libc2_1/member.s` shows the single 16-word function at `.text` 0x60.
 - Source-family/link adjacency: the `bcopy` instruction sequence (16/16 words, same opcodes and layout, source/destination register roles swapped) matches LIBC2 `MEMCPY.OBJ` (`libc2/8-memcpy`, ordinal 8), and both share the null-guard / return-preserved-base idiom with `BZERO.OBJ` (ordinal 2), `MEMMOVE.OBJ` (9) and `MEMSET.OBJ` (10). Ordinals 1, 2, 8, 9, 10 therefore form one LIBC2 memory-primitive source family in link order; each remains a separate archive member exporting one symbol under its own name with its own `sourceSha256`.
 - Cross-library: no LIBC.LIB member is named `BCOPY.OBJ`, and no member in `library-input/redux/original-members.json` shares BCOPY's `sourceSha256` `4edbfed0f2fbd9b874ad2e576633043de7f97b4da5f8122875f6c2a4fe00fe64`, so BCOPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`/`memcmp`/`bsearch`/`strtoul`/`strtol` and must not be merged with any LIBC member.
-- Verification: `bcopy` passed the full finalize gate (agent origin, verified source/evidence identity `2615948f7885332dadd39ffb0c1aae50598584806bcd748be4a07cb246e3f974`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_8129d7844e04b42c_0.json` against original hash `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`.
+- Verification: `bcopy` passed the full finalize gate (agent origin, verified source/evidence identity `2615948f7885332dadd39ffb0c1aae50598584806bcd748be4a07cb246e3f974`); whole-member `MATCH` (16/16 words) in `build/libraries/verified/libc2_1.json` against original hash `6d23ee5400cc32cb1063d7ed6e8de10d561fa8592ca66070533a23b7191e7c38`.
 
 ## LIBC2.LIB — BZERO.OBJ (ordinal 2)
 
-- TU directory: `src/libraries/libc2/2-bzero/`; target `lib_de2dd52281b4f483_0`.
+- TU directory: `src/libraries/libc2/2-bzero/`; target `libc2_2`.
 - Members:
   - `bzero` — byte-wise zero fill of a buffer, returning the buffer base, or zero when the pointer is null or the count is non-positive.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/2-bzero` (`BZERO.OBJ`, ordinal 2, `ambiguousNamedBaseline: false`), member `sourceSha256` `7cd6c53977f8ccc700d353280dc961a33f8eb1f7bd47e3f5c0c2e2ee0808003a`, and the ordered single-function `tu.json` (`_shared-0.h` + `bzero.c`); `src/libraries/libc2/2-bzero/_shared-0.h` records object sha256 `e7496c15a9aaeadc5af8978529ef11e4931dddc611e5bd34aa6598d6c84e3063`.
-- Same-file evidence: the original object `library-input/redux/libc2/2-bzero.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bzero` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_de2dd52281b4f483_0/member.s` shows the single 12-word function.
+- Same-file evidence: the original object `library-input/redux/libc2/2-bzero.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `bzero` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/libc2_2/member.s` shows the single 12-word function.
 - Source-family/link adjacency: BZERO's 12-word `.text` is instruction-for-instruction the same program as LIBC2 `MEMSET.OBJ` (`libc2/10-memset`, ordinal 10), differing only in the stored byte's source register (`sb $zero,0($a0)` vs `sb $a1,0($a0)`) and the consequent count register (`$a1` vs `$a2`), with the same null-guard / return-preserved-base idiom as `BCOPY.OBJ` (1), `MEMCPY.OBJ` (8) and `MEMMOVE.OBJ` (9). Ordinals 1, 2, 8, 9, 10 remain one LIBC2 memory-primitive source family in link order, with BZERO and MEMSET a twin pair inside it; each stays a separate archive member exporting one symbol under its own name with its own `sourceSha256`.
 - Cross-library: no member in `library-input/redux/original-members.json` shares BZERO's `sourceSha256` `7cd6c53977f8ccc700d353280dc961a33f8eb1f7bd47e3f5c0c2e2ee0808003a`, so BZERO.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
-- Verification: `bzero` passed the full finalize gate (agent origin, verified source/evidence identity `5ba1e47f3625a03532d7aaef02ef4b17b06cfe1b89d6221f48adc3b3996a3f4b`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_de2dd52281b4f483_0.json` against original hash `e7496c15a9aaeadc5af8978529ef11e4931dddc611e5bd34aa6598d6c84e3063`.
+- Verification: `bzero` passed the full finalize gate (agent origin, verified source/evidence identity `5ba1e47f3625a03532d7aaef02ef4b17b06cfe1b89d6221f48adc3b3996a3f4b`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/libc2_2.json` against original hash `e7496c15a9aaeadc5af8978529ef11e4931dddc611e5bd34aa6598d6c84e3063`.
 
 ## LIBC2.LIB — GETC.OBJ (ordinal 3)
 
-- TU directory: `src/libraries/libc2/3-getc/`; target `lib_9621c4421abd2f33_0`.
+- TU directory: `src/libraries/libc2/3-getc/`; target `libc2_3`.
 - Members:
   - `getc` — unbuffered single-character input: reads one byte from `fd` through its own stack slot and returns it as `s8`, or `-1` when `read` reports nothing.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/3-getc` (`GETC.OBJ`, ordinal 3, `ambiguousNamedBaseline: false`), member `sourceSha256` `bbf435ef09ec58ebe8dd5d297becbe067905bdc278455115ab1e720c17470dab`, and the ordered two-part `tu.json` (`_shared-0.h` + `getc.c`); `src/libraries/libc2/3-getc/_shared-0.h` records object sha256 `ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c`.
 - Same-file evidence: `library-input/redux/libc2/3-getc.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — exports only `getc` (`T`) and leaves `read` undefined (`*UND*`), so the object owns no data and has no file-static companion.
 - SDK idiom / call adjacency: the body is the one-byte `read(fd, &c, 1)` wrapper around the libapi `read` binding (`libapi/48-a52`, `A52.OBJ`, ordinal 48; BIOS service 0x34) and is the character-input counterpart of `PUTC.OBJ` (ordinal 11, `write`/0x35). It is not the same TU as the neighboring `GETCHAR.OBJ` (ordinal 4): `getchar` calls `read` directly without checking the return, masks the byte with 0x7F and hardcodes fd 0, while `GETS.OBJ` (ordinal 5) calls `getchar` and no disassembled member issues `jal getc`; link order (3 → 4 → 5) and the call graph agree the three are separate archive members.
 - Cross-library: LIBC.LIB `A58.OBJ` (`libc/1-a58`, ordinal 1) also exports `getc`, but it is a three-instruction BIOS tail transfer (`0xB0`/`0x3A`) with a different `sourceSha256` (`377b6521…204c10`), so the two must not be merged; GETC's `sourceSha256` occurs only in `libc2/3-getc`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: `getc` passed the full finalize gate (agent origin, verified source/evidence identity `c254a1b43107a11c927c86dc408415b3ec625f469c310a8d382700fb817c7caf`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_9621c4421abd2f33_0.json` against original hash `ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c`.
+- Verification: `getc` passed the full finalize gate (agent origin, verified source/evidence identity `c254a1b43107a11c927c86dc408415b3ec625f469c310a8d382700fb817c7caf`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/libc2_3.json` against original hash `ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c`.
 
 ## LIBC2.LIB — MEMSET.OBJ (ordinal 10)
 
-- TU directory: `src/libraries/libc2/10-memset/`; target `lib_ad73e3e825e58564_0`.
+- TU directory: `src/libraries/libc2/10-memset/`; target `libc2_10`.
 - Members:
   - `memset` — byte-fill of a destination buffer, returning the original destination base, or zero when the destination pointer is null or the count is non-positive.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/10-memset` (`MEMSET.OBJ`, ordinal 10, `ambiguousNamedBaseline: false`), object sha256 `7e36f50cbda8d1a5477ec547e16892f07860a1c99b985826236f41932eefefe6`, and the single-part ordered `tu.json` (`_shared-0.h` + `memset.c`).
-- Same-file evidence: `library-input/redux/libc2/10-memset.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `memset` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_ad73e3e825e58564_0/member.s` shows the single 12-word function.
+- Same-file evidence: `library-input/redux/libc2/10-memset.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — and its symbol table exports only `memset` (`T`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/libc2_10/member.s` shows the single 12-word function.
 - Source-family/link adjacency: `memset` keeps the same null-guard / return-preserved-base idiom already recorded for LIBC2 `BCOPY.OBJ` (ordinal 1), `BZERO.OBJ` (2), `MEMCPY.OBJ` (8) and `MEMMOVE.OBJ` (9), so it is a member of that one LIBC2 memory-primitive source family in link order; its 12-word `.text` is also the structural twin of `BZERO.OBJ` (see that entry), differing only in the stored byte's source register and the consequent count register. Each remains a separate archive member exporting one symbol under its own name.
 - Cross-library: no LIBC.LIB member is named `MEMSET.OBJ` and no member in `library-input/redux/original-members.json` shares MEMSET's `sourceSha256` `a27db6e485b21e296987474246289b9bf76b3dd125fe44b183b40535a1c1192b`, so MEMSET.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
-- Verification: `memset` passed the full finalize gate (agent origin, verified source/evidence identity `342a262daf83dd44be562d2e4d314af43f431c200a03c292947edcaa16329154`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_ad73e3e825e58564_0.json`.
+- Verification: `memset` passed the full finalize gate (agent origin, verified source/evidence identity `342a262daf83dd44be562d2e4d314af43f431c200a03c292947edcaa16329154`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/libc2_10.json`.
 
 ## LIBC2.LIB — PUTC.OBJ (ordinal 11)
 
-- TU directory: `src/libraries/libc2/11-putc/`; target `lib_a3428c892acd047f_0`.
+- TU directory: `src/libraries/libc2/11-putc/`; target `libc2_11`.
 - Members:
   - `putc` — unbuffered single-character output: writes the character value through its own stack slot to file descriptor `fd` with a one-byte `write`.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/11-putc` (`PUTC.OBJ`, ordinal 11, `ambiguousNamedBaseline: false`), member `sourceSha256` `7f2c4b2a15ea2636528e6d61fd83b35cedc167f93fa880ab7df7ebb820b3b07d`, and the ordered `tu.json` (`_shared-0.h` + `putc.c`).
-- Same-file evidence: the converted object `library-input/converted/lib/libc2/putc.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — exports only `putc` (`T`) and leaves `write` undefined (`*UND*`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/lib_a3428c892acd047f_0/member.s` shows the single 12-word function.
+- Same-file evidence: the converted object `library-input/converted/lib/libc2/putc.o` has only `.text` (0x30 bytes, 12 words) and `.note` — no `.data`/`.bss` — exports only `putc` (`T`) and leaves `write` undefined (`*UND*`), so the object owns no data and has no file-static companion; `build/libraries/disassembly/libc2_11/member.s` shows the single 12-word function.
 - SDK idiom / call adjacency: the body is the two-argument `write(fd, &c, 1)` wrapper around the libapi `write` binding (`libapi/49-a53`, `A53.OBJ`, ordinal 49), itself a BIOS tail jump to service 0x35. The neighboring `PUTCHAR.OBJ` (ordinal 12) calls the same `write`, but its body uses its own buffered `_putchar`/`_putchar_flash` routines and its own `D_000002D0`/`D_000002D4`/`B_000002E0` state and never calls `putc`; link order (11 → 12) and the call graph agree that the two members are distinct TUs, and no member disassembled under `build/libraries/disassembly/` issues a `jal putc`. Do not merge `PUTC.OBJ` with the buffered putchar/printf cluster merely because they share the `write` binding.
 - Cross-library: no LIBC.LIB member is named `PUTC.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so PUTC.OBJ has no LIBC counterpart to merge with.
-- Verification: `putc` passed the full finalize gate (agent origin, verified source/evidence identity `57278684de191d35de2187685315767a755abc652062fe7c7931482a62c3814a`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/lib_a3428c892acd047f_0.json` against original hash `4191f3883055fda795c3bb5a34161c969e571cb681fd54c0f0efeee5b6ab49a4`.
+- Verification: `putc` passed the full finalize gate (agent origin, verified source/evidence identity `57278684de191d35de2187685315767a755abc652062fe7c7931482a62c3814a`); whole-member `MATCH` (12/12 words) in `build/libraries/verified/libc2_11.json` against original hash `4191f3883055fda795c3bb5a34161c969e571cb681fd54c0f0efeee5b6ab49a4`.
 
 ## LIBC2.LIB — PUTCHAR.OBJ (ordinal 12)
 
-- TU directory: `src/libraries/libc2/12-putchar/`; target `lib_c3818fe9e2f04977_0`.
+- TU directory: `src/libraries/libc2/12-putchar/`; target `libc2_12`.
 - Members (one archive member, three exported functions, one TU):
   - `putchar` — buffered single-character output: `'\n'` → `'\r'` plus column reset, `'\t'` → pad to the next 8-column stop then flush, otherwise buffer the byte and flush once the 0x20-byte line buffer fills.
   - `_putchar` — the same buffered core routine without the trailing flush on the tab path, so callers can accumulate columns.
   - `_putchar_flash` — flush-only entry point: writes whatever the shared line buffer holds and resets its count.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/12-putchar` (`PUTCHAR.OBJ`, ordinal 12, `ambiguousNamedBaseline: false`), member `sourceSha256` `0321e871b5251797e1b3a11e1be011bd3bfb5e78133346c346733f6b6904691f`, and the five-part ordered `tu.json` (`_shared-0.h`, `_putchar.c`, `_putchar_flash.c`, `putchar.c`, `_data.c`); `build/libraries/inventory.json` lists all three functions under the single id `lib_c3818fe9e2f04977_0`.
-- Shared-state / same-file evidence: the converted object `library-input/converted/lib/libc2/putchar.o` has one `.text` (0x2D0 bytes), one `.data` holding the column counter `D_000002D0` (0x2D0) and the buffer count `D_000002D4` (0x2D4), and one `.bss` holding the 0x20-byte line buffer `B_000002E0`; its symbol table exports exactly `_putchar`, `_putchar_flash`, `putchar` (`T`) and leaves only `_ctype_` and `write` undefined (`*UND*`). All three functions in that one object read and write the same private counter/buffer cluster (`build/libraries/disassembly/lib_c3818fe9e2f04977_0/member.s` labels them `static variable` at 0x2D0/0x2D4/0x2E0), and no other member disassembled under `build/libraries/disassembly/` references `D_000002D0`, `D_000002D4` or `B_000002E0`. The state cluster is therefore TU-private and binds the three functions into this single member rather than into separate PUTC-style members.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/12-putchar` (`PUTCHAR.OBJ`, ordinal 12, `ambiguousNamedBaseline: false`), member `sourceSha256` `0321e871b5251797e1b3a11e1be011bd3bfb5e78133346c346733f6b6904691f`, and the five-part ordered `tu.json` (`_shared-0.h`, `_putchar.c`, `_putchar_flash.c`, `putchar.c`, `_data.c`); `build/libraries/inventory.json` lists all three functions under the single id `libc2_12`.
+- Shared-state / same-file evidence: the converted object `library-input/converted/lib/libc2/putchar.o` has one `.text` (0x2D0 bytes), one `.data` holding the column counter `D_000002D0` (0x2D0) and the buffer count `D_000002D4` (0x2D4), and one `.bss` holding the 0x20-byte line buffer `B_000002E0`; its symbol table exports exactly `_putchar`, `_putchar_flash`, `putchar` (`T`) and leaves only `_ctype_` and `write` undefined (`*UND*`). All three functions in that one object read and write the same private counter/buffer cluster (`build/libraries/disassembly/libc2_12/member.s` labels them `static variable` at 0x2D0/0x2D4/0x2E0), and no other member disassembled under `build/libraries/disassembly/` references `D_000002D0`, `D_000002D4` or `B_000002E0`. The state cluster is therefore TU-private and binds the three functions into this single member rather than into separate PUTC-style members.
 - Call adjacency: the callers are outside the member, matching the links: `GETS.OBJ` (LIBC2 ordinal 5) issues `jal putchar`; `PUTS.OBJ` (ordinal 36) issues `jal _putchar` and `jal _putchar_flash`. This confirms the three symbols are entry points of one object, not one object each, and keeps the ordinal 11 (PUTC) → 12 (PUTCHAR) → 13 (QSORT) link run intact.
 - Cross-library: `sourceSha256` `0321e871…4691f` occurs only in `libc2/12-putchar`, so PUTCHAR.OBJ is outside the LIBC↔LIBC2 identical-byte replication run. Do not merge it with LIBC.LIB `A61.OBJ` (`libc/4-a61`, ordinal 4), whose `putchar` is an unrelated BIOS tail jump (service 0xB0/0x3D) and shares no bytes with this buffered implementation.
-- Verification: the whole member passed the full finalize gate (agent origin, verified source/evidence identity `1a6bfd5b36d510d60fd964b2b03b0d16aff1af49ae43f4ad9c9a41f42b5bfdb6`); `build/libraries/verified/lib_c3818fe9e2f04977_0.json` records whole-member `MATCH` (152/152 words) with `form: "c"` and completed functions `_putchar`, `_putchar_flash`, `putchar` against original hash `551eac73a44959e4847f92f5299417c298ec6ae7b80b756d3978ab5fab6d00fd`.
+- Verification: the whole member passed the full finalize gate (agent origin, verified source/evidence identity `1a6bfd5b36d510d60fd964b2b03b0d16aff1af49ae43f4ad9c9a41f42b5bfdb6`); `build/libraries/verified/libc2_12.json` records whole-member `MATCH` (152/152 words) with `form: "c"` and completed functions `_putchar`, `_putchar_flash`, `putchar` against original hash `551eac73a44959e4847f92f5299417c298ec6ae7b80b756d3978ab5fab6d00fd`.
 
 ## LIBC2.LIB — QSORT.OBJ (ordinal 13)
 
-- TU directory: `src/libraries/libc2/13-qsort/`; target `lib_0406d2805f41de09_0`.
+- TU directory: `src/libraries/libc2/13-qsort/`; target `libc2_13`.
 - Original functions: `qsort` plus the unnamed file-static companion at `.text` offset 0x1B8, recovered as `func_000001B8`.
 - Recovered: `qsort` — in-place recursive quicksort over fixed-size records using a caller comparator; `func_000001B8` — byte-wise exchange of two `size`-byte buffers, used for the pivot and partition swaps.
 - Same-file evidence: the original `13-qsort.o` symbol table exports only `qsort` (`T`), has one `.text` of 0x190 bytes (100 words) plus `.note` and no `.data`/`.bss`, and emits no symbol for the routine at `.text` 0x1B8; `qsort` (0x68–0x1B8) reaches it through seven section-local `R_MIPS_26` relocations against `.text` (`.rel.text` offsets 0x68–0x11C), marking it a file-static helper of this object rather than a separate member. The object owns no state.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/13-qsort` (`QSORT.OBJ`, ordinal 13, `ambiguousNamedBaseline: false`), member `sourceSha256` `2f00244d41eec9ce6990826ba55cc8652d7be82a6698daae5ea6a91cf1721143`, and the ordered `tu.json` (`_shared-0.h` + `qsort.c` + `func_000001B8.c`).
 - Cross-library duplicate: `libc2/13-qsort` shares `sourceSha256` `2f00244d…21143` with LIBC.LIB `QSORT.OBJ` (`libc/52-qsort`, ordinal 52), extending the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`, `memcmp`, `bsearch`, `strtoul` and `strtol`. The two staged objects differ in 27 bytes located only in the `.strtab` `FILE` path string and the derived section/symbol offsets; `.text` (100/100 words) and `.note` are identical. Duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
 - Link adjacency: ordinal 13 sits between `PUTCHAR.OBJ` (12) and `RAND.OBJ` (14) in `LIBC2.LIB` link order and shares no symbol, data or helper with either; the adjacency is archive placement only.
-- Verification: whole-member `MATCH` (100/100 words) in `build/libraries/verified/lib_0406d2805f41de09_0.json` (record identity `bcecc4f8aa0641c4ac52877672d2a00ad5f927d9361f0817e6d24ed33fb3fe33`), completed function `qsort`, against original hash `766b2ab1f222c4e4159f18a7e266c4aa208c405fd065f3d32258346feb0e06d5`. `qsort` passed the full finalize gate (agent origin, verified source/evidence identity `0681fa2b55a642d3ad2f6915755a46e587d1f4cfca15c732da5d7d037e5ae770`).
+- Verification: whole-member `MATCH` (100/100 words) in `build/libraries/verified/libc2_13.json` (record identity `bcecc4f8aa0641c4ac52877672d2a00ad5f927d9361f0817e6d24ed33fb3fe33`), completed function `qsort`, against original hash `766b2ab1f222c4e4159f18a7e266c4aa208c405fd065f3d32258346feb0e06d5`. `qsort` passed the full finalize gate (agent origin, verified source/evidence identity `0681fa2b55a642d3ad2f6915755a46e587d1f4cfca15c732da5d7d037e5ae770`).
 
 ## LIBC2.LIB — RAND.OBJ (ordinal 14)
 
-- TU directory: `src/libraries/libc2/14-rand/`; target `lib_caa9d705cf395a2f_0`.
+- TU directory: `src/libraries/libc2/14-rand/`; target `libc2_14`.
 - Original functions: `rand`, `srand`.
 - Recovered: `rand` — updates `B_000000B0` using `state * 0x41C64E6D + 0x3039`, then returns `(state >> 16) & 0x7FFF`.
 - `srand` and the backing BSS remain assembly backlog. Original `srand` stores its argument to the same state symbol, establishing the shared-state group.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/14-rand`, `tu.json`, and `build/libraries/disassembly/lib_caa9d705cf395a2f_0/member.s`. Sweep finalization passed for `rand`.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libc2/14-rand`, `tu.json`, and `build/libraries/disassembly/libc2_14/member.s`. Sweep finalization passed for `rand`.
 - Do not merge this implementation with LIBC.LIB's separate C47.OBJ / C48.OBJ `rand` / `srand` BIOS bindings merely because the public names agree.
 
 ## LIBC2.LIB — STRCAT.OBJ (ordinal 15)
 
-- TU directory: `src/libraries/libc2/15-strcat/`; target `lib_efe9eac03253e10e_0`.
+- TU directory: `src/libraries/libc2/15-strcat/`; target `libc2_15`.
 - Original function: `strcat` — appends `arg1` to the end of `arg0` and returns the original `arg0`; returns 0 for a null argument or when the two computed end addresses coincide.
 - Same-file evidence: original `15-strcat.o` has only `.text` (0xB0 bytes, 44 words) and `.note` — no `.data`/`.bss` — exports only `strcat` (`T`) and leaves only `strlen` undefined (`*UND*`), so the object owns no state and has no file-static companion.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/15-strcat` (`STRCAT.OBJ`, ordinal 15, `ambiguousNamedBaseline: false`), member `sourceSha256` `cd2365f66aa823500b789d40068ac43e2124c09cc3292eabe046f1a064a493a5`, and the ordered `tu.json` (`_shared-0.h` + `strcat.c`).
@@ -405,9 +405,9 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBC2.LIB — STRCHR.OBJ (ordinal 16)
 
-- TU directory: `src/libraries/libc2/16-strchr/`; target `lib_1f8b599632534f63_0`.
+- TU directory: `src/libraries/libc2/16-strchr/`; target `libc2_16`.
 - Original function: `strchr` — returns a pointer to the first occurrence of `arg1` in `arg0`, or 0 for a null string or absent character.
-- Same-file evidence: original `16-strchr.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strchr` (`T`), leaves nothing undefined (`*UND*`), and its single `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x8C), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_1f8b599632534f63_0/member.s` shows the single 16-word function at `.text` 0x68.
+- Same-file evidence: original `16-strchr.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strchr` (`T`), leaves nothing undefined (`*UND*`), and its single `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x8C), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_16/member.s` shows the single 16-word function at `.text` 0x68.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/16-strchr` (`STRCHR.OBJ`, ordinal 16, `ambiguousNamedBaseline: false`), member `sourceSha256` `ddf8488eb361d84a2b2dfe790b989ceb3cd59d60ac7b328504a0b90b1cc0460b`, and the ordered `tu.json` (`_shared-0.h` + `strchr.c`).
 - Source-family/link adjacency: `strchr` shares the char-argument sign-extension idiom (`sll $vN,$a1,24` / `sra $vN,$vN,24`) and the null-string `return 0` guard with LIBC2 `STRRCHR.OBJ` (ordinal 26) and `STRCSPN.OBJ` (19), placing it in the LIBC2 string-primitive run already noted for ordinals 15–22; each remains a separate archive member with its own symbol.
 - Cross-library: no LIBC.LIB member is named `STRCHR.OBJ` and no entry in `library-input/redux/original-members.json` shares STRCHR's `sourceSha256` `ddf8488e…0460b`, so STRCHR.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
@@ -415,157 +415,157 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBC2.LIB — STRCMP.OBJ (ordinal 17)
 
-- TU directory: `src/libraries/libc2/17-strcmp/`; target `lib_75cd70abb161b49c_0`.
+- TU directory: `src/libraries/libc2/17-strcmp/`; target `libc2_17`.
 - Original function: `strcmp` — null-argument guard (both null → 0, `arg0` null → -1, `arg1` null → 1), then compares bytes as signed chars and returns their difference, stopping at the first mismatch or terminating byte.
-- Same-file evidence: original `17-strcmp.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — exports only `strcmp` (`T`), and its only relocations are two `R_MIPS_26` entries against its own `.text` (the internal forward jumps), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_75cd70abb161b49c_0/member.s` shows the single 28-word function at `.text` 0x68.
+- Same-file evidence: original `17-strcmp.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — exports only `strcmp` (`T`), and its only relocations are two `R_MIPS_26` entries against its own `.text` (the internal forward jumps), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_17/member.s` shows the single 28-word function at `.text` 0x68.
 - Source-family/link adjacency: `strcmp` reproduces the exact null-argument guard sequence of `STRNCMP.OBJ` (ordinal 23) — `beqz $a0` / `bnez $a1` / `beq $a0,$a1` with the `-1`/`1` constants — and the same signed-byte mismatch epilogue (`lb` / `lb -1($a1)` / `subu`), marking both as members of one LIBC2 signed-string-comparison source family. They are separate archive members at ordinals 17 and 23 and are not merged. In link order, ordinal 17 also sits contiguously between `STRCHR.OBJ` (16) and `STRCPY.OBJ` (18) in the LIBC2 string-primitive run; that placement is archive adjacency, not shared state.
 - Cross-library: no LIBC.LIB member is named `STRCMP.OBJ` and no entry in `library-input/redux/original-members.json` shares STRCMP's `sourceSha256` `422833d543e8081dc57e7fe362ace5d2f3c0876f22b1014790abd002a5a50eb8`, so STRCMP.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/17-strcmp` (`STRCMP.OBJ`, ordinal 17, `ambiguousNamedBaseline: false`), member `sourceSha256` `422833d543e8081dc57e7fe362ace5d2f3c0876f22b1014790abd002a5a50eb8`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcmp.c`).
-- Verification: whole member byte-exact (28/28 words, `build/libraries/verified/lib_75cd70abb161b49c_0.json`); finalize gate passed with agent origin and verified source/evidence identity `3e416408ed237d0e1c942212013996992d414f22a394b1d5b8009a0fbe12a39b`.
+- Verification: whole member byte-exact (28/28 words, `build/libraries/verified/libc2_17.json`); finalize gate passed with agent origin and verified source/evidence identity `3e416408ed237d0e1c942212013996992d414f22a394b1d5b8009a0fbe12a39b`.
 
 ## LIBC2.LIB — STRCPY.OBJ (ordinal 18)
 
-- TU directory: `src/libraries/libc2/18-strcpy/`; target `lib_5cfffaa9ca3e5b34_0`.
+- TU directory: `src/libraries/libc2/18-strcpy/`; target `libc2_18`.
 - Original function: `strcpy` — copies a null-terminated source string to the destination buffer and returns the destination base, or zero when either pointer is null.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/18-strcpy` (`STRCPY.OBJ`, ordinal 18, `ambiguousNamedBaseline: false`), member `sourceSha256` `ac1a9baec29cd15fda538722bfdaf95ce22eccae5f8d818b7b46d3220b01ee8c`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcpy.c`).
-- Same-file evidence: original `18-strcpy.o` has only `.text` (0x50 bytes, 20 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcpy` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_5cfffaa9ca3e5b34_0/member.s` shows the single 20-word function.
+- Same-file evidence: original `18-strcpy.o` has only `.text` (0x50 bytes, 20 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcpy` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_18/member.s` shows the single 20-word function.
 - Source-family/link adjacency: `strcpy` shares the two-null-guard / return-preserved-base idiom and byte-copy loop with `STRCAT.OBJ` (ordinal 15) and `STRNCAT.OBJ` (22), and sits between `STRCMP.OBJ` (17) and `STRCSPN.OBJ` (19) in the LIBC2 string-primitive run; these remain separate archive members and are not merged.
 - Cross-library: no LIBC.LIB member is named `STRCPY.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (20/20 words) in `build/libraries/verified/lib_5cfffaa9ca3e5b34_0.json`; finalize gate passed with agent origin and verified source/evidence identity `9384078dede949092d1ed71e67eb1f77abcabc58631a281fe4fe4b7099e0d7b3`.
+- Verification: whole-member `MATCH` (20/20 words) in `build/libraries/verified/libc2_18.json`; finalize gate passed with agent origin and verified source/evidence identity `9384078dede949092d1ed71e67eb1f77abcabc58631a281fe4fe4b7099e0d7b3`.
 
 ## LIBC2.LIB — STRCSPN.OBJ (ordinal 19)
 
-- TU directory: `src/libraries/libc2/19-strcspn/`; target `lib_9e2e7f2169214720_0`.
+- TU directory: `src/libraries/libc2/19-strcspn/`; target `libc2_19`.
 - Original function: `strcspn` — returns the length of the leading prefix of the first string that contains no byte from the second string.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/19-strcspn` (`STRCSPN.OBJ`, ordinal 19, `ambiguousNamedBaseline: false`), member `sourceSha256` `78c3f96936dbe90afc71ad40a38e57e94309cd1c251b3ae623a41f126cfd4b25`, and the ordered single-function `tu.json` (`_shared-0.h` + `strcspn.c`).
-- Same-file evidence: original `19-strcspn.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcspn` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_9e2e7f2169214720_0/member.s` shows the single 32-word function. The character-class scan is inlined rather than issuing a call to `STRCHR.OBJ` (ordinal 16), so there is no intra-library call edge tying this member to a neighbour's TU.
+- Same-file evidence: original `19-strcspn.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strcspn` (`T`), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_19/member.s` shows the single 32-word function. The character-class scan is inlined rather than issuing a call to `STRCHR.OBJ` (ordinal 16), so there is no intra-library call edge tying this member to a neighbour's TU.
 - Source-family/link adjacency: ordinal 19 sits in the LIBC2 string-primitive run between `STRCPY.OBJ` (18) and `STRNCAT.OBJ` (22) already recorded above; the placement is archive adjacency, not shared state, and the members are not merged.
 - Cross-library: no LIBC.LIB member is named `STRCSPN.OBJ` and no entry in `library-input/redux/original-members.json` shares this member's `sourceSha256`, so STRCSPN.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_9e2e7f2169214720_0.json`; finalize gate passed with agent origin and verified source/evidence identity `f2f8fc499be05de170e9bcf046e45bbc67b79e13aad61f9cb05874f129b98939`.
+- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/libc2_19.json`; finalize gate passed with agent origin and verified source/evidence identity `f2f8fc499be05de170e9bcf046e45bbc67b79e13aad61f9cb05874f129b98939`.
 
 ## LIBC2.LIB — STRINGS.OBJ (ordinal 20)
 
-- TU directory: `src/libraries/libc2/20-strings/`; target `lib_36ef129fc05efb58_0`.
+- TU directory: `src/libraries/libc2/20-strings/`; target `libc2_20`.
 - Original functions: `index` and `rindex`; both recovered.
 - Recovered: `index` — returns a pointer to the first occurrence of the sign-extended character argument in the string, or 0 for a null string or absent character. `rindex` — returns a pointer to the last occurrence of the sign-extended character argument in the string, or 0 for a null string or absent character.
 - Same-file evidence: original `strings.o` has one `.text` (0x90 bytes, 36 words) and `.note`, no `.data`/`.bss`, and exports both `index` (`T`, `.text` 0x68) and `rindex` (`T`, `.text` 0xA0) from the same object; its only relocation is an internal `R_MIPS_26` into the same `.text`. The two entries are contiguous with no unnamed helper: `index` occupies the first 14 words, `rindex` the next 19 words (through 0xE8), followed by 3 words of section padding, tying both to this two-function TU rather than to another LIBC2 member.
 - Source-family/link adjacency: the recovered `index` body is instruction-for-instruction identical to LIBC2 `STRCHR.OBJ` (`libc2/16-strchr`, ordinal 16), including the char sign-extension and null-string guard, placing it in the LIBC2 string-primitive run; the two are separate archive members with separate `sourceSha256` values and are not merged. The recovered `rindex` body is likewise instruction-for-instruction identical to `STRRCHR.OBJ` (`libc2/26-strrchr`, ordinal 26) over its 19 words — same terminator scan, backward search and `sltu` bound test — but carries a different `sourceSha256` (`08456701…80498` vs `d06274a9…437c2`), so it too is a separate archive member and is not merged with ordinal 26.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/20-strings` (`STRINGS.OBJ`, ordinal 20, `ambiguousNamedBaseline: false`), member `sourceSha256` `08456701a2c5e461d1d5292e2e68a842ddb754497367d30faf0941c7d5e80498`, and the ordered `tu.json` (`_shared-0.h` + `index.c` + `rindex.c`).
-- Verification: finalize gate passed with agent origin and verified source/evidence identity `10f38094b691adf7b7f1d289ec6c399328033d7ed897a776cb5860fd6ba8cbda`; `build/libraries/verified/lib_36ef129fc05efb58_0.json` records the whole-member match (36/36 words) with both `index` and `rindex` completed.
+- Verification: finalize gate passed with agent origin and verified source/evidence identity `10f38094b691adf7b7f1d289ec6c399328033d7ed897a776cb5860fd6ba8cbda`; `build/libraries/verified/libc2_20.json` records the whole-member match (36/36 words) with both `index` and `rindex` completed.
 
 ## LIBC2.LIB — STRLEN.OBJ (ordinal 21)
 
-- TU directory: `src/libraries/libc2/21-strlen/`; target `lib_7a8788d2f28275cc_0`.
+- TU directory: `src/libraries/libc2/21-strlen/`; target `libc2_21`.
 - Original function: `strlen` — returns the length of a null-terminated string, or 0 when the pointer is null.
-- Same-file evidence: original `21-strlen.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strlen` (`T`), leaves nothing undefined, and its sole `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x74), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_7a8788d2f28275cc_0/member.s` shows the single 16-word function at `.text` 0x68.
+- Same-file evidence: original `21-strlen.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `strlen` (`T`), leaves nothing undefined, and its sole `.rel.text` entry is an `R_MIPS_26` against its own `.text` (the internal `j` at 0x74), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_21/member.s` shows the single 16-word function at `.text` 0x68.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/21-strlen` (`STRLEN.OBJ`, ordinal 21, `ambiguousNamedBaseline: false`), member `sourceSha256` `09c32e826d0419e49a27ac5ff27140db65207753faab6634b187ff861ac9c670`, and the ordered single-function `tu.json` (`_shared-0.h` + `strlen.c`); `src/libraries/libc2/21-strlen/_shared-0.h` records object sha256 `e10b2cf4f2ff8196cbe2e85f7b4170583c2214905f89240b889e5bcccae00c61`.
 - Source-family/link adjacency: ordinal 21 sits in the LIBC2 string-primitive run between `STRINGS.OBJ` (20) and `STRNCAT.OBJ` (22), and `STRCAT.OBJ` (15), `PRNT.OBJ` (33) and `SPRINTF.OBJ` (34) each reference `strlen` as an undefined global through an `R_MIPS_26` relocation, so this member is a separately linked callee rather than part of those TUs; all remain separate archive members.
-- Cross-library: LIBC.LIB also has an ordinal-21 member `C27.OBJ` (`libc/21-c27`, target `lib_143d4fb7aa9cb0bc_0`) exporting `strlen`, but it is a BIOS tail-jump binding (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x1B`) with a different `sourceSha256` (`2af0ed2ef2c346b1b936cd652d9be5b000c7036a83806e448547006f827cc2f5`); the shared name and archive ordinal are coincidence, not one TU, and the two members are not merged.
-- Verification: `build/libraries/verified/lib_7a8788d2f28275cc_0.json` records the whole-member match (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `bcc38a0d18e874face42f54a552eb761dbaae7c6cc75b40323bdf16fd2bad3f8`.
+- Cross-library: LIBC.LIB also has an ordinal-21 member `C27.OBJ` (`libc/21-c27`, target `libc_21`) exporting `strlen`, but it is a BIOS tail-jump binding (`addiu $t2,0,0xA0; jr $t2; addiu $t1,0,0x1B`) with a different `sourceSha256` (`2af0ed2ef2c346b1b936cd652d9be5b000c7036a83806e448547006f827cc2f5`); the shared name and archive ordinal are coincidence, not one TU, and the two members are not merged.
+- Verification: `build/libraries/verified/libc2_21.json` records the whole-member match (16/16 words); finalize gate passed with agent origin and verified source/evidence identity `bcc38a0d18e874face42f54a552eb761dbaae7c6cc75b40323bdf16fd2bad3f8`.
 
 ## LIBC2.LIB — STRNCAT.OBJ (ordinal 22)
 
-- TU directory: `src/libraries/libc2/22-strncat/`; target `lib_38ada9a9a296248d_0`.
+- TU directory: `src/libraries/libc2/22-strncat/`; target `libc2_22`.
 - Original function: `strncat` — appends up to `arg2` bytes of `arg1` to the end of `arg0` and returns the original `arg0`, or 0 for a null pointer argument.
-- Same-file evidence: original `22-strncat.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss` — and exports only `strncat` (`T`); all three `.rel.text` entries are `R_MIPS_26` against its own `.text` (the internal jumps at 0x10, 0x18 and 0x40), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_38ada9a9a296248d_0/member.s` shows the single 32-word function.
+- Same-file evidence: original `22-strncat.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss` — and exports only `strncat` (`T`); all three `.rel.text` entries are `R_MIPS_26` against its own `.text` (the internal jumps at 0x10, 0x18 and 0x40), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_22/member.s` shows the single 32-word function.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/22-strncat` (`STRNCAT.OBJ`, ordinal 22, `ambiguousNamedBaseline: false`), member `sourceSha256` `ea0f654503e614b6015582a820de31ee828b7c2e8e902d670fb1d48d8ecabe1f`, and the ordered `tu.json` (`_shared-0.h` + `strncat.c`); `src/libraries/libc2/22-strncat/_shared-0.h` records object sha256 `282142441ca3b0760f03adf3a797af8ab9ea40638e104849236cf7a1d5996328`.
 - Source-family/link adjacency: ordinal 22 closes the LIBC2 string-primitive run at the position between `STRLEN.OBJ` (21) and `STRNCMP.OBJ` (23) already cited by the `STRCAT`/`STRCPY`/`STRLEN` entries. `strncat` keeps the two-null-guard / return-preserved-base idiom of `STRCAT.OBJ` (15) and `STRCPY.OBJ` (18) but inlines its own terminator scan and bounded copy loop, issuing no `strlen` call or any other external relocation, so it is a self-contained archive member rather than part of those TUs.
 - Cross-library: member `sourceSha256` `ea0f6545…cabe1f` occurs only in `libc2/22-strncat`, so STRNCAT.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: `build/libraries/verified/lib_38ada9a9a296248d_0.json` records the whole-member match (32/32 words); finalize gate passed with agent origin and verified source/evidence identity `8a6c565db84b4d7c23fcae9a73f77e13e2a01eeaa83c74318cba6513270fe4fe`.
+- Verification: `build/libraries/verified/libc2_22.json` records the whole-member match (32/32 words); finalize gate passed with agent origin and verified source/evidence identity `8a6c565db84b4d7c23fcae9a73f77e13e2a01eeaa83c74318cba6513270fe4fe`.
 
 ## LIBC2.LIB — STRNCMP.OBJ (ordinal 23)
 
-- TU directory: `src/libraries/libc2/23-strncmp/`; target `lib_468f566272839f4d_0`.
+- TU directory: `src/libraries/libc2/23-strncmp/`; target `libc2_23`.
 - Original function: `strncmp` — null-argument guard (both null → 0, `arg0` null → -1, `arg1` null → 1), then compares at most `arg2` bytes as signed chars, stopping at the first mismatch or terminating byte and returning the byte difference (or 0).
-- Same-file evidence: original `23-strncmp.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss` — and exports only `strncmp` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text` (the forward jumps at 0x88 and 0xD4), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/lib_468f566272839f4d_0/member.s` shows the single 32-word function at `.text` 0x68.
+- Same-file evidence: original `23-strncmp.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss` — and exports only `strncmp` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text` (the forward jumps at 0x88 and 0xD4), so the object owns no state, has no external callee and no file-static companion; `build/libraries/disassembly/libc2_23/member.s` shows the single 32-word function at `.text` 0x68.
 - Source-family/link adjacency: `strncmp` reproduces the exact null-argument guard of `STRCMP.OBJ` (ordinal 17) — `beqz $a0` / `bnez $a1` / `beq $a0,$a1` with the `-1`/`1` constants — and the same signed-byte mismatch epilogue (`lb` / `lb -1($a1)` / `subu`), adding only the remaining-count bound loop, placing both members in one LIBC2 signed-string-comparison source family. Ordinal 23 closes the LIBC2 string-primitive run immediately after `STRNCAT.OBJ` (22), the position already cited by the `STRNCAT`/`STRLEN` entries. They remain separate archive members; the shared idiom and ordinal adjacency are not shared state and do not merge the TUs.
 - Cross-library: no LIBC.LIB member is named `STRNCMP.OBJ` and no entry in `library-input/redux/original-members.json` shares STRNCMP's `sourceSha256` `aab80f4186301b69692026173e39b80003a226afc1c2aa56b111dd04bbc34dbe`, so STRNCMP.OBJ is outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/23-strncmp` (`STRNCMP.OBJ`, ordinal 23, `ambiguousNamedBaseline: false`), member `sourceSha256` `aab80f4186301b69692026173e39b80003a226afc1c2aa56b111dd04bbc34dbe`, and the ordered single-function `tu.json` (`_shared-0.h` + `strncmp.c`); `src/libraries/libc2/23-strncmp/_shared-0.h` records object sha256 `c7c0802232c62945b2acbe99289a94e4dcf9c192b2174537eb9d358d13e966da`.
-- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_468f566272839f4d_0.json`; finalize gate passed with agent origin and verified source/evidence identity `5cd7b0e7ab51b9d209a6135cba2f75de92750957f5431dcac6615f4836f89055`.
+- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/libc2_23.json`; finalize gate passed with agent origin and verified source/evidence identity `5cd7b0e7ab51b9d209a6135cba2f75de92750957f5431dcac6615f4836f89055`.
 
 ## LIBC2.LIB — STRNCPY.OBJ (ordinal 24)
 
-- TU directory: `src/libraries/libc2/24-strncpy/`; target `lib_e1828ca43cda138a_0`.
+- TU directory: `src/libraries/libc2/24-strncpy/`; target `libc2_24`.
 - Original function: `strncpy` — copies at most `arg2` bytes from `arg1` to `arg0`, zero-filling the remainder of the destination once a terminator is copied, and returns the destination base (0 when either pointer is null); a non-positive count returns the base without copying.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/24-strncpy` (`STRNCPY.OBJ`, ordinal 24, `ambiguousNamedBaseline: false`), member `sourceSha256` `ea44e99696475ece4caaa40e0c4b23338524262f7fdacf3467aea31277081eea`, and the ordered single-function `tu.json` (`_shared-0.h` + `strncpy.c`); `src/libraries/libc2/24-strncpy/_shared-0.h` records object sha256 `3489a7b3c5ed5a0dc2e4122c37b95d9b603bc3e47fb7ffe2e0c5f330de2495b7`.
-- Same-file evidence: original `24-strncpy.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `strncpy` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text`, so the object owns no state, has no external callee and no file-static companion. The terminator zero-fill and the bounded copy loop are inlined rather than issued as calls to `MEMSET.OBJ`/`STRCPY.OBJ`, so no intra-library call edge ties it to a neighbour's TU; `build/libraries/disassembly/lib_e1828ca43cda138a_0/member.s` shows the single 28-word function.
+- Same-file evidence: original `24-strncpy.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `strncpy` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text`, so the object owns no state, has no external callee and no file-static companion. The terminator zero-fill and the bounded copy loop are inlined rather than issued as calls to `MEMSET.OBJ`/`STRCPY.OBJ`, so no intra-library call edge ties it to a neighbour's TU; `build/libraries/disassembly/libc2_24/member.s` shows the single 28-word function.
 - Source-family/link adjacency: ordinal 24 continues the LIBC2 string-primitive run between `STRNCMP.OBJ` (23) and `STRPBRK.OBJ` (25); the placement is archive adjacency only and, together with the lack of shared state or relocations, keeps STRNCPY.OBJ a separate single-symbol member rather than part of either neighbour or of `MEMCPY.OBJ` (8).
 - Cross-library: member `sourceSha256` `ea44e996…081eea` occurs only in `libc2/24-strncpy`, so STRNCPY.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_e1828ca43cda138a_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2a7253397c033aa62f8eb7784c3dd442eb5f044bfbcbb444548370a5fedee3ec`.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/libc2_24.json`; finalize gate passed with agent origin and verified source/evidence identity `2a7253397c033aa62f8eb7784c3dd442eb5f044bfbcbb444548370a5fedee3ec`.
 
 ## LIBC2.LIB — STRPBRK.OBJ (ordinal 25)
 
-- TU directory: `src/libraries/libc2/25-strpbrk/`; target `lib_0f18f6d55e79a610_0`.
+- TU directory: `src/libraries/libc2/25-strpbrk/`; target `libc2_25`.
 - Original function: `strpbrk` — returns a pointer to the first byte of `arg0` that occurs in `arg1`, or 0 when no byte matches or `arg0` is empty.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/25-strpbrk` (`STRPBRK.OBJ`, ordinal 25, `ambiguousNamedBaseline: false`), member `sourceSha256` `ecb7d82f15646784a182e2128cabe35171ef212462574f10ba30e62952e6c731`, and the ordered single-function `tu.json` (`_shared-0.h` + `strpbrk.c`); `src/libraries/libc2/25-strpbrk/_shared-0.h` records object sha256 `bca6d62bc0f91c2ec535d5dae15448c74c5adfae45aaa09129c6abab0f64258f`.
 - Same-file evidence: original `25-strpbrk.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strpbrk` (`T`), so the object owns no state, has no external callee and no file-static companion. `strpbrk` inlines its own NUL-terminated set scan rather than calling `STRCHR.OBJ`/`STRCSPN.OBJ`, so no intra-library call edge ties it to a neighbour's TU.
 - Source-family/link adjacency: ordinal 25 continues the LIBC2 string-primitive run between `STRNCPY.OBJ` (24) and `STRRCHR.OBJ` (26); the set scan repeats the `lb` plus `sll`/`sra` signed-byte comparison idiom already recorded for `STRCHR.OBJ` (16), `STRCSPN.OBJ` (19) and `STRRCHR.OBJ` (26). This is idiom and archive adjacency only, not shared state, and does not merge the members.
 - Cross-library: member `sourceSha256` `ecb7d82f…52e6c731` occurs only in `libc2/25-strpbrk`, so STRPBRK.OBJ is outside the LIBC↔LIBC2 identical-byte replication run. LIBC.LIB `C32.OBJ` (`libc/26-c32`, ordinal 26) exports its own `strpbrk`, but it is a three-instruction BIOS tail transfer (excluding padding; `0xA0`/`0x20`) rather than this implementation, so the two must not be merged.
-- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_0f18f6d55e79a610_0.json`; finalize gate passed with agent origin and verified source/evidence identity `2c4e43111bad931c92aae3d1e269374a2b47889c6f894f532ac20180617a8e99`.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/libc2_25.json`; finalize gate passed with agent origin and verified source/evidence identity `2c4e43111bad931c92aae3d1e269374a2b47889c6f894f532ac20180617a8e99`.
 
 ## LIBC2.LIB — STRSPN.OBJ (ordinal 27)
 
-- TU directory: `src/libraries/libc2/27-strspn/`; target `lib_a5fa7dc9e501027a_0`.
+- TU directory: `src/libraries/libc2/27-strspn/`; target `libc2_27`.
 - Original function: `strspn` — returns the length of the initial `arg0` prefix made up only of bytes present in `arg1`.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/27-strspn` (`STRSPN.OBJ`, ordinal 27, `ambiguousNamedBaseline: false`), member `sourceSha256` `0332817fb631646794e8d11e9af2ff567b33bd1aff2c9b64f5507888289c4c24`, and the ordered single-function `tu.json` (`_shared-0.h` + `strspn.c`); `src/libraries/libc2/27-strspn/_shared-0.h` records object sha256 `d77dff3923c6de66d3079d0242ee62d834087cda12b9a44e85cc383c642b40be`.
 - Same-file evidence: original `27-strspn.o` has only `.text` (0x80 bytes, 32 words) and `.note` — no `.data`/`.bss`, no relocations — and exports only `strspn` (`T`), so the object owns no state, has no external callee and no file-static companion.
 - Source-family/link adjacency: ordinal 27 continues the LIBC2 string-primitive run between `STRRCHR.OBJ` (26) and `STRSTR.OBJ` (28); the scan shares the set-membership idiom already recorded for `STRCHR.OBJ` (16), `STRCSPN.OBJ` (19), `STRPBRK.OBJ` (25) and `STRRCHR.OBJ` (26). This is idiom and archive adjacency only, not shared state, and does not merge the members.
 - Cross-library: LIBC.LIB `C33.OBJ` (`libc/27-c33`, ordinal 27) also exports `strspn`, but it is a BIOS tail-jump binding (`0xA0`/`0x21`) with a different `sourceSha256` (`d2b022c6…9e79e7`), so the two must not be merged; STRSPN's `sourceSha256` occurs only in `libc2/27-strspn`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/lib_a5fa7dc9e501027a_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `8cf3a2c69d47065cdb56b2f404c45471ff2ab7050fdfc2f768f7c8ff8b0af1fd`.
+- Verification: whole-member `MATCH` (32/32 words) in `build/libraries/verified/libc2_27.json`; full finalize gate passed with agent origin and verified source/evidence identity `8cf3a2c69d47065cdb56b2f404c45471ff2ab7050fdfc2f768f7c8ff8b0af1fd`.
 
 ## LIBC2.LIB — STRSTR.OBJ (ordinal 28)
 
-- TU directory: `src/libraries/libc2/28-strstr/`; target `lib_abf11e8139dd2152_0`.
+- TU directory: `src/libraries/libc2/28-strstr/`; target `libc2_28`.
 - Original function: `strstr` — returns a pointer to the first occurrence of the `arg1` needle in `arg0`, or 0 when absent or `arg0` is empty; single-symbol member.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/28-strstr` (`STRSTR.OBJ`, ordinal 28, `ambiguousNamedBaseline: false`), member `sourceSha256` `3e4574892f7f1ce5d311ea039d8d11e0c6960dfad74277dae97df4d18c6495ba`, and the ordered single-part `tu.json` (`_shared-0.h` + `strstr.c`); `src/libraries/libc2/28-strstr/_shared-0.h` records object sha256 `14559e9b845aeff755a86ca10741f1a4c663e350066fe03278c740af971e4666`.
 - Same-file evidence: original `28-strstr.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `strstr` (`T`); both `.rel.text` entries are `R_MIPS_26` against its own `.text` (the internal jumps at 0x8 and 0x3C), so the object owns no state, has no external callee and no file-static companion.
 - Source-family/link adjacency: ordinal 28 continues the LIBC2 string-primitive run between `STRSPN.OBJ` (27) and `STRTOK.OBJ` (29); the needle byte comparison repeats the `lb` / `lbu` / `sll` / `sra` signed-byte idiom already recorded for `STRSPN.OBJ` (27), `STRPBRK.OBJ` (25), `STRCSPN.OBJ` (19) and `STRCHR.OBJ` (16). This is idiom and archive adjacency only, not shared state, and does not merge the members.
 - Cross-library: LIBC.LIB `C36.OBJ` (`libc/29-c36`, ordinal 29) also exports `strstr`, but it is a BIOS tail-jump binding (`0xA0`/`0x24`) with a different `sourceSha256` (`c9f4718f…95acbbe7`), so the two must not be merged; STRSTR's `sourceSha256` occurs only in `libc2/28-strstr`, placing it outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_abf11e8139dd2152_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `a9408064d50ff95f349406762fb65cff35dc51adabd8e3f27ed6b1f35be1ba30`.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/libc2_28.json`; full finalize gate passed with agent origin and verified source/evidence identity `a9408064d50ff95f349406762fb65cff35dc51adabd8e3f27ed6b1f35be1ba30`.
 
 ## LIBC2.LIB — STRTOK.OBJ (ordinal 29)
 
-- TU directory: `src/libraries/libc2/29-strtok/`; target `lib_13483b10fd096166_0`.
+- TU directory: `src/libraries/libc2/29-strtok/`; target `libc2_29`.
 - Original function: `strtok` — splits `arg0` on the bytes of `arg1`, returning successive tokens and resuming from a file-private saved pointer when `arg0` is 0; single-symbol member with one private data slot.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/29-strtok` (`STRTOK.OBJ`, ordinal 29, `ambiguousNamedBaseline: false`), member `sourceSha256` `70812bde3c6ba30126605630f4f88b17b3ca43ca080f9958e359a90b310f04ba`, and the ordered `tu.json` (`_shared-0.h` + `strtok.c` + `_data.c`); `src/libraries/libc2/29-strtok/_shared-0.h` records object sha256 `be857474fd8b6b8bc98f4b87b8abac1764fdb6d495d8e6441dffe38572ce3504`.
 - Same-file evidence: original `29-strtok.o` has `.text` (0x120 bytes), `.data` (0x10 bytes) and `.note`; it exports only `strtok` (`T`), the data slot is an unnamed local `$libc2/strtok.rel.data@00000000`, and every `.text` relocation targets that slot or its own local text labels, so the resumption pointer is TU-private state rather than a shared global; the object has no external callee and no separate statics beyond that slot.
 - Cross-library duplicate: member `sourceSha256` `70812bde…310f04ba` equals that of LIBC.LIB `STRTOK.OBJ` (`libc/51-strtok`, ordinal 51), extending the LIBC↔LIBC2 identical-byte replication run recorded for `bcmp`, `memcmp`, `qsort`, `bsearch`, `strtoul` and `strtol`. `.text` (72/72 words) and `.data` are identical; only the embedded source-path strings differ. The duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
 - Source-family/link adjacency: ordinal 29 continues the LIBC2 string-primitive run between `STRSTR.OBJ` (28) and `STRTOUL.OBJ` (30); the delimiter scan repeats the `lb` / `lbu` / `sll` / `sra` signed-byte idiom already recorded for `STRSPN.OBJ` (27), `STRPBRK.OBJ` (25), `STRCSPN.OBJ` (19) and `STRCHR.OBJ` (16), while the saved pointer is private to this object. This is idiom, private state and archive adjacency only; no merge.
-- Verification: whole-member `MATCH` (72/72 words) in `build/libraries/verified/lib_13483b10fd096166_0.json`; full finalize gate passed with agent origin and verified source/evidence identity `603fa5a89c2cab0c0b7d6727e9763cf40f849962b47e9b872b0d630d75e4c3d3`.
+- Verification: whole-member `MATCH` (72/72 words) in `build/libraries/verified/libc2_29.json`; full finalize gate passed with agent origin and verified source/evidence identity `603fa5a89c2cab0c0b7d6727e9763cf40f849962b47e9b872b0d630d75e4c3d3`.
 
 ## LIBC2.LIB — STRTOUL.OBJ (ordinal 30)
 
-- TU directory: `src/libraries/libc2/30-strtoul/`; target `lib_b4dd899542bea38e_0`.
+- TU directory: `src/libraries/libc2/30-strtoul/`; target `libc2_30`.
 - Original function: `strtoul` — unsigned integer parse from a string with optional base prefix, returning the accumulated value and the end pointer through the out-parameter.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/30-strtoul` (`STRTOUL.OBJ`, ordinal 30, `ambiguousNamedBaseline: false`), member `sourceSha256` `4e6890e32e8d8f34fe845bab8a256696283110db9e749b358b71f86601c3dff3`, and the ordered `tu.json` (`_shared-0.h` + `strtoul.c`); `src/libraries/libc2/30-strtoul/_shared-0.h` records object sha256 `9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2`.
-- Same-file evidence: original `30-strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note` — no `.data`/`.bss` — and exports only `strtoul` (`T`), leaving `_ctype_`, `toupper` and `todigit` undefined, so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_b4dd899542bea38e_0/member.s` shows the single 84-word function, consistent with a one-member, one-function TU.
+- Same-file evidence: original `30-strtoul.o` has only `.text` (0x150 bytes, 84 words) and `.note` — no `.data`/`.bss` — and exports only `strtoul` (`T`), leaving `_ctype_`, `toupper` and `todigit` undefined, so the object owns no data and no file-static companion; `build/libraries/disassembly/libc2_30/member.s` shows the single 84-word function, consistent with a one-member, one-function TU.
 - Cross-library duplicate: member `sourceSha256` `4e6890e3…01c3dff3` equals that of LIBC.LIB `STRTOUL.OBJ` (`libc/54-strtoul`, ordinal 54), the already-recorded LIBC↔LIBC2 identical-byte replication run; `.text` (84/84 words) is identical and only the embedded source-path strings differ. Duplicate archive bytes are replication, not one shared TU, and do not merge the two members.
 - Call/link adjacency: ordinal 30 sits between `STRTOK.OBJ` (29) and `TODIGIT.OBJ` (31); the body calls `todigit` (ordinal 31, immediately following in link order) and leaves `toupper` (CTYPE_1.OBJ, ordinal 47) and `_ctype_` (CTYPE_0.OBJ, ordinal 46) undefined for later LIBC2 members. Its whitespace/base-prefix/digit-accumulation structure matches LIBC.LIB `STRTOL.OBJ` (ordinal 55) plus sign handling, but shared externs and duplicated bytes do not merge the members.
-- Verification: whole-member `MATCH` (84/84 words) in `build/libraries/verified/lib_b4dd899542bea38e_0.json` against original hash `9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2`; full finalize gate passed with agent origin and verified source/evidence identity `5fbac456a6832eed525704efdbc4d7ecb90a0d9faa05909d5ddd5ac66e8940d6`.
+- Verification: whole-member `MATCH` (84/84 words) in `build/libraries/verified/libc2_30.json` against original hash `9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2`; full finalize gate passed with agent origin and verified source/evidence identity `5fbac456a6832eed525704efdbc4d7ecb90a0d9faa05909d5ddd5ac66e8940d6`.
 
 ## LIBC2.LIB — TODIGIT.OBJ (ordinal 31)
 
-- TU directory: `src/libraries/libc2/31-todigit/`; target `lib_7c988ccce0366b12_0`.
+- TU directory: `src/libraries/libc2/31-todigit/`; target `libc2_31`.
 - Original function: `todigit` — single-symbol digit-value conversion: `arg0 - 0x30` for the `_ctype_` digit class, `tolower(arg0) - 0x57` for the alphabetic class, and the `0x98967F` sentinel otherwise; the sentinel is larger than any supported base, which is why `STRTOUL.OBJ` can use the result directly as a base bound.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/31-todigit` (`TODIGIT.OBJ`, ordinal 31, `ambiguousNamedBaseline: false`), member `sourceSha256` `f075f60c581cebcadadbe6bad2ea4c666cb6b80b0a5fae53c0e0b8dc42c68a5f`, and the ordered two-part `tu.json` (`_shared-0.h` + `todigit.c`); `src/libraries/libc2/31-todigit/_shared-0.h` records one original member, one TU, functions: `todigit`, and object sha256 `00bff85f45110112fcbdb4eb267eb190eb9d629e029aa377b8d4569634a9bf12`.
-- Same-file evidence: original `31-todigit.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `todigit` (`T`), leaving `_ctype_` and `tolower` undefined, so the object owns no data and no file-static companion; `build/libraries/disassembly/lib_7c988ccce0366b12_0/member.s` shows the single 28-word function, consistent with a one-member, one-function TU.
+- Same-file evidence: original `31-todigit.o` has only `.text` (0x70 bytes, 28 words) and `.note` — no `.data`/`.bss` — and exports only `todigit` (`T`), leaving `_ctype_` and `tolower` undefined, so the object owns no data and no file-static companion; `build/libraries/disassembly/libc2_31/member.s` shows the single 28-word function, consistent with a one-member, one-function TU.
 - Call/link adjacency: `todigit` is the only undefined symbol added by this member and is referenced by exactly three LIBC2 objects — `STRTOUL.OBJ` (ordinal 30, immediately preceding in link order, already recorded as calling ordinal 31), `ATOI_0.OBJ` (44) and `STRTOL_0.OBJ` (49) — placing TODIGIT.OBJ in the LIBC2 string-to-integer family in link order. The LIBC.LIB counterparts bind their own separate `C10.OBJ` `todigit` (ordinal 7) instead, so the two libraries keep independent one-function `todigit` members. Shared externs and archive adjacency only; no merge.
 - Cross-library: no LIBC.LIB member is named `TODIGIT.OBJ` and no member in `library-input/redux/original-members.json` shares TODIGIT's `sourceSha256` `f075f60c…42c68a5f`, so it lies outside the LIBC↔LIBC2 identical-byte replication run and must not be merged with any LIBC member.
-- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/lib_7c988ccce0366b12_0.json` against original hash `00bff85f45110112fcbdb4eb267eb190eb9d629e029aa377b8d4569634a9bf12`; full finalize gate passed with agent origin and verified source/evidence identity `e8348b5e813fd8ca036ce9c2e6c47021ae10a50e9997fcc05905271266d0f621`.
+- Verification: whole-member `MATCH` (28/28 words) in `build/libraries/verified/libc2_31.json` against original hash `00bff85f45110112fcbdb4eb267eb190eb9d629e029aa377b8d4569634a9bf12`; full finalize gate passed with agent origin and verified source/evidence identity `e8348b5e813fd8ca036ce9c2e6c47021ae10a50e9997fcc05905271266d0f621`.
 
 ## LIBC2.LIB — PRINTF.OBJ (ordinal 32)
 
-- TU directory: `src/libraries/libc2/32-printf/`; target `lib_d985b6c930f2b946_0`.
+- TU directory: `src/libraries/libc2/32-printf/`; target `libc2_32`.
 - Original function: `printf` — fixed four-argument wrapper that stages `a1`–`a3` as a stack `va_list` and forwards `(1, fmt, ap)` to `prnt`; it is not the formatter itself.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/32-printf` (`PRINTF.OBJ`, ordinal 32, `ambiguousNamedBaseline: false`), member `sourceSha256` `d8f605926eccb543e4d2d046f74d9c5c4b310616514ab5918cfdd398f14cc36a`, and the ordered single-function `tu.json` (`_shared-0.h` + `printf.c`); `src/libraries/libc2/32-printf/_shared-0.h` records object sha256 `9bac8e5a79f553ba9ca68635c8dae4feabf4e36d260794a983ff70ec6a278f81`.
-- Same-file evidence: original `32-printf.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `printf` (`T`), and leaves `prnt` undefined (`*UND*`) through its sole `.rel.text` entry, an `R_MIPS_26` at offset 0x24; the object owns no state and has no file-static companion, and `build/libraries/disassembly/lib_d985b6c930f2b946_0/member.s` shows the single 16-word function.
+- Same-file evidence: original `32-printf.o` has only `.text` (0x40 bytes, 16 words) and `.note` — no `.data`/`.bss` — exports only `printf` (`T`), and leaves `prnt` undefined (`*UND*`) through its sole `.rel.text` entry, an `R_MIPS_26` at offset 0x24; the object owns no state and has no file-static companion, and `build/libraries/disassembly/libc2_32/member.s` shows the single 16-word function.
 - Call/link adjacency: ordinal 32 immediately precedes `PRNT.OBJ` (ordinal 33), the callee named by `printf`'s sole external relocation; the next member `SPRINTF.OBJ` (34) is a separate self-contained formatter that does not call `prnt`. Link order and the call graph therefore agree that `printf` is a thin single-function member distinct from the formatter, and it must not be merged with `PRNT.OBJ` or `SPRINTF.OBJ`.
 - Cross-library: member `sourceSha256` `d8f60592…14cc36a` occurs only in `libc2/32-printf`; LIBC.LIB has its own `SPRINTF.OBJ` (`libc/46-sprintf`) but no `PRINTF.OBJ`, and no LIBC.LIB member shares this member's `sourceSha256`, so PRINTF.OBJ is outside the LIBC↔LIBC2 identical-byte replication run.
-- Verification: whole-member `MATCH` (16/16 words) in `build/libraries/verified/lib_d985b6c930f2b946_0.json` against original hash `9bac8e5a79f553ba9ca68635c8dae4feabf4e36d260794a983ff70ec6a278f81`; full finalize gate passed with agent origin and verified source/evidence identity `a9137a3fa5a0380ac9891bb10396979088b42ebc8b07f77a763d2bfc0ecd9e06`.
+- Verification: whole-member `MATCH` (16/16 words) in `build/libraries/verified/libc2_32.json` against original hash `9bac8e5a79f553ba9ca68635c8dae4feabf4e36d260794a983ff70ec6a278f81`; full finalize gate passed with agent origin and verified source/evidence identity `a9137a3fa5a0380ac9891bb10396979088b42ebc8b07f77a763d2bfc0ecd9e06`.
 
 ## LIBDS.LIB — DSREADY.OBJ (ordinal 11)
 
-- TU directory: `src/libraries/libds/11-dsready/`; target `lib_2c90443875239758_0`.
+- TU directory: `src/libraries/libds/11-dsready/`; target `libds_11`.
 - Original functions: `DsStartReadySystem`, `DsEndReadySystem`, `DsReadySystemMode`, `ER_active`, `ER_clear`.
 - Recovered: `ER_active` — reads `D_00000630`.
 - Other functions and member data remain assembly backlog; the getter alone does not establish the full ready-system behavior.
@@ -573,7 +573,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBETC.LIB — VMODE.OBJ (ordinal 6)
 
-- TU directory: `src/libraries/libetc/6-vmode/`; target `lib_033d4f3f087a4c4b_0`.
+- TU directory: `src/libraries/libetc/6-vmode/`; target `libetc_6`.
 - Original functions: `SetVideoMode`, `GetVideoMode`.
 - Recovered: `GetVideoMode` — reads `D_000000A0`.
 - `SetVideoMode` and member data remain assembly backlog.
@@ -581,7 +581,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBHMD.LIB — SCANUNIT.OBJ (ordinal 575)
 
-- TU directory: `src/libraries/libhmd/575-scanunit/`; target `lib_ed0eebebae6499a6_0`.
+- TU directory: `src/libraries/libhmd/575-scanunit/`; target `libhmd_575`.
 - Original functions: `GsScanUnit`, `GsGetHeadpUnit`.
 - Recovered: `GsGetHeadpUnit` — returns the pointer stored in `D_00000248`.
 - `GsScanUnit` and member data remain assembly backlog; no structure layout or traversal behavior is inferred from the pointer getter.
@@ -589,14 +589,14 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBSND.LIB — VM_VIB.OBJ (ordinal 203)
 
-- TU directory: `src/libraries/libsnd/203-vm_vib/`; target `lib_5062f444b23e65cf_0`.
+- TU directory: `src/libraries/libsnd/203-vm_vib/`; target `libsnd_203`.
 - Original functions, all recovered: `SeVibOn`, `SetVib`, `SsUtVibrateOn`, `SsUtVibrateOff` — return-only no-ops in this supplied member.
 - The empty C bodies reproduce original `jr $ra; nop` pairs; they are not placeholder implementations. These bytes establish no vibration implementation elsewhere and do not determine unread argument contracts.
-- Membership evidence: `library-input/redux/original-members.json`, entry `libsnd/203-vm_vib`, `tu.json`, and `build/libraries/disassembly/lib_5062f444b23e65cf_0/member.s`. Sweep finalization passed separately as each function was integrated.
+- Membership evidence: `library-input/redux/original-members.json`, entry `libsnd/203-vm_vib`, `tu.json`, and `build/libraries/disassembly/libsnd_203/member.s`. Sweep finalization passed separately as each function was integrated.
 
 ## LIBSND.LIB — SSCLOSE.OBJ (ordinal 51)
 
-- TU directory: `src/libraries/libsnd/51-ssclose/`; target `lib_d54eaa3c6fb04732_0`.
+- TU directory: `src/libraries/libsnd/51-ssclose/`; target `libsnd_51`.
 - Original named functions: `SsSeqClose`, `SsSepClose`.
 - Recovered: `SsSepClose` — forwards its short argument to `func_00000068`.
 - `SsSeqClose` remains assembly backlog; this forwarding wrapper does not reconstruct the close implementation.
@@ -604,7 +604,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBSPU.LIB — S_IT.OBJ (ordinal 58)
 
-- TU directory: `src/libraries/libspu/58-s_it/`; target `lib_b10ef9bfc233ef62_0`.
+- TU directory: `src/libraries/libspu/58-s_it/`; target `libspu_58`.
 - Original functions: `_spu_setInTransfer`, `_spu_getInTransfer`.
 - Recovered: `_spu_getInTransfer` — returns whether `_spu_inTransfer` differs from 1.
 - `_spu_setInTransfer` remains assembly backlog. The shared external flag does not establish ownership of its backing storage in this member.
@@ -612,7 +612,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 ## LIBSPU.LIB — S_GTSA.OBJ (ordinal 52)
 
-- Reconstructed source: `src/libraries/libspu/52-s_gtsa/SpuGetTransferStartAddr.c`; target `lib_35b5022272f9bbf5_0`.
+- Reconstructed source: `src/libraries/libspu/52-s_gtsa/SpuGetTransferStartAddr.c`; target `libspu_52`.
 - Original function: `SpuGetTransferStartAddr` — returns `_spu_tsa` shifted by `_spu_mem_mode_plus`.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libspu/52-s_gtsa`, and `tu.json`. This previously matched function was preserved through the TU-directory migration and recorded as already complete by the sweep.
 
@@ -622,7 +622,7 @@ The automatic sweep covered all 2,671 identifiable functions and integrated 115 
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/44-a40/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- SwEnterCriticalSection (m) — `A40.OBJ`, ordinal 44, target `lib_f6d989f4cd086248_0`
+- SwEnterCriticalSection (m) — `A40.OBJ`, ordinal 44, target `libapi_44`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; privileged or trap instructions in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/44-a40`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -632,7 +632,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/45-a41/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- SwExitCriticalSection (m) — `A41.OBJ`, ordinal 45, target `lib_06aabb52b8bcc72c_0`
+- SwExitCriticalSection (m) — `A41.OBJ`, ordinal 45, target `libapi_45`
 - Hand-written evidence: privileged or trap instructions in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/45-a41`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -642,7 +642,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/67-a96/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- GetCr (m) — `A96.OBJ`, ordinal 67, target `lib_349458f652f40019_0`
+- GetCr (m) — `A96.OBJ`, ordinal 67, target `libapi_67`
 - Hand-written evidence: privileged or trap instructions in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/67-a96`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -652,7 +652,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/68-a97/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- GetSr (m) — `A97.OBJ`, ordinal 68, target `lib_22bb8cc07c2d3b97_0`
+- GetSr (m) — `A97.OBJ`, ordinal 68, target `libapi_68`
 - Hand-written evidence: privileged or trap instructions in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/68-a97`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -662,9 +662,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/74-patch/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- EnablePAD (m) — `PATCH.OBJ`, ordinal 74, target `lib_4031394e3bdde1bc_0`; shares the object with `DisablePAD`, `_patch_pad`
-- DisablePAD (m) — `PATCH.OBJ`, ordinal 74, target `lib_4031394e3bdde1bc_0`; shares the object with `EnablePAD`, `_patch_pad`
-- _patch_pad (m) — `PATCH.OBJ`, ordinal 74, target `lib_4031394e3bdde1bc_0`; shares the object with `EnablePAD`, `DisablePAD`
+- EnablePAD (m) — `PATCH.OBJ`, ordinal 74, target `libapi_74`; shares the object with `DisablePAD`, `_patch_pad`
+- DisablePAD (m) — `PATCH.OBJ`, ordinal 74, target `libapi_74`; shares the object with `EnablePAD`, `_patch_pad`
+- _patch_pad (m) — `PATCH.OBJ`, ordinal 74, target `libapi_74`; shares the object with `EnablePAD`, `DisablePAD`
 - Hand-written evidence: jump through a register other than `$ra` in 1/1; return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/74-patch`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -674,7 +674,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libapi/83-chclrpad/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- _remove_ChgclrPAD (m) — `CHCLRPAD.OBJ`, ordinal 83, target `lib_9f6c1bc0a9ed1203_0`
+- _remove_ChgclrPAD (m) — `CHCLRPAD.OBJ`, ordinal 83, target `libapi_83`
 - Hand-written evidence: return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libapi/83-chclrpad`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -684,8 +684,8 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libc2/39-setjmp/`); 1 member, 2 functions.
 Members (byte-exact assembly, one object each):
-- setjmp (m) — `SETJMP.OBJ`, ordinal 39, target `lib_f7a26da463214377_0`; shares the object with `longjmp`
-- longjmp (m) — `SETJMP.OBJ`, ordinal 39, target `lib_f7a26da463214377_0`; shares the object with `setjmp`
+- setjmp (m) — `SETJMP.OBJ`, ordinal 39, target `libc2_39`; shares the object with `longjmp`
+- longjmp (m) — `SETJMP.OBJ`, ordinal 39, target `libc2_39`; shares the object with `setjmp`
 - Hand-written evidence: return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libc2/39-setjmp`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -695,10 +695,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libcard/14-patch/`); 1 member, 4 functions.
 Members (byte-exact assembly, one object each):
-- _patch_card_info (m) — `PATCH.OBJ`, ordinal 14, target `lib_8131e1e9741808b1_0`; shares the object with `_patch_card`, `_patch_card2`, `_copy_memcard_patch`
-- _patch_card (m) — `PATCH.OBJ`, ordinal 14, target `lib_8131e1e9741808b1_0`; shares the object with `_patch_card_info`, `_patch_card2`, `_copy_memcard_patch`
-- _patch_card2 (m) — `PATCH.OBJ`, ordinal 14, target `lib_8131e1e9741808b1_0`; shares the object with `_patch_card_info`, `_patch_card`, `_copy_memcard_patch`
-- _copy_memcard_patch (m) — `PATCH.OBJ`, ordinal 14, target `lib_8131e1e9741808b1_0`; shares the object with `_patch_card_info`, `_patch_card`, `_patch_card2`
+- _patch_card_info (m) — `PATCH.OBJ`, ordinal 14, target `libcard_14`; shares the object with `_patch_card`, `_patch_card2`, `_copy_memcard_patch`
+- _patch_card (m) — `PATCH.OBJ`, ordinal 14, target `libcard_14`; shares the object with `_patch_card_info`, `_patch_card2`, `_copy_memcard_patch`
+- _patch_card2 (m) — `PATCH.OBJ`, ordinal 14, target `libcard_14`; shares the object with `_patch_card_info`, `_patch_card`, `_copy_memcard_patch`
+- _copy_memcard_patch (m) — `PATCH.OBJ`, ordinal 14, target `libcard_14`; shares the object with `_patch_card_info`, `_patch_card`, `_patch_card2`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; jump through a register other than `$ra` in 1/1; return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libcard/14-patch`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -708,7 +708,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libcard/16-end/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- _ExitCard (m) — `END.OBJ`, ordinal 16, target `lib_497770463d1e2a21_0`
+- _ExitCard (m) — `END.OBJ`, ordinal 16, target `libcard_16`
 - Hand-written evidence: return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libcard/16-end`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -718,7 +718,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/14-msc00/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- InitGeom (m) — `MSC00.OBJ`, ordinal 14, target `lib_3a0866b8694d5ca2_0`
+- InitGeom (m) — `MSC00.OBJ`, ordinal 14, target `libgte_14`
 - Hand-written evidence: privileged or trap instructions in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/14-msc00`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -728,7 +728,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/15-msc01/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- SquareRoot0 (m) — `MSC01.OBJ`, ordinal 15, target `lib_6fa7155f8679459c_0`
+- SquareRoot0 (m) — `MSC01.OBJ`, ordinal 15, target `libgte_15`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/15-msc01`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -738,12 +738,12 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/16-msc02/`); 1 member, 6 functions.
 Members (byte-exact assembly, one object each):
-- InvSquareRoot (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
-- VectorNormalS (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `InvSquareRoot`, `VectorNormal`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
-- VectorNormal (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
-- VectorNormalSS (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `func_00000170`, `MatrixNormal`
-- func_00000170 (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `MatrixNormal`
-- MatrixNormal (m) — `MSC02.OBJ`, ordinal 16, target `lib_d4d00636e606a8e1_0`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `func_00000170`
+- InvSquareRoot (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
+- VectorNormalS (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `InvSquareRoot`, `VectorNormal`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
+- VectorNormal (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormalSS`, `func_00000170`, `MatrixNormal`
+- VectorNormalSS (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `func_00000170`, `MatrixNormal`
+- func_00000170 (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `MatrixNormal`
+- MatrixNormal (m) — `MSC02.OBJ`, ordinal 16, target `libgte_16`; shares the object with `InvSquareRoot`, `VectorNormalS`, `VectorNormal`, `VectorNormalSS`, `func_00000170`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/16-msc02`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -753,7 +753,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/19-msc05/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- gteMIMefunc (m) — `MSC05.OBJ`, ordinal 19, target `lib_26ddf9cd85218439_0`
+- gteMIMefunc (m) — `MSC05.OBJ`, ordinal 19, target `libgte_19`
 - Hand-written evidence: no instruction-level marker; classed by the GTE hazard-nop convention (0 or 1 nop before GTE commands, where the SDK C macros emit 2) and by family; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/19-msc05`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -763,7 +763,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/22-msc09/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- SquareRoot12 (m) — `MSC09.OBJ`, ordinal 22, target `lib_9f8c25939d36ae90_0`
+- SquareRoot12 (m) — `MSC09.OBJ`, ordinal 22, target `libgte_22`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/22-msc09`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -773,20 +773,20 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/23-mtx_000/` … `src/libraries/libgte/41-mtx_06/`); 13 members, 14 functions.
 Members (byte-exact assembly, one object each):
-- MulMatrix0 (m) — `MTX_000.OBJ`, ordinal 23, target `lib_656095d1da87cee7_0`
-- MulRotMatrix (m) — `MTX_001.OBJ`, ordinal 24, target `lib_2da391633ba4f385_0`
-- MulRotMatrix0 (m) — `MTX_002.OBJ`, ordinal 25, target `lib_314af6df7b6d3d26_0`
-- CompMatrix (m) — `MTX_003.OBJ`, ordinal 26, target `lib_21a376840e865d9f_0`
-- ApplyMatrixLV (m) — `MTX_004.OBJ`, ordinal 27, target `lib_da31079ea423913d_0`
-- ApplyRotMatrix (m) — `MTX_005.OBJ`, ordinal 28, target `lib_549d2926fdccb3bb_0`
-- PushMatrix (m) — `MTX_006.OBJ`, ordinal 29, target `lib_79889536768784e9_0`; shares the object with `PopMatrix`
-- PopMatrix (m) — `MTX_006.OBJ`, ordinal 29, target `lib_79889536768784e9_0`; shares the object with `PushMatrix`
-- ApplyRotMatrixLV (m) — `MTX_01.OBJ`, ordinal 36, target `lib_de2ffd65712f8e67_0`
-- SetMulRotMatrix (m) — `MTX_02.OBJ`, ordinal 37, target `lib_7db841b787bd0ef3_0`
-- MulMatrix (m) — `MTX_03.OBJ`, ordinal 38, target `lib_014752e0c77e0f38_0`
-- MulMatrix2 (m) — `MTX_04.OBJ`, ordinal 39, target `lib_27e93db2c33b2458_0`
-- ApplyMatrix (m) — `MTX_05.OBJ`, ordinal 40, target `lib_37547a9faa3d1b1b_0`
-- ApplyMatrixSV (m) — `MTX_06.OBJ`, ordinal 41, target `lib_30ffdac0b0e2555c_0`
+- MulMatrix0 (m) — `MTX_000.OBJ`, ordinal 23, target `libgte_23`
+- MulRotMatrix (m) — `MTX_001.OBJ`, ordinal 24, target `libgte_24`
+- MulRotMatrix0 (m) — `MTX_002.OBJ`, ordinal 25, target `libgte_25`
+- CompMatrix (m) — `MTX_003.OBJ`, ordinal 26, target `libgte_26`
+- ApplyMatrixLV (m) — `MTX_004.OBJ`, ordinal 27, target `libgte_27`
+- ApplyRotMatrix (m) — `MTX_005.OBJ`, ordinal 28, target `libgte_28`
+- PushMatrix (m) — `MTX_006.OBJ`, ordinal 29, target `libgte_29`; shares the object with `PopMatrix`
+- PopMatrix (m) — `MTX_006.OBJ`, ordinal 29, target `libgte_29`; shares the object with `PushMatrix`
+- ApplyRotMatrixLV (m) — `MTX_01.OBJ`, ordinal 36, target `libgte_36`
+- SetMulRotMatrix (m) — `MTX_02.OBJ`, ordinal 37, target `libgte_37`
+- MulMatrix (m) — `MTX_03.OBJ`, ordinal 38, target `libgte_38`
+- MulMatrix2 (m) — `MTX_04.OBJ`, ordinal 39, target `libgte_39`
+- ApplyMatrix (m) — `MTX_05.OBJ`, ordinal 40, target `libgte_40`
+- ApplyMatrixSV (m) — `MTX_06.OBJ`, ordinal 41, target `libgte_41`
 - Family structure: 13 variants over 11 distinct instruction streams (members in one stream differ only in operands): {`MulMatrix0`, `MulMatrix`, `MulMatrix2`}; {`MulRotMatrix`}; {`MulRotMatrix0`}; {`CompMatrix`}; {`ApplyMatrixLV`}; {`ApplyRotMatrix`}; {`PushMatrix`, `PopMatrix`}; {`ApplyRotMatrixLV`}; {`SetMulRotMatrix`}; {`ApplyMatrix`}; {`ApplyMatrixSV`}.
 - Hand-written evidence: `$at` used as a scratch register in 8/13; GTE commands with a single hazard nop in 2/13; return address loaded from a buffer in 1/13; whole-file `.set noreorder` reproduces the bytes in 13/13.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/23-mtx_000`, `libgte/24-mtx_001`, `libgte/25-mtx_002`, `libgte/26-mtx_003`, `libgte/27-mtx_004`, `libgte/28-mtx_005`, `libgte/29-mtx_006`, `libgte/36-mtx_01`, `libgte/37-mtx_02`, `libgte/38-mtx_03`, `libgte/39-mtx_04`, `libgte/40-mtx_05`, `libgte/41-mtx_06`.
@@ -797,7 +797,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/34-mtx_00b/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- SetMulMatrix (m) — `MTX_00B.OBJ`, ordinal 34, target `lib_f301a736b74d7e59_0`
+- SetMulMatrix (m) — `MTX_00B.OBJ`, ordinal 34, target `libgte_34`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/34-mtx_00b`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -807,7 +807,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/35-mtx_00c/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- CompMatrixLV (m) — `MTX_00C.OBJ`, ordinal 35, target `lib_b30257abb6052cd5_0`
+- CompMatrixLV (m) — `MTX_00C.OBJ`, ordinal 35, target `libgte_35`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/35-mtx_00c`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -817,36 +817,36 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/59-smp_02/` … `src/libraries/libgte/330-smp_01_5/`); 30 members, 30 functions.
 Members (byte-exact assembly, one object each):
-- RotTransPers (m) — `SMP_02.OBJ`, ordinal 59, target `lib_438ede1451d732ca_0`
-- RotTransPers3 (m) — `SMP_03.OBJ`, ordinal 60, target `lib_20cfff86d578b732_0`
-- RotTrans (m) — `SMP_04.OBJ`, ordinal 61, target `lib_2c0c064c94cafc0a_0`
-- NormalClipS (m) — `SMP_06.OBJ`, ordinal 63, target `lib_fbcc9a663362b33c_0`
-- LocalLight (m) — `SMP_1.OBJ`, ordinal 303, target `lib_5fe735c62410484d_0`
-- DpqColor (m) — `SMP_2.OBJ`, ordinal 304, target `lib_077ea1b99e6758fc_0`
-- NormalColor (m) — `SMP_3.OBJ`, ordinal 305, target `lib_7d2c223ca742c7fc_0`
-- NormalColor3 (m) — `SMP_4.OBJ`, ordinal 306, target `lib_3fc03715284a29f0_0`
-- NormalColorDpq (m) — `SMP_5.OBJ`, ordinal 307, target `lib_e3ebfa10f0ddca4f_0`
-- NormalColorDpq3 (m) — `SMP_6.OBJ`, ordinal 308, target `lib_5eac32cf8df76f27_0`
-- NormalColorCol (m) — `SMP_7.OBJ`, ordinal 309, target `lib_05053791eb52dd50_0`
-- NormalColorCol3 (m) — `SMP_8.OBJ`, ordinal 310, target `lib_bdb95ad26fba0808_0`
-- ColorDpq (m) — `SMP_9.OBJ`, ordinal 311, target `lib_795aba2f39c9b6d8_0`
-- ColorCol (m) — `SMP_10.OBJ`, ordinal 312, target `lib_94f0a7046d6e6a35_0`
-- AverageSZ3 (m) — `SMP_11.OBJ`, ordinal 313, target `lib_73ed9234e2c14635_0`
-- AverageSZ4 (m) — `SMP_12.OBJ`, ordinal 314, target `lib_dc61a30b5c1f175a_0`
-- LightColor (m) — `SMP_00_1.OBJ`, ordinal 315, target `lib_1248c0c8d56b0c64_0`
-- DpqColor3 (m) — `SMP_00_3.OBJ`, ordinal 317, target `lib_95aa87281f1e6db1_0`
-- Intpl (m) — `SMP_00_4.OBJ`, ordinal 318, target `lib_ede3a7a75697c722_0`
-- Square12 (m) — `SMP_00_5.OBJ`, ordinal 319, target `lib_5e5a703aa607df1d_0`
-- Square0 (m) — `SMP_00_6.OBJ`, ordinal 320, target `lib_4cb5d17645bb7daa_0`
-- AverageZ3 (m) — `SMP_00_7.OBJ`, ordinal 321, target `lib_54dc93937bdd8a53_0`
-- AverageZ4 (m) — `SMP_00_8.OBJ`, ordinal 322, target `lib_f0990c5e0b3ec626_0`
-- OuterProduct12 (m) — `SMP_00_9.OBJ`, ordinal 323, target `lib_e1db9cbc88a8be2d_0`
-- OuterProduct0 (m) — `SMP_00_1.OBJ`, ordinal 324, target `lib_50c93ab797e6fac3_0`
-- RotTransSV (m) — `SMP_01_1.OBJ`, ordinal 326, target `lib_217bd405fa1789be_0`
-- SquareSS12 (m) — `SMP_01_2.OBJ`, ordinal 327, target `lib_ba764639103b59eb_0`
-- SquareSS0 (m) — `SMP_01_3.OBJ`, ordinal 328, target `lib_59639e43ed6ce8b7_0`
-- SquareSL12 (m) — `SMP_01_4.OBJ`, ordinal 329, target `lib_9cd4ba0c901be7c1_0`
-- SquareSL0 (m) — `SMP_01_5.OBJ`, ordinal 330, target `lib_9a3f040c2f7768f8_0`
+- RotTransPers (m) — `SMP_02.OBJ`, ordinal 59, target `libgte_59`
+- RotTransPers3 (m) — `SMP_03.OBJ`, ordinal 60, target `libgte_60`
+- RotTrans (m) — `SMP_04.OBJ`, ordinal 61, target `libgte_61`
+- NormalClipS (m) — `SMP_06.OBJ`, ordinal 63, target `libgte_63`
+- LocalLight (m) — `SMP_1.OBJ`, ordinal 303, target `libgte_303`
+- DpqColor (m) — `SMP_2.OBJ`, ordinal 304, target `libgte_304`
+- NormalColor (m) — `SMP_3.OBJ`, ordinal 305, target `libgte_305`
+- NormalColor3 (m) — `SMP_4.OBJ`, ordinal 306, target `libgte_306`
+- NormalColorDpq (m) — `SMP_5.OBJ`, ordinal 307, target `libgte_307`
+- NormalColorDpq3 (m) — `SMP_6.OBJ`, ordinal 308, target `libgte_308`
+- NormalColorCol (m) — `SMP_7.OBJ`, ordinal 309, target `libgte_309`
+- NormalColorCol3 (m) — `SMP_8.OBJ`, ordinal 310, target `libgte_310`
+- ColorDpq (m) — `SMP_9.OBJ`, ordinal 311, target `libgte_311`
+- ColorCol (m) — `SMP_10.OBJ`, ordinal 312, target `libgte_312`
+- AverageSZ3 (m) — `SMP_11.OBJ`, ordinal 313, target `libgte_313`
+- AverageSZ4 (m) — `SMP_12.OBJ`, ordinal 314, target `libgte_314`
+- LightColor (m) — `SMP_00_1.OBJ`, ordinal 315, target `libgte_315`
+- DpqColor3 (m) — `SMP_00_3.OBJ`, ordinal 317, target `libgte_317`
+- Intpl (m) — `SMP_00_4.OBJ`, ordinal 318, target `libgte_318`
+- Square12 (m) — `SMP_00_5.OBJ`, ordinal 319, target `libgte_319`
+- Square0 (m) — `SMP_00_6.OBJ`, ordinal 320, target `libgte_320`
+- AverageZ3 (m) — `SMP_00_7.OBJ`, ordinal 321, target `libgte_321`
+- AverageZ4 (m) — `SMP_00_8.OBJ`, ordinal 322, target `libgte_322`
+- OuterProduct12 (m) — `SMP_00_9.OBJ`, ordinal 323, target `libgte_323`
+- OuterProduct0 (m) — `SMP_00_1.OBJ`, ordinal 324, target `libgte_324`
+- RotTransSV (m) — `SMP_01_1.OBJ`, ordinal 326, target `libgte_326`
+- SquareSS12 (m) — `SMP_01_2.OBJ`, ordinal 327, target `libgte_327`
+- SquareSS0 (m) — `SMP_01_3.OBJ`, ordinal 328, target `libgte_328`
+- SquareSL12 (m) — `SMP_01_4.OBJ`, ordinal 329, target `libgte_329`
+- SquareSL0 (m) — `SMP_01_5.OBJ`, ordinal 330, target `libgte_330`
 - Family structure: 30 variants over 26 distinct instruction streams (members in one stream differ only in operands): {`RotTransPers`}; {`RotTransPers3`}; {`RotTrans`}; {`NormalClipS`}; {`LocalLight`}; {`DpqColor`}; {`NormalColor`}; {`NormalColor3`}; {`NormalColorDpq`}; {`NormalColorDpq3`}; {`NormalColorCol`}; {`NormalColorCol3`}; {`ColorDpq`}; {`ColorCol`}; {`AverageSZ3`}; {`AverageSZ4`}; {`LightColor`}; {`DpqColor3`}; {`Intpl`}; {`Square12`, `Square0`}; {`AverageZ3`}; {`AverageZ4`}; {`OuterProduct12`, `OuterProduct0`}; {`RotTransSV`}; {`SquareSS12`, `SquareSS0`}; {`SquareSL12`, `SquareSL0`}.
 - Hand-written evidence: GTE commands with a single hazard nop in 20/30; whole-file `.set noreorder` reproduces the bytes in 21/30.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/59-smp_02`, `libgte/60-smp_03`, `libgte/61-smp_04`, `libgte/63-smp_06`, `libgte/303-smp_1`, `libgte/304-smp_2`, `libgte/305-smp_3`, `libgte/306-smp_4`, `libgte/307-smp_5`, `libgte/308-smp_6`, `libgte/309-smp_7`, `libgte/310-smp_8`, `libgte/311-smp_9`, `libgte/312-smp_10`, `libgte/313-smp_11`, `libgte/314-smp_12`, `libgte/315-smp_00_1`, `libgte/317-smp_00_3`, `libgte/318-smp_00_4`, `libgte/319-smp_00_5`, `libgte/320-smp_00_6`, `libgte/321-smp_00_7`, `libgte/322-smp_00_8`, `libgte/323-smp_00_9`, `libgte/324-smp_00_1`, `libgte/326-smp_01_1`, `libgte/327-smp_01_2`, `libgte/328-smp_01_3`, `libgte/329-smp_01_4`, `libgte/330-smp_01_5`.
@@ -857,25 +857,25 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/64-cmb_00/` … `src/libraries/libgte/82-cmb_18/`); 19 members, 19 functions.
 Members (byte-exact assembly, one object each):
-- RotTransPers4 (m) — `CMB_00.OBJ`, ordinal 64, target `lib_e9a60f5040605241_0`
-- RotAverage3 (m) — `CMB_01.OBJ`, ordinal 65, target `lib_170e1c968327fc22_0`
-- RotAverage4 (m) — `CMB_02.OBJ`, ordinal 66, target `lib_41e84418cfe59d41_0`
-- RotNclip (m) — `CMB_03.OBJ`, ordinal 67, target `lib_568adce046c41e82_0`
-- RotNclip3 (m) — `CMB_04.OBJ`, ordinal 68, target `lib_9a7bf7a4aeaa3709_0`
-- RotNclip4 (m) — `CMB_05.OBJ`, ordinal 69, target `lib_ec1badbfa5a5dec4_0`
-- RotAverageNclip3 (m) — `CMB_06.OBJ`, ordinal 70, target `lib_ea9e20b1993b36ac_0`
-- RotAverageNclip4 (m) — `CMB_07.OBJ`, ordinal 71, target `lib_15e9500accd6aa48_0`
-- RotAverageNclipColorDpq3 (m) — `CMB_08.OBJ`, ordinal 72, target `lib_993ee1c804b59c03_0`
-- RotAverageNclipColorCol3 (m) — `CMB_09.OBJ`, ordinal 73, target `lib_03afdc32842a6051_0`
-- ColorMatDpq (m) — `CMB_10.OBJ`, ordinal 74, target `lib_b1f8bc8ebf527b0c_0`
-- ColorMatCol (m) — `CMB_11.OBJ`, ordinal 75, target `lib_91f99bba44655e33_0`
-- RotColorDpq (m) — `CMB_12.OBJ`, ordinal 76, target `lib_a3afec6d606f54a6_0`
-- RotColorDpq3 (m) — `CMB_13.OBJ`, ordinal 77, target `lib_42eeb5e110a454a8_0`
-- RotColorMatDpq (m) — `CMB_14.OBJ`, ordinal 78, target `lib_3b7303203bc8b56b_0`
-- RotAverageNclip3_1 (m) — `CMB_15.OBJ`, ordinal 79, target `lib_6892f0f57154771a_0`
-- RotTransPersN (m) — `CMB_16.OBJ`, ordinal 80, target `lib_3207513b8bc189c7_0`
-- RotTransPers3N (m) — `CMB_17.OBJ`, ordinal 81, target `lib_7d3e1ad10b8a0dc0_0`
-- RotAverageNclipColorDpq3_1 (m) — `CMB_18.OBJ`, ordinal 82, target `lib_e6cdda6a2f01713e_0`
+- RotTransPers4 (m) — `CMB_00.OBJ`, ordinal 64, target `libgte_64`
+- RotAverage3 (m) — `CMB_01.OBJ`, ordinal 65, target `libgte_65`
+- RotAverage4 (m) — `CMB_02.OBJ`, ordinal 66, target `libgte_66`
+- RotNclip (m) — `CMB_03.OBJ`, ordinal 67, target `libgte_67`
+- RotNclip3 (m) — `CMB_04.OBJ`, ordinal 68, target `libgte_68`
+- RotNclip4 (m) — `CMB_05.OBJ`, ordinal 69, target `libgte_69`
+- RotAverageNclip3 (m) — `CMB_06.OBJ`, ordinal 70, target `libgte_70`
+- RotAverageNclip4 (m) — `CMB_07.OBJ`, ordinal 71, target `libgte_71`
+- RotAverageNclipColorDpq3 (m) — `CMB_08.OBJ`, ordinal 72, target `libgte_72`
+- RotAverageNclipColorCol3 (m) — `CMB_09.OBJ`, ordinal 73, target `libgte_73`
+- ColorMatDpq (m) — `CMB_10.OBJ`, ordinal 74, target `libgte_74`
+- ColorMatCol (m) — `CMB_11.OBJ`, ordinal 75, target `libgte_75`
+- RotColorDpq (m) — `CMB_12.OBJ`, ordinal 76, target `libgte_76`
+- RotColorDpq3 (m) — `CMB_13.OBJ`, ordinal 77, target `libgte_77`
+- RotColorMatDpq (m) — `CMB_14.OBJ`, ordinal 78, target `libgte_78`
+- RotAverageNclip3_1 (m) — `CMB_15.OBJ`, ordinal 79, target `libgte_79`
+- RotTransPersN (m) — `CMB_16.OBJ`, ordinal 80, target `libgte_80`
+- RotTransPers3N (m) — `CMB_17.OBJ`, ordinal 81, target `libgte_81`
+- RotAverageNclipColorDpq3_1 (m) — `CMB_18.OBJ`, ordinal 82, target `libgte_82`
 - Family structure: 19 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 19/19; whole-file `.set noreorder` reproduces the bytes in 8/19.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/64-cmb_00`, `libgte/65-cmb_01`, `libgte/66-cmb_02`, `libgte/67-cmb_03`, `libgte/68-cmb_04`, `libgte/69-cmb_05`, `libgte/70-cmb_06`, `libgte/71-cmb_07`, `libgte/72-cmb_08`, `libgte/73-cmb_09`, `libgte/74-cmb_10`, `libgte/75-cmb_11`, `libgte/76-cmb_12`, `libgte/77-cmb_13`, `libgte/78-cmb_14`, `libgte/79-cmb_15`, `libgte/80-cmb_16`, `libgte/81-cmb_17`, `libgte/82-cmb_18`.
@@ -886,7 +886,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/83-hgt/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshH (m) — `HGT.OBJ`, ordinal 83, target `lib_13a9d2731264305c_0`
+- RotMeshH (m) — `HGT.OBJ`, ordinal 83, target `libgte_83`
 - Hand-written evidence: no instruction-level marker; classed by the GTE hazard-nop convention (0 or 1 nop before GTE commands, where the SDK C macros emit 2) and by family; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/83-hgt`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -896,9 +896,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/97-rmat_00/` … `src/libraries/libgte/99-rmat_02/`); 3 members, 3 functions.
 Members (byte-exact assembly, one object each):
-- RotMatrixZYX_gte (m) — `RMAT_00.OBJ`, ordinal 97, target `lib_505ef54a7171a340_0`
-- RotMatrix_gte (m) — `RMAT_01.OBJ`, ordinal 98, target `lib_586de06602537900_0`
-- RotMatrixYXZ_gte (m) — `RMAT_02.OBJ`, ordinal 99, target `lib_4771879e2cc9fe13_0`
+- RotMatrixZYX_gte (m) — `RMAT_00.OBJ`, ordinal 97, target `libgte_97`
+- RotMatrix_gte (m) — `RMAT_01.OBJ`, ordinal 98, target `libgte_98`
+- RotMatrixYXZ_gte (m) — `RMAT_02.OBJ`, ordinal 99, target `libgte_99`
 - Family structure: 3 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 3/3; whole-file `.set noreorder` reproduces the bytes in 3/3.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/97-rmat_00`, `libgte/98-rmat_01`, `libgte/99-rmat_02`.
@@ -909,10 +909,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/100-ft4m_00/` … `src/libraries/libgte/103-ft4m_03/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF4M (m) — `FT4M_00.OBJ`, ordinal 100, target `lib_ac4caf6b70aa40bc_0`
-- GsTMDfastTF4NLM (m) — `FT4M_01.OBJ`, ordinal 101, target `lib_45d3e8921c331115_0`
-- GsTMDfastTF4LM (m) — `FT4M_02.OBJ`, ordinal 102, target `lib_aebbf8749ea9859f_0`
-- GsTMDfastTF4LFGM (m) — `FT4M_03.OBJ`, ordinal 103, target `lib_834123644b9748ef_0`
+- GsTMDfastTNF4M (m) — `FT4M_00.OBJ`, ordinal 100, target `libgte_100`
+- GsTMDfastTF4NLM (m) — `FT4M_01.OBJ`, ordinal 101, target `libgte_101`
+- GsTMDfastTF4LM (m) — `FT4M_02.OBJ`, ordinal 102, target `libgte_102`
+- GsTMDfastTF4LFGM (m) — `FT4M_03.OBJ`, ordinal 103, target `libgte_103`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/100-ft4m_00`, `libgte/101-ft4m_01`, `libgte/102-ft4m_02`, `libgte/103-ft4m_03`.
@@ -923,10 +923,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/104-gt4m_00/` … `src/libraries/libgte/107-gt4m_03/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG4M (m) — `GT4M_00.OBJ`, ordinal 104, target `lib_061ee7b4f54ee8ca_0`
-- GsTMDfastTG4NLM (m) — `GT4M_01.OBJ`, ordinal 105, target `lib_a39f74944b520992_0`
-- GsTMDfastTG4LM (m) — `GT4M_02.OBJ`, ordinal 106, target `lib_292598606dd0febf_0`
-- GsTMDfastTG4LFGM (m) — `GT4M_03.OBJ`, ordinal 107, target `lib_0f1a825d7b7f5e64_0`
+- GsTMDfastTNG4M (m) — `GT4M_00.OBJ`, ordinal 104, target `libgte_104`
+- GsTMDfastTG4NLM (m) — `GT4M_01.OBJ`, ordinal 105, target `libgte_105`
+- GsTMDfastTG4LM (m) — `GT4M_02.OBJ`, ordinal 106, target `libgte_106`
+- GsTMDfastTG4LFGM (m) — `GT4M_03.OBJ`, ordinal 107, target `libgte_107`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/104-gt4m_00`, `libgte/105-gt4m_01`, `libgte/106-gt4m_02`, `libgte/107-gt4m_03`.
@@ -937,22 +937,22 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/108-smd_00/` … `src/libraries/libgte/123-smd_15/`); 16 members, 16 functions.
 Members (byte-exact assembly, one object each):
-- RotSMD_F3 (m) — `SMD_00.OBJ`, ordinal 108, target `lib_1ef587fb7c90f49f_0`
-- RotSMD_G3 (m) — `SMD_01.OBJ`, ordinal 109, target `lib_7fc58adc9c9835cf_0`
-- RotSMD_FT3 (m) — `SMD_02.OBJ`, ordinal 110, target `lib_3198257053d9c278_0`
-- RotSMD_GT3 (m) — `SMD_03.OBJ`, ordinal 111, target `lib_9545cf08347cacc9_0`
-- RotSMD_F4 (m) — `SMD_04.OBJ`, ordinal 112, target `lib_3b6b9dcd20d8d7ec_0`
-- RotSMD_G4 (m) — `SMD_05.OBJ`, ordinal 113, target `lib_3ca5b8844e30b569_0`
-- RotSMD_FT4 (m) — `SMD_06.OBJ`, ordinal 114, target `lib_1e53484b7fde7a0e_0`
-- RotSMD_GT4 (m) — `SMD_07.OBJ`, ordinal 115, target `lib_1b39f5b5257a74a3_0`
-- RotSMD_SV_F3 (m) — `SMD_08.OBJ`, ordinal 116, target `lib_987ed52c7682c0a8_0`
-- RotSMD_SV_G3 (m) — `SMD_09.OBJ`, ordinal 117, target `lib_c4e89603374d02c5_0`
-- RotSMD_SV_FT3 (m) — `SMD_10.OBJ`, ordinal 118, target `lib_c2a1f7a31bfd1546_0`
-- RotSMD_SV_GT3 (m) — `SMD_11.OBJ`, ordinal 119, target `lib_7f4860f8a9231475_0`
-- RotSMD_SV_F4 (m) — `SMD_12.OBJ`, ordinal 120, target `lib_5cd43c002cd1db57_0`
-- RotSMD_SV_G4 (m) — `SMD_13.OBJ`, ordinal 121, target `lib_96f8d6b1c92d297a_0`
-- RotSMD_SV_FT4 (m) — `SMD_14.OBJ`, ordinal 122, target `lib_0205dcac7a576178_0`
-- RotSMD_SV_GT4 (m) — `SMD_15.OBJ`, ordinal 123, target `lib_5162e9075972d409_0`
+- RotSMD_F3 (m) — `SMD_00.OBJ`, ordinal 108, target `libgte_108`
+- RotSMD_G3 (m) — `SMD_01.OBJ`, ordinal 109, target `libgte_109`
+- RotSMD_FT3 (m) — `SMD_02.OBJ`, ordinal 110, target `libgte_110`
+- RotSMD_GT3 (m) — `SMD_03.OBJ`, ordinal 111, target `libgte_111`
+- RotSMD_F4 (m) — `SMD_04.OBJ`, ordinal 112, target `libgte_112`
+- RotSMD_G4 (m) — `SMD_05.OBJ`, ordinal 113, target `libgte_113`
+- RotSMD_FT4 (m) — `SMD_06.OBJ`, ordinal 114, target `libgte_114`
+- RotSMD_GT4 (m) — `SMD_07.OBJ`, ordinal 115, target `libgte_115`
+- RotSMD_SV_F3 (m) — `SMD_08.OBJ`, ordinal 116, target `libgte_116`
+- RotSMD_SV_G3 (m) — `SMD_09.OBJ`, ordinal 117, target `libgte_117`
+- RotSMD_SV_FT3 (m) — `SMD_10.OBJ`, ordinal 118, target `libgte_118`
+- RotSMD_SV_GT3 (m) — `SMD_11.OBJ`, ordinal 119, target `libgte_119`
+- RotSMD_SV_F4 (m) — `SMD_12.OBJ`, ordinal 120, target `libgte_120`
+- RotSMD_SV_G4 (m) — `SMD_13.OBJ`, ordinal 121, target `libgte_121`
+- RotSMD_SV_FT4 (m) — `SMD_14.OBJ`, ordinal 122, target `libgte_122`
+- RotSMD_SV_GT4 (m) — `SMD_15.OBJ`, ordinal 123, target `libgte_123`
 - Family structure: 16 variants over 4 distinct instruction streams (members in one stream differ only in operands): {`RotSMD_F3`, `RotSMD_G3`, `RotSMD_FT3`, `RotSMD_GT3`}; {`RotSMD_F4`, `RotSMD_G4`, `RotSMD_FT4`, `RotSMD_GT4`}; {`RotSMD_SV_F3`, `RotSMD_SV_G3`, `RotSMD_SV_FT3`, `RotSMD_SV_GT3`}; {`RotSMD_SV_F4`, `RotSMD_SV_G4`, `RotSMD_SV_FT4`, `RotSMD_SV_GT4`}.
 - Hand-written evidence: `$at` used as a scratch register in 16/16; GTE commands with a single hazard nop in 16/16; whole-file `.set noreorder` reproduces the bytes in 16/16.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/108-smd_00`, `libgte/109-smd_01`, `libgte/110-smd_02`, `libgte/111-smd_03`, `libgte/112-smd_04`, `libgte/113-smd_05`, `libgte/114-smd_06`, `libgte/115-smd_07`, `libgte/116-smd_08`, `libgte/117-smd_09`, `libgte/118-smd_10`, `libgte/119-smd_11`, `libgte/120-smd_12`, `libgte/121-smd_13`, `libgte/122-smd_14`, `libgte/123-smd_15`.
@@ -963,22 +963,22 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/124-rmd_00/` … `src/libraries/libgte/139-rmd_15/`); 16 members, 16 functions.
 Members (byte-exact assembly, one object each):
-- RotRMD_F3 (m) — `RMD_00.OBJ`, ordinal 124, target `lib_56b6fea11cd60ae4_0`
-- RotRMD_G3 (m) — `RMD_01.OBJ`, ordinal 125, target `lib_965fed0a7a87fa7f_0`
-- RotRMD_FT3 (m) — `RMD_02.OBJ`, ordinal 126, target `lib_9b16b242aa091c40_0`
-- RotRMD_GT3 (m) — `RMD_03.OBJ`, ordinal 127, target `lib_a7bc5d9be989e039_0`
-- RotRMD_F4 (m) — `RMD_04.OBJ`, ordinal 128, target `lib_ebaf44f6063410d4_0`
-- RotRMD_G4 (m) — `RMD_05.OBJ`, ordinal 129, target `lib_4ca7e1b4078551b0_0`
-- RotRMD_FT4 (m) — `RMD_06.OBJ`, ordinal 130, target `lib_673628d255bb5731_0`
-- RotRMD_GT4 (m) — `RMD_07.OBJ`, ordinal 131, target `lib_3111899b34cf643e_0`
-- RotRMD_SV_F3 (m) — `RMD_08.OBJ`, ordinal 132, target `lib_7425e736957f286d_0`
-- RotRMD_SV_G3 (m) — `RMD_09.OBJ`, ordinal 133, target `lib_cf51f619c6b9b8a6_0`
-- RotRMD_SV_FT3 (m) — `RMD_10.OBJ`, ordinal 134, target `lib_8634a5e47024a1bb_0`
-- RotRMD_SV_GT3 (m) — `RMD_11.OBJ`, ordinal 135, target `lib_29d070621a3bbfe9_0`
-- RotRMD_SV_F4 (m) — `RMD_12.OBJ`, ordinal 136, target `lib_9fcc131a5e7837cc_0`
-- RotRMD_SV_G4 (m) — `RMD_13.OBJ`, ordinal 137, target `lib_428700435e6145fd_0`
-- RotRMD_SV_FT4 (m) — `RMD_14.OBJ`, ordinal 138, target `lib_cbb7e1cf7dffffde_0`
-- RotRMD_SV_GT4 (m) — `RMD_15.OBJ`, ordinal 139, target `lib_18101c910bcd9269_0`
+- RotRMD_F3 (m) — `RMD_00.OBJ`, ordinal 124, target `libgte_124`
+- RotRMD_G3 (m) — `RMD_01.OBJ`, ordinal 125, target `libgte_125`
+- RotRMD_FT3 (m) — `RMD_02.OBJ`, ordinal 126, target `libgte_126`
+- RotRMD_GT3 (m) — `RMD_03.OBJ`, ordinal 127, target `libgte_127`
+- RotRMD_F4 (m) — `RMD_04.OBJ`, ordinal 128, target `libgte_128`
+- RotRMD_G4 (m) — `RMD_05.OBJ`, ordinal 129, target `libgte_129`
+- RotRMD_FT4 (m) — `RMD_06.OBJ`, ordinal 130, target `libgte_130`
+- RotRMD_GT4 (m) — `RMD_07.OBJ`, ordinal 131, target `libgte_131`
+- RotRMD_SV_F3 (m) — `RMD_08.OBJ`, ordinal 132, target `libgte_132`
+- RotRMD_SV_G3 (m) — `RMD_09.OBJ`, ordinal 133, target `libgte_133`
+- RotRMD_SV_FT3 (m) — `RMD_10.OBJ`, ordinal 134, target `libgte_134`
+- RotRMD_SV_GT3 (m) — `RMD_11.OBJ`, ordinal 135, target `libgte_135`
+- RotRMD_SV_F4 (m) — `RMD_12.OBJ`, ordinal 136, target `libgte_136`
+- RotRMD_SV_G4 (m) — `RMD_13.OBJ`, ordinal 137, target `libgte_137`
+- RotRMD_SV_FT4 (m) — `RMD_14.OBJ`, ordinal 138, target `libgte_138`
+- RotRMD_SV_GT4 (m) — `RMD_15.OBJ`, ordinal 139, target `libgte_139`
 - Family structure: 16 variants over 4 distinct instruction streams (members in one stream differ only in operands): {`RotRMD_F3`, `RotRMD_G3`, `RotRMD_FT3`, `RotRMD_GT3`}; {`RotRMD_F4`, `RotRMD_G4`, `RotRMD_FT4`, `RotRMD_GT4`}; {`RotRMD_SV_F3`, `RotRMD_SV_G3`, `RotRMD_SV_FT3`, `RotRMD_SV_GT3`}; {`RotRMD_SV_F4`, `RotRMD_SV_G4`, `RotRMD_SV_FT4`, `RotRMD_SV_GT4`}.
 - Hand-written evidence: `$at` used as a scratch register in 16/16; GTE commands with a single hazard nop in 16/16; whole-file `.set noreorder` reproduces the bytes in 16/16.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/124-rmd_00`, `libgte/125-rmd_01`, `libgte/126-rmd_02`, `libgte/127-rmd_03`, `libgte/128-rmd_04`, `libgte/129-rmd_05`, `libgte/130-rmd_06`, `libgte/131-rmd_07`, `libgte/132-rmd_08`, `libgte/133-rmd_09`, `libgte/134-rmd_10`, `libgte/135-rmd_11`, `libgte/136-rmd_12`, `libgte/137-rmd_13`, `libgte/138-rmd_14`, `libgte/139-rmd_15`.
@@ -989,9 +989,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/187-divf3a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyF3 (m) — `DIVF3A.OBJ`, ordinal 187, target `lib_0b3dbfbb75d2de35_0`; shares the object with `RCpolyF3A`, `func_00000388`
-- RCpolyF3A (m) — `DIVF3A.OBJ`, ordinal 187, target `lib_0b3dbfbb75d2de35_0`; shares the object with `RCpolyF3`, `func_00000388`
-- func_00000388 (m) — `DIVF3A.OBJ`, ordinal 187, target `lib_0b3dbfbb75d2de35_0`; shares the object with `RCpolyF3`, `RCpolyF3A`
+- RCpolyF3 (m) — `DIVF3A.OBJ`, ordinal 187, target `libgte_187`; shares the object with `RCpolyF3A`, `func_00000388`
+- RCpolyF3A (m) — `DIVF3A.OBJ`, ordinal 187, target `libgte_187`; shares the object with `RCpolyF3`, `func_00000388`
+- func_00000388 (m) — `DIVF3A.OBJ`, ordinal 187, target `libgte_187`; shares the object with `RCpolyF3`, `RCpolyF3A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/187-divf3a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1001,9 +1001,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/188-divft3a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyFT3 (m) — `DIVFT3A.OBJ`, ordinal 188, target `lib_cad4afe9926d3f11_0`; shares the object with `RCpolyFT3A`, `func_000003E4`
-- RCpolyFT3A (m) — `DIVFT3A.OBJ`, ordinal 188, target `lib_cad4afe9926d3f11_0`; shares the object with `RCpolyFT3`, `func_000003E4`
-- func_000003E4 (m) — `DIVFT3A.OBJ`, ordinal 188, target `lib_cad4afe9926d3f11_0`; shares the object with `RCpolyFT3`, `RCpolyFT3A`
+- RCpolyFT3 (m) — `DIVFT3A.OBJ`, ordinal 188, target `libgte_188`; shares the object with `RCpolyFT3A`, `func_000003E4`
+- RCpolyFT3A (m) — `DIVFT3A.OBJ`, ordinal 188, target `libgte_188`; shares the object with `RCpolyFT3`, `func_000003E4`
+- func_000003E4 (m) — `DIVFT3A.OBJ`, ordinal 188, target `libgte_188`; shares the object with `RCpolyFT3`, `RCpolyFT3A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/188-divft3a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1013,9 +1013,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/189-divg3a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyG3 (m) — `DIVG3A.OBJ`, ordinal 189, target `lib_67a09a43b13a9146_0`; shares the object with `RCpolyG3A`, `func_00000414`
-- RCpolyG3A (m) — `DIVG3A.OBJ`, ordinal 189, target `lib_67a09a43b13a9146_0`; shares the object with `RCpolyG3`, `func_00000414`
-- func_00000414 (m) — `DIVG3A.OBJ`, ordinal 189, target `lib_67a09a43b13a9146_0`; shares the object with `RCpolyG3`, `RCpolyG3A`
+- RCpolyG3 (m) — `DIVG3A.OBJ`, ordinal 189, target `libgte_189`; shares the object with `RCpolyG3A`, `func_00000414`
+- RCpolyG3A (m) — `DIVG3A.OBJ`, ordinal 189, target `libgte_189`; shares the object with `RCpolyG3`, `func_00000414`
+- func_00000414 (m) — `DIVG3A.OBJ`, ordinal 189, target `libgte_189`; shares the object with `RCpolyG3`, `RCpolyG3A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/189-divg3a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1025,9 +1025,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/190-divgt3a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyGT3 (m) — `DIVGT3A.OBJ`, ordinal 190, target `lib_6efc13198f81e611_0`; shares the object with `RCpolyGT3A`, `func_00000474`
-- RCpolyGT3A (m) — `DIVGT3A.OBJ`, ordinal 190, target `lib_6efc13198f81e611_0`; shares the object with `RCpolyGT3`, `func_00000474`
-- func_00000474 (m) — `DIVGT3A.OBJ`, ordinal 190, target `lib_6efc13198f81e611_0`; shares the object with `RCpolyGT3`, `RCpolyGT3A`
+- RCpolyGT3 (m) — `DIVGT3A.OBJ`, ordinal 190, target `libgte_190`; shares the object with `RCpolyGT3A`, `func_00000474`
+- RCpolyGT3A (m) — `DIVGT3A.OBJ`, ordinal 190, target `libgte_190`; shares the object with `RCpolyGT3`, `func_00000474`
+- func_00000474 (m) — `DIVGT3A.OBJ`, ordinal 190, target `libgte_190`; shares the object with `RCpolyGT3`, `RCpolyGT3A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/190-divgt3a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1037,9 +1037,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/191-divf4a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyF4 (m) — `DIVF4A.OBJ`, ordinal 191, target `lib_a5533b63f9aaafdc_0`; shares the object with `RCpolyF4A`, `func_00000490`
-- RCpolyF4A (m) — `DIVF4A.OBJ`, ordinal 191, target `lib_a5533b63f9aaafdc_0`; shares the object with `RCpolyF4`, `func_00000490`
-- func_00000490 (m) — `DIVF4A.OBJ`, ordinal 191, target `lib_a5533b63f9aaafdc_0`; shares the object with `RCpolyF4`, `RCpolyF4A`
+- RCpolyF4 (m) — `DIVF4A.OBJ`, ordinal 191, target `libgte_191`; shares the object with `RCpolyF4A`, `func_00000490`
+- RCpolyF4A (m) — `DIVF4A.OBJ`, ordinal 191, target `libgte_191`; shares the object with `RCpolyF4`, `func_00000490`
+- func_00000490 (m) — `DIVF4A.OBJ`, ordinal 191, target `libgte_191`; shares the object with `RCpolyF4`, `RCpolyF4A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/191-divf4a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1049,9 +1049,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/192-divft4a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyFT4 (m) — `DIVFT4A.OBJ`, ordinal 192, target `lib_c7aebd98c6f73e8a_0`; shares the object with `RCpolyFT4A`, `func_000004F8`
-- RCpolyFT4A (m) — `DIVFT4A.OBJ`, ordinal 192, target `lib_c7aebd98c6f73e8a_0`; shares the object with `RCpolyFT4`, `func_000004F8`
-- func_000004F8 (m) — `DIVFT4A.OBJ`, ordinal 192, target `lib_c7aebd98c6f73e8a_0`; shares the object with `RCpolyFT4`, `RCpolyFT4A`
+- RCpolyFT4 (m) — `DIVFT4A.OBJ`, ordinal 192, target `libgte_192`; shares the object with `RCpolyFT4A`, `func_000004F8`
+- RCpolyFT4A (m) — `DIVFT4A.OBJ`, ordinal 192, target `libgte_192`; shares the object with `RCpolyFT4`, `func_000004F8`
+- func_000004F8 (m) — `DIVFT4A.OBJ`, ordinal 192, target `libgte_192`; shares the object with `RCpolyFT4`, `RCpolyFT4A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/192-divft4a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1061,9 +1061,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/193-divg4a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyG4 (m) — `DIVG4A.OBJ`, ordinal 193, target `lib_112e7260f2117422_0`; shares the object with `RCpolyG4A`, `func_00000544`
-- RCpolyG4A (m) — `DIVG4A.OBJ`, ordinal 193, target `lib_112e7260f2117422_0`; shares the object with `RCpolyG4`, `func_00000544`
-- func_00000544 (m) — `DIVG4A.OBJ`, ordinal 193, target `lib_112e7260f2117422_0`; shares the object with `RCpolyG4`, `RCpolyG4A`
+- RCpolyG4 (m) — `DIVG4A.OBJ`, ordinal 193, target `libgte_193`; shares the object with `RCpolyG4A`, `func_00000544`
+- RCpolyG4A (m) — `DIVG4A.OBJ`, ordinal 193, target `libgte_193`; shares the object with `RCpolyG4`, `func_00000544`
+- func_00000544 (m) — `DIVG4A.OBJ`, ordinal 193, target `libgte_193`; shares the object with `RCpolyG4`, `RCpolyG4A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/193-divg4a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1073,9 +1073,9 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/194-divgt4a/`); 1 member, 3 functions.
 Members (byte-exact assembly, one object each):
-- RCpolyGT4 (m) — `DIVGT4A.OBJ`, ordinal 194, target `lib_0601499d82e87ecf_0`; shares the object with `RCpolyGT4A`, `func_000005D4`
-- RCpolyGT4A (m) — `DIVGT4A.OBJ`, ordinal 194, target `lib_0601499d82e87ecf_0`; shares the object with `RCpolyGT4`, `func_000005D4`
-- func_000005D4 (m) — `DIVGT4A.OBJ`, ordinal 194, target `lib_0601499d82e87ecf_0`; shares the object with `RCpolyGT4`, `RCpolyGT4A`
+- RCpolyGT4 (m) — `DIVGT4A.OBJ`, ordinal 194, target `libgte_194`; shares the object with `RCpolyGT4A`, `func_000005D4`
+- RCpolyGT4A (m) — `DIVGT4A.OBJ`, ordinal 194, target `libgte_194`; shares the object with `RCpolyGT4`, `func_000005D4`
+- func_000005D4 (m) — `DIVGT4A.OBJ`, ordinal 194, target `libgte_194`; shares the object with `RCpolyGT4`, `RCpolyGT4A`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/194-divgt4a`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1085,7 +1085,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/195-divp/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- DivPloyFT4 (m) — `DIVP.OBJ`, ordinal 195, target `lib_33adb1222b185008_0`
+- DivPloyFT4 (m) — `DIVP.OBJ`, ordinal 195, target `libgte_195`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/195-divp`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1095,7 +1095,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/204-rmps_f/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_F3 (m) — `RMPS_F.OBJ`, ordinal 204, target `lib_d5514ff806175ff4_0`
+- RotMeshPrimS_F3 (m) — `RMPS_F.OBJ`, ordinal 204, target `libgte_204`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/204-rmps_f`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1105,7 +1105,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/205-rmps_g/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_G3 (m) — `RMPS_G.OBJ`, ordinal 205, target `lib_67fb2e1a87031a59_0`
+- RotMeshPrimS_G3 (m) — `RMPS_G.OBJ`, ordinal 205, target `libgte_205`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/205-rmps_g`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1115,7 +1115,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/206-rmps_ft/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_FT3 (m) — `RMPS_FT.OBJ`, ordinal 206, target `lib_1cf6836adedf9763_0`
+- RotMeshPrimS_FT3 (m) — `RMPS_FT.OBJ`, ordinal 206, target `libgte_206`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/206-rmps_ft`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1125,7 +1125,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/207-rmps_gt/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_GT3 (m) — `RMPS_GT.OBJ`, ordinal 207, target `lib_05ac02e269162d19_0`
+- RotMeshPrimS_GT3 (m) — `RMPS_GT.OBJ`, ordinal 207, target `libgte_207`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/207-rmps_gt`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1135,7 +1135,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/208-rmps_fc/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_FC3 (m) — `RMPS_FC.OBJ`, ordinal 208, target `lib_286f84a57ac97c9a_0`
+- RotMeshPrimS_FC3 (m) — `RMPS_FC.OBJ`, ordinal 208, target `libgte_208`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/208-rmps_fc`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1145,7 +1145,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/209-rmps_gc/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_GC3 (m) — `RMPS_GC.OBJ`, ordinal 209, target `lib_24d489da58e1882c_0`
+- RotMeshPrimS_GC3 (m) — `RMPS_GC.OBJ`, ordinal 209, target `libgte_209`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/209-rmps_gc`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1155,7 +1155,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/210-rmps_fct/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_FCT3 (m) — `RMPS_FCT.OBJ`, ordinal 210, target `lib_f010b2ae25fbfa1a_0`
+- RotMeshPrimS_FCT3 (m) — `RMPS_FCT.OBJ`, ordinal 210, target `libgte_210`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/210-rmps_fct`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1165,7 +1165,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/211-rmps_gct/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_GCT3 (m) — `RMPS_GCT.OBJ`, ordinal 211, target `lib_e4e96958ea696c59_0`
+- RotMeshPrimS_GCT3 (m) — `RMPS_GCT.OBJ`, ordinal 211, target `libgte_211`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/211-rmps_gct`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1175,7 +1175,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/212-rmps_t/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimS_T3 (m) — `RMPS_T.OBJ`, ordinal 212, target `lib_b220089bb7e8626e_0`
+- RotMeshPrimS_T3 (m) — `RMPS_T.OBJ`, ordinal 212, target `libgte_212`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/212-rmps_t`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1185,7 +1185,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/213-rmpr_f/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_F3 (m) — `RMPR_F.OBJ`, ordinal 213, target `lib_ea0b5c07a6cc3ff6_0`
+- RotMeshPrimR_F3 (m) — `RMPR_F.OBJ`, ordinal 213, target `libgte_213`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/213-rmpr_f`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1195,7 +1195,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/214-rmpr_g/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_G3 (m) — `RMPR_G.OBJ`, ordinal 214, target `lib_4b64e17f6c12a537_0`
+- RotMeshPrimR_G3 (m) — `RMPR_G.OBJ`, ordinal 214, target `libgte_214`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/214-rmpr_g`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1205,7 +1205,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/215-rmpr_ft/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_FT3 (m) — `RMPR_FT.OBJ`, ordinal 215, target `lib_f2bd37021cadf751_0`
+- RotMeshPrimR_FT3 (m) — `RMPR_FT.OBJ`, ordinal 215, target `libgte_215`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/215-rmpr_ft`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1215,7 +1215,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/216-rmpr_gt/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_GT3 (m) — `RMPR_GT.OBJ`, ordinal 216, target `lib_96f1bf053be8797f_0`
+- RotMeshPrimR_GT3 (m) — `RMPR_GT.OBJ`, ordinal 216, target `libgte_216`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/216-rmpr_gt`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1225,7 +1225,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/217-rmpr_fc/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_FC3 (m) — `RMPR_FC.OBJ`, ordinal 217, target `lib_ab81209bbc66b645_0`
+- RotMeshPrimR_FC3 (m) — `RMPR_FC.OBJ`, ordinal 217, target `libgte_217`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/217-rmpr_fc`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1235,7 +1235,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/218-rmpr_gc/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_GC3 (m) — `RMPR_GC.OBJ`, ordinal 218, target `lib_df0e298ca6a78ec2_0`
+- RotMeshPrimR_GC3 (m) — `RMPR_GC.OBJ`, ordinal 218, target `libgte_218`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/218-rmpr_gc`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1245,7 +1245,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/219-rmpr_fct/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_FCT3 (m) — `RMPR_FCT.OBJ`, ordinal 219, target `lib_e75900184532e5fb_0`
+- RotMeshPrimR_FCT3 (m) — `RMPR_FCT.OBJ`, ordinal 219, target `libgte_219`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/219-rmpr_fct`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1255,7 +1255,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/220-rmpr_gct/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_GCT3 (m) — `RMPR_GCT.OBJ`, ordinal 220, target `lib_5a68fd9b20fea016_0`
+- RotMeshPrimR_GCT3 (m) — `RMPR_GCT.OBJ`, ordinal 220, target `libgte_220`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/220-rmpr_gct`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1265,7 +1265,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/221-rmpr_t/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimR_T3 (m) — `RMPR_T.OBJ`, ordinal 221, target `lib_6697f736f5114fb8_0`
+- RotMeshPrimR_T3 (m) — `RMPR_T.OBJ`, ordinal 221, target `libgte_221`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/221-rmpr_t`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1275,7 +1275,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/222-rmpq_t/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- RotMeshPrimQ_T (m) — `RMPQ_T.OBJ`, ordinal 222, target `lib_d1362bd42e455b7b_0`
+- RotMeshPrimQ_T (m) — `RMPQ_T.OBJ`, ordinal 222, target `libgte_222`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; GTE commands with a single hazard nop in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/222-rmpq_t`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1285,7 +1285,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/225-ppm/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- ScanXY0 (m) — `PPM.OBJ`, ordinal 225, target `lib_ca63f844d38731f8_0`
+- ScanXY0 (m) — `PPM.OBJ`, ordinal 225, target `libgte_225`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/225-ppm`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1295,7 +1295,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/226-patchgte/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- _patch_gte (m) — `PATCHGTE.OBJ`, ordinal 226, target `lib_4e0c237209ba2a6e_0`
+- _patch_gte (m) — `PATCHGTE.OBJ`, ordinal 226, target `libgte_226`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; privileged or trap instructions in 1/1; return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/226-patchgte`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1305,7 +1305,7 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/227-phn/`); 1 member, 1 function.
 Members (byte-exact assembly, one object each):
-- PhongLine (m) — `PHN.OBJ`, ordinal 227, target `lib_8a0ddbed83b82e28_0`
+- PhongLine (m) — `PHN.OBJ`, ordinal 227, target `libgte_227`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; callee-saved registers written without being saved in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgte/227-phn`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1315,12 +1315,12 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/273-msc06_1/` … `src/libraries/libgte/278-msc06_6/`); 6 members, 6 functions.
 Members (byte-exact assembly, one object each):
-- LoadAverage12 (m) — `MSC06_1.OBJ`, ordinal 273, target `lib_f5acf52ded7dc8ef_0`
-- LoadAverage0 (m) — `MSC06_2.OBJ`, ordinal 274, target `lib_e3bb34b55c28f543_0`
-- LoadAverageShort12 (m) — `MSC06_3.OBJ`, ordinal 275, target `lib_e9556a9659511f38_0`
-- LoadAverageShort0 (m) — `MSC06_4.OBJ`, ordinal 276, target `lib_baff8e19fb64b72a_0`
-- LoadAverageByte (m) — `MSC06_5.OBJ`, ordinal 277, target `lib_e2d82fcb22c7130c_0`
-- LoadAverageCol (m) — `MSC06_6.OBJ`, ordinal 278, target `lib_b0198f0b4ad3391f_0`
+- LoadAverage12 (m) — `MSC06_1.OBJ`, ordinal 273, target `libgte_273`
+- LoadAverage0 (m) — `MSC06_2.OBJ`, ordinal 274, target `libgte_274`
+- LoadAverageShort12 (m) — `MSC06_3.OBJ`, ordinal 275, target `libgte_275`
+- LoadAverageShort0 (m) — `MSC06_4.OBJ`, ordinal 276, target `libgte_276`
+- LoadAverageByte (m) — `MSC06_5.OBJ`, ordinal 277, target `libgte_277`
+- LoadAverageCol (m) — `MSC06_6.OBJ`, ordinal 278, target `libgte_278`
 - Family structure: 6 variants over 4 distinct instruction streams (members in one stream differ only in operands): {`LoadAverage12`, `LoadAverage0`}; {`LoadAverageShort12`, `LoadAverageShort0`}; {`LoadAverageByte`}; {`LoadAverageCol`}.
 - Hand-written evidence: GTE commands with a single hazard nop in 2/6; whole-file `.set noreorder` reproduces the bytes in 6/6.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/273-msc06_1`, `libgte/274-msc06_2`, `libgte/275-msc06_3`, `libgte/276-msc06_4`, `libgte/277-msc06_5`, `libgte/278-msc06_6`.
@@ -1331,20 +1331,20 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/331-tmd_1/` … `src/libraries/libgte/344-tmd_14/`); 14 members, 14 functions.
 Members (byte-exact assembly, one object each):
-- gte_scope_f3 (m) — `TMD_1.OBJ`, ordinal 331, target `lib_c489e0dc6f05c5c9_0`
-- gte_scope_tf3 (m) — `TMD_2.OBJ`, ordinal 332, target `lib_3f973150da3ddd73_0`
-- gte_scope_g3 (m) — `TMD_3.OBJ`, ordinal 333, target `lib_732414dd1a6465b6_0`
-- gte_scope_tg3 (m) — `TMD_4.OBJ`, ordinal 334, target `lib_c5ece95e83b32b53_0`
-- gte_flat3 (m) — `TMD_5.OBJ`, ordinal 335, target `lib_f1196e2299639944_0`
-- gte_texture_flat3 (m) — `TMD_6.OBJ`, ordinal 336, target `lib_4da8ea976a1ca68e_0`
-- gte_gouraud3 (m) — `TMD_7.OBJ`, ordinal 337, target `lib_d666c729822d4bdd_0`
-- gte_texture_gouraud3 (m) — `TMD_8.OBJ`, ordinal 338, target `lib_f539bbdec9bb7fef_0`
-- gte_flat_fog3 (m) — `TMD_9.OBJ`, ordinal 339, target `lib_cdc8b9a907527c2a_0`
-- gte_texture_flat_fog3 (m) — `TMD_10.OBJ`, ordinal 340, target `lib_22e88570c52a42d8_0`
-- gte_gouraud_fog3 (m) — `TMD_11.OBJ`, ordinal 341, target `lib_d17b5b8f08a31ba5_0`
-- gte_texture_gouraud_fog3 (m) — `TMD_12.OBJ`, ordinal 342, target `lib_b65fe05d6deb5578_0`
-- gte_scope_tf4_B (m) — `TMD_13.OBJ`, ordinal 343, target `lib_2c0e17c1c3f910e3_0`
-- gte_scope_tf4 (m) — `TMD_14.OBJ`, ordinal 344, target `lib_c8a7ac38b20c0330_0`
+- gte_scope_f3 (m) — `TMD_1.OBJ`, ordinal 331, target `libgte_331`
+- gte_scope_tf3 (m) — `TMD_2.OBJ`, ordinal 332, target `libgte_332`
+- gte_scope_g3 (m) — `TMD_3.OBJ`, ordinal 333, target `libgte_333`
+- gte_scope_tg3 (m) — `TMD_4.OBJ`, ordinal 334, target `libgte_334`
+- gte_flat3 (m) — `TMD_5.OBJ`, ordinal 335, target `libgte_335`
+- gte_texture_flat3 (m) — `TMD_6.OBJ`, ordinal 336, target `libgte_336`
+- gte_gouraud3 (m) — `TMD_7.OBJ`, ordinal 337, target `libgte_337`
+- gte_texture_gouraud3 (m) — `TMD_8.OBJ`, ordinal 338, target `libgte_338`
+- gte_flat_fog3 (m) — `TMD_9.OBJ`, ordinal 339, target `libgte_339`
+- gte_texture_flat_fog3 (m) — `TMD_10.OBJ`, ordinal 340, target `libgte_340`
+- gte_gouraud_fog3 (m) — `TMD_11.OBJ`, ordinal 341, target `libgte_341`
+- gte_texture_gouraud_fog3 (m) — `TMD_12.OBJ`, ordinal 342, target `libgte_342`
+- gte_scope_tf4_B (m) — `TMD_13.OBJ`, ordinal 343, target `libgte_343`
+- gte_scope_tf4 (m) — `TMD_14.OBJ`, ordinal 344, target `libgte_344`
 - Family structure: 14 variants over 13 distinct instruction streams (members in one stream differ only in operands): {`gte_scope_f3`}; {`gte_scope_tf3`}; {`gte_scope_g3`, `gte_scope_tg3`}; {`gte_flat3`}; {`gte_texture_flat3`}; {`gte_gouraud3`}; {`gte_texture_gouraud3`}; {`gte_flat_fog3`}; {`gte_texture_flat_fog3`}; {`gte_gouraud_fog3`}; {`gte_texture_gouraud_fog3`}; {`gte_scope_tf4_B`}; {`gte_scope_tf4`}.
 - Hand-written evidence: `$at` used as a scratch register in 14/14; GTE commands with a single hazard nop in 7/14; whole-file `.set noreorder` reproduces the bytes in 14/14.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/331-tmd_1`, `libgte/332-tmd_2`, `libgte/333-tmd_3`, `libgte/334-tmd_4`, `libgte/335-tmd_5`, `libgte/336-tmd_6`, `libgte/337-tmd_7`, `libgte/338-tmd_8`, `libgte/339-tmd_9`, `libgte/340-tmd_10`, `libgte/341-tmd_11`, `libgte/342-tmd_12`, `libgte/343-tmd_13`, `libgte/344-tmd_14`.
@@ -1355,23 +1355,23 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/345-nom_1/` … `src/libraries/libgte/361-nom_17/`); 17 members, 17 functions.
 Members (byte-exact assembly, one object each):
-- RotTransPers_nom (m) — `NOM_1.OBJ`, ordinal 345, target `lib_6431c7450feb7148_0`
-- RotTransPers3_nom (m) — `NOM_2.OBJ`, ordinal 346, target `lib_192b96500300bb61_0`
-- RotTrans_nom (m) — `NOM_3.OBJ`, ordinal 347, target `lib_cb47f9956ffff703_0`
-- RotTransPers4_nom (m) — `NOM_4.OBJ`, ordinal 348, target `lib_5f678b4bdf40ea77_0`
-- RotAverage3_nom (m) — `NOM_5.OBJ`, ordinal 349, target `lib_05af9d56315f0369_0`
-- RotNclip3_nom (m) — `NOM_6.OBJ`, ordinal 350, target `lib_a26028d31bb52374_0`
-- RotAverageNclip3_nom (m) — `NOM_7.OBJ`, ordinal 351, target `lib_92783dddf97da44a_0`
-- RotColorDpq_nom (m) — `NOM_8.OBJ`, ordinal 352, target `lib_7c91ea167acacb87_0`
-- RotColorDpq3_nom (m) — `NOM_9.OBJ`, ordinal 353, target `lib_2a85531fc37d63ca_0`
-- RotAverageNclipColorDpq3_nom (m) — `NOM_10.OBJ`, ordinal 354, target `lib_cfca88997b222516_0`
-- RotAverageNclipColorCol3_nom (m) — `NOM_11.OBJ`, ordinal 355, target `lib_3de6d8d34ee898cf_0`
-- NormalColor_nom (m) — `NOM_12.OBJ`, ordinal 356, target `lib_da64b41d5b5e93e6_0`
-- NormalColor3_nom (m) — `NOM_13.OBJ`, ordinal 357, target `lib_fd8ba8c3b1703821_0`
-- NormalColorDpq_nom (m) — `NOM_14.OBJ`, ordinal 358, target `lib_1b1c440e2595713b_0`
-- NormalColorDpq3_nom (m) — `NOM_15.OBJ`, ordinal 359, target `lib_3ca35db4694b7e16_0`
-- NormalColorCol_nom (m) — `NOM_16.OBJ`, ordinal 360, target `lib_4218114e23f9b4e6_0`
-- NormalColorCol3_nom (m) — `NOM_17.OBJ`, ordinal 361, target `lib_9d9c2e6e3dba48fa_0`
+- RotTransPers_nom (m) — `NOM_1.OBJ`, ordinal 345, target `libgte_345`
+- RotTransPers3_nom (m) — `NOM_2.OBJ`, ordinal 346, target `libgte_346`
+- RotTrans_nom (m) — `NOM_3.OBJ`, ordinal 347, target `libgte_347`
+- RotTransPers4_nom (m) — `NOM_4.OBJ`, ordinal 348, target `libgte_348`
+- RotAverage3_nom (m) — `NOM_5.OBJ`, ordinal 349, target `libgte_349`
+- RotNclip3_nom (m) — `NOM_6.OBJ`, ordinal 350, target `libgte_350`
+- RotAverageNclip3_nom (m) — `NOM_7.OBJ`, ordinal 351, target `libgte_351`
+- RotColorDpq_nom (m) — `NOM_8.OBJ`, ordinal 352, target `libgte_352`
+- RotColorDpq3_nom (m) — `NOM_9.OBJ`, ordinal 353, target `libgte_353`
+- RotAverageNclipColorDpq3_nom (m) — `NOM_10.OBJ`, ordinal 354, target `libgte_354`
+- RotAverageNclipColorCol3_nom (m) — `NOM_11.OBJ`, ordinal 355, target `libgte_355`
+- NormalColor_nom (m) — `NOM_12.OBJ`, ordinal 356, target `libgte_356`
+- NormalColor3_nom (m) — `NOM_13.OBJ`, ordinal 357, target `libgte_357`
+- NormalColorDpq_nom (m) — `NOM_14.OBJ`, ordinal 358, target `libgte_358`
+- NormalColorDpq3_nom (m) — `NOM_15.OBJ`, ordinal 359, target `libgte_359`
+- NormalColorCol_nom (m) — `NOM_16.OBJ`, ordinal 360, target `libgte_360`
+- NormalColorCol3_nom (m) — `NOM_17.OBJ`, ordinal 361, target `libgte_361`
 - Family structure: 17 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 16/17; whole-file `.set noreorder` reproduces the bytes in 17/17.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/345-nom_1`, `libgte/346-nom_2`, `libgte/347-nom_3`, `libgte/348-nom_4`, `libgte/349-nom_5`, `libgte/350-nom_6`, `libgte/351-nom_7`, `libgte/352-nom_8`, `libgte/353-nom_9`, `libgte/354-nom_10`, `libgte/355-nom_11`, `libgte/356-nom_12`, `libgte/357-nom_13`, `libgte/358-nom_14`, `libgte/359-nom_15`, `libgte/360-nom_16`, `libgte/361-nom_17`.
@@ -1382,10 +1382,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/362-f3_1/` … `src/libraries/libgte/365-f3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNF3 (m) — `F3_1.OBJ`, ordinal 362, target `lib_7db2b4eb11254868_0`
-- GsTMDfastF3NL (m) — `F3_2.OBJ`, ordinal 363, target `lib_2f398f4e1e55bd3f_0`
-- GsTMDfastF3L (m) — `F3_3.OBJ`, ordinal 364, target `lib_af132988f496f49c_0`
-- GsTMDfastF3LFG (m) — `F3_4.OBJ`, ordinal 365, target `lib_24a1fa50d92abe40_0`
+- GsTMDfastNF3 (m) — `F3_1.OBJ`, ordinal 362, target `libgte_362`
+- GsTMDfastF3NL (m) — `F3_2.OBJ`, ordinal 363, target `libgte_363`
+- GsTMDfastF3L (m) — `F3_3.OBJ`, ordinal 364, target `libgte_364`
+- GsTMDfastF3LFG (m) — `F3_4.OBJ`, ordinal 365, target `libgte_365`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/362-f3_1`, `libgte/363-f3_2`, `libgte/364-f3_3`, `libgte/365-f3_4`.
@@ -1396,10 +1396,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/366-f4_1/` … `src/libraries/libgte/369-f4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNF4 (m) — `F4_1.OBJ`, ordinal 366, target `lib_5cd9d9a868f594eb_0`
-- GsTMDfastF4NL (m) — `F4_2.OBJ`, ordinal 367, target `lib_0912b0e97bb7a69f_0`
-- GsTMDfastF4L (m) — `F4_3.OBJ`, ordinal 368, target `lib_e5a885c984e63ab4_0`
-- GsTMDfastF4LFG (m) — `F4_4.OBJ`, ordinal 369, target `lib_d706b817df6f1868_0`
+- GsTMDfastNF4 (m) — `F4_1.OBJ`, ordinal 366, target `libgte_366`
+- GsTMDfastF4NL (m) — `F4_2.OBJ`, ordinal 367, target `libgte_367`
+- GsTMDfastF4L (m) — `F4_3.OBJ`, ordinal 368, target `libgte_368`
+- GsTMDfastF4LFG (m) — `F4_4.OBJ`, ordinal 369, target `libgte_369`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/366-f4_1`, `libgte/367-f4_2`, `libgte/368-f4_3`, `libgte/369-f4_4`.
@@ -1410,10 +1410,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/370-f4s_1/` … `src/libraries/libgte/373-f4s_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNF4D (m) — `F4S_1.OBJ`, ordinal 370, target `lib_549e03d5d660aded_0`
-- GsTMDfastF4NLD (m) — `F4S_2.OBJ`, ordinal 371, target `lib_f135ca0c42602790_0`
-- GsTMDfastF4LD (m) — `F4S_3.OBJ`, ordinal 372, target `lib_7a962f2706a781b4_0`
-- GsTMDfastF4LFGD (m) — `F4S_4.OBJ`, ordinal 373, target `lib_b98903ac8671ee3a_0`
+- GsTMDfastNF4D (m) — `F4S_1.OBJ`, ordinal 370, target `libgte_370`
+- GsTMDfastF4NLD (m) — `F4S_2.OBJ`, ordinal 371, target `libgte_371`
+- GsTMDfastF4LD (m) — `F4S_3.OBJ`, ordinal 372, target `libgte_372`
+- GsTMDfastF4LFGD (m) — `F4S_4.OBJ`, ordinal 373, target `libgte_373`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/370-f4s_1`, `libgte/371-f4s_2`, `libgte/372-f4s_3`, `libgte/373-f4s_4`.
@@ -1424,10 +1424,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/374-g3_1/` … `src/libraries/libgte/377-g3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNG3 (m) — `G3_1.OBJ`, ordinal 374, target `lib_a7b5e0cb2d142953_0`
-- GsTMDfastG3NL (m) — `G3_2.OBJ`, ordinal 375, target `lib_8d06abdb02268d2d_0`
-- GsTMDfastG3L (m) — `G3_3.OBJ`, ordinal 376, target `lib_f366e33d493e58b6_0`
-- GsTMDfastG3LFG (m) — `G3_4.OBJ`, ordinal 377, target `lib_408c110f261b73da_0`
+- GsTMDfastNG3 (m) — `G3_1.OBJ`, ordinal 374, target `libgte_374`
+- GsTMDfastG3NL (m) — `G3_2.OBJ`, ordinal 375, target `libgte_375`
+- GsTMDfastG3L (m) — `G3_3.OBJ`, ordinal 376, target `libgte_376`
+- GsTMDfastG3LFG (m) — `G3_4.OBJ`, ordinal 377, target `libgte_377`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/374-g3_1`, `libgte/375-g3_2`, `libgte/376-g3_3`, `libgte/377-g3_4`.
@@ -1438,10 +1438,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/378-g4_1/` … `src/libraries/libgte/381-g4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNG4 (m) — `G4_1.OBJ`, ordinal 378, target `lib_458f2adda3de33f0_0`
-- GsTMDfastG4NL (m) — `G4_2.OBJ`, ordinal 379, target `lib_b9dd4923fddf00c5_0`
-- GsTMDfastG4L (m) — `G4_3.OBJ`, ordinal 380, target `lib_a63296bf5d0b09a9_0`
-- GsTMDfastG4LFG (m) — `G4_4.OBJ`, ordinal 381, target `lib_6e7a9c5278a40335_0`
+- GsTMDfastNG4 (m) — `G4_1.OBJ`, ordinal 378, target `libgte_378`
+- GsTMDfastG4NL (m) — `G4_2.OBJ`, ordinal 379, target `libgte_379`
+- GsTMDfastG4L (m) — `G4_3.OBJ`, ordinal 380, target `libgte_380`
+- GsTMDfastG4LFG (m) — `G4_4.OBJ`, ordinal 381, target `libgte_381`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/378-g4_1`, `libgte/379-g4_2`, `libgte/380-g4_3`, `libgte/381-g4_4`.
@@ -1452,10 +1452,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/382-g4s_1/` … `src/libraries/libgte/385-g4s_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNG4D (m) — `G4S_1.OBJ`, ordinal 382, target `lib_4ec142a00162cc3f_0`
-- GsTMDfastG4NLD (m) — `G4S_2.OBJ`, ordinal 383, target `lib_b891124101d398a5_0`
-- GsTMDfastG4LD (m) — `G4S_3.OBJ`, ordinal 384, target `lib_7299e2c511c33e03_0`
-- GsTMDfastG4LFGD (m) — `G4S_4.OBJ`, ordinal 385, target `lib_fecc121152eab060_0`
+- GsTMDfastNG4D (m) — `G4S_1.OBJ`, ordinal 382, target `libgte_382`
+- GsTMDfastG4NLD (m) — `G4S_2.OBJ`, ordinal 383, target `libgte_383`
+- GsTMDfastG4LD (m) — `G4S_3.OBJ`, ordinal 384, target `libgte_384`
+- GsTMDfastG4LFGD (m) — `G4S_4.OBJ`, ordinal 385, target `libgte_385`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/382-g4s_1`, `libgte/383-g4s_2`, `libgte/384-g4s_3`, `libgte/385-g4s_4`.
@@ -1466,10 +1466,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/386-ft3_1/` … `src/libraries/libgte/389-ft3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF3 (m) — `FT3_1.OBJ`, ordinal 386, target `lib_56d23d7ff83b5d48_0`
-- GsTMDfastTF3NL (m) — `FT3_2.OBJ`, ordinal 387, target `lib_7604b7fe645322cb_0`
-- GsTMDfastTF3L (m) — `FT3_3.OBJ`, ordinal 388, target `lib_76bd79aebd53ee28_0`
-- GsTMDfastTF3LFG (m) — `FT3_4.OBJ`, ordinal 389, target `lib_58c488371af3e47f_0`
+- GsTMDfastTNF3 (m) — `FT3_1.OBJ`, ordinal 386, target `libgte_386`
+- GsTMDfastTF3NL (m) — `FT3_2.OBJ`, ordinal 387, target `libgte_387`
+- GsTMDfastTF3L (m) — `FT3_3.OBJ`, ordinal 388, target `libgte_388`
+- GsTMDfastTF3LFG (m) — `FT3_4.OBJ`, ordinal 389, target `libgte_389`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/386-ft3_1`, `libgte/387-ft3_2`, `libgte/388-ft3_3`, `libgte/389-ft3_4`.
@@ -1480,10 +1480,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/390-ft4_1/` … `src/libraries/libgte/393-ft4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF4 (m) — `FT4_1.OBJ`, ordinal 390, target `lib_ef85e5d940eb8244_0`
-- GsTMDfastTF4NL (m) — `FT4_2.OBJ`, ordinal 391, target `lib_60c4f6af5c189990_0`
-- GsTMDfastTF4L (m) — `FT4_3.OBJ`, ordinal 392, target `lib_f1d40130cd24a0ab_0`
-- GsTMDfastTF4LFG (m) — `FT4_4.OBJ`, ordinal 393, target `lib_95deeb9160ee78d9_0`
+- GsTMDfastTNF4 (m) — `FT4_1.OBJ`, ordinal 390, target `libgte_390`
+- GsTMDfastTF4NL (m) — `FT4_2.OBJ`, ordinal 391, target `libgte_391`
+- GsTMDfastTF4L (m) — `FT4_3.OBJ`, ordinal 392, target `libgte_392`
+- GsTMDfastTF4LFG (m) — `FT4_4.OBJ`, ordinal 393, target `libgte_393`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/390-ft4_1`, `libgte/391-ft4_2`, `libgte/392-ft4_3`, `libgte/393-ft4_4`.
@@ -1494,10 +1494,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/394-ft4s_1/` … `src/libraries/libgte/397-ft4s_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF4D (m) — `FT4S_1.OBJ`, ordinal 394, target `lib_57e0d248b574f77d_0`
-- GsTMDfastTF4NLD (m) — `FT4S_2.OBJ`, ordinal 395, target `lib_0f97ffad35bdbec0_0`
-- GsTMDfastTF4LD (m) — `FT4S_3.OBJ`, ordinal 396, target `lib_c951581bcd90a377_0`
-- GsTMDfastTF4LFGD (m) — `FT4S_4.OBJ`, ordinal 397, target `lib_7c40495f4a0e71f9_0`
+- GsTMDfastTNF4D (m) — `FT4S_1.OBJ`, ordinal 394, target `libgte_394`
+- GsTMDfastTF4NLD (m) — `FT4S_2.OBJ`, ordinal 395, target `libgte_395`
+- GsTMDfastTF4LD (m) — `FT4S_3.OBJ`, ordinal 396, target `libgte_396`
+- GsTMDfastTF4LFGD (m) — `FT4S_4.OBJ`, ordinal 397, target `libgte_397`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/394-ft4s_1`, `libgte/395-ft4s_2`, `libgte/396-ft4s_3`, `libgte/397-ft4s_4`.
@@ -1508,10 +1508,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/398-gt3_1/` … `src/libraries/libgte/401-gt3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG3 (m) — `GT3_1.OBJ`, ordinal 398, target `lib_ce028a37a76b10c6_0`
-- GsTMDfastTG3NL (m) — `GT3_2.OBJ`, ordinal 399, target `lib_83117b3482c41e63_0`
-- GsTMDfastTG3L (m) — `GT3_3.OBJ`, ordinal 400, target `lib_ca659cb607a0d065_0`
-- GsTMDfastTG3LFG (m) — `GT3_4.OBJ`, ordinal 401, target `lib_73b8380b460f7845_0`
+- GsTMDfastTNG3 (m) — `GT3_1.OBJ`, ordinal 398, target `libgte_398`
+- GsTMDfastTG3NL (m) — `GT3_2.OBJ`, ordinal 399, target `libgte_399`
+- GsTMDfastTG3L (m) — `GT3_3.OBJ`, ordinal 400, target `libgte_400`
+- GsTMDfastTG3LFG (m) — `GT3_4.OBJ`, ordinal 401, target `libgte_401`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/398-gt3_1`, `libgte/399-gt3_2`, `libgte/400-gt3_3`, `libgte/401-gt3_4`.
@@ -1522,10 +1522,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/402-gt4_1/` … `src/libraries/libgte/405-gt4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG4 (m) — `GT4_1.OBJ`, ordinal 402, target `lib_2fdd957af94672cb_0`
-- GsTMDfastTG4NL (m) — `GT4_2.OBJ`, ordinal 403, target `lib_9c0057c38e5e5fed_0`
-- GsTMDfastTG4L (m) — `GT4_3.OBJ`, ordinal 404, target `lib_a08c1d1242fc2931_0`
-- GsTMDfastTG4LFG (m) — `GT4_4.OBJ`, ordinal 405, target `lib_4df5901c9a3d8a5c_0`
+- GsTMDfastTNG4 (m) — `GT4_1.OBJ`, ordinal 402, target `libgte_402`
+- GsTMDfastTG4NL (m) — `GT4_2.OBJ`, ordinal 403, target `libgte_403`
+- GsTMDfastTG4L (m) — `GT4_3.OBJ`, ordinal 404, target `libgte_404`
+- GsTMDfastTG4LFG (m) — `GT4_4.OBJ`, ordinal 405, target `libgte_405`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/402-gt4_1`, `libgte/403-gt4_2`, `libgte/404-gt4_3`, `libgte/405-gt4_4`.
@@ -1536,10 +1536,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/406-gt4s_1/` … `src/libraries/libgte/409-gt4s_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG4D (m) — `GT4S_1.OBJ`, ordinal 406, target `lib_227bcf95905b0189_0`
-- GsTMDfastTG4NLD (m) — `GT4S_2.OBJ`, ordinal 407, target `lib_71b67f249863c7ce_0`
-- GsTMDfastTG4LD (m) — `GT4S_3.OBJ`, ordinal 408, target `lib_41eb8f1cda1413e8_0`
-- GsTMDfastTG4LFGD (m) — `GT4S_4.OBJ`, ordinal 409, target `lib_5aafcea7940dcae7_0`
+- GsTMDfastTNG4D (m) — `GT4S_1.OBJ`, ordinal 406, target `libgte_406`
+- GsTMDfastTG4NLD (m) — `GT4S_2.OBJ`, ordinal 407, target `libgte_407`
+- GsTMDfastTG4LD (m) — `GT4S_3.OBJ`, ordinal 408, target `libgte_408`
+- GsTMDfastTG4LFGD (m) — `GT4S_4.OBJ`, ordinal 409, target `libgte_409`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/406-gt4s_1`, `libgte/407-gt4s_2`, `libgte/408-gt4s_3`, `libgte/409-gt4s_4`.
@@ -1550,10 +1550,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/410-prs_f3_1/` … `src/libraries/libgte/413-prs_f3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNF3 (m) — `PRS_F3_1.OBJ`, ordinal 410, target `lib_31710f485a9a7ae3_0`
-- GsPrstF3NL (m) — `PRS_F3_2.OBJ`, ordinal 411, target `lib_cfecd581b58d5d0c_0`
-- GsPrstF3L (m) — `PRS_F3_3.OBJ`, ordinal 412, target `lib_67d4ca4b4087d5e5_0`
-- GsPrstF3LFG (m) — `PRS_F3_4.OBJ`, ordinal 413, target `lib_ed441e4a6f6c3b04_0`
+- GsPrstNF3 (m) — `PRS_F3_1.OBJ`, ordinal 410, target `libgte_410`
+- GsPrstF3NL (m) — `PRS_F3_2.OBJ`, ordinal 411, target `libgte_411`
+- GsPrstF3L (m) — `PRS_F3_3.OBJ`, ordinal 412, target `libgte_412`
+- GsPrstF3LFG (m) — `PRS_F3_4.OBJ`, ordinal 413, target `libgte_413`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/410-prs_f3_1`, `libgte/411-prs_f3_2`, `libgte/412-prs_f3_3`, `libgte/413-prs_f3_4`.
@@ -1564,10 +1564,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/414-prs_f4_1/` … `src/libraries/libgte/417-prs_f4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNF4 (m) — `PRS_F4_1.OBJ`, ordinal 414, target `lib_6bc0dde42d6488de_0`
-- GsPrstF4NL (m) — `PRS_F4_2.OBJ`, ordinal 415, target `lib_1ec89a799770d084_0`
-- GsPrstF4L (m) — `PRS_F4_3.OBJ`, ordinal 416, target `lib_fd9101ed63af4da2_0`
-- GsPrstF4LFG (m) — `PRS_F4_4.OBJ`, ordinal 417, target `lib_3c7f2aeff2e61d8b_0`
+- GsPrstNF4 (m) — `PRS_F4_1.OBJ`, ordinal 414, target `libgte_414`
+- GsPrstF4NL (m) — `PRS_F4_2.OBJ`, ordinal 415, target `libgte_415`
+- GsPrstF4L (m) — `PRS_F4_3.OBJ`, ordinal 416, target `libgte_416`
+- GsPrstF4LFG (m) — `PRS_F4_4.OBJ`, ordinal 417, target `libgte_417`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/414-prs_f4_1`, `libgte/415-prs_f4_2`, `libgte/416-prs_f4_3`, `libgte/417-prs_f4_4`.
@@ -1578,10 +1578,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/418-prs_f4s_/` … `src/libraries/libgte/421-prs_f4s_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNF4D (m) — `PRS_F4S_.OBJ`, ordinal 418, target `lib_4be8ac7662e0b669_0`
-- GsPrstF4NLD (m) — `PRS_F4S_.OBJ`, ordinal 419, target `lib_95a2e91a1efaf23a_0`
-- GsPrstF4LD (m) — `PRS_F4S_.OBJ`, ordinal 420, target `lib_c9eb79b180e4e737_0`
-- GsPrstF4LFGD (m) — `PRS_F4S_.OBJ`, ordinal 421, target `lib_a0ab44776f7773aa_0`
+- GsPrstNF4D (m) — `PRS_F4S_.OBJ`, ordinal 418, target `libgte_418`
+- GsPrstF4NLD (m) — `PRS_F4S_.OBJ`, ordinal 419, target `libgte_419`
+- GsPrstF4LD (m) — `PRS_F4S_.OBJ`, ordinal 420, target `libgte_420`
+- GsPrstF4LFGD (m) — `PRS_F4S_.OBJ`, ordinal 421, target `libgte_421`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/418-prs_f4s_`, `libgte/419-prs_f4s_`, `libgte/420-prs_f4s_`, `libgte/421-prs_f4s_`.
@@ -1592,10 +1592,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/422-prs_g3_1/` … `src/libraries/libgte/425-prs_g3_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNG3 (m) — `PRS_G3_1.OBJ`, ordinal 422, target `lib_c3105fdced92c4e1_0`
-- GsPrstG3NL (m) — `PRS_G3_2.OBJ`, ordinal 423, target `lib_590c8cf91266c4c8_0`
-- GsPrstG3L (m) — `PRS_G3_3.OBJ`, ordinal 424, target `lib_9d0de1667d00a52e_0`
-- GsPrstG3LFG (m) — `PRS_G3_4.OBJ`, ordinal 425, target `lib_52f0aebce7ad2452_0`
+- GsPrstNG3 (m) — `PRS_G3_1.OBJ`, ordinal 422, target `libgte_422`
+- GsPrstG3NL (m) — `PRS_G3_2.OBJ`, ordinal 423, target `libgte_423`
+- GsPrstG3L (m) — `PRS_G3_3.OBJ`, ordinal 424, target `libgte_424`
+- GsPrstG3LFG (m) — `PRS_G3_4.OBJ`, ordinal 425, target `libgte_425`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/422-prs_g3_1`, `libgte/423-prs_g3_2`, `libgte/424-prs_g3_3`, `libgte/425-prs_g3_4`.
@@ -1606,10 +1606,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/426-prs_g4_1/` … `src/libraries/libgte/429-prs_g4_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNG4 (m) — `PRS_G4_1.OBJ`, ordinal 426, target `lib_c0bba408cc181e19_0`
-- GsPrstG4NL (m) — `PRS_G4_2.OBJ`, ordinal 427, target `lib_fe45d7645ca0a147_0`
-- GsPrstG4L (m) — `PRS_G4_3.OBJ`, ordinal 428, target `lib_51a3184fdea9c7c2_0`
-- GsPrstG4LFG (m) — `PRS_G4_4.OBJ`, ordinal 429, target `lib_ce1438e35357ca2f_0`
+- GsPrstNG4 (m) — `PRS_G4_1.OBJ`, ordinal 426, target `libgte_426`
+- GsPrstG4NL (m) — `PRS_G4_2.OBJ`, ordinal 427, target `libgte_427`
+- GsPrstG4L (m) — `PRS_G4_3.OBJ`, ordinal 428, target `libgte_428`
+- GsPrstG4LFG (m) — `PRS_G4_4.OBJ`, ordinal 429, target `libgte_429`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/426-prs_g4_1`, `libgte/427-prs_g4_2`, `libgte/428-prs_g4_3`, `libgte/429-prs_g4_4`.
@@ -1620,10 +1620,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/430-prs_g4s_/` … `src/libraries/libgte/433-prs_g4s_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstNG4D (m) — `PRS_G4S_.OBJ`, ordinal 430, target `lib_f2f14acf662b45b7_0`
-- GsPrstG4NLD (m) — `PRS_G4S_.OBJ`, ordinal 431, target `lib_72843f4754d5470e_0`
-- GsPrstG4LD (m) — `PRS_G4S_.OBJ`, ordinal 432, target `lib_131c251fd4b2ac7e_0`
-- GsPrstG4LFGD (m) — `PRS_G4S_.OBJ`, ordinal 433, target `lib_0f87948cf443ad04_0`
+- GsPrstNG4D (m) — `PRS_G4S_.OBJ`, ordinal 430, target `libgte_430`
+- GsPrstG4NLD (m) — `PRS_G4S_.OBJ`, ordinal 431, target `libgte_431`
+- GsPrstG4LD (m) — `PRS_G4S_.OBJ`, ordinal 432, target `libgte_432`
+- GsPrstG4LFGD (m) — `PRS_G4S_.OBJ`, ordinal 433, target `libgte_433`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/430-prs_g4s_`, `libgte/431-prs_g4s_`, `libgte/432-prs_g4s_`, `libgte/433-prs_g4s_`.
@@ -1634,10 +1634,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/434-prs_ft3_/` … `src/libraries/libgte/437-prs_ft3_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNF3 (m) — `PRS_FT3_.OBJ`, ordinal 434, target `lib_051af7866b8085e2_0`
-- GsPrstTF3NL (m) — `PRS_FT3_.OBJ`, ordinal 435, target `lib_d6a33ba940543b94_0`
-- GsPrstTF3L (m) — `PRS_FT3_.OBJ`, ordinal 436, target `lib_cc211079c84239db_0`
-- GsPrstTF3LFG (m) — `PRS_FT3_.OBJ`, ordinal 437, target `lib_fb62d51566bde9ad_0`
+- GsPrstTNF3 (m) — `PRS_FT3_.OBJ`, ordinal 434, target `libgte_434`
+- GsPrstTF3NL (m) — `PRS_FT3_.OBJ`, ordinal 435, target `libgte_435`
+- GsPrstTF3L (m) — `PRS_FT3_.OBJ`, ordinal 436, target `libgte_436`
+- GsPrstTF3LFG (m) — `PRS_FT3_.OBJ`, ordinal 437, target `libgte_437`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/434-prs_ft3_`, `libgte/435-prs_ft3_`, `libgte/436-prs_ft3_`, `libgte/437-prs_ft3_`.
@@ -1648,10 +1648,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/438-prs_ft4_/` … `src/libraries/libgte/441-prs_ft4_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNF4 (m) — `PRS_FT4_.OBJ`, ordinal 438, target `lib_fb4584d769bc2028_0`
-- GsPrstTF4NL (m) — `PRS_FT4_.OBJ`, ordinal 439, target `lib_106bcdcd667767e2_0`
-- GsPrstTF4L (m) — `PRS_FT4_.OBJ`, ordinal 440, target `lib_ec7b75568b3fd11b_0`
-- GsPrstTF4LFG (m) — `PRS_FT4_.OBJ`, ordinal 441, target `lib_b5228438784f6e68_0`
+- GsPrstTNF4 (m) — `PRS_FT4_.OBJ`, ordinal 438, target `libgte_438`
+- GsPrstTF4NL (m) — `PRS_FT4_.OBJ`, ordinal 439, target `libgte_439`
+- GsPrstTF4L (m) — `PRS_FT4_.OBJ`, ordinal 440, target `libgte_440`
+- GsPrstTF4LFG (m) — `PRS_FT4_.OBJ`, ordinal 441, target `libgte_441`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/438-prs_ft4_`, `libgte/439-prs_ft4_`, `libgte/440-prs_ft4_`, `libgte/441-prs_ft4_`.
@@ -1662,10 +1662,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/442-prs_ft4s/` … `src/libraries/libgte/445-prs_ft4s/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNF4D (m) — `PRS_FT4S.OBJ`, ordinal 442, target `lib_ec1f795a27c84fd9_0`
-- GsPrstTF4NLD (m) — `PRS_FT4S.OBJ`, ordinal 443, target `lib_4146d647f0a5222e_0`
-- GsPrstTF4LD (m) — `PRS_FT4S.OBJ`, ordinal 444, target `lib_ed280d921929745d_0`
-- GsPrstTF4LFGD (m) — `PRS_FT4S.OBJ`, ordinal 445, target `lib_b2a358e186a7995b_0`
+- GsPrstTNF4D (m) — `PRS_FT4S.OBJ`, ordinal 442, target `libgte_442`
+- GsPrstTF4NLD (m) — `PRS_FT4S.OBJ`, ordinal 443, target `libgte_443`
+- GsPrstTF4LD (m) — `PRS_FT4S.OBJ`, ordinal 444, target `libgte_444`
+- GsPrstTF4LFGD (m) — `PRS_FT4S.OBJ`, ordinal 445, target `libgte_445`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/442-prs_ft4s`, `libgte/443-prs_ft4s`, `libgte/444-prs_ft4s`, `libgte/445-prs_ft4s`.
@@ -1676,10 +1676,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/446-prs_gt3_/` … `src/libraries/libgte/449-prs_gt3_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNG3 (m) — `PRS_GT3_.OBJ`, ordinal 446, target `lib_ce3cdebe39f89fa2_0`
-- GsPrstTG3NL (m) — `PRS_GT3_.OBJ`, ordinal 447, target `lib_293fa4d1b64671c8_0`
-- GsPrstTG3L (m) — `PRS_GT3_.OBJ`, ordinal 448, target `lib_c999c3d5fa1fe1b9_0`
-- GsPrstTG3LFG (m) — `PRS_GT3_.OBJ`, ordinal 449, target `lib_09886d7ef15dbeac_0`
+- GsPrstTNG3 (m) — `PRS_GT3_.OBJ`, ordinal 446, target `libgte_446`
+- GsPrstTG3NL (m) — `PRS_GT3_.OBJ`, ordinal 447, target `libgte_447`
+- GsPrstTG3L (m) — `PRS_GT3_.OBJ`, ordinal 448, target `libgte_448`
+- GsPrstTG3LFG (m) — `PRS_GT3_.OBJ`, ordinal 449, target `libgte_449`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/446-prs_gt3_`, `libgte/447-prs_gt3_`, `libgte/448-prs_gt3_`, `libgte/449-prs_gt3_`.
@@ -1690,10 +1690,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/450-prs_gt4_/` … `src/libraries/libgte/453-prs_gt4_/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNG4 (m) — `PRS_GT4_.OBJ`, ordinal 450, target `lib_6a80745572f4256c_0`
-- GsPrstTG4NL (m) — `PRS_GT4_.OBJ`, ordinal 451, target `lib_6fe7af0014efc6d8_0`
-- GsPrstTG4L (m) — `PRS_GT4_.OBJ`, ordinal 452, target `lib_de51bad737e96620_0`
-- GsPrstTG4LFG (m) — `PRS_GT4_.OBJ`, ordinal 453, target `lib_84c46f1140feb5d6_0`
+- GsPrstTNG4 (m) — `PRS_GT4_.OBJ`, ordinal 450, target `libgte_450`
+- GsPrstTG4NL (m) — `PRS_GT4_.OBJ`, ordinal 451, target `libgte_451`
+- GsPrstTG4L (m) — `PRS_GT4_.OBJ`, ordinal 452, target `libgte_452`
+- GsPrstTG4LFG (m) — `PRS_GT4_.OBJ`, ordinal 453, target `libgte_453`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/450-prs_gt4_`, `libgte/451-prs_gt4_`, `libgte/452-prs_gt4_`, `libgte/453-prs_gt4_`.
@@ -1704,10 +1704,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/454-prs_gt4s/` … `src/libraries/libgte/457-prs_gt4s/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsPrstTNG4D (m) — `PRS_GT4S.OBJ`, ordinal 454, target `lib_9e8b4d4d2f6714b9_0`
-- GsPrstTG4NLD (m) — `PRS_GT4S.OBJ`, ordinal 455, target `lib_427007cab7a87e3b_0`
-- GsPrstTG4LD (m) — `PRS_GT4S.OBJ`, ordinal 456, target `lib_faa4f61064ebcab9_0`
-- GsPrstTG4LFGD (m) — `PRS_GT4S.OBJ`, ordinal 457, target `lib_3d27ddf3b57e0a45_0`
+- GsPrstTNG4D (m) — `PRS_GT4S.OBJ`, ordinal 454, target `libgte_454`
+- GsPrstTG4NLD (m) — `PRS_GT4S.OBJ`, ordinal 455, target `libgte_455`
+- GsPrstTG4LD (m) — `PRS_GT4S.OBJ`, ordinal 456, target `libgte_456`
+- GsPrstTG4LFGD (m) — `PRS_GT4S.OBJ`, ordinal 457, target `libgte_457`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/454-prs_gt4s`, `libgte/455-prs_gt4s`, `libgte/456-prs_gt4s`, `libgte/457-prs_gt4s`.
@@ -1718,22 +1718,22 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/458-pmd_1/` … `src/libraries/libgte/473-pmd_16/`); 16 members, 16 functions.
 Members (byte-exact assembly, one object each):
-- RotPMD_F3 (m) — `PMD_1.OBJ`, ordinal 458, target `lib_4b6c5e0296d18f87_0`
-- RotPMD_G3 (m) — `PMD_2.OBJ`, ordinal 459, target `lib_06f00a80c4e877fd_0`
-- RotPMD_FT3 (m) — `PMD_3.OBJ`, ordinal 460, target `lib_127c636017129f30_0`
-- RotPMD_GT3 (m) — `PMD_4.OBJ`, ordinal 461, target `lib_693a33b7a17ff285_0`
-- RotPMD_F4 (m) — `PMD_5.OBJ`, ordinal 462, target `lib_c17cf553e450928e_0`
-- RotPMD_G4 (m) — `PMD_6.OBJ`, ordinal 463, target `lib_e21388f459584adc_0`
-- RotPMD_FT4 (m) — `PMD_7.OBJ`, ordinal 464, target `lib_86d1ab705882752a_0`
-- RotPMD_GT4 (m) — `PMD_8.OBJ`, ordinal 465, target `lib_bbe2136e09260efb_0`
-- RotPMD_SV_F3 (m) — `PMD_9.OBJ`, ordinal 466, target `lib_8f1f7b7fca3832e0_0`
-- RotPMD_SV_G3 (m) — `PMD_10.OBJ`, ordinal 467, target `lib_18f5dcf91bdd5762_0`
-- RotPMD_SV_FT3 (m) — `PMD_11.OBJ`, ordinal 468, target `lib_d5204a44064633a5_0`
-- RotPMD_SV_GT3 (m) — `PMD_12.OBJ`, ordinal 469, target `lib_61d6b6d58d59e506_0`
-- RotPMD_SV_F4 (m) — `PMD_13.OBJ`, ordinal 470, target `lib_370d53d902403438_0`
-- RotPMD_SV_G4 (m) — `PMD_14.OBJ`, ordinal 471, target `lib_39dc49214a9d27a2_0`
-- RotPMD_SV_FT4 (m) — `PMD_15.OBJ`, ordinal 472, target `lib_04d766eece0b4b05_0`
-- RotPMD_SV_GT4 (m) — `PMD_16.OBJ`, ordinal 473, target `lib_57a2baa5b37edfb2_0`
+- RotPMD_F3 (m) — `PMD_1.OBJ`, ordinal 458, target `libgte_458`
+- RotPMD_G3 (m) — `PMD_2.OBJ`, ordinal 459, target `libgte_459`
+- RotPMD_FT3 (m) — `PMD_3.OBJ`, ordinal 460, target `libgte_460`
+- RotPMD_GT3 (m) — `PMD_4.OBJ`, ordinal 461, target `libgte_461`
+- RotPMD_F4 (m) — `PMD_5.OBJ`, ordinal 462, target `libgte_462`
+- RotPMD_G4 (m) — `PMD_6.OBJ`, ordinal 463, target `libgte_463`
+- RotPMD_FT4 (m) — `PMD_7.OBJ`, ordinal 464, target `libgte_464`
+- RotPMD_GT4 (m) — `PMD_8.OBJ`, ordinal 465, target `libgte_465`
+- RotPMD_SV_F3 (m) — `PMD_9.OBJ`, ordinal 466, target `libgte_466`
+- RotPMD_SV_G3 (m) — `PMD_10.OBJ`, ordinal 467, target `libgte_467`
+- RotPMD_SV_FT3 (m) — `PMD_11.OBJ`, ordinal 468, target `libgte_468`
+- RotPMD_SV_GT3 (m) — `PMD_12.OBJ`, ordinal 469, target `libgte_469`
+- RotPMD_SV_F4 (m) — `PMD_13.OBJ`, ordinal 470, target `libgte_470`
+- RotPMD_SV_G4 (m) — `PMD_14.OBJ`, ordinal 471, target `libgte_471`
+- RotPMD_SV_FT4 (m) — `PMD_15.OBJ`, ordinal 472, target `libgte_472`
+- RotPMD_SV_GT4 (m) — `PMD_16.OBJ`, ordinal 473, target `libgte_473`
 - Family structure: 16 variants over 8 distinct instruction streams (members in one stream differ only in operands): {`RotPMD_F3`, `RotPMD_G3`}; {`RotPMD_FT3`, `RotPMD_GT3`}; {`RotPMD_F4`, `RotPMD_G4`}; {`RotPMD_FT4`, `RotPMD_GT4`}; {`RotPMD_SV_F3`, `RotPMD_SV_G3`}; {`RotPMD_SV_FT3`, `RotPMD_SV_GT3`}; {`RotPMD_SV_F4`, `RotPMD_SV_G4`}; {`RotPMD_SV_FT4`, `RotPMD_SV_GT4`}.
 - Hand-written evidence: `$at` used as a scratch register in 16/16; GTE commands with a single hazard nop in 16/16; whole-file `.set noreorder` reproduces the bytes in 10/16.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/458-pmd_1`, `libgte/459-pmd_2`, `libgte/460-pmd_3`, `libgte/461-pmd_4`, `libgte/462-pmd_5`, `libgte/463-pmd_6`, `libgte/464-pmd_7`, `libgte/465-pmd_8`, `libgte/466-pmd_9`, `libgte/467-pmd_10`, `libgte/468-pmd_11`, `libgte/469-pmd_12`, `libgte/470-pmd_13`, `libgte/471-pmd_14`, `libgte/472-pmd_15`, `libgte/473-pmd_16`.
@@ -1744,22 +1744,22 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/474-nmd_1/` … `src/libraries/libgte/489-nmd_16/`); 16 members, 16 functions.
 Members (byte-exact assembly, one object each):
-- RotNMD_F3 (m) — `NMD_1.OBJ`, ordinal 474, target `lib_373fcd6e678c7d77_0`
-- RotNMD_G3 (m) — `NMD_2.OBJ`, ordinal 475, target `lib_c2884000759395bb_0`
-- RotNMD_FT3 (m) — `NMD_3.OBJ`, ordinal 476, target `lib_c85830c86c8cf468_0`
-- RotNMD_GT3 (m) — `NMD_4.OBJ`, ordinal 477, target `lib_60686bfaa481f104_0`
-- RotNMD_F4 (m) — `NMD_5.OBJ`, ordinal 478, target `lib_a5dd1da3254c9e4a_0`
-- RotNMD_G4 (m) — `NMD_6.OBJ`, ordinal 479, target `lib_fbb418c582bdd36f_0`
-- RotNMD_FT4 (m) — `NMD_7.OBJ`, ordinal 480, target `lib_73e04db097c29498_0`
-- RotNMD_GT4 (m) — `NMD_8.OBJ`, ordinal 481, target `lib_ea7b83ec7256b874_0`
-- RotNMD_SV_F3 (m) — `NMD_9.OBJ`, ordinal 482, target `lib_c02b878167403fd9_0`
-- RotNMD_SV_G3 (m) — `NMD_10.OBJ`, ordinal 483, target `lib_4cf121cb9d83c838_0`
-- RotNMD_SV_FT3 (m) — `NMD_11.OBJ`, ordinal 484, target `lib_e11bb7444e1c1588_0`
-- RotNMD_SV_GT3 (m) — `NMD_12.OBJ`, ordinal 485, target `lib_9befcc54a91a6c6a_0`
-- RotNMD_SV_F4 (m) — `NMD_13.OBJ`, ordinal 486, target `lib_7a58955776ff0cee_0`
-- RotNMD_SV_G4 (m) — `NMD_14.OBJ`, ordinal 487, target `lib_15097414ab056beb_0`
-- RotNMD_SV_FT4 (m) — `NMD_15.OBJ`, ordinal 488, target `lib_e15b6ac784df5585_0`
-- RotNMD_SV_GT4 (m) — `NMD_16.OBJ`, ordinal 489, target `lib_3679a816335b49a6_0`
+- RotNMD_F3 (m) — `NMD_1.OBJ`, ordinal 474, target `libgte_474`
+- RotNMD_G3 (m) — `NMD_2.OBJ`, ordinal 475, target `libgte_475`
+- RotNMD_FT3 (m) — `NMD_3.OBJ`, ordinal 476, target `libgte_476`
+- RotNMD_GT3 (m) — `NMD_4.OBJ`, ordinal 477, target `libgte_477`
+- RotNMD_F4 (m) — `NMD_5.OBJ`, ordinal 478, target `libgte_478`
+- RotNMD_G4 (m) — `NMD_6.OBJ`, ordinal 479, target `libgte_479`
+- RotNMD_FT4 (m) — `NMD_7.OBJ`, ordinal 480, target `libgte_480`
+- RotNMD_GT4 (m) — `NMD_8.OBJ`, ordinal 481, target `libgte_481`
+- RotNMD_SV_F3 (m) — `NMD_9.OBJ`, ordinal 482, target `libgte_482`
+- RotNMD_SV_G3 (m) — `NMD_10.OBJ`, ordinal 483, target `libgte_483`
+- RotNMD_SV_FT3 (m) — `NMD_11.OBJ`, ordinal 484, target `libgte_484`
+- RotNMD_SV_GT3 (m) — `NMD_12.OBJ`, ordinal 485, target `libgte_485`
+- RotNMD_SV_F4 (m) — `NMD_13.OBJ`, ordinal 486, target `libgte_486`
+- RotNMD_SV_G4 (m) — `NMD_14.OBJ`, ordinal 487, target `libgte_487`
+- RotNMD_SV_FT4 (m) — `NMD_15.OBJ`, ordinal 488, target `libgte_488`
+- RotNMD_SV_GT4 (m) — `NMD_16.OBJ`, ordinal 489, target `libgte_489`
 - Family structure: 16 variants over 8 distinct instruction streams (members in one stream differ only in operands): {`RotNMD_F3`, `RotNMD_G3`}; {`RotNMD_FT3`, `RotNMD_GT3`}; {`RotNMD_F4`, `RotNMD_G4`}; {`RotNMD_FT4`, `RotNMD_GT4`}; {`RotNMD_SV_F3`, `RotNMD_SV_G3`}; {`RotNMD_SV_FT3`, `RotNMD_SV_GT3`}; {`RotNMD_SV_F4`, `RotNMD_SV_G4`}; {`RotNMD_SV_FT4`, `RotNMD_SV_GT4`}.
 - Hand-written evidence: `$at` used as a scratch register in 16/16; GTE commands with a single hazard nop in 16/16; whole-file `.set noreorder` reproduces the bytes in 12/16.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/474-nmd_1`, `libgte/475-nmd_2`, `libgte/476-nmd_3`, `libgte/477-nmd_4`, `libgte/478-nmd_5`, `libgte/479-nmd_6`, `libgte/480-nmd_7`, `libgte/481-nmd_8`, `libgte/482-nmd_9`, `libgte/483-nmd_10`, `libgte/484-nmd_11`, `libgte/485-nmd_12`, `libgte/486-nmd_13`, `libgte/487-nmd_14`, `libgte/488-nmd_15`, `libgte/489-nmd_16`.
@@ -1770,10 +1770,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/499-trr_1/` … `src/libraries/libgte/502-trr_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- TransRot_32 (m) — `TRR_1.OBJ`, ordinal 499, target `lib_54beaaef51042442_0`
-- TransRotPers (m) — `TRR_2.OBJ`, ordinal 500, target `lib_9fb0471d7fab4aa8_0`
-- TransRotPers3 (m) — `TRR_3.OBJ`, ordinal 501, target `lib_acc2951fffdf2873_0`
-- ApplyTransposeMatrixLV (m) — `TRR_4.OBJ`, ordinal 502, target `lib_2296e660482b0d8a_0`
+- TransRot_32 (m) — `TRR_1.OBJ`, ordinal 499, target `libgte_499`
+- TransRotPers (m) — `TRR_2.OBJ`, ordinal 500, target `libgte_500`
+- TransRotPers3 (m) — `TRR_3.OBJ`, ordinal 501, target `libgte_501`
+- ApplyTransposeMatrixLV (m) — `TRR_4.OBJ`, ordinal 502, target `libgte_502`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: no instruction-level marker; classed by the GTE hazard-nop convention (0 or 1 nop before GTE commands, where the SDK C macros emit 2) and by family; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/499-trr_1`, `libgte/500-trr_2`, `libgte/501-trr_3`, `libgte/502-trr_4`.
@@ -1784,10 +1784,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/503-f3b_1/` … `src/libraries/libgte/506-f3b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNF3B (m) — `F3B_1.OBJ`, ordinal 503, target `lib_ef851c9ed7c7a0e1_0`
-- GsTMDfastF3NLB (m) — `F3B_2.OBJ`, ordinal 504, target `lib_1fd6d72d815313c3_0`
-- GsTMDfastF3LB (m) — `F3B_3.OBJ`, ordinal 505, target `lib_3ccbf40c11b4a9b9_0`
-- GsTMDfastF3LFGB (m) — `F3B_4.OBJ`, ordinal 506, target `lib_43fa4e1a73f50ef6_0`
+- GsTMDfastNF3B (m) — `F3B_1.OBJ`, ordinal 503, target `libgte_503`
+- GsTMDfastF3NLB (m) — `F3B_2.OBJ`, ordinal 504, target `libgte_504`
+- GsTMDfastF3LB (m) — `F3B_3.OBJ`, ordinal 505, target `libgte_505`
+- GsTMDfastF3LFGB (m) — `F3B_4.OBJ`, ordinal 506, target `libgte_506`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/503-f3b_1`, `libgte/504-f3b_2`, `libgte/505-f3b_3`, `libgte/506-f3b_4`.
@@ -1798,10 +1798,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/507-f4b_1/` … `src/libraries/libgte/510-f4b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNF4B (m) — `F4B_1.OBJ`, ordinal 507, target `lib_bd1f9f3bcb6f75c1_0`
-- GsTMDfastF4NLB (m) — `F4B_2.OBJ`, ordinal 508, target `lib_5677a2cfe6afa72f_0`
-- GsTMDfastF4LB (m) — `F4B_3.OBJ`, ordinal 509, target `lib_f6b80089b79abbd5_0`
-- GsTMDfastF4LFGB (m) — `F4B_4.OBJ`, ordinal 510, target `lib_fafb540c014e4a6c_0`
+- GsTMDfastNF4B (m) — `F4B_1.OBJ`, ordinal 507, target `libgte_507`
+- GsTMDfastF4NLB (m) — `F4B_2.OBJ`, ordinal 508, target `libgte_508`
+- GsTMDfastF4LB (m) — `F4B_3.OBJ`, ordinal 509, target `libgte_509`
+- GsTMDfastF4LFGB (m) — `F4B_4.OBJ`, ordinal 510, target `libgte_510`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/507-f4b_1`, `libgte/508-f4b_2`, `libgte/509-f4b_3`, `libgte/510-f4b_4`.
@@ -1812,10 +1812,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/511-g3b_1/` … `src/libraries/libgte/514-g3b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNG3B (m) — `G3B_1.OBJ`, ordinal 511, target `lib_db2a46e099030608_0`
-- GsTMDfastG3NLB (m) — `G3B_2.OBJ`, ordinal 512, target `lib_a8c8f3a9093b43e3_0`
-- GsTMDfastG3LB (m) — `G3B_3.OBJ`, ordinal 513, target `lib_3e59dd3d4f8c5c75_0`
-- GsTMDfastG3LFGB (m) — `G3B_4.OBJ`, ordinal 514, target `lib_15d6cde786416091_0`
+- GsTMDfastNG3B (m) — `G3B_1.OBJ`, ordinal 511, target `libgte_511`
+- GsTMDfastG3NLB (m) — `G3B_2.OBJ`, ordinal 512, target `libgte_512`
+- GsTMDfastG3LB (m) — `G3B_3.OBJ`, ordinal 513, target `libgte_513`
+- GsTMDfastG3LFGB (m) — `G3B_4.OBJ`, ordinal 514, target `libgte_514`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/511-g3b_1`, `libgte/512-g3b_2`, `libgte/513-g3b_3`, `libgte/514-g3b_4`.
@@ -1826,10 +1826,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/515-g4b_1/` … `src/libraries/libgte/518-g4b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastNG4B (m) — `G4B_1.OBJ`, ordinal 515, target `lib_2b792ebe1602350f_0`
-- GsTMDfastG4NLB (m) — `G4B_2.OBJ`, ordinal 516, target `lib_75048cfd5d9bce25_0`
-- GsTMDfastG4LB (m) — `G4B_3.OBJ`, ordinal 517, target `lib_f8dad42089097d84_0`
-- GsTMDfastG4LFGB (m) — `G4B_4.OBJ`, ordinal 518, target `lib_5665d89b0ac16cc3_0`
+- GsTMDfastNG4B (m) — `G4B_1.OBJ`, ordinal 515, target `libgte_515`
+- GsTMDfastG4NLB (m) — `G4B_2.OBJ`, ordinal 516, target `libgte_516`
+- GsTMDfastG4LB (m) — `G4B_3.OBJ`, ordinal 517, target `libgte_517`
+- GsTMDfastG4LFGB (m) — `G4B_4.OBJ`, ordinal 518, target `libgte_518`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/515-g4b_1`, `libgte/516-g4b_2`, `libgte/517-g4b_3`, `libgte/518-g4b_4`.
@@ -1840,10 +1840,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/519-ft3b_1/` … `src/libraries/libgte/522-ft3b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF3B (m) — `FT3B_1.OBJ`, ordinal 519, target `lib_5a05094eec84ab41_0`
-- GsTMDfastTF3NLB (m) — `FT3B_2.OBJ`, ordinal 520, target `lib_745a74268a8310bb_0`
-- GsTMDfastTF3LB (m) — `FT3B_3.OBJ`, ordinal 521, target `lib_a1195d72b5500967_0`
-- GsTMDfastTF3LFGB (m) — `FT3B_4.OBJ`, ordinal 522, target `lib_ef0f30897fb500cc_0`
+- GsTMDfastTNF3B (m) — `FT3B_1.OBJ`, ordinal 519, target `libgte_519`
+- GsTMDfastTF3NLB (m) — `FT3B_2.OBJ`, ordinal 520, target `libgte_520`
+- GsTMDfastTF3LB (m) — `FT3B_3.OBJ`, ordinal 521, target `libgte_521`
+- GsTMDfastTF3LFGB (m) — `FT3B_4.OBJ`, ordinal 522, target `libgte_522`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/519-ft3b_1`, `libgte/520-ft3b_2`, `libgte/521-ft3b_3`, `libgte/522-ft3b_4`.
@@ -1854,10 +1854,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/523-ft4b_1/` … `src/libraries/libgte/526-ft4b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNF4B (m) — `FT4B_1.OBJ`, ordinal 523, target `lib_12b1f7c8926dabce_0`
-- GsTMDfastTF4NLB (m) — `FT4B_2.OBJ`, ordinal 524, target `lib_14b5584401b6f9ce_0`
-- GsTMDfastTF4LB (m) — `FT4B_3.OBJ`, ordinal 525, target `lib_45908840ecea265e_0`
-- GsTMDfastTF4LFGB (m) — `FT4B_4.OBJ`, ordinal 526, target `lib_13bd2dc7139e584f_0`
+- GsTMDfastTNF4B (m) — `FT4B_1.OBJ`, ordinal 523, target `libgte_523`
+- GsTMDfastTF4NLB (m) — `FT4B_2.OBJ`, ordinal 524, target `libgte_524`
+- GsTMDfastTF4LB (m) — `FT4B_3.OBJ`, ordinal 525, target `libgte_525`
+- GsTMDfastTF4LFGB (m) — `FT4B_4.OBJ`, ordinal 526, target `libgte_526`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/523-ft4b_1`, `libgte/524-ft4b_2`, `libgte/525-ft4b_3`, `libgte/526-ft4b_4`.
@@ -1868,10 +1868,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/527-gt3b_1/` … `src/libraries/libgte/530-gt3b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG3B (m) — `GT3B_1.OBJ`, ordinal 527, target `lib_7c2ef96698c1545b_0`
-- GsTMDfastTG3NLB (m) — `GT3B_2.OBJ`, ordinal 528, target `lib_98eb4da5dfeba4cf_0`
-- GsTMDfastTG3LB (m) — `GT3B_3.OBJ`, ordinal 529, target `lib_37e0456c9426d5c3_0`
-- GsTMDfastTG3LFGB (m) — `GT3B_4.OBJ`, ordinal 530, target `lib_8b9b3083c49c00c4_0`
+- GsTMDfastTNG3B (m) — `GT3B_1.OBJ`, ordinal 527, target `libgte_527`
+- GsTMDfastTG3NLB (m) — `GT3B_2.OBJ`, ordinal 528, target `libgte_528`
+- GsTMDfastTG3LB (m) — `GT3B_3.OBJ`, ordinal 529, target `libgte_529`
+- GsTMDfastTG3LFGB (m) — `GT3B_4.OBJ`, ordinal 530, target `libgte_530`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/527-gt3b_1`, `libgte/528-gt3b_2`, `libgte/529-gt3b_3`, `libgte/530-gt3b_4`.
@@ -1882,10 +1882,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/531-gt4b_1/` … `src/libraries/libgte/534-gt4b_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG4B (m) — `GT4B_1.OBJ`, ordinal 531, target `lib_1c09c5f0984a68b8_0`
-- GsTMDfastTG4NLB (m) — `GT4B_2.OBJ`, ordinal 532, target `lib_d653deab8a16d7c5_0`
-- GsTMDfastTG4LB (m) — `GT4B_3.OBJ`, ordinal 533, target `lib_69970c89a7c31f90_0`
-- GsTMDfastTG4LFGB (m) — `GT4B_4.OBJ`, ordinal 534, target `lib_5740fc1acfe49c3c_0`
+- GsTMDfastTNG4B (m) — `GT4B_1.OBJ`, ordinal 531, target `libgte_531`
+- GsTMDfastTG4NLB (m) — `GT4B_2.OBJ`, ordinal 532, target `libgte_532`
+- GsTMDfastTG4LB (m) — `GT4B_3.OBJ`, ordinal 533, target `libgte_533`
+- GsTMDfastTG4LFGB (m) — `GT4B_4.OBJ`, ordinal 534, target `libgte_534`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/531-gt4b_1`, `libgte/532-gt4b_2`, `libgte/533-gt4b_3`, `libgte/534-gt4b_4`.
@@ -1896,10 +1896,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgte/535-gt3f_1/` … `src/libraries/libgte/538-gt3f_4/`); 4 members, 4 functions.
 Members (byte-exact assembly, one object each):
-- GsTMDfastTNG3_FLIP (m) — `GT3F_1.OBJ`, ordinal 535, target `lib_04866b1123f0ba6c_0`
-- GsTMDfastTG3NL_FLIP (m) — `GT3F_2.OBJ`, ordinal 536, target `lib_8c6db43f976fdc6d_0`
-- GsTMDfastTG3L_FLIP (m) — `GT3F_3.OBJ`, ordinal 537, target `lib_761414a455d37966_0`
-- GsTMDfastTG3LFG_FLIP (m) — `GT3F_4.OBJ`, ordinal 538, target `lib_946ab1f8db5530d7_0`
+- GsTMDfastTNG3_FLIP (m) — `GT3F_1.OBJ`, ordinal 535, target `libgte_535`
+- GsTMDfastTG3NL_FLIP (m) — `GT3F_2.OBJ`, ordinal 536, target `libgte_536`
+- GsTMDfastTG3L_FLIP (m) — `GT3F_3.OBJ`, ordinal 537, target `libgte_537`
+- GsTMDfastTG3LFG_FLIP (m) — `GT3F_4.OBJ`, ordinal 538, target `libgte_538`
 - Family structure: 4 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 4/4; whole-file `.set noreorder` reproduces the bytes in 4/4.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libgte/535-gt3f_1`, `libgte/536-gt3f_2`, `libgte/537-gt3f_3`, `libgte/538-gt3f_4`.
@@ -1910,12 +1910,12 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libgun/1-newgun/`); 1 member, 6 functions.
 Members (byte-exact assembly, one object each):
-- _InitGun (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
-- _ExitGun (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_InitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
-- _check_gun_flag (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_InitGun`, `_ExitGun`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
-- _clear_gun_flag (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `read_gun_v`, `read_gun_h`
-- read_gun_v (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_h`
-- read_gun_h (m) — `NEWGUN.OBJ`, ordinal 1, target `lib_0f663e15dc9457aa_0`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`
+- _InitGun (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
+- _ExitGun (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_InitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
+- _check_gun_flag (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_InitGun`, `_ExitGun`, `_clear_gun_flag`, `read_gun_v`, `read_gun_h`
+- _clear_gun_flag (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `read_gun_v`, `read_gun_h`
+- read_gun_v (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_h`
+- read_gun_h (m) — `NEWGUN.OBJ`, ordinal 1, target `libgun_1`; shares the object with `_InitGun`, `_ExitGun`, `_check_gun_flag`, `_clear_gun_flag`, `read_gun_v`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; privileged or trap instructions in 1/1; jump through a register other than `$ra` in 1/1; return address loaded from a buffer in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libgun/1-newgun`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -1926,34 +1926,34 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/0-00000008/` … `src/libraries/libhmd/27-00000217/`); 28 members, 28 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00000000 (no flags: the basic drivers); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00000008 (m) — `00000008.OBJ`, ordinal 0, target `lib_e9cbc7732263cf2f_0`
-- GsU_00000009 (m) — `00000009.OBJ`, ordinal 1, target `lib_4cb71f47c76c4db2_0`
-- GsU_0000000a (m) — `0000000A.OBJ`, ordinal 2, target `lib_0fca04dbdc611d4b_0`
-- GsU_0000000b (m) — `0000000B.OBJ`, ordinal 3, target `lib_14cc6d9c9ddd18d9_0`
-- GsU_0000000c (m) — `0000000C.OBJ`, ordinal 4, target `lib_7c87a7a2ca3029d1_0`
-- GsU_0000000d (m) — `0000000D.OBJ`, ordinal 5, target `lib_644d0801032afdc1_0`
-- GsU_0000000e (m) — `0000000E.OBJ`, ordinal 6, target `lib_4fce4cf189d1aa9a_0`
-- GsU_0000000f (m) — `0000000F.OBJ`, ordinal 7, target `lib_4f43d5906575ff71_0`
-- GsU_00000010 (m) — `00000010.OBJ`, ordinal 8, target `lib_87ef15173864b537_0`
-- GsU_00000011 (m) — `00000011.OBJ`, ordinal 9, target `lib_d8f961fc81f62a25_0`
-- GsU_00000012 (m) — `00000012.OBJ`, ordinal 10, target `lib_5e0c32ed609b0047_0`
-- GsU_00000013 (m) — `00000013.OBJ`, ordinal 11, target `lib_0141ab4ca97b6af6_0`
-- GsU_00000014 (m) — `00000014.OBJ`, ordinal 12, target `lib_7d4b57bc670d32fc_0`
-- GsU_00000015 (m) — `00000015.OBJ`, ordinal 13, target `lib_ef34dad49a2d1bf1_0`
-- GsU_00000016 (m) — `00000016.OBJ`, ordinal 14, target `lib_17e7d1687b3874ad_0`
-- GsU_00000017 (m) — `00000017.OBJ`, ordinal 15, target `lib_8b7ce2892152fcaf_0`
-- GsU_00000018 (m) — `00000018.OBJ`, ordinal 16, target `lib_e914bf206f69e809_0`
-- GsU_00000019 (m) — `00000019.OBJ`, ordinal 17, target `lib_951b4b1522695836_0`
-- GsU_0000001c (m) — `0000001C.OBJ`, ordinal 18, target `lib_d4d65179251c5013_0`
-- GsU_0000001d (m) — `0000001D.OBJ`, ordinal 19, target `lib_b40e600052b5bf2a_0`
-- GsU_00000209 (m) — `00000209.OBJ`, ordinal 20, target `lib_baadb7a737dcd856_0`
-- GsU_0000020b (m) — `0000020B.OBJ`, ordinal 21, target `lib_86ce54305a9e7578_0`
-- GsU_0000020d (m) — `0000020D.OBJ`, ordinal 22, target `lib_56888fbde241ef01_0`
-- GsU_0000020f (m) — `0000020F.OBJ`, ordinal 23, target `lib_c3c476ca090c7273_0`
-- GsU_00000211 (m) — `00000211.OBJ`, ordinal 24, target `lib_16a175d41df71b2d_0`
-- GsU_00000213 (m) — `00000213.OBJ`, ordinal 25, target `lib_9149939e171681a8_0`
-- GsU_00000215 (m) — `00000215.OBJ`, ordinal 26, target `lib_f8843445d04fedcf_0`
-- GsU_00000217 (m) — `00000217.OBJ`, ordinal 27, target `lib_5802d78b149ded6b_0`
+- GsU_00000008 (m) — `00000008.OBJ`, ordinal 0, target `libhmd_0`
+- GsU_00000009 (m) — `00000009.OBJ`, ordinal 1, target `libhmd_1`
+- GsU_0000000a (m) — `0000000A.OBJ`, ordinal 2, target `libhmd_2`
+- GsU_0000000b (m) — `0000000B.OBJ`, ordinal 3, target `libhmd_3`
+- GsU_0000000c (m) — `0000000C.OBJ`, ordinal 4, target `libhmd_4`
+- GsU_0000000d (m) — `0000000D.OBJ`, ordinal 5, target `libhmd_5`
+- GsU_0000000e (m) — `0000000E.OBJ`, ordinal 6, target `libhmd_6`
+- GsU_0000000f (m) — `0000000F.OBJ`, ordinal 7, target `libhmd_7`
+- GsU_00000010 (m) — `00000010.OBJ`, ordinal 8, target `libhmd_8`
+- GsU_00000011 (m) — `00000011.OBJ`, ordinal 9, target `libhmd_9`
+- GsU_00000012 (m) — `00000012.OBJ`, ordinal 10, target `libhmd_10`
+- GsU_00000013 (m) — `00000013.OBJ`, ordinal 11, target `libhmd_11`
+- GsU_00000014 (m) — `00000014.OBJ`, ordinal 12, target `libhmd_12`
+- GsU_00000015 (m) — `00000015.OBJ`, ordinal 13, target `libhmd_13`
+- GsU_00000016 (m) — `00000016.OBJ`, ordinal 14, target `libhmd_14`
+- GsU_00000017 (m) — `00000017.OBJ`, ordinal 15, target `libhmd_15`
+- GsU_00000018 (m) — `00000018.OBJ`, ordinal 16, target `libhmd_16`
+- GsU_00000019 (m) — `00000019.OBJ`, ordinal 17, target `libhmd_17`
+- GsU_0000001c (m) — `0000001C.OBJ`, ordinal 18, target `libhmd_18`
+- GsU_0000001d (m) — `0000001D.OBJ`, ordinal 19, target `libhmd_19`
+- GsU_00000209 (m) — `00000209.OBJ`, ordinal 20, target `libhmd_20`
+- GsU_0000020b (m) — `0000020B.OBJ`, ordinal 21, target `libhmd_21`
+- GsU_0000020d (m) — `0000020D.OBJ`, ordinal 22, target `libhmd_22`
+- GsU_0000020f (m) — `0000020F.OBJ`, ordinal 23, target `libhmd_23`
+- GsU_00000211 (m) — `00000211.OBJ`, ordinal 24, target `libhmd_24`
+- GsU_00000213 (m) — `00000213.OBJ`, ordinal 25, target `libhmd_25`
+- GsU_00000215 (m) — `00000215.OBJ`, ordinal 26, target `libhmd_26`
+- GsU_00000217 (m) — `00000217.OBJ`, ordinal 27, target `libhmd_27`
 - Family structure: 28 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 28/28; `$at` used as a scratch register in 8/28; whole-file `.set noreorder` reproduces the bytes in 28/28.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/0-00000008`, `libhmd/1-00000009`, `libhmd/2-0000000a`, `libhmd/3-0000000b`, `libhmd/4-0000000c`, `libhmd/5-0000000d`, `libhmd/6-0000000e`, `libhmd/7-0000000f`, `libhmd/8-00000010`, `libhmd/9-00000011`, `libhmd/10-00000012`, `libhmd/11-00000013`, `libhmd/12-00000014`, `libhmd/13-00000015`, `libhmd/14-00000016`, `libhmd/15-00000017`, `libhmd/16-00000018`, `libhmd/17-00000019`, `libhmd/18-0000001c`, `libhmd/19-0000001d`, `libhmd/20-00000209`, `libhmd/21-0000020b`, `libhmd/22-0000020d`, `libhmd/23-0000020f`, `libhmd/24-00000211`, `libhmd/25-00000213`, `libhmd/26-00000215`, `libhmd/27-00000217`.
@@ -1965,30 +1965,30 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/28-00020008/` … `src/libraries/libhmd/51-00020217/`); 24 members, 24 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00020000 (fog); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00020008 (m) — `00020008.OBJ`, ordinal 28, target `lib_3e75e7e71a42845e_0`
-- GsU_00020009 (m) — `00020009.OBJ`, ordinal 29, target `lib_645d75839a17c7fd_0`
-- GsU_0002000a (m) — `0002000A.OBJ`, ordinal 30, target `lib_aece238fc4878a7f_0`
-- GsU_0002000b (m) — `0002000B.OBJ`, ordinal 31, target `lib_8b772530cedf9a8f_0`
-- GsU_0002000c (m) — `0002000C.OBJ`, ordinal 32, target `lib_84623bf16a05a70f_0`
-- GsU_0002000d (m) — `0002000D.OBJ`, ordinal 33, target `lib_6ba5b9d264ae0a9d_0`
-- GsU_0002000e (m) — `0002000E.OBJ`, ordinal 34, target `lib_d9d9fd144935664f_0`
-- GsU_0002000f (m) — `0002000F.OBJ`, ordinal 35, target `lib_f75573943ff4f7e9_0`
-- GsU_00020010 (m) — `00020010.OBJ`, ordinal 36, target `lib_2c532968e3fecc19_0`
-- GsU_00020011 (m) — `00020011.OBJ`, ordinal 37, target `lib_ceddcc22830059f9_0`
-- GsU_00020012 (m) — `00020012.OBJ`, ordinal 38, target `lib_1f3843d1a361ec70_0`
-- GsU_00020013 (m) — `00020013.OBJ`, ordinal 39, target `lib_f4329ba0e958c686_0`
-- GsU_00020014 (m) — `00020014.OBJ`, ordinal 40, target `lib_a4e62cafea285d87_0`
-- GsU_00020015 (m) — `00020015.OBJ`, ordinal 41, target `lib_e1fde8c083ecb011_0`
-- GsU_00020016 (m) — `00020016.OBJ`, ordinal 42, target `lib_a98af912e5378402_0`
-- GsU_00020017 (m) — `00020017.OBJ`, ordinal 43, target `lib_b0362e52c4789796_0`
-- GsU_00020209 (m) — `00020209.OBJ`, ordinal 44, target `lib_57fb1683b2570422_0`
-- GsU_0002020b (m) — `0002020B.OBJ`, ordinal 45, target `lib_1e7df0cd2e9480e1_0`
-- GsU_0002020d (m) — `0002020D.OBJ`, ordinal 46, target `lib_36621507512241bc_0`
-- GsU_0002020f (m) — `0002020F.OBJ`, ordinal 47, target `lib_07bea22897418c5f_0`
-- GsU_00020211 (m) — `00020211.OBJ`, ordinal 48, target `lib_39f68b2e0ac07cb9_0`
-- GsU_00020213 (m) — `00020213.OBJ`, ordinal 49, target `lib_76f7ca6712cdc0a4_0`
-- GsU_00020215 (m) — `00020215.OBJ`, ordinal 50, target `lib_0c8978f27aba05f0_0`
-- GsU_00020217 (m) — `00020217.OBJ`, ordinal 51, target `lib_de3e83d9fad97a61_0`
+- GsU_00020008 (m) — `00020008.OBJ`, ordinal 28, target `libhmd_28`
+- GsU_00020009 (m) — `00020009.OBJ`, ordinal 29, target `libhmd_29`
+- GsU_0002000a (m) — `0002000A.OBJ`, ordinal 30, target `libhmd_30`
+- GsU_0002000b (m) — `0002000B.OBJ`, ordinal 31, target `libhmd_31`
+- GsU_0002000c (m) — `0002000C.OBJ`, ordinal 32, target `libhmd_32`
+- GsU_0002000d (m) — `0002000D.OBJ`, ordinal 33, target `libhmd_33`
+- GsU_0002000e (m) — `0002000E.OBJ`, ordinal 34, target `libhmd_34`
+- GsU_0002000f (m) — `0002000F.OBJ`, ordinal 35, target `libhmd_35`
+- GsU_00020010 (m) — `00020010.OBJ`, ordinal 36, target `libhmd_36`
+- GsU_00020011 (m) — `00020011.OBJ`, ordinal 37, target `libhmd_37`
+- GsU_00020012 (m) — `00020012.OBJ`, ordinal 38, target `libhmd_38`
+- GsU_00020013 (m) — `00020013.OBJ`, ordinal 39, target `libhmd_39`
+- GsU_00020014 (m) — `00020014.OBJ`, ordinal 40, target `libhmd_40`
+- GsU_00020015 (m) — `00020015.OBJ`, ordinal 41, target `libhmd_41`
+- GsU_00020016 (m) — `00020016.OBJ`, ordinal 42, target `libhmd_42`
+- GsU_00020017 (m) — `00020017.OBJ`, ordinal 43, target `libhmd_43`
+- GsU_00020209 (m) — `00020209.OBJ`, ordinal 44, target `libhmd_44`
+- GsU_0002020b (m) — `0002020B.OBJ`, ordinal 45, target `libhmd_45`
+- GsU_0002020d (m) — `0002020D.OBJ`, ordinal 46, target `libhmd_46`
+- GsU_0002020f (m) — `0002020F.OBJ`, ordinal 47, target `libhmd_47`
+- GsU_00020211 (m) — `00020211.OBJ`, ordinal 48, target `libhmd_48`
+- GsU_00020213 (m) — `00020213.OBJ`, ordinal 49, target `libhmd_49`
+- GsU_00020215 (m) — `00020215.OBJ`, ordinal 50, target `libhmd_50`
+- GsU_00020217 (m) — `00020217.OBJ`, ordinal 51, target `libhmd_51`
 - Family structure: 24 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 24/24; `$at` used as a scratch register in 8/24; whole-file `.set noreorder` reproduces the bytes in 24/24.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/28-00020008`, `libhmd/29-00020009`, `libhmd/30-0002000a`, `libhmd/31-0002000b`, `libhmd/32-0002000c`, `libhmd/33-0002000d`, `libhmd/34-0002000e`, `libhmd/35-0002000f`, `libhmd/36-00020010`, `libhmd/37-00020011`, `libhmd/38-00020012`, `libhmd/39-00020013`, `libhmd/40-00020014`, `libhmd/41-00020015`, `libhmd/42-00020016`, `libhmd/43-00020017`, `libhmd/44-00020209`, `libhmd/45-0002020b`, `libhmd/46-0002020d`, `libhmd/47-0002020f`, `libhmd/48-00020211`, `libhmd/49-00020213`, `libhmd/50-00020215`, `libhmd/51-00020217`.
@@ -2000,30 +2000,30 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/52-00040048/` … `src/libraries/libhmd/75-00040255/`); 24 members, 24 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00040000 (nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00040048 (m) — `00040048.OBJ`, ordinal 52, target `lib_4b6207715ee7a38b_0`
-- GsU_00040049 (m) — `00040049.OBJ`, ordinal 53, target `lib_9a6729fc01d0ffb7_0`
-- GsU_0004004c (m) — `0004004C.OBJ`, ordinal 54, target `lib_4b209b6da9cdaa0d_0`
-- GsU_0004004d (m) — `0004004D.OBJ`, ordinal 55, target `lib_42e9a28315be947e_0`
-- GsU_00040050 (m) — `00040050.OBJ`, ordinal 56, target `lib_4a7b0d49c05b2622_0`
-- GsU_00040051 (m) — `00040051.OBJ`, ordinal 57, target `lib_7b952590c6846060_0`
-- GsU_00040054 (m) — `00040054.OBJ`, ordinal 58, target `lib_c4e4367720da7a3b_0`
-- GsU_00040055 (m) — `00040055.OBJ`, ordinal 59, target `lib_6e176abd9b6875e9_0`
-- GsU_00040058 (m) — `00040058.OBJ`, ordinal 60, target `lib_288f060cf8f8fbc1_0`
-- GsU_00040059 (m) — `00040059.OBJ`, ordinal 61, target `lib_29a32a0f7111c019_0`
-- GsU_0004005c (m) — `0004005C.OBJ`, ordinal 62, target `lib_3e88053f83f52a2c_0`
-- GsU_0004005d (m) — `0004005D.OBJ`, ordinal 63, target `lib_8e693784c611a214_0`
-- GsU_00040148 (m) — `00040148.OBJ`, ordinal 64, target `lib_a4cc96f3927f51db_0`
-- GsU_00040149 (m) — `00040149.OBJ`, ordinal 65, target `lib_f551677837612669_0`
-- GsU_0004014c (m) — `0004014C.OBJ`, ordinal 66, target `lib_91f1d3a408106737_0`
-- GsU_0004014d (m) — `0004014D.OBJ`, ordinal 67, target `lib_06da6c2f8b69d37b_0`
-- GsU_00040150 (m) — `00040150.OBJ`, ordinal 68, target `lib_5548502047af6d80_0`
-- GsU_00040151 (m) — `00040151.OBJ`, ordinal 69, target `lib_7373c11c67e65596_0`
-- GsU_00040154 (m) — `00040154.OBJ`, ordinal 70, target `lib_917182a967c31ba2_0`
-- GsU_00040155 (m) — `00040155.OBJ`, ordinal 71, target `lib_e57a8737ff02f301_0`
-- GsU_00040249 (m) — `00040249.OBJ`, ordinal 72, target `lib_ea0eaddf1356546c_0`
-- GsU_0004024d (m) — `0004024D.OBJ`, ordinal 73, target `lib_88410cfd41253b0c_0`
-- GsU_00040251 (m) — `00040251.OBJ`, ordinal 74, target `lib_f2ea79c7abef97bb_0`
-- GsU_00040255 (m) — `00040255.OBJ`, ordinal 75, target `lib_e1583289c06d05c9_0`
+- GsU_00040048 (m) — `00040048.OBJ`, ordinal 52, target `libhmd_52`
+- GsU_00040049 (m) — `00040049.OBJ`, ordinal 53, target `libhmd_53`
+- GsU_0004004c (m) — `0004004C.OBJ`, ordinal 54, target `libhmd_54`
+- GsU_0004004d (m) — `0004004D.OBJ`, ordinal 55, target `libhmd_55`
+- GsU_00040050 (m) — `00040050.OBJ`, ordinal 56, target `libhmd_56`
+- GsU_00040051 (m) — `00040051.OBJ`, ordinal 57, target `libhmd_57`
+- GsU_00040054 (m) — `00040054.OBJ`, ordinal 58, target `libhmd_58`
+- GsU_00040055 (m) — `00040055.OBJ`, ordinal 59, target `libhmd_59`
+- GsU_00040058 (m) — `00040058.OBJ`, ordinal 60, target `libhmd_60`
+- GsU_00040059 (m) — `00040059.OBJ`, ordinal 61, target `libhmd_61`
+- GsU_0004005c (m) — `0004005C.OBJ`, ordinal 62, target `libhmd_62`
+- GsU_0004005d (m) — `0004005D.OBJ`, ordinal 63, target `libhmd_63`
+- GsU_00040148 (m) — `00040148.OBJ`, ordinal 64, target `libhmd_64`
+- GsU_00040149 (m) — `00040149.OBJ`, ordinal 65, target `libhmd_65`
+- GsU_0004014c (m) — `0004014C.OBJ`, ordinal 66, target `libhmd_66`
+- GsU_0004014d (m) — `0004014D.OBJ`, ordinal 67, target `libhmd_67`
+- GsU_00040150 (m) — `00040150.OBJ`, ordinal 68, target `libhmd_68`
+- GsU_00040151 (m) — `00040151.OBJ`, ordinal 69, target `libhmd_69`
+- GsU_00040154 (m) — `00040154.OBJ`, ordinal 70, target `libhmd_70`
+- GsU_00040155 (m) — `00040155.OBJ`, ordinal 71, target `libhmd_71`
+- GsU_00040249 (m) — `00040249.OBJ`, ordinal 72, target `libhmd_72`
+- GsU_0004024d (m) — `0004024D.OBJ`, ordinal 73, target `libhmd_73`
+- GsU_00040251 (m) — `00040251.OBJ`, ordinal 74, target `libhmd_74`
+- GsU_00040255 (m) — `00040255.OBJ`, ordinal 75, target `libhmd_75`
 - Family structure: 24 variants over 23 distinct instruction streams (members in one stream differ only in operands): {`GsU_00040048`}; {`GsU_00040049`}; {`GsU_0004004c`}; {`GsU_0004004d`}; {`GsU_00040050`}; {`GsU_00040051`}; {`GsU_00040054`}; {`GsU_00040055`}; {`GsU_00040058`}; {`GsU_00040059`}; {`GsU_0004005c`}; {`GsU_0004005d`}; {`GsU_00040148`}; {`GsU_00040149`}; {`GsU_0004014c`}; {`GsU_0004014d`}; {`GsU_00040150`}; {`GsU_00040151`, `GsU_00040155`}; {`GsU_00040154`}; {`GsU_00040249`}; {`GsU_0004024d`}; {`GsU_00040251`}; {`GsU_00040255`}.
 - Hand-written evidence: GTE commands with a single hazard nop in 24/24; `$at` used as a scratch register in 4/24; whole-file `.set noreorder` reproduces the bytes in 24/24.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/52-00040048`, `libhmd/53-00040049`, `libhmd/54-0004004c`, `libhmd/55-0004004d`, `libhmd/56-00040050`, `libhmd/57-00040051`, `libhmd/58-00040054`, `libhmd/59-00040055`, `libhmd/60-00040058`, `libhmd/61-00040059`, `libhmd/62-0004005c`, `libhmd/63-0004005d`, `libhmd/64-00040148`, `libhmd/65-00040149`, `libhmd/66-0004014c`, `libhmd/67-0004014d`, `libhmd/68-00040150`, `libhmd/69-00040151`, `libhmd/70-00040154`, `libhmd/71-00040155`, `libhmd/72-00040249`, `libhmd/73-0004024d`, `libhmd/74-00040251`, `libhmd/75-00040255`.
@@ -2035,30 +2035,30 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/76-00100008/` … `src/libraries/libhmd/99-00100217/`); 24 members, 24 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00100000 (back-face); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00100008 (m) — `00100008.OBJ`, ordinal 76, target `lib_889eb3e7304a87fb_0`
-- GsU_00100009 (m) — `00100009.OBJ`, ordinal 77, target `lib_4e03bc3cbb151bd0_0`
-- GsU_0010000a (m) — `0010000A.OBJ`, ordinal 78, target `lib_3f734feb877f9122_0`
-- GsU_0010000b (m) — `0010000B.OBJ`, ordinal 79, target `lib_0544c263150afb78_0`
-- GsU_0010000c (m) — `0010000C.OBJ`, ordinal 80, target `lib_2db1ecc6056dd164_0`
-- GsU_0010000d (m) — `0010000D.OBJ`, ordinal 81, target `lib_bb67039d600ff1e9_0`
-- GsU_0010000e (m) — `0010000E.OBJ`, ordinal 82, target `lib_fa7ee3481b74a7be_0`
-- GsU_0010000f (m) — `0010000F.OBJ`, ordinal 83, target `lib_ceeb487435c54689_0`
-- GsU_00100010 (m) — `00100010.OBJ`, ordinal 84, target `lib_2c861d34ab3ed2d9_0`
-- GsU_00100011 (m) — `00100011.OBJ`, ordinal 85, target `lib_e209800274e91b41_0`
-- GsU_00100012 (m) — `00100012.OBJ`, ordinal 86, target `lib_6bc92a78aeb281a0_0`
-- GsU_00100013 (m) — `00100013.OBJ`, ordinal 87, target `lib_6542c87fc1b13347_0`
-- GsU_00100014 (m) — `00100014.OBJ`, ordinal 88, target `lib_4be3c16855f7f6fa_0`
-- GsU_00100015 (m) — `00100015.OBJ`, ordinal 89, target `lib_c5767bc4b31c720b_0`
-- GsU_00100016 (m) — `00100016.OBJ`, ordinal 90, target `lib_36a685932e12e47c_0`
-- GsU_00100017 (m) — `00100017.OBJ`, ordinal 91, target `lib_70bee06550fba3fd_0`
-- GsU_00100209 (m) — `00100209.OBJ`, ordinal 92, target `lib_f7d5eb43c39d8872_0`
-- GsU_0010020b (m) — `0010020B.OBJ`, ordinal 93, target `lib_910e67e1b9a40748_0`
-- GsU_0010020d (m) — `0010020D.OBJ`, ordinal 94, target `lib_97fade73de202b60_0`
-- GsU_0010020f (m) — `0010020F.OBJ`, ordinal 95, target `lib_879925e7274983ce_0`
-- GsU_00100211 (m) — `00100211.OBJ`, ordinal 96, target `lib_8fdaffa72525f42d_0`
-- GsU_00100213 (m) — `00100213.OBJ`, ordinal 97, target `lib_eedf99dc232b4097_0`
-- GsU_00100215 (m) — `00100215.OBJ`, ordinal 98, target `lib_84826a0192fa786f_0`
-- GsU_00100217 (m) — `00100217.OBJ`, ordinal 99, target `lib_40d1eea4a84a7324_0`
+- GsU_00100008 (m) — `00100008.OBJ`, ordinal 76, target `libhmd_76`
+- GsU_00100009 (m) — `00100009.OBJ`, ordinal 77, target `libhmd_77`
+- GsU_0010000a (m) — `0010000A.OBJ`, ordinal 78, target `libhmd_78`
+- GsU_0010000b (m) — `0010000B.OBJ`, ordinal 79, target `libhmd_79`
+- GsU_0010000c (m) — `0010000C.OBJ`, ordinal 80, target `libhmd_80`
+- GsU_0010000d (m) — `0010000D.OBJ`, ordinal 81, target `libhmd_81`
+- GsU_0010000e (m) — `0010000E.OBJ`, ordinal 82, target `libhmd_82`
+- GsU_0010000f (m) — `0010000F.OBJ`, ordinal 83, target `libhmd_83`
+- GsU_00100010 (m) — `00100010.OBJ`, ordinal 84, target `libhmd_84`
+- GsU_00100011 (m) — `00100011.OBJ`, ordinal 85, target `libhmd_85`
+- GsU_00100012 (m) — `00100012.OBJ`, ordinal 86, target `libhmd_86`
+- GsU_00100013 (m) — `00100013.OBJ`, ordinal 87, target `libhmd_87`
+- GsU_00100014 (m) — `00100014.OBJ`, ordinal 88, target `libhmd_88`
+- GsU_00100015 (m) — `00100015.OBJ`, ordinal 89, target `libhmd_89`
+- GsU_00100016 (m) — `00100016.OBJ`, ordinal 90, target `libhmd_90`
+- GsU_00100017 (m) — `00100017.OBJ`, ordinal 91, target `libhmd_91`
+- GsU_00100209 (m) — `00100209.OBJ`, ordinal 92, target `libhmd_92`
+- GsU_0010020b (m) — `0010020B.OBJ`, ordinal 93, target `libhmd_93`
+- GsU_0010020d (m) — `0010020D.OBJ`, ordinal 94, target `libhmd_94`
+- GsU_0010020f (m) — `0010020F.OBJ`, ordinal 95, target `libhmd_95`
+- GsU_00100211 (m) — `00100211.OBJ`, ordinal 96, target `libhmd_96`
+- GsU_00100213 (m) — `00100213.OBJ`, ordinal 97, target `libhmd_97`
+- GsU_00100215 (m) — `00100215.OBJ`, ordinal 98, target `libhmd_98`
+- GsU_00100217 (m) — `00100217.OBJ`, ordinal 99, target `libhmd_99`
 - Family structure: 24 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 24/24; GTE commands with a single hazard nop in 24/24; callee-saved registers written without being saved in 8/24; whole-file `.set noreorder` reproduces the bytes in 24/24.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/76-00100008`, `libhmd/77-00100009`, `libhmd/78-0010000a`, `libhmd/79-0010000b`, `libhmd/80-0010000c`, `libhmd/81-0010000d`, `libhmd/82-0010000e`, `libhmd/83-0010000f`, `libhmd/84-00100010`, `libhmd/85-00100011`, `libhmd/86-00100012`, `libhmd/87-00100013`, `libhmd/88-00100014`, `libhmd/89-00100015`, `libhmd/90-00100016`, `libhmd/91-00100017`, `libhmd/92-00100209`, `libhmd/93-0010020b`, `libhmd/94-0010020d`, `libhmd/95-0010020f`, `libhmd/96-00100211`, `libhmd/97-00100213`, `libhmd/98-00100215`, `libhmd/99-00100217`.
@@ -2070,30 +2070,30 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/100-00200008/` … `src/libraries/libhmd/375-00200217/`); 24 members, 24 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00200000 (semi-trans); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00200008 (m) — `00200008.OBJ`, ordinal 100, target `lib_571b5d539c48c692_0`
-- GsU_00200009 (m) — `00200009.OBJ`, ordinal 101, target `lib_af27e4003bf7546f_0`
-- GsU_0020000c (m) — `0020000C.OBJ`, ordinal 102, target `lib_cf58656d209c8ea4_0`
-- GsU_0020000d (m) — `0020000D.OBJ`, ordinal 103, target `lib_54543b45c4b3a85e_0`
-- GsU_00200010 (m) — `00200010.OBJ`, ordinal 104, target `lib_6a65f8f5c4e76e70_0`
-- GsU_00200011 (m) — `00200011.OBJ`, ordinal 105, target `lib_5e643ac1179a00d9_0`
-- GsU_00200014 (m) — `00200014.OBJ`, ordinal 106, target `lib_8a2485fe54337ca3_0`
-- GsU_00200015 (m) — `00200015.OBJ`, ordinal 107, target `lib_61781a25bf84bc9c_0`
-- GsU_00200209 (m) — `00200209.OBJ`, ordinal 108, target `lib_f276b3d2638a4712_0`
-- GsU_0020020d (m) — `0020020D.OBJ`, ordinal 109, target `lib_27537d8ceecee708_0`
-- GsU_00200211 (m) — `00200211.OBJ`, ordinal 110, target `lib_074748304957a1f5_0`
-- GsU_00200215 (m) — `00200215.OBJ`, ordinal 111, target `lib_5529d6640ee2a61c_0`
-- GsU_0020000a (m) — `0020000A.OBJ`, ordinal 364, target `lib_cadf6fcce7164400_0`
-- GsU_0020000b (m) — `0020000B.OBJ`, ordinal 365, target `lib_c661bce2a378aac3_0`
-- GsU_0020000e (m) — `0020000E.OBJ`, ordinal 366, target `lib_98850eccfbf70a7c_0`
-- GsU_0020000f (m) — `0020000F.OBJ`, ordinal 367, target `lib_74a961d9a54b7d51_0`
-- GsU_00200012 (m) — `00200012.OBJ`, ordinal 368, target `lib_973889b29abb08fc_0`
-- GsU_00200013 (m) — `00200013.OBJ`, ordinal 369, target `lib_4e62f301e247e6ea_0`
-- GsU_00200016 (m) — `00200016.OBJ`, ordinal 370, target `lib_0ab6491f21c68e91_0`
-- GsU_00200017 (m) — `00200017.OBJ`, ordinal 371, target `lib_651d702541255ce9_0`
-- GsU_0020020b (m) — `0020020B.OBJ`, ordinal 372, target `lib_713b4dab4f2fccd8_0`
-- GsU_0020020f (m) — `0020020F.OBJ`, ordinal 373, target `lib_f8cb1f99feed3675_0`
-- GsU_00200213 (m) — `00200213.OBJ`, ordinal 374, target `lib_603f687a7c160d33_0`
-- GsU_00200217 (m) — `00200217.OBJ`, ordinal 375, target `lib_c4d56801d4687825_0`
+- GsU_00200008 (m) — `00200008.OBJ`, ordinal 100, target `libhmd_100`
+- GsU_00200009 (m) — `00200009.OBJ`, ordinal 101, target `libhmd_101`
+- GsU_0020000c (m) — `0020000C.OBJ`, ordinal 102, target `libhmd_102`
+- GsU_0020000d (m) — `0020000D.OBJ`, ordinal 103, target `libhmd_103`
+- GsU_00200010 (m) — `00200010.OBJ`, ordinal 104, target `libhmd_104`
+- GsU_00200011 (m) — `00200011.OBJ`, ordinal 105, target `libhmd_105`
+- GsU_00200014 (m) — `00200014.OBJ`, ordinal 106, target `libhmd_106`
+- GsU_00200015 (m) — `00200015.OBJ`, ordinal 107, target `libhmd_107`
+- GsU_00200209 (m) — `00200209.OBJ`, ordinal 108, target `libhmd_108`
+- GsU_0020020d (m) — `0020020D.OBJ`, ordinal 109, target `libhmd_109`
+- GsU_00200211 (m) — `00200211.OBJ`, ordinal 110, target `libhmd_110`
+- GsU_00200215 (m) — `00200215.OBJ`, ordinal 111, target `libhmd_111`
+- GsU_0020000a (m) — `0020000A.OBJ`, ordinal 364, target `libhmd_364`
+- GsU_0020000b (m) — `0020000B.OBJ`, ordinal 365, target `libhmd_365`
+- GsU_0020000e (m) — `0020000E.OBJ`, ordinal 366, target `libhmd_366`
+- GsU_0020000f (m) — `0020000F.OBJ`, ordinal 367, target `libhmd_367`
+- GsU_00200012 (m) — `00200012.OBJ`, ordinal 368, target `libhmd_368`
+- GsU_00200013 (m) — `00200013.OBJ`, ordinal 369, target `libhmd_369`
+- GsU_00200016 (m) — `00200016.OBJ`, ordinal 370, target `libhmd_370`
+- GsU_00200017 (m) — `00200017.OBJ`, ordinal 371, target `libhmd_371`
+- GsU_0020020b (m) — `0020020B.OBJ`, ordinal 372, target `libhmd_372`
+- GsU_0020020f (m) — `0020020F.OBJ`, ordinal 373, target `libhmd_373`
+- GsU_00200213 (m) — `00200213.OBJ`, ordinal 374, target `libhmd_374`
+- GsU_00200217 (m) — `00200217.OBJ`, ordinal 375, target `libhmd_375`
 - Family structure: 24 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 24/24; `$at` used as a scratch register in 20/24; whole-file `.set noreorder` reproduces the bytes in 24/24.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/100-00200008`, `libhmd/101-00200009`, `libhmd/102-0020000c`, `libhmd/103-0020000d`, `libhmd/104-00200010`, `libhmd/105-00200011`, `libhmd/106-00200014`, `libhmd/107-00200015`, `libhmd/108-00200209`, `libhmd/109-0020020d`, `libhmd/110-00200211`, `libhmd/111-00200215`, `libhmd/364-0020000a`, `libhmd/365-0020000b`, `libhmd/366-0020000e`, `libhmd/367-0020000f`, `libhmd/368-00200012`, `libhmd/369-00200013`, `libhmd/370-00200016`, `libhmd/371-00200017`, `libhmd/372-0020020b`, `libhmd/373-0020020f`, `libhmd/374-00200213`, `libhmd/375-00200217`.
@@ -2105,18 +2105,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/112-00240048/` … `src/libraries/libhmd/123-00240255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00240000 (semi-trans, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00240048 (m) — `00240048.OBJ`, ordinal 112, target `lib_f7a27de6c800cfce_0`
-- GsU_00240049 (m) — `00240049.OBJ`, ordinal 113, target `lib_fa36aaa2f3f9b7d8_0`
-- GsU_0024004c (m) — `0024004C.OBJ`, ordinal 114, target `lib_b53aa96f5acd3385_0`
-- GsU_0024004d (m) — `0024004D.OBJ`, ordinal 115, target `lib_921f3885221eead2_0`
-- GsU_00240050 (m) — `00240050.OBJ`, ordinal 116, target `lib_eecd49a95105f5eb_0`
-- GsU_00240051 (m) — `00240051.OBJ`, ordinal 117, target `lib_5ea156ffd4d9403a_0`
-- GsU_00240054 (m) — `00240054.OBJ`, ordinal 118, target `lib_7df304be7e3adb4a_0`
-- GsU_00240055 (m) — `00240055.OBJ`, ordinal 119, target `lib_3551ec64a2fc7577_0`
-- GsU_00240249 (m) — `00240249.OBJ`, ordinal 120, target `lib_50ee6420194d9a74_0`
-- GsU_0024024d (m) — `0024024D.OBJ`, ordinal 121, target `lib_ce46796d5d69eb35_0`
-- GsU_00240251 (m) — `00240251.OBJ`, ordinal 122, target `lib_b1463267e50d1e12_0`
-- GsU_00240255 (m) — `00240255.OBJ`, ordinal 123, target `lib_7190c180835c478b_0`
+- GsU_00240048 (m) — `00240048.OBJ`, ordinal 112, target `libhmd_112`
+- GsU_00240049 (m) — `00240049.OBJ`, ordinal 113, target `libhmd_113`
+- GsU_0024004c (m) — `0024004C.OBJ`, ordinal 114, target `libhmd_114`
+- GsU_0024004d (m) — `0024004D.OBJ`, ordinal 115, target `libhmd_115`
+- GsU_00240050 (m) — `00240050.OBJ`, ordinal 116, target `libhmd_116`
+- GsU_00240051 (m) — `00240051.OBJ`, ordinal 117, target `libhmd_117`
+- GsU_00240054 (m) — `00240054.OBJ`, ordinal 118, target `libhmd_118`
+- GsU_00240055 (m) — `00240055.OBJ`, ordinal 119, target `libhmd_119`
+- GsU_00240249 (m) — `00240249.OBJ`, ordinal 120, target `libhmd_120`
+- GsU_0024024d (m) — `0024024D.OBJ`, ordinal 121, target `libhmd_121`
+- GsU_00240251 (m) — `00240251.OBJ`, ordinal 122, target `libhmd_122`
+- GsU_00240255 (m) — `00240255.OBJ`, ordinal 123, target `libhmd_123`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; GTE commands with a single hazard nop in 12/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/112-00240048`, `libhmd/113-00240049`, `libhmd/114-0024004c`, `libhmd/115-0024004d`, `libhmd/116-00240050`, `libhmd/117-00240051`, `libhmd/118-00240054`, `libhmd/119-00240055`, `libhmd/120-00240249`, `libhmd/121-0024024d`, `libhmd/122-00240251`, `libhmd/123-00240255`.
@@ -2128,30 +2128,30 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/124-00300008/` … `src/libraries/libhmd/387-00300217/`); 24 members, 24 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00300000 (semi-trans, back-face); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00300008 (m) — `00300008.OBJ`, ordinal 124, target `lib_eb77259dbe5c1de7_0`
-- GsU_00300009 (m) — `00300009.OBJ`, ordinal 125, target `lib_6cdc00ef24d8c412_0`
-- GsU_0030000c (m) — `0030000C.OBJ`, ordinal 126, target `lib_b04195024078401f_0`
-- GsU_0030000d (m) — `0030000D.OBJ`, ordinal 127, target `lib_8fd25f787ab4b877_0`
-- GsU_00300010 (m) — `00300010.OBJ`, ordinal 128, target `lib_bdc8db7c0f5df30d_0`
-- GsU_00300011 (m) — `00300011.OBJ`, ordinal 129, target `lib_a2bd88e9c132b34f_0`
-- GsU_00300014 (m) — `00300014.OBJ`, ordinal 130, target `lib_abc9680510d9ef66_0`
-- GsU_00300015 (m) — `00300015.OBJ`, ordinal 131, target `lib_0dd441e24730022f_0`
-- GsU_00300209 (m) — `00300209.OBJ`, ordinal 132, target `lib_5e019a62901ddcfd_0`
-- GsU_0030020d (m) — `0030020D.OBJ`, ordinal 133, target `lib_61cadaab5167de38_0`
-- GsU_00300211 (m) — `00300211.OBJ`, ordinal 134, target `lib_2f097d852a7f6cac_0`
-- GsU_00300215 (m) — `00300215.OBJ`, ordinal 135, target `lib_effb7fb2bf48a873_0`
-- GsU_0030000a (m) — `0030000A.OBJ`, ordinal 376, target `lib_2b94f68ad962a397_0`
-- GsU_0030000b (m) — `0030000B.OBJ`, ordinal 377, target `lib_e012d1e126431b70_0`
-- GsU_0030000e (m) — `0030000E.OBJ`, ordinal 378, target `lib_7fff4c6af71bc46b_0`
-- GsU_0030000f (m) — `0030000F.OBJ`, ordinal 379, target `lib_ff1a51782231d044_0`
-- GsU_00300012 (m) — `00300012.OBJ`, ordinal 380, target `lib_02534853b5732941_0`
-- GsU_00300013 (m) — `00300013.OBJ`, ordinal 381, target `lib_9a19aff9f411b760_0`
-- GsU_00300016 (m) — `00300016.OBJ`, ordinal 382, target `lib_85380262c2b5bcfa_0`
-- GsU_00300017 (m) — `00300017.OBJ`, ordinal 383, target `lib_9b8a536d24b22dc3_0`
-- GsU_0030020b (m) — `0030020B.OBJ`, ordinal 384, target `lib_c99cdfef2096161b_0`
-- GsU_0030020f (m) — `0030020F.OBJ`, ordinal 385, target `lib_3edc49bc4c3f2714_0`
-- GsU_00300213 (m) — `00300213.OBJ`, ordinal 386, target `lib_cb6761c008acc483_0`
-- GsU_00300217 (m) — `00300217.OBJ`, ordinal 387, target `lib_6d9de62822592ac2_0`
+- GsU_00300008 (m) — `00300008.OBJ`, ordinal 124, target `libhmd_124`
+- GsU_00300009 (m) — `00300009.OBJ`, ordinal 125, target `libhmd_125`
+- GsU_0030000c (m) — `0030000C.OBJ`, ordinal 126, target `libhmd_126`
+- GsU_0030000d (m) — `0030000D.OBJ`, ordinal 127, target `libhmd_127`
+- GsU_00300010 (m) — `00300010.OBJ`, ordinal 128, target `libhmd_128`
+- GsU_00300011 (m) — `00300011.OBJ`, ordinal 129, target `libhmd_129`
+- GsU_00300014 (m) — `00300014.OBJ`, ordinal 130, target `libhmd_130`
+- GsU_00300015 (m) — `00300015.OBJ`, ordinal 131, target `libhmd_131`
+- GsU_00300209 (m) — `00300209.OBJ`, ordinal 132, target `libhmd_132`
+- GsU_0030020d (m) — `0030020D.OBJ`, ordinal 133, target `libhmd_133`
+- GsU_00300211 (m) — `00300211.OBJ`, ordinal 134, target `libhmd_134`
+- GsU_00300215 (m) — `00300215.OBJ`, ordinal 135, target `libhmd_135`
+- GsU_0030000a (m) — `0030000A.OBJ`, ordinal 376, target `libhmd_376`
+- GsU_0030000b (m) — `0030000B.OBJ`, ordinal 377, target `libhmd_377`
+- GsU_0030000e (m) — `0030000E.OBJ`, ordinal 378, target `libhmd_378`
+- GsU_0030000f (m) — `0030000F.OBJ`, ordinal 379, target `libhmd_379`
+- GsU_00300012 (m) — `00300012.OBJ`, ordinal 380, target `libhmd_380`
+- GsU_00300013 (m) — `00300013.OBJ`, ordinal 381, target `libhmd_381`
+- GsU_00300016 (m) — `00300016.OBJ`, ordinal 382, target `libhmd_382`
+- GsU_00300017 (m) — `00300017.OBJ`, ordinal 383, target `libhmd_383`
+- GsU_0030020b (m) — `0030020B.OBJ`, ordinal 384, target `libhmd_384`
+- GsU_0030020f (m) — `0030020F.OBJ`, ordinal 385, target `libhmd_385`
+- GsU_00300213 (m) — `00300213.OBJ`, ordinal 386, target `libhmd_386`
+- GsU_00300217 (m) — `00300217.OBJ`, ordinal 387, target `libhmd_387`
 - Family structure: 24 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 24/24; GTE commands with a single hazard nop in 24/24; callee-saved registers written without being saved in 8/24; whole-file `.set noreorder` reproduces the bytes in 24/24.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/124-00300008`, `libhmd/125-00300009`, `libhmd/126-0030000c`, `libhmd/127-0030000d`, `libhmd/128-00300010`, `libhmd/129-00300011`, `libhmd/130-00300014`, `libhmd/131-00300015`, `libhmd/132-00300209`, `libhmd/133-0030020d`, `libhmd/134-00300211`, `libhmd/135-00300215`, `libhmd/376-0030000a`, `libhmd/377-0030000b`, `libhmd/378-0030000e`, `libhmd/379-0030000f`, `libhmd/380-00300012`, `libhmd/381-00300013`, `libhmd/382-00300016`, `libhmd/383-00300017`, `libhmd/384-0030020b`, `libhmd/385-0030020f`, `libhmd/386-00300213`, `libhmd/387-00300217`.
@@ -2163,18 +2163,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/137-0100000c/` … `src/libraries/libhmd/148-01000217/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01000000 (shared); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_0100000c (m) — `0100000C.OBJ`, ordinal 137, target `lib_08111353936ce4f4_0`
-- GsU_0100000d (m) — `0100000D.OBJ`, ordinal 138, target `lib_ae32f089d1245935_0`
-- GsU_0100000e (m) — `0100000E.OBJ`, ordinal 139, target `lib_8670b852545f4e5a_0`
-- GsU_0100000f (m) — `0100000F.OBJ`, ordinal 140, target `lib_0bbe3f27f02a497b_0`
-- GsU_01000014 (m) — `01000014.OBJ`, ordinal 141, target `lib_a7a47e408eee2d74_0`
-- GsU_01000015 (m) — `01000015.OBJ`, ordinal 142, target `lib_68c877f43a5342ea_0`
-- GsU_01000016 (m) — `01000016.OBJ`, ordinal 143, target `lib_df4734759e23147a_0`
-- GsU_01000017 (m) — `01000017.OBJ`, ordinal 144, target `lib_2acd3e8d043328ec_0`
-- GsU_0100020d (m) — `0100020D.OBJ`, ordinal 145, target `lib_39b86b853fc5e536_0`
-- GsU_0100020f (m) — `0100020F.OBJ`, ordinal 146, target `lib_c684a9d4a0bc3784_0`
-- GsU_01000215 (m) — `01000215.OBJ`, ordinal 147, target `lib_6898481391ca0ea6_0`
-- GsU_01000217 (m) — `01000217.OBJ`, ordinal 148, target `lib_8e8599059f746d43_0`
+- GsU_0100000c (m) — `0100000C.OBJ`, ordinal 137, target `libhmd_137`
+- GsU_0100000d (m) — `0100000D.OBJ`, ordinal 138, target `libhmd_138`
+- GsU_0100000e (m) — `0100000E.OBJ`, ordinal 139, target `libhmd_139`
+- GsU_0100000f (m) — `0100000F.OBJ`, ordinal 140, target `libhmd_140`
+- GsU_01000014 (m) — `01000014.OBJ`, ordinal 141, target `libhmd_141`
+- GsU_01000015 (m) — `01000015.OBJ`, ordinal 142, target `libhmd_142`
+- GsU_01000016 (m) — `01000016.OBJ`, ordinal 143, target `libhmd_143`
+- GsU_01000017 (m) — `01000017.OBJ`, ordinal 144, target `libhmd_144`
+- GsU_0100020d (m) — `0100020D.OBJ`, ordinal 145, target `libhmd_145`
+- GsU_0100020f (m) — `0100020F.OBJ`, ordinal 146, target `libhmd_146`
+- GsU_01000215 (m) — `01000215.OBJ`, ordinal 147, target `libhmd_147`
+- GsU_01000217 (m) — `01000217.OBJ`, ordinal 148, target `libhmd_148`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; callee-saved registers written without being saved in 6/12; GTE commands with a single hazard nop in 2/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/137-0100000c`, `libhmd/138-0100000d`, `libhmd/139-0100000e`, `libhmd/140-0100000f`, `libhmd/141-01000014`, `libhmd/142-01000015`, `libhmd/143-01000016`, `libhmd/144-01000017`, `libhmd/145-0100020d`, `libhmd/146-0100020f`, `libhmd/147-01000215`, `libhmd/148-01000217`.
@@ -2186,11 +2186,11 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/153-01020014/` … `src/libraries/libhmd/160-01020217/`); 5 members, 5 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01020000 (shared, fog); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_01020014 (m) — `01020014.OBJ`, ordinal 153, target `lib_7b99de36a89d541a_0`
-- GsU_01020015 (m) — `01020015.OBJ`, ordinal 154, target `lib_a57b5578668db3ee_0`
-- GsU_01020017 (m) — `01020017.OBJ`, ordinal 156, target `lib_67418063887fbe51_0`
-- GsU_01020215 (m) — `01020215.OBJ`, ordinal 159, target `lib_c8903e9deb114e27_0`
-- GsU_01020217 (m) — `01020217.OBJ`, ordinal 160, target `lib_e08b563b474d3550_0`
+- GsU_01020014 (m) — `01020014.OBJ`, ordinal 153, target `libhmd_153`
+- GsU_01020015 (m) — `01020015.OBJ`, ordinal 154, target `libhmd_154`
+- GsU_01020017 (m) — `01020017.OBJ`, ordinal 156, target `libhmd_156`
+- GsU_01020215 (m) — `01020215.OBJ`, ordinal 159, target `libhmd_159`
+- GsU_01020217 (m) — `01020217.OBJ`, ordinal 160, target `libhmd_160`
 - Family structure: 5 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 5/5; callee-saved registers written without being saved in 5/5; GTE commands with a single hazard nop in 3/5; whole-file `.set noreorder` reproduces the bytes in 5/5.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/153-01020014`, `libhmd/154-01020015`, `libhmd/156-01020017`, `libhmd/159-01020215`, `libhmd/160-01020217`.
@@ -2202,18 +2202,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/161-01040048/` … `src/libraries/libhmd/172-01040255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01040000 (shared, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_01040048 (m) — `01040048.OBJ`, ordinal 161, target `lib_eadee17e21b1dba9_0`
-- GsU_01040049 (m) — `01040049.OBJ`, ordinal 162, target `lib_2cb6a6e9a7c2b8fd_0`
-- GsU_0104004c (m) — `0104004C.OBJ`, ordinal 163, target `lib_9e9bb0243ba5daf1_0`
-- GsU_0104004d (m) — `0104004D.OBJ`, ordinal 164, target `lib_527ce52fbebd4a36_0`
-- GsU_01040050 (m) — `01040050.OBJ`, ordinal 165, target `lib_4398bdc90e4fbcb3_0`
-- GsU_01040051 (m) — `01040051.OBJ`, ordinal 166, target `lib_4eb93897f641fa77_0`
-- GsU_01040054 (m) — `01040054.OBJ`, ordinal 167, target `lib_2e35916cddf1f760_0`
-- GsU_01040055 (m) — `01040055.OBJ`, ordinal 168, target `lib_cd920dfe2bcb3c40_0`
-- GsU_01040249 (m) — `01040249.OBJ`, ordinal 169, target `lib_d1c5be03369757c6_0`
-- GsU_0104024d (m) — `0104024D.OBJ`, ordinal 170, target `lib_e0499246e187bb61_0`
-- GsU_01040251 (m) — `01040251.OBJ`, ordinal 171, target `lib_7814225228a5112e_0`
-- GsU_01040255 (m) — `01040255.OBJ`, ordinal 172, target `lib_b136e1d4d58067b6_0`
+- GsU_01040048 (m) — `01040048.OBJ`, ordinal 161, target `libhmd_161`
+- GsU_01040049 (m) — `01040049.OBJ`, ordinal 162, target `libhmd_162`
+- GsU_0104004c (m) — `0104004C.OBJ`, ordinal 163, target `libhmd_163`
+- GsU_0104004d (m) — `0104004D.OBJ`, ordinal 164, target `libhmd_164`
+- GsU_01040050 (m) — `01040050.OBJ`, ordinal 165, target `libhmd_165`
+- GsU_01040051 (m) — `01040051.OBJ`, ordinal 166, target `libhmd_166`
+- GsU_01040054 (m) — `01040054.OBJ`, ordinal 167, target `libhmd_167`
+- GsU_01040055 (m) — `01040055.OBJ`, ordinal 168, target `libhmd_168`
+- GsU_01040249 (m) — `01040249.OBJ`, ordinal 169, target `libhmd_169`
+- GsU_0104024d (m) — `0104024D.OBJ`, ordinal 170, target `libhmd_170`
+- GsU_01040251 (m) — `01040251.OBJ`, ordinal 171, target `libhmd_171`
+- GsU_01040255 (m) — `01040255.OBJ`, ordinal 172, target `libhmd_172`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 12/12; `$at` used as a scratch register in 8/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/161-01040048`, `libhmd/162-01040049`, `libhmd/163-0104004c`, `libhmd/164-0104004d`, `libhmd/165-01040050`, `libhmd/166-01040051`, `libhmd/167-01040054`, `libhmd/168-01040055`, `libhmd/169-01040249`, `libhmd/170-0104024d`, `libhmd/171-01040251`, `libhmd/172-01040255`.
@@ -2225,18 +2225,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/173-0120000c/` … `src/libraries/libhmd/393-01200217/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01200000 (shared, semi-trans); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_0120000c (m) — `0120000C.OBJ`, ordinal 173, target `lib_96b8baa3b448d2cd_0`
-- GsU_0120000d (m) — `0120000D.OBJ`, ordinal 174, target `lib_be582ea2207db016_0`
-- GsU_01200014 (m) — `01200014.OBJ`, ordinal 175, target `lib_065f140224fa0faf_0`
-- GsU_01200015 (m) — `01200015.OBJ`, ordinal 176, target `lib_7a9b16f80e4d0cca_0`
-- GsU_0120020d (m) — `0120020D.OBJ`, ordinal 177, target `lib_a0b92de4bec3a93d_0`
-- GsU_01200215 (m) — `01200215.OBJ`, ordinal 178, target `lib_003a24719c3f03da_0`
-- GsU_0120000e (m) — `0120000E.OBJ`, ordinal 388, target `lib_e23d190cb7e72385_0`
-- GsU_0120000f (m) — `0120000F.OBJ`, ordinal 389, target `lib_2e4e7aa9e3a3889b_0`
-- GsU_01200016 (m) — `01200016.OBJ`, ordinal 390, target `lib_08d5ea021309c2a1_0`
-- GsU_01200017 (m) — `01200017.OBJ`, ordinal 391, target `lib_0b19cd1dc8e82a01_0`
-- GsU_0120020f (m) — `0120020F.OBJ`, ordinal 392, target `lib_9cd056a52b28169e_0`
-- GsU_01200217 (m) — `01200217.OBJ`, ordinal 393, target `lib_17f4691d2069bc7f_0`
+- GsU_0120000c (m) — `0120000C.OBJ`, ordinal 173, target `libhmd_173`
+- GsU_0120000d (m) — `0120000D.OBJ`, ordinal 174, target `libhmd_174`
+- GsU_01200014 (m) — `01200014.OBJ`, ordinal 175, target `libhmd_175`
+- GsU_01200015 (m) — `01200015.OBJ`, ordinal 176, target `libhmd_176`
+- GsU_0120020d (m) — `0120020D.OBJ`, ordinal 177, target `libhmd_177`
+- GsU_01200215 (m) — `01200215.OBJ`, ordinal 178, target `libhmd_178`
+- GsU_0120000e (m) — `0120000E.OBJ`, ordinal 388, target `libhmd_388`
+- GsU_0120000f (m) — `0120000F.OBJ`, ordinal 389, target `libhmd_389`
+- GsU_01200016 (m) — `01200016.OBJ`, ordinal 390, target `libhmd_390`
+- GsU_01200017 (m) — `01200017.OBJ`, ordinal 391, target `libhmd_391`
+- GsU_0120020f (m) — `0120020F.OBJ`, ordinal 392, target `libhmd_392`
+- GsU_01200217 (m) — `01200217.OBJ`, ordinal 393, target `libhmd_393`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; callee-saved registers written without being saved in 6/12; GTE commands with a single hazard nop in 2/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/173-0120000c`, `libhmd/174-0120000d`, `libhmd/175-01200014`, `libhmd/176-01200015`, `libhmd/177-0120020d`, `libhmd/178-01200215`, `libhmd/388-0120000e`, `libhmd/389-0120000f`, `libhmd/390-01200016`, `libhmd/391-01200017`, `libhmd/392-0120020f`, `libhmd/393-01200217`.
@@ -2248,18 +2248,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/179-01240048/` … `src/libraries/libhmd/190-01240255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01240000 (shared, semi-trans, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_01240048 (m) — `01240048.OBJ`, ordinal 179, target `lib_6ed0372480df0724_0`
-- GsU_01240049 (m) — `01240049.OBJ`, ordinal 180, target `lib_f88f3e392f212117_0`
-- GsU_0124004c (m) — `0124004C.OBJ`, ordinal 181, target `lib_d3089afcac9020df_0`
-- GsU_0124004d (m) — `0124004D.OBJ`, ordinal 182, target `lib_f14d6ff0c98aac9b_0`
-- GsU_01240050 (m) — `01240050.OBJ`, ordinal 183, target `lib_3db2c8d84dd7f1f9_0`
-- GsU_01240051 (m) — `01240051.OBJ`, ordinal 184, target `lib_cce029bb94a91b60_0`
-- GsU_01240054 (m) — `01240054.OBJ`, ordinal 185, target `lib_7e1356b91d4a14f1_0`
-- GsU_01240055 (m) — `01240055.OBJ`, ordinal 186, target `lib_77e589fe167f32b3_0`
-- GsU_01240249 (m) — `01240249.OBJ`, ordinal 187, target `lib_5f401d42dfe1643c_0`
-- GsU_0124024d (m) — `0124024D.OBJ`, ordinal 188, target `lib_976063af26dde6cb_0`
-- GsU_01240251 (m) — `01240251.OBJ`, ordinal 189, target `lib_f256071ba1ea1dfb_0`
-- GsU_01240255 (m) — `01240255.OBJ`, ordinal 190, target `lib_ecbcece8e71a0cad_0`
+- GsU_01240048 (m) — `01240048.OBJ`, ordinal 179, target `libhmd_179`
+- GsU_01240049 (m) — `01240049.OBJ`, ordinal 180, target `libhmd_180`
+- GsU_0124004c (m) — `0124004C.OBJ`, ordinal 181, target `libhmd_181`
+- GsU_0124004d (m) — `0124004D.OBJ`, ordinal 182, target `libhmd_182`
+- GsU_01240050 (m) — `01240050.OBJ`, ordinal 183, target `libhmd_183`
+- GsU_01240051 (m) — `01240051.OBJ`, ordinal 184, target `libhmd_184`
+- GsU_01240054 (m) — `01240054.OBJ`, ordinal 185, target `libhmd_185`
+- GsU_01240055 (m) — `01240055.OBJ`, ordinal 186, target `libhmd_186`
+- GsU_01240249 (m) — `01240249.OBJ`, ordinal 187, target `libhmd_187`
+- GsU_0124024d (m) — `0124024D.OBJ`, ordinal 188, target `libhmd_188`
+- GsU_01240251 (m) — `01240251.OBJ`, ordinal 189, target `libhmd_189`
+- GsU_01240255 (m) — `01240255.OBJ`, ordinal 190, target `libhmd_190`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; GTE commands with a single hazard nop in 12/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/179-01240048`, `libhmd/180-01240049`, `libhmd/181-0124004c`, `libhmd/182-0124004d`, `libhmd/183-01240050`, `libhmd/184-01240051`, `libhmd/185-01240054`, `libhmd/186-01240055`, `libhmd/187-01240249`, `libhmd/188-0124024d`, `libhmd/189-01240251`, `libhmd/190-01240255`.
@@ -2271,18 +2271,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/316-00140048/` … `src/libraries/libhmd/327-00140255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00140000 (back-face, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00140048 (m) — `00140048.OBJ`, ordinal 316, target `lib_118c1caffd78b05d_0`
-- GsU_00140049 (m) — `00140049.OBJ`, ordinal 317, target `lib_588ecf52534c6c91_0`
-- GsU_0014004c (m) — `0014004C.OBJ`, ordinal 318, target `lib_5b06ee0051b8f704_0`
-- GsU_0014004d (m) — `0014004D.OBJ`, ordinal 319, target `lib_943bc2e730912ea1_0`
-- GsU_00140050 (m) — `00140050.OBJ`, ordinal 320, target `lib_5909db556e1ea7b1_0`
-- GsU_00140051 (m) — `00140051.OBJ`, ordinal 321, target `lib_a66ec1de48f3bcf3_0`
-- GsU_00140054 (m) — `00140054.OBJ`, ordinal 322, target `lib_b14b9bc4915a4d49_0`
-- GsU_00140055 (m) — `00140055.OBJ`, ordinal 323, target `lib_6ed09afe3e554c5e_0`
-- GsU_00140249 (m) — `00140249.OBJ`, ordinal 324, target `lib_49d302daa327bc64_0`
-- GsU_0014024d (m) — `0014024D.OBJ`, ordinal 325, target `lib_a7a8df4eca678ba9_0`
-- GsU_00140251 (m) — `00140251.OBJ`, ordinal 326, target `lib_996ef84ac0e58abf_0`
-- GsU_00140255 (m) — `00140255.OBJ`, ordinal 327, target `lib_147a08958a45f54a_0`
+- GsU_00140048 (m) — `00140048.OBJ`, ordinal 316, target `libhmd_316`
+- GsU_00140049 (m) — `00140049.OBJ`, ordinal 317, target `libhmd_317`
+- GsU_0014004c (m) — `0014004C.OBJ`, ordinal 318, target `libhmd_318`
+- GsU_0014004d (m) — `0014004D.OBJ`, ordinal 319, target `libhmd_319`
+- GsU_00140050 (m) — `00140050.OBJ`, ordinal 320, target `libhmd_320`
+- GsU_00140051 (m) — `00140051.OBJ`, ordinal 321, target `libhmd_321`
+- GsU_00140054 (m) — `00140054.OBJ`, ordinal 322, target `libhmd_322`
+- GsU_00140055 (m) — `00140055.OBJ`, ordinal 323, target `libhmd_323`
+- GsU_00140249 (m) — `00140249.OBJ`, ordinal 324, target `libhmd_324`
+- GsU_0014024d (m) — `0014024D.OBJ`, ordinal 325, target `libhmd_325`
+- GsU_00140251 (m) — `00140251.OBJ`, ordinal 326, target `libhmd_326`
+- GsU_00140255 (m) — `00140255.OBJ`, ordinal 327, target `libhmd_327`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: GTE commands with a single hazard nop in 12/12; `$at` used as a scratch register in 4/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/316-00140048`, `libhmd/317-00140049`, `libhmd/318-0014004c`, `libhmd/319-0014004d`, `libhmd/320-00140050`, `libhmd/321-00140051`, `libhmd/322-00140054`, `libhmd/323-00140055`, `libhmd/324-00140249`, `libhmd/325-0014024d`, `libhmd/326-00140251`, `libhmd/327-00140255`.
@@ -2294,18 +2294,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/328-00340048/` … `src/libraries/libhmd/339-00340255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x00340000 (semi-trans, back-face, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_00340048 (m) — `00340048.OBJ`, ordinal 328, target `lib_0ffc9f14f999913c_0`
-- GsU_00340049 (m) — `00340049.OBJ`, ordinal 329, target `lib_bb6e44f4ec742970_0`
-- GsU_0034004c (m) — `0034004C.OBJ`, ordinal 330, target `lib_68f7f315260bd3ab_0`
-- GsU_0034004d (m) — `0034004D.OBJ`, ordinal 331, target `lib_506f9499a2ac078c_0`
-- GsU_00340050 (m) — `00340050.OBJ`, ordinal 332, target `lib_ab37a0cd7dac9aea_0`
-- GsU_00340051 (m) — `00340051.OBJ`, ordinal 333, target `lib_ec337420df3fa284_0`
-- GsU_00340054 (m) — `00340054.OBJ`, ordinal 334, target `lib_145e3181744b5426_0`
-- GsU_00340055 (m) — `00340055.OBJ`, ordinal 335, target `lib_6a2ad66d780a422e_0`
-- GsU_00340249 (m) — `00340249.OBJ`, ordinal 336, target `lib_6d471ae65a79936e_0`
-- GsU_0034024d (m) — `0034024D.OBJ`, ordinal 337, target `lib_5462c1f0d6d4fa0b_0`
-- GsU_00340251 (m) — `00340251.OBJ`, ordinal 338, target `lib_49146061bcbb8408_0`
-- GsU_00340255 (m) — `00340255.OBJ`, ordinal 339, target `lib_ec43153d91d11c14_0`
+- GsU_00340048 (m) — `00340048.OBJ`, ordinal 328, target `libhmd_328`
+- GsU_00340049 (m) — `00340049.OBJ`, ordinal 329, target `libhmd_329`
+- GsU_0034004c (m) — `0034004C.OBJ`, ordinal 330, target `libhmd_330`
+- GsU_0034004d (m) — `0034004D.OBJ`, ordinal 331, target `libhmd_331`
+- GsU_00340050 (m) — `00340050.OBJ`, ordinal 332, target `libhmd_332`
+- GsU_00340051 (m) — `00340051.OBJ`, ordinal 333, target `libhmd_333`
+- GsU_00340054 (m) — `00340054.OBJ`, ordinal 334, target `libhmd_334`
+- GsU_00340055 (m) — `00340055.OBJ`, ordinal 335, target `libhmd_335`
+- GsU_00340249 (m) — `00340249.OBJ`, ordinal 336, target `libhmd_336`
+- GsU_0034024d (m) — `0034024D.OBJ`, ordinal 337, target `libhmd_337`
+- GsU_00340251 (m) — `00340251.OBJ`, ordinal 338, target `libhmd_338`
+- GsU_00340255 (m) — `00340255.OBJ`, ordinal 339, target `libhmd_339`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; GTE commands with a single hazard nop in 12/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/328-00340048`, `libhmd/329-00340049`, `libhmd/330-0034004c`, `libhmd/331-0034004d`, `libhmd/332-00340050`, `libhmd/333-00340051`, `libhmd/334-00340054`, `libhmd/335-00340055`, `libhmd/336-00340249`, `libhmd/337-0034024d`, `libhmd/338-00340251`, `libhmd/339-00340255`.
@@ -2317,18 +2317,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/340-01140048/` … `src/libraries/libhmd/351-01140255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01140000 (shared, back-face, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_01140048 (m) — `01140048.OBJ`, ordinal 340, target `lib_ccefdaf3b119cdaf_0`
-- GsU_01140049 (m) — `01140049.OBJ`, ordinal 341, target `lib_3812b6bb0d8d4e2f_0`
-- GsU_0114004c (m) — `0114004C.OBJ`, ordinal 342, target `lib_1a1c11400eb1d3bb_0`
-- GsU_0114004d (m) — `0114004D.OBJ`, ordinal 343, target `lib_7c45cf266d9f626f_0`
-- GsU_01140050 (m) — `01140050.OBJ`, ordinal 344, target `lib_70a3953363c364cf_0`
-- GsU_01140051 (m) — `01140051.OBJ`, ordinal 345, target `lib_7fa159288a5c520c_0`
-- GsU_01140054 (m) — `01140054.OBJ`, ordinal 346, target `lib_6a7c5613a4fdf898_0`
-- GsU_01140055 (m) — `01140055.OBJ`, ordinal 347, target `lib_c53fdc7f7326fb68_0`
-- GsU_01140249 (m) — `01140249.OBJ`, ordinal 348, target `lib_af7fcb729f877d4e_0`
-- GsU_0114024d (m) — `0114024D.OBJ`, ordinal 349, target `lib_573e4aa79d4f1e01_0`
-- GsU_01140251 (m) — `01140251.OBJ`, ordinal 350, target `lib_78af3e8a4a82dc52_0`
-- GsU_01140255 (m) — `01140255.OBJ`, ordinal 351, target `lib_30fef10191a6ef6d_0`
+- GsU_01140048 (m) — `01140048.OBJ`, ordinal 340, target `libhmd_340`
+- GsU_01140049 (m) — `01140049.OBJ`, ordinal 341, target `libhmd_341`
+- GsU_0114004c (m) — `0114004C.OBJ`, ordinal 342, target `libhmd_342`
+- GsU_0114004d (m) — `0114004D.OBJ`, ordinal 343, target `libhmd_343`
+- GsU_01140050 (m) — `01140050.OBJ`, ordinal 344, target `libhmd_344`
+- GsU_01140051 (m) — `01140051.OBJ`, ordinal 345, target `libhmd_345`
+- GsU_01140054 (m) — `01140054.OBJ`, ordinal 346, target `libhmd_346`
+- GsU_01140055 (m) — `01140055.OBJ`, ordinal 347, target `libhmd_347`
+- GsU_01140249 (m) — `01140249.OBJ`, ordinal 348, target `libhmd_348`
+- GsU_0114024d (m) — `0114024D.OBJ`, ordinal 349, target `libhmd_349`
+- GsU_01140251 (m) — `01140251.OBJ`, ordinal 350, target `libhmd_350`
+- GsU_01140255 (m) — `01140255.OBJ`, ordinal 351, target `libhmd_351`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 4/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/340-01140048`, `libhmd/341-01140049`, `libhmd/342-0114004c`, `libhmd/343-0114004d`, `libhmd/344-01140050`, `libhmd/345-01140051`, `libhmd/346-01140054`, `libhmd/347-01140055`, `libhmd/348-01140249`, `libhmd/349-0114024d`, `libhmd/350-01140251`, `libhmd/351-01140255`.
@@ -2340,18 +2340,18 @@ Members (byte-exact assembly, one object each):
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/352-01340048/` … `src/libraries/libhmd/363-01340255/`); 12 members, 12 functions.
 - HMD primitive drivers whose unit-type flag bits are 0x01340000 (shared, semi-trans, back-face, nonLight); the low half of each code selects the primitive shape (see the file headers).
 Members (byte-exact assembly, one object each):
-- GsU_01340048 (m) — `01340048.OBJ`, ordinal 352, target `lib_b37de8a117302876_0`
-- GsU_01340049 (m) — `01340049.OBJ`, ordinal 353, target `lib_844dd12c5b42ed82_0`
-- GsU_0134004c (m) — `0134004C.OBJ`, ordinal 354, target `lib_0b478240b6c6714e_0`
-- GsU_0134004d (m) — `0134004D.OBJ`, ordinal 355, target `lib_63292115a7831a25_0`
-- GsU_01340050 (m) — `01340050.OBJ`, ordinal 356, target `lib_b8f4447a4b8b6a92_0`
-- GsU_01340051 (m) — `01340051.OBJ`, ordinal 357, target `lib_687fd45f90837061_0`
-- GsU_01340054 (m) — `01340054.OBJ`, ordinal 358, target `lib_e71da60ebb78512e_0`
-- GsU_01340055 (m) — `01340055.OBJ`, ordinal 359, target `lib_91e49d3b1306c0bc_0`
-- GsU_01340249 (m) — `01340249.OBJ`, ordinal 360, target `lib_ba7f610f4e429e3f_0`
-- GsU_0134024d (m) — `0134024D.OBJ`, ordinal 361, target `lib_4845c8a653486f4e_0`
-- GsU_01340251 (m) — `01340251.OBJ`, ordinal 362, target `lib_6b6c7b3397bc4477_0`
-- GsU_01340255 (m) — `01340255.OBJ`, ordinal 363, target `lib_c237fc0cafc04ffc_0`
+- GsU_01340048 (m) — `01340048.OBJ`, ordinal 352, target `libhmd_352`
+- GsU_01340049 (m) — `01340049.OBJ`, ordinal 353, target `libhmd_353`
+- GsU_0134004c (m) — `0134004C.OBJ`, ordinal 354, target `libhmd_354`
+- GsU_0134004d (m) — `0134004D.OBJ`, ordinal 355, target `libhmd_355`
+- GsU_01340050 (m) — `01340050.OBJ`, ordinal 356, target `libhmd_356`
+- GsU_01340051 (m) — `01340051.OBJ`, ordinal 357, target `libhmd_357`
+- GsU_01340054 (m) — `01340054.OBJ`, ordinal 358, target `libhmd_358`
+- GsU_01340055 (m) — `01340055.OBJ`, ordinal 359, target `libhmd_359`
+- GsU_01340249 (m) — `01340249.OBJ`, ordinal 360, target `libhmd_360`
+- GsU_0134024d (m) — `0134024D.OBJ`, ordinal 361, target `libhmd_361`
+- GsU_01340251 (m) — `01340251.OBJ`, ordinal 362, target `libhmd_362`
+- GsU_01340255 (m) — `01340255.OBJ`, ordinal 363, target `libhmd_363`
 - Family structure: 12 variants with distinct instruction streams; they are edited copies of one another, not operand-only variants of a template.
 - Hand-written evidence: `$at` used as a scratch register in 12/12; whole-file `.set noreorder` reproduces the bytes in 12/12.
 - Membership evidence: `library-input/redux/original-members.json`, entries `libhmd/352-01340048`, `libhmd/353-01340049`, `libhmd/354-0134004c`, `libhmd/355-0134004d`, `libhmd/356-01340050`, `libhmd/357-01340051`, `libhmd/358-01340054`, `libhmd/359-01340055`, `libhmd/360-01340249`, `libhmd/361-0134024d`, `libhmd/362-01340251`, `libhmd/363-01340255`.
@@ -2362,8 +2362,8 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libhmd/574-mime_s/`); 1 member, 2 functions.
 Members (byte-exact assembly, one object each):
-- GsVNMIMeFunc (m) — `MIME_S.OBJ`, ordinal 574, target `lib_dedc70d8742fc7f7_0`; shares the object with `GsRestoreOrgsVNMIMe`
-- GsRestoreOrgsVNMIMe (m) — `MIME_S.OBJ`, ordinal 574, target `lib_dedc70d8742fc7f7_0`; shares the object with `GsVNMIMeFunc`
+- GsVNMIMeFunc (m) — `MIME_S.OBJ`, ordinal 574, target `libhmd_574`; shares the object with `GsRestoreOrgsVNMIMe`
+- GsRestoreOrgsVNMIMe (m) — `MIME_S.OBJ`, ordinal 574, target `libhmd_574`; shares the object with `GsVNMIMeFunc`
 - Hand-written evidence: no instruction-level marker; classed by the GTE hazard-nop convention (0 or 1 nop before GTE commands, where the SDK C macros emit 2) and by family; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libhmd/574-mime_s`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -2373,11 +2373,11 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libmcx/30-mcxdsr/`); 1 member, 5 functions.
 Members (byte-exact assembly, one object each):
-- _mcxStartFastDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `lib_ae672d28456ecc9a_0`; shares the object with `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
-- _mcxStopFastDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `lib_ae672d28456ecc9a_0`; shares the object with `_mcxStartFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
-- _mcxVecDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `lib_ae672d28456ecc9a_0`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
-- _mcxFastDsrEnt (m) — `MCXDSR.OBJ`, ordinal 30, target `lib_ae672d28456ecc9a_0`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxVecSave`
-- _mcxVecSave (m) — `MCXDSR.OBJ`, ordinal 30, target `lib_ae672d28456ecc9a_0`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`
+- _mcxStartFastDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `libmcx_30`; shares the object with `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
+- _mcxStopFastDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `libmcx_30`; shares the object with `_mcxStartFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
+- _mcxVecDsr (m) — `MCXDSR.OBJ`, ordinal 30, target `libmcx_30`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxFastDsrEnt`, `_mcxVecSave`
+- _mcxFastDsrEnt (m) — `MCXDSR.OBJ`, ordinal 30, target `libmcx_30`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxVecSave`
+- _mcxVecSave (m) — `MCXDSR.OBJ`, ordinal 30, target `libmcx_30`; shares the object with `_mcxStartFastDsr`, `_mcxStopFastDsr`, `_mcxVecDsr`, `_mcxFastDsrEnt`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; privileged or trap instructions in 1/1; jump through a register other than `$ra` in 1/1; return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libmcx/30-mcxdsr`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -2387,10 +2387,10 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libpad/20-pdhokres/`); 1 member, 4 functions.
 Members (byte-exact assembly, one object each):
-- _padGunInitHook (m) — `PDHOKRES.OBJ`, ordinal 20, target `lib_c17f88069058fe71_0`; shares the object with `_padGunExitHook`, `_padGetHitCount`, `_padClrHitCount`
-- _padGunExitHook (m) — `PDHOKRES.OBJ`, ordinal 20, target `lib_c17f88069058fe71_0`; shares the object with `_padGunInitHook`, `_padGetHitCount`, `_padClrHitCount`
-- _padGetHitCount (m) — `PDHOKRES.OBJ`, ordinal 20, target `lib_c17f88069058fe71_0`; shares the object with `_padGunInitHook`, `_padGunExitHook`, `_padClrHitCount`
-- _padClrHitCount (m) — `PDHOKRES.OBJ`, ordinal 20, target `lib_c17f88069058fe71_0`; shares the object with `_padGunInitHook`, `_padGunExitHook`, `_padGetHitCount`
+- _padGunInitHook (m) — `PDHOKRES.OBJ`, ordinal 20, target `libpad_20`; shares the object with `_padGunExitHook`, `_padGetHitCount`, `_padClrHitCount`
+- _padGunExitHook (m) — `PDHOKRES.OBJ`, ordinal 20, target `libpad_20`; shares the object with `_padGunInitHook`, `_padGetHitCount`, `_padClrHitCount`
+- _padGetHitCount (m) — `PDHOKRES.OBJ`, ordinal 20, target `libpad_20`; shares the object with `_padGunInitHook`, `_padGunExitHook`, `_padClrHitCount`
+- _padClrHitCount (m) — `PDHOKRES.OBJ`, ordinal 20, target `libpad_20`; shares the object with `_padGunInitHook`, `_padGunExitHook`, `_padGetHitCount`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; privileged or trap instructions in 1/1; jump through a register other than `$ra` in 1/1; return address loaded from a buffer in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libpad/20-pdhokres`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -2400,8 +2400,8 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libpress/1-vlc/`); 1 member, 2 functions.
 Members (byte-exact assembly, one object each):
-- DecDCTvlcSize (m) — `VLC.OBJ`, ordinal 1, target `lib_e182860cd5f8c93e_0`; shares the object with `DecDCTvlc`
-- DecDCTvlc (m) — `VLC.OBJ`, ordinal 1, target `lib_e182860cd5f8c93e_0`; shares the object with `DecDCTvlcSize`
+- DecDCTvlcSize (m) — `VLC.OBJ`, ordinal 1, target `libpress_1`; shares the object with `DecDCTvlc`
+- DecDCTvlc (m) — `VLC.OBJ`, ordinal 1, target `libpress_1`; shares the object with `DecDCTvlcSize`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libpress/1-vlc`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.
@@ -2411,8 +2411,8 @@ Members (byte-exact assembly, one object each):
 
 - Form: hand-written assembly, one `.s` translation unit per object (`src/libraries/libpress/2-vlc_c/`); 1 member, 2 functions.
 Members (byte-exact assembly, one object each):
-- DecDCTvlcSize2 (m) — `VLC_C.OBJ`, ordinal 2, target `lib_1685ba7539f4e5f3_0`; shares the object with `DecDCTvlc2`
-- DecDCTvlc2 (m) — `VLC_C.OBJ`, ordinal 2, target `lib_1685ba7539f4e5f3_0`; shares the object with `DecDCTvlcSize2`
+- DecDCTvlcSize2 (m) — `VLC_C.OBJ`, ordinal 2, target `libpress_2`; shares the object with `DecDCTvlc2`
+- DecDCTvlc2 (m) — `VLC_C.OBJ`, ordinal 2, target `libpress_2`; shares the object with `DecDCTvlcSize2`
 - Hand-written evidence: `$at` used as a scratch register in 1/1; whole-file `.set noreorder` reproduces the bytes in 1/1.
 - Membership evidence: `library-input/redux/original-members.json`, entry `libpress/2-vlc_c`.
 - Verification: 1 member byte-exact as an assembly TU (`npm run library -- check --member ID`); verified records carry `form: "assembly"`.

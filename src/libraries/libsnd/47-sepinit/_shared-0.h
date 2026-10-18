@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/47-sepinit.o[0] 47-sepinit.o
- * sha256: 7ef9e17060c27922d32fded319ac7c1023b861cde719143745fe0a4de24e155d
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[47] SEPINIT.OBJ
+ * sha256: 442cddcb3ee91a89939695bfb091964937d3612ac1d0a44b7343de1773451e0d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsInitSoundSep
  */

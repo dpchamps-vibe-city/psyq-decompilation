@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/6-memchr.o[0] 6-memchr.o
- * sha256: b07686c93ad5059e89ec2a6a0795014515740d59cf55794bcfe9f558bffe13be
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[6] MEMCHR.OBJ
+ * sha256: afc7233d2bcac246d82be2a2273c4ea21769dc03b170a07cc14520b59ed0016f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: memchr
  */

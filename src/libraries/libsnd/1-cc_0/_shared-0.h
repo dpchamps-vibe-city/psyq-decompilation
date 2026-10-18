@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/1-cc_0.o[0] 1-cc_0.o
- * sha256: 095e9ad53c6bf7fe927bbbaf88d78d2c52134402e46447d63a1c7ea1360012b8
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[1] CC_0.OBJ
+ * sha256: 88d3e586779886183fecacea21438182d04cd955663c3b218d6943a881e1bb42
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsContBankChange
  */

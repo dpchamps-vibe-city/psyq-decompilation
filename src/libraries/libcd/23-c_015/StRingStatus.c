@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_95196b6337569b83_0", StRingStatus);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_23", StRingStatus);

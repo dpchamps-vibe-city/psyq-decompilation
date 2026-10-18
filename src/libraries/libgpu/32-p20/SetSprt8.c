@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_189a0217de794003_0", SetSprt8);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_32", SetSprt8);

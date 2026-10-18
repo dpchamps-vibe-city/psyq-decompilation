@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_2972bfb819b98a4c_0", SsUtGetVVol);
+INCLUDE_ASM("build/libraries/nonmatchings/libsnd_174", SsUtGetVVol);

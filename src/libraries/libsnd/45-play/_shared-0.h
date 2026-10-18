@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/45-play.o[0] 45-play.o
- * sha256: 721e08108181f2a82ae2d60f49d66889e86d1c3b7ea681a50d661685d4e29f20
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[45] PLAY.OBJ
+ * sha256: 69e8afe47bc37a1426b0b27ea0a86dcc19de121930c6f1e2703cfcdbe65ff6d2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndPlay
  */

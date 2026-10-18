@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libsnd/187-vm_n2p.o[0] 187-vm_n2p.o
- * sha256: ca42633d2c2cc1ff4cac7186ffac7138b13f2df23d4e0b339ea1953597dc81f3
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[187] VM_N2P.OBJ
+ * sha256: 4897ae14a78e3d2f0ab67d53840b472644058011f077ec1c2f0fa2c706ea9c90
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: note2pitch, SsPitchFromNote, note2pitch2
+ * Functions: note2pitch, note2pitch2, SsPitchFromNote
  */
 #include "common.h"
 #include "include_asm.h"

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ba8d0127841b2c22_0",
+  "member": "libgte_294",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetIR0.c",
-      "symbol": "SetIR0"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetIR0"
+      ],
+      "backlog": true
     }
   ]
 }

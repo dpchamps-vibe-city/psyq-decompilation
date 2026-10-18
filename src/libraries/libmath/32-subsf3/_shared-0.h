@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/32-subsf3.o[0] 32-subsf3.o
- * sha256: 9e5a8370c35b262b0d02fa5739f582807f22993228ccfe8b87b526b3b95d93c0
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[32] SUBSF3.OBJ
+ * sha256: ca1087d9cb1227ceaf2e6890463f274fc681a613578fc930ab7486134e2d9ed8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __subsf3
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/33-gs_009.o[0] 33-gs_009.o
- * sha256: eacd706ec59932e8d7d5aa1de8301b81bf747e92cc23d08c7b468505068c1793
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[33] GS_009.OBJ
+ * sha256: 8605d79dc51ed8e47ebf8fb05674f02603762d7e9e5795762e950a15be414cbc
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsClearVcount
  */

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_568adce046c41e82_0",
+  "member": "libgte_67",
   "parts": [
     {
-      "path": "cmb_03.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotNclip"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

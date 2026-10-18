@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/42-next.o[0] 42-next.o
- * sha256: f459519dc70305a98b0cba70b9f1f9d39099fca7ffd24976b82812382a4906e9
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[42] NEXT.OBJ
+ * sha256: d354307c8ffe7ece63e2127db11bdd6d61a33ef8744e9dfc85d0c18774f97113
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndNextSep
  */

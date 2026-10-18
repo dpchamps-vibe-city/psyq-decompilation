@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ec1a62d8ad36b9b2_0",
+  "member": "libhmd_155",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsU_01020016.c",
-      "symbol": "GsU_01020016"
+      "path": "backlog.ASM",
+      "symbols": [
+        "GsU_01020016"
+      ],
+      "backlog": true
     }
   ]
 }

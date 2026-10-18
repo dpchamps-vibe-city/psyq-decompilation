@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/13-p01.o[0] 13-p01.o
- * sha256: 589a6c9b05f10cc55e3d24c8880ce237ea89b956bb1dcc5314b81716db06cbb3
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[13] P01.OBJ
+ * sha256: 6de49066ba5daf92fedca7b90349fb56fcc357f496713eb62f318eb53c0c57f7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GetClut
  */

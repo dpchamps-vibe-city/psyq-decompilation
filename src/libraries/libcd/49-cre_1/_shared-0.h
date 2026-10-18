@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/49-cre_1.o[0] 49-cre_1.o
- * sha256: 4f97ec17786287f4b0dabd868c88d56eede3b9dbe9942532c41fd92ff47386d9
+/* Original TU: library-input/psyq/LIB/Libcd.lib[49] CRE_1.OBJ
+ * sha256: b22179b80dad5c13bce6e6569242f243219a5a655e15250ac854275c2d6ae5e3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdReadFile
  */

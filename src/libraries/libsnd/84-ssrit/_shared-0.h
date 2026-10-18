@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/84-ssrit.o[0] 84-ssrit.o
- * sha256: 53b3d83d9705e57c9717a7af5ff9f1564bad6a2b7f3a0353b71d29fe239b5ecd
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[84] SSRIT.OBJ
+ * sha256: fa667e1e70e1f284bb8ff34352ab90a077fbb89c7333ab8f0904d19917456333
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndSetRit, SsSeqSetRitardando, SsSepSetRitardando
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/40-s_gi.o[0] 40-s_gi.o
- * sha256: 7fe868221d954032957b23fc3add25c59792a2fe42ec4950c5faf499b74a051a
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[40] S_GI.OBJ
+ * sha256: a6c5b596bfba8f437d680cea70554937a67d269a4598af15966659cad6f2c315
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetIRQ
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/110-dmybend.o[0] 110-dmybend.o
- * sha256: 658582528740852103b84513e7a94838d0fd53a35addb660973dff8c2e19c9a7
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[110] DMYBEND.OBJ
+ * sha256: 1448dba4dbc63d0a00d2b1d68680e96ba2e74515593abd0fc4ec32b7b29ecc23
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsSetPitchBend
  */

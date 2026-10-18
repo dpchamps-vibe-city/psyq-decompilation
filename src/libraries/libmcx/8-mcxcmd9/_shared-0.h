@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/8-mcxcmd9.o[0] 8-mcxcmd9.o
- * sha256: 9e08de1f17a15fee76aacfe74482635dca9acc6b85430e7fd3f6e1860f990245
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[8] MCXCMD9.OBJ
+ * sha256: 49897d43d67668f12027efc03575853befa10b73636170b39882737ac9c7eaa8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McxReadDev
  */

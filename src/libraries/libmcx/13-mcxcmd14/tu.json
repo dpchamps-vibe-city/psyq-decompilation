@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_9cc4549f63e17a89_0",
+  "member": "libmcx_13",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

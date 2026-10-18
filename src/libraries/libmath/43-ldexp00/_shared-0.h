@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/43-ldexp00.o[0] 43-ldexp00.o
- * sha256: 7efa00a2a68ef0112016b28d53a7702918f7dd6f968c74df08e12873e4b28fe7
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[43] LDEXP00.OBJ
+ * sha256: fe71d706d6f4d92dfca02a997964c1c82858b216b61c1f01516b4d03604f1cbd
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ldexp
  */

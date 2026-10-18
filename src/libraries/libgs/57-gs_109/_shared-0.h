@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/57-gs_109.o[0] 57-gs_109.o
- * sha256: c228eb07bb8a38c577f4c109eab71bd61545303203afed3d3a75d00913ca3f9b
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[57] GS_109.OBJ
+ * sha256: 9774968dc0d16ca2ef5775ea97712b83d3ebfb698d10e492d308a29b091cf727
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetFogParam
  */

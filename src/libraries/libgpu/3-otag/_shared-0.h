@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/3-otag.o[0] 3-otag.o
- * sha256: dc27e74a334b9bdc71e98bbc4682f564774a9651d8eafbf1e57d88aaf3557701
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[3] OTAG.OBJ
+ * sha256: 111571d67e21d8e4f2c889c05a818e5895053aee9a89c42a6486d9f135753a80
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DrawOTagIO, DumpOTag, CheckPrim
  */

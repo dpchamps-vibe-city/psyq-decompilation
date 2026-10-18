@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_cb47f9956ffff703_0",
+  "member": "libgte_347",
   "parts": [
     {
-      "path": "nom_3.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotTrans_nom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

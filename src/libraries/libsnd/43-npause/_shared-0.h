@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/43-npause.o[0] 43-npause.o
- * sha256: bae9a53740d69a19508436134f0733d492a52f09732d4ed33b700cbad422ae59
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[43] NPAUSE.OBJ
+ * sha256: 3ce17c4b18ac98b3393813a845543ad4f55c1b8a1d85422ef7766eb9839dfb26
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndNextPause
  */

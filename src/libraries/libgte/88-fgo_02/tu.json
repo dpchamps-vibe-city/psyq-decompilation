@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_00d7c9746ae8e33d_0",
+  "member": "libgte_88",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "RotMatrixYXZ.c",
-      "symbol": "RotMatrixYXZ"
+      "path": "backlog.ASM",
+      "symbols": [
+        "RotMatrixYXZ"
+      ],
+      "backlog": true
     }
   ]
 }

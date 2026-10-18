@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/41-s_022.o[0] 41-s_022.o
- * sha256: 7813eb31fe8c76c9ef59736900d1685c6532d81c550ba22d7e6a4ee13228355e
+/* Original TU: library-input/psyq/LIB/Libcd.lib[41] S_022.OBJ
+ * sha256: df61c15a24f9cd49c985f74852a5a6dd5a9e695a81538d0ef5cf1484fc9d0299
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdGetSector2
  */

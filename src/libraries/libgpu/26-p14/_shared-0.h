@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/26-p14.o[0] 26-p14.o
- * sha256: 4601682b6b6b3b4ad3d8598ee44afa91be700a0b6c9b53bbf8fd9f4d7d9cc260
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[26] P14.OBJ
+ * sha256: 092fc4d837adc5ebc92927dadedf11a0b7ad4b7a3fe56330f33be9ae5f4501d1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetPolyG3
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/7-c_002.o[0] 7-c_002.o
- * sha256: 961ad31298fe5e0bedc59f15e273f210ed28cc921c3dc5c99a7786b0bf2d147a
+/* Original TU: library-input/psyq/LIB/Libcd.lib[7] C_002.OBJ
+ * sha256: 6074f95bd0786f8c4d18eb886c58d3b83c7d88c9ad59098e0d3c43b7efbd2733
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StClearRing
  */

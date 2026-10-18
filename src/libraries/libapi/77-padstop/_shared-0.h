@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/77-padstop.o[0] 77-padstop.o
- * sha256: bcf0f8210c718e23b358b9ca1adb65dabac04b23145cbc06742b451498580b40
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[77] PADSTOP.OBJ
+ * sha256: 8bd903c9921915361a11b7598c504eaeb3d6293ce1200d1656cf21f40fdfacf6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StopPAD
  */

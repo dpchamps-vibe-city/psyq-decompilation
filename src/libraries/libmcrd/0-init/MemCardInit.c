@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_4e71e740429a1551_0", MemCardInit);
+INCLUDE_ASM("build/libraries/nonmatchings/libmcrd_0", MemCardInit);

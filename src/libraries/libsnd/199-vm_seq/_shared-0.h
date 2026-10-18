@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/199-vm_seq.o[0] 199-vm_seq.o
- * sha256: 12576c9e58b089b50d39999e196b236693429375cf741e0ce41ad3b40a04a369
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[199] VM_SEQ.OBJ
+ * sha256: cd6df0a45a1f418f39b723251ce0e6b0a3dd552ff5c15e3a425edb37b1c10253
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmSetSeqVol, _SsVmGetSeqVol, _SsVmSeqKeyOff
  */

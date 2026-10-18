@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/193-bezier.o[0] 193-bezier.o
- * sha256: e925496e24c856b5bc0d23f80ae31a5424eb67b408849b4c97e63306c0864573
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[193] BEZIER.OBJ
+ * sha256: e72db375c04c5951b7f1f724e7fced6a2ad1c1bbff83a0893ad7d8acef775719
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: setBezierCof
  */

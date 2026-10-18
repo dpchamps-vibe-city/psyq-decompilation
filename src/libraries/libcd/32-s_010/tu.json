@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_49b2f026e2c311b6_0",
+  "member": "libcd_32",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

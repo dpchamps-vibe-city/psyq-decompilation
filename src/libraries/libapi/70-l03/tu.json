@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_f89676b72943d23f_0",
+  "member": "libapi_70",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SysDeqIntRP.c",
-      "symbol": "SysDeqIntRP"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SysDeqIntRP"
+      ],
+      "backlog": true
     }
   ]
 }

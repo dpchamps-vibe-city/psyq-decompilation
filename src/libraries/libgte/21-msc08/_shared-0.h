@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/21-msc08.o[0] 21-msc08.o
- * sha256: 40b16b860882d7fd56dd1019d8d7cacc13de535269258480b0fd9b43afd53620
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[21] MSC08.OBJ
+ * sha256: b06a25637530122ff0a3b550502b4c741bbb87325c92eb1bc84449bf11af4c62
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: otz2p
  */

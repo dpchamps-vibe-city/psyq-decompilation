@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/32-gs_008.o[0] 32-gs_008.o
- * sha256: 496ab98a84dd9c5a8d0045503cb2e236b8b0e936a5ae0802fe5351aa5c8cbc1a
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[32] GS_008.OBJ
+ * sha256: c83566fe89e22c54425146a8cf4820fce127c5186d514dbfbbb3e171afd3bd2e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetVcount
  */

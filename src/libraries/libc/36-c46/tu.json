@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_f454e81a9a7d6540_0",
+  "member": "libc_36",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "memchr.c",
-      "symbol": "memchr"
+      "path": "backlog.ASM",
+      "symbols": [
+        "memchr"
+      ],
+      "backlog": true
     }
   ]
 }

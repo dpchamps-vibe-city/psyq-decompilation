@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_af060e43e14a8c16_0", DS_sync);
+INCLUDE_ASM("build/libraries/nonmatchings/libds_14", DS_sync);

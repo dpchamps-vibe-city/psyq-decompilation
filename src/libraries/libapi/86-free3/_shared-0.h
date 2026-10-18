@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/86-free3.o[0] 86-free3.o
- * sha256: 14f59ff2225bb74bfade9fd38ffa814072bac6eb65d8bdb74b6eeba202b8ba86
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[86] FREE3.OBJ
+ * sha256: 1477a3354f7c7f58626a50fe13314e5d06bb84bc67f718d4d84b002d18d3ae9a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: free3
  */

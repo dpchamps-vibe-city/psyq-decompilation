@@ -28,17 +28,53 @@
   "memberMapping": "library-input/redux/original-members.json",
   "conversionReport": "library-input/redux/conversion-report.json",
   "convertedEntryCount": 2224,
-  "selectedEntryCount": 2167,
+  "selectedEntryCount": 2164,
   "deferredEntryCount": 6,
   "excludedArchives": [
     {
       "archive": "library-input/psyq/LIB/Libsn.lib",
-      "entries": 57,
+      "entries": 59,
       "excludedOn": "2026-10-17",
       "convertedObjectsKeptAt": "library-input/excluded/libsn",
       "reason": "SN Systems' runtime library, not Sony code: 46 gcc 2.8.0 libgcc2.c pieces, 9 SN ASMPSX stubs and READ.C/WRITE.C, built by SN's 2.8.1-class compiler and ASPSX. Its source is available and reproduces 49 of the 57 objects byte-exact. The original archive stays in library-input/psyq/LIB; the TU stubs were removed.",
       "evidence": "notes/research/libsn-libgcc-provenance.md"
+    },
+    {
+      "archive": "library-input/psyq/LIB/LIBGUN.LIB",
+      "entries": 2,
+      "excludedOn": "2026-10-18",
+      "reason": "Assembled by an assembler we don't have. Returns when it is found.",
+      "evidence": "build/toolchain-provenance/fix-research/early/"
+    },
+    {
+      "archive": "library-input/psyq/LIB/LIBTAP.LIB",
+      "entries": 1,
+      "excludedOn": "2026-10-18",
+      "reason": "Assembled by an assembler we don't have. Returns when it is found.",
+      "evidence": "build/toolchain-provenance/fix-research/early/"
     }
   ],
-  "scopeNote": "project.json selects fresh Redux/COMMON outputs, with original ordinals retained in their pathnames. Legacy conversions and their partial source stubs are preserved but unselected. The six deferred originals remain in the full-SDK completion ledger. Libsn.lib is excluded as non-Sony code with available source; see excludedArchives. Original-LNK fidelity remains distinct from converted-ELF identity."
+  "scopeNote": "Selected: 2,164 Sony-built members of the 20 selected archives plus MCGUI.OBJ, MCGUI_E.OBJ, NOPRINT.OBJ and POWERON.OBJ. Excluded: 59 Libsn entries and four SN-built standalone objects; GUN, NEWGUN and TAP await their assembler. Total SDK inventory: 2,230. Acceptance requires original/rebuilt .OBJ SHA-256 identity.",
+  "excludedObjects": [
+    {
+      "object": "library-input/psyq/LIB/2MBYTE.OBJ",
+      "reason": "SN-built: neither Sony section layout; NOHEAP and NONE3 use Libsn-style .ctors/.dtors.",
+      "countsTowardFullSdkCompletion": false
+    },
+    {
+      "object": "library-input/psyq/LIB/8MBYTE.OBJ",
+      "reason": "SN-built: neither Sony section layout; NOHEAP and NONE3 use Libsn-style .ctors/.dtors.",
+      "countsTowardFullSdkCompletion": false
+    },
+    {
+      "object": "library-input/psyq/LIB/NOHEAP.OBJ",
+      "reason": "SN-built: neither Sony section layout; NOHEAP and NONE3 use Libsn-style .ctors/.dtors.",
+      "countsTowardFullSdkCompletion": false
+    },
+    {
+      "object": "library-input/psyq/LIB/NONE3.OBJ",
+      "reason": "SN-built: neither Sony section layout; NOHEAP and NONE3 use Libsn-style .ctors/.dtors.",
+      "countsTowardFullSdkCompletion": false
+    }
+  ]
 }

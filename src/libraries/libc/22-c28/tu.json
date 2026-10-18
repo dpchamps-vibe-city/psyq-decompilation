@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_8401953e29d3a0e7_0",
+  "member": "libc_22",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "index.c",
-      "symbol": "index"
+      "path": "backlog.ASM",
+      "symbols": [
+        "index"
+      ],
+      "backlog": true
     }
   ]
 }

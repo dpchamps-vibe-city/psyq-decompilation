@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_9559e0da75b160d9_0",
+  "member": "libcard_4",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "InitCARD2.c",
-      "symbol": "InitCARD2"
+      "path": "backlog.ASM",
+      "symbols": [
+        "InitCARD2"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/41-floor01.o[0] 41-floor01.o
- * sha256: 4f7ee208e233a887e22404037d18627847f9452343ad9e41a0e041a058f7e57a
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[41] FLOOR01.OBJ
+ * sha256: b1ef0b409864a3c3a8b4b32b627ae20a613f287eac684fd5c8a314f5d54278d1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ceil
  */

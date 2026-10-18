@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/82-ssreplay.o[0] 82-ssreplay.o
- * sha256: 9c1729253013240811987b980f201e9fe88729e820d9802b52a3acdbfd21f03e
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[82] SSREPLAY.OBJ
+ * sha256: 22d56b005700261da8f1ed8509df32c626b90b806a6a8aa1919b164872c22c2d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndSetReplayMode, SsSeqReplay, SsSepReplay
  */

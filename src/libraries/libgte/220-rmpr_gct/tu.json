@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5a68fd9b20fea016_0",
+  "member": "libgte_220",
   "parts": [
     {
-      "path": "rmpr_gct.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotMeshPrimR_GCT3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/55-sqrt.o[0] 55-sqrt.o
- * sha256: 22e168d60354374390641ec066767d7a3cef9ac1487bd79cb3c4da04f061d29a
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[55] SQRT.OBJ
+ * sha256: b39b401591fc10d95e4a6606ea83f290a17b4705e53997428f4665e83ac3c801
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: sqrt
  */

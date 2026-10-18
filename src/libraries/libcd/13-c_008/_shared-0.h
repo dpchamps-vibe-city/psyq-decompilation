@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/13-c_008.o[0] 13-c_008.o
- * sha256: f0d34951b0259a745bea9c5f5d2ac0a90dca5d8542737940d82cb34abd14f2a1
+/* Original TU: library-input/psyq/LIB/Libcd.lib[13] C_008.OBJ
+ * sha256: 227a393763a23f53e34706f77bedaf1833c267b772d0388cafa64def97459e3b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: init_ring_status
  */

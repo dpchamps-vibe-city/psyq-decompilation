@@ -2,7 +2,7 @@
 
 ## Verified result and scope
 
-`lib_51928ac182d7ab42_0::func_000000F8` is recovered in
+`libapi_81::func_000000F8` is recovered in
 `src/libraries/libapi/81-realloc2/func_000000F8.c`. Its 98 instruction words
 match, and `psx_finalize_function` passed exact diff, full build, modification
 scope and clean-source gates. Finalization identity:
@@ -127,21 +127,21 @@ not universal rules about how every equivalent expression must compile.
   `f9944fff1d7f451d6d71e21a591355ae7b02747271903521a22d3e7a9bf3dc6c`.
 - TU manifest: `src/libraries/libapi/81-realloc2/tu.json`.
 - Original listing:
-  `build/libraries/nonmatchings/lib_51928ac182d7ab42_0/func_000000F8.s`.
+  `build/libraries/nonmatchings/libapi_81/func_000000F8.s`.
 - Source variants: `build/candidates/func_000000F8/solve/` (`v01.c` through
   `v22.c`, plus `solved.c`). These scratch artifacts are not committed.
 - Measurements under
-  `build/pipelineReversal/lib_51928ac182d7ab42_0::func_000000F8/objective/`:
+  `build/pipelineReversal/libapi_81::func_000000F8/objective/`:
   `measurement-XUEJnP` (`c5`, displaced block), `measurement-cPPIii` (`v12`,
   allocation swap), `measurement-hHgR7o` (`v20`, operand order),
   `measurement-8kweDo` (`v22`, exact), `measurement-Hsk2xc` (cleaned exact).
 - Native multiple-entry refusal and allocation counts:
-  `build/loopTrace/lib_51928ac182d7ab42_0::func_000000F8/`, `.i.loop` and
+  `build/loopTrace/libapi_81::func_000000F8/`, `.i.loop` and
   `.i.lreg`; plain-goto baseline in the corresponding `build/compilerTrace/`
   directory. Dumps can be overwritten by later diagnostics; check their source
   provenance before relying on them. Re-trace the committed source as needed.
 - Owning-member receipt:
-  `build/libraries/verified/lib_51928ac182d7ab42_0.json` (whole-member match,
+  `build/libraries/verified/libapi_81.json` (whole-member match,
   148/148 words, completed functions `realloc2` and `func_000000F8`).
 
 Future changes must retain the whole-TU byte oracle and full finalization gate.

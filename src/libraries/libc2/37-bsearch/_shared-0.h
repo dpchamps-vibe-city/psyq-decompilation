@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/37-bsearch.o[0] 37-bsearch.o
- * sha256: 60813141fcc730d6bef05265cc482fdb534b234f6f7220a628fb97b1d46f3522
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[37] BSEARCH.OBJ
+ * sha256: 93e7a1ae41ad0095d2c731ce675fdbabf6873acb4dd159f5c32b323e8e007127
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: bsearch
  */

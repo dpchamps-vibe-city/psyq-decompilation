@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/10-c_005.o[0] 10-c_005.o
- * sha256: 06ebbb17a371c92f311fad76a4d71aaef59f3c4e9e949c319adfd31fe048056c
+/* Original TU: library-input/psyq/LIB/Libcd.lib[10] C_005.OBJ
+ * sha256: 2389b7f456d8ec09dd0ef0f0559016cd509cfae7bc8d901caab86301d6504ca0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StSetStream
  */

@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "member": "lib_dedc70d8742fc7f7_0",
+  "member": "libhmd_574",
   "parts": [
     {
-      "path": "mime_s.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsVNMIMeFunc",
         "GsRestoreOrgsVNMIMe"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/99-datg4_03.o[0] 99-datg4_03.o
- * sha256: ed057ef83c050102ac67acc906547bd5147a1a919cd98c39dc47b389c64d1867
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[99] DATG4_03.OBJ
+ * sha256: 6dff7b6f66638fb64a334ba726204c560468c9583543765987fba537eb14d4dc
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsA4divTNG4
  */

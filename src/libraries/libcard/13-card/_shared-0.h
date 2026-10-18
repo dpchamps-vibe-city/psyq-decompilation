@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcard/13-card.o[0] 13-card.o
- * sha256: 80b7ad31e0dee3a1f3f48d786dc8dc42603aa0f7f5145856b6e77dabc2e9b9fd
+/* Original TU: library-input/psyq/LIB/LIBCARD.LIB[13] CARD.OBJ
+ * sha256: 8adccd53023f9f9057ccf82a60a8b74542956163f1cbb277bc443b042da58c31
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _card_clear
  */

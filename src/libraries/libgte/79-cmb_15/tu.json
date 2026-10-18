@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_6892f0f57154771a_0",
+  "member": "libgte_79",
   "parts": [
     {
-      "path": "cmb_15.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotAverageNclip3_1"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

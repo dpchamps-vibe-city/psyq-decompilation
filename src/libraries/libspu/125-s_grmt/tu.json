@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_bec800f2e31c7524_0",
+  "member": "libspu_125",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

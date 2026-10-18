@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/8-memcpy.o[0] 8-memcpy.o
- * sha256: de9c9a4f6515cacecb0cfb89911c6bdbc2937b9e2aea8ba5190c56a7a0a32280
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[8] MEMCPY.OBJ
+ * sha256: e17ee90b9804d15ae7e294d9635b109bd12abefe39792fd8afc7eddd4dfd142c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: memcpy
  */

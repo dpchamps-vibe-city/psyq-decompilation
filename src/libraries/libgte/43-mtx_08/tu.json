@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_639d6885bfaf746e_0",
+  "member": "libgte_43",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ScaleMatrix.c",
-      "symbol": "ScaleMatrix"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ScaleMatrix"
+      ],
+      "backlog": true
     }
   ]
 }

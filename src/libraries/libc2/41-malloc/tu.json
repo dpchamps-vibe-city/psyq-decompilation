@@ -1,25 +1,16 @@
 {
   "schemaVersion": 1,
-  "member": "lib_9dbef3a6cb0251b8_0",
+  "member": "libc2_41",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "malloc.c",
-      "symbol": "malloc"
-    },
-    {
-      "path": "free.c",
-      "symbol": "free"
-    },
-    {
-      "path": "calloc.c",
-      "symbol": "calloc"
-    },
-    {
-      "path": "realloc.c",
-      "symbol": "realloc"
+      "path": "backlog.ASM",
+      "symbols": [
+        "malloc",
+        "free",
+        "calloc",
+        "realloc"
+      ],
+      "backlog": true
     }
   ]
 }

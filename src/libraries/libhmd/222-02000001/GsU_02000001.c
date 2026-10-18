@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_870760a640115b5d_0", GsU_02000001);
+INCLUDE_ASM("build/libraries/nonmatchings/libhmd_222", GsU_02000001);

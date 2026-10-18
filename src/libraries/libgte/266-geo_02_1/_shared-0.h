@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/266-geo_02_1.o[0] 266-geo_02_1.o
- * sha256: f9882fc76a45b86418012551f1f0487a01f472572072b48d05bd53cd1217c48d
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[266] GEO_02_1.OBJ
+ * sha256: c4e63995e960ff7cd90fd17cb07914ae64171245e4169105812659ea8b5a8c24
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: EigenMatrix
  */

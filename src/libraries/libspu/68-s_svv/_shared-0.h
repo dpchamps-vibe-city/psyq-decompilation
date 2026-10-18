@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/68-s_svv.o[0] 68-s_svv.o
- * sha256: a79128fb26e997b33aef31f05994ce160214e3e95a29c34cb0336c10f35bc3e9
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[68] S_SVV.OBJ
+ * sha256: 68fecf67c8a734d7ea6f17f0dd505cb678035595a90a5db331eed8045c291077
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetVoiceVolume
  */

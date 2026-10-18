@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/99-s_gvdr.o[0] 99-s_gvdr.o
- * sha256: d69db91b784b0915ae2be4090788d4b84e6d504d6473468a5d76c2ff084d3209
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[99] S_GVDR.OBJ
+ * sha256: 6a26ca3cdbc79bc5d80cfea9c56936a54e1e48fb9308e4481da68200eaee9187
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetVoiceDR
  */

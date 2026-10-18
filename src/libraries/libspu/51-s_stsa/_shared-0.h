@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/51-s_stsa.o[0] 51-s_stsa.o
- * sha256: 08170bc610830a27633cd2e821cbd99e06c58b2f1c54a79bcaa0722cd39807d8
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[51] S_STSA.OBJ
+ * sha256: 962bbe27f94e75b23806a6e71bb63cbd5b1b817024f7946286a3a0085aa8cb9c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetTransferStartAddr
  */

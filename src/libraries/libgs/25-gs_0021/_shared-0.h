@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/25-gs_0021.o[0] 25-gs_0021.o
- * sha256: bcc6e402f2f4fa622de0ca31a0ecd7f1d0b079094914d42fb691e25924c7dc0b
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[25] GS_0021.OBJ
+ * sha256: 8ae0025fc8d0a4b223bccd272dc5d30056f04362a633fefb06218d859a18670e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetActiveBuff
  */

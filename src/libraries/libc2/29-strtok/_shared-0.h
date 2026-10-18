@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/29-strtok.o[0] 29-strtok.o
- * sha256: be857474fd8b6b8bc98f4b87b8abac1764fdb6d495d8e6441dffe38572ce3504
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[29] STRTOK.OBJ
+ * sha256: 70812bde3c6ba30126605630f4f88b17b3ca43ca080f9958e359a90b310f04ba
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strtok
  */

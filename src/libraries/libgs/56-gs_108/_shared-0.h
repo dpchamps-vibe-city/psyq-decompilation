@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/56-gs_108.o[0] 56-gs_108.o
- * sha256: 1e11608fb2c99d8b2ad92183854770b8d6c850880d93638b91a4968c9d5b82c6
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[56] GS_108.OBJ
+ * sha256: 9b6ab28f2d6ddfab4e6b3d63bf33b76d4c45f1f2648dc650e99a4d4decb30bb4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetLightMode
  */

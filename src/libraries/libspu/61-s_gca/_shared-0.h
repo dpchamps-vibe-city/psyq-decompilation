@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/61-s_gca.o[0] 61-s_gca.o
- * sha256: df2796099ea2ab18b8b9ce5773589f017d2b8c31c4bdc9be2345588dc0d5bcdd
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[61] S_GCA.OBJ
+ * sha256: e30faecf7cfdf152a4c08ce1c1d35c19c266273b28d1816771b1fe4a9629aea0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetCommonAttr
  */

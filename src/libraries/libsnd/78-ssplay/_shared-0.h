@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/78-ssplay.o[0] 78-ssplay.o
- * sha256: d41f9e32e57829cd460a8d9bbe98b0e4c54ef86952afc67bd1269203f8f53b41
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[78] SSPLAY.OBJ
+ * sha256: 302104faa90b9d42ada3be7755bca054e4464507ca0eaa5255ce0b1df4285a3a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSeqPlay
  */

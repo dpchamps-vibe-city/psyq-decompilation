@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/46-p34.o[0] 46-p34.o
- * sha256: 3889cee9300616a93c3f9c5b0961c913240e3e5a9bf58fc8a235e8b27810e00b
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[46] P34.OBJ
+ * sha256: ca6bd5f7726da7fadc7a1471315b1765cbef92a11ae0525c8db33758af8da6d0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetDrawMove
  */

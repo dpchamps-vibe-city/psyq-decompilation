@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_8184a3f5d1e2d1e3_0",
+  "member": "libgte_286",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadLZC.c",
-      "symbol": "ReadLZC"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadLZC"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_399eb8d315af2e11_0", AddCOMB);
+INCLUDE_ASM("build/libraries/nonmatchings/libcomb_0", AddCOMB);

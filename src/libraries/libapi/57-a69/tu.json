@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_82a318d924d5d93d_0",
+  "member": "libapi_57",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "erase.c",
-      "symbol": "erase"
+      "path": "backlog.ASM",
+      "symbols": [
+        "erase"
+      ],
+      "backlog": true
     }
   ]
 }

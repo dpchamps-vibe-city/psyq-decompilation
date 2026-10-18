@@ -324,14 +324,14 @@ that copied-transfer rule. A lower score does not establish C origin.
 
 | Current directory | Member ID | Selected input SHA-256 |
 | --- | --- | --- |
-| libapi/74-patch | `lib_4031394e3bdde1bc_0` | `88562458770e8b1986ea038b0699e1f614fcc9804808de4e3165f50acee731f1` |
-| libapi/83-chclrpad | `lib_9f6c1bc0a9ed1203_0` | `135304800d81bd2b54837ce7b3c29d3baf2020d3bab189e90ac3e1540faf99df` |
-| libgun/1-newgun | `lib_0f663e15dc9457aa_0` | `0c26f12f2f7170c449398de9d7396dc195fc848bd35820fc0c6447944e012672` |
-| libgte/226-patchgte | `lib_4e0c237209ba2a6e_0` | `c6130afb8d8d229c176b3ca6016a1c05d073fd1563caee1bc8ac9848a24a2bc3` |
-| libcard/14-patch | `lib_8131e1e9741808b1_0` | `5af0e6f84af449368adcc182c3b1443305dcdc63099bcba1ca9950580edf097d` |
-| libmcx/30-mcxdsr | `lib_ae672d28456ecc9a_0` | `58546b4ddd5464285d93bd97bfb5ad483f4ea68808ceefcde20d3fd895d7914e` |
-| libpad/20-pdhokres | `lib_c17f88069058fe71_0` | `5214f92856a20f7fc8c18784247c011f995615405c6202925dcb56d2ca603ec8` |
-| libc2/39-setjmp | `lib_f7a26da463214377_0` | `599432f4f3a254d04a0af457a49ba5a265b443fb61625d61a933ba3e9fa3491f` |
+| libapi/74-patch | `libapi_74` | `88562458770e8b1986ea038b0699e1f614fcc9804808de4e3165f50acee731f1` |
+| libapi/83-chclrpad | `libapi_83` | `135304800d81bd2b54837ce7b3c29d3baf2020d3bab189e90ac3e1540faf99df` |
+| libgun/1-newgun | `libgun_1` | `0c26f12f2f7170c449398de9d7396dc195fc848bd35820fc0c6447944e012672` |
+| libgte/226-patchgte | `libgte_226` | `c6130afb8d8d229c176b3ca6016a1c05d073fd1563caee1bc8ac9848a24a2bc3` |
+| libcard/14-patch | `libcard_14` | `5af0e6f84af449368adcc182c3b1443305dcdc63099bcba1ca9950580edf097d` |
+| libmcx/30-mcxdsr | `libmcx_30` | `58546b4ddd5464285d93bd97bfb5ad483f4ea68808ceefcde20d3fd895d7914e` |
+| libpad/20-pdhokres | `libpad_20` | `5214f92856a20f7fc8c18784247c011f995615405c6202925dcb56d2ca603ec8` |
+| libc2/39-setjmp | `libc2_39` | `599432f4f3a254d04a0af457a49ba5a265b443fb61625d61a933ba3e9fa3491f` |
 
 Input paths are `library-input/redux/<directory>.o`; current ownership manifests
 are `src/libraries/<directory>/tu.json`. Original-word disassemblies are under

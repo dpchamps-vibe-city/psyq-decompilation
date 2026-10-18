@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/3-getc.o[0] 3-getc.o
- * sha256: ad3caf83d58a4c6544c093883906f665fcadda772006a4180936aade2709360c
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[3] GETC.OBJ
+ * sha256: bbf435ef09ec58ebe8dd5d297becbe067905bdc278455115ab1e720c17470dab
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: getc
  */

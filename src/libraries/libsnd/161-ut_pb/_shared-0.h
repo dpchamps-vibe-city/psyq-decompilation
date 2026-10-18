@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/161-ut_pb.o[0] 161-ut_pb.o
- * sha256: 1ed8092c9489445433ced71b7b605ab90a653c59c3aa2463d4b9e23c575c2532
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[161] UT_PB.OBJ
+ * sha256: 2e1c23f60fbb4c45384a069e7646523915f276bb7966069e1623fc8e64ede6a9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtPitchBend
  */

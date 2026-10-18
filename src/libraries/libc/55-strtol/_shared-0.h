@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc/55-strtol.o[0] 55-strtol.o
- * sha256: 7208a0b56207631fb89ae86f4313fb35dd82be186c5eb6b2e4fa1d42dad7bb0a
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[55] STRTOL.OBJ
+ * sha256: 5b00a79584d533fd211694bb0b5c778f98a116a311fdf53ab502baa20b68eef1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strtol
  */

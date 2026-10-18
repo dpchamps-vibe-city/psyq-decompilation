@@ -2,14 +2,14 @@
 
 ## Verified result
 
-- Target: `lib_dc101a825c1340c8_0::strtok`, LIBC's `51-strtok.o`.
+- Target: `libc_51::strtok`, LIBC's `51-strtok.o`.
 - Source: `src/libraries/libc/51-strtok/strtok.c`.
 - Owned declaration: `include/library/51-strtok.h`. The saved pointer's original
   data fragment remains assembly-backed; neighboring fragments were not changed.
 - `psx_finalize_function` passed exact diff, full build, modification scope and
   clean-source gates. Supplied source/evidence identity:
   `149800f736489e70c4af345e1835c2801d1320840b7d47ee245b3565016f6327`.
-- Whole-member receipt: `build/libraries/verified/lib_dc101a825c1340c8_0.json`,
+- Whole-member receipt: `build/libraries/verified/libc_51.json`,
   `MATCH`, **72/72 words**, including sections and symbolic relocations. Its
   separate whole-member identity is
   `fbd10d40e2b085b7210751d674b72a9c977dde6bfec0efe276d80c2e758ba6cc`.
@@ -130,7 +130,7 @@ was not a harmless transcription choice for this measured candidate.
 Scratch candidates and reports are under `build/` and may not survive cleanup.
 The integrated source and this note preserve the decisive constructions.
 
-| Candidate | Measurement directory under `build/pipelineReversal/lib_dc101a825c1340c8_0::strtok/objective/` | Result |
+| Candidate | Measurement directory under `build/pipelineReversal/libc_51::strtok/objective/` | Result |
 | --- | --- | --- |
 | Prior `q1.c` | `measurement-VxjLOK` | CFG mismatch; explicit `lb -1(s)` reads |
 | `assigned-char.c` | `measurement-0AgJ15` | First-phase shape restored; second phase still differs |
@@ -141,17 +141,17 @@ The integrated source and this note preserve the decisive constructions.
 Additional evidence:
 
 - Original assembly:
-  `build/libraries/nonmatchings/lib_dc101a825c1340c8_0/strtok.s`.
+  `build/libraries/nonmatchings/libc_51/strtok.s`.
   Displayed addresses include the object file offset; e.g. displayed `0xE4`
   is `.text+0x74`, and displayed `0x15C` is `.text+0xEC`.
 - Prepared draft and diagnostic evidence:
-  `build/preparation/lib_dc101a825c1340c8_0::strtok/1792263100517-2800909/`.
+  `build/preparation/libc_51::strtok/1792263100517-2800909/`.
 - Exact-source native dumps and report:
-  `build/compilerTrace/lib_dc101a825c1340c8_0::strtok/`.
+  `build/compilerTrace/libc_51::strtok/`.
 - Exact-source loop report:
-  `build/loopTrace/lib_dc101a825c1340c8_0::strtok/`.
+  `build/loopTrace/libc_51::strtok/`.
 - Experiment history:
-  `build/experimentLedger/lib_dc101a825c1340c8_0::strtok.jsonl`.
+  `build/experimentLedger/libc_51::strtok.jsonl`.
 
 No new cross-function or original-TU grouping evidence was established, so
 `notes/file-groupings.md` is unchanged. The private saved pointer belongs to

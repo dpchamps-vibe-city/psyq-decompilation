@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc/49-bcmp.o[0] 49-bcmp.o
- * sha256: 49aad70bb673be9250ae4a4dd143a06683faa4c0358c04a6e42f29cfff4fe0f0
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[49] BCMP.OBJ
+ * sha256: 2d85252d036b1b85cb8d15d64e1af65c403f31e3d6719db2a8d96fde0e003188
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: bcmp
  */

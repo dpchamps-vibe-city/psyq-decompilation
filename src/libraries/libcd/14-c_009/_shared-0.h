@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/14-c_009.o[0] 14-c_009.o
- * sha256: e0a3e313b9c2494ca394c61858228b1844719bff0b3716cd3fb2a8da962b1c70
+/* Original TU: library-input/psyq/LIB/Libcd.lib[14] C_009.OBJ
+ * sha256: 2f380aba6f0c150803f515785c00f68eecf796d77d15dc8cf2ce6fd318646c40
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StGetNext
  */

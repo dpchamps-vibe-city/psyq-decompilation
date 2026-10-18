@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/117-dmycc_64.o[0] 117-dmycc_64.o
- * sha256: 96893c6a077f8c9393f30584f7fec61ba96a7c15f35e70ef8085081b31a9636f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[117] DMYCC_64.OBJ
+ * sha256: 55bdcd0576529546ba8a9b96c44aff5143e4867242c007556013d9cbc42a4e9d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsContDamper
  */

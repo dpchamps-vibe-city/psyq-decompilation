@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/13-2d_sp1.o[0] 13-2d_sp1.o
- * sha256: 14d9bf48c3484a8deb000396b7a4dfb370ec1e162efd8c36b6347794166f8eb3
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[13] 2D_SP1.OBJ
+ * sha256: a29ca82b51d65a389ad419ff6c9874d78a144de0c5449b9565d84053d8ba72c2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortFastSprite
  */

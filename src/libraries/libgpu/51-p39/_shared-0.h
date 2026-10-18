@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/51-p39.o[0] 51-p39.o
- * sha256: 8617997ffd6f8673505ddd57f7e71a7b3cade153a6af819dfb3527530971c52a
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[51] P39.OBJ
+ * sha256: 4fd63d020cc578ea433e34e9672924b77e44a92996a523bebfa05d6decb2e350
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetPriority
  */

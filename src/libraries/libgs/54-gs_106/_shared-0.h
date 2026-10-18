@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/54-gs_106.o[0] 54-gs_106.o
- * sha256: 886198c4b2ddcf9d45512512518fe2d127db2a8e67db12f73d9bb5c995af18b6
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[54] GS_106.OBJ
+ * sha256: b1240358870ab63cd1457fceedeba7a43739c39ed16042d294fcb55909c5b789
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetProjection
  */

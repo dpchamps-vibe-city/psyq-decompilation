@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_9d9c2e6e3dba48fa_0",
+  "member": "libgte_361",
   "parts": [
     {
-      "path": "nom_17.s",
+      "path": "backlog.ASM",
       "symbols": [
         "NormalColorCol3_nom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

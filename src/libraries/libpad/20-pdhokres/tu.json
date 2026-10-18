@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "member": "lib_c17f88069058fe71_0",
+  "member": "libpad_20",
   "parts": [
     {
-      "path": "pdhokres.s",
+      "path": "backlog.ASM",
       "symbols": [
         "_padGunInitHook",
         "_padGunExitHook",
         "_padGetHitCount",
         "_padClrHitCount"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

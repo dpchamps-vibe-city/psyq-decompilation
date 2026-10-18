@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/77-gs_128.o[0] 77-gs_128.o
- * sha256: 92cb99c15d4b2a84beaa2249b953bf47f22a58e121011f7f39d2deb980345cc4
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[77] GS_128.OBJ
+ * sha256: 98bb292046c12186d459fb43f8a4939cd6a2ea9313f551092513f27ce864a350
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

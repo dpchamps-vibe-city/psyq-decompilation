@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/1-2d_bg1.o[0] 1-2d_bg1.o
- * sha256: 083891ea79902cd95abd5b7938525ef5d6013d8d2bfecdd8c43f1c9a900fb460
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[1] 2D_BG1.OBJ
+ * sha256: 41fa6ac654868e45b0540d34be20d847d319e9e27b4546b85bbd9c5d8d9dc039
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortFastBg
  */

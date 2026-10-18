@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/5-mcxcmd6.o[0] 5-mcxcmd6.o
- * sha256: b0f35e98e5dfd76b2dea42ea63a677a7043ec6431931ac528b2867af2027bda9
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[5] MCXCMD6.OBJ
+ * sha256: 04bd0831937cf41b8ff946b0603219fe43835ebeaea9a5c42c7ad2ba532fea04
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _mcxTxGetMem, _mcxRxGetMem
  */

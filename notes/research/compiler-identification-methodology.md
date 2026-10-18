@@ -1,12 +1,12 @@
 # Identifying the compiler behind a binary library: the method
 
-Date: 2026-10-17. This note records *how* the PSY-Q 4.7 library compiler was identified, so the method can be reapplied to another library, another SDK, or a game. The result itself, with its evidence tables, is in [compiler-identification-1997-trunk.md](compiler-identification-1997-trunk.md); the earlier dead ends are in [realloc3-and-compiler-discovery-session.md](realloc3-and-compiler-discovery-session.md).
+Date: 2026-10-17; steps 8–9 and the later pitfalls added 2026-10-18. This note records *how* the PSY-Q 4.7 library compiler was identified, so the method can be reapplied to another library, another SDK, or a game. The assembler and the object packaging have their own method note: [assembler-identification-methodology.md](assembler-identification-methodology.md). The result itself, with its evidence tables, is in [compiler-identification-1997-trunk.md](compiler-identification-1997-trunk.md); the earlier dead ends are in [realloc3-and-compiler-discovery-session.md](realloc3-and-compiler-discovery-session.md).
 
 ## 1. Framing
 
 The question is never "which GCC version string?". It is: which compiler **source state**, under which **target configuration**, with which **flags**, fed to which **assembler**, produced these bytes. Those four axes vary independently, and most false discriminators in the literature (and in this project's own earlier conclusions) come from changing two of them at once. The 2.7.2 verdict of 2026-10-13 compared six compilers at once, and the 2.8.x arms differed from 2.7.2 mostly by a target default (address splitting), not by the version.
 
-Ground truth is the object corpus: 2,224 converted originals. Everything else, including SDK release notes, archive names, version banners, the compilers shipped with the SDK, and prior community attributions, is a lead to be checked against the bytes.
+Ground truth is the object corpus: 2,224 converted originals. Everything else, including SDK release notes, archive names, version banners, the compilers shipped with the SDK, and prior community attributions, is a lead to be checked against the bytes. Since 2026-10-18 the comparison is against the original LNK members themselves, as whole files, after a declared native-encoding stage. The converted ELF files rewrite relocation addends ([assembler note](assembler-identification-1997-trunk.md) §2), and a whole-file comparison also sees symbol numbering and fixup order, which carry source structure.
 
 A second premise: the project's existing C reconstructions are biased toward whatever compiler they were tuned under. A tuned source failing under another compiler excludes nothing. A tuned source *matching* under a different compiler is strong evidence, and a never-matched member matching from plain C under the new compiler is the strongest evidence of all.
 
@@ -70,6 +70,51 @@ Three checks distinguish a real identification from a corpus fit:
 
 If a candidate only reproduces the tuned corpus, keep looking.
 
+### Step 8: replay the producer's own build wherever its source exists
+
+Out-of-sample checks on reconstructed C still use sources written under the
+candidate. Source the producer wrote is independent of it, so a match there is
+the strongest evidence available. The SDK discloses Sony's libhmd sources and
+makefiles. Replaying them tests the compiler, flags, preprocessor, assembler,
+post-processing and packaging together.
+
+- Parse the producer's makefiles for every listed object: its source, its own
+  defines (one source can build several members), its flags and any
+  post-processing. Take everything from the recipe; nothing may come from the
+  target object.
+- Never edit producer sources or headers. Where the host needs it (CRLF, DOS
+  upper-case names), compile from views and record both the original and the
+  view hashes.
+- Compare each object with the shipped member of the same name, whole-file.
+  Read failures by mechanism, as in step 2, and separate the causes. A
+  difference that no candidate in or around the window changes, and no single
+  flag changes, is not compiler-window evidence. Suspect source or header drift
+  between the disclosed release and the archive instead.
+- The libhmd replay found `-O3` (from the makefile, confirmed by the replay) and
+  validated the documented DMPSX C-macro table. It left 24 differences that are
+  probably source drift ([result](compiler-identification-1997-trunk.md) §8).
+
+### Step 9: bisect the window with the production recipe
+
+Dating behaviours (step 4) gives a window; building its commits shows whether
+anything inside it matters.
+
+- Parameterise the production recipe by commit. First prove the parameterised
+  recipe reproduces the pinned binary's hash from the pinned tarball. Otherwise
+  a recipe difference can masquerade as a source difference.
+- Score every snapshot on two independent suites, holding the preprocessor,
+  assembler and flags fixed. Here: the reconstructed members from their staged
+  preprocessed inputs, and the producer-source replay. About 30 s per build and
+  a few seconds per score.
+- An edge is a pair of adjacent commits across which both suites change. Here:
+  `4757e6a402f5` → `cabcf079ea40` at the lower edge, and `2b3600acb4ec` →
+  `38b610ed8e01` at the upper edge. If the interior is flat, the choice of pin
+  inside the window is immaterial for every measured member. Sampled points are
+  enough to show flatness, but say that they are samples.
+- Unauthenticated, the GitHub commits API allows 60 requests an hour. That is
+  enough to list a two-month window at 100 commits per page.
+  `codeload.github.com/gcc-mirror/gcc/tar.gz/<sha>` serves any tree.
+
 ## 3. Pitfalls met on the way
 
 - **A target default masquerading as a version difference.** Homebrew 2.8.1 "failed" `SpuGetTransferStartAddr` only because it split addresses; with `-mno-split-addresses` it matched. The 1997-04 CDK had no such option at all and splits unconditionally under `-mgas`; `-mmips-as` is the honest way to run it, and is what the producer's configuration must have had.
@@ -77,6 +122,10 @@ If a candidate only reproduces the tuned corpus, keep looking.
 - **Scoped closures treated as impossibility.** The previous session's "no clean C witness under 2.8.1" was correct and useless: the compiler was wrong, not the source.
 - **Archive and banner provenance.** PSYLIB member timestamps are archive times (2000-02-16), SDK notes name the compilers *distributed*, and `2.7.2.SN.1` is the SDK compiler, not the library compiler. None of it dates a compile.
 - **Patching to match.** Binary patches that reproduce an output (DCB) are descriptions of behavior, not identifications, and cannot be adopted as a production compiler. Reversions of dated upstream commits are tests; the production compiler is an unmodified dated source tree plus two build-environment patches that every old-gcc build carries.
+- **Comparing unlike containers.** A candidate ECOFF object compared field by field with an original LNK object can never match. LNK declares alignment and six sections that ECOFF does not encode, and a reader's in-memory default (BFD's 16) is not a declaration. Build the original's container with a declared, validated encoding stage and compare whole files.
+- **A diagnostic that skips a declared stage.** Diffing pre-DMPSX assembler output against a post-DMPSX original shows false GTE differences. Every comparison must go through the same chain as acceptance.
+- **Comparing assembler text across compiler builds.** `-fverbose-asm` writes the compiler's version string into the `.s`, so identical code generation still gives different text. Compare objects.
+- **Blaming the pin for a residual.** Before treating a difference as a compiler-window signal, test it at both edges and outside the window. A residual no snapshot changes belongs elsewhere: source, headers or flags.
 
 ## 4. Reapplying the method
 
@@ -85,4 +134,6 @@ If a candidate only reproduces the tuned corpus, keep looking.
 3. Run the corpus runner; read every failure down to its pass with dumps or gdb; date the pass; narrow the window.
 4. Build the dated snapshot and test it the same way. Treat equal scores under a real artifact and a pure snapshot as the end of the search.
 5. Prove it out of sample: new matches from plain C, retired compensations, whole-member all-C witnesses.
-6. Record hashes of every input, binary and report, and keep diagnostic builds out of production.
+6. Where the producer's source and build recipe exist, replay them through the candidate chain and compare whole files (step 8).
+7. Bisect the dated window with the reproducible recipe. Confirm each edge as adjacent commits and check that the interior is flat (step 9).
+8. Record hashes of every input, binary and report, and keep diagnostic builds out of production.

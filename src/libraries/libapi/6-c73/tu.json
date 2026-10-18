@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_be56eedc7370eda7_0",
+  "member": "libapi_6",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GPU_cw.c",
-      "symbol": "GPU_cw"
+      "path": "backlog.ASM",
+      "symbols": [
+        "GPU_cw"
+      ],
+      "backlog": true
     }
   ]
 }

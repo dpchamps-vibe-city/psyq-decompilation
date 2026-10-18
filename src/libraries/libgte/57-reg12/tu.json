@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_f29b0132181c48f5_0",
+  "member": "libgte_57",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetGeomOffset.c",
-      "symbol": "SetGeomOffset"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetGeomOffset"
+      ],
+      "backlog": true
     }
   ]
 }

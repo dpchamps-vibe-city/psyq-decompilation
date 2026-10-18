@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/37-s_crwa.o[0] 37-s_crwa.o
- * sha256: 3d927d1fe6ba79a546b70274d3b2b32d92713eaf654ae99ec27cce9d0e261426
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[37] S_CRWA.OBJ
+ * sha256: 7c0fe33c496a884f9fb55d15e14595deadc03bf57e1b175b207fbb9936b0dd6e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuClearReverbWorkArea
  */

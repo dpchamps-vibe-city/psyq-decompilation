@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/36-s_014.o[0] 36-s_014.o
- * sha256: ee5bf46188a748a102a41754208b4f0567162e5bc294d9c24a8ec637ecc01648
+/* Original TU: library-input/psyq/LIB/Libcd.lib[36] S_014.OBJ
+ * sha256: f8b63cbaef6885db09824d531180c39b9be5129be8e6dc8e4bfae739ca7c3df8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdSyncCallback
  */

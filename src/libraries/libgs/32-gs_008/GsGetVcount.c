@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_2f131bed16599737_0", GsGetVcount);
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_32", GsGetVcount);

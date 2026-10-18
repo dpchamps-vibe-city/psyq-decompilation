@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_0a05281fb6fe2efb_0", GsTMDdivTF3NL);
+INCLUDE_ASM("build/libraries/nonmatchings/libgte_154", GsTMDdivTF3NL);

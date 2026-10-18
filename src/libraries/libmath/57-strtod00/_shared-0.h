@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/57-strtod00.o[0] 57-strtod00.o
- * sha256: d0e9ea9e9cec90613e117a9c0dc1506b114b9a0986c1cc98c81704f995bbdfb1
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[57] STRTOD00.OBJ
+ * sha256: 416534f9322cd3b74d050283e56bd9949dea9847afe377c8524072a0406d09ba
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: atof
  */

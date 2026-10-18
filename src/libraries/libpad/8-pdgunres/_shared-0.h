@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpad/8-pdgunres.o[0] 8-pdgunres.o
- * sha256: 1a61903b76bb130c3c7b1d620243d52af729e74ceaa1719e87d02a7f617b039b
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[8] PDGUNRES.OBJ
+ * sha256: 93d1a246e712f77ac619f4e5a552281e16f0b90b733465a742c51c20aee407e6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _padSetIntH2000, _padGetGunPos, _padSetGunPort
  */

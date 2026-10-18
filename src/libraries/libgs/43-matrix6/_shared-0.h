@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/43-matrix6.o[0] 43-matrix6.o
- * sha256: 65594399d381400467281a45ec26dc0eec46f721ae0f8999715d58f783c6c0c3
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[43] MATRIX6.OBJ
+ * sha256: eb30a1c39caa735e9d06a24fe1b9bd75830ad527061dec82cb69a34ae5ef07bb
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetLightMatrix2
  */

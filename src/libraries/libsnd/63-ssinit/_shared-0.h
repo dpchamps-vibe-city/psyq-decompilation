@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/63-ssinit.o[0] 63-ssinit.o
- * sha256: d7cf034b71c6e0c8e1c029b75c840919b4d47cc238fcfc5a0f61b4c53dba9c06
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[63] SSINIT.OBJ
+ * sha256: fd65110980058ad586fa029bc5becb1c66ac0bf3b3548466f3f57a131533f490
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsInit
  */

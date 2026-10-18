@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_b536a6a949a5617f_0", _SsGetSeqData);
+INCLUDE_ASM("build/libraries/nonmatchings/libsnd_40", _SsGetSeqData);

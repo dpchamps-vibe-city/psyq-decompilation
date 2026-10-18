@@ -1,29 +1,17 @@
 {
   "schemaVersion": 1,
-  "member": "lib_b86e2c8d8e8a0a72_0",
+  "member": "libsio_1",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_cdevinput.c",
-      "symbol": "_cdevinput"
-    },
-    {
-      "path": "_cdevscan.c",
-      "symbol": "_cdevscan"
-    },
-    {
-      "path": "_circgetc.c",
-      "symbol": "_circgetc"
-    },
-    {
-      "path": "_ioabort.c",
-      "symbol": "_ioabort"
-    },
-    {
-      "path": "add_nullcon_driver.c",
-      "symbol": "add_nullcon_driver"
+      "path": "backlog.ASM",
+      "symbols": [
+        "_cdevinput",
+        "_cdevscan",
+        "_circgetc",
+        "_ioabort",
+        "add_nullcon_driver"
+      ],
+      "backlog": true
     }
   ]
 }

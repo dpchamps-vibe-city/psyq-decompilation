@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d33b7cb7d57eb547_0", McxCardType);
+INCLUDE_ASM("build/libraries/nonmatchings/libmcx_22", McxCardType);

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_bec2cecf52efdd87_0", _SpuInit);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_4", _SpuInit);

@@ -4,7 +4,7 @@ This is the single entry point for the session's reconstruction, compiler-proven
 
 ## 1. Bottom line
 
-- **`realloc3` was recovered and committed:** 57/57 function words, with exact-diff, full-build, scope and clean-source finalization passing. Commit: `0759b22` (`match lib_dacb6c202432cdbd_0::realloc3`).
+- **`realloc3` was recovered and committed:** 57/57 function words, with exact-diff, full-build, scope and clean-source finalization passing. Commit: `0759b22` (`match libapi_87::realloc3`).
 - **The private byte-copy helper is still unresolved.** Under unmodified Homebrew Psy-Q 2.8.1, the best clean-C candidate matches 107/108 whole-member words, but one instruction and its associated relocation differ. This is **not a match**.
 - **Production remains the configured GNU-based GCC 2.7.2 rebuild.** It is not an authenticated original Sony/SN compiler executable. Earlier notes calling it “Sony GCC 2.7.2” overstated its provenance; that wording is superseded here.
 - **Homebrew 2.8.1 is a concrete, measured reconstruction; equivalence to this object's historical producer remains unproven.** Its controlled trial did not justify a global migration.
@@ -30,7 +30,7 @@ The original member is `library-input/redux/libapi/87-realloc3.o`:
 
 ```text
 SHA-256 432bbcee5061fc2ba2287384b69383bcd9e5893ef0998574d032a969063fba22
-member  lib_dacb6c202432cdbd_0
+member  libapi_87
 ```
 
 It contains:
@@ -72,7 +72,7 @@ Two further distinctions mattered:
 This worked with the **existing** owning-TU flags:
 
 ```make
-CC1FLAGS_lib_dacb6c202432cdbd_0 := -fforce-addr -fno-rerun-cse-after-loop
+CC1FLAGS_libapi_87 := -fforce-addr -fno-rerun-cse-after-loop
 ```
 
 No new override or source-policy exception was introduced. Removing just the loop boundary later broke the member under both the baseline and Homebrew 2.8.1 no-split trial. It must not be removed as apparently redundant without remeasurement.
@@ -85,7 +85,7 @@ At reopening, the ledger contained 50 measurements but only 23 distinct compiled
 
 The decisive new axis was a CSE-region boundary, not another cast spelling. This is a concrete example of why a closure must retain its source, compiler and context premises.
 
-Evidence and intermediate staged residuals: [the verified reconstruction note](realloc3-cse-loop-boundary.md), `build/realloc3-reopened/`, and `build/pipelineReversal/lib_dacb6c202432cdbd_0::realloc3/`.
+Evidence and intermediate staged residuals: [the verified reconstruction note](realloc3-cse-loop-boundary.md), `build/realloc3-reopened/`, and `build/pipelineReversal/libapi_87::realloc3/`.
 
 ## 4. Compiler provenance: what the names actually establish
 

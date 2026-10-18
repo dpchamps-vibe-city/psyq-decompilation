@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libgs/55-gs_107.o[0] 55-gs_107.o
- * sha256: b8ff3094e61440444cdaaec0944529542f7d9d24142fbe9b64da712f15b97e73
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[55] GS_107.OBJ
+ * sha256: f593e10973684257db59aab1254b773828fa41262d319881609fc4ed9b76921b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: GsSetFlatLight
+ * Functions: GsSetFlatLight, func_00000520, func_00000584
  */
 #include "common.h"
 #include "include_asm.h"

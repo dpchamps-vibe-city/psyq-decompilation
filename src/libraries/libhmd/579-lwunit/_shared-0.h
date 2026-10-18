@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/579-lwunit.o[0] 579-lwunit.o
- * sha256: 0ae563293cf0733edb165f979d9c9e5dc3798d7824333867ccd4eae664f8cd3a
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[579] LWUNIT.OBJ
+ * sha256: fd7c785cfe16f7a9139c7c813ad39b996d51bb9530e90100150ef80e73bebe17
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetLwUnit
  */

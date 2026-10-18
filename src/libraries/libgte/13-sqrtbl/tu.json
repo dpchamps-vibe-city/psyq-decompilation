@@ -1,13 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_fec290393c375525_0",
+  "member": "libgte_13",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
+      "path": "backlog.ASM",
+      "symbols": [],
+      "backlog": true
     }
   ]
 }

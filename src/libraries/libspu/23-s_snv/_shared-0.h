@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/23-s_snv.o[0] 23-s_snv.o
- * sha256: b194ecf9730523519b02718d98180985c74d0cf083fd9618e883eaf7cd05696c
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[23] S_SNV.OBJ
+ * sha256: 98294b0237abc4663d9d5e3ffa97dfe57ae2155a930fcf7d2486cd92bd668860
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetNoiseVoice
  */

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a7bc5d9be989e039_0",
+  "member": "libgte_127",
   "parts": [
     {
-      "path": "rmd_03.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotRMD_GT3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

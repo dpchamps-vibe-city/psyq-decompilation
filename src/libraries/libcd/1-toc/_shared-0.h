@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/1-toc.o[0] 1-toc.o
- * sha256: f65f48d2d5e239a0145488d07ec5116b3a5557ec24448845e8dbc10e682a9c78
+/* Original TU: library-input/psyq/LIB/Libcd.lib[1] TOC.OBJ
+ * sha256: f6ff1d773f792825423a513be136ea7e97e6cf0500001b3f1efe1d87f1bbd06d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdGetToc, CdGetToc2
  */

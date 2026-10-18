@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/13-de_0.o[0] 13-de_0.o
- * sha256: 293a5f3430c94018cb6a890bc08ac460018fd1f143f26b6e686b04bf4fd2af85
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[13] DE_0.OBJ
+ * sha256: 11b849f9f78e47ef766c9b93044439777409faa8a163148b99acae2463d8a70d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSetNrpnVabAttr0
  */

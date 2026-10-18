@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_787b4f73d673f465_0",
+  "member": "libgte_239",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

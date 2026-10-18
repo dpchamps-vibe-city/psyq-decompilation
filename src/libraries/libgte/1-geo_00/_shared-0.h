@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/1-geo_00.o[0] 1-geo_00.o
- * sha256: 262f8c2ed16a218d06bcb0a4ef4f0476ebd10a376c90df96b40a2d942855341f
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[1] GEO_00.OBJ
+ * sha256: 7feb60709cd65c262c351e82d1ca7688b529732f1d67ed5142e06342f9c53fe7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: rsin, sin_1
  */

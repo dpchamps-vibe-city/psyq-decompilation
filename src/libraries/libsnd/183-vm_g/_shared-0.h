@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/183-vm_g.o[0] 183-vm_g.o
- * sha256: 9e0a109cc08cc7d4a33fd25c36e0f5395f874828649851a942f757a532861871
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[183] VM_G.OBJ
+ * sha256: 8e43fe5aeb04027c8c7f00a912e0c72017309f33cbd771118fb1fdb9cb661b90
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

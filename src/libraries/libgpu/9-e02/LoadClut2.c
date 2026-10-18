@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_7a07ae4d22027db1_0", LoadClut2);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_9", LoadClut2);

@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libcd/6-cdplay.o[0] 6-cdplay.o
- * sha256: 1624e62ac5adecdc32fa17a4d93aea38f29eb31938187f47c6a3305e679a1867
+/* Original TU: library-input/psyq/LIB/Libcd.lib[6] CDPLAY.OBJ
+ * sha256: 7672e11b34bec1289b627b47ffc92935339e49bf6e1feca8383ec8fe69252760
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: CdPlay
+ * Functions: CdPlay, func_000003EC, func_00000564
  */
 #include "common.h"
 #include "include_asm.h"

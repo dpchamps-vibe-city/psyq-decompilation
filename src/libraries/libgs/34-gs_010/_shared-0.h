@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/34-gs_010.o[0] 34-gs_010.o
- * sha256: 115d2ba9b8c2887647054c28d1e7fb5a0de4bd9348282f5cc0e9ea82dd6c2876
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[34] GS_010.OBJ
+ * sha256: c45ecab1a5ba50fbfe4b5320c59ac667d6c5233414be4710a21c99fe875362b8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSwapDispBuff
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/40-p28.o[0] 40-p28.o
- * sha256: 21b9a674f0ba5c2ab85c7a116f18f52424ecdd01d0021c09ea2cd6cd6c8ca085
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[40] P28.OBJ
+ * sha256: fbfea8364360cc579475d80c37d54c57de16c6248fa712fa79d1476000ded39b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetLineG2
  */

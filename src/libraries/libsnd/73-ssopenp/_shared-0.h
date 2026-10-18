@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/73-ssopenp.o[0] 73-ssopenp.o
- * sha256: a343c6246076bd9359dc9b361a7b96e8d17437db68055bbb8448719db26c9d00
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[73] SSOPENP.OBJ
+ * sha256: e8595d63c4efe372a794cb91786c516e824f5c4290158b4f3303f45d51a9d9d3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSepOpen
  */

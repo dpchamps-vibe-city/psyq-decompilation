@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/standalone/mcgui.o[0] mcgui.o
- * sha256: 374bb1d8aaa74b1591c43b7165c109a38d968390ef7c9321d3f05eef24eb0828
+/* Original TU: library-input/psyq/LIB/MCGUI.OBJ[0] MCGUI.OBJ
+ * sha256: bab909218c23c1c3deff177d86dd81f1e297ae6c0320292ca024b28b7fa235e7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: AdjustSprtData, UsGetTotalWidth, SsVabTransfer, voice_key_on2, _make_bg_sprt, UsGetTotalWidth2, IsMcguiExternal, McGuiSave, McGuiLoad, _McGuiSetExternalFont
+ * Functions: func_00000090, func_00000250, AdjustSprtData, func_00000438, func_000006EC, func_00000A50, func_00000A8C, func_00000B54, func_00000B9C, SsVabTransfer, func_00000C54, func_00000DDC, func_00000E44, voice_key_on2, func_00000FAC, func_00000FCC, func_00001088, func_0000113C, func_0000116C, func_00001348, func_00001578, func_00001804, func_00001944, func_00001B10, func_00001C50, func_00001C6C, func_00001D10, func_00001DA4, func_00001DD8, func_00001FA8, func_00002078, func_0000209C, func_000020A4, func_00002144, func_0000277C, func_00002A10, _make_bg_sprt, func_00002C30, func_00002E10, func_00002E90, func_00002F54, func_00003314, func_000033B0, func_00003460, func_00003614, func_0000364C, func_00003658, func_00003900, func_0000390C, UsGetTotalWidth, UsGetTotalWidth2, func_0000399C, func_00003ACC, func_00003B90, func_00003DE8, func_00003F74, func_000041AC, func_00004218, func_000046C4, func_0000471C, func_00004940, IsMcguiExternal, func_00004E20, func_00004E98, func_00004EB8, func_00004ECC, func_00004FBC, func_00005054, func_00005060, func_00005070, func_00005088, func_000054FC, func_0000556C, func_00005600, func_0000567C, func_000058B4, func_00005928, func_0000597C, func_00005AF8, func_00005CA8, func_000066F4, func_000067B4, McGuiSave, func_000068D4, func_000068DC, func_00006924, func_00006B4C, func_00007238, func_00007304, McGuiLoad, _McGuiSetExternalFont, func_00007470, func_00007924
  */
 #include "common.h"
 #include "include_asm.h"

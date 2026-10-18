@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/72-gs_123.o[0] 72-gs_123.o
- * sha256: cc999e2c97e9aecb5b16f0cc69767285af0b3f9eeb70ee68e5d053bb56261e06
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[72] GS_123.OBJ
+ * sha256: cca7440cdf79cc4c5052f1b39f2534e289a8e3974b9b2754fe3ea89cf7addd6f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: Gssub_make_matrix
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/10-cor_04.o[0] 10-cor_04.o
- * sha256: 3572d2b8a63e3056871538a6293fcaf379b1791d8bcf2d54dcfc0dac90faca6b
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[10] COR_04.OBJ
+ * sha256: 4f9cbc35c9f81eb4c6b14bbc00e4401040c05ee3bec34d35ce038df4dc2bb2e7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: cln_1, cln
  */

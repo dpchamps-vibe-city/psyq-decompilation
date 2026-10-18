@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/71-ssnoff.o[0] 71-ssnoff.o
- * sha256: 6aa318ef95c0f3f0da9d07910c101c986830e78dae189c45a0b87a891251bb22
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[71] SSNOFF.OBJ
+ * sha256: 2b90ac7b021e314082ea0c74ac16de66a88144f5b3c2bb1c02c6d8af4a67eae8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetNoiseOff
  */

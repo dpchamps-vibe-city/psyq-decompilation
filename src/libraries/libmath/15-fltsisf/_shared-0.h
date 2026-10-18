@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/15-fltsisf.o[0] 15-fltsisf.o
- * sha256: 63fc30f855bd472d5de408923af2f0894d60400b16837e18465b7ad1b19f1968
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[15] FLTSISF.OBJ
+ * sha256: 636bb9437e8d31d64be2fb9b8b3c80def0d113c8381f8485db1b8e177a4e4855
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __floatsisf
  */

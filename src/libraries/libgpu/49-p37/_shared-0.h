@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/49-p37.o[0] 49-p37.o
- * sha256: b99be9a492292f5b57448ab45933d71edd1f63def88d0cdf289b9bb0b213aceb
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[49] P37.OBJ
+ * sha256: fb448b047c194194bf6c9aec53a05392488a781eacc926140b583db27905c22e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DumpDrawEnv, DumpDispEnv
  */

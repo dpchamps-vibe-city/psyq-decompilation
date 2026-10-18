@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/127-s_grmdt.o[0] 127-s_grmdt.o
- * sha256: 8b24e88bc69a0042a8da6d4d046029e0dd97a8e4ddfcee090ecbc289fad76562
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[127] S_GRMDT.OBJ
+ * sha256: ad17971482c2863a80fceebee5d42b040ecf829ba8d3fb55a663732366d513e3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetReverbModeDelayTime
  */

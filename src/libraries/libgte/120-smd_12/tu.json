@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5cd43c002cd1db57_0",
+  "member": "libgte_120",
   "parts": [
     {
-      "path": "smd_12.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotSMD_SV_F4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

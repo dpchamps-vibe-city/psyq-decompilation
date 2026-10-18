@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/92-sssrv.o[0] 92-sssrv.o
- * sha256: 181db7181c7f9d801611717f7b19a32827e437b309418a5ad7eb5c491c1de4fb
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[92] SSSRV.OBJ
+ * sha256: 1abc3437d7bfaecead0b42254b8a82466e8b2ead7ee19c169962550387a9dec7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetRVol
  */

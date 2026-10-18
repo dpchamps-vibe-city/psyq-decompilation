@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/34-s_srd.o[0] 34-s_srd.o
- * sha256: 370d9601c7eae136c8d000edf47497339398b2009e63daf264b8f2b8338a802e
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[34] S_SRD.OBJ
+ * sha256: 702b49d54ef13c573dbe0827ea87746e1115dde060fbc6d00735cbceffd587c3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetReverbDepth
  */

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_9ea347df8cd01eb4_0",
+  "member": "libc_13",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "setjmp.c",
-      "symbol": "setjmp"
+      "path": "backlog.ASM",
+      "symbols": [
+        "setjmp"
+      ],
+      "backlog": true
     }
   ]
 }

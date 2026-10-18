@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/11-cor_05.o[0] 11-cor_05.o
- * sha256: 03262f055c322a55f7800b2d05d7ec7395fa8e92d84bd80a85f38e0772795efa
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[11] COR_05.OBJ
+ * sha256: 380709fbb33d942d13761ae165dfda67ded6ad45974fb7a939ceaaa6a30e3a4f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: csqrt_1, csqrt
  */

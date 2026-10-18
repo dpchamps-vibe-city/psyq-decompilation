@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/21-strlen.o[0] 21-strlen.o
- * sha256: e10b2cf4f2ff8196cbe2e85f7b4170583c2214905f89240b889e5bcccae00c61
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[21] STRLEN.OBJ
+ * sha256: 09c32e826d0419e49a27ac5ff27140db65207753faab6634b187ff861ac9c670
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strlen
  */

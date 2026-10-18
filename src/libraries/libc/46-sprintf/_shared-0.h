@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc/46-sprintf.o[0] 46-sprintf.o
- * sha256: a623aa41b98867fe66dcab949513c81a80f1bb945e07a4aacc4bfea51094cd14
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[46] SPRINTF.OBJ
+ * sha256: c319155018f04ab800b4bb4b8003aac9046e29fd0a1bd5b1d139db3107bc20c7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: sprintf
  */
@@ -24,6 +24,4 @@ typedef struct {
 typedef char *CharPtr;
 
 static FmtSpec D_000009F0 = {0};
-static const unsigned char upper_digits[] = "0123456789ABCDEF";
-static const unsigned char lower_digits[] = "0123456789abcdef";
 

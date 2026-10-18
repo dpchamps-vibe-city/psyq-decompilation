@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/25-s_snc.o[0] 25-s_snc.o
- * sha256: 8b351a4f9b27ce57ced66b3f83b85d155c2bf92a4dfd730a57c31d0220e15402
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[25] S_SNC.OBJ
+ * sha256: 42d82b3829c89ecdd4e80e48e29f1f34ae3c9dac30c6f7e06c72584180febf7f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetNoiseClock
  */

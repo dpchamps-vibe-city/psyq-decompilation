@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/30-strtoul.o[0] 30-strtoul.o
- * sha256: 9a90e67e4f144d7476a745c6664e7286e9828e5d861343dab6d8390a142cb1b2
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[30] STRTOUL.OBJ
+ * sha256: 4e6890e32e8d8f34fe845bab8a256696283110db9e749b358b71f86601c3dff3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strtoul
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/93-objt.o[0] 93-objt.o
- * sha256: 295b88d3d7e93fd6711b5db7ac8c55c1f5c01cb029599bc280c6be4f333ccbcd
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[93] OBJT.OBJ
+ * sha256: 26d0dc96fa6c2a3d47fe3c720de60b58fa02bb3bae6130ef8429f6ef28c85c27
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsLinkObject4
  */

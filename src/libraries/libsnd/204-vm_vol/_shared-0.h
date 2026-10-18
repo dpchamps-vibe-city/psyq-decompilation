@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/204-vm_vol.o[0] 204-vm_vol.o
- * sha256: 3caf6b8ee6894c062688d5d9885454fe7ae3f6722fd620fd1ae4bbd0082c2947
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[204] VM_VOL.OBJ
+ * sha256: 008e789ca9e042d07e7b18568b8ac74f9a60c3c9aa85724afe8641cf3b7bbedf
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmSetVol
  */

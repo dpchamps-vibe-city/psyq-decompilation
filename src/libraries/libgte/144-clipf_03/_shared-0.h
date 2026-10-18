@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/144-clipf_03.o[0] 144-clipf_03.o
- * sha256: b096dd34e38eeb2fb8c35ba4f3c7bd66910302ebf41ce9e030cf12b6c370f83e
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[144] CLIPF_03.OBJ
+ * sha256: 9e96718f20a1aca1fd673e1bd97110ec25615057e06d4ccd3486dec1029e7127
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: Clip4F
  */

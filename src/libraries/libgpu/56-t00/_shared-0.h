@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libgpu/56-t00.o[0] 56-t00.o
- * sha256: 4c3541411493383b5db658042a68fb3e3650808b47de2ed032d73d7b246f42f1
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[56] T00.OBJ
+ * sha256: 524133a364088bf8b93f1c468678226e83380d20782e6854b0a3f8a8bb633d98
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: OpenTIM, ReadTIM
+ * Functions: OpenTIM, ReadTIM, func_000000EC
  */
 #include "common.h"
 #include "include_asm.h"

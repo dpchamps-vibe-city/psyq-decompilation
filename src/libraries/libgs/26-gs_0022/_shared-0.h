@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/26-gs_0022.o[0] 26-gs_0022.o
- * sha256: 5ca92686f830027ef8097405ed16993be2868e96ff2c1c7c94ae0f1df97927a4
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[26] GS_0022.OBJ
+ * sha256: bd9f811ee5afea0a2ebed0ad02031094eb72f93f10a9c97547a8ad9050c635a0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetDrawBuffOffset
  */

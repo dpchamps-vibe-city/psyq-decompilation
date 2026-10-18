@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/25-d3_005.o[0] 25-d3_005.o
- * sha256: 6ab1ad77662640bb74e95995748c6987780ba5ebd022b001393c40b7146bb605
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[25] D3_005.OBJ
+ * sha256: 5e3477978d75fb727a694f12ead42b1e825daaec82489036c33e1c0246ce9296
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsIntToPos
  */

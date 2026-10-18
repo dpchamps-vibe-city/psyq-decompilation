@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/87-preset2.o[0] 87-preset2.o
- * sha256: 9904121362e941a9cd37c9f33285efe2edfb1d073acdd392bbc7b5b7cdb91ef7
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[87] PRESET2.OBJ
+ * sha256: 866317dfafe32c9282c97e61c82468191507012a97f81696770d112ce1efbd24
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortObject5
  */

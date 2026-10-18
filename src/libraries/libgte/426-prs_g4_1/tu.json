@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_c0bba408cc181e19_0",
+  "member": "libgte_426",
   "parts": [
     {
-      "path": "prs_g4_1.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsPrstNG4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

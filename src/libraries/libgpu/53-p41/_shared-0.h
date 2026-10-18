@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/53-p41.o[0] 53-p41.o
- * sha256: fb2c0e04ad4c732c5f3db16eb7f2e7e489b3cf05ae80b9941e8b525c2cd6ac1c
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[53] P41.OBJ
+ * sha256: 2c51544aa3479931252eb6993c28f3ea06cd3809c6b3a00f51f2cbc892be7271
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetDrawMode
  */

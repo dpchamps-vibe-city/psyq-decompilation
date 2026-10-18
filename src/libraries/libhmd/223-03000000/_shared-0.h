@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/223-03000000.o[0] 223-03000000.o
- * sha256: ef4cffbb109ea46d865c4132a030224d0ea27ee89c7049f080a50c21a403857b
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[223] 03000000.OBJ
+ * sha256: 728c261e2e855b2082905d5ff7703bc5532a81dfb10dbc6729ca738a77dbbb7b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsU_03000000
  */

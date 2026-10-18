@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/42-s_023.o[0] 42-s_023.o
- * sha256: 02102f47ff81feeddeddc17f4934cdeb977aa2e89f8a08db32e0506a3cb3798e
+/* Original TU: library-input/psyq/LIB/Libcd.lib[42] S_023.OBJ
+ * sha256: d77913ec28b28075bfe94079b75333ad9ee2e5c9bba61fe2b0a5fa6195fa1601
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdDataCallback
  */

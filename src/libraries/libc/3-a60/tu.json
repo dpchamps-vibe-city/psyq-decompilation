@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a3b8333823ff43b5_0",
+  "member": "libc_3",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "getchar.c",
-      "symbol": "getchar"
+      "path": "backlog.ASM",
+      "symbols": [
+        "getchar"
+      ],
+      "backlog": true
     }
   ]
 }

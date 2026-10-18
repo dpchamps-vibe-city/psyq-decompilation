@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/80-gs_133.o[0] 80-gs_133.o
- * sha256: 3fa17b8cb9b83cc9a72a26c9e174a8bd2f311a35115c09a6ec52da57b9c0c73c
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[80] GS_133.OBJ
+ * sha256: fea841598d0b364d56324f69b6d3c826581528ae283f68b016dfa8835b3c16c5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsGetLw
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/12-mcxcmd13.o[0] 12-mcxcmd13.o
- * sha256: 9e0d898db81bf67c8403cc67c4deb761801ad6dfd895e89732d6a98dd23a19dc
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[12] MCXCMD13.OBJ
+ * sha256: 3b09294ceb91c3a11b908ba4937026a84d0eb003bb2f26e49ec104528921d9df
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McxSetTime
  */

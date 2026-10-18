@@ -39,7 +39,7 @@ whole-member verification and m2c.
 - Original-word recognition classifies the six internal BIOS veneers as
   assembly-only backlog, not ordinary C tasks or new assembly-policy exceptions.
 
-`lib_b98fea1557178089_0::SetConf` now owns `.text` offsets `0..0x220`
+`libapi_73::SetConf` now owns `.text` offsets `0..0x220`
 (544 bytes), followed by eight private entries: six 28-byte BIOS veneers and two
 52-byte normal helpers. Complete `.text` remains `0x330` bytes. Helper names are
 local listing spellings, **not runtime addresses**; member/section/offset are
@@ -50,8 +50,8 @@ still authoritative. Shared data remains separately represented.
 ```sh
 npm run split-all
 npm run library -- check-splits
-npm run library -- preflight 'lib_b98fea1557178089_0::SetConf'
-npm run library -- preflight 'lib_f5b70e00e12530c5_0::ResetRCnt'
+npm run library -- preflight 'libapi_73::SetConf'
+npm run library -- preflight 'libapi_72::ResetRCnt'
 npm run check-all
 ```
 

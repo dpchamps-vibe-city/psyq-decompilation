@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_33553230a4ba308b_0",
+  "member": "libgte_292",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetRGBfifo.c",
-      "symbol": "SetRGBfifo"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetRGBfifo"
+      ],
+      "backlog": true
     }
   ]
 }

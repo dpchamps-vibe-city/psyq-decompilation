@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/78-s_svrr.o[0] 78-s_svrr.o
- * sha256: 33e9f6a5a658a69644d5c0021eee83badcab095667155db390c4b445151d2ffc
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[78] S_SVRR.OBJ
+ * sha256: b863d8a73f59461381002f955e86f8ec0c9782e5496c1eb1c8859896a48f860a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetVoiceRR
  */

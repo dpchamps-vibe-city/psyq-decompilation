@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libetc/0-pad.o[0] 0-pad.o
- * sha256: 6b4bbc6332e1da5942dfb7cb4b716707298028fb5da9b5bb44b63164c9ea815e
+/* Original TU: library-input/psyq/LIB/LIBETC.LIB[0] PAD.OBJ
+ * sha256: adff74be3e42bd80061bdf4ac9c6531e45b56d124e1d3c4a561268700ab8cd25
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadInit, PadRead
  */

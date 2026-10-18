@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/113-dmycc_6.o[0] 113-dmycc_6.o
- * sha256: 41aae1e9b9de1f5989d8c2846ffdf76aba7187da9af0e276521302f38c34db63
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[113] DMYCC_6.OBJ
+ * sha256: f25a5c3fc003de71ccbb5bcb36b81143ac2a95aeb07b2d16440a4dbd51d85506
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsContDataEntry
  */

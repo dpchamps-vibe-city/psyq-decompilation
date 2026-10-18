@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a1073e055d898f06_0",
+  "member": "libapi_7",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "LoadExec.c",
-      "symbol": "LoadExec"
+      "path": "backlog.ASM",
+      "symbols": [
+        "LoadExec"
+      ],
+      "backlog": true
     }
   ]
 }

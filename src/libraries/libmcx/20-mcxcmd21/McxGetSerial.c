@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_d895980c99399a15_0", McxGetSerial);
+INCLUDE_ASM("build/libraries/nonmatchings/libmcx_20", McxGetSerial);

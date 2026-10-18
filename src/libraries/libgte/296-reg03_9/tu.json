@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_c2a44829b4c11b1f_0",
+  "member": "libgte_296",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetSZfifo4.c",
-      "symbol": "SetSZfifo4"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetSZfifo4"
+      ],
+      "backlog": true
     }
   ]
 }

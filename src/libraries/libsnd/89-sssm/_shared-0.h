@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/89-sssm.o[0] 89-sssm.o
- * sha256: 10a717268cc23bc527ae43c04371d4a8c6c1eb633fb301b1145a6a107dce3ace
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[89] SSSM.OBJ
+ * sha256: f309b4c42f9ab7613d1d14ef38833fc3ae6098a225d538f69b9f72048db043ce
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetMute
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/39-s_020.o[0] 39-s_020.o
- * sha256: a316d8ead19e0122085d0f5931c7e205e9a39135fd037378c9739f707fe77ef9
+/* Original TU: library-input/psyq/LIB/Libcd.lib[39] S_020.OBJ
+ * sha256: ee8a7c15e4d1628da14d74aaa57f0149e64defcb6f36237bbbf72c17b741a82b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdMix
  */

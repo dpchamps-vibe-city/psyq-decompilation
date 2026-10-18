@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/11-c_006.o[0] 11-c_006.o
- * sha256: 1b4696a0c6572397b7d0e5fa117f28b39b1ce0a22ee5f2abc89491e0109ddc43
+/* Original TU: library-input/psyq/LIB/Libcd.lib[11] C_006.OBJ
+ * sha256: 0157474d552f79316979030f292f24a4e2b55737f1d4183831ab812d09c2c701
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StSetEmulate
  */

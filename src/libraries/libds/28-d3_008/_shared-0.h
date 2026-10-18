@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/28-d3_008.o[0] 28-d3_008.o
- * sha256: 9dc1fc837f8219a3405385fab9abb84a4ff431d3ac0100ad88753d3c06cb6148
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[28] D3_008.OBJ
+ * sha256: 477ffa2a20aee3b8e1437a2e7c1d7e6ba5ab8a959b55b15a04e3bad9119eceb1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsLastPos
  */

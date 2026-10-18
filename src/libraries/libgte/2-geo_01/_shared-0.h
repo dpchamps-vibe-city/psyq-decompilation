@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/2-geo_01.o[0] 2-geo_01.o
- * sha256: 3d00bae716bd53aebb91b7061ac236ad7d82146901c45c7e66435d5f038b21cb
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[2] GEO_01.OBJ
+ * sha256: 3e538835226fc73ddf1ad78d903d65adde4e89eef76a9874a2df92eec2ff16e1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: rcos
  */

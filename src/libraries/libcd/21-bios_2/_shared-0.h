@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/21-bios_2.o[0] 21-bios_2.o
- * sha256: 1fcbea693575509ed7c91df5d34bea21cdbcc1ff7a9887ed031d94e2d722b46e
+/* Original TU: library-input/psyq/LIB/Libcd.lib[21] BIOS_2.OBJ
+ * sha256: 55296b6a3a919aa048b60ee620d1063e3106be123fd1c22216176138a4e21d9c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CD_getsector
  */

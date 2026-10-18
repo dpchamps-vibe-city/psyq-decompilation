@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/29-p17.o[0] 29-p17.o
- * sha256: 7d2e21a6cfd1ae3ae6d326a4a2b8264cc7c39ee9fe519f257475d5134527cfb0
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[29] P17.OBJ
+ * sha256: 0746b55ed8936abf7192fa4b0cc26e93b35d3aad6cc005304b079ea3cd6c6714
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetPolyFT4
  */

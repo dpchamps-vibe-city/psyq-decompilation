@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/261-geo_2.o[0] 261-geo_2.o
- * sha256: 60df6cb0a427481e33f5fa9e31f2c431ed164b7b75ff21e9acfe8474efca16a0
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[261] GEO_2.OBJ
+ * sha256: 433b6b07e7605fa6fdf7b87aedf5d9a9b92fd2e44b7ac99244702c527e190415
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: RotMatrix_C
  */

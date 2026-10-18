@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/23-d3_003.o[0] 23-d3_003.o
- * sha256: 0fdf04a7da6d1ec84e8326d0c7812b18ff1c08e8f7a7655db664570355d3f213
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[23] D3_003.OBJ
+ * sha256: 7364fd563d03abf16d2a1c872110149e1a5e2c039b3e3039587ad364dc8f2148
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsGetSector2
  */

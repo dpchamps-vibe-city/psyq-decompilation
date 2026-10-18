@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/127-dag3_03.o[0] 127-dag3_03.o
- * sha256: c9b652b289d4272ec46579a06aee26af4dd20acc3cb9dedd6964fbfef5565d40
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[127] DAG3_03.OBJ
+ * sha256: 7dff868c38464f33db3b0ee3dee47d2af33e7ab2601e235b5fd67a8f298dbdb8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsA4divNG3
  */

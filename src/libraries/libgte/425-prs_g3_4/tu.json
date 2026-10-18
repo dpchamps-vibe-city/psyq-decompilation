@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_52f0aebce7ad2452_0",
+  "member": "libgte_425",
   "parts": [
     {
-      "path": "prs_g3_4.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsPrstG3LFG"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

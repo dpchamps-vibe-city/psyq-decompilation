@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/35-itoa.o[0] 35-itoa.o
- * sha256: 96d218877e9ea85267a1e2136854caf01969a7291fb0bfb1bf6b55fb593a6b49
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[35] ITOA.OBJ
+ * sha256: a75da808d6ced50a3a3b548c3a0a5b72832f8f23fc6434618cbe1d97a47d73c6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: itoa
  */

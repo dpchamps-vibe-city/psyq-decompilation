@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/181-dvg4_04.o[0] 181-dvg4_04.o
- * sha256: 4b3377cbaf29897e240c47776a40326d1b3375b7ff3eff2618b78249c42cacf0
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[181] DVG4_04.OBJ
+ * sha256: 064a89bc4fefa87aacccb1b64bccdcd9d77782df2ddd30c7d91a27803253f44d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DivideG4
  */

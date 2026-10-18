@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_d4e02f1d13a8852f_0",
+  "member": "libgte_54",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadGeomScreen.c",
-      "symbol": "ReadGeomScreen"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadGeomScreen"
+      ],
+      "backlog": true
     }
   ]
 }

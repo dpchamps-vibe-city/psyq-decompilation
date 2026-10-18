@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/0-ccadsr.o[0] 0-ccadsr.o
- * sha256: 182d7beacc3f2007819c4a287bb356db44b709dc7ce25b6377d8e4da5d816e1f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[0] CCADSR.OBJ
+ * sha256: bfd32c5f30225d6cd05c5743aeff89776e5cd5d73903c27b9f929c6f7c297ee4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsUtResolveADSR, _SsUtBuildADSR
  */

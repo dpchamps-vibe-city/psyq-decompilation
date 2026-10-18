@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/53-ssgcmute.o[0] 53-ssgcmute.o
- * sha256: f90265dce5e345f98f3cfee2375011d8991aaa12d35b4dc9291ca4e9230d4c05
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[53] SSGCMUTE.OBJ
+ * sha256: 83526b3e747ee62f41896b040ac11625ad2f70bee593508f41f268981dbb5f92
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsGetChannelMute
  */

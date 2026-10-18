@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_803186daaf5b0811_0",
+  "member": "libc_2",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "putc.c",
-      "symbol": "putc"
+      "path": "backlog.ASM",
+      "symbols": [
+        "putc"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libhmd/292-000c0051.o[0] 292-000c0051.o
- * sha256: 1df7e1d4bc55e879fdba14934c108419b3210fd1930b4aeef16e4a1e3b576302
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[292] 000C0051.OBJ
+ * sha256: 383ec2ebb05052d47f21eaea222aeb7ba74150295fc3d1bf5fb2832d3a771187
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: GsU_000c0051
+ * Functions: GsU_000c0051, func_000004C4, func_00000924, func_00000A3C, func_00000BF8
  */
 #include "common.h"
 #include "include_asm.h"

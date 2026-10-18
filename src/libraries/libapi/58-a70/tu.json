@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_183aad7d19a409c7_0",
+  "member": "libapi_58",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "undelete.c",
-      "symbol": "undelete"
+      "path": "backlog.ASM",
+      "symbols": [
+        "undelete"
+      ],
+      "backlog": true
     }
   ]
 }

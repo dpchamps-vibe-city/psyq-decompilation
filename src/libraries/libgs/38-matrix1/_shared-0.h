@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/38-matrix1.o[0] 38-matrix1.o
- * sha256: e0b278fe6be41ba7a97dc5f185f7cbdde7ceb118b7f5eaf2508324a218856e1d
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[38] MATRIX1.OBJ
+ * sha256: 8673c0d47ef602adb06a9df45922a8a5698414921b288b797082667d6934fad7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

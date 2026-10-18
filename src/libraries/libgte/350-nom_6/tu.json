@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a26028d31bb52374_0",
+  "member": "libgte_350",
   "parts": [
     {
-      "path": "nom_6.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotNclip3_nom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

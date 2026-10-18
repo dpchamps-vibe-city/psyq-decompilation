@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/223-q_keyon4.o[0] 223-q_keyon4.o
- * sha256: 0dba0415e7fd23b52e76d859d78fd91a778ed9dfaac16c655a01ce971f303c70
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[223] Q_KEYON4.OBJ
+ * sha256: e02d495ba5ca01cfd9676ca1a89aacd99ebc2bf16669642f36ef5badd82b5481
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsGetActualProgFromProg
  */

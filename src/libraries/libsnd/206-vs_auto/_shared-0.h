@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/206-vs_auto.o[0] 206-vs_auto.o
- * sha256: 1cb08b5353d887c60a17081aba9e31e6cd293b5408d021bbd3443e48640810fd
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[206] VS_AUTO.OBJ
+ * sha256: 18c11098001ae94f7f7825f0964ddbfa386858f530ccf3070f3d595e92fab596
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetAutoKeyOffMode
  */

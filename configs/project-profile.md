@@ -13,24 +13,24 @@ configuration, then regenerate this file.
 
 - Project: relocatable target
 - Platform: PlayStation 1 — MIPS R3000 (`mips1`), little-endian, GTE coprocessor
-- Inputs: `library-input/redux/**/*.o` (ELF/ar)
+- Inputs: `library-input/psyq/LIB/LIBAPI.LIB`, `library-input/psyq/LIB/LIBC.LIB`, `library-input/psyq/LIB/LIBC2.LIB`, `library-input/psyq/LIB/LIBCARD.LIB`, `library-input/psyq/LIB/Libcd.lib`, `library-input/psyq/LIB/LIBCOMB.LIB`, `library-input/psyq/LIB/LIBDS.LIB`, `library-input/psyq/LIB/LIBETC.LIB`, `library-input/psyq/LIB/LIBGPU.LIB`, `library-input/psyq/LIB/LIBGS.LIB`, `library-input/psyq/LIB/LIBGTE.LIB`, `library-input/psyq/LIB/LIBHMD.LIB`, `library-input/psyq/LIB/LIBMATH.LIB`, `library-input/psyq/LIB/LIBMCRD.LIB`, `library-input/psyq/LIB/LIBMCX.LIB`, `library-input/psyq/LIB/LIBPAD.LIB`, `library-input/psyq/LIB/LIBPRESS.LIB`, `library-input/psyq/LIB/LIBSIO.LIB`, `library-input/psyq/LIB/LIBSND.LIB`, `library-input/psyq/LIB/LIBSPU.LIB`, `library-input/psyq/LIB/MCGUI.OBJ`, `library-input/psyq/LIB/MCGUI_E.OBJ`, `library-input/psyq/LIB/NOPRINT.OBJ`, `library-input/psyq/LIB/POWERON.OBJ` (PSY-Q LIB/LNK; ELF diagnostic views)
 - Identity: original member + symbol; coordinates: section + offset, not RAM
 - Source ownership and acceptance: one original member/TU, including all neighboring functions/data and symbolic relocations
-- Original assembly: per-function INCLUDE_ASM; generated data stays assembly-backed until recovered
+- Original assembly: C-origin INCLUDE_ASM fragments or one assembly-origin TU; generated backlog remains explicitly marked until recovered
 - Available analysis: shared instruction/RTL diagnostics, staged residuals, schedule/allocation and loop analysis, callee checks, flag probes, source-shape search, context export, finalization and progress
 
-- Iteration oracle scope: owning translation unit (sections, symbols and relocations)
+- Iteration oracle scope: owning translation unit (whole original/rebuilt .OBJ SHA-256)
 
 ## Toolchain
 
 - **Configured compiler:** gcc trunk-19970318 (`cc1`) — byte-identity NOT confirmed at generation time (generate a fresh owning-TU verdict with the normal diff/finalization tools)
-- **Flags:** `-O2 -G0 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mmips-as -fno-exceptions -fgnu-linker -quiet`
-- **Small-data threshold:** direct GAS requires explicit `-G0`; undeclared-extern small-data rules at nonzero thresholds are not modeled
-- **Assembler semantics:** direct GNU as, default reorder-mode optimization; compiler-input rewrites: move-addu, rdata-section. The configured assembler is the acceptance path
-- **Assembler profiles:** base: gas; sn-aspsx: maspsx (ASPSX 2.80); sn-aspsx-padded: maspsx (ASPSX 2.80)
+- **Flags:** `-O3 -G0 -mips1 -mcpu=r3000 -funsigned-char -fpeephole -ffunction-cse -fpcc-struct-return -fcommon -fverbose-asm -msoft-float -mmips-as -fno-exceptions -fgnu-linker -quiet`
+- **Small-data threshold:** direct GAS requires explicit `-G0` in every profile; nonzero/default small-data rules are unsupported. The `early` layout changes LNK packaging only
+- **Assembler semantics:** direct GNU as (ecoff), unchanged compiler input; declared stages: psyq-dmpsx, psyq-lnk. The configured assembler is the acceptance path
+- **Assembler profiles:** base: gas (LNK standard); sony-early: gas (LNK early)
 - **SDK:** configured SDK 470; reference headers are evidence, not compiler identity
-- **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: none
-- **Preprocessor flags:** `-I/home/dave/Documents/code/psyq-decomp/include -I/home/dave/Documents/code/psyq-decomp/include/library -I/home/dave/Documents/code/psyq-decomp/library-input/converted/include -nostdinc -undef -D__GNUC__=2 -DINCLUDE_ASM_USE_MACRO_INC=1 -lang-c -D_LANGUAGE_C`
+- **Owner profiles:** default `toolchain containerProfiles.library/base`; overrides: `poweron` → `sony-early`
+- **Preprocessor flags:** `-I/home/dave/Documents/code/psyq-decomp/include -I/home/dave/Documents/code/psyq-decomp/include/library -I/home/dave/Documents/code/psyq-decomp/build/headers/reference/1fe8c4a5b7431464b8bad6cc323eab946a7a6849b5b5737f60e737b6d4aa6420 -nostdinc -undef -D__GNUC__=2 -lang-c -D_LANGUAGE_C`
 
 ## Headers — where a declaration or type belongs
 

@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libds/12-dstype.o[0] 12-dstype.o
- * sha256: 821a3fc62d08f6edbb08ecf0a540de0f07cc2aaed47967ea1944c93ca8dddc11
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[12] DSTYPE.OBJ
+ * sha256: b72e5ab0577d70e152adf7417699361be1bcf508a54dd40109e81f9240bf1036
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: DsGetDiskType
+ * Functions: DsGetDiskType, func_0000022C, func_00000278
  */
 #include "common.h"
 #include "include_asm.h"

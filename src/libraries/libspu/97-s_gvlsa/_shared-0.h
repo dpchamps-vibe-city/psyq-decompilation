@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/97-s_gvlsa.o[0] 97-s_gvlsa.o
- * sha256: de6a7f63a78e35f510e991b05e54541f020229ca804d09a900e02b7b17e804b3
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[97] S_GVLSA.OBJ
+ * sha256: 24089d1af4c9370962ed3960d0216299ab96cf3f8d36191697f908eddc9cc717
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetVoiceLoopStartAddr
  */

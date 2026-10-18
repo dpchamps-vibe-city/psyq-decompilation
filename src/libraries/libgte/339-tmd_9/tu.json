@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_cdc8b9a907527c2a_0",
+  "member": "libgte_339",
   "parts": [
     {
-      "path": "tmd_9.s",
+      "path": "backlog.ASM",
       "symbols": [
         "gte_flat_fog3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

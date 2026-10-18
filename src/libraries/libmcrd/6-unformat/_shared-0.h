@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcrd/6-unformat.o[0] 6-unformat.o
- * sha256: 23958833dd4a712b447a8745a1e14737ea743750e617419365de8698d1e06f4c
+/* Original TU: library-input/psyq/LIB/LIBMCRD.LIB[6] UNFORMAT.OBJ
+ * sha256: e3515bf32c4152eeac8508cec810301d84a378f66f0ef1e34c19f6151f02b8ae
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: MemCardUnformat
  */

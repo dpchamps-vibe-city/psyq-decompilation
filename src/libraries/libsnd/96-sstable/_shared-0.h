@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/96-sstable.o[0] 96-sstable.o
- * sha256: eea7aff508f4cd2d19ceee3757265225723c182edfd76937e090811d809556f5
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[96] SSTABLE.OBJ
+ * sha256: 5276a8305608ca6aceeed0a37ec91787e11885f74317d979323a9612aa3b287f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetTableSize
  */

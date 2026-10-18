@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpress/9-tbl_002.o[0] 9-tbl_002.o
- * sha256: bd4f5cc8fe5cccba0dc4e572d8277f554bbbcea4d3338d610d066c53e46e8e97
+/* Original TU: library-input/psyq/LIB/LIBPRESS.LIB[9] TBL_002.OBJ
+ * sha256: c991bfc97fe7b2b3e6ec0736a2ab4d8b8723ba995822d89f0d11a94713be76d9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

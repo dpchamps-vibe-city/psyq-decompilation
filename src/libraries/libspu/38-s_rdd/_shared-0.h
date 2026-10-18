@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/38-s_rdd.o[0] 38-s_rdd.o
- * sha256: 4a02314d5465a8d317c1696e7729b8edf115d51eafb756ce112d1b8538b0fd92
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[38] S_RDD.OBJ
+ * sha256: a014b79e178d3dfe8ba2ffbbda12b613643dcd55f99e1d1cf2754c5ffad6cb8b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuReadDecodedData
  */

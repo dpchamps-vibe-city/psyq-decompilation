@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/178-vm_autop.o[0] 178-vm_autop.o
- * sha256: 84c4fa2d93d6c443783409e43bf494bf3e405e40c0e9b0c9413d51b31757f1b9
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[178] VM_AUTOP.OBJ
+ * sha256: 33e0b1c924f90293e80d538e0e59a105352959d99f179b80477bd7a918be007d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SeAutoPan, SetAutoPan
  */

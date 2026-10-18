@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/115-dmycc_10.o[0] 115-dmycc_10.o
- * sha256: 90f928e0637c6b041ada6c9c98e512e1125528171d6767ab5c186f885336bb49
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[115] DMYCC_10.OBJ
+ * sha256: 5fdd2d67633efa4d8bd9efca2e11af1e753befc1183970d611d87b7cacc808b9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsContPanpot
  */

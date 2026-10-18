@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libsnd/211-vs_vh.o[0] 211-vs_vh.o
- * sha256: 9298971933a82a555ecf2725a009e807247718c791d4f164cb85fde1b6373f92
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[211] VS_VH.OBJ
+ * sha256: 92109ca6a569ce859247548546fac1d28ffff57cc1a95613327f484362c63ccc
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: SsVabOpenHeadSticky, _SsVabOpenHeadWithMode, SsVabFakeHead
+ * Functions: SsVabOpenHeadSticky, SsVabFakeHead, func_000000D0, _SsVabOpenHeadWithMode
  */
 #include "common.h"
 #include "include_asm.h"

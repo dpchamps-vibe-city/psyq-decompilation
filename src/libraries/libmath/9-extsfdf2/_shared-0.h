@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/9-extsfdf2.o[0] 9-extsfdf2.o
- * sha256: a07f1036dc446a5080b717e0a7da8fcee37f9368ddd123f22924ac74494fbe4f
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[9] EXTSFDF2.OBJ
+ * sha256: aed56fc5abde9f2c2619530c1b251eeb55c72dba807d2fd154793d5b77acce74
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __extendsfdf2
  */

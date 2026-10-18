@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/163-ut_rdep.o[0] 163-ut_rdep.o
- * sha256: f5c3a84cafff36e61455e3592ef6ca5ec5ea3f90463b84760b6f5ba0ab20fc0a
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[163] UT_RDEP.OBJ
+ * sha256: 79b7cfe89145de53d848e5645e7bb6b542f4eb389d17f1a1a148c9cf50df432c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtSetReverbDepth
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/19-strcspn.o[0] 19-strcspn.o
- * sha256: b8c8a5b4f565481dad0dc8c58a940b69610e5e44d04f88ce1c7d5c2ce0bd4b0a
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[19] STRCSPN.OBJ
+ * sha256: 78c3f96936dbe90afc71ad40a38e57e94309cd1c251b3ae623a41f126cfd4b25
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strcspn
  */

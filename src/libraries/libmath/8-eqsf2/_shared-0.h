@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/8-eqsf2.o[0] 8-eqsf2.o
- * sha256: 930704df22357eb34266d61168a5167ee8eb32c592bf60fa24be21759f368233
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[8] EQSF2.OBJ
+ * sha256: 1d5c7ecdfddf26309dcee7afa3b54eb6acbaceb81290a814929a4eb3fec1e54a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __eqsf2
  */

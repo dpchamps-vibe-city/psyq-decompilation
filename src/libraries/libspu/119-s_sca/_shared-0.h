@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/119-s_sca.o[0] 119-s_sca.o
- * sha256: 767ba8fd232a123f4e9c69ddd8b653bfae1b240d3139464c3065915eed727877
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[119] S_SCA.OBJ
+ * sha256: 8da2cee76517aba70511eab55a954ff27766f854ed5ee99b1f7259b2dedf79c0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetCommonAttr
  */

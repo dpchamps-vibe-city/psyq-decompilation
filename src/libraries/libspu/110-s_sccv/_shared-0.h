@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/110-s_sccv.o[0] 110-s_sccv.o
- * sha256: 674c56254d7627cc03eccd64d505b40b2844449776c8d565cedef7e0627f3279
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[110] S_SCCV.OBJ
+ * sha256: a0e5638f84691c763aeb6c000ae8483d92f58bba9ab443e6224f35b80e02c8c4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetCommonCDVolume
  */

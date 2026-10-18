@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/120-dmycc_99.o[0] 120-dmycc_99.o
- * sha256: d594261e812ef2baad34136c64b2829df4d7d94f712e95bc07e53e0ee86478e1
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[120] DMYCC_99.OBJ
+ * sha256: 5d59e0b61b3eb9de6f40ec3c5da4cad2f857caa0a68cdee6a85eaac410c90c57
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsContNrpn2
  */

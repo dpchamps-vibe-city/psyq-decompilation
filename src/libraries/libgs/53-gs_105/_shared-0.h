@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/53-gs_105.o[0] 53-gs_105.o
- * sha256: f0e8b8d0fa828e510e7d415ac619128f2da97c354ef4e5f13a2e15d41f7f4379
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[53] GS_105.OBJ
+ * sha256: c818867b30ed55fd9823c7efd07d36b62e99df1d9d97f3df6de2fcba5768c0c0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsMapModelingData
  */

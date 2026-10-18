@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/47-type_1.o[0] 47-type_1.o
- * sha256: 9ea6b7fd9c75175ac9e37c1c443c43fcef813b657ed5eadddc5406cfc92660ee
+/* Original TU: library-input/psyq/LIB/Libcd.lib[47] TYPE_1.OBJ
+ * sha256: c71a20c983c63d9f748e9a4a484cfcae4f3b17872ba89d2f00735b132c4a2d6b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdDiskReady
  */

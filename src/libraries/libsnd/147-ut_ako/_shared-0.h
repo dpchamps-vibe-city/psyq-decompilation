@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/147-ut_ako.o[0] 147-ut_ako.o
- * sha256: b7bace0fa8e9979a48ed0dcfdfba0a7e5b22f60724f3d7ec3b2a70c56f0a38fa
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[147] UT_AKO.OBJ
+ * sha256: ffc95e6b8d40a84a84f3e4f32fbfb9b19aa3d9d8003b2e683d69dfd4866aee7f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtAllKeyOff
  */

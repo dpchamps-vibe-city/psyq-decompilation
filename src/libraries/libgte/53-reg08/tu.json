@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_0afd5cd1286ee178_0",
+  "member": "libgte_53",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadGeomOffset.c",
-      "symbol": "ReadGeomOffset"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadGeomOffset"
+      ],
+      "backlog": true
     }
   ]
 }

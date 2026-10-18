@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_166106a42b0bc4bc_0",
+  "member": "libpress_6",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

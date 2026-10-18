@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_4ec142a00162cc3f_0",
+  "member": "libgte_382",
   "parts": [
     {
-      "path": "g4s_1.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsTMDfastNG4D"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

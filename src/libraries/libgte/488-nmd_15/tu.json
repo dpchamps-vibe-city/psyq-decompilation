@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_e15b6ac784df5585_0",
+  "member": "libgte_488",
   "parts": [
     {
-      "path": "nmd_15.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotNMD_SV_FT4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_43fa4e1a73f50ef6_0",
+  "member": "libgte_506",
   "parts": [
     {
-      "path": "f3b_4.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsTMDfastF3LFGB"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

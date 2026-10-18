@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/51-ssclose.o[0] 51-ssclose.o
- * sha256: 3605ead846c0706144f1b944efa29039bb8565c338491eb19a2d1359a0c4818c
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[51] SSCLOSE.OBJ
+ * sha256: a57ce0e0135e2912a4fc2bb8069f4a16b66448e0fde36991d8a29af7f3226e26
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSeqClose, SsSepClose
  */

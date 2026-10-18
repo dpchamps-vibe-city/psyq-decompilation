@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_fed00c24ea22feae_0",
+  "member": "libgpu_22",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

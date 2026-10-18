@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/140-dmyde_16.o[0] 140-dmyde_16.o
- * sha256: 87f5d7d68b2237a0cea2e65ae436187f188d3437082ed40dc6864bbfb715ab07
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[140] DMYDE_16.OBJ
+ * sha256: 5cc78318da2b9c32c646576f1713a52e6713f3ac90a6d0a1048615faf724f370
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsSetNrpnVabAttr16
  */

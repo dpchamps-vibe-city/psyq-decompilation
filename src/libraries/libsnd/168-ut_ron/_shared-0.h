@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/168-ut_ron.o[0] 168-ut_ron.o
- * sha256: 3305d28722f43b34ce663a69bfa80f0ca6a27479f9486ee16767b8c7c60cc032
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[168] UT_RON.OBJ
+ * sha256: b44db752d9e517aef605204dc30e3cbaadd59fa9bddc729f54d2b14969d54331
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtReverbOn
  */

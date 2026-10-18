@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/11-e04.o[0] 11-e04.o
- * sha256: 5a2625bf3988a77b1d25ea225a6dd98dea585f18bf4e78a8c635c0216055dc45
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[11] E04.OBJ
+ * sha256: abbe933414e720619ce198c81858918aaf8e97f664b2ebbc733c630734b6ac5e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetDefDispEnv
  */

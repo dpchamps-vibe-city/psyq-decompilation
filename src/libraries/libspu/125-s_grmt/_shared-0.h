@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/125-s_grmt.o[0] 125-s_grmt.o
- * sha256: f979ae048759671814884a5d2a9d4e8ede54ac09cc2f9ff3f37e76f9eacdb44e
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[125] S_GRMT.OBJ
+ * sha256: d2fb3fdc3d5ffca75cb39eddf513629e2654f2b7e899c390cebf2ecef298c253
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetReverbModeType
  */

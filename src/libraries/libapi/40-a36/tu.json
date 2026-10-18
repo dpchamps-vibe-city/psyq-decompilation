@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1a41aa802552a808_0",
+  "member": "libapi_40",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "EnterCriticalSection.c",
-      "symbol": "EnterCriticalSection"
+      "path": "backlog.ASM",
+      "symbols": [
+        "EnterCriticalSection"
+      ],
+      "backlog": true
     }
   ]
 }

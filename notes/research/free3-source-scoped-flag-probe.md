@@ -2,7 +2,7 @@
 
 ## Verified result (2026-10-16)
 
-`lib_5a59d0efe7ad3e69_0::free3`, in
+`libapi_86::free3`, in
 `src/libraries/libapi/86-free3/free3.c`, matches **84/84 words** of its original
 member. `psx_finalize_function` passed exact diff, full configured build, scope,
 and clean-source gates. No compiler replacement, register pinning, or new
@@ -10,7 +10,7 @@ assembly was needed. One evidence-backed **owning-TU flag override** was needed
 for this reconstruction:
 
 ```make
-CC1FLAGS_lib_5a59d0efe7ad3e69_0 := -fno-rerun-cse-after-loop
+CC1FLAGS_libapi_86 := -fno-rerun-cse-after-loop
 ```
 
 The compiler remains configured GCC 2.7.2, with the remaining production flags
@@ -22,7 +22,7 @@ Do not extend this override to adjacent allocator objects without measuring them
 Verification identities:
 
 - Documentation handoff: `0b1745f68a27ef5cfd6378bcf9ac809ae0f3cf6e3202302a1059f35aa2c45b3e`.
-- Whole-member receipt: `build/libraries/verified/lib_5a59d0efe7ad3e69_0.json`,
+- Whole-member receipt: `build/libraries/verified/libapi_86.json`,
   identity `9e1d4f4209b08f17a4e6f30e2dfd0b4c7f6dfc91f8c7b9f50e58d6596e49fbf5`.
 - Verified source SHA-256:
   `0c77f2662f879b3794eb643311fde9520e0a7750ee6257f486384ab99340fbed`.
@@ -126,7 +126,7 @@ objects, native dumps, and raw section comparisons are preserved in
 `build/free3-repair/flag-counterfactual.py` and
 `build/free3-repair/flag-counterfactual/`. Its raw section comparison was an
 intermediate check, **not** a replacement for the later owning-TU oracle and
-full finalization gate. `build/flagProbe/lib_5a59d0efe7ad3e69_0::free3/report.json`
+full finalization gate. `build/flagProbe/libapi_86::free3/report.json`
 at documentation time describes `p-after.c`; these scratch reports can be
 overwritten, so check their source hashes.
 
@@ -229,7 +229,7 @@ its documented blocking premise.
 6. Library overrides are keyed by **member ID**, not the function basename. The
    flag-override policy authorization must also cover that owner key. Here the
    initial function-qualified authorization did not cover the added
-   `CC1FLAGS_lib_5a59d0efe7ad3e69_0` line; the correctly scoped owner authorization
+   `CC1FLAGS_libapi_86` line; the correctly scoped owner authorization
    passed the existing gate. Keep the directly preceding evidence comment.
 7. Promote only after whole-member and full finalization gates pass. A masked
    shape hit or a manual `.text` match is not completion.

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ba764639103b59eb_0",
+  "member": "libgte_327",
   "parts": [
     {
-      "path": "smp_01_2.s",
+      "path": "backlog.ASM",
       "symbols": [
         "SquareSS12"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

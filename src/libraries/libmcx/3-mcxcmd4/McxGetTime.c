@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_6609daaadf9762a5_0", McxGetTime);
+INCLUDE_ASM("build/libraries/nonmatchings/libmcx_3", McxGetTime);

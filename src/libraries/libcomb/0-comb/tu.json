@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_399eb8d315af2e11_0",
+  "member": "libcomb_0",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

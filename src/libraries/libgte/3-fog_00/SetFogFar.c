@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_c360da69c55deb52_0", SetFogFar);
+INCLUDE_ASM("build/libraries/nonmatchings/libgte_3", SetFogFar);

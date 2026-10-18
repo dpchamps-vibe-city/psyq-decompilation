@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "policy": "Preserve and inventory originals; defer conversion, never silently remove from full-SDK completion scope. This is an evidence/backlog manifest, not an adapter exclusion flag.",
+  "policy": "Originals are preserved and inventoried. These six SN-built entries are excluded from the selected Sony-toolchain reconstruction scope, not deferred Sony matches.",
   "originalEntryCount": 2230,
   "reduxConvertibleEntryCount": 2224,
   "deferredCount": 6,
@@ -13,12 +13,12 @@
       "ordinal": 0,
       "sourceOffset": 0,
       "objectSha256": "b4ed8b2e76bc841f7a81132906d846877aefa8f6233fb738600c8b1ebd032a46",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Unsupported relocation expression type: 22",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Unsupported relocation expression type: 22",
       "class": "startup section boundaries",
       "workRequired": "Add section-end/start/size expression translation and explicit linker boundary-symbol contract. Validate linked addresses against original-tool evidence.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/standalone/2mbyte.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     },
     {
       "id": "standalone/8mbyte",
@@ -28,12 +28,12 @@
       "ordinal": 0,
       "sourceOffset": 0,
       "objectSha256": "0c0ccb91c6d059a88b5ec5ac8f34c65a717c636a911247c31faa0df4ae2e599e",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Unsupported relocation expression type: 22",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Unsupported relocation expression type: 22",
       "class": "startup section boundaries",
       "workRequired": "Add section-end/start/size expression translation and explicit linker boundary-symbol contract. Validate linked addresses against original-tool evidence.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/standalone/8mbyte.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     },
     {
       "id": "libsn/5-snmain",
@@ -43,12 +43,12 @@
       "ordinal": 5,
       "sourceOffset": 362,
       "objectSha256": "7a0b1a3954872cde40cf20c0eef3cbf30010b07b6e1ef26cfc6e4fe53fed0ce0",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Section .sbss looks like bss, but has data",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Section .sbss looks like bss, but has data",
       "class": "zero-filled BSS payload and startup",
       "workRequired": "Accept only proven all-zero initialized BSS payloads with exact extent/alignment/symbol retention, then retest all startup section-boundary expressions. Keep nonzero payloads unsupported.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/libsn/5-snmain.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     },
     {
       "id": "libsn/9-cache",
@@ -58,12 +58,12 @@
       "ordinal": 9,
       "sourceOffset": 1748,
       "objectSha256": "5f71c0ccd66097d731a2d527d18732f1397de24fcb9ec14318a9b87d46cb2e96",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Unknown expression type 54",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Unknown expression type 54",
       "class": "unknown expression opcode 54",
       "workRequired": "Establish opcode-54 arithmetic from independent format/original-tool evidence; preserve the 0xA0000000 operand and validate HI16/LO16 effects. Do not adopt Jype operand-dropping reduction.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/libsn/9-cache.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     },
     {
       "id": "standalone/noheap",
@@ -73,12 +73,12 @@
       "ordinal": 0,
       "sourceOffset": 0,
       "objectSha256": "d429e72ab30f18df31e8df73230c30c11f1eefcfc4eb9385104ce9ebf73a0d02",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Unsupported relocation expression type: 22",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Unsupported relocation expression type: 22",
       "class": "startup section boundaries",
       "workRequired": "Add section-end/start/size expression translation and explicit linker boundary-symbol contract. Validate linked addresses against original-tool evidence.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/standalone/noheap.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     },
     {
       "id": "standalone/none3",
@@ -88,12 +88,12 @@
       "ordinal": 0,
       "sourceOffset": 0,
       "objectSha256": "063efc868877ca84fcbe1fdc3afe9656e6c7933cb68156e08d04d35b76166899",
-      "status": "deferred-conversion-unsupported",
-      "reason": "Unsupported relocation expression type: 22",
+      "status": "excluded-sn-built",
+      "reason": "SN-built, outside the selected Sony toolchain scope. Unsupported relocation expression type: 22",
       "class": "startup section boundaries",
       "workRequired": "Add section-end/start/size expression translation and explicit linker boundary-symbol contract. Validate linked addresses against original-tool evidence.",
       "log": "/home/dave/Documents/code/psyq-decomp/build/converters/exploration/all/redux-common/standalone/none3.o.log",
-      "countsTowardFullSdkCompletion": true
+      "countsTowardFullSdkCompletion": false
     }
   ]
 }

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_2bd3d9cc99181f9d_0", _SpuIsInAllocateArea_);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_13", _SpuIsInAllocateArea_);

@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libmcx/3-mcxcmd4.o[0] 3-mcxcmd4.o
- * sha256: 41a5e20f4d9062260b941432d032dcdc3e933be793bf7d36fd30246fb950d42a
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[3] MCXCMD4.OBJ
+ * sha256: a2340b25316ef4faee011db2ce7d394058559c13bb91577052c5d8a925b1edee
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: McxGetTime
+ * Functions: McxGetTime, func_000000DC, func_000000FC
  */
 #include "common.h"
 #include "include_asm.h"

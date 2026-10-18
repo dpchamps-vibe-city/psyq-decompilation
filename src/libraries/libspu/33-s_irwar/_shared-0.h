@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/33-s_irwar.o[0] 33-s_irwar.o
- * sha256: e055851b34ef6be7f77bec60fa0b80428d6d4e8bc355c163d4f830525e25c365
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[33] S_IRWAR.OBJ
+ * sha256: 359798ad474dffd9422a9748278f3170f2db5be7e7203bb5cedfc01c6b5c4b48
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuIsReverbWorkAreaReserved
  */

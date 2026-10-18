@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libpress/4-encspu.o[0] 4-encspu.o
- * sha256: 312ce00eec51b1ba91d09b64c5a82fd281fc09f01b2ba85a4584e1af1a37605b
+/* Original TU: library-input/psyq/LIB/LIBPRESS.LIB[4] ENCSPU.OBJ
+ * sha256: fabf1f08e8a228a85c33022310cbcc34306fde5850850d2c0c18ca74763418a1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: EncSPU
+ * Functions: func_00000070, func_000001F4, EncSPU
  */
 #include "common.h"
 #include "include_asm.h"

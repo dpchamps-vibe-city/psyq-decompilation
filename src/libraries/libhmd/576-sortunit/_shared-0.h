@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/576-sortunit.o[0] 576-sortunit.o
- * sha256: 4557e242124ac0bd71f1a69dd186d3fd2234bc8b6a235ab49e5f7c93ff12fe34
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[576] SORTUNIT.OBJ
+ * sha256: e8bfe442309fd744b35817f4dc3eff954a38e4b8a8825231c291281851f51954
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortUnit
  */

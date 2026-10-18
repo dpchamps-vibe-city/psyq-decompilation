@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/60-kt02.o[0] 60-kt02.o
- * sha256: af90d46d74ca43ee583c04bc8881da6be2b7eb83135954f7611e2ea5efab2bcf
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[60] KT02.OBJ
+ * sha256: b7d1d3324680a273bfcc31976fcf0ad791dceb0c2d2d36b0e11be770cf16d1e6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: hankanjitrans
  */

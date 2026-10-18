@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/4-dssys_5.o[0] 4-dssys_5.o
- * sha256: 5884886e1f51ad9da591892094a550063855e055e6a1608e0ea0cb00f3f75430
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[4] DSSYS_5.OBJ
+ * sha256: 5608d3fcd42905a89d59c8cd71d26ddbe28b5318b107d13d7e996df3386b5416
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsComstr
  */

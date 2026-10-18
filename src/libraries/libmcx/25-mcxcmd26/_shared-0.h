@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libmcx/25-mcxcmd26.o[0] 25-mcxcmd26.o
- * sha256: 09fafb629e2f1e3930adfd977ac3f2a8f7f2fde947e520d2b24ea00158e15f4e
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[25] MCXCMD26.OBJ
+ * sha256: dbbd7a30781096ced6e0bf8318eb203f28a93758144baed6e8d69647159b3490
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: McxGetInfo
+ * Functions: McxGetInfo, func_00000100
  */
 #include "common.h"
 #include "include_asm.h"

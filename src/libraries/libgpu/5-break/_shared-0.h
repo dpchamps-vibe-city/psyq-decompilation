@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/5-break.o[0] 5-break.o
- * sha256: 9fde1b652e232c726f5f48dbcc18030861039a469d5954c8d8fd178b080f2b6e
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[5] BREAK.OBJ
+ * sha256: 0d5ace862a4b491b3cca2d79251d10c5581b1003686b11716f1c9d874d971fd2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: BreakDraw, IsIdleGPU, ContinueDraw
  */

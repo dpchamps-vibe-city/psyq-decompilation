@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5f4b9de61a152d0a_0",
+  "member": "libgte_290",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetVertex2.c",
-      "symbol": "SetVertex2"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetVertex2"
+      ],
+      "backlog": true
     }
   ]
 }

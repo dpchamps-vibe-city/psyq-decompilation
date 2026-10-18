@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/27-d3_007.o[0] 27-d3_007.o
- * sha256: 0aa9da6250cd8c4faa7ba011d5b1b40b26aae8036b0e8e2a145ee2a0bb159057
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[27] D3_007.OBJ
+ * sha256: f7eb45d79a007df6ccea4994386e9f84b9daeccd62d89d69ff6e11db6211dea8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DsSetDebug
  */

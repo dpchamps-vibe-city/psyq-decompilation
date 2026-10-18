@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/5-s_i.o[0] 5-s_i.o
- * sha256: c04ed8109a30f4bf24c3fad421db3fd312aac2dfc0229dffe902bf2ef2f5a803
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[5] S_I.OBJ
+ * sha256: 1d3774e3b0762cc2d0746c01c2680a8c9297a06606112f05216657d97e0a7456
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuInit
  */

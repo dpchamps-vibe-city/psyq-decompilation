@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/87-realloc3.o[0] 87-realloc3.o
- * sha256: 432bbcee5061fc2ba2287384b69383bcd9e5893ef0998574d032a969063fba22
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[87] REALLOC3.OBJ
+ * sha256: 6595d4a8bc791b75ef95489f78142eed07fc3007e17e8742d009a54d105f928a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: realloc3
  */

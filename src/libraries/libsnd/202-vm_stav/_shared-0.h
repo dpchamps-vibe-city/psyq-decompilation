@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/202-vm_stav.o[0] 202-vm_stav.o
- * sha256: 10e287262f768c472b460abd0b5bc8ae0265b8a5a36ea46ea5e0fd498fa83fcc
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[202] VM_STAV.OBJ
+ * sha256: b6871274bfb6d2b1ba109669d58a26e0fdf24852ef2f7f739cad933db93ea04a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmSelectToneAndVag
  */

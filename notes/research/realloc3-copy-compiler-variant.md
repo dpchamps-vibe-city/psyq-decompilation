@@ -2,7 +2,7 @@
 
 ## Status, 2026-10-17
 
-Target: `lib_dacb6c202432cdbd_0::func_000001A0`.
+Target: `libapi_87::func_000001A0`.
 Live destination: `src/libraries/libapi/87-realloc3/func_000001A0.c`.
 The live function is still assembly-backed. **There is no production MATCH or
 successful finalization for this function.** The prior `escalation-exhausted`

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/48-matrix11.o[0] 48-matrix11.o
- * sha256: c8c5e3d129dec335c06112d15e54510f25a82bb2600c22f1772e5eac5f5e4526
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[48] MATRIX11.OBJ
+ * sha256: 2338bcf396c888b5c760c7941662117f9830922afaaa346060317c05c3fdac63
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: print_vector
  */

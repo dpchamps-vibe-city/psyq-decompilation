@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_8e5deca6a8677a9b_0",
+  "member": "libapi_12",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GetConf.c",
-      "symbol": "GetConf"
+      "path": "backlog.ASM",
+      "symbols": [
+        "GetConf"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/8-s_sm.o[0] 8-s_sm.o
- * sha256: 5df5a54b98bdf1f2414a80e13143a324ee955e2d3030c30b98133d1d42a9cd8c
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[8] S_SM.OBJ
+ * sha256: e053ba6be556806466502c267481fe16683647ca71060ddede8f22556eb31ecc
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetMute
  */

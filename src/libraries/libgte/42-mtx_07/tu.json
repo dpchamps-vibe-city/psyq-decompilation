@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ce84c4b30ba896d5_0",
+  "member": "libgte_42",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "TransMatrix.c",
-      "symbol": "TransMatrix"
+      "path": "backlog.ASM",
+      "symbols": [
+        "TransMatrix"
+      ],
+      "backlog": true
     }
   ]
 }

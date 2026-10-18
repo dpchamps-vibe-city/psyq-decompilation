@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/492-clip_g_3.o[0] 492-clip_g_3.o
- * sha256: 6a11e71ab36c1887ad6e2247c3a61bd8663b2a13a7587689e5c118ba7a821394
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[492] CLIP_G_3.OBJ
+ * sha256: d440bd118590b9c577c7889e970972e8de9e6a6ee9eddaa14997c98b2c42310a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ClipG, ZClipG
  */

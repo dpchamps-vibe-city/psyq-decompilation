@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libcd/16-c_011.o[0] 16-c_011.o
- * sha256: 867f2c84a5ed4adbcc191556d2fbbca1538a3049ad2a47c1a0bcf0d9649c07ae
+/* Original TU: library-input/psyq/LIB/Libcd.lib[16] C_011.OBJ
+ * sha256: 67a69bcc51190a91b14dc6daf400f6d4a8bffe88e7796564e9b85bdd378bc223
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: StCdInterrupt
+ * Functions: StCdInterrupt, func_00000994, func_000009C0
  */
 #include "common.h"
 #include "include_asm.h"

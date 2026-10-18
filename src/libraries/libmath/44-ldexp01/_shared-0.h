@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/44-ldexp01.o[0] 44-ldexp01.o
- * sha256: 5b1a3d48932c35512f99792d903790fe446d83e0972a7e925187af22594d5e4b
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[44] LDEXP01.OBJ
+ * sha256: 4dcd2615c48f2e81cd4b9097e5c260352da20bb37ca7cb0a4586c935f0f7b21a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: frexp
  */

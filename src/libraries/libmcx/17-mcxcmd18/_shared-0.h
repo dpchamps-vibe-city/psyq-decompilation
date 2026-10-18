@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/17-mcxcmd18.o[0] 17-mcxcmd18.o
- * sha256: dcee31930134c944e68ea33bf82ac72abaef987a090f217405316ffb0bffa917
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[17] MCXCMD18.OBJ
+ * sha256: 4e73693663a97fb4c4942d7ba2cac9e6e3b00aa7b94182542909bc8ecd4b17c2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McxHideTrans
  */

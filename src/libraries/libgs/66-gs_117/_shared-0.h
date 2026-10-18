@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/66-gs_117.o[0] 66-gs_117.o
- * sha256: 45ee2410b38bb3bbd0a9580c3a62dcee0b9170a818e48478014ae1d64ce3b081
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[66] GS_117.OBJ
+ * sha256: 9c5da63fec96216c81a3710c15ebe9abd1456d448bf3366e2d231b6afccf8160
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: gte_rotate_x_matrix
  */

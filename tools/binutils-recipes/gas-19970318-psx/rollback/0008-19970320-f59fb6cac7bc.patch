@@ -1,0 +1,212 @@
+Upstream commit: f59fb6cac7bc06f04074c4cf33f7794f4ab887df
+ChangeLog / commit message:
+Thu Mar 20 13:42:01 1997  H.J. Lu  <hjl@lucon.org>
+
+	* frags.c (frag_var): Change offset parameter to offsetT.
+	(frag_variant): Likewise.
+	* frags.h (frag_variant, frag_var): Update declarations.
+	* config/tc-m68k.c (struct m68k_it): Change foff field to
+	offsetT.
+	(add_frag): Change off parameter to offsetT.
+	* Several files: Add casts to calls to frag_var.
+Files: gas/config/tc-mips.c
+
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -1557,7 +1557,7 @@
+ 					  & INSN_UNCOND_BRANCH_DELAY),
+ 					 (prev_insn_reloc_type
+ 					  == BFD_RELOC_MIPS16_JMP)),
+-		    make_expr_symbol (address_expr), (offsetT) 0,
++		    make_expr_symbol (address_expr), (long) 0,
+ 		    (char *) NULL);
+     }
+   else if (place != NULL)
+@@ -2768,12 +2768,8 @@
+ 		    || ! ep->X_unsigned
+ 		    || sizeof (ep->X_add_number) > 4
+ 		    || (ep->X_add_number & 0x80000000) == 0))
+-	       || ((mips_isa < 3 || ! dbl)
+-		   && (ep->X_add_number &~ (offsetT) 0xffffffff) == 0)
+-	       || (mips_isa < 3
+-		   && ! dbl
+-		   && ((ep->X_add_number &~ (offsetT) 0xffffffff)
+-		       == ~ (offsetT) 0xffffffff)))
++	       || ((mips_isa < 3 || !dbl)
++		   && (ep->X_add_number &~ (offsetT) 0xffffffff) == 0))
+ 	{
+ 	  /* 32 bit values require an lui.  */
+ 	  macro_build ((char *) NULL, counter, ep, "lui", "t,u", reg,
+@@ -3031,7 +3027,7 @@
+ 		       "t,r,j", reg, GP, (int) BFD_RELOC_MIPS_GPREL);
+ 	  p = frag_var (rs_machine_dependent, 8, 0,
+ 			RELAX_ENCODE (4, 8, 0, 4, 0, mips_warn_about_macros),
+-			ep->X_add_symbol, (offsetT) 0, (char *) NULL);
++			ep->X_add_symbol, (long) 0, (char *) NULL);
+ 	}
+       macro_build_lui (p, counter, ep, reg);
+       if (p != NULL)
+@@ -3060,7 +3056,7 @@
+       macro_build ((char *) NULL, counter, (expressionS *) NULL, "nop", "");
+       p = frag_var (rs_machine_dependent, 4, 0,
+ 		    RELAX_ENCODE (0, 4, -8, 0, 0, mips_warn_about_macros),
+-		    ep->X_add_symbol, (offsetT) 0, (char *) NULL);
++		    ep->X_add_symbol, (long) 0, (char *) NULL);
+       macro_build (p, counter, ep,
+ 		   mips_isa < 3 ? "addiu" : "daddiu",
+ 		   "t,r,j", reg, reg, (int) BFD_RELOC_LO16);
+@@ -3107,7 +3103,7 @@
+       p = frag_var (rs_machine_dependent, 12 + off, 0,
+ 		    RELAX_ENCODE (12, 12 + off, off, 8 + off, 0,
+ 				  mips_warn_about_macros),
+-		    ep->X_add_symbol, (offsetT) 0, (char *) NULL);
++		    ep->X_add_symbol, (long) 0, (char *) NULL);
+       if (off > 0)
+ 	{
+ 	  /* We need a nop before loading from $gp.  This special
+@@ -3902,7 +3898,7 @@
+ 	      p = frag_var (rs_machine_dependent, 8, 0,
+ 			    RELAX_ENCODE (4, 8, 0, 4, 0,
+ 					  mips_warn_about_macros),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 	    }
+ 	  macro_build_lui (p, &icnt, &offset_expr, tempreg);
+@@ -3966,7 +3962,7 @@
+ 					  (breg == 0
+ 					   ? mips_warn_about_macros
+ 					   : 0)),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 	      if (breg == 0)
+ 		{
+@@ -3990,7 +3986,7 @@
+ 			   "t,r,j", tempreg, tempreg, (int) BFD_RELOC_LO16);
+ 	      (void) frag_var (rs_machine_dependent, 0, 0,
+ 			       RELAX_ENCODE (0, 0, -12, -4, 0, 0),
+-			       offset_expr.X_add_symbol, (offsetT) 0,
++			       offset_expr.X_add_symbol, (long) 0,
+ 			       (char *) NULL);
+ 	    }
+ 	  else
+@@ -4033,7 +4029,7 @@
+ 			   "d,v,t", tempreg, tempreg, AT);
+ 	      (void) frag_var (rs_machine_dependent, 0, 0,
+ 			       RELAX_ENCODE (0, 0, -16 + off1, -8, 0, 0),
+-			       offset_expr.X_add_symbol, (offsetT) 0,
++			       offset_expr.X_add_symbol, (long) 0,
+ 			       (char *) NULL);
+ 	      used_at = 1;
+ 	    }
+@@ -4116,7 +4112,7 @@
+ 					  (breg == 0
+ 					   ? mips_warn_about_macros
+ 					   : 0)),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 	    }
+ 	  else if (expr1.X_add_number >= -0x8000
+@@ -4133,7 +4129,7 @@
+ 					  (breg == 0
+ 					   ? mips_warn_about_macros
+ 					   : 0)),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 	    }
+ 	  else
+@@ -4184,7 +4180,7 @@
+ 					  (breg == 0
+ 					   ? mips_warn_about_macros
+ 					   : 0)),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 
+ 	      used_at = 1;
+@@ -4350,8 +4346,7 @@
+ 			   "nop", "");
+ 	      p = frag_var (rs_machine_dependent, 4, 0,
+ 			    RELAX_ENCODE (0, 4, -8, 0, 0, 0),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
+-			    (char *) NULL);
++			    offset_expr.X_add_symbol, (long) 0, (char *) NULL);
+ 	    }
+ 	  else
+ 	    {
+@@ -4375,8 +4370,7 @@
+ 	      p = frag_var (rs_machine_dependent, 12 + gpdel, 0,
+ 			    RELAX_ENCODE (16, 12 + gpdel, gpdel, 8 + gpdel,
+ 					  0, 0),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
+-			    (char *) NULL);
++			    offset_expr.X_add_symbol, (long) 0, (char *) NULL);
+ 	      if (gpdel > 0)
+ 		{
+ 		  macro_build (p, &icnt, (expressionS *) NULL, "nop", "");
+@@ -4630,7 +4624,7 @@
+ 				RELAX_ENCODE (4, 8, 0, 4, 0,
+ 					      (mips_warn_about_macros
+ 					       || (used_at && mips_noat))),
+-				offset_expr.X_add_symbol, (offsetT) 0,
++				offset_expr.X_add_symbol, (long) 0,
+ 				(char *) NULL);
+ 		  used_at = 0;
+ 		}
+@@ -4655,7 +4649,7 @@
+ 			       treg, (int) BFD_RELOC_MIPS_GPREL, tempreg);
+ 		  p = frag_var (rs_machine_dependent, 12, 0,
+ 				RELAX_ENCODE (8, 12, 0, 8, 0, 0),
+-				offset_expr.X_add_symbol, (offsetT) 0,
++				offset_expr.X_add_symbol, (long) 0,
+ 				(char *) NULL);
+ 		}
+ 	      macro_build_lui (p, &icnt, &offset_expr, tempreg);
+@@ -4700,7 +4694,7 @@
+ 	  macro_build ((char *) NULL, &icnt, (expressionS *) NULL, "nop", "");
+ 	  p = frag_var (rs_machine_dependent, 4, 0, 
+ 			RELAX_ENCODE (0, 4, -8, 0, 0, 0),
+-			offset_expr.X_add_symbol, (offsetT) 0,
++			offset_expr.X_add_symbol, (long) 0,
+ 			(char *) NULL);
+ 	  macro_build (p, &icnt, &offset_expr,
+ 		       mips_isa < 3 ? "addiu" : "daddiu",
+@@ -4754,7 +4748,7 @@
+ 		       tempreg);
+ 	  p = frag_var (rs_machine_dependent, 12 + gpdel, 0,
+ 			RELAX_ENCODE (12, 12 + gpdel, gpdel, 8 + gpdel, 0, 0),
+-			offset_expr.X_add_symbol, (offsetT) 0, (char *) NULL);
++			offset_expr.X_add_symbol, (long) 0, (char *) NULL);
+ 	  if (gpdel > 0)
+ 	    {
+ 	      macro_build (p, &icnt, (expressionS *) NULL, "nop", "");
+@@ -5097,7 +5091,7 @@
+ 	      p = frag_var (rs_machine_dependent, 12 + off, 0,
+ 			    RELAX_ENCODE (8 + off, 12 + off, 0, 4 + off, 1,
+ 					  used_at && mips_noat),
+-			    offset_expr.X_add_symbol, (offsetT) 0,
++			    offset_expr.X_add_symbol, (long) 0,
+ 			    (char *) NULL);
+ 
+ 	      /* We just generated two relocs.  When tc_gen_reloc
+@@ -5189,7 +5183,7 @@
+ 
+ 	  (void) frag_var (rs_machine_dependent, 0, 0,
+ 			   RELAX_ENCODE (0, 0, -16 - off, -8, 1, 0),
+-			   offset_expr.X_add_symbol, (offsetT) 0,
++			   offset_expr.X_add_symbol, (long) 0,
+ 			   (char *) NULL);
+ 	}
+       else if (mips_pic == SVR4_PIC)
+@@ -5259,7 +5253,7 @@
+ 	  p = frag_var (rs_machine_dependent, 16 + gpdel + off, 0,
+ 			RELAX_ENCODE (24 + off, 16 + gpdel + off, gpdel,
+ 				      8 + gpdel + off, 1, 0),
+-			offset_expr.X_add_symbol, (offsetT) 0,
++			offset_expr.X_add_symbol, (long) 0,
+ 			(char *) NULL);
+ 	  if (gpdel > 0)
+ 	    {

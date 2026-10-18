@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/13-mcxcmd14.o[0] 13-mcxcmd14.o
- * sha256: 1edf2e39dfebf3ac69daa8eb2891d98d802e1850b3710ed203e9200e2c187a01
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[13] MCXCMD14.OBJ
+ * sha256: b427c73f4f202621a8ea857637e4ca75a1478e96cc0dc0cac7390f11f470528b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McxGetUIFS
  */

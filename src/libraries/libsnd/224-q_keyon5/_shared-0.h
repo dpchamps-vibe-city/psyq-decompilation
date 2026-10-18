@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/224-q_keyon5.o[0] 224-q_keyon5.o
- * sha256: 2195300acf5a415c962b0a4458801bf59f6d5407d00b544dd386d612e6302c20
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[224] Q_KEYON5.OBJ
+ * sha256: 2d1a6cd5d1623ed83e8e00dbd1dec44c99d1684a66d2120983775feea572ac18
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetVoiceSettings
  */

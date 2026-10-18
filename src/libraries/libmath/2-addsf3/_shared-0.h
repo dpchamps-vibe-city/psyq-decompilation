@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/2-addsf3.o[0] 2-addsf3.o
- * sha256: 2ecddc538afe51ca1e66e16de68bf709deff682951fae83338f313394781ca9b
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[2] ADDSF3.OBJ
+ * sha256: 6637642c124fed59436d518137bda31c85168dbb6079fd3c8f0dd1928181437d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __addsf3
  */

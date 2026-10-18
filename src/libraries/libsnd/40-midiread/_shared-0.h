@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libsnd/40-midiread.o[0] 40-midiread.o
- * sha256: d465d11eb55710ad391ad3f9c1e288e7d4711c2a8ff955b99753e9067e0efe85
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[40] MIDIREAD.OBJ
+ * sha256: 827da25b0ac1578e2c7c507cfdc102714e6d282b6ed8927ab1e96425b883a4ef
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: _SsSeqPlay, _SsGetSeqData, _SsSeqGetEof
+ * Functions: _SsSeqPlay, _SsSeqGetEof, _SsGetSeqData
  */
 #include "common.h"
 #include "include_asm.h"

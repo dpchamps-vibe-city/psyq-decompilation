@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_45cd5881dfa953fa_0", init_ring_status);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_13", init_ring_status);

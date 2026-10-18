@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/16-p04.o[0] 16-p04.o
- * sha256: 0ef3bbb457977b54b70428cf88375dc61295aa86d3ac088613112d957696e4d4
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[16] P04.OBJ
+ * sha256: 00d904bc2e7f206be264f364705344f7770eda74e83f82639c43c871d59814f7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: NextPrim
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsio/2-sio.o[0] 2-sio.o
- * sha256: 3b56da7dd0c5bd3c4b364fac047130571241649eb25e509b8e8203af0d910537
+/* Original TU: library-input/psyq/LIB/LIBSIO.LIB[2] SIO.OBJ
+ * sha256: 987fcc3151f8bcb2b4d75337780299948d2d26cfb945436175a660abf515134f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _sio_control
  */

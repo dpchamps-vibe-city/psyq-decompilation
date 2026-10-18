@@ -9,4 +9,4 @@ mkdir -p "$root/build/compiler-provision"
 out="$root/build/compiler-provision/$name"
 rm -rf "$out"
 docker build --file "$here/Dockerfile" --target export --output "type=local,dest=$out" "$here" > "$root/build/compiler-provision/$name.log" 2>&1
-python3 "$here/install.py" "$out" "$@"
+npx tsx "$here/install.ts" "$out" "$@"

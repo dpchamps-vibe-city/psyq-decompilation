@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/3-sys.o[0] 3-sys.o
- * sha256: c89cf89a082fd80bf686ee8beb916f06100726947022c45c26bd35f7be2569e0
+/* Original TU: library-input/psyq/LIB/Libcd.lib[3] SYS.OBJ
+ * sha256: a653f3cb4f236622d76d73ce42714c324442086d22c0057886ca67a02679b543
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdPosToInt
  */

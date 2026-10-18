@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/27-gs_003.o[0] 27-gs_003.o
- * sha256: 95ea386cb688093eec93576406ac0dfafd959f546df8b2c52477f9d0ff7c914c
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[27] GS_003.OBJ
+ * sha256: 79bcb7d30b9533922a3b35591fecb0aa5c87ab296f5eccc89b09e58d9e739c97
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetDrawBuffClip
  */

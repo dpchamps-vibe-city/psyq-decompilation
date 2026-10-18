@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libetc/4-intr_vb.o[0] 4-intr_vb.o
- * sha256: b64958bf6bcd326ecc947544de0818485d669a167a2c3029de8b43942a93011b
+/* Original TU: library-input/psyq/LIB/LIBETC.LIB[4] INTR_VB.OBJ
+ * sha256: a9bfe94c1cdcb4ff5dae3546ea697818d1bed145936f85f7e4f4127494fd99df
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: startIntrVSync
+ * Functions: startIntrVSync, func_000000C8, func_00000134, func_00000160
  */
 #include "common.h"
 #include "include_asm.h"

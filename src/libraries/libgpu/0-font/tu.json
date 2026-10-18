@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_075047f8eb255969_0",
+  "member": "libgpu_0",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

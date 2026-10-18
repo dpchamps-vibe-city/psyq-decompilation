@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/196-vm_porta.o[0] 196-vm_porta.o
- * sha256: 9ae2c8767c7f0bada599988f4747fd7235ef64b937523e1c728990a75dbbbf3f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[196] VM_PORTA.OBJ
+ * sha256: c0ff983a58f3b68cb3c6667c708b77f5bd6cc44f80f940a06881a632058a5849
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

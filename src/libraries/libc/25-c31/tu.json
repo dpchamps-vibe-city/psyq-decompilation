@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_15dafafb3a68126b_0",
+  "member": "libc_25",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "strrchr.c",
-      "symbol": "strrchr"
+      "path": "backlog.ASM",
+      "symbols": [
+        "strrchr"
+      ],
+      "backlog": true
     }
   ]
 }

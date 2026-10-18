@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/67-ssiseos.o[0] 67-ssiseos.o
- * sha256: c0675551983785ee234500a35c92aa5a65971bcfd6447060e6d3f840988cc4f3
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[67] SSISEOS.OBJ
+ * sha256: 21b44cd5ffee2a2c539cebec370a1717d28cc014e8c15f4376e86856a722b547
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsIsEos
  */

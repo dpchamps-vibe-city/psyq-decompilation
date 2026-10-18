@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/16-2d_sp42.o[0] 16-2d_sp42.o
- * sha256: e5066f4394e19bc53c0f4ec4bae694b1082410912823b521e3f034395dc2e19e
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[16] 2D_SP42.OBJ
+ * sha256: 9a0927cf20af09c21286bda8e7bd8695216ba52d271d915fb1ef2dfd264d2614
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsInitFastSprite2
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/104-tempo.o[0] 104-tempo.o
- * sha256: d7e94e2bab1d07a166d536be40d8e692745da851601880b67576b02f4edb5ef4
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[104] TEMPO.OBJ
+ * sha256: 13988d1c325ad9ed5aac5628ca8cf32fe27d1090f039a3e310e3d366fec415f6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndTempo
  */

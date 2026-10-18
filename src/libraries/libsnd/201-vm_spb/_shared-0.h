@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/201-vm_spb.o[0] 201-vm_spb.o
- * sha256: 46e06d7c28ed19b8e50d5a4b20486e00f3f983155aff7a860ed7cc531411cc13
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[201] VM_SPB.OBJ
+ * sha256: be8dc574931477da78661da9e9a20f38c7341c6294e560c3297051a3b89810a8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SePitchBend
  */

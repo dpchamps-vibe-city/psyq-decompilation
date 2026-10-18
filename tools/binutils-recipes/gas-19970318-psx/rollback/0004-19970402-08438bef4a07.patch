@@ -1,0 +1,24 @@
+Upstream commit: 08438bef4a0784a5af2ad1326e9ec58058c1adfb
+ChangeLog / commit message:
+* config/tc-mips.c (mips16_macro): Handle M_DMUL and M_MUL.
+PR 11982.
+Files: gas/config/tc-mips.c
+
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -6197,15 +6197,6 @@
+       macro_build ((char *) NULL, &icnt, NULL, s2, "x", zreg);
+       break;
+ 
+-    case M_DMUL:
+-      dbl = 1;
+-    case M_MUL:
+-      macro_build ((char *) NULL, &icnt, NULL,
+-		   dbl ? "dmultu" : "multu",
+-		   "x,y", xreg, yreg);
+-      macro_build ((char *) NULL, &icnt, NULL, "mflo", "x", zreg);
+-      return;
+-
+     case M_DSUBU_I:
+       dbl = 1;
+       goto do_subu;

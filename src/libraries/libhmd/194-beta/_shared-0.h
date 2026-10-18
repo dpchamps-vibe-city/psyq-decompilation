@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/194-beta.o[0] 194-beta.o
- * sha256: 09e0dca0c2b2a89355a430be2b0757ae623226d033efa221cfbd6640461c9445
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[194] BETA.OBJ
+ * sha256: 23c9f19b98557578309d7373e35111f373d59d07dd95274cd36c148d1c965962
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: setBetaCof
  */

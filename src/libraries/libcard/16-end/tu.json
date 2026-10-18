@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_497770463d1e2a21_0",
+  "member": "libcard_16",
   "parts": [
     {
-      "path": "end.s",
+      "path": "backlog.ASM",
       "symbols": [
         "_ExitCard"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

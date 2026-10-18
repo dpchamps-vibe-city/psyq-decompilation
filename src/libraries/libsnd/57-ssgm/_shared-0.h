@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/57-ssgm.o[0] 57-ssgm.o
- * sha256: 98ea9bb65e3a5f5f2a8a9937a4b420d234e03a0c6b15f369299eb924f2a38740
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[57] SSGM.OBJ
+ * sha256: 96007e4ed81cc0547ee0298bfb3ec86e803b0c27de3724e9f782060e2ef3b485
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsGetMute
  */

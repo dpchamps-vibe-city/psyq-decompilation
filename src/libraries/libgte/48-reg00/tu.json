@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_53939613b7d48f5d_0",
+  "member": "libgte_48",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetRGBcd.c",
-      "symbol": "SetRGBcd"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetRGBcd"
+      ],
+      "backlog": true
     }
   ]
 }

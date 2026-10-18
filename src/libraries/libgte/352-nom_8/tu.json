@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_7c91ea167acacb87_0",
+  "member": "libgte_352",
   "parts": [
     {
-      "path": "nom_8.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotColorDpq_nom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

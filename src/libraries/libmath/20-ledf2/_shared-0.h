@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/20-ledf2.o[0] 20-ledf2.o
- * sha256: ae1e566fd7bf9e278af3c193c4ca51e749efbb287b85629dc3480b3b8569aa7c
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[20] LEDF2.OBJ
+ * sha256: ca644ea94dbbf9bbdc3cb9d654e97787c0cb154969c1b960ef738ed359d93423
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __ledf2
  */

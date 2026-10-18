@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_24d34cd2029e7011_0", ClearImage2);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_4", ClearImage2);

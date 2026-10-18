@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_98cb4190f13fcee6_0",
+  "member": "poweron",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "go_poweron.c",
-      "symbol": "go_poweron"
+      "path": "backlog.ASM",
+      "symbols": [
+        "go_poweron"
+      ],
+      "backlog": true
     }
   ]
 }

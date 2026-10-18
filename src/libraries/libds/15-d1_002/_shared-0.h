@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libds/15-d1_002.o[0] 15-d1_002.o
- * sha256: 06e2e094020689ad619874167847b5a1138ffba00350f71fe172904272b3b835
+/* Original TU: library-input/psyq/LIB/LIBDS.LIB[15] D1_002.OBJ
+ * sha256: 3dc26f9a1125e3d687079cb316d8ad312f48e0cdde6aa9e386dd7801c4acff82
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DS_ready
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/26-mcxcmd27.o[0] 26-mcxcmd27.o
- * sha256: e7fc962e10a37874a0fc3c771546eef85e3c32783d8d49378ae690c65705d10b
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[26] MCXCMD27.OBJ
+ * sha256: 982841076660c6f84e3c503bd20a706ed78fc94c4de18709b7333cdf9a2383f0
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: chkMemArea
  */

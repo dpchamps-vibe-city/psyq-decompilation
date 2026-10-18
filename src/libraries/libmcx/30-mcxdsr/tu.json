@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ae672d28456ecc9a_0",
+  "member": "libmcx_30",
   "parts": [
     {
-      "path": "mcxdsr.s",
+      "path": "backlog.ASM",
       "symbols": [
         "_mcxStartFastDsr",
         "_mcxStopFastDsr",
         "_mcxVecDsr",
         "_mcxFastDsrEnt",
         "_mcxVecSave"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

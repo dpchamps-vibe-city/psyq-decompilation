@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_2f428cdb4caadb6d_0",
+  "member": "libc_44",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "printf.c",
-      "symbol": "printf"
+      "path": "backlog.ASM",
+      "symbols": [
+        "printf"
+      ],
+      "backlog": true
     }
   ]
 }

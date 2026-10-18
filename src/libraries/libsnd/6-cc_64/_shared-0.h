@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/6-cc_64.o[0] 6-cc_64.o
- * sha256: 0dd313800f97eb0a7248de286ddfee39a2c53dfec2ee1ccfe8aa0a4576844025
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[6] CC_64.OBJ
+ * sha256: ae32057db35ed316f4b84287ae72d7b3814721133d54fe54c5326d56617ccd51
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsContDamper
  */

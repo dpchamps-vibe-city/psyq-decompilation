@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libpad/1-pdcmd2.o[0] 1-pdcmd2.o
- * sha256: 0e61489b812a08bcba44a760160484f54c2a75e630c6e270239cf26ec0605798
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[1] PDCMD2.OBJ
+ * sha256: 4599cd7ac067f1b06c2f59fdb2a9549123799616e2ceffca0b3395d187482098
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: PadSetActAlign
+ * Functions: PadSetActAlign, func_000000E4, func_0000010C
  */
 #include "common.h"
 #include "include_asm.h"

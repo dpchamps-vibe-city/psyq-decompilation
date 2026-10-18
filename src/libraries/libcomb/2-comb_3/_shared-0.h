@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcomb/2-comb_3.o[0] 2-comb_3.o
- * sha256: 9e5e2acc5b8406d6d139213bd02a4b36889123ae6858456840d8bcded2be6c11
+/* Original TU: library-input/psyq/LIB/LIBCOMB.LIB[2] COMB_3.OBJ
+ * sha256: 5773ee7c75dc8cd277f19841e80ee67dd1c22b8b324c945733c712d4b1ed3697
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ChangeClearSIO
  */

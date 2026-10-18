@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/20-p08.o[0] 20-p08.o
- * sha256: c939d442b3fddd5107f413d2ffeb771d0de88a533dd3a03e83faf91f2aef15e8
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[20] P08.OBJ
+ * sha256: 852a52f4eb68520b43ff74d131eb61cd43d25fd19ba0a9ed643ce4c6249ecf95
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CatPrim
  */

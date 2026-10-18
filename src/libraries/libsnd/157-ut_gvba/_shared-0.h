@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/157-ut_gvba.o[0] 157-ut_gvba.o
- * sha256: d152cea53ebe0518ccf3d04f63ec03ab3910205d20431ea07abf2cc78e19278f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[157] UT_GVBA.OBJ
+ * sha256: 4297258e14cc0e6b9775041ebc76dd218aa3aa46c95ddfb86ab6384c1f888d6f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetVBaddrInSB
  */

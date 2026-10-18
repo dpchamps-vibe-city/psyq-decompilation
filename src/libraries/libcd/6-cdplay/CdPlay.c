@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_fee0672f6d77b693_0", CdPlay);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_6", CdPlay);

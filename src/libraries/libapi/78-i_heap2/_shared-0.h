@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/78-i_heap2.o[0] 78-i_heap2.o
- * sha256: 8a5373081ecfbafb91192a5e4a9c96697e1180f9f20b73356588bb1659a60746
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[78] I_HEAP2.OBJ
+ * sha256: 222a48b22de63d54bdab41656ba1bddfa0d15061b5adb1b5e80b94e9f8fee1e1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: InitHeap2
  */

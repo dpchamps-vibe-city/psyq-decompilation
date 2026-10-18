@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/40-floor00.o[0] 40-floor00.o
- * sha256: 71c35b67e8992a1b103b13968c6a0b82e20bdba12f9a01f674f12750a6f46797
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[40] FLOOR00.OBJ
+ * sha256: 0bf19ae1c05c4235ba5d148e45ce4a935aa98afcfb6fec30efc0bed371d28eeb
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: floor
  */

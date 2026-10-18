@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_143d4fb7aa9cb0bc_0",
+  "member": "libc_21",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "strlen.c",
-      "symbol": "strlen"
+      "path": "backlog.ASM",
+      "symbols": [
+        "strlen"
+      ],
+      "backlog": true
     }
   ]
 }

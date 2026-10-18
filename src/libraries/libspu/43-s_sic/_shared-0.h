@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/43-s_sic.o[0] 43-s_sic.o
- * sha256: a04776a49e9f54ae88a7117f8a97460f7c97c24dfff0d1e94da6f283a47342f6
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[43] S_SIC.OBJ
+ * sha256: 9f6cc3845b9004195cd5f34c10eded84a7943659de2878c141604f9a45b98830
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetIRQCallback
  */

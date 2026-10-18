@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/6-cor_00.o[0] 6-cor_00.o
- * sha256: aa973b0758bdfa5eeb9e822d46b1b710a06e9a5350d7d8ca88c1869d9ffa20b2
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[6] COR_00.OBJ
+ * sha256: f2676880701e9271260616e548deb50586d0e95efe3257dcdfafcffe6ff3ddd7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: RotMatrixC
  */

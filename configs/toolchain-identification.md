@@ -1,11 +1,65 @@
 # Toolchain identification — evidence and configured decisions
 
+## Production provenance migration (2026-10-18)
+
+The interim settings below are superseded. Production now uses pinned standalone
+1997-03-18 `cccp` (`28b9f74d…ded`), `cc1` (`c4b82c51…686`) at `-O3 -G0`,
+and the period ECOFF assembler (`d4ec93c0…428`), followed by the harness's
+implementation-hashed `psyq-dmpsx` and `psyq-lnk`. Full executable/recipe hashes
+are in `toolchain.json`; no flags or acceptance bytes are repaired per member.
+Acceptance is the SHA-256 of the complete Sony `.OBJ`, not ELF/ECOFF equivalence.
+
+`sony-early` is the converter's `early` layout only; its sole selected owner is
+POWERON. Every selected member uses `as -EL -G0 -mips1`. `-G8` is unused and
+unsupported by the direct-GAS configuration. GUN, NEWGUN and TAP are excluded:
+their original assembler is not available. They return only when it is found;
+see `build/toolchain-provenance/fix-research/early/` and the separate
+`older-build-assembler.md` task. No `.sbss` generator rule is claimed.
+
+The production-chain HMD makefile replay is **551/575 identical, 0 build errors**
+(281 C + all 270 assembly objects), including all documented C GTE placeholders.
+The remaining 24 objects are the ordinary-code differences documented in
+`notes/research/compiler-identification-1997-trunk.md` §8. The reproducible driver
+is `tools/replayHmd.mts`; its input/define/DMPSX manifest, tools, hashes and full
+results are in `build/toolchain-provenance/hmd-production-replay/`.
+
+The earlier agent-produced assembly conversions are **withdrawn as source
+reconstruction evidence**, even where their object hashes matched. This includes
+the 88 compiler-generated BIOS wrappers and period-spelling/label/instruction
+rewrites. Pre-switch source bytes have been restored unchanged. Safe C attempts remain
+disabled behind original-derived extraction; 624 original assembly files are
+archived verbatim, uncompiled, outside preprocessing. Period `cccp` rejects some
+original assembly lexically even under `#if 0`; none was repaired to make it
+embeddable. They are not counted as reconstructed C or assembly. No
+prefix-splicing exception remains.
+`build/toolchain-provenance/provenance-remediation.json` records the before/after
+hashes and backup paths; the old conversion scripts are quarantined, not reused.
+
+The three printf-family C fixes remain C and were previously hash-identical.
+The prior 2,167-member/1,849-match report is historical, not current acceptance.
+The selected scope is now 2,164 original members. Fresh post-remediation
+`check-splits` passes 2,164/2,164. After deleting the verification records, the
+real `npm run check-all` and opt-in native acceptance test pass: all 2,164 whole
+original/rebuilt `.OBJ` SHA-256 hashes agree. All 825 assembly TUs remain explicit
+extraction backlog; there are zero reconstructed assembly TUs. The fresh graph
+contains 3,166 uniquely owned functions and exactly 2,176 eligible C-stub targets,
+with zero parks. The harness suite passes (1,531 passed, 123 explicit skips), and
+the opt-in native test passes separately. Current evidence is
+`build/toolchain-provenance/completion-status.json` and
+`build/toolchain-provenance/harness-verification/*-final.log`.
+A hash match certifies the stated build scope, not the faithfulness of a
+reconstructed source. The user's prohibition on assembly
+reconstruction and target-fitting overrides conflicting assembly-restoration
+instructions in the completion plan. The user starts the session-local autoloop
+with `/auto_decompilation_loop` in this project's Pi TUI.
+
 ## Configured assembler adoption (2026-10-13)
 
 The initial-pass sections below are historical, not the current target or
-compiler configuration. `project.json` now selects the 2,224 ordinal-preserving
-Redux/COMMON objects under `library-input/redux`; the compiler candidate remains
-GCC 2.7.2, with compiler and assembler `-G0`.
+compiler configuration. The current selection is 2,164 native Sony originals;
+Redux/COMMON ELF objects are diagnostic views only. Libsn, the four SN-built
+standalone objects and the three GUN/NEWGUN/TAP members are excluded. The original adoption described below used GCC 2.7.2 and `-G0`; the
+later compiler update supersedes it.
 
 > **Update 2026-10-17.** The compiler identification below is superseded. The
 > library objects were produced by a GCC development-trunk snapshot dated
@@ -16,12 +70,58 @@ GCC 2.7.2, with compiler and assembler `-G0`.
 > `notes/research/compiler-identification-methodology.md` (method). The
 > assembler findings below stand.
 
+> **Update 2026-10-17 (assembler).**
+> - **Identification.** The GNU-built members were assembled by a GNU as
+>   development-trunk snapshot dated between 1997-02-13 and 1997-04-29,
+>   writing little-endian ECOFF.
+> - **Rewrites retired.** Its own output explains `move` as `addu`, the
+>   divide-first division expansion and the `.rdata` section name. The
+>   `move-addu` and `rdata-section` input rewrites were therefore removed.
+>   The retired key is now deleted; the schema rejects even an empty list.
+> - **Interim state.** The base assembler below is still the host's GNU as
+>   2.42 until the pinned recipe is adopted.
+> - **Evidence.** See `notes/research/assembler-identification-1997-trunk.md`.
+>   Its initialized section bytes/relocation sites agree for all 178 research
+>   members. This is not full native-object acceptance: the implemented strict
+>   gate has not established native acceptance for those 178 members. The
+>   former universal alignment mismatch was a verifier bug (BFD's default was
+>   incorrectly treated as encoded ECOFF metadata), now withdrawn. Unavailable
+>   alignment checks and observed section/relocation differences are reported
+>   separately; neither permits acceptance.
+> - **Still valid.** The indexed-load and delay-slot findings below are
+>   unchanged.
+
+> **Update 2026-10-18 (confirmation on Sony's own source).**
+> - **Compiler.** Both window edges are now single commits confirmed by this
+>   corpus: `cabcf079ea40` (1997-02-05) and `38b610ed8e01` (1997-03-18). Every
+>   sampled snapshot between them gives identical results, so the
+>   `trunk-19970318` pin stands.
+> - **Sony's own HMD build, replayed from its makefiles.**
+>   - 275 of 305 Sony-authored C objects rebuild whole-file identical, and 281
+>     with the DMPSX C-macro table the SDK documents.
+>   - All 270 ASM objects rebuild whole-file identical.
+>   - libhmd was built with `-O3`; the production flag is `-O2`. The 161
+>     reconstructed C members match at both levels, so no measured member needs
+>     `-O2`.
+>   - 24 C objects differ in code, probably source drift between the disclosed
+>     Release 4.4 sources and the 4.7 members.
+> - **Packaging.** The ECOFF→LNK step is recoverable from the originals (a
+>   constant header, plus fields derived from the ECOFF object). The former
+>   alignment and empty-declaration gaps are therefore format artefacts.
+> - **Evidence.** `notes/research/compiler-identification-1997-trunk.md` §8,
+>   `notes/research/assembler-identification-1997-trunk.md` §10 and both
+>   methodology notes.
+> - **Unchanged.** Production selections, flags and the verification mode;
+>   their change is the gated switch-over.
+
 The configurable-backend harness is adopted in `toolchain.json`:
-- Base: direct GNU as, `inputRewrites: ["move-addu", "rdata-section"]`, default optimization.
-  The read-only-data rewrite preserves the `.rdata` name witnessed in 154
-  originals (40 with switch tables), rather than ELF GAS's `.rodata` alias;
-  see `plans/harness-rdata-section-rewrite.md`. It changes assembler input,
-  not the strict whole-member oracle.
+- Base: direct GNU as, default optimization, unchanged assembler input. The
+  former `inputRewrites` key (`["move-addu", "rdata-section"]` until 2026-10-17)
+  is deleted.
+  The read-only-data rewrite had preserved the `.rdata` name witnessed in
+  154 originals (40 with switch tables), rather than ELF GAS's `.rodata`
+  alias. That name is native ECOFF output of the identified assembler; see
+  `plans/harness-rdata-section-rewrite.md` (superseded).
 - `sn-aspsx`: MASPSX, retaining the former unpadded profile and its 38 libsn
   selections. MASPSX's public pin and ASPSX 2.80 candidate mode are unchanged.
 - `sn-aspsx-padded`: MASPSX with base padded assembler flags, assigned to the

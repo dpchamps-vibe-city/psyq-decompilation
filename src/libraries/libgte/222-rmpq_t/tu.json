@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_d1362bd42e455b7b_0",
+  "member": "libgte_222",
   "parts": [
     {
-      "path": "rmpq_t.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotMeshPrimQ_T"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

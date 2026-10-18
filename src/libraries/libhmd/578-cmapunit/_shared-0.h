@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/578-cmapunit.o[0] 578-cmapunit.o
- * sha256: 10e005cf3b04c57042b3f527d5bf9b9f6064a77e2a8a505eb4c9863f6fdb241c
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[578] CMAPUNIT.OBJ
+ * sha256: 8b63365a0e09ff2ab2e531eea0ca1a6eee99e95dbfe21d7f4b09a4289e5e6fd1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsMapCoordUnit
  */

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_c4ac4b16230624d6_0", SpuSetIRQ);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_39", SpuSetIRQ);

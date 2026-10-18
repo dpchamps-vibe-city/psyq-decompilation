@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libmath/56-printf2.o[0] 56-printf2.o
- * sha256: 9a228ba0952e68a14ab80bda641ab552ccca7d18f9378bd4beb3c49001e945ad
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[56] PRINTF2.OBJ
+ * sha256: 08ad43a4e264411435de6183265c1db1838d6a2d7756125d178fbc88d5ca1eef
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: printf2, sprintf2
+ * Functions: printf2, sprintf2, func_000000EC, func_00000AD8, func_00001374, func_00001528
  */
 #include "common.h"
 #include "include_asm.h"

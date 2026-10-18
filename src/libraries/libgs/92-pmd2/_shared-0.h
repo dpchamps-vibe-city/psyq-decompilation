@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/92-pmd2.o[0] 92-pmd2.o
- * sha256: 785d0351bb4ed3930fcf1ebe101c0036703e5ad9873fce6c57e330754b3a0414
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[92] PMD2.OBJ
+ * sha256: 7887326fecbf8feeb9b90fb414c982b1af4eeea79e3c02374c009c32cea8bae6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortObject3
  */

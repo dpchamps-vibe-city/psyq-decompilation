@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1541083c1d7b8934_0",
+  "member": "libc_43",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "realloc.c",
-      "symbol": "realloc"
+      "path": "backlog.ASM",
+      "symbols": [
+        "realloc"
+      ],
+      "backlog": true
     }
   ]
 }

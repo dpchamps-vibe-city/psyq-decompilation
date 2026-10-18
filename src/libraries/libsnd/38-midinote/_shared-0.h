@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/38-midinote.o[0] 38-midinote.o
- * sha256: 4fbd84b8284d07fb8b300472266873cdcb427a8f590f62c6d06b67eba4f3e740
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[38] MIDINOTE.OBJ
+ * sha256: 56b181b4cf5428775b2c6e297f53bc0283d491f02d1f2fdd306aedffbd3ce774
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsNoteOn
  */

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5e0c32ed609b0047_0",
+  "member": "libhmd_10",
   "parts": [
     {
-      "path": "00000012.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsU_00000012"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

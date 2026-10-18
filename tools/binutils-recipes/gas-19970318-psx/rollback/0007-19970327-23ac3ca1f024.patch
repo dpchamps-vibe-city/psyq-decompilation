@@ -1,0 +1,50 @@
+Upstream commit: 23ac3ca1f02469e8f7d4a795d95978585c40be19
+ChangeLog / commit message:
+* read.c (s_comm): Check S_IS_COMMON as well as S_IS_DEFINED.
+	(s_mri_common): Check S_IS_COMMON unconditionally.
+	* symbols.c (colon): Check S_IS_COMMON as well as S_IS_DEFINED.
+	* config/tc-alpha.c (s_alpha_comm): Likewise.
+	* config/tc-mips.c (nopic_need_relax): Likewise.
+	* config/tc-ppc.c (ppc_elf_lcomm): Likewise.
+	(ppc_pe_comm): Likewise.
+	* config/obj-elf.c (obj_elf_common): Likewise.  Set segment of
+	common symbol to bfd_com_section_ptr.
+	* config/tc-sparc.c (s_common): Likewise.
+	(tc_gen_reloc): Likewise.
+Files: gas/config/tc-mips.c
+
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -1177,19 +1177,14 @@
+   else
+     {
+       if ((ip->insn_mo->pinfo & MIPS16_INSN_READ_X)
+-	  && (mips16_to_32_reg_map[((ip->insn_opcode >> MIPS16OP_SH_RX)
+-				    & MIPS16OP_MASK_RX)]
+-	      == reg))
++	  && ((ip->insn_opcode >> MIPS16OP_SH_RX) & MIPS16OP_MASK_RX) == reg)
+ 	return 1;
+       if ((ip->insn_mo->pinfo & MIPS16_INSN_READ_Y)
+-	  && (mips16_to_32_reg_map[((ip->insn_opcode >> MIPS16OP_SH_RY)
+-				    & MIPS16OP_MASK_RY)]
+-	      == reg))
++	  && ((ip->insn_opcode >> MIPS16OP_SH_RY) & MIPS16OP_MASK_RY) == reg)
+ 	return 1;
+       if ((ip->insn_mo->pinfo & MIPS16_INSN_READ_Z)
+-	  && (mips16_to_32_reg_map[((ip->insn_opcode >> MIPS16OP_SH_MOVE32Z)
+-				    & MIPS16OP_MASK_MOVE32Z)]
+-	      == reg))
++	  && ((ip->insn_opcode >> MIPS16OP_SH_MOVE32Z)
++	      & MIPS16OP_MASK_MOVE32Z) == reg)
+ 	return 1;
+       if ((ip->insn_mo->pinfo & MIPS16_INSN_READ_T) && reg == TREG)
+ 	return 1;
+@@ -9617,7 +9612,7 @@
+ 	      || strcmp (symname, "end") == 0
+ 	      || strcmp (symname, "_gp_disp") == 0))
+ 	change = 1;
+-      else if ((! S_IS_DEFINED (sym) || S_IS_COMMON (sym))
++      else if (! S_IS_DEFINED (sym)
+ 	       && (0
+ #ifndef NO_ECOFF_DEBUGGING
+ 		   || (sym->ecoff_extern_size != 0

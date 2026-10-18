@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "member": "lib_0601499d82e87ecf_0",
+  "member": "libgte_194",
   "parts": [
     {
-      "path": "divgt4a.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RCpolyGT4",
         "RCpolyGT4A",
         "func_000005D4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

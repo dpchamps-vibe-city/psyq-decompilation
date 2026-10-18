@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/13-s_m_util.o[0] 13-s_m_util.o
- * sha256: e6c6db4a4b5126a17575b1a028a3d4628226140894196069a67419089d449d39
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[13] S_M_UTIL.OBJ
+ * sha256: 0dd3118a7c6e928b12bab368cccb4fd67071f4f8fed37ce1b309eb4b4a702d2f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SpuIsInAllocateArea, _SpuIsInAllocateArea_
  */

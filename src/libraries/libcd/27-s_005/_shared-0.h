@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/27-s_005.o[0] 27-s_005.o
- * sha256: 4805b7804d1b72c4d9f13f8dddb39008589388b5a4b4c9dc59584d84b4728f90
+/* Original TU: library-input/psyq/LIB/Libcd.lib[27] S_005.OBJ
+ * sha256: 477bde332d5ffc373bc57db416709076dc316968c41d9186c1ebd70adae66129
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdLastCom
  */

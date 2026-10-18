@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/87-sn_sva.o[0] 87-sn_sva.o
- * sha256: bb22dac10552b72778ca6a667c6a29aa4c5a2da5ae8d7f0fe845256ee466cfa0
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[87] SN_SVA.OBJ
+ * sha256: e5cd1dd6ed6a531a80dbb736f2b79f9311df7786757d03bb41bfc16b4a089e35
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuNSetVoiceAttr
  */

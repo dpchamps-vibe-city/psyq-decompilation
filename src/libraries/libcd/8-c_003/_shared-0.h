@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/8-c_003.o[0] 8-c_003.o
- * sha256: ec6c8d8adfe6e47a404035dc4a96e075c381cafe8730ff447355929f07ad559b
+/* Original TU: library-input/psyq/LIB/Libcd.lib[8] C_003.OBJ
+ * sha256: ff43457cd7c301e167d4ae04adb070640e07142fba3cc82bc826932fa400ab5d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StUnSetRing
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/30-s_008.o[0] 30-s_008.o
- * sha256: 6926358ef680d82c2550bb832c21c89fb46f8eb4b1bfc349cdc99db9464a23f0
+/* Original TU: library-input/psyq/LIB/Libcd.lib[30] S_008.OBJ
+ * sha256: 91408d6800ac082692b4e9bd4218b6d21550f8a89fd94e7aeaf63117bb0c2a9b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdFlush
  */

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_b13395f27f30f3f8_0",
+  "member": "libgte_44",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetRotMatrix.c",
-      "symbol": "SetRotMatrix"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetRotMatrix"
+      ],
+      "backlog": true
     }
   ]
 }

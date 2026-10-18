@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/49-pow.o[0] 49-pow.o
- * sha256: 5ff609631dbbc9c6a6b1c16ffd0244180be7bee28e1b682a845b448764008647
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[49] POW.OBJ
+ * sha256: 1e54452ca05f18e6fdd570b595623f1e3fe44c0d1e97e39f87594357377b3167
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: pow
  */

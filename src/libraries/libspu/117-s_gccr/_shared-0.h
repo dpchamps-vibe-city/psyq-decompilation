@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/117-s_gccr.o[0] 117-s_gccr.o
- * sha256: 3ebb8710864c498ae101d65e9de5aed9207cc0410918773a35394b45e5fd076e
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[117] S_GCCR.OBJ
+ * sha256: 74a06c3d6d1eedc4955157a8533e1a46a76eb7b7a039957d71206adcafdfa7ae
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetCommonCDReverb
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/standalone/mcgui_e.o[0] mcgui_e.o
- * sha256: 72cf3b0a12e900832729d92e9b8259cc8f9824ae9ae9449fe4e9e82e41da16bf
+/* Original TU: library-input/psyq/LIB/MCGUI_E.OBJ[0] MCGUI_E.OBJ
+ * sha256: 9809a91d2795b509a14b1e945b38d0b678d3e3cea6258e55c6521fdeadad5bcf
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: McGuiSetExternalFont
  */

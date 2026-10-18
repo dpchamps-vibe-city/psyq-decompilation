@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/158-ut_gvh.o[0] 158-ut_gvh.o
- * sha256: 72ef630bfc6d12628c2b606b83a0e3c12cf048aac10ef96f36fd82a9c930172b
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[158] UT_GVH.OBJ
+ * sha256: ec51a217cc783493cc7508d97295a14c6a90635a0e0394a4faf205cdb0d6c3cd
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetVabHdr
  */

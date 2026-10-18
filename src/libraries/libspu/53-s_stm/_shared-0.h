@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/53-s_stm.o[0] 53-s_stm.o
- * sha256: cd5f4141a92e12b87943703156305e998ba1b93e8b635b81f4eb522b6402555b
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[53] S_STM.OBJ
+ * sha256: 86611dbff46f668ab7e02b2399de09c7460a9dd2c8397d0f4f7295f272cd4c82
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetTransferMode
  */

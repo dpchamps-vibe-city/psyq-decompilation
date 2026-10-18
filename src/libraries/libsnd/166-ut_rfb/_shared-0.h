@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/166-ut_rfb.o[0] 166-ut_rfb.o
- * sha256: d8e7cf75c726c2c75c081ab9eb69d029c3cacea580f6eae4d33b8ba32ff90a58
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[166] UT_RFB.OBJ
+ * sha256: 459751a3275e5c2422adab3bd53b75317415cf4ee1f67b7cab7e14c308cfa4b5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtSetReverbFeedback
  */

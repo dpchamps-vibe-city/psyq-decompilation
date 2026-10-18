@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1d1ed7c47eecde85_0",
+  "member": "libapi_47",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "lseek.c",
-      "symbol": "lseek"
+      "path": "backlog.ASM",
+      "symbols": [
+        "lseek"
+      ],
+      "backlog": true
     }
   ]
 }

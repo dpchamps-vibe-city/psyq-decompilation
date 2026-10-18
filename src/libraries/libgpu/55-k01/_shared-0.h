@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/55-k01.o[0] 55-k01.o
- * sha256: ae656485ae45521c3a9637f88451b452c4967d533653ddb3c2e1649a1f7bf519
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[55] K01.OBJ
+ * sha256: 42cf014ead4f47069844a1fb0ce67c9f4559e0749e81bb1296ca078327f7a07e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: Krom2Tim
  */

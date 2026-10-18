@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/176-vm_aloc1.o[0] 176-vm_aloc1.o
- * sha256: 7699dce893be713e4a4d090ce6555bf3a63bfcfd957abed86867737708f9a6ec
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[176] VM_ALOC1.OBJ
+ * sha256: 7e0bfa8c43d3178049765ba2caa937cf036e0880f139620948077c0ace7c7ae6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmAlloc
  */

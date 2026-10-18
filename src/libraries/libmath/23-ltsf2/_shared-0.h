@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/23-ltsf2.o[0] 23-ltsf2.o
- * sha256: b8dac93b4946bf8ebf8b509c1b151bee3f98af247cde731a477aeb83f5d740c0
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[23] LTSF2.OBJ
+ * sha256: e97d9b538867d53bb25fa8ea219c0db5f1aab2bb172f90c14d65cc5464cd288a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __ltsf2
  */

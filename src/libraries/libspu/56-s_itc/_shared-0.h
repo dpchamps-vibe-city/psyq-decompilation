@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/56-s_itc.o[0] 56-s_itc.o
- * sha256: aadb3b2c2cbacf525196deead5a6088dbf9b4a0f1b8f09c7ceab5a6364a4eb4d
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[56] S_ITC.OBJ
+ * sha256: 60f28620ce18c3eb16083257bbd3df7ea59b87ea415cba5289e4ca42988d1e34
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuIsTransferCompleted
  */

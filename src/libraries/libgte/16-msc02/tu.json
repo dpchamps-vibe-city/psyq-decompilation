@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "member": "lib_d4d00636e606a8e1_0",
+  "member": "libgte_16",
   "parts": [
     {
-      "path": "msc02.s",
+      "path": "backlog.ASM",
       "symbols": [
         "InvSquareRoot",
         "VectorNormalS",
@@ -11,7 +11,8 @@
         "VectorNormalSS",
         "func_00000170",
         "MatrixNormal"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/42-hypot.o[0] 42-hypot.o
- * sha256: 5452ca7d79ca621296915d448758ef872fe7b84e3b3836f63a74a31505794649
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[42] HYPOT.OBJ
+ * sha256: e1e79c6d4acea6d94ee308abfa238158de75ecabaa61503a6696fe3858aec297
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: hypot
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/30-nesf2.o[0] 30-nesf2.o
- * sha256: a383af24eebe289f98525fbc9e74411d3501203e048be712951ae186641a4ba8
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[30] NESF2.OBJ
+ * sha256: f6acc5ccc54be72d19ec94d4122ed16bf642278fff8254068c4f008051de662e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __nesf2
  */

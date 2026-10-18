@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/5-cdread2.o[0] 5-cdread2.o
- * sha256: 4b8e5e8a31d7774b3ae80f6185a1315464550dabb9f1ebf7ab720a0583360029
+/* Original TU: library-input/psyq/LIB/Libcd.lib[5] CDREAD2.OBJ
+ * sha256: 5b8c21d0a39fd67ffa42c94c152f8c2949b5ea3acf6f23854975ed03c916d6ff
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdRead2
  */

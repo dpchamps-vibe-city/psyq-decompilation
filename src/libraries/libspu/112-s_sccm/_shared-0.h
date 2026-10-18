@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/112-s_sccm.o[0] 112-s_sccm.o
- * sha256: fd9807d983ce34d06b7ca8f9851f8c86ab90d5372afd4d047c4b188ba5fdd5c3
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[112] S_SCCM.OBJ
+ * sha256: 7b10af735d07f4246fb74acac79fb46e669cfa32dcf3819a0049ee9d3d9d10fb
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetCommonCDMix
  */

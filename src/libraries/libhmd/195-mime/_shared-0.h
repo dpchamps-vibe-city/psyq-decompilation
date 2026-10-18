@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/195-mime.o[0] 195-mime.o
- * sha256: 1128a12420e10b8bb02e16f058af85e6d9c088e8160d0df6111920db722a4623
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[195] MIME.OBJ
+ * sha256: 248f3d1db9380dd6fe9c54e9e560a46843b8c61cf0c4ffff44398f7edcbf3d10
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsInitRstVtxMIMe, GsInitRstNrmMIMe
  */

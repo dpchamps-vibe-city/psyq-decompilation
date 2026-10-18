@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/21-p09.o[0] 21-p09.o
- * sha256: 830c222b54da3cc9ad4f6f9c2fefc4b6f53e8d6075fc41d43a5087261f6bc488
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[21] P09.OBJ
+ * sha256: 490b2bf6bffe1f63ff809e90ff4a91e8bab01f0b4a64493e88bfd5d87d6ad085
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: TermPrim
  */

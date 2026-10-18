@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/59-s_splv.o[0] 59-s_splv.o
- * sha256: 6e22d9e5a9a76f2502d4bf5d30d20c34bc8949756e6b2622e58ba64dd364ac5c
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[59] S_SPLV.OBJ
+ * sha256: 4b7dca378f26ed3731733d561fdee50d794ec20859948ea4961717d436c77008
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuSetPitchLFOVoice
  */

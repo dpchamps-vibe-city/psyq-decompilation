@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_e6f010b84c007644_0", McxSetMem);
+INCLUDE_ASM("build/libraries/nonmatchings/libmcx_6", McxSetMem);

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_e9bf6fbab1845172_0", RotMatrixZYX_C);
+INCLUDE_ASM("build/libraries/nonmatchings/libgte_260", RotMatrixZYX_C);

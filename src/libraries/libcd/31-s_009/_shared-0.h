@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/31-s_009.o[0] 31-s_009.o
- * sha256: 87ff9342e74932021550b34211be7aa07f0475092eebae6f1b4d10086aaad8f4
+/* Original TU: library-input/psyq/LIB/Libcd.lib[31] S_009.OBJ
+ * sha256: 6d21485114b92f264a54a00728948b954722f0a0227d0634afdc320e03acc8f4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdSetDebug
  */

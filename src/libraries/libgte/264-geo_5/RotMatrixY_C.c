@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_52d254bc745f49f9_0", RotMatrixY_C);
+INCLUDE_ASM("build/libraries/nonmatchings/libgte_264", RotMatrixY_C);

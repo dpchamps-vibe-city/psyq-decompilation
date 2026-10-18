@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/15-strcat.o[0] 15-strcat.o
- * sha256: 2d7578ab102d565e27299c115bcf2bc07eb4c45363fa11df07c606ff61d9d1ee
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[15] STRCAT.OBJ
+ * sha256: cd2365f66aa823500b789d40068ac43e2124c09cc3292eabe046f1a064a493a5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strcat
  */

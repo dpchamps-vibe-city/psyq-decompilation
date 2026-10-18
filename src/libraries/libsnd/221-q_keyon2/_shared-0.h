@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/221-q_keyon2.o[0] 221-q_keyon2.o
- * sha256: 19d8739b783be8ea63cfb1933f1fac8fa203f2debd722842580061491c9f8d4c
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[221] Q_KEYON2.OBJ
+ * sha256: e6a870159ea8880c6e6180789936cbec476e16522c23663d826ab8da1c6076b6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsQueueReverb
  */

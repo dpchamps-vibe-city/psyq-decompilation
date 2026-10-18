@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_2405c148f7fb0718_0",
+  "member": "libapi_84",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

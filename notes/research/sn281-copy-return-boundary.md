@@ -1,6 +1,6 @@
 # Copy helper under unmodified Homebrew Psy-Q 2.8.1
 
-Date: 2026-10-17. Target: `lib_dacb6c202432cdbd_0::func_000001A0`.
+Date: 2026-10-17. Target: `libapi_87::func_000001A0`.
 
 ## Outcome
 

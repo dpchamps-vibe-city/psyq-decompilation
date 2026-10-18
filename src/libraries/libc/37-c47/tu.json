@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_8c0bb74db7a3436f_0",
+  "member": "libc_37",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "rand.c",
-      "symbol": "rand"
+      "path": "backlog.ASM",
+      "symbols": [
+        "rand"
+      ],
+      "backlog": true
     }
   ]
 }

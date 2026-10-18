@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_0bf915322a631f5f_0", GsSetClip2);
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_36", GsSetClip2);

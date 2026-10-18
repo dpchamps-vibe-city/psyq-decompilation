@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/10-fixdfsi.o[0] 10-fixdfsi.o
- * sha256: 419100e9edbbcb84fa9ae0b2a3f210be7be1ed5328e46b17bebe83fd5cd3ce35
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[10] FIXDFSI.OBJ
+ * sha256: 8c2c7bb8902adafe5fa1ff5a8f55a8d917cd94f50e2a8a7e02db94b8f8f4312c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __fixdfsi
  */

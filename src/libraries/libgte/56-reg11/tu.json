@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a32aefebc92c7234_0",
+  "member": "libgte_56",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetFarColor.c",
-      "symbol": "SetFarColor"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetFarColor"
+      ],
+      "backlog": true
     }
   ]
 }

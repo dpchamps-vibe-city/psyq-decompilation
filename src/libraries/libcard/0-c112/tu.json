@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_a7dab7fae71f47a8_0",
+  "member": "libcard_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_bu_init.c",
-      "symbol": "_bu_init"
+      "path": "backlog.ASM",
+      "symbols": [
+        "_bu_init"
+      ],
+      "backlog": true
     }
   ]
 }

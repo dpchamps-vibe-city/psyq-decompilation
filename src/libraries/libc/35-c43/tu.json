@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5c6a20dd0b0dd545_0",
+  "member": "libc_35",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "memset.c",
-      "symbol": "memset"
+      "path": "backlog.ASM",
+      "symbols": [
+        "memset"
+      ],
+      "backlog": true
     }
   ]
 }

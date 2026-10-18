@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/197-vm_prog.o[0] 197-vm_prog.o
- * sha256: 4da2767ce049eec07a76fbdc095ffbdf2bd881c4d2d264b49f8fcfc29847da96
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[197] VM_PROG.OBJ
+ * sha256: d3dfcf3c70bcfc0a0ef1011c8e2b7d5f98ebaaf0fee6740210d73c0b6abf48b6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmGetProgVol, _SsVmSetProgPan, _SsVmGetProgPan
  */

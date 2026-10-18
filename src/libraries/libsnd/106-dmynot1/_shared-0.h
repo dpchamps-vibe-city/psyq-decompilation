@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/106-dmynot1.o[0] 106-dmynot1.o
- * sha256: 781aa7cea08818c69fe7e36ccdcca1093e5536efd1a544dfed615666448676f8
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[106] DMYNOT1.OBJ
+ * sha256: b86d1858b5bad111fa20922d35ff4d5eca6e106571139c9aa51ef56a557b9217
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_nothing1
  */

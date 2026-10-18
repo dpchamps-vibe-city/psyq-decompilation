@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/36-midicc.o[0] 36-midicc.o
- * sha256: 049669935578d4bd058a8e9730aa63bf42affaa8b690ba57818818803eacf845
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[36] MIDICC.OBJ
+ * sha256: 641fde64538b097dbd6f79f28c19088734c2115ab29c359ea036860a9e674e48
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSetControlChange
  */

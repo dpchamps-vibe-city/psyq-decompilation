@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/52-gs_104.o[0] 52-gs_104.o
- * sha256: e4b974fbbb17948b6aea2a01f7186bb82d31d0a951d0a1ae068dd97c5d196522
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[52] GS_104.OBJ
+ * sha256: 76e76a15506d58fa2f7c94e2c61ee73c1c3f9aa61bdb978c4fae402c227d2f3c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsInit3D
  */

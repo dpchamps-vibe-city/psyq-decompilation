@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/29-gs_005.o[0] 29-gs_005.o
- * sha256: a561aa5b08bfcf438f632f043e397cbd39c4b7158c735b4310dee44eabf21031
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[29] GS_005.OBJ
+ * sha256: 4b710563bfa59f0b30708bbe8237e0607e411f4b978613430fe51ae55466f3a9
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetClip
  */

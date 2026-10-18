@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/49-gs_101.o[0] 49-gs_101.o
- * sha256: 3dc462cc8e04154437b498c0981e198dcc6d02fa47b5e454c8e7271f50e9a854
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[49] GS_101.OBJ
+ * sha256: 1ff8725060d177b997003072ada9217ebaf93ae2d14d2c57729ad43cc619c602
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetNearClip
  */

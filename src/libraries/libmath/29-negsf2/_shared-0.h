@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/29-negsf2.o[0] 29-negsf2.o
- * sha256: e701e62596d153898045e0725a5036c2b7b824dda0c1f0534153de71dce5931b
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[29] NEGSF2.OBJ
+ * sha256: eede37d24260c5965b660b4949cfb6690866a0fbc3c4bed8673f4e66fa633ac2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __negsf2
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/130-dag3gf02.o[0] 130-dag3gf02.o
- * sha256: 2c06b563c10265d451ddbc9f3979488a536a00a735aaad7d8b9ec8dec6a513a4
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[130] DAG3GF02.OBJ
+ * sha256: bd5edadfafb4666484a63649770945aa81ebebd31b436e174b9ce393217d1731
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsTMDfastG3GNL
  */

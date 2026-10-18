@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/48-seqinit.o[0] 48-seqinit.o
- * sha256: 2400095b36bdc475b7df03e1987cca9b4d43a5176fe5db7e875d578a5657a672
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[48] SEQINIT.OBJ
+ * sha256: 7ba4e3ef77c34f60db2882d2d76972c41df5168b9b834bd87b8f3f5acbef979a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsInitSoundSeq
  */

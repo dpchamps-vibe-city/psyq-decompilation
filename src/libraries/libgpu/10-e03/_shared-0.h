@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/10-e03.o[0] 10-e03.o
- * sha256: 90c9d02dcf8545f6f655219242233f7863800e704ddc06e9f0fe973be4b5ebe3
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[10] E03.OBJ
+ * sha256: 7900d8aade775fb2deeefb88d176bc0389946205d5aa1dfce7f92a0c0a01d346
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetDefDrawEnv
  */

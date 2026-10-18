@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/149-ut_autov.o[0] 149-ut_autov.o
- * sha256: 1bf40f2ccd3da981247e9bb3bf8bd81f3237f8b9938fbde9c731195922447ae1
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[149] UT_AUTOV.OBJ
+ * sha256: 2ff7ae771b39c1e7cd512e7badfa84f77581821e045550577f24ff2d03d69485
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtAutoVol
  */

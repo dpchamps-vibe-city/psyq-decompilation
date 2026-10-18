@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/200-vm_seq_2.o[0] 200-vm_seq_2.o
- * sha256: ee9b8c5f3e029ab6dd9ff93b75c09740e25a49e761f759ef1afd9f094f8cc7ff
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[200] VM_SEQ_2.OBJ
+ * sha256: bbbd04c99e5ef1ff0003d755086481c4fdeb5e24b88e983086a94909e3101cfb
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmGetSeqLVol, _SsVmGetSeqRVol
  */

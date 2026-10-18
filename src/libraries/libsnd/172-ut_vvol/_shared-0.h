@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/172-ut_vvol.o[0] 172-ut_vvol.o
- * sha256: 03814873519cac9a67fcd78213b4c2e57382a937b9e3c426f8dcdbc852957240
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[172] UT_VVOL.OBJ
+ * sha256: 87627446e4efe3ba94da4068866bf09bda576d64a578e2670984ee68b2cfe3d8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetDetVVol
  */

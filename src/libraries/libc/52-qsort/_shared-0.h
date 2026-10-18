@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc/52-qsort.o[0] 52-qsort.o
- * sha256: 82d016933ade74138ab823bf269f7c42e18e56c42faeec3bd0e776f912169e6e
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[52] QSORT.OBJ
+ * sha256: 2f00244d41eec9ce6990826ba55cc8652d7be82a6698daae5ea6a91cf1721143
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: qsort
  */

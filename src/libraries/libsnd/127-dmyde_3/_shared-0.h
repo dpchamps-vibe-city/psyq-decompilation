@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/127-dmyde_3.o[0] 127-dmyde_3.o
- * sha256: e0e5b451255728860e347de1e44fd504b130666cfdd8db313c6baa28de205817
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[127] DMYDE_3.OBJ
+ * sha256: 15838b3213646dc2fb3d486bf10e23f63f63c562a721897c7357a1b0d62e15fa
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsSetNrpnVabAttr3
  */

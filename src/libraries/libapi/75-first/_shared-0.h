@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/75-first.o[0] 75-first.o
- * sha256: 16ba52bcbc05d7ab6633a85c98a082856a76dbea8b781a4ab50aafbd7d94e84c
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[75] FIRST.OBJ
+ * sha256: b6bdf872b343258b83302382c2efb107035c93137afe64edddd52eac761ae24f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: firstfile
  */

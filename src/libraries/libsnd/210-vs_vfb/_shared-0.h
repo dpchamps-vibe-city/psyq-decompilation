@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/210-vs_vfb.o[0] 210-vs_vfb.o
- * sha256: c50d73ce9798afe7389acd79c97c2023560d8382bcac680ab3000cfc7a4c7f1f
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[210] VS_VFB.OBJ
+ * sha256: db5bf87c97999637a3238ac9cf84c285d0b1c08ac51fbd664db79ab265742d9b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsVabFakeBody
  */

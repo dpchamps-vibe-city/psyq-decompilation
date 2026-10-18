@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5eac32cf8df76f27_0",
+  "member": "libgte_308",
   "parts": [
     {
-      "path": "smp_6.s",
+      "path": "backlog.ASM",
       "symbols": [
         "NormalColorDpq3"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

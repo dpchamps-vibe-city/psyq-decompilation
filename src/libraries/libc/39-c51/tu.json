@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_20f6929cc5610bf6_0",
+  "member": "libc_39",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "malloc.c",
-      "symbol": "malloc"
+      "path": "backlog.ASM",
+      "symbols": [
+        "malloc"
+      ],
+      "backlog": true
     }
   ]
 }

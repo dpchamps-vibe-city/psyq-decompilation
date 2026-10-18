@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/72-counter.o[0] 72-counter.o
- * sha256: f9696b5b2525f5948c2e265374583b643e5fe7484870ce81a921db325f1c6c2b
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[72] COUNTER.OBJ
+ * sha256: 72cff5d7ae33c313a9b3dbfe40b9837e2c79edab6b26e83bcd384c93e14ec1b7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetRCnt, GetRCnt, StartRCnt, StopRCnt, ResetRCnt
  */

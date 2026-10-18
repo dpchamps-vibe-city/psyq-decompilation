@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpress/7-dct002.o[0] 7-dct002.o
- * sha256: 0add01c1ba75026048ab85ec004174dfddb0677a9a49a33201897858d8b58a9a
+/* Original TU: library-input/psyq/LIB/LIBPRESS.LIB[7] DCT002.OBJ
+ * sha256: f2909e0c2e481967965ee5b7200ba0b586ce50cee65d42b35065ae7bb3ea36c6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: DecDCTBufSize
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/191-anim.o[0] 191-anim.o
- * sha256: 38d2e10a9fe5d0358feb8cf789ff63aa6d580e8e12dd6b23bc547c238fac7623
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[191] ANIM.OBJ
+ * sha256: 41329fa5a3d2ff568f15b0718baf484f4ba857095ff53c2c6e1a1037436929d7
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsScanAnim, GsLinkAnim
  */

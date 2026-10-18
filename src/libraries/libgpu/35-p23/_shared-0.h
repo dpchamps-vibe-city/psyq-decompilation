@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/35-p23.o[0] 35-p23.o
- * sha256: 19c9a5dce7ad4f1d702f66929f788af331dd9c56674beec75cddc9fdde19b408
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[35] P23.OBJ
+ * sha256: 914722061f3ae25a0dffbcd0701a61375809065d05e18ef8c87f6f106519d6d1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetTile1
  */

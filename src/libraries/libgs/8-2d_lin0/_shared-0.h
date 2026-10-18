@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/8-2d_lin0.o[0] 8-2d_lin0.o
- * sha256: 096707c49c5003eafd1a1451a3ed42c84bec68dc75dbfaab8e173df0d8ee32a4
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[8] 2D_LIN0.OBJ
+ * sha256: 0bd589588ace43a844fa8395d1fe44f142a9e97716a0e78bd412ae9df1770cab
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortLine
  */

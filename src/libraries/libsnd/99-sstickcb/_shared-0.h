@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/99-sstickcb.o[0] 99-sstickcb.o
- * sha256: 9d8d50656c82abca2edc5ce35f9f5d36610558ed4c86aa122076ae8a237bef98
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[99] SSTICKCB.OBJ
+ * sha256: 3c1128633670b0e2d2399d63062e3a796f8948f36fcef5233da0936b3d438d13
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetTickCallback
  */

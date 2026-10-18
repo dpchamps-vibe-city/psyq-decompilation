@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/75-gs_126.o[0] 75-gs_126.o
- * sha256: 9f00a68b415095ab6ace184fc17f25b414dfeff9f2ad7bf57493cbfee8d205d0
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[75] GS_126.OBJ
+ * sha256: 54763cf54b7017e55cb7ffe4099a9fcc0e0595bec39ee242cf0e0d24cc5bf4ca
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsCutOt
  */

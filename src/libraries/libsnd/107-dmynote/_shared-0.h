@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/107-dmynote.o[0] 107-dmynote.o
- * sha256: d23d82b43498f7515415f6d42fee063e2a87404667f0c38177f0342c24df6648
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[107] DMYNOTE.OBJ
+ * sha256: 2ae70d236f6e35029bf1f8554ff8d270e57635782351f3d7a741635fad2a9cb1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsNoteOn
  */

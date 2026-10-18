@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/170-ut_sva.o[0] 170-ut_sva.o
- * sha256: 2d59ccc0a5617609b5a5948a3a68b69f8c73b977ac22ce777d24b720d10675cd
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[170] UT_SVA.OBJ
+ * sha256: 836390f12efd590ee01691c5b357bae4b9db497c52615400252f4dce4b6bfa9b
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtSetVagAtr
  */

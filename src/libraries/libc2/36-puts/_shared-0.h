@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/36-puts.o[0] 36-puts.o
- * sha256: de0632ded478466f1a3af22bb5482490a632399e3882217d676c9f5da713a2a8
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[36] PUTS.OBJ
+ * sha256: 29a09584cc9136b2ad917dc825e980c3998f212105b4afb5f2f5111464f594bf
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: puts
  */

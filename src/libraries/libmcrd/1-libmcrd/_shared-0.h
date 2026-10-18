@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libmcrd/1-libmcrd.o[0] 1-libmcrd.o
- * sha256: e2f6d7db59ea288d30eebcb12420d4d52b66bdb3f6f3b249f91dcf850e1a6be0
+/* Original TU: library-input/psyq/LIB/LIBMCRD.LIB[1] LIBMCRD.OBJ
+ * sha256: 76b4478a661bccc4fcde9815f59b25a45d3758a1d13756b3ae68c043a1cd6f67
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: PushCallbackFunc, MemCardCallback, PullCallbackFunc, McrdGetGlobalStructure, MemCardStart, MemCardStop, MemCardExist, MemCardAccept, MemCardOpen, MemCardSync, MemCardClose, MemCardReadData, MemCardWriteData, MemCardReadFile, MemCardWriteFile, MemCardGetDirentry, MemCardCreateFile, MemCardFormat
+ * Functions: PushCallbackFunc, PullCallbackFunc, McrdGetGlobalStructure, MemCardStart, MemCardStop, MemCardExist, func_000001FC, MemCardAccept, MemCardOpen, MemCardClose, MemCardReadData, func_00000AAC, MemCardWriteData, func_00000D14, MemCardReadFile, func_00000FD8, MemCardWriteFile, func_000011F8, MemCardGetDirentry, MemCardCallback, MemCardSync, MemCardCreateFile, MemCardFormat, func_000017FC, func_00001850, func_000018FC
  */
 #include "common.h"
 #include "include_asm.h"

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/6-divsf3.o[0] 6-divsf3.o
- * sha256: 788b6737cb9c1ec0e7eafabe8a142c5218bf5cc901535f77e26efbda2d2f5b53
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[6] DIVSF3.OBJ
+ * sha256: c43e82611214f9550c725abe3ab37e747832706ae308dbf9754dd1366908bb74
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __divsf3
  */

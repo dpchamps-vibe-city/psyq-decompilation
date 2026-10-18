@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5740fc1acfe49c3c_0",
+  "member": "libgte_534",
   "parts": [
     {
-      "path": "gt4b_4.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsTMDfastTG4LFGB"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

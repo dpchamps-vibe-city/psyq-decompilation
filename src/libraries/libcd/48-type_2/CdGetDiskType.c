@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_abbbcba7f1410205_0", CdGetDiskType);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_48", CdGetDiskType);

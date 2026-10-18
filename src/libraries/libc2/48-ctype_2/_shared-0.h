@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/48-ctype_2.o[0] 48-ctype_2.o
- * sha256: 0f9498a69042665a6031170c87e303678409ae147cd2c00bf2224d4be602354d
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[48] CTYPE_2.OBJ
+ * sha256: c3cc4402d24c7fcea48e8f714f49185b717b89e011841dd8bc01badf634e9279
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: tolower
  */

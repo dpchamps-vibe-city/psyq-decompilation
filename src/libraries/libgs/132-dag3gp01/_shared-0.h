@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/132-dag3gp01.o[0] 132-dag3gp01.o
- * sha256: cf256e15d016b107210a7e17765b6fd77a5d52617f425b53b32feff7244cbd5d
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[132] DAG3GP01.OBJ
+ * sha256: 759b1053aeb287f450a7c4f06af9a65187d1b89c004d853edb3d395d0ebf2d24
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsPrstG3GLFG
  */

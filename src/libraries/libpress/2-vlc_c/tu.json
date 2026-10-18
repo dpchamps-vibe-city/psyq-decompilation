@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1685ba7539f4e5f3_0",
+  "member": "libpress_2",
   "parts": [
     {
-      "path": "vlc_c.s",
+      "path": "backlog.ASM",
       "symbols": [
         "DecDCTvlcSize2",
         "DecDCTvlc2"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/151-ut_cp.o[0] 151-ut_cp.o
- * sha256: 59ea3979ec9259e5c30602f9ed30e5093f297a3f8e5fac40a331d3e49f45bbba
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[151] UT_CP.OBJ
+ * sha256: 8d5e49cdbecc29c8a806163196d9afdea0f23734d9585b8d903ebd023d0dcef1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtChangePitch
  */

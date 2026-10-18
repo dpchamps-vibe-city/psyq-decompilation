@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/7-2d_com1.o[0] 7-2d_com1.o
- * sha256: 319c6d0751169d8bdaa05b1ab0f21821feab55b3b740f21fc3c98d1388bebb9c
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[7] 2D_COM1.OBJ
+ * sha256: c336a9646a1ba2826bcfb340443a5bd4324134bc40993b2d499d60a7b732ec04
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _make_packet
  */

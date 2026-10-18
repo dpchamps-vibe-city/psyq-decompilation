@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/209-vs_vab.o[0] 209-vs_vab.o
- * sha256: 40eda9a1af9587e65890eb7ecf4208ba95dd25617b50eb528046192c751f3779
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[209] VS_VAB.OBJ
+ * sha256: dcf839270b4f6248365ca67ed8bf08239286f1176699f71d0d293644d18d8561
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsVabClose
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/181-vm_don.o[0] 181-vm_don.o
- * sha256: fb958a6be56e20b2251aa2ceb3677116b1912c2aab08d96ecbc2a6f9220042e3
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[181] VM_DON.OBJ
+ * sha256: 3768ef9e2c02c8b2c2e1b3411c302fb2259a138860d70605c01da74af0d95637
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmDamperOn
  */

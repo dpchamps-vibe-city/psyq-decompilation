@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc/50-memcmp.o[0] 50-memcmp.o
- * sha256: 8d84d97929f8b52413ed04a2d877a22b0569f8f88d0304655035b02a20c54760
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[50] MEMCMP.OBJ
+ * sha256: b1ed1f35bc336e1fdda8247981cfdeb013e9d48f6c5f7083ba95d49876bce46d
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: memcmp
  */

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_eba37cc34700d046_0", SpuGetVoiceSL);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_102", SpuGetVoiceSL);

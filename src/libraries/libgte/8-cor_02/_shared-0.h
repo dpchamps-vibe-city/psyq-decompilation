@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/8-cor_02.o[0] 8-cor_02.o
- * sha256: 2d24573c0ecb4787a44e366d6baea7b12d0086ab07229d7005b830201e45aa11
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[8] COR_02.OBJ
+ * sha256: 3ad984154ea9e530a1daa40e3b53613feaa1f0da310c14b8c8412c238857ea94
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: ccos
  */

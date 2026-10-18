@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/169-ut_spa.o[0] 169-ut_spa.o
- * sha256: d0ee60c56862323d101ad787dff0d17c09d677212a7249d95d4cf6f71c3b7bdc
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[169] UT_SPA.OBJ
+ * sha256: 6b6384a69aad36b3c462e75c6d17f4cefb21fea600144ddac32792e531dd84f5
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtSetProgAtr
  */

@@ -1,6 +1,6 @@
 # libc itoa: verified decimal-formatting wrapper
 
-Verified target: `lib_c32451e6f1094886_0::itoa`, 2026-10-17.
+Verified target: `libc_47::itoa`, 2026-10-17.
 
 ## Identity and behavior
 
@@ -35,10 +35,10 @@ has `completedFunctions: ["itoa"]` and `reconstructed: false`.
 
 Evidence:
 
-- `build/libraries/verified/lib_c32451e6f1094886_0.json`.
-- `build/libraries/nonmatchings/lib_c32451e6f1094886_0/itoa.s`.
-- `build/libraries/nonmatchings/lib_c32451e6f1094886_0/__library_member_data.s`.
-- `build/libraries/context/lib_c32451e6f1094886_0/functions.h`.
+- `build/libraries/verified/libc_47.json`.
+- `build/libraries/nonmatchings/libc_47/itoa.s`.
+- `build/libraries/nonmatchings/libc_47/__library_member_data.s`.
+- `build/libraries/context/libc_47/functions.h`.
 
 No additional original translation-unit membership was established beyond the
 existing member manifest, so `notes/file-groupings.md` was not changed.

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/62-s_n2p.o[0] 62-s_n2p.o
- * sha256: 53821d5bb3eb038a7c9e34a85a30d8971389070169ef64a21f41116aac1e0c17
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[62] S_N2P.OBJ
+ * sha256: b11756e96831ec09cb77dae1f3329b7cb69ebcc64a5368b7a47e49c4c732a9ae
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _spu_note2pitch, _spu_pitch2note
  */

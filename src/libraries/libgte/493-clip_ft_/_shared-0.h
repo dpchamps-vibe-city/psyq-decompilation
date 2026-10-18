@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/493-clip_ft_.o[0] 493-clip_ft_.o
- * sha256: 99666515965de8f40f510a210eacf7ac93d0c9cffc08fe3d55bc4cad05b5a851
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[493] CLIP_FT_.OBJ
+ * sha256: c8d28cfc714b9c3b9e44566909c88c28c08e810ca61830b77586b09a8f871535
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: Clip3FTP, Clip3FT
  */

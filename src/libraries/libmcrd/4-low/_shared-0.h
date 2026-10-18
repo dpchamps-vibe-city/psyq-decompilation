@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcrd/4-low.o[0] 4-low.o
- * sha256: 5aa949f0928fb51386e781b4c3ec434f6c6aaf5a73f53cb214800b40296f0cb4
+/* Original TU: library-input/psyq/LIB/LIBMCRD.LIB[4] LOW.OBJ
+ * sha256: 83acc4a79ee61c6b8696873802bf8216d9ce2cd3d736d238a6ae0ef32199826e
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _card_format2, _card_create2
  */

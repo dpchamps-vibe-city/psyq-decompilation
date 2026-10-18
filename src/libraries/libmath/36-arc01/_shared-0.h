@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/36-arc01.o[0] 36-arc01.o
- * sha256: e04951c6a43cdf97ab23b3c1b67553443e2c37b8cd19666d41d1c6080c181a18
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[36] ARC01.OBJ
+ * sha256: 82c3c717cc6342ac2948625967903dbecf2190383550471f521bacc71d7f2a16
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: atan2
  */

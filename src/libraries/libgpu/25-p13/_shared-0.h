@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/25-p13.o[0] 25-p13.o
- * sha256: cc198f4637143e43ade77b511b548292ed2e12bf80999494bd71d6fd71e4cec3
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[25] P13.OBJ
+ * sha256: dfda75da4b2130593e01530de1eb45c35cf31e8ec99f7ae870763c6d16bf80f8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetPolyFT3
  */

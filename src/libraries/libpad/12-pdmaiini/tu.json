@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_dc7bc412b25e349b_0",
+  "member": "libpad_12",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_ac4caf6b70aa40bc_0",
+  "member": "libgte_100",
   "parts": [
     {
-      "path": "ft4m_00.s",
+      "path": "backlog.ASM",
       "symbols": [
         "GsTMDfastTNF4M"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/186-vm_key_2.o[0] 186-vm_key_2.o
- * sha256: c48efc20b6cffd6a2f50d49e82e97b3e65ab008d394f7e3d845ce16bdf35db63
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[186] VM_KEY_2.OBJ
+ * sha256: 5332c4df8d84885ffc4018c838bc73226546ed6a4d486aa2617620092d913fc3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: KeyOnCheck
  */

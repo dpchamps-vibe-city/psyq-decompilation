@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_7f3070d2c61812b9_0",
+  "member": "libgte_299",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetMAC123.c",
-      "symbol": "SetMAC123"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetMAC123"
+      ],
+      "backlog": true
     }
   ]
 }

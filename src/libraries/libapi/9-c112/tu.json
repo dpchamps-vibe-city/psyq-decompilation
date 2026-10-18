@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_bf7d8f7a97ea9e1a_0",
+  "member": "libapi_9",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_bu_init.c",
-      "symbol": "_bu_init"
+      "path": "backlog.ASM",
+      "symbols": [
+        "_bu_init"
+      ],
+      "backlog": true
     }
   ]
 }

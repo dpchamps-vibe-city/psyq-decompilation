@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_914857e55e8a95fb_0",
+  "member": "libgte_283",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadMac0.c",
-      "symbol": "ReadMac0"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadMac0"
+      ],
+      "backlog": true
     }
   ]
 }

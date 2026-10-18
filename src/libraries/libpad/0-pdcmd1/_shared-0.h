@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpad/0-pdcmd1.o[0] 0-pdcmd1.o
- * sha256: 04005d1d1e3cf99468d71c54fe28881092c79be6a45595ccbd9c1a2c3d86d42e
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[0] PDCMD1.OBJ
+ * sha256: ff9eb6a389ba2c6e38bd1432d5c8c297c69e98afdb2d0d97efac87acff033662
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadSetAct
  */

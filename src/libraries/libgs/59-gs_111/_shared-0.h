@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/59-gs_111.o[0] 59-gs_111.o
- * sha256: 8315905ab748147615dfecd00219b54bf68a20f80c7d689928d8a203b828610c
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[59] GS_111.OBJ
+ * sha256: 56e14e8504233bd6208eb1fb8195f1c8f55ad57f620f6bdbe54874fce09d60a1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsDrawOt
  */

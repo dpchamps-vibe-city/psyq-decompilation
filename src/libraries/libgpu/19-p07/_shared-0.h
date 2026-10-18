@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/19-p07.o[0] 19-p07.o
- * sha256: 143224b2b9b03f56120f5dfe73fb967598067763084f72e9abc5801d9a0826a7
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[19] P07.OBJ
+ * sha256: 4b376fd7b140e1415b9d3fdf0dff5b86dd95fba843760dec4e17068638526d32
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: AddPrims
  */

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_240515a0c3291b87_0",
+  "member": "libgte_62",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "NormalClip.c",
-      "symbol": "NormalClip"
+      "path": "backlog.ASM",
+      "symbols": [
+        "NormalClip"
+      ],
+      "backlog": true
     }
   ]
 }

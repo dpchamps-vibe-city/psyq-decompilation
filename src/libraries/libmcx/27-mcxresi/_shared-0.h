@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/27-mcxresi.o[0] 27-mcxresi.o
- * sha256: d82d3d5a7510bcf2d822105960b77da9d25130f7e29dd4abe7a7b6631ae1215f
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[27] MCXRESI.OBJ
+ * sha256: 0d72c993a0b4a0b36e7837fe640cd552435737a70be56c175da8a53c97a5022f
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _mcxChkRsrv, _mcxStepSio
  */

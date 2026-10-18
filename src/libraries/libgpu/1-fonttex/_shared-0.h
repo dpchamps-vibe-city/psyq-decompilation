@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgpu/1-fonttex.o[0] 1-fonttex.o
- * sha256: b7df4cdd587267ba606b907459fdd1e4183b3a5e9956b396e9bf091ea08cd7f3
+/* Original TU: library-input/psyq/LIB/LIBGPU.LIB[1] FONTTEX.OBJ
+ * sha256: 7b430fd77a6dfda5d63dc1bd25419a1a0edffea3ec0111c35b14e162cfafaa9a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: none identified (data-only or unresolved code)
  */

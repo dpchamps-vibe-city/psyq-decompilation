@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_5fe735c62410484d_0",
+  "member": "libgte_303",
   "parts": [
     {
-      "path": "smp_1.s",
+      "path": "backlog.ASM",
       "symbols": [
         "LocalLight"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

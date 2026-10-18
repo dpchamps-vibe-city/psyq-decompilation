@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/582-vwunit.o[0] 582-vwunit.o
- * sha256: 58901d83b88a3b54919dd593a95246892e0def3acc47d35710fb1eaa8793dc41
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[582] VWUNIT.OBJ
+ * sha256: e77bb0ea8efffabfcfb714d3a779c4450445aa4f70b224d4dd96afa928c35792
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetViewUnit
  */

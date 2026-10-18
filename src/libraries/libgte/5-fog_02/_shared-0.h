@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgte/5-fog_02.o[0] 5-fog_02.o
- * sha256: 0bb88921a02d38a62545203331fa2ff980863b96883556f1ed2430f7ebfa8218
+/* Original TU: library-input/psyq/LIB/LIBGTE.LIB[5] FOG_02.OBJ
+ * sha256: 03ac0eda4c5c5f3a41a3aab14a69e3b9bf56783b0c87b7c567b7f1149ee83ac6
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SetFogNearFar
  */

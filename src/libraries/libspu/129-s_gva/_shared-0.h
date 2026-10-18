@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/129-s_gva.o[0] 129-s_gva.o
- * sha256: 33e1878ea22c9be7a4a76672c4a7797245cb497a8ca5d5bbe0a3b3398c05e1d1
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[129] S_GVA.OBJ
+ * sha256: d12103f6bfd105ccc6f71daea0abf41d3b8d89e98fc62653bb4e1584c275bd86
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuGetVoiceAttr
  */

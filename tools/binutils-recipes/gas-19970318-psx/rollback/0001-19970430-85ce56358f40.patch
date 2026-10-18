@@ -1,0 +1,97 @@
+Upstream commit: 85ce56358f401dc5be3356e3a55d03642a2d2eec
+ChangeLog / commit message:
+Tue Apr 29 20:23:10 1997  Jim Wilson  <wilson@cygnus.com>
+
+	* config/tc-mips.c (nopic_need_relax): Add new parameter
+	before_relaxing.  Use it when testing ecoff_extern_size.
+	(load_address, macro, md_estimate_size_before_relax): Fix all
+	callers.
+Files: gas/config/tc-mips.c
+
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -263,7 +263,7 @@
+ 
+    I don't know if a fix is needed for the SVR4_PIC mode.  I've only
+    fixed it for the non-PIC mode.  KR 95/04/07  */
+-static int nopic_need_relax PARAMS ((symbolS *, int));
++static int nopic_need_relax PARAMS ((symbolS *));
+ 
+ /* handle of the OPCODE hash table */
+ static struct hash_control *op_hash = NULL;
+@@ -3054,7 +3054,7 @@
+ 	   addiu	$reg,$reg,<sym>		(BFD_RELOC_LO16)
+ 	 If we have an addend, we always use the latter form.  */
+       if ((valueT) ep->X_add_number >= MAX_GPREL_OFFSET
+-          || nopic_need_relax (ep->X_add_symbol, 1))
++          || nopic_need_relax (ep->X_add_symbol))
+ 	p = NULL;
+       else
+ 	{
+@@ -3925,7 +3925,7 @@
+ 	     If we have a constant, we need two instructions anyhow,
+ 	     so we may as well always use the latter form.  */
+ 	  if ((valueT) offset_expr.X_add_number >= MAX_GPREL_OFFSET
+-	      || nopic_need_relax (offset_expr.X_add_symbol, 1))
++	      || nopic_need_relax (offset_expr.X_add_symbol))
+ 	    p = NULL;
+ 	  else
+ 	    {
+@@ -4653,7 +4653,7 @@
+ 	  if (breg == 0)
+ 	    {
+ 	      if ((valueT) offset_expr.X_add_number >= MAX_GPREL_OFFSET
+-		  || nopic_need_relax (offset_expr.X_add_symbol, 1))
++		  || nopic_need_relax (offset_expr.X_add_symbol))
+ 		p = NULL;
+ 	      else
+ 		{
+@@ -4678,7 +4678,7 @@
+ 	  else
+ 	    {
+ 	      if ((valueT) offset_expr.X_add_number >= MAX_GPREL_OFFSET
+-		  || nopic_need_relax (offset_expr.X_add_symbol, 1))
++		  || nopic_need_relax (offset_expr.X_add_symbol))
+ 		p = NULL;
+ 	      else
+ 		{
+@@ -5086,7 +5086,7 @@
+ 	     lui instruction.  If there is a constant, we always use
+ 	     the last case.  */
+ 	  if ((valueT) offset_expr.X_add_number >= MAX_GPREL_OFFSET
+-	      || nopic_need_relax (offset_expr.X_add_symbol, 1))
++	      || nopic_need_relax (offset_expr.X_add_symbol))
+ 	    {
+ 	      p = NULL;
+ 	      used_at = 1;
+@@ -9691,9 +9691,8 @@
+    undefined earlier.)  */
+ 
+ static int
+-nopic_need_relax (sym, before_relaxing)
++nopic_need_relax (sym)
+      symbolS *sym;
+-     int before_relaxing;
+ {
+   if (sym == 0)
+     return 0;
+@@ -9725,10 +9724,6 @@
+ #ifndef NO_ECOFF_DEBUGGING
+ 		   || (sym->ecoff_extern_size != 0
+ 		       && sym->ecoff_extern_size <= g_switch_value)
+-		   /* We must defer this decision until after the whole
+-		      file has been read, since there might be a .extern
+-		      after the first use of this symbol.  */
+-		   || (sym->ecoff_extern_size == 0 && before_relaxing)
+ #endif
+ 		   || (S_GET_VALUE (sym) != 0
+ 		       && S_GET_VALUE (sym) <= g_switch_value)))
+@@ -9990,7 +9985,7 @@
+ 
+   if (mips_pic == NO_PIC)
+     {
+-      change = nopic_need_relax (fragp->fr_symbol, 0);
++      change = nopic_need_relax (fragp->fr_symbol);
+     }
+   else if (mips_pic == SVR4_PIC)
+     {

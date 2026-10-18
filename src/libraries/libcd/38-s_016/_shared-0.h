@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/38-s_016.o[0] 38-s_016.o
- * sha256: 36af2e8d8a383bb4bfc8438952203c2af8e14dcf35643920c2d299d1bb4ad6a5
+/* Original TU: library-input/psyq/LIB/Libcd.lib[38] S_016.OBJ
+ * sha256: b5174fb1976981db0eaf8111674360ac40473f4215b2ab96972ce9d0030141e1
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: CdControl, CdControlF, CdControlB
  */

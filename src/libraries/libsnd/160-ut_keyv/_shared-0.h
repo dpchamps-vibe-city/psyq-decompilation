@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/160-ut_keyv.o[0] 160-ut_keyv.o
- * sha256: eeeb2c742bb96b01e7e93281541eeee2de943b6ef3df133127e89e89a347702c
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[160] UT_KEYV.OBJ
+ * sha256: b376a4e5727fd9f8e1d827c69f472b72f98c2e0b9202e60af34c4165f58f3d4c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtKeyOnV, SsUtKeyOffV
  */

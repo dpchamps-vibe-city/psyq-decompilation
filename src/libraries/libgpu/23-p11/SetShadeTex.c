@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_ca3a074248a2258f_0", SetShadeTex);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_23", SetShadeTex);

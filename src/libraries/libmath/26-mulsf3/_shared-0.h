@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/26-mulsf3.o[0] 26-mulsf3.o
- * sha256: 72f5d82a902c5ed243a3e9d3ad19d42ff7a935db862aa0a93d7f50efe132ad04
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[26] MULSF3.OBJ
+ * sha256: 73f2a388146258490b68872cc5e681e2359e0db64ca738a11fdb9e0cc37e4cf8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __mulsf3
  */

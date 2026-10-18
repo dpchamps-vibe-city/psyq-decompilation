@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_3a0866b8694d5ca2_0",
+  "member": "libgte_14",
   "parts": [
     {
-      "path": "msc00.s",
+      "path": "backlog.ASM",
       "symbols": [
         "InitGeom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

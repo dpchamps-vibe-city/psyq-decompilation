@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmcx/29-mcxmain.o[0] 29-mcxmain.o
- * sha256: 4ffd4dee158352f4cfd74c6f07e815a73cd426601b774626f61b91d1a0df1c78
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[29] MCXMAIN.OBJ
+ * sha256: f3d6332d738be678a450e433ca8e6255d0db5248153efb1e41a3ef7e1cfb47b3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _mcxDsrEntry, _mcxInitSioMode, _mcxSetRC2wait, _mcxChkRC2wait, _mcxSioRW, McxSync
  */

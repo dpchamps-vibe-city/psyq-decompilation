@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/94-ssstop.o[0] 94-ssstop.o
- * sha256: 5e8311920ab6ac7a17a3d3d138893368a97d78b50f1b1f87a931fcadb46c5138
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[94] SSSTOP.OBJ
+ * sha256: 87907735fad51effc51d46e84d2429eac59a3169677aea4cafecd5ab119d4290
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndStop, SsSeqStop, SsSepStop
  */

@@ -1,3 +1,7 @@
+INCLUDE_ASM("build/libraries/nonmatchings/libc2_12", _putchar);
+
+/* PSX parked attempt: preserved reconstruction from before the provenance switch. */
+#if 0
 #include "common.h"
 #include "library/11-putc.h"
 #include <ctype.h>
@@ -29,3 +33,4 @@ void _putchar(s8 c) {
     }
     B_000002E0[D_000002D4++] = c;
 }
+#endif

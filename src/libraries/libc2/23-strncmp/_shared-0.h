@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/23-strncmp.o[0] 23-strncmp.o
- * sha256: c7c0802232c62945b2acbe99289a94e4dcf9c192b2174537eb9d358d13e966da
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[23] STRNCMP.OBJ
+ * sha256: aab80f4186301b69692026173e39b80003a226afc1c2aa56b111dd04bbc34dbe
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: strncmp
  */

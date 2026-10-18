@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/63-sr_gaks.o[0] 63-sr_gaks.o
- * sha256: 5f3f9bd4940252e9bfcefb6b0aa03966df8899f0386045043fbe19e701a32775
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[63] SR_GAKS.OBJ
+ * sha256: 84f183688c395bf8021965d9e7f16e537a05c0586a82de1be13022cb44878fe4
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuRGetAllKeysStatus, SpuGetAllKeysStatus
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libc2/9-memmove.o[0] 9-memmove.o
- * sha256: 4e1304e3c55469322540e025992ad61b74d86fa4a5f96f78f49fcf7257f6e27e
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[9] MEMMOVE.OBJ
+ * sha256: e73f7ecc41383ad47586ef991714c7040a62f5564930738d2dceb52898c7be20
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: memmove
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/51-sin01.o[0] 51-sin01.o
- * sha256: bcd136427c2854d37b3d912525d0051717851992a793aea769b0a32a1351cc67
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[51] SIN01.OBJ
+ * sha256: b3a3b4cd560cf34a74b24a8f6ef46adb1eb8fb30246b0601a0f25bf8cb8cb5b8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: cos
  */

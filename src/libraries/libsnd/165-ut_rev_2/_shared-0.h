@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/165-ut_rev_2.o[0] 165-ut_rev_2.o
- * sha256: af5e0380992aafb5defc868aae274120ededdd07ec6393d34a4a057d78f8229b
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[165] UT_REV_2.OBJ
+ * sha256: df8ef614c59dcdfd30cbe374c49b8337725d1ca0d6b1386de3b0bd46d3e86b17
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsUtGetReverbType
  */

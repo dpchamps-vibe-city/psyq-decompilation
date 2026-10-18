@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_a8ebc734d6788877_0", SpuLSetVoiceAttr);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_88", SpuLSetVoiceAttr);

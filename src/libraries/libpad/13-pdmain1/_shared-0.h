@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libpad/13-pdmain1.o[0] 13-pdmain1.o
- * sha256: d191dde0c1f7c9d2d44202fb6e88c2296c584446c9b15fab567545dc3646bf93
+/* Original TU: library-input/psyq/LIB/LIBPAD.LIB[13] PDMAIN1.OBJ
+ * sha256: b239c9cf5e457174f1f6914c52dfbadca05f26c7ef05120b64ee8db2d8a828dd
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: PadEnableCom
  */

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/33-trudfsf2.o[0] 33-trudfsf2.o
- * sha256: 4f605f4a953d82f656d5614eba69bd41dc9bc434591ffe4d594a31f47f7dec7b
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[33] TRUDFSF2.OBJ
+ * sha256: 022c67a75b3c4f8285ba7ddad73677e911923dae27bfe5bbe4893a835ff94a54
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: __truncdfsf2
  */

@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_fbb418c582bdd36f_0",
+  "member": "libgte_479",
   "parts": [
     {
-      "path": "nmd_6.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotNMD_G4"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

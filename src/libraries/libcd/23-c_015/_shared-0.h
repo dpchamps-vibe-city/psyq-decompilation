@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libcd/23-c_015.o[0] 23-c_015.o
- * sha256: d5741e0a1ae7866860ad7f3c12830afd4b2c0f914b7f8f2c6d2bc8485d4b1ae5
+/* Original TU: library-input/psyq/LIB/Libcd.lib[23] C_015.OBJ
+ * sha256: de9fd724624c5ff14fe2be2fe3620015c9e37a5f0ece1b052141d25e1ed84776
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: StRingStatus
  */

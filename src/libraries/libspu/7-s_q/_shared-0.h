@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/7-s_q.o[0] 7-s_q.o
- * sha256: 60e6f686b7d7c1da009826f51852386fadabbd4f24470d707e891dc8a86439a6
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[7] S_Q.OBJ
+ * sha256: 4c3750fc7da9190e0503dc29297008f17efca5c397b2266cb9557d2a9c804861
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuQuit
  */

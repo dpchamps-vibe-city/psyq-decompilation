@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_a1629925a1dbffab_0", hankanjitrans);
+INCLUDE_ASM("build/libraries/nonmatchings/libgpu_60", hankanjitrans);

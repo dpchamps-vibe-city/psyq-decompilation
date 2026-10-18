@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libapi/79-malloc2.o[0] 79-malloc2.o
- * sha256: f12506204881623c34d96aa97dfb910aa7548a69781437b82c01c2267b173f5e
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[79] MALLOC2.OBJ
+ * sha256: 399b7fc3c128a80e42903f3ce93fc1e62ccdbf9e388183a295fb63a0ff6a5af8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: malloc2
  */

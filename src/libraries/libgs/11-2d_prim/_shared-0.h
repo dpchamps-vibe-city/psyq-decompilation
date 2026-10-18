@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/11-2d_prim.o[0] 11-2d_prim.o
- * sha256: 6bf6908fd3025b205c8f4021811bfe85ee5473487641a31d57ecf61866cf35a7
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[11] 2D_PRIM.OBJ
+ * sha256: 67c2530c0d9ffafdc3b4ee2f640fd5dc581d6b0ca47fee3cbab34f8391f10a81
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortPoly
  */

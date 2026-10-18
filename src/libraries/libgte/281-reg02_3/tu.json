@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_1474b722f5cc7d98_0",
+  "member": "libgte_281",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ReadIR123.c",
-      "symbol": "ReadIR123"
+      "path": "backlog.ASM",
+      "symbols": [
+        "ReadIR123"
+      ],
+      "backlog": true
     }
   ]
 }

@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_94e4139a0eb9f5be_0", SpuSetReverbModeParam);
+INCLUDE_ASM("build/libraries/nonmatchings/libspu_29", SpuSetReverbModeParam);

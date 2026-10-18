@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_823d19dbaba8fabd_0",
+  "member": "libgs_35",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/45-matrix8.o[0] 45-matrix8.o
- * sha256: 29160fed6961a2143d3b643db8272a3f62988cd23495101db6d6d2bd5de02cd4
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[45] MATRIX8.OBJ
+ * sha256: b736e160c50e21ebbb2eac68cfba3cc36cad7ccdd0910d38e0a2b81a92a5f709
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsMulCoord2
  */

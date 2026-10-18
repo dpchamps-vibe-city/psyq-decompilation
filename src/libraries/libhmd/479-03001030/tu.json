@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "member": "lib_cb57c4b27f2af111_0",
+  "member": "libhmd_479",
   "parts": [
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
     {
       "path": "_shared-0.h"
     },

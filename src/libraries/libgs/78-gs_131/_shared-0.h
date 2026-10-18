@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libgs/78-gs_131.o[0] 78-gs_131.o
- * sha256: 786003edc69128e2b12a85bbed16703ff738fd3d24b86b6c4871284217847f6d
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[78] GS_131.OBJ
+ * sha256: e21d259f2ddc64981ca537e091df4213d570e1f4d58da0dc3dd29d3ec2a3b6a8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: GsSetRefView2
+ * Functions: GsSetRefView2, func_00000438, func_00000524, func_000005EC
  */
 #include "common.h"
 #include "include_asm.h"

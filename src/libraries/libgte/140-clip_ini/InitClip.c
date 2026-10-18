@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_84c7dd52ba105452_0", InitClip);
+INCLUDE_ASM("build/libraries/nonmatchings/libgte_140", InitClip);

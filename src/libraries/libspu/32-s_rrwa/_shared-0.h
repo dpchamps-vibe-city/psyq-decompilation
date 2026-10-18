@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libspu/32-s_rrwa.o[0] 32-s_rrwa.o
- * sha256: 3bea064944298788540c9d6d8426f340a8509d13cfb0aac2c141c8b961102483
+/* Original TU: library-input/psyq/LIB/LIBSPU.LIB[32] S_RRWA.OBJ
+ * sha256: 90be8ce42ba9d15a1f49ac9c66a8b90044793007cffbe5a101a7f00a7aec5548
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SpuReserveReverbWorkArea
  */

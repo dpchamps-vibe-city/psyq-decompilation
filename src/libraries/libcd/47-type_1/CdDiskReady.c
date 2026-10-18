@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_77590a7d3aeadd51_0", CdDiskReady);
+INCLUDE_ASM("build/libraries/nonmatchings/libcd_47", CdDiskReady);

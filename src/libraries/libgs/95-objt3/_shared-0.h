@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/95-objt3.o[0] 95-objt3.o
- * sha256: 218342c284b90a1626afeaf4794a130f64787d3eeb0dde109afbc63414f0f3f8
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[95] OBJT3.OBJ
+ * sha256: 8752ecf66296b9fe99d0db7a8bfef6619af42097739997e6fb959bbdcd299df8
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSortObject4J
  */

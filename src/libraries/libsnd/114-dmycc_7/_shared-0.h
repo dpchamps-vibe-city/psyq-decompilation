@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/114-dmycc_7.o[0] 114-dmycc_7.o
- * sha256: 3aaa36f7ea0757822c992bf1512adabd2254ce55cf325e2aaa3a029deabdfb0a
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[114] DMYCC_7.OBJ
+ * sha256: e8f22fd54bc36073da296423b873e34158c302f5ff5e47d433a83bae2a9ee0aa
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: dmy_SsContMainVol
  */

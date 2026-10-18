@@ -1,8 +1,5 @@
 #include "common.h"
 
-static const s8 digs_lower[] = "0123456789abcdef";
-static const s8 null_string[] = "(null)";
-static const s8 digs_upper[] = "0123456789ABCDEF";
 
 #define LONGINT 0x01
 #define LONGDBL 0x02
@@ -60,7 +57,7 @@ int prnt(void *unused, u8 *fmt0, u8 *argp) {
         return 0;
     }
     fmt = fmt0;
-    digs = (char *)digs_lower;
+    digs = (char *)"0123456789abcdef";
     for (cnt = 0;; ++fmt) {
         if (!(ch = *fmt)) {
             _putchar_flash();
@@ -175,7 +172,7 @@ int prnt(void *unused, u8 *fmt0, u8 *argp) {
             goto nosign;
         case 's':
             if (!(t = VA_STR())) {
-                t = (s8 *)null_string;
+                t = (s8 *)"(null)";
             }
             if (prec >= 0) {
                 s8 *p;
@@ -200,7 +197,7 @@ int prnt(void *unused, u8 *fmt0, u8 *argp) {
             base = 10;
             goto nosign;
         case 'X':
-            digs = (char *)digs_upper;
+            digs = (char *)"0123456789ABCDEF";
         case 'x':
             ARG();
             base = 16;
@@ -219,7 +216,7 @@ int prnt(void *unused, u8 *fmt0, u8 *argp) {
                     *--t = digs[_ulong % base];
                     _ulong /= base;
                 } while (_ulong);
-                digs = (char *)digs_lower;
+                digs = (char *)"0123456789abcdef";
                 if (flags & ALT && base == 8 && *t != '0') {
                     *--t = '0';
                 }

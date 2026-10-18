@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/11-cc_101.o[0] 11-cc_101.o
- * sha256: 6b1506eb31d3f17131ca56707651a7ac461f191594d5fc86c643dbf611021961
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[11] CC_101.OBJ
+ * sha256: a4d98b9d4ecf948cce32292d333dbd998fb985da77f3ba1ea02f31ddc246c2f2
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsContRpn2
  */

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_fd40e7d7539cc8d4_0",
+  "member": "libgte_302",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SetDQB.c",
-      "symbol": "SetDQB"
+      "path": "backlog.ASM",
+      "symbols": [
+        "SetDQB"
+      ],
+      "backlog": true
     }
   ]
 }

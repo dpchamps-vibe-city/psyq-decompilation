@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "member": "lib_92783dddf97da44a_0",
+  "member": "libgte_351",
   "parts": [
     {
-      "path": "nom_7.s",
+      "path": "backlog.ASM",
       "symbols": [
         "RotAverageNclip3_nom"
-      ]
+      ],
+      "backlog": true
     }
   ]
 }

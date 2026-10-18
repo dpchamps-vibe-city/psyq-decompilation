@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libmath/53-sinh01.o[0] 53-sinh01.o
- * sha256: 84be8ec2a90775c93a9e4b45a208a2cbb429404cc28a6fe3c0ab8ade7ed55ae4
+/* Original TU: library-input/psyq/LIB/LIBMATH.LIB[53] SINH01.OBJ
+ * sha256: 6d1e41ecd4a6950e34c7136fafb1f3acf80c175be904a1d251b3937721f795e3
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: cosh
  */

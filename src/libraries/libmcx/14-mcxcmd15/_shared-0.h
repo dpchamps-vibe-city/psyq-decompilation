@@ -1,7 +1,7 @@
-/* Original TU: library-input/redux/libmcx/14-mcxcmd15.o[0] 14-mcxcmd15.o
- * sha256: 516c17fe8ef09d2735a6dee6eb8e233731aadef95f4453d3cd2ac7e0dd4e184a
+/* Original TU: library-input/psyq/LIB/LIBMCX.LIB[14] MCXCMD15.OBJ
+ * sha256: 839c556b8327bc950e4e0e519c1837d99bc45d4e4469364edf1a01ae91780fee
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: McxSetUIFS
+ * Functions: McxSetUIFS, func_00000294
  */
 #include "common.h"
 #include "include_asm.h"

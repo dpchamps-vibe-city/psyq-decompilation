@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/90-sssmv.o[0] 90-sssmv.o
- * sha256: 45ca8b173b363e08ded99a53026f3d572ad36d52a908029cec0af10c6691ed0c
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[90] SSSMV.OBJ
+ * sha256: 790739ed31282204f038833f7b5fa8612fb59bd55d1a1f636e323752dd4ec72a
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: SsSetMVol
  */

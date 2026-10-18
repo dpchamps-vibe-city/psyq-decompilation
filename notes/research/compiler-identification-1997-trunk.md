@@ -9,6 +9,7 @@ Date: 2026-10-17. Scope: identify the compiler behind the C-reconstructed librar
 - **A pure FSF trunk snapshot confirms it.** The GCC git tree at commit `2b3600acb4ec` (1997-03-18 18:38 UTC, the last commit before the parameter REG_EQUIV change), built with only build scaffolding borrowed from the CDK tree and run with `-mmips-as -fno-exceptions`, also reproduces 137/137, the all-C `realloc3`, the override-free allocator helpers and `memmove`. The identification therefore does not rest on any Cygnus-local code.
 - **Stock CDK as-is** (no source change) in the same output mode reproduces 132/137; its five misses are exactly the two post-window commits acting on `libapi/14-c160`, `73-sc2b`, `75-first`, `76-pad`, `81-realloc2`.
 - **Homebrew 2.8.1** is excluded as the library compiler by a whole-SDK census: no Sony member carries a 2.8 RTL epilogue, and its `make_return_insns`/post-reload CSE behavior is absent from the originals.
+- **Confirmed on Sony's own source (2026-10-18, section 8).** Replaying Sony's libhmd makefiles over the SDK's disclosed C sources rebuilds 275 of 305 C objects byte for byte as whole files with the pinned `cc1`. That rises to 281 with the documented DMPSX C-macro table. Both window edges are now single commits confirmed by this corpus: `cabcf079ea40` (1997-02-05) and `38b610ed8e01` (1997-03-18). Every sampled snapshot between them behaves identically.
 
 | Compiler (cc1) | Output mode | Exact members / 137 | Fully-C / 121 |
 | --- | --- | ---: | ---: |
@@ -96,7 +97,10 @@ The runner is the previous session's `build/sn281-trial/compare.mts` generalized
 
 ## 6. What this does not settle
 
-- The lower bound of the window comes from DCB's objects, not ours; a few hundred members outside the corpus may yet show a behavior from February–March 1997 that the candidate lacks or has. DCB also needed a *second* profile (a later 2.8-era snapshot, still text-epilogue, no post-reload CSE) for part of libsnd/libcd/libgs/libc2; none of those members are in our corpus, so a per-member compiler profile may eventually be needed and the harness has no such selector today.
+- The lower bound was originally taken from DCB's objects. Since 2026-10-18 both bounds are confirmed locally (section 8), each to a single commit, on the project's C members and on Sony's own HMD C. Still unconstrained: about 1,260 backlog members whose symbol tables show GCC origin have no C yet, and could show a February–March 1997 behavior the pin lacks.
+- DCB also needed a *second* profile (a later 2.8-era snapshot, still text-epilogue, no post-reload CSE) for part of libsnd/libcd/libgs/libc2. None of those members are in our corpus, so a per-member compiler profile may eventually be needed.
+- **The optimisation level.** libhmd was built with `-O3`: Sony's makefile says so, and the replay at `-O3` strictly dominates `-O2`. All 161 reconstructed members still match in code at `-O3`, so no measured member needs `-O2`. A single global `-O3` therefore fits all the evidence. Per-library levels would be needed only if some library is later shown to require `-O2`; a member that matches under one level only is evidence for its library.
+- **24 of Sony's HMD C objects still differ in ordinary code** (section 8). No compiler snapshot inside or at the edges of the window, no other available compiler, and no single flag reproduces them. The most likely cause is that the disclosed Release 4.4 sources are not exactly what built the 4.7 members. They are not evidence against the pin.
 - The Cygnus-local code in the CDK tree (regmove on by default, `losing_caller_save`, mips.md and expr.c local hunks) showed no effect on 137 members, and the pure trunk build reproduces the same results, so it is not part of the identification.
 - Whether Sony's build was literally a Cygnus progressive release or an FSF snapshot is not decidable from bytes; the two differ only in Cygnus-local hunks that this corpus does not exercise.
 
@@ -109,3 +113,98 @@ The runner is the previous session's `build/sn281-trial/compare.mts` generalized
 - Dumps proving the allocation mechanism: `build/compiler-fit/dumps/{realloc2,first}-{272,cdk}/in.i.{flow,lreg,greg,sched}`.
 - Respelling probes: `build/compiler-fit/respell/`.
 - External sources consulted: `ser-pounce/cdk-gcc` b18, `decompals/old-gcc` (CDK recipe and patches), `ReGame-Labs/dcb_decomp` (`tools/patch_cc1.py`, `tools/sn_cc1.py`, `config/us/psyq_objects.txt`), `Fuuzetsu/tenchu-decomp` (`docs/toolchain.md`), `gcc-mirror/gcc` commits `38b610ed8e01`, `2a9fb5489fc5`, `8acd7d300281`, `5ef37cd33952`, `cabcf079ea40`.
+
+## 8. Confirmation on Sony's own source, and the window's edges (2026-10-18)
+
+Sections 1–6 were measured on the project's reconstructions. That C was written
+under the compiler being tested ([methodology](compiler-identification-methodology.md)
+§1), so it cannot be fully independent evidence. Sony's own source can.
+
+- **The source.** The SDK ships 163 Sony-authored libhmd `.C` files, 192 `.ASM`
+  files and the makefiles that build the archive members (local only:
+  `library-input/psyq/SRC/LIB/HMD`). Its readme says they are "completely the
+  same as those used in SCEI to create libhmd".
+- **The comparison.** Every object is compared with its shipped member by
+  **whole-file SHA-256**. That is stricter than the whole-member oracle of
+  sections 1–5: it also covers symbol numbering, record order and fixup order.
+
+**Method: replay the producer's build.**
+
+- Each object listed in `MAKE1/2/3.MAK` is built from its own source with its
+  own `-D` defines (`-DXYZ`, `-DBACK_FACE`, …), at the makefile's `-O3`.
+  DMPSX runs only where the makefile runs it.
+- The rest of the chain: CRLF→LF lower-case views of the immutable SDK headers;
+  the pinned `cccp`; the candidate `cc1` with the production flags; the period
+  `as`; the declared DMPSX stage; and an experimental ECOFF→LNK encoder that
+  reads only the candidate (harness `plans/toolchain-provenance/completion-plan.md`
+  §2.2).
+- 575 listed objects (305 C, 270 ASM) correspond to members of `LIBHMD.LIB`.
+
+**Results with the pinned `cc1` (`c4b82c51…`):**
+
+| Set | Whole-file identical |
+| --- | ---: |
+| C objects at `-O3` | **275/305** |
+| C objects at `-O2` (current production flag) | 273/305. `-O3` adds `03000000` and `MIME` and loses nothing |
+| C objects at `-O3`, with the DMPSX C-macro table the SDK documents | **281/305** |
+| ASM objects | 270/270 |
+
+- **libhmd's optimisation level is `-O3`.** Sony's makefile says so, and the
+  replay confirms it. The 161 staged project C members are indifferent: 161/161
+  match in code at both `-O2` and `-O3`
+  (`compiler-window-bisect/eval/pin-O3-projectC.json`).
+- **The documented DMPSX table.** Thirteen C objects use C-only DMPSX
+  placeholders (`gte_rtv0_b` = `0x13f`, …). The harness stage rejects them,
+  fail-closed. The table that resolves them is fully determined by two SDK
+  documents: the 65 placeholder words of `INLINE_C.H` and the 65-row "DMPSX
+  Inline Function Table" of the Inline Programming Reference (Release 4.4). All
+  rows join, and the 17 IDs shared with the assembly-side table agree.
+- **The 24 C objects that still differ** all differ in ordinary code; GTE words
+  and packaging agree. Twelve are the quad active-subdivision objects
+  (`0008001x`, `000a001x`, `000c005x`). Their sources include the four `DA*4_CM.C`
+  fragments, and all twelve triangle siblings match. The quad driver tests
+  `ifo->flg & 0x80000000` (and the same mask on `flg0`) where the triangle
+  fragments write `flg < 0`. Sony's objects keep `and` against `0x80000000`
+  hoisted into a register before the loop, with one more spill (frame 80
+  against 72). The pin turns the first test into `bgez`. Of the other twelve:
+  - six are environment-map objects (`0600xxxx`, a "Beta" feature in the 4.7
+    release notes);
+  - two use the same mask four times (`05000000`, `05000001`), probably the same
+    mechanism (unchecked);
+  - four have no such test (`00050048`, `04010010`, `04010011`, `04010020`).
+
+**Window bisect.**
+
+- *Recipe.* The production recipe was parameterised by gcc-mirror commit. Given
+  the pin's commit and version string, it reproduces the pinned `cc1` byte for
+  byte, from the pinned tarball.
+- *Scoring.* Each snapshot is scored on two independent suites, holding the
+  preprocessor, assembler and flags fixed: the 161 staged C-form project members
+  (from their preprocessed inputs) and the Sony HMD replay.
+
+| Snapshot | Project C, code match | Sony HMD C, whole-file |
+| --- | ---: | ---: |
+| 1997-01-22 (`69ce75dc0deb`) | 148/161 | 229/305 |
+| `4757e6a402f5` (1997-02-05 00:29, the commit before the lower edge) | 160/161 (`libc2/33-prnt` breaks) | 247/305 |
+| **`cabcf079ea40`** (1997-02-05 16:20, reload stack slots no longer aligned to BIGGEST_ALIGNMENT) | **161/161** | **275/305** |
+| 1997-02-05 20:57, 02-15, 02-24, 03-05, 03-12 | 161/161 | 275/305 |
+| pin `2b3600acb4ec` (1997-03-18 18:38) | 161/161 | 275/305 |
+| `38b610ed8e01` (1997-03-18 20:00, register-parameter REG_EQUIV) | 157/161 (`realloc2`, both `qsort`s, `bsearch`) | 245/305 |
+
+- **Both edges are confirmed on local evidence.** The lower edge is now a single
+  commit, confirmed on local evidence (section 3 had it from DCB). The upper edge
+  is confirmed on four project members and 30 of Sony's objects.
+- **The interior is flat at every sampled point.** Not every commit was built.
+  On every member measured, the choice of snapshot inside the window makes no
+  difference. The pin is kept for coherence with the assembler pin.
+- **No snapshot reproduces any of the 24.** Neither do CDK 970404 (stock,
+  noreloadcse, pre970318), GCC 2.7.2-psx, GCC 2.95.2-psx, any of 20 single-flag
+  toggles, or unsigned `flg`/`flg0` declarations in the quad structures.
+
+**Evidence (local, git-ignored):**
+
+- `build/toolchain-provenance/compiler-window-bisect/`: recipe variant,
+  `build.sh`, `evalCompiler.ts`, the commit list, per-snapshot results and the
+  built compilers;
+- `build/toolchain-provenance/lnk-encoding-research/`: `hmdReplay.ts`,
+  `hmdProbe.ts`, `dmpsxCTable.ts`, `results/`.

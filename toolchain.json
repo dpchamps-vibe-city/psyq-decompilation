@@ -20,8 +20,14 @@
       "origin": "runtime",
       "path": "dependencies/compiler/gcc-trunk-19970318-psx/cc1"
     },
-    "cpp": "mips-linux-gnu-cpp",
-    "as": "mips-linux-gnu-as",
+    "cpp": {
+      "origin": "runtime",
+      "path": "dependencies/compiler/gcc-trunk-19970318-psx/cccp"
+    },
+    "as": {
+      "origin": "runtime",
+      "path": "dependencies/assembler/gas-19970318-psx/as"
+    },
     "ld": "mips-linux-gnu-ld",
     "objcopy": "mips-linux-gnu-objcopy",
     "objdump": "mips-linux-gnu-objdump",
@@ -53,12 +59,11 @@
       "-nostdinc",
       "-undef",
       "-D__GNUC__=2",
-      "-DINCLUDE_ASM_USE_MACRO_INC=1",
       "-lang-c",
       "-D_LANGUAGE_C"
     ],
     "cc1": [
-      "-O2",
+      "-O3",
       "-G0",
       "-mips1",
       "-mcpu=r3000",
@@ -75,10 +80,9 @@
       "-quiet"
     ],
     "as": [
-      "-march=r3000",
-      "-mtune=r3000",
       "-EL",
-      "-G0"
+      "-G0",
+      "-mips1"
     ],
     "ld": [
       "-EL"
@@ -105,21 +109,15 @@
     ]
   },
   "profiles": {
-    "sn-aspsx": {
-      "as": [
-        "-march=r3000",
-        "-mtune=r3000",
-        "-EL",
-        "-G0",
-        "-no-pad-sections"
-      ],
+    "sony-early": {
       "assembler": {
-        "kind": "maspsx"
-      }
-    },
-    "sn-aspsx-padded": {
-      "assembler": {
-        "kind": "maspsx"
+        "kind": "gas",
+        "objectFormat": "ecoff",
+        "postAssembly": [
+          "psyq-dmpsx",
+          "psyq-lnk"
+        ],
+        "lnkLayout": "early"
       }
     }
   },
@@ -139,9 +137,36 @@
   },
   "assembler": {
     "kind": "gas",
-    "inputRewrites": [
-      "move-addu",
-      "rdata-section"
+    "objectFormat": "ecoff",
+    "postAssembly": [
+      "psyq-dmpsx",
+      "psyq-lnk"
     ]
+  },
+  "toolPins": {
+    "cpp": {
+      "sha256": "28b9f74d19c2ec220cce4fe6eec7c71b66380f932427443c9ce3aa393dce9ded",
+      "recipe": {
+        "origin": "project",
+        "path": "tools/gcc-recipes/trunk-19970318-psx/Dockerfile"
+      },
+      "recipeSha256": "d4699c7a7559b73aca74088e1610b6fe7c7cbbc829fb8fd01e101da357e562c0"
+    },
+    "cc1": {
+      "sha256": "c4b82c51976e87e365a26c37b8281596e389ec3209ec5a59cd22ec2cf01cc686",
+      "recipe": {
+        "origin": "project",
+        "path": "tools/gcc-recipes/trunk-19970318-psx/Dockerfile"
+      },
+      "recipeSha256": "d4699c7a7559b73aca74088e1610b6fe7c7cbbc829fb8fd01e101da357e562c0"
+    },
+    "as": {
+      "sha256": "d4ec93c0236cfa5e7fc8f6258f3345492d9a70a6ece00f19af189f7ed5fa6428",
+      "recipe": {
+        "origin": "project",
+        "path": "tools/binutils-recipes/gas-19970318-psx/rollback/manifest.json"
+      },
+      "recipeSha256": "17c964e9c478cb7126bf84dea16a1e8334aff255f61da8537d618153df83dc33"
+    }
   }
 }

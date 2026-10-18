@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libgs/37-gs_013.o[0] 37-gs_013.o
- * sha256: afd3e7810fd93046b8ceeb702f2c15b7046957d647501a2538c3babf33d6809a
+/* Original TU: library-input/psyq/LIB/LIBGS.LIB[37] GS_013.OBJ
+ * sha256: 58259f3b10ef1d55cab464059d7fa333a085e1d6d48f1d4107240c38e27aae55
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsSetOrign
  */

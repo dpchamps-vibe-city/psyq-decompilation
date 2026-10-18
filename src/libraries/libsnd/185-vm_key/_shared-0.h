@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/185-vm_key.o[0] 185-vm_key.o
- * sha256: fb6aa61a9422799f5987ef98d20b3d1feee648e015466a7e866e2e7ff9fffcfd
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[185] VM_KEY.OBJ
+ * sha256: ae7a8b19733f4734394c667962efbb05b1f407cce3f2ccea9302bac965fa9538
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsVmKeyOn, _SsVmKeyOff, _SsVmSeKeyOn, _SsVmSeKeyOff
  */

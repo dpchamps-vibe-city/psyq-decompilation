@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/lib_393796aae32f6ecf_0", memcmp);
+INCLUDE_ASM("build/libraries/nonmatchings/libc2_7", memcmp);

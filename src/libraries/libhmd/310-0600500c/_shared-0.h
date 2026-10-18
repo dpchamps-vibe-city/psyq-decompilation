@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libhmd/310-0600500c.o[0] 310-0600500c.o
- * sha256: f30ee2b18b56cb800d23d1595a30fe333163d9ede0bfa7edfb77d4a6ecaf81db
+/* Original TU: library-input/psyq/LIB/LIBHMD.LIB[310] 0600500C.OBJ
+ * sha256: 01830a8440cb820c591bea26013c5e553b644e9328bf20a8df2b4d3b692f9f1c
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: GsU_0600500c
  */

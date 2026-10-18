@@ -1,5 +1,5 @@
-/* Original TU: library-input/redux/libsnd/55-ssdecres.o[0] 55-ssdecres.o
- * sha256: 229b86a55cb788d273b52fb271566acd140de1711a6c41de6ed14432df6c1a76
+/* Original TU: library-input/psyq/LIB/LIBSND.LIB[55] SSDECRES.OBJ
+ * sha256: b50788108743799b57680db20c645f247150a5131560d997a146f05255dc2030
  * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
  * Functions: _SsSndSetDecres, SsSeqSetDecrescendo, SsSepSetDecrescendo
  */
