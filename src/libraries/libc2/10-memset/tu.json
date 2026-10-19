@@ -6,7 +6,8 @@
       "path": "memset.c",
       "symbols": [
         "memset"
-      ]
+      ],
+      "cleanedSha256": "8123f4544086631d2bdd20db64c4b7f751cbc0e88abe40666bf6b13ac5579760"
     }
   ]
 }
