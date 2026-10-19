@@ -6,7 +6,8 @@
       "path": "strcmp.c",
       "symbols": [
         "strcmp"
-      ]
+      ],
+      "cleanedSha256": "d0e550e0673d788b74a1d5d8b65f0ad423fe614e4a7a9c3407716ae921161aac"
     }
   ]
 }
