@@ -6,7 +6,8 @@
       "path": "strtol.c",
       "symbols": [
         "strtol"
-      ]
+      ],
+      "cleanedSha256": "550ee5ad07bc307ab2fd14d85d2c79f4f54191fe0b416be05b74800bf45eedd0"
     }
   ]
 }
