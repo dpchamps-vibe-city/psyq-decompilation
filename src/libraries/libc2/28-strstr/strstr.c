@@ -1,36 +1,29 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[28] STRSTR.OBJ
- * sha256: 3e4574892f7f1ce5d311ea039d8d11e0c6960dfad74277dae97df4d18c6495ba
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: strstr
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* STRSTR.OBJ from LIBC2.LIB */
 #include "common.h"
 
-s8 *strstr(s8 *arg0, s8 *arg1) {
+s8 *strstr(s8 *s1, s8 *s2) {
     s8 *p;
     s8 *q;
     s8 *start;
-    s32 flag;
+    s32 matched;
 
-    p = arg0;
-    flag = 0;
-    q = arg1;
-    start = arg0;
+    p = s1;
+    matched = 0;
+    q = s2;
+    start = s1;
     while (*p != 0) {
         if (*p == *q) {
             q++;
             if (*q == 0) {
                 return start;
             }
-            if (flag == 0) {
+            if (matched == 0) {
                 start = p;
-                flag = 1;
+                matched = 1;
             }
         } else {
-            q = arg1;
-            flag = 0;
+            q = s2;
+            matched = 0;
         }
         p++;
     }

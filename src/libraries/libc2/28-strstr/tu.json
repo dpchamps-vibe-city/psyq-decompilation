@@ -6,7 +6,8 @@
       "path": "strstr.c",
       "symbols": [
         "strstr"
-      ]
+      ],
+      "cleanedSha256": "a0ec00d7e2a0fc96058cfceb610626f707bca072df4416b7de3ee16d8563f855"
     }
   ]
 }
