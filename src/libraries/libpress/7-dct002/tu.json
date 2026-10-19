@@ -6,7 +6,8 @@
       "path": "dct002.c",
       "symbols": [
         "DecDCTBufSize"
-      ]
+      ],
+      "cleanedSha256": "09ac0d68724bc4c59d9c740b5c20c2d6d02c1562872f5bc7d6f63bccd69c7d5c"
     }
   ]
 }
