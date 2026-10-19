@@ -6,7 +6,8 @@
       "path": "strchr.c",
       "symbols": [
         "strchr"
-      ]
+      ],
+      "cleanedSha256": "0ca4b1f91c3a1f4a4f192c6ead6b470b0e26c572274d9a9f8c993fc37283ed41"
     }
   ]
 }
