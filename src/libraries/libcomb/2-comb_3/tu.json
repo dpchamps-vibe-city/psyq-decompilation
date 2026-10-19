@@ -6,7 +6,8 @@
       "path": "comb_3.c",
       "symbols": [
         "ChangeClearSIO"
-      ]
+      ],
+      "cleanedSha256": "3613f9ecbf89c74337e5b72425be1c6ce29159f6caae46e546be5dcec29ca8bd"
     }
   ]
 }
