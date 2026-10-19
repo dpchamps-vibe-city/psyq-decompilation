@@ -1,13 +1,12 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libc2_12", _putchar_flash);
-
-/* PSX parked attempt: preserved reconstruction from before the provenance switch. */
-#if 0
 #include "common.h"
 
+extern s32 $LD_000002D0;
+extern s32 $LD_000002D4;
+extern s8 $LB_000002E0[];
+
 void _putchar_flash(void) {
-    if (D_000002D4 > 0) {
-        write(1, B_000002E0, D_000002D4);
-        D_000002D4 = 0;
+    if ($LD_000002D4 > 0) {
+        write(1, $LB_000002E0, $LD_000002D4);
+        $LD_000002D4 = 0;
     }
 }
-#endif
