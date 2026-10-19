@@ -6,7 +6,8 @@
       "path": "mcxcmd3.c",
       "symbols": [
         "_mcxRxRestLen"
-      ]
+      ],
+      "cleanedSha256": "410d389f97b833ed48b76277fa6d6806a2acd584af4e407dfb3fc7f2748cfe02"
     }
   ]
 }
