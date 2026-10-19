@@ -6,7 +6,8 @@
       "path": "bsearch.c",
       "symbols": [
         "bsearch"
-      ]
+      ],
+      "cleanedSha256": "e7b3c0d142c84c6a1de43f3859524b5dd884d7af0f9678ee647edb0bd1e802cd"
     }
   ]
 }
