@@ -19,3 +19,11 @@
 # register save area. No FP value appears in the member, so the only observed
 # effect is this loop heuristic.
 CC1FLAGS_libcd_1 := -mhard-float
+
+# ISO9660.OBJ (libcd_4): the whole member reads plain char as SIGNED. Every
+# plain-char load in CdSearchFile is `lb` (the char* `name` parameter at 0xD8,
+# `buf[0]` at 0x1B8, `file_[i].name[0]` at 0x268, the path loop's `*p` at
+# 0x110/0x138), while the project default -funsigned-char emits `lbu` there.
+# The one `lbu` (0x114/0x13C) is the zero-only test, which GCC may load
+# unsigned regardless. This is a whole-TU source-language property.
+CC1FLAGS_libcd_4 := -fsigned-char
