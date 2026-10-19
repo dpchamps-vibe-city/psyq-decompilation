@@ -6,7 +6,8 @@
       "path": "strlen.c",
       "symbols": [
         "strlen"
-      ]
+      ],
+      "cleanedSha256": "fe3a360827dde09b8c70372fb7705c611884a471692824550752f860f9ca536b"
     }
   ]
 }
