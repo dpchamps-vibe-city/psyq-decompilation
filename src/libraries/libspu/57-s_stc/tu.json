@@ -6,7 +6,8 @@
       "path": "s_stc.c",
       "symbols": [
         "SpuSetTransferCallback"
-      ]
+      ],
+      "cleanedSha256": "3dff31ea7ab914eb019e01ffaa9972722275b8ab395726ffa2331bd3da8b1a66"
     }
   ]
 }
