@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libc2_42", abs);
+#include "common.h"
+
+s32 abs(s32 arg0) {
+    return __builtin_abs(arg0);
+}
