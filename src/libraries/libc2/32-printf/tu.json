@@ -6,7 +6,8 @@
       "path": "printf.c",
       "symbols": [
         "printf"
-      ]
+      ],
+      "cleanedSha256": "da2d497ff2dc6a47f3e418770bfbad7bcdbd2e4a1eacd8b4ca81a12b0bcc3189"
     }
   ]
 }
