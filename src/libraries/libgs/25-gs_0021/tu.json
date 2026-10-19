@@ -6,7 +6,8 @@
       "path": "gs_0021.c",
       "symbols": [
         "GsGetActiveBuff"
-      ]
+      ],
+      "cleanedSha256": "4bbe1265c02358b69f35e69e49eb7082f146b5276f6921e0d6895ded509052c0"
     }
   ]
 }
