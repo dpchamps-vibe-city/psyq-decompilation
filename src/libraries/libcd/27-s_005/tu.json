@@ -6,7 +6,8 @@
       "path": "s_005.c",
       "symbols": [
         "CdLastCom"
-      ]
+      ],
+      "cleanedSha256": "a1a081d9fbac5a3b6848e0b69d7006e3a085f3574f5a1a72c2a43ae33bb17b5c"
     }
   ]
 }
