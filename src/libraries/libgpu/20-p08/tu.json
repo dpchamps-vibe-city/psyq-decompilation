@@ -6,7 +6,8 @@
       "path": "p08.c",
       "symbols": [
         "CatPrim"
-      ]
+      ],
+      "cleanedSha256": "052da030ac689a9eb0aeba108918fb8a4d037e9cb88828a80f98d44a4411d1a5"
     }
   ]
 }
