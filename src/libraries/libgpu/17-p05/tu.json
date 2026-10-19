@@ -6,7 +6,8 @@
       "path": "p05.c",
       "symbols": [
         "IsEndPrim"
-      ]
+      ],
+      "cleanedSha256": "8d4376b956287a56efb06975327580b769cf18442b7203b64aab71abcd536ccb"
     }
   ]
 }
