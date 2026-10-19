@@ -6,7 +6,8 @@
       "path": "d2_004.c",
       "symbols": [
         "DsLastCom"
-      ]
+      ],
+      "cleanedSha256": "963e4ec6fdcc5bb4f318cf4a30673dd92247a7fd44450a6ad3a04e272b97fc5a"
     }
   ]
 }
