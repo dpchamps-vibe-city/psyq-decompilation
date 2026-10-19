@@ -28,7 +28,7 @@ extern char str_count[] __asm__("$LRO_STR_00000BB4");
 
 extern void *memcpy(void *dest, const void *src, u32 n);
 
-extern s32 func_00000974(s32, s32, u8 *) __asm__("$Lfunc_00000974");
+static s32 func_00000974(s32, s32, u8 *) __asm__("$Lfunc_00000974");
 
 static s32 func_000006D8(s32 arg0) __asm__("$Lfunc_000006D8");
 
