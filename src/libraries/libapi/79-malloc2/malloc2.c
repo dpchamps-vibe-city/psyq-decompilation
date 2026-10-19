@@ -1,14 +1,7 @@
-/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[79] MALLOC2.OBJ
- * sha256: 399b7fc3c128a80e42903f3ce93fc1e62ccdbf9e388183a295fb63a0ff6a5af8
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: malloc2
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[79] MALLOC2.OBJ - sha256: 399b7fc3c128a80e42903f3ce93fc1e62ccdbf9e388183a295fb63a0ff6a5af8 */
 #include "common.h"
 
-static void *func_00000220(u32 arg0);
+static void *func_00000220(u32 size);
 
 extern u32 *_AllocRestBlockTop;
 extern u32 *_Candidate;
@@ -90,19 +83,18 @@ void *malloc2(u32 size) {
     }
     return ret;
 }
-#include "common.h"
 
 extern u32 *_max_heap;
 
-void *func_00000220(u32 arg0) {
+void *func_00000220(u32 size) {
     u32 *p;
 
-    if ((u32)(((s32)((s32)_max_heap - (s32)_AllocRestBlockTop) >> 2) * 4 - 8) < arg0) {
+    if ((u32)(((s32)((s32)_max_heap - (s32)_AllocRestBlockTop) >> 2) * 4 - 8) < size) {
         return 0;
     }
     p = _AllocRestBlockTop - 1;
-    _AllocRestBlockTop[-1] = arg0;
-    _AllocRestBlockTop = (u32 *)((u8 *)_AllocRestBlockTop + (((arg0 >> 2) << 2) + 4));
+    _AllocRestBlockTop[-1] = size;
+    _AllocRestBlockTop = (u32 *)((u8 *)_AllocRestBlockTop + (((size >> 2) << 2) + 4));
     _AllocRestBlockTop[-1] = -2U;
     return p;
 }
