@@ -6,7 +6,8 @@
       "path": "vs_vtc.c",
       "symbols": [
         "SsVabTransCompleted"
-      ]
+      ],
+      "cleanedSha256": "29bef30e5ff28e0e2c5106625a27a3caa45d2c6c05f1b30d494b3a6a9d7461b3"
     }
   ]
 }
