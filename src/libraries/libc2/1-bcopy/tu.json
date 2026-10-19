@@ -6,7 +6,8 @@
       "path": "bcopy.c",
       "symbols": [
         "bcopy"
-      ]
+      ],
+      "cleanedSha256": "ecd5a5d65bd03e8ae8c98ff4d2a95656b40a426a36f42c2d7f845f029431f93c"
     }
   ]
 }
