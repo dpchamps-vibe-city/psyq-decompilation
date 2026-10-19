@@ -6,7 +6,8 @@
       "path": "p04.c",
       "symbols": [
         "NextPrim"
-      ]
+      ],
+      "cleanedSha256": "9df7218afb486e4dc512eb4350121857654856adcfe3c64c4d9111d143015134"
     }
   ]
 }
