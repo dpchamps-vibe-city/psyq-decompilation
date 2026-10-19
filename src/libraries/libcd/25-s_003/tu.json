@@ -6,7 +6,8 @@
       "path": "s_003.c",
       "symbols": [
         "CdStatus"
-      ]
+      ],
+      "cleanedSha256": "3214ad21e2c07eff2f17c91607ce6fa98fc8e31a75942cc5f4efb2829de732ec"
     }
   ]
 }
