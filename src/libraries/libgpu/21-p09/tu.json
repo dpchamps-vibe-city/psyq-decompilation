@@ -6,7 +6,8 @@
       "path": "p09.c",
       "symbols": [
         "TermPrim"
-      ]
+      ],
+      "cleanedSha256": "92200606cbccb9ab2d875aea9c311933a70b4c01d39be61b09c4d13325ab267e"
     }
   ]
 }
