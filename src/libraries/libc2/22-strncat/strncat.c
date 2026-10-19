@@ -1,37 +1,30 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[22] STRNCAT.OBJ
- * sha256: ea0f654503e614b6015582a820de31ee828b7c2e8e902d670fb1d48d8ecabe1f
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: strncat
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* STRNCAT.OBJ from LIBC2.LIB */
 #include "common.h"
 
-s8 *strncat(s8 *arg0, u8 *arg1, s32 arg2) {
-    s8 *save;
+s8 *strncat(s8 *dst, u8 *src, s32 n) {
+    s8 *dst_start;
     u8 c;
 
-    if (arg0 == 0) {
+    if (dst == 0) {
         return 0;
     }
-    if (arg1 == 0) {
+    if (src == 0) {
         return 0;
     }
-    save = arg0;
-    while (*arg0++ != 0) {
+    dst_start = dst;
+    while (*dst++ != 0) {
     }
-    arg0 -= 1;
+    dst -= 1;
     for (;;) {
-        c = *arg1++;
-        *arg0++ = c;
+        c = *src++;
+        *dst++ = c;
         if (c == 0) {
             break;
         }
-        if (--arg2 < 0) {
-            arg0[-1] = 0;
+        if (--n < 0) {
+            dst[-1] = 0;
             break;
         }
     }
-    return save;
+    return dst_start;
 }
