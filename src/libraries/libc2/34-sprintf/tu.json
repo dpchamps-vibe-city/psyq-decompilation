@@ -6,7 +6,8 @@
       "path": "sprintf.c",
       "symbols": [
         "sprintf"
-      ]
+      ],
+      "cleanedSha256": "ec2b04635eb084ab624dd089b5a5209ff9379b08d96badd572686e0a3ff4bc5b"
     }
   ]
 }
