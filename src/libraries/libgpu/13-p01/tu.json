@@ -6,7 +6,8 @@
       "path": "p01.c",
       "symbols": [
         "GetClut"
-      ]
+      ],
+      "cleanedSha256": "d208797928e031ddafaaaffa754b466c82da8f3407918e8b2cf9346da131aa7c"
     }
   ]
 }
