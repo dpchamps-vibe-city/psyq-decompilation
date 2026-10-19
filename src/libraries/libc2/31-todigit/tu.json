@@ -6,7 +6,8 @@
       "path": "todigit.c",
       "symbols": [
         "todigit"
-      ]
+      ],
+      "cleanedSha256": "30e9e377595bcaef198af04fb983fae225fd7f63e75ffa69c723e90792bb70c3"
     }
   ]
 }
