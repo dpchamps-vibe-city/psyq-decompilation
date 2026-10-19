@@ -6,7 +6,8 @@
       "path": "strspn.c",
       "symbols": [
         "strspn"
-      ]
+      ],
+      "cleanedSha256": "639e037f933b84b7dacea37a4667f30a3c3b7911b117e29b78b5cdc0236933b3"
     }
   ]
 }
