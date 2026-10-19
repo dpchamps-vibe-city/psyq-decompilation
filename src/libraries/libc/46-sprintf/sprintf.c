@@ -1,9 +1,4 @@
-/* Original TU: library-input/psyq/LIB/LIBC.LIB[46] SPRINTF.OBJ
- * sha256: c319155018f04ab800b4bb4b8003aac9046e29fd0a1bd5b1d139db3107bc20c7
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: sprintf
- */
-#include "common.h"
+/* Original TU: library-input/psyq/LIB/LIBC.LIB[46] SPRINTF.OBJ */
 #include <stdarg.h>
 #include <string.h>
 
@@ -23,7 +18,7 @@ typedef struct {
 
 typedef char *CharPtr;
 
-static FmtSpec D_000009F0 = {0};
+static FmtSpec empty_spec = {0};
 
 int sprintf(char *buf, const char *fmt, ...) {
   char tmp[0x200];
@@ -57,7 +52,7 @@ int sprintf(char *buf, const char *fmt, ...) {
       buf[len++] = c;
       continue;
     }
-    st = D_000009F0;
+    st = empty_spec;
     alternate = '#';
     for (;;) {
       c = *(const signed char *)++fmt;
