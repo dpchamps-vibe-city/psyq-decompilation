@@ -6,7 +6,8 @@
       "path": "d3_002.c",
       "symbols": [
         "DsGetSector"
-      ]
+      ],
+      "cleanedSha256": "93031e224af36acb00515c3a4e1d76afc7706569a63c0959da9709318309d53a"
     }
   ]
 }
