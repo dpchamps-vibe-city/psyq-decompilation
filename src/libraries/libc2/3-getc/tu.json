@@ -6,7 +6,8 @@
       "path": "getc.c",
       "symbols": [
         "getc"
-      ]
+      ],
+      "cleanedSha256": "8a753402eae4776f94fa416e580caac911205d412b869744f83f7acda663e37d"
     }
   ]
 }
