@@ -1,13 +1,5 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[33] PRNT.OBJ
- * sha256: 0f0a58e251aba8b0c728da01e7002e6ed2bc93ef62d98c2c1cfff6ed10c0287e
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: prnt
- */
+/* Original member: LIBC2.LIB[33] PRNT.OBJ */
 #include "common.h"
-#include "include_asm.h"
-
-#include "common.h"
-
 
 #define LONGINT 0x01
 #define LONGDBL 0x02
@@ -284,12 +276,5 @@ int prnt(void *unused, u8 *fmt0, u8 *argp) {
         }
     }
 }
-/* Original TU: library-input/redux/libc2/33-prnt.o[0] 33-prnt.o
- * sha256: 71f18d140748b41bcccbcb1b7d14c41136b84c78674f7a458db1a630d7fd06d5
- * One original member, one TU.  prnt.c now emits the member's read-only data
- * (the two digit tables, the "(null)" literal and the conversion jump table);
- * only the original 12-byte .rdata tail padding remains here.
- */
-#include "common.h"
-
+/* rdata tail padding (12 bytes) */
 static const u8 rdata_tail_pad[12] = {0};

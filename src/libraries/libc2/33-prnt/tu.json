@@ -6,7 +6,8 @@
       "path": "prnt.c",
       "symbols": [
         "prnt"
-      ]
+      ],
+      "cleanedSha256": "de0df0030c872c691631cd71c87dda94782da9fe7447e0d6a248216723013143"
     }
   ]
 }
