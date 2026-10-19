@@ -6,7 +6,8 @@
       "path": "putc.c",
       "symbols": [
         "putc"
-      ]
+      ],
+      "cleanedSha256": "8b0bd7f99031f6c930913106058ab759c0ea89d8d6a59a45d7b02ced242c802c"
     }
   ]
 }
