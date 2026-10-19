@@ -6,7 +6,8 @@
       "path": "memcmp.c",
       "symbols": [
         "memcmp"
-      ]
+      ],
+      "cleanedSha256": "226076b9899267db89d966930cc90f89262817eef1b95aac0efdb4d6ae17cb8f"
     }
   ]
 }
