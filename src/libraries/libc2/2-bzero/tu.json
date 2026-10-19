@@ -6,7 +6,8 @@
       "path": "bzero.c",
       "symbols": [
         "bzero"
-      ]
+      ],
+      "cleanedSha256": "3808ba3364bec2163ec3854f6a845f88a36ad59f6d88323e8f1a30161cb43ac2"
     }
   ]
 }
