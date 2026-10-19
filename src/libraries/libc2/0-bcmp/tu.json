@@ -6,7 +6,8 @@
       "path": "bcmp.c",
       "symbols": [
         "bcmp"
-      ]
+      ],
+      "cleanedSha256": "5f5fe563da8cf179b0d45df99c901bc9e9197f0803f02bdf5d726b1a7436d0ce"
     }
   ]
 }
