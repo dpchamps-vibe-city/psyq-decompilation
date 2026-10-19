@@ -1,17 +1,10 @@
-/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[81] REALLOC2.OBJ
- * sha256: 5929aa526a5c6872d4e3c96d3c54ab5959f625a40c8b9ecb3cca24e3ebf2230b
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: realloc2
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[81] REALLOC2.OBJ */
 #include "common.h"
 
 extern void free2(void *);
 extern u8 *malloc2(s32);
-static u8 *func_000000F8(u8 *arg0, s32 arg1);
-static u8 *func_00000280(u8 *arg0, u8 *arg1, s32 arg2);
+static u8 *try_resize(u8 *ptr, s32 bytes);
+static u8 *copy_bytes(u8 *from, u8 *to, s32 n);
 
 u8 *realloc2(u8 *ptr, s32 size) {
     u8 *newptr;
@@ -19,11 +12,11 @@ u8 *realloc2(u8 *ptr, s32 size) {
     if (ptr == 0) {
         newptr = malloc2(size);
     } else if (size != 0) {
-        newptr = func_000000F8(ptr, size);
+        newptr = try_resize(ptr, size);
         if (newptr == 0) {
             newptr = malloc2(size);
             if (newptr != 0) {
-                func_00000280(ptr, newptr, size);
+                copy_bytes(ptr, newptr, size);
                 free2(ptr);
             }
         }
@@ -32,13 +25,12 @@ u8 *realloc2(u8 *ptr, s32 size) {
     }
     return newptr;
 }
-#include "common.h"
 
 extern u32 *_AllocRestBlockTop;
 extern u32 *_Candidate;
 extern u32 *_max_heap;
 
-u8 *func_000000F8(u8 *ptr, s32 bytes) {
+static u8 *try_resize(u8 *ptr, s32 bytes) {
     u32 *p;
     u32 *q;
     u32 *newp;
@@ -112,32 +104,30 @@ done:
     }
     return ret;
 }
-#include "common.h"
+static u8 *copy_bytes(u8 *from, u8 *to, s32 n) {
+    s32 cnt;
+    u8 *save_from;
+    u8 *p;
+    u8 *q;
+    u8 *ret;
+    u8 b;
 
-static u8 *func_00000280(u8 *arg0, u8 *arg1, s32 arg2) {
-    s32 var_a2;
-    u8 *temp_v1;
-    u8 *var_a0;
-    u8 *var_a1;
-    u8 *var_v0;
-    u8 temp_v0;
-
-    var_a0 = arg0;
-    var_a1 = arg1;
-    var_a2 = arg2;
-    var_v0 = 0;
-    if (var_a0 != 0) {
-        temp_v1 = var_a0;
-        if (var_a2 != 0) {
+    p = from;
+    q = to;
+    cnt = n;
+    ret = 0;
+    if (p != 0) {
+        save_from = p;
+        if (cnt != 0) {
             do {
-                temp_v0 = *var_a0;
-                var_a0 += 1;
-                var_a2 -= 1;
-                *var_a1 = temp_v0;
-                var_a1 += 1;
-            } while (var_a2 != 0);
+                b = *p;
+                p += 1;
+                cnt -= 1;
+                *q = b;
+                q += 1;
+            } while (cnt != 0);
         }
-        var_v0 = temp_v1;
+        ret = save_from;
     }
-    return var_v0;
+    return ret;
 }
