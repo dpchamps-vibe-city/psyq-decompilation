@@ -1,40 +1,33 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[23] STRNCMP.OBJ
- * sha256: aab80f4186301b69692026173e39b80003a226afc1c2aa56b111dd04bbc34dbe
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: strncmp
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* STRNCMP.OBJ from LIBC2.LIB */
 #include "common.h"
 
-s32 strncmp(s8 *arg0, s8 *arg1, s32 arg2) {
-    s32 n;
+s32 strncmp(s8 *s1, s8 *s2, s32 n) {
+    s32 m;
     s32 c;
 
-    if ((arg0 == 0) || (arg1 == 0)) {
-        if (arg0 == arg1) {
+    if ((s1 == 0) || (s2 == 0)) {
+        if (s1 == s2) {
             return 0;
         }
-        if (arg0 == 0) {
+        if (s1 == 0) {
             return -1;
         }
         return 1;
     }
-    n = arg2 - 1;
-    while (n >= 0) {
-        c = *arg0;
-        if (c != *arg1++) {
+    m = n - 1;
+    while (m >= 0) {
+        c = *s1;
+        if (c != *s2++) {
             break;
         }
-        arg0++;
+        s1++;
         if (c == 0) {
             return 0;
         }
-        n--;
+        m--;
     }
-    if (n < 0) {
+    if (m < 0) {
         return 0;
     }
-    return *arg0 - *(arg1 - 1);
+    return *s1 - *(s2 - 1);
 }
