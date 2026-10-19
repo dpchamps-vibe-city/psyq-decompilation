@@ -4,17 +4,17 @@
 
 void DisablePAD(void);
 void StopPAD2(void);
-static s32 func_000000A0(void);
+static s32 DequeuePadPatchRP(void);
 void SetInitPadFlag(s32);
 
 void StopPAD(void) {
     DisablePAD();
     StopPAD2();
-    func_000000A0();
+    DequeuePadPatchRP();
     SetInitPadFlag(0);
 }
 
-static s32 func_000000A0(void) {
+static s32 DequeuePadPatchRP(void) {
     EnterCriticalSection();
     SysDeqIntRP(1, &apiPadPatchNext);
     ExitCriticalSection();
