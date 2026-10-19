@@ -6,7 +6,8 @@
       "path": "malloc3.c",
       "symbols": [
         "malloc3"
-      ]
+      ],
+      "cleanedSha256": "c4fcaf1bbe6672b2f70639aeaef70f2582dfd93ffa5569969087587a1010f485"
     }
   ]
 }
