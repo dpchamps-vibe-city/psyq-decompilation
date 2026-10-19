@@ -6,7 +6,8 @@
       "path": "d2_002.c",
       "symbols": [
         "DsStatus"
-      ]
+      ],
+      "cleanedSha256": "b5161ed8a39b9e935e77027bb2bc6e3dbbd12ec144f702c8b7c942653c09479b"
     }
   ]
 }
