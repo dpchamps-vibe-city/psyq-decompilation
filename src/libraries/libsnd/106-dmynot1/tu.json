@@ -6,7 +6,8 @@
       "path": "dmynot1.c",
       "symbols": [
         "dmy_nothing1"
-      ]
+      ],
+      "cleanedSha256": "a9ba82549a5e1cf9d0dc0b64938ed8a277e13c059f4a8e54e3c80e360a6ed835"
     }
   ]
 }
