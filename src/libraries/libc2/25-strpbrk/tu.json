@@ -6,7 +6,8 @@
       "path": "strpbrk.c",
       "symbols": [
         "strpbrk"
-      ]
+      ],
+      "cleanedSha256": "f5802859b0115f7fcc1dcef86af3f47e7f4bdff9ac25e9485cd673ed7419ee1d"
     }
   ]
 }
