@@ -6,7 +6,8 @@
       "path": "s_gtsa.c",
       "symbols": [
         "SpuGetTransferStartAddr"
-      ]
+      ],
+      "cleanedSha256": "4aa144d20093afbdd750eb6eb1882c6bfa3a2e8fb1a5925c9fca83589a8c9d45"
     }
   ]
 }
