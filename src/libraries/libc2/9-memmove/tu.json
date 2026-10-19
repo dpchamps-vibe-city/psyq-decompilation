@@ -6,7 +6,8 @@
       "path": "memmove.c",
       "symbols": [
         "memmove"
-      ]
+      ],
+      "cleanedSha256": "e16454059a45d31b024d2b4c59c976bae42f9458ac1d6c549efd2d31fd426449"
     }
   ]
 }
