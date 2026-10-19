@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libcard_13", _card_clear);
+#include "common.h"
+#include <libapi.h>
+
+long _card_clear(long chan) {
+    _new_card();
+    return _card_write(chan, 0x3F, 0);
+}
