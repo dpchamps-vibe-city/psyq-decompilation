@@ -6,7 +6,8 @@
       "path": "free2.c",
       "symbols": [
         "free2"
-      ]
+      ],
+      "cleanedSha256": "695dc6cc30849806aabccb4ff4f8087671e97abd870fd71e49496bdeef30e838"
     }
   ]
 }
