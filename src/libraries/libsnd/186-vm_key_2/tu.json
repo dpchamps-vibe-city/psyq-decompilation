@@ -6,7 +6,8 @@
       "path": "vm_key_2.c",
       "symbols": [
         "KeyOnCheck"
-      ]
+      ],
+      "cleanedSha256": "06e2bdf16225b8e31fee9bca0e415432fa489507a3d8ec8e633856442a65c3da"
     }
   ]
 }
