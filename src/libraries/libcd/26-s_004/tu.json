@@ -6,7 +6,8 @@
       "path": "s_004.c",
       "symbols": [
         "CdMode"
-      ]
+      ],
+      "cleanedSha256": "fb4aa28be6a46753dc721fd2a49d22980bcc542f50feb0dff4b5f56e60a8a069"
     }
   ]
 }
