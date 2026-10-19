@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 static s32 func_00000108(void) __asm__("$Lfunc_00000108");
-extern void func_00000144(void) __asm__("$Lfunc_00000144");
+static void func_00000144(void) __asm__("$Lfunc_00000144");
 extern void func_0000016C(void) __asm__("$Lfunc_0000016C");
 extern void func_00000194(void) __asm__("$Lfunc_00000194");
 
