@@ -6,7 +6,8 @@
       "path": "ssgm.c",
       "symbols": [
         "SsGetMute"
-      ]
+      ],
+      "cleanedSha256": "2f40307090ecff079fcdb079d291563a2c13fad247eefdb428b2b6695030ebad"
     }
   ]
 }
