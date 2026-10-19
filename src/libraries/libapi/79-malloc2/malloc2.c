@@ -1,7 +1,7 @@
 /* Original TU: library-input/psyq/LIB/LIBAPI.LIB[79] MALLOC2.OBJ - sha256: 399b7fc3c128a80e42903f3ce93fc1e62ccdbf9e388183a295fb63a0ff6a5af8 */
 #include "common.h"
 
-static void *func_00000220(u32 size);
+static void *alloc_more(u32 size);
 
 extern u32 *_AllocRestBlockTop;
 extern u32 *_Candidate;
@@ -64,7 +64,7 @@ void *malloc2(u32 size) {
             if (*p != (u32)-2) {
                 p = &p[*p >> 2] + 1;
             } else {
-                blk = func_00000220(size);
+                blk = alloc_more(size);
                 retry -= 1;
                 if (blk != 0) {
                     _Candidate = _AllocRestBlockTop - 1;
@@ -86,7 +86,7 @@ void *malloc2(u32 size) {
 
 extern u32 *_max_heap;
 
-void *func_00000220(u32 size) {
+static void *alloc_more(u32 size) {
     u32 *p;
 
     if ((u32)(((s32)((s32)_max_heap - (s32)_AllocRestBlockTop) >> 2) * 4 - 8) < size) {
