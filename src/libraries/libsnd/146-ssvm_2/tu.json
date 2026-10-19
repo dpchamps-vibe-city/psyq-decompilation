@@ -6,7 +6,8 @@
       "path": "ssvm_2.c",
       "symbols": [
         "SsGetVoiceMask"
-      ]
+      ],
+      "cleanedSha256": "c82e0aceaddd2eae427642d4a83250123e2cd528dd3bf3f4b15d27323bf1d7c0"
     }
   ]
 }
