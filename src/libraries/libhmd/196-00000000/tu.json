@@ -6,7 +6,8 @@
       "path": "00000000.c",
       "symbols": [
         "GsU_00000000"
-      ]
+      ],
+      "cleanedSha256": "a39ef069bcc45ca4b3da188c4400e9e78d2513aed0d4f4e1eeff6f5857decf89"
     }
   ]
 }
