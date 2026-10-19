@@ -1,25 +1,18 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[19] STRCSPN.OBJ
- * sha256: 78c3f96936dbe90afc71ad40a38e57e94309cd1c251b3ae623a41f126cfd4b25
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: strcspn
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* LIBC2.LIB STRCSPN.OBJ */
 #include "common.h"
 
-s32 strcspn(s8 *arg0, s8 *arg1) {
-    s8 *start = arg0;
-    s8 *q;
+s32 strcspn(s8 *s, s8 *reject) {
+    s8 *start = s;
+    s8 *p;
 
-    while (*arg0 != 0) {
-        for (q = arg1; *q != 0; q++) {
-            if (*q == *arg0)
+    while (*s != 0) {
+        for (p = reject; *p != 0; p++) {
+            if (*p == *s)
                 break;
         }
-        if (*q != 0)
+        if (*p != 0)
             break;
-        arg0++;
+        s++;
     }
-    return arg0 - start;
+    return s - start;
 }
