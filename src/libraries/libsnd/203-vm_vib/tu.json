@@ -9,7 +9,8 @@
         "SetVib",
         "SsUtVibrateOn",
         "SsUtVibrateOff"
-      ]
+      ],
+      "cleanedSha256": "22f04df94b9956926991eb2d9795ed0c98dc03544f42c4495d1717fbf6f465df"
     }
   ]
 }
