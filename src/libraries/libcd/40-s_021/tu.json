@@ -6,7 +6,8 @@
       "path": "s_021.c",
       "symbols": [
         "CdGetSector"
-      ]
+      ],
+      "cleanedSha256": "f4c7e09a29b27e056a9feb22e831637dad0b3b767cec3c0c07c1a2407106a4f6"
     }
   ]
 }
