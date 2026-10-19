@@ -7,7 +7,8 @@
       "symbols": [
         "calloc3",
         "func_000000BC"
-      ]
+      ],
+      "cleanedSha256": "d2c62a9e2c8c563247fdf718138c05b1869857e7d5ea4d4e2f513b74ec1e9fc9"
     }
   ]
 }
