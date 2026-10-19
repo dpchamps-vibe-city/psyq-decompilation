@@ -1,37 +1,31 @@
-/* Original TU: library-input/psyq/LIB/LIBC2.LIB[15] STRCAT.OBJ
- * sha256: cd2365f66aa823500b789d40068ac43e2124c09cc3292eabe046f1a064a493a5
- * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
- * Functions: strcat
- */
-#include "common.h"
-#include "include_asm.h"
-
+/* Original TU: library-input/psyq/LIB/LIBC2.LIB[15] STRCAT.OBJ */
 #include "common.h"
 
 extern u32 strlen(s8 *);
 
-s8 *strcat(s8 *arg0, s8 *arg1) {
-    s8 *save;
+s8 *strcat(s8 *dst, s8 *src) {
+    s8 *dst_start;
     u8 c;
 
-    if (arg0 == 0) {
+    if (dst == 0) {
         return 0;
     }
-    if (arg1 == 0) {
+    if (src == 0) {
         return 0;
     }
-    if (arg0 + strlen(arg0) != arg1 + strlen(arg1)) {
-        save = arg0;
-        while (*arg0++ != 0) {
+    /* PSYQ strcat rejects overlapping strings (ends at same address). */
+    if (dst + strlen(dst) != src + strlen(src)) {
+        dst_start = dst;
+        while (*dst++ != 0) {
         }
-        arg0 -= 1;
+        dst -= 1;
         do {
-            c = *(u8 *)arg1;
-            arg1 += 1;
-            *arg0 = (s8)c;
-            arg0 += 1;
+            c = *(u8 *)src;
+            src += 1;
+            *dst = (s8)c;
+            dst += 1;
         } while (c != 0);
-        return save;
+        return dst_start;
     }
     return 0;
 }

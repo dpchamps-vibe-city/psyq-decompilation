@@ -6,7 +6,8 @@
       "path": "strcat.c",
       "symbols": [
         "strcat"
-      ]
+      ],
+      "cleanedSha256": "8d723abd585f6c74e71973b2cee47a8c0566e84bb3ce034149d3f9daaebde376"
     }
   ]
 }
