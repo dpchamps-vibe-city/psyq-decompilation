@@ -3,11 +3,10 @@
   "member": "libds_17",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DsStatus.c",
-      "symbol": "DsStatus"
+      "path": "d2_002.c",
+      "symbols": [
+        "DsStatus"
+      ]
     }
   ]
 }

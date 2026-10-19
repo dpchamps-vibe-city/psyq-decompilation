@@ -3,11 +3,24 @@
   "member": "libapi_37",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ResetEntryInt"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "7e5e7760228a8f62c31c1e3001f1f9ed9fcb4cfe28e5fbeeb83e1c879f2d7424",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "01cd90d21108be0f5024f7200daa81ca8b3820b6e0b7f830cc86a9483e9b11b3"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "4742be0bd60fab465130ced96637ef74a11bf2e27bdcf8f60ce1b43ff10c1fae"
+        }
+      }
     }
   ]
 }

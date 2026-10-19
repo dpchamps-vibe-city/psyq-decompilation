@@ -3,11 +3,24 @@
   "member": "libapi_45",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SwExitCriticalSection"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "77cb19540a183dfdfe78187e7f8a90d1b5078b9b2b47238ae4c900b1af048374",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "bd5b465775fb72ca8868991ff9c6177802c7e82b92b95cf604fa611fe31c4e0c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "5c4c08b07befc7aa692ee56c85b288189f5dd8732fad8474eaa860af059e63bb"
+        }
+      }
     }
   ]
 }

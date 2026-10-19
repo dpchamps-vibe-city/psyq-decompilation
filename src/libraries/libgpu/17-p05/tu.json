@@ -3,11 +3,10 @@
   "member": "libgpu_17",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "IsEndPrim.c",
-      "symbol": "IsEndPrim"
+      "path": "p05.c",
+      "symbols": [
+        "IsEndPrim"
+      ]
     }
   ]
 }

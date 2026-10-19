@@ -3,11 +3,24 @@
   "member": "libgte_54",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadGeomScreen"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "87b6677a7f4d6c2db06d68d0f5efd25f4392c9d8c57f4ee4833e3187b7e2681a",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "7d2621a8a033db23a54b402d1efc5dc918dbabf8eaeff5239425be6231045eb9"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "e5e374abfe621559f6f7fa9129833ac6b247458b851df16cffb12b8c5ca92ccb"
+        }
+      }
     }
   ]
 }

@@ -3,11 +3,24 @@
   "member": "libgte_340",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "gte_texture_flat_fog3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "89ccc12096a5ea7c0d02436db2eeccc679f52ecd9d8a5aa9072aaa8641c8b6ce",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "fe4c7d19e365c71fe211a04651afba4904f874d0c3e27c765a97ff921f93b9c4"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "6ff7b878f14e31a62db7f84be38047acfb02b4a917443fda845a488fc90897af"
+        }
+      }
     }
   ]
 }

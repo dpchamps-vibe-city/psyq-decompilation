@@ -3,11 +3,10 @@
   "member": "libds_22",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DsGetSector.c",
-      "symbol": "DsGetSector"
+      "path": "d3_002.c",
+      "symbols": [
+        "DsGetSector"
+      ]
     }
   ]
 }

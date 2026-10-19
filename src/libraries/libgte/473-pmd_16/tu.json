@@ -3,11 +3,24 @@
   "member": "libgte_473",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotPMD_SV_GT4"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "bd156a888de66d33e798c590c2bf667a279f509a0426d0e914185fd6975d063f",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e2485fc3b33cb2aa7125ef0a843f57ae2a5004d774a7187c9996c19339d0306a"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "0346dd69ea7a7c7bc21b748fc1a8c8c360c9f64d49daa570ed701428c4106903"
+        }
+      }
     }
   ]
 }

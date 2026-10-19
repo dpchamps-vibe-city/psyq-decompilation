@@ -3,11 +3,10 @@
   "member": "libspu_52",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SpuGetTransferStartAddr.c",
-      "symbol": "SpuGetTransferStartAddr"
+      "path": "s_gtsa.c",
+      "symbols": [
+        "SpuGetTransferStartAddr"
+      ]
     }
   ]
 }

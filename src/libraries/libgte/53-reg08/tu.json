@@ -3,11 +3,24 @@
   "member": "libgte_53",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadGeomOffset"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "3a4a880c688d03f265df3cfeb01a6aaec2f1700c6b8c267dec8ffa079e7d251c",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "0bf75a892c4168ea9e8732e7514893c98b477c3ef7aea1750203f9e6b7f99dcd"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c75dc7624eb0dcaab9baf5338e88607ccd1eeffad9496b2da00ce539a8592505"
+        }
+      }
     }
   ]
 }

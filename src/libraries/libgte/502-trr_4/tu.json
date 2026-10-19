@@ -3,11 +3,24 @@
   "member": "libgte_502",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ApplyTransposeMatrixLV"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "c99cbf81310853dd30ff19dfbedea4845e7d419ea78a95318ec065d4399992aa",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "4285cf84655a4a7e46b3e2bdec215ae5a3ff1882df25a66d6008230093b3b1cb"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c438e1ed09c7190062df588aa7fcccd67f1dc1aaafb4575dc928fcc502ce8552"
+        }
+      }
     }
   ]
 }

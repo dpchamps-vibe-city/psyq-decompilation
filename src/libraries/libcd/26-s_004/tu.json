@@ -3,11 +3,10 @@
   "member": "libcd_26",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CdMode.c",
-      "symbol": "CdMode"
+      "path": "s_004.c",
+      "symbols": [
+        "CdMode"
+      ]
     }
   ]
 }

@@ -3,11 +3,24 @@
   "member": "libgte_227",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "PhongLine"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "9879d6352bb17b6a6810705c36bc71feb97d731a94892982e733b9999bae6f01",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "7774e002835e6f15087705f428e49e83eb1705242979c3be0801ccf1e75ef6ac"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "b6e78ec41766b814b0c470d0df147a70b216ea0bca7bf7cf871cc907026598a3"
+        }
+      }
     }
   ]
 }

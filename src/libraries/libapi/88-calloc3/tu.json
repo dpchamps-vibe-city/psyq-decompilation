@@ -3,15 +3,11 @@
   "member": "libapi_88",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "calloc3.c",
-      "symbol": "calloc3"
-    },
-    {
-      "path": "func_000000BC.c",
-      "symbol": "func_000000BC"
+      "symbols": [
+        "calloc3",
+        "func_000000BC"
+      ]
     }
   ]
 }

@@ -3,11 +3,24 @@
   "member": "libgte_303",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "LocalLight"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "77e0ebaa72dd593468e43ea4950b1744a0f66e31036264b4640b3bc706914efa",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "f9c15d9489f5b33e518ad0fe9627e8dd2cd994b5668e1d207a7dce63323b6311"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "2824940ae294b3e3abc45198ff81d17dc76b75584e50df7e21e36ca6fb522413"
+        }
+      }
     }
   ]
 }

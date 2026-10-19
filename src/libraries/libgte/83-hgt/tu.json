@@ -3,11 +3,24 @@
   "member": "libgte_83",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotMeshH"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "bb76a16234ce700364b7c3521d19598c70a475cb64df7305e801cd1cfebfe004",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "39109839c6edd182bb61a49e13a446fe038d507679667fd8f1cdb8eb07518e1c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "220e7d47274ccf3d03f350a77e08b2239d4687bb31acbb71663119cd98b99ee3"
+        }
+      }
     }
   ]
 }

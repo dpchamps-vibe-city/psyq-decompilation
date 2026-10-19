@@ -3,11 +3,24 @@
   "member": "libgte_195",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "DivPloyFT4"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "923eab75fe59e421c1e2cf38d1b7db0ebc02fb554b17fc67f13218807ee5ff4a",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "31fa5cc126459f7b7fbf96150e0dd483b6f9f068e25658858ba44c53ba47a316"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "08eaba3df14b259e2589780e6ae7ec09c39ecdb6da51d5bffbc1011b531387df"
+        }
+      }
     }
   ]
 }

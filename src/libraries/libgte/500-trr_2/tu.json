@@ -3,11 +3,24 @@
   "member": "libgte_500",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "TransRotPers"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "fe887d04980f62f6bb8baec1b0131cc30b155c3bd9de62e10828699b905ce839",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "c2fdf525cbdd9acb4c4ed3771e26fb053201ec202091a87b3e2c56d482a9389f"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "9d811516efe1f0b44d33cbf971a84c7eb285bd26d3b561fbd7ea17a5df34a3ab"
+        }
+      }
     }
   ]
 }

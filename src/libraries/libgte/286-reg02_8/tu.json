@@ -3,11 +3,24 @@
   "member": "libgte_286",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadLZC"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "f9d230d94aa2aa050e657a3346a5e960fc1b40dbb6956323b1c067013c9189e8",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "48b25cf4922fd0d6342892f80d8a740eddb04a91cf8dee55488b87c42afbde5d"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "95a4520ea0ae79cfad1df8c0f9c0dd49396a7d50dbac3567f66a24675e5c5f1d"
+        }
+      }
     }
   ]
 }

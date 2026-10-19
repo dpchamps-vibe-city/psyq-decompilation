@@ -3,11 +3,24 @@
   "member": "libgte_43",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ScaleMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "c65533a2a4a754e11edba6113317bcb9ea8562d9303fc86b45339bac94d54dd5",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "de1910716b48069a32d0621e19d3f42da6fa6d1fb7f13f976ab233e013a081d5"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c2d342282eac757fc402e155fe57d8879f05ee6bc1ca0d7696eb10d1435824ab"
+        }
+      }
     }
   ]
 }

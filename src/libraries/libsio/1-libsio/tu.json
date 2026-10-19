@@ -3,7 +3,7 @@
   "member": "libsio_1",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_cdevinput",
         "_cdevscan",
@@ -11,7 +11,20 @@
         "_ioabort",
         "add_nullcon_driver"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "47011269e03fe581b5feb40aadfc36691ab66885844d3900ad770438b00dc133",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "27c4144772428a2ec95bcfa8fd0f13516470341883046a27b4c54433351ebd93"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "8c9e9ed51ca8ae84ab577d17f2cf2536255bb0b917bf2140dac9d22eafe28aab"
+        }
+      }
     }
   ]
 }

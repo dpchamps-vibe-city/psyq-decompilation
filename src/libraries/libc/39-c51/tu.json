@@ -3,11 +3,24 @@
   "member": "libc_39",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "malloc"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "a8cf73199ce875bf97adce35473678756a630afaa97db88e6dbbec186d46fef5",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "b3dc498b6feb484b8351ecb109b04bd1353b958e8daefa529a6ffd88b18d7aaa"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "366cc2d479f0009c3a95eeafa58b4251a8e1b4398c739684df3ee3f1ee302ea0"
+        }
+      }
     }
   ]
 }

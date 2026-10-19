@@ -3,11 +3,24 @@
   "member": "libgte_42",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "TransMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "1cc115ea9cf8a4794878a82af52f5804a574a15fc3f3d6218776794691c3a9c6",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "0fc916930620d39e3ccce49a16eae69cf3600d19cf487e72094d67e49391c2e5"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "03f1c4026699dc7d511575f5f1dd2fd9c386b42a8d73a7f396a0621ff3e667bd"
+        }
+      }
     }
   ]
 }

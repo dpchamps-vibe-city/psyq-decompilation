@@ -3,11 +3,24 @@
   "member": "libgte_14",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "InitGeom"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "9fe171fabfa6e848c73b33f635531593c0e56eddf2712ebf5d2f7ace9a0f059e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "0011d6176539144810a03586669924a67d08beb62a17855a84edf2300d8e66f5"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "8af05b23110ebae0b6109ce915f1909eba55deed34a8aa3ff5ba26c76e450420"
+        }
+      }
     }
   ]
 }

@@ -3,13 +3,26 @@
   "member": "libapi_74",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "EnablePAD",
         "DisablePAD",
         "_patch_pad"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "e0722978a788951f1ef0510e82ed4a86ceafe5e0a463db0b737c1feb6bb65c72",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "7695ea34bf7c88196614bf5a545452b776faf07d29daa2bb3fca6e5caaba3d50"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "09e43f38e6b2c588babc99a355b99e0a5b33ed6ee552661b46da28bdee3c3bd0"
+        }
+      }
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libapi_80",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "free2.c",
-      "symbol": "free2"
+      "symbols": [
+        "free2"
+      ]
     }
   ]
 }

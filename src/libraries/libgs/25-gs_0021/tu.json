@@ -3,11 +3,10 @@
   "member": "libgs_25",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsGetActiveBuff.c",
-      "symbol": "GsGetActiveBuff"
+      "path": "gs_0021.c",
+      "symbols": [
+        "GsGetActiveBuff"
+      ]
     }
   ]
 }

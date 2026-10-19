@@ -3,11 +3,10 @@
   "member": "libc2_2",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "bzero.c",
-      "symbol": "bzero"
+      "symbols": [
+        "bzero"
+      ]
     }
   ]
 }

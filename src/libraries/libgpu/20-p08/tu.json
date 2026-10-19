@@ -3,11 +3,10 @@
   "member": "libgpu_20",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CatPrim.c",
-      "symbol": "CatPrim"
+      "path": "p08.c",
+      "symbols": [
+        "CatPrim"
+      ]
     }
   ]
 }

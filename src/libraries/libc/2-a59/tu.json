@@ -3,11 +3,24 @@
   "member": "libc_2",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "putc"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "df76e5b167c8c86602f8047d8b23ecda39132c43f48f3b4f89a578fd0f9a8342",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "2192fb391626881d123173b1ac5f6128d01bd8c1be042d9c6bdce233c5648110"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "ae9018a501c49eecdd4243a391a4d6b00509b758633caec50f00c2220143afdd"
+        }
+      }
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libcd_27",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CdLastCom.c",
-      "symbol": "CdLastCom"
+      "path": "s_005.c",
+      "symbols": [
+        "CdLastCom"
+      ]
     }
   ]
 }

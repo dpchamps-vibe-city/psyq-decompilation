@@ -3,11 +3,24 @@
   "member": "libgte_52",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadRGBfifo"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "063d95cd7da1fb04854c3bf54a59920d28c68b5ba9687285530bd916a89d4d4e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "33ba19f4ee1ca13d43c4c9b7c0056d475de9a688c54145a07c8da6e61781f6ba"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "0a81d4c064e682d3b3b8f4f7cc87449a32b37fc28166504188419792e62164fa"
+        }
+      }
     }
   ]
 }

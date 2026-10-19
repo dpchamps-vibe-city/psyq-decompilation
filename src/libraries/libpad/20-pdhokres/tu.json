@@ -3,14 +3,46 @@
   "member": "libpad_20",
   "parts": [
     {
-      "path": "backlog.ASM",
-      "symbols": [
-        "_padGunInitHook",
-        "_padGunExitHook",
-        "_padGetHitCount",
-        "_padClrHitCount"
-      ],
-      "backlog": true
+      "path": "_shared-0.h"
+    },
+    {
+      "path": "_symbols.c",
+      "symbol": "__library_member_symbols"
+    },
+    {
+      "path": "_padGunInitHook.c",
+      "symbol": "_padGunInitHook",
+      "retained": {
+        "kind": "handwritten-assembly",
+        "evidence": "bios-inline-dispatch",
+        "originalSha256": "4188718581763824e6bc72466a4dac7c5c5b7af97f002b8131f919aee462a6b2"
+      }
+    },
+    {
+      "path": "_padGunExitHook.c",
+      "symbol": "_padGunExitHook",
+      "retained": {
+        "kind": "handwritten-assembly",
+        "evidence": "bios-inline-dispatch",
+        "originalSha256": "4188718581763824e6bc72466a4dac7c5c5b7af97f002b8131f919aee462a6b2"
+      }
+    },
+    {
+      "path": "_padGetHitCount.c",
+      "symbol": "_padGetHitCount"
+    },
+    {
+      "path": "_padClrHitCount.c",
+      "symbol": "_padClrHitCount",
+      "retained": {
+        "kind": "handwritten-assembly",
+        "evidence": "gcc-impossible",
+        "originalSha256": "4188718581763824e6bc72466a4dac7c5c5b7af97f002b8131f919aee462a6b2"
+      }
+    },
+    {
+      "path": "_data.c",
+      "symbol": "__library_member_data"
     }
   ]
 }

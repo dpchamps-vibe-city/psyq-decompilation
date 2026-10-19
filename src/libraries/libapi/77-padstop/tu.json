@@ -3,15 +3,11 @@
   "member": "libapi_77",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "StopPAD.c",
-      "symbol": "StopPAD"
-    },
-    {
-      "path": "func_000000A0.c",
-      "symbol": "func_000000A0"
+      "path": "padstop.c",
+      "symbols": [
+        "StopPAD",
+        "func_000000A0"
+      ]
     }
   ]
 }

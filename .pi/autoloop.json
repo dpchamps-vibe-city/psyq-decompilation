@@ -11,6 +11,7 @@
   "singleTier": true,
   "commitOnMatch": true,
   "commitOnPark": true,
+  "autoFold": true,
   "runtimeDir": "run_output/autoloop",
   "approvalsDir": "notes/human-needed-approvals",
   "integration": {
@@ -21,8 +22,6 @@
   "sourcePolicy": {
     "allowEmptyMemoryBarrier": true,
     "allowStackPointerSwitch": true,
-    "allowBiosSyscallMacro": true,
-    "allowBiosTailJumpMacro": true,
     "allowlist": {}
   }
 }

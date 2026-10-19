@@ -48,3 +48,25 @@ ordered whole-TU production pipeline; assembly-backed backlog does not count as
 decompiled C. For a deliberately scoped owning-member check, use
 `npm run library -- check --member MEMBER_ID`. To see the library CLI options, use
 `npm run library -- --help`.
+
+## Translation state and folding
+
+- **Assembly-origin members** (native LNK symbol IDs from 1) are retained
+  extraction: `split` keeps them as `handwritten.ASM` and they are never C targets.
+  See `configs/handwritten-assembly.md`.
+- **Hand-written functions inside C members** carry a `retained` flag in
+  `tu.json`. `split` records them from original-word fingerprints;
+  `npm run library -- code-classes` is the census and its gate.
+- **Loop targets** are the C stubs of C TUs, then each member's finishing targets:
+  `MEMBER::__library_member_data` once every function is C or retained, and
+  `MEMBER::__library_member_symbols` once the data is C.
+- **Folding.** A finished TU becomes one module per original object:
+  `npm run library -- fold` checks, `fold --all-ready --write` folds. The
+  project sets `"autoFold": true`, so the loop folds and commits a member when
+  its last target matches.
+- **Fold cleanup.** Every fold is followed by a cleanup agent turn
+  (`psx-fold-cleanup` skill) that makes the module read like original source.
+  It may edit only the module, and it is kept only if the refinement gate passes;
+  otherwise the verbatim fold stays. Folded modules without a current
+  `cleanedSha256` marker are cleaned by the loop ahead of new targets, so the 73
+  modules folded on 2026-10-18 are cleaned on the next loop run.

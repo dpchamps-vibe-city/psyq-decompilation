@@ -3,11 +3,10 @@
   "member": "libc2_31",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "todigit.c",
-      "symbol": "todigit"
+      "symbols": [
+        "todigit"
+      ]
     }
   ]
 }

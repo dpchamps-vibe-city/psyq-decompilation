@@ -3,11 +3,10 @@
   "member": "libc2_15",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strcat.c",
-      "symbol": "strcat"
+      "symbols": [
+        "strcat"
+      ]
     }
   ]
 }

@@ -3,11 +3,24 @@
   "member": "libapi_69",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SysEnqIntRP"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "c77017bf928a08e3cd3839d693af475d6ac65d663493a8ef71a92450cf326e81",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "b8080bd1c6f40ac667ede93b591044bd463253bf65a5c7f6155393209444cc08"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "52745891cef9c33d2564d832e0e3e852a11c46ba1dc1e23ca227750368a24604"
+        }
+      }
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libgs_74",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsGetWorkBase.c",
-      "symbol": "GsGetWorkBase"
+      "path": "gs_125.c",
+      "symbols": [
+        "GsGetWorkBase"
+      ]
     }
   ]
 }

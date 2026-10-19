@@ -3,11 +3,10 @@
   "member": "libc2_9",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "memmove.c",
-      "symbol": "memmove"
+      "symbols": [
+        "memmove"
+      ]
     }
   ]
 }

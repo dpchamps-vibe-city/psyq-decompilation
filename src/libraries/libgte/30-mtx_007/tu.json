@@ -3,11 +3,24 @@
   "member": "libgte_30",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadLightMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "5b011378b815c7f230e2ac250133781e1b6c4ce5ddd7289e9aceb02678bb0108",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "bfe9c5857f5948b807663546be26bd6202659352d4698bccacccd73b05d2762f"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "4409b7e6ef66b17c4a7547c022c7f0d0f3458af501dfb5a60f9c2ad8e42027e2"
+        }
+      }
     }
   ]
 }

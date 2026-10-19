@@ -3,11 +3,24 @@
   "member": "libcard_6",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "StopCARD2"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "1ecf93874bd71cc77d7e53868d7f18ab76c0a87cecb293fb42349755f735ddf4",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "ea681c5c62c9c5ce1e12920ceb9fc65ae186bfd3ce412d44cde3844f757a5121"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "6568495226d5c3dbaddc8f133f7dea047ba7c9985182f5cf5ed4d5912f4c2b9b"
+        }
+      }
     }
   ]
 }

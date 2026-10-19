@@ -3,11 +3,24 @@
   "member": "libapi_61",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "Krom2RawAdd"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "d4510863c792dac7af37e19f39038cd8bfe867e8568b628d79c87e2476044478",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "faa9d3cd8f3f18cdfedfc1c9e8ac4d685ac312f7c65a49c03f294648731abd31"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "d131e8223c6d66634a4e4f96d852022c031bae1a0364383bc5f7771c533557b2"
+        }
+      }
     }
   ]
 }

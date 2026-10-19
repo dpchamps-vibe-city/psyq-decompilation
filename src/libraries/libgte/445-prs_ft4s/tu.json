@@ -3,11 +3,24 @@
   "member": "libgte_445",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GsPrstTF4LFGD"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "23d543151dce20ebcd763f5e1b131be0a5ada52f27a53f3432ece82c0d927c91",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e41e6c09229af933e2c56dc778d3a5f6756f1e5928d2b9a10ebee8ec84519f1c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "a7a3135484dc1ad03396562e70a00c1cd93fc2fa89b006503456756449de383b"
+        }
+      }
     }
   ]
 }

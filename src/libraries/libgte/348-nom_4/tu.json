@@ -3,11 +3,24 @@
   "member": "libgte_348",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotTransPers4_nom"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "203a8b509b20da3ce5dc963f3cd4abdaf48f68981ef1ea2e9ec9e65be1c51e82",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "c141e2256ee8885360145b3adcdb1c00cf266c519809439c47253209566ad924"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "634ce01663a79d666a37a0521a66d3801e64f3b960b01f739af47fa4ca18bed5"
+        }
+      }
     }
   ]
 }

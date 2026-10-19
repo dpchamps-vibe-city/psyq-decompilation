@@ -3,11 +3,10 @@
   "member": "libc2_26",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strrchr.c",
-      "symbol": "strrchr"
+      "symbols": [
+        "strrchr"
+      ]
     }
   ]
 }

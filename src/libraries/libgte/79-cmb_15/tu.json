@@ -3,11 +3,24 @@
   "member": "libgte_79",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotAverageNclip3_1"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "0ec2a7441e23fd81f3dae69abb29957f0007754c409ef7e1541c4a8edc826833",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "642c1c6fe10f709e6d389a99a01d756d9e78b6c8b7653cc4954a0d09f101026e"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "5b15eb14c6ad3fc1718eb752c5b9c46904bc6f87ea4c271102dd812d5e41206b"
+        }
+      }
     }
   ]
 }

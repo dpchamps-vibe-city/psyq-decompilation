@@ -3,11 +3,24 @@
   "member": "libapi_60",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "DelDrv"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "8ef4a4a66e251c1712a73bfc4eda215d40ecbbab85325cbc4339c4e8a1bc2183",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e9be6379f4c1f3c7b6aba6679ed81c694eb9058269aed9b7e09242923e71521d"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "40679465fd7c6f4bfc12c0002d9c5f86c4c865aaeaac1abcd1e405576d5ee492"
+        }
+      }
     }
   ]
 }

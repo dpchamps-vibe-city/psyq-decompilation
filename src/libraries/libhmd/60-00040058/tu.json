@@ -3,11 +3,24 @@
   "member": "libhmd_60",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GsU_00040058"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "36641470af29f0cd6146838245459e0e54d17548d30822dc22596a8b33b7f1ec",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "b5f3c5253c30651206cfdde9935e053e18efc0da8ea3b906d80f7f2b6ee20e95"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "ea09a6102b6df4f2e77c24239a4fb7bdff64a758930322f2ef30342e22510353"
+        }
+      }
     }
   ]
 }

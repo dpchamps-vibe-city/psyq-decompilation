@@ -3,11 +3,24 @@
   "member": "libapi_5",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "FlushCache"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "09c3633587284ea8084e1a2cebbc90e11a16ad8833d2ed485291abd2c0e68fe4",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "cff0567713945b9ee3bf027150d89c1102bdc6e325c64759532086b487e17335"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "9e0dd1fbd7a79f8008875c80168b74041bdaed341ef72c2959dc74fd0acac4e0"
+        }
+      }
     }
   ]
 }

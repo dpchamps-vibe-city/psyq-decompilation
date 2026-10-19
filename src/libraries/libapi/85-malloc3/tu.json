@@ -3,11 +3,10 @@
   "member": "libapi_85",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "malloc3.c",
-      "symbol": "malloc3"
+      "symbols": [
+        "malloc3"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libsnd_57",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SsGetMute.c",
-      "symbol": "SsGetMute"
+      "path": "ssgm.c",
+      "symbols": [
+        "SsGetMute"
+      ]
     }
   ]
 }

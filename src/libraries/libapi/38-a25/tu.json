@@ -3,11 +3,24 @@
   "member": "libapi_38",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "HookEntryInt"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "4c5a148d459c5bc89ff41623550ec884bca9956a17f790b078361cd352ead604",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e0dd59e7d80c14960f9aea3f2603fe85b66dcdc2ee97a6575b169f7efd052ddd"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "b3ee6241a66b249128c3ff0e16c9ce9f4d3c41ddd5c14c7a307ff56e1e04d7ce"
+        }
+      }
     }
   ]
 }

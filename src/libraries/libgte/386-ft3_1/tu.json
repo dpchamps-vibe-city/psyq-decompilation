@@ -3,11 +3,24 @@
   "member": "libgte_386",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GsTMDfastTNF3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "7a192773659908829edc3368cada3e17254673101d4f323659b0650f23deaf99",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "953f3ecea6086341d05e1f4a69524fd133c19fdf1d19f507d4b10977d0b4b7e5"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "d8e97e09831d4c7da6f7a6f4f3bf0c9c26f72c93986b536ee69cb41f2f686c47"
+        }
+      }
     }
   ]
 }

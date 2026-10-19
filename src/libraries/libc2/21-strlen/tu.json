@@ -3,11 +3,10 @@
   "member": "libc2_21",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strlen.c",
-      "symbol": "strlen"
+      "symbols": [
+        "strlen"
+      ]
     }
   ]
 }

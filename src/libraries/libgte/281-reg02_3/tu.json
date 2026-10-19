@@ -3,11 +3,24 @@
   "member": "libgte_281",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadIR123"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "ea84c0eb419f5fe46a94518bbc7b1acc297687e2d1a6fa30a6ac717fda42badc",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "37e8e2e80f9eecdabf7b5a6e540fee577b1235c7eabf37c9b229190e9a14f1c8"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "0a284c9d55368effbe1e6bdb9675e9b0400a55491389a76d861c8941adb6fa4e"
+        }
+      }
     }
   ]
 }

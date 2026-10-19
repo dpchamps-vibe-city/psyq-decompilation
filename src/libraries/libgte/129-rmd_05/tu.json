@@ -3,11 +3,24 @@
   "member": "libgte_129",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotRMD_G4"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "7153a3b51fe251f44a57920b1508b424032a4e5c30fc890e212bf31fd081fb40",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "9e0a76cae27cc8a5a3dfa781688f86045a526320aee438fff5e365d81fb6de6c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "8d011eb317f652e5e216770441735b1b3520a6fd27edd42a4097ab01f7430727"
+        }
+      }
     }
   ]
 }

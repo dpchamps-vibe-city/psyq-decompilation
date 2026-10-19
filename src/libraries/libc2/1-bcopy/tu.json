@@ -3,11 +3,10 @@
   "member": "libc2_1",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "bcopy.c",
-      "symbol": "bcopy"
+      "symbols": [
+        "bcopy"
+      ]
     }
   ]
 }

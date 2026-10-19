@@ -31,7 +31,9 @@ disabled behind original-derived extraction; 624 original assembly files are
 archived verbatim, uncompiled, outside preprocessing. Period `cccp` rejects some
 original assembly lexically even under `#if 0`; none was repaired to make it
 embeddable. They are not counted as reconstructed C or assembly. No
-prefix-splicing exception remains.
+prefix-splicing exception remains. (Later on 2026-10-18 the parked BIOS-wrapper
+attempts and the 624 archived assembly files were removed from the tree; see
+`configs/handwritten-assembly.md`. They remain in git at `0c20c701`.)
 `build/toolchain-provenance/provenance-remediation.json` records the before/after
 hashes and backup paths; the old conversion scripts are quarantined, not reused.
 

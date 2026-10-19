@@ -3,11 +3,24 @@
   "member": "libgte_326",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotTransSV"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "cefc3724ba7448313a3e4916e8758a9ddb38092fa14e03274c3b47068f94304e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e9d0d73e5cb6c79975ce356cea5386c5734c11994ea1df39184eaa2a19ed8cf3"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c3c2aeb3984c5e8c915a0ccaeba4e9edd52ce117316512ec983a235ebecd9f0f"
+        }
+      }
     }
   ]
 }

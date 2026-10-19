@@ -3,11 +3,24 @@
   "member": "libgte_225",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ScanXY0"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "89cb5a4315d3e7c4895ab4593a68cae81644c0ccd465ae4679ef3723b4444615",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "3e865439eb3fe162643bb3aee52513557d98758bc9076adf0e12beedac541b0d"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "db5d3e3ef7a72abe8941bb243f266a434e01f01907e55c0ec010f0ffa15732d8"
+        }
+      }
     }
   ]
 }

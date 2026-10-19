@@ -3,11 +3,10 @@
   "member": "libcomb_2",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "ChangeClearSIO.c",
-      "symbol": "ChangeClearSIO"
+      "path": "comb_3.c",
+      "symbols": [
+        "ChangeClearSIO"
+      ]
     }
   ]
 }

@@ -3,12 +3,25 @@
   "member": "libhmd_574",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GsVNMIMeFunc",
         "GsRestoreOrgsVNMIMe"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "6a52bbfb70c17483fb942bf26dea61364d99b6b0782c0cdf662cc64e67213e2b",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "be433c94be32117b513090a3c38a85809236993f26c2683b3f0a8d0491d50ab9"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "694e80a326a3fca8df1bd5c3e2e45efe718dc5ba0f5a6f79b12747cc7da71c31"
+        }
+      }
     }
   ]
 }

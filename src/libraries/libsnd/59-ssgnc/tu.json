@@ -3,11 +3,10 @@
   "member": "libsnd_59",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SsGetNck.c",
-      "symbol": "SsGetNck"
+      "path": "ssgnc.c",
+      "symbols": [
+        "SsGetNck"
+      ]
     }
   ]
 }

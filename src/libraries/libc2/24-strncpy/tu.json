@@ -3,11 +3,10 @@
   "member": "libc2_24",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strncpy.c",
-      "symbol": "strncpy"
+      "symbols": [
+        "strncpy"
+      ]
     }
   ]
 }

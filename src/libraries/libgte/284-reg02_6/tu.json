@@ -3,11 +3,24 @@
   "member": "libgte_284",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadMAC123"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "4859af6cca3de9b7fddb87a77724c2fb3705e7b7f0b80e54514ad65cd1e11376",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "157020169e05fbc6bafab5d2c9105fc5f296a3662af52f25a3034f0e4de47366"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "43a9bd2c69ff3c24da23a15287f73026866891562b41574da0b083148c6a9519"
+        }
+      }
     }
   ]
 }

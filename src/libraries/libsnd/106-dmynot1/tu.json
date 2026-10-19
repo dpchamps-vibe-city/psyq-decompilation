@@ -3,11 +3,10 @@
   "member": "libsnd_106",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "dmy_nothing1.c",
-      "symbol": "dmy_nothing1"
+      "path": "dmynot1.c",
+      "symbols": [
+        "dmy_nothing1"
+      ]
     }
   ]
 }

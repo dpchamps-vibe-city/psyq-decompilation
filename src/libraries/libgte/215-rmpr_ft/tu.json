@@ -3,11 +3,24 @@
   "member": "libgte_215",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotMeshPrimR_FT3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "4ec8af60b0999292533d8c640cd43cc057a472f692fcbe409cd05290769f7170",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "f52403c1c008837a3d2cc17cd7341a73c77806684f6af8a7f67ab1ef4e614a5c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "7f264fdb1383d2a795c745500ea4f75a1108f6c2ebd4dc8c26912f141d3dd627"
+        }
+      }
     }
   ]
 }

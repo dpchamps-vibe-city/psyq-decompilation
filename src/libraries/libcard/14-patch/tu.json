@@ -3,14 +3,27 @@
   "member": "libcard_14",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_patch_card_info",
         "_patch_card",
         "_patch_card2",
         "_copy_memcard_patch"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "176617a053ebf011779ffdd5f17b37d5537af811c96273f6cb45267791c96bea",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "bc06019d0da58566472967f13daddb3ca434e1588478c7109d06f3aaf49992b6"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "e40570eb95091f27617c4fb109b6b2a45e37391d7cbcbb90639573f50cdc5f13"
+        }
+      }
     }
   ]
 }

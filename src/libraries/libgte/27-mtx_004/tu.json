@@ -3,11 +3,24 @@
   "member": "libgte_27",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ApplyMatrixLV"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "31ae5b0dfc5403794081a0122a83d2d1f28f82283bbcc973ecaa8db7450a7423",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "ad74650cf0b6a891796dee686c4018fc77a5c25f9516eddca01e523df00f62cf"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c4bcbeff8ae08e7bcbd79a2160e026db51b676e3f912de5b0768e8811af8e1ff"
+        }
+      }
     }
   ]
 }

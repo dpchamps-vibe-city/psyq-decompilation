@@ -3,11 +3,24 @@
   "member": "libapi_6",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GPU_cw"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "670f01aa347b75bebea33e0669f9dfd7ceec68d09b2658f55b2fe21706ed9b05",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "5ad913846619d0ab884fe1697ca148b3702e7cce480d6144875db5128f134d94"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "acb47ca193e1bfba9217a7a167528fed04f7c09b91bd4a4f1d64ea350ad138c1"
+        }
+      }
     }
   ]
 }

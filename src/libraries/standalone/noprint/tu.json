@@ -3,12 +3,25 @@
   "member": "noprint",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "printf",
         "puts"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "a1751042b1649694eb883319f7f9343e07bf27c7386765142a355c5569636e0e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "2fcd3a148fd0dde39696f48fcef07538d5935f93d60ba4c2a732483a40f93a29"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "954b4d9c3bdca47452e517438e2f83bac17248317fc2b17129af6b2da1ff4ea4"
+        }
+      }
     }
   ]
 }

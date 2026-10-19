@@ -3,7 +3,7 @@
   "member": "libgte_16",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "InvSquareRoot",
         "VectorNormalS",
@@ -12,7 +12,20 @@
         "func_00000170",
         "MatrixNormal"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "89486b01bba8acd073474e8b41b5dde500bedb852fa43301071969f2daa021e8",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "4d947cab4f01a119725c3a656571fc7ca9a692a37fc62716c34e652a5d65c0ef"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "84ace3607fdd6edfd298f7940156d75858b0e9beb8ab4241b88f41bbe3be556e"
+        }
+      }
     }
   ]
 }

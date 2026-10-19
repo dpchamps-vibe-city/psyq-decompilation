@@ -3,13 +3,26 @@
   "member": "libgte_192",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RCpolyFT4",
         "RCpolyFT4A",
         "func_000004F8"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "35b70df7537a57c084522267b728b245111787c8340027a65bfc85c129764c16",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "b70b24158188d21b92d60cee5b9e6417e0340832e51b206d6948c4abd9af6e5d"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "b2bb5277a11e9411774d19cdc8789af76d471b9d63942c035f1a16d69cd4e83e"
+        }
+      }
     }
   ]
 }

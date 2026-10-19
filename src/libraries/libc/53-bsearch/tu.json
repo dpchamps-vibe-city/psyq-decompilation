@@ -3,11 +3,10 @@
   "member": "libc_53",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "bsearch.c",
-      "symbol": "bsearch"
+      "symbols": [
+        "bsearch"
+      ]
     }
   ]
 }

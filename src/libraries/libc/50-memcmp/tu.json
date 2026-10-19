@@ -3,11 +3,10 @@
   "member": "libc_50",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "memcmp.c",
-      "symbol": "memcmp"
+      "symbols": [
+        "memcmp"
+      ]
     }
   ]
 }

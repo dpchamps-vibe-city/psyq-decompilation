@@ -3,11 +3,24 @@
   "member": "libcard_0",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_bu_init"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "c4fd5d2fdb5d2d0f60360cb22c3c131177d8bdcfafbf8fc6816e275ef39eb238",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "10a9939af3452b610dfc1d805de61f1fdcc980535c5337aade375e36488d326f"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "18709b78bf4040e9dfc87357c25c0116f2ac10cfabced2a2b6a384b507ed6e3f"
+        }
+      }
     }
   ]
 }

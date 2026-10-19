@@ -3,11 +3,24 @@
   "member": "libc_11",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "atol"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "492ab81e945aa7048be6021f996314fadecba524f2ecb107cb2c04ece139ac3a",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e2fa3174337f0ac8c39f8bd9dbb4ffd9a784f0b8ce42d6473559ead789af496b"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "d3e3551a24003f5aa66b7aa8b257d407d611def668145d8f4f7d74ed581a6bcb"
+        }
+      }
     }
   ]
 }

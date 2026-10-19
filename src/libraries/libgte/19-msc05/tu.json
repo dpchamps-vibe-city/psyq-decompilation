@@ -3,11 +3,24 @@
   "member": "libgte_19",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "gteMIMefunc"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "20594a8ae3dc8e935d6d8129aee7f52162b18b17e1c0539e1da36c3dceb0c0f9",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "823b3d418ecdd63d7407e8f3997b0ccb7d5cd7bd7ec76e71f94a79144e227dee"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "babe0df09aa911a3f94fd130021c7f161ce0d190ce585f0986fe4ed87826df97"
+        }
+      }
     }
   ]
 }

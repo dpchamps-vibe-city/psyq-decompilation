@@ -3,15 +3,11 @@
   "member": "libc_52",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "qsort.c",
-      "symbol": "qsort"
-    },
-    {
-      "path": "func_000001B8.c",
-      "symbol": "func_000001B8"
+      "symbols": [
+        "qsort",
+        "func_000001B8"
+      ]
     }
   ]
 }

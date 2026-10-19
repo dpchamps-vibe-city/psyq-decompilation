@@ -1,3 +1,11 @@
+/* Original TU: library-input/psyq/LIB/LIBAPI.LIB[87] REALLOC3.OBJ
+ * sha256: 6595d4a8bc791b75ef95489f78142eed07fc3007e17e8742d009a54d105f928a
+ * One original member, one TU. Replace INCLUDE_ASM stubs with C; keep neighboring code/data.
+ * Functions: realloc3
+ */
+#include "common.h"
+#include "include_asm.h"
+
 #include "86-free3.h"
 #include <malloc.h>
 static void func_0000014C(void);
@@ -44,4 +52,44 @@ void *realloc3(void *ptr, u32 size) {
         free3(tail + 1);
     }
     return ptr;
+}
+#include "86-free3.h"
+
+static void func_0000014C(void) {
+    Block *bp;
+
+    bp = _r_p.bp;
+    bp->size = _r_p.size;
+    bp->next = _r_p.next;
+    bp = _r_bp.bp;
+    bp->size = _r_bp.size;
+    _freep = _r_freep;
+    bp->next = _r_bp.next;
+}
+#include "common.h"
+
+static void *func_000001A0(void *dest, void *source, s32 count) {
+    u8 *d;
+    u8 *s;
+
+    d = dest;
+    s = source;
+    if (d >= s) {
+        if (count--) {
+backward_body:
+            d[count] = s[count];
+            if (count--) {
+                goto backward_body;
+            }
+        }
+    } else {
+        if (count--) {
+forward_body:
+            *d++ = *s++;
+            if (count--) {
+                goto forward_body;
+            }
+        }
+    }
+    return dest;
 }

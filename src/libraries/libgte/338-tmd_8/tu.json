@@ -3,11 +3,24 @@
   "member": "libgte_338",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "gte_texture_gouraud3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "fd95be794567868e9b07bfd5bbeb071a195e1c31831afe80c87db9bae4d180d2",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "eb617162a27345ce57957bd84a4ec1443a0422f3113f3c70c159460d27938e59"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "760ace581cb5b7d5d9a91c3addabf218f773ed59e72771924aea556afb439b69"
+        }
+      }
     }
   ]
 }

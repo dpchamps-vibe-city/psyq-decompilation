@@ -3,11 +3,24 @@
   "member": "libgte_355",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotAverageNclipColorCol3_nom"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "42cf2faefd56a6b83aeda74c2bf9aee737cca43b9d3991084067b2187dff0729",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "77215b468fa6b81eb84e2406ae5c46546d2c3fd36e37062a9ded11cd07b83586"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "7d6d9e21d718c13f554a45766db0ac985ea49f684a29a0abd303d56f5214d745"
+        }
+      }
     }
   ]
 }

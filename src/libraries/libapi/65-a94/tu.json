@@ -3,11 +3,24 @@
   "member": "libapi_65",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "GetGp"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "e86a23ee8b9c7f9e8e2c91ac53d784fd62f66cc599abcc12b2fb73f6161a0636",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "f9c1a28bb4e6ba752ae2e4bb9314f1ae488270a279b1601bae2d424640e1175e"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "f6c4f6a8f9459f29d5407bc3dd2fa242f771d92903a2158b9dbd11501efecb60"
+        }
+      }
     }
   ]
 }

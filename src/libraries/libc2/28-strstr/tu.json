@@ -3,11 +3,10 @@
   "member": "libc2_28",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strstr.c",
-      "symbol": "strstr"
+      "symbols": [
+        "strstr"
+      ]
     }
   ]
 }

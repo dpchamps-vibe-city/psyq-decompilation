@@ -3,11 +3,24 @@
   "member": "libc_26",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "strpbrk"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "dcef53cb00148b10709647f86bcb988f9fc3e2dd74e71ec383b99adbdd2fe7e0",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "569add6cd6452884f714df11311ccf94542ebe47176ddefcb4a5a4bb6fc3ccda"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "8a5baee8d66a4fd6d5e301181c1fa2aa93a45a584c7f673f1498923b60de3d0e"
+        }
+      }
     }
   ]
 }

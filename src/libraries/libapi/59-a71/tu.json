@@ -3,11 +3,24 @@
   "member": "libapi_59",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "AddDrv"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "91a1108e557f915f646a2d508a896753c6986618d9bf44ace58dfe7f3028f0f0",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "c05caa1e17d0446b8325672978442dfa68bb7141686163cd6f312245e10165ae"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c499418e0c99e5fb9f5887167d94cc126635cab494eb6130a81a0289ed7e91b9"
+        }
+      }
     }
   ]
 }

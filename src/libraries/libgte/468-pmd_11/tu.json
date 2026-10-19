@@ -3,11 +3,24 @@
   "member": "libgte_468",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotPMD_SV_FT3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "56d830d200587bd869608da2ef78dac4c8250ce799ee214d480e8be8d2ad3a83",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "05fac976492758f265bb0600dd6b9347596c2b6b9fd73503ced6768398c0e08b"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "92d2833d544aca26de104d171ad721b29e3daa760f6204c544e627ca32d20098"
+        }
+      }
     }
   ]
 }

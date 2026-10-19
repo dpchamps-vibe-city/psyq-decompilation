@@ -3,11 +3,10 @@
   "member": "libc2_0",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "bcmp.c",
-      "symbol": "bcmp"
+      "symbols": [
+        "bcmp"
+      ]
     }
   ]
 }

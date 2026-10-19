@@ -3,11 +3,10 @@
   "member": "libc2_17",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strcmp.c",
-      "symbol": "strcmp"
+      "symbols": [
+        "strcmp"
+      ]
     }
   ]
 }

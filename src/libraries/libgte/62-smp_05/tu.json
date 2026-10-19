@@ -3,11 +3,24 @@
   "member": "libgte_62",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "NormalClip"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "59cadeb1613653788ad48f6c7f30fe66f1860d322827e83b0842f8dba1ddc91b",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e92d0874db4f172f001a049b65734b164a99e4e03738ab932a1bf710ce8995cf"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "c25814d8c561f38866c08f18df6e725e40f973387dd937fdfcef326565737fae"
+        }
+      }
     }
   ]
 }

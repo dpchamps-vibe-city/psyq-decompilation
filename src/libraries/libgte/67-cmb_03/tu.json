@@ -3,11 +3,24 @@
   "member": "libgte_67",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "RotNclip"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "476c743d9ddd2fc3fad751ee3cd02c2afb56ec55733362d876ec83f98aa6919e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "22c9b03f8fdc9aa826b6c2a80016b6e3ffd289e8a3a806d64ac0be4bb098fb8e"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "f1bb12a499bd1b0357f7dd547b80100c96d8fa714b41f767872e9370c8320ed6"
+        }
+      }
     }
   ]
 }

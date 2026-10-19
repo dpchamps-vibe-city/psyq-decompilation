@@ -3,11 +3,10 @@
   "member": "libc_55",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strtol.c",
-      "symbol": "strtol"
+      "symbols": [
+        "strtol"
+      ]
     }
   ]
 }

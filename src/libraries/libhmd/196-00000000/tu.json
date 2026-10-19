@@ -3,11 +3,10 @@
   "member": "libhmd_196",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "GsU_00000000.c",
-      "symbol": "GsU_00000000"
+      "path": "00000000.c",
+      "symbols": [
+        "GsU_00000000"
+      ]
     }
   ]
 }

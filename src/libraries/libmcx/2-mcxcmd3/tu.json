@@ -3,11 +3,10 @@
   "member": "libmcx_2",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "_mcxRxRestLen.c",
-      "symbol": "_mcxRxRestLen"
+      "path": "mcxcmd3.c",
+      "symbols": [
+        "_mcxRxRestLen"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libds_19",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DsLastCom.c",
-      "symbol": "DsLastCom"
+      "path": "d2_004.c",
+      "symbols": [
+        "DsLastCom"
+      ]
     }
   ]
 }

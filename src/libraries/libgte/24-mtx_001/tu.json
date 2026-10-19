@@ -3,11 +3,24 @@
   "member": "libgte_24",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "MulRotMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "b1ae626eb7691c7508353ab27ff3c67b9b249186a7ed5e523db1be13208e52af",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e3b4c36ada9f8f32e64f4d8491373970484cca42323897cd214eb30d4b4da50a"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "5ec268859e3af6d14f2b16708046df919a99a1935cba475077277bebc9e2c728"
+        }
+      }
     }
   ]
 }

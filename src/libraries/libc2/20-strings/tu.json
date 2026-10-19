@@ -3,15 +3,11 @@
   "member": "libc2_20",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "index.c",
-      "symbol": "index"
-    },
-    {
-      "path": "rindex.c",
-      "symbol": "rindex"
+      "path": "strings.c",
+      "symbols": [
+        "index",
+        "rindex"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libc2_19",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strcspn.c",
-      "symbol": "strcspn"
+      "symbols": [
+        "strcspn"
+      ]
     }
   ]
 }

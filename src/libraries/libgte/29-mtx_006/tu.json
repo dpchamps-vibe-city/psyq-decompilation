@@ -3,12 +3,25 @@
   "member": "libgte_29",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "PushMatrix",
         "PopMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "ed3151a36211fad9d35d3a48b80f028d764255e06b648cc700a4bdb7d9fc34e6",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e519a666a2ec098e49eb6c36f86c986b2c233781a4cd38069a008142e2afd901"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "72e7c1a5bc0e73d0dfe51a3d0c3a6e15259f7c4184ab554c3f1c40d44f13c3d8"
+        }
+      }
     }
   ]
 }

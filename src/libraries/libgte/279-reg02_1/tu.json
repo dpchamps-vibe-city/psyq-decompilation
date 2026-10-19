@@ -3,11 +3,24 @@
   "member": "libgte_279",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadOTZ"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "9417b8efda8f54b4df72d6bfc6b6635045f9dc9fd50ba8f4548f13509b80c8d5",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "f256b551c30fd44ffc1ecd9c0f6488068fd2c8c093e38f0c956e6b1cb9c1e81d"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "33a86a69a8202be647011fa6505f65c4f5778d7e34c930e37f4ec247ce9d5f6d"
+        }
+      }
     }
   ]
 }

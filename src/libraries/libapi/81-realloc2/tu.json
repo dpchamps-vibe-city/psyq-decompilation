@@ -3,19 +3,12 @@
   "member": "libapi_81",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "realloc2.c",
-      "symbol": "realloc2"
-    },
-    {
-      "path": "func_000000F8.c",
-      "symbol": "func_000000F8"
-    },
-    {
-      "path": "func_00000280.c",
-      "symbol": "func_00000280"
+      "symbols": [
+        "realloc2",
+        "func_000000F8",
+        "func_00000280"
+      ]
     }
   ]
 }

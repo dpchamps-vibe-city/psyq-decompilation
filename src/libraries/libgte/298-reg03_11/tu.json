@@ -3,11 +3,24 @@
   "member": "libgte_298",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SetRii"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "0e2c2fa10c2f146980cd0289a9a01c78bda2bf40d640c1d39bd0abde8a97bb60",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "8d31350d04020617358b65c6d11b64b64c8ee8198b9a08668401010c34646339"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "818bbd244b1d6717b28c44046d28fa71c23b0803a8ab7d609c423b35378b0bcd"
+        }
+      }
     }
   ]
 }

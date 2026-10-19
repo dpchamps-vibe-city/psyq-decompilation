@@ -3,11 +3,24 @@
   "member": "poweron",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "go_poweron"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "f3d7ecabb8efd0ba88e9da52d3639151d85d394b9511766806f7c548fdb463e0",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e697e7e99828c08a56c225a4a3e66a2249340c5f2b7751a74dee14a26c44692c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "0d7a3a8ea0b814f5baf27b5e1428bf0cae48b38080d5024f4a036a60e5870b44"
+        }
+      }
     }
   ]
 }

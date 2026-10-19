@@ -3,11 +3,24 @@
   "member": "libgte_45",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SetLightMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "4c8263da9bb1d956e67f4d8807c8b78957a3afc67770683a1154253c5a6d2086",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "042a2dc06720529cb5d3191dc06ec91cc58b7588f2e4a061df28b297850c55d7"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "17ca2fda85d030908aff458ee32bec97841d5a576d18dc55dfe09c8c0d891989"
+        }
+      }
     }
   ]
 }

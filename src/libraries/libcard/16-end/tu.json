@@ -3,11 +3,24 @@
   "member": "libcard_16",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_ExitCard"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "69d7b5ee661ae9f72ce8ec6c1610b65574163693e6f4486af346e5d888a6661b",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "55ade347ae71bc8cf299971f02faa6a0f59735982ca56d8372524fd566b7f83a"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "6c43e0be87c687e3a123389b8a56dfa21289dd9544cdefce7076480f4ec9e9f5"
+        }
+      }
     }
   ]
 }

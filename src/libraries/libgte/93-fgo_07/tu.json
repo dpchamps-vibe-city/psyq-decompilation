@@ -3,11 +3,24 @@
   "member": "libgte_93",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "rcossin"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "ba26b0105deccc8973acf99bbe340ab18cdc2b2becd08d70c5f6c2e9ca0def80",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "b196922c9fc4308d0aa817f6c1242448e43f77b5a179c8fab41550cdd518cc6c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "b8c45368775c7845d7c382b438a781c97c18291c5d2008d310f6274fe95dc240"
+        }
+      }
     }
   ]
 }

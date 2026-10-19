@@ -3,12 +3,25 @@
   "member": "libpress_2",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "DecDCTvlcSize2",
         "DecDCTvlc2"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "874a56c2ea6ec282808121c2a69aaf117bca93bf49e8c743d71b0fbef48519e5",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "e49402e36445f7600dbd6145d364f562755f35048383a3884bb4298589b5df4a"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "68e627fa13685b66f71ee20c721bc6307f8a55d5517789dba18747fa4f6e7915"
+        }
+      }
     }
   ]
 }

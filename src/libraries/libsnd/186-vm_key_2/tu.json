@@ -3,11 +3,10 @@
   "member": "libsnd_186",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "KeyOnCheck.c",
-      "symbol": "KeyOnCheck"
+      "path": "vm_key_2.c",
+      "symbols": [
+        "KeyOnCheck"
+      ]
     }
   ]
 }

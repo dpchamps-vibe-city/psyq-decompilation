@@ -3,11 +3,10 @@
   "member": "libsnd_146",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SsGetVoiceMask.c",
-      "symbol": "SsGetVoiceMask"
+      "path": "ssvm_2.c",
+      "symbols": [
+        "SsGetVoiceMask"
+      ]
     }
   ]
 }

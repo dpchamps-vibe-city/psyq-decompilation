@@ -3,11 +3,24 @@
   "member": "libgte_28",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ApplyRotMatrix"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "4d6a303e887a5258a1062c943eb442498e7f7b17ad2285d9f8b28c0d94cde8ab",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "7c45534ac1a56d61769f689ebd6c7e773f478f1b393cb8f38f92ebe4667c4d70"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "8291c56e3a8d0efbff2a2979193463c58cb508c5baabc745afaf288959c134e2"
+        }
+      }
     }
   ]
 }

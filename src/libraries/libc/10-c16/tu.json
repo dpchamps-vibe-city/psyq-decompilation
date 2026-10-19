@@ -3,11 +3,24 @@
   "member": "libc_10",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "atoi"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "9fa06e2eb2d70e9960761e461715de7d77b7acbaadc9d4ee8e8ea325901a175e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "647866ffdd6036038a9bc4c61a29e7de920248e0c70c1cad340df879103a5d6b"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "d390006df57b4d663c37cce1ae91fcd04338c6f9ed5817205e9492e8aa138407"
+        }
+      }
     }
   ]
 }

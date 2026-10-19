@@ -3,11 +3,10 @@
   "member": "libc2_22",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "strncat.c",
-      "symbol": "strncat"
+      "symbols": [
+        "strncat"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@
   "member": "libcd_25",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CdStatus.c",
-      "symbol": "CdStatus"
+      "path": "s_003.c",
+      "symbols": [
+        "CdStatus"
+      ]
     }
   ]
 }

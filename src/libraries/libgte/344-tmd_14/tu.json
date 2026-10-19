@@ -3,11 +3,24 @@
   "member": "libgte_344",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "gte_scope_tf4"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "48fb173a3ab11e49180ef2baae4e3d418a707b3ae3bba70e6a438240a8266a48",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "5495019196cb2eb556e7cb1bf98ed32511ddf2ce3a25e1515e8bcf98d869f48c"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "bc57b7fac564c98a8f3bc099cc3036959f7c5d814aa41b66d315f63dfdaf2ec4"
+        }
+      }
     }
   ]
 }

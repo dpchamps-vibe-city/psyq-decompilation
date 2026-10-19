@@ -3,15 +3,11 @@
   "member": "libapi_79",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
       "path": "malloc2.c",
-      "symbol": "malloc2"
-    },
-    {
-      "path": "func_00000220.c",
-      "symbol": "func_00000220"
+      "symbols": [
+        "malloc2",
+        "func_00000220"
+      ]
     }
   ]
 }

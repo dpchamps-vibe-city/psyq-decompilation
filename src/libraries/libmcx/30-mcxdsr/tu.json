@@ -3,7 +3,7 @@
   "member": "libmcx_30",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_mcxStartFastDsr",
         "_mcxStopFastDsr",
@@ -11,7 +11,20 @@
         "_mcxFastDsrEnt",
         "_mcxVecSave"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "69555de7c230359054beebdbb83c7b4b704c580679baf546518412dbb6bdc34e",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "424e78439a27bb17014c2591b06af32e5f4e280df9dd3d70bed6bc1f7233ca7f"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "cf443618aaee96f87ecc0eb4a55278ec4d63de00c1dbe9c65feae1b0cf4969bd"
+        }
+      }
     }
   ]
 }

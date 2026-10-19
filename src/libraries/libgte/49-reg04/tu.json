@@ -3,11 +3,24 @@
   "member": "libgte_49",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "ReadSZfifo3"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "9f56cbf0a84551909f3a118475b8562eaefcc27025876add439715102866f956",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "93b3fe348e4a26c921a3f589bab96a774336fa06e24431c2cc1fcab6fcbf390e"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "3098e682bd4cc9f7eb154cafbc859a5d806d3b793dd2ed37b1fe4a65416d6a7d"
+        }
+      }
     }
   ]
 }

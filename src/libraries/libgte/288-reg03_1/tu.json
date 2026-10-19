@@ -3,11 +3,24 @@
   "member": "libgte_288",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SetVertex0"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "272203fc021bcd7df3aec7641bf5bbd5cd363d5907dc1baa2d4c28ec78eb43e8",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "a20b6af65d12e77e188f328d2b22008e6aaa7816b227daa2e9bcfb3fe51fc911"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "dec35a72dc4b019ac5ff20c535eed67df0f17cf261e8d6c4d5198633d94326a8"
+        }
+      }
     }
   ]
 }

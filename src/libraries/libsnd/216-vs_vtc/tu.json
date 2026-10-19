@@ -3,11 +3,10 @@
   "member": "libsnd_216",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SsVabTransCompleted.c",
-      "symbol": "SsVabTransCompleted"
+      "path": "vs_vtc.c",
+      "symbols": [
+        "SsVabTransCompleted"
+      ]
     }
   ]
 }

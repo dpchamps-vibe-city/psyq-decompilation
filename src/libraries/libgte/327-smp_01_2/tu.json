@@ -3,11 +3,24 @@
   "member": "libgte_327",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "SquareSS12"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "8c06cac9526fb84995c9c6cb3d9657ae564b9ca4541f9a1d8995378e3ee0e6d5",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "eec6a334bbf68e6b05695fd0301eb157a47e501fbbee6aae84cd73403e3c932b"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "7f60b0a9fff9b943ca48b9165b3902e907bb2743c4ab385dd663fb5b03235f3c"
+        }
+      }
     }
   ]
 }

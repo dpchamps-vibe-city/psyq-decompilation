@@ -3,23 +3,13 @@
   "member": "libsnd_203",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "SeVibOn.c",
-      "symbol": "SeVibOn"
-    },
-    {
-      "path": "SetVib.c",
-      "symbol": "SetVib"
-    },
-    {
-      "path": "SsUtVibrateOn.c",
-      "symbol": "SsUtVibrateOn"
-    },
-    {
-      "path": "SsUtVibrateOff.c",
-      "symbol": "SsUtVibrateOff"
+      "path": "vm_vib.c",
+      "symbols": [
+        "SeVibOn",
+        "SetVib",
+        "SsUtVibrateOn",
+        "SsUtVibrateOff"
+      ]
     }
   ]
 }

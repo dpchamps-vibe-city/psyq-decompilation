@@ -3,11 +3,10 @@
   "member": "libpress_7",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "DecDCTBufSize.c",
-      "symbol": "DecDCTBufSize"
+      "path": "dct002.c",
+      "symbols": [
+        "DecDCTBufSize"
+      ]
     }
   ]
 }

@@ -3,11 +3,24 @@
   "member": "libapi_83",
   "parts": [
     {
-      "path": "backlog.ASM",
+      "path": "handwritten.ASM",
       "symbols": [
         "_remove_ChgclrPAD"
       ],
-      "backlog": true
+      "backlog": true,
+      "handwritten": {
+        "kind": "original-extraction",
+        "format": "assembler-with-cpp",
+        "originalSha256": "83727a7c6671b49932e1417fb366540e3798da190d6eb1bb02eb7f8dd87744c1",
+        "declarations": {
+          "path": "handwritten-symbols.ASM",
+          "sha256": "8434d037e05ffeaa29f18d52f42231b8637b611fb75bcdb63c3025d90d40b218"
+        },
+        "assembly": {
+          "path": "handwritten.ASM",
+          "sha256": "9aea71f8241a97d0998a22a61dd8a9df3c809317be185261074e8f0c1e8d14c2"
+        }
+      }
     }
   ]
 }

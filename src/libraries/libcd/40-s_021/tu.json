@@ -3,11 +3,10 @@
   "member": "libcd_40",
   "parts": [
     {
-      "path": "_shared-0.h"
-    },
-    {
-      "path": "CdGetSector.c",
-      "symbol": "CdGetSector"
+      "path": "s_021.c",
+      "symbols": [
+        "CdGetSector"
+      ]
     }
   ]
 }
