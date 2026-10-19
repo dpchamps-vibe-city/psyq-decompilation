@@ -6,7 +6,8 @@
       "path": "gs_125.c",
       "symbols": [
         "GsGetWorkBase"
-      ]
+      ],
+      "cleanedSha256": "cde40abe3ff072aca8e3608c203b9d08bfb5c1e9c0c9c20883f0310f71b34f79"
     }
   ]
 }
