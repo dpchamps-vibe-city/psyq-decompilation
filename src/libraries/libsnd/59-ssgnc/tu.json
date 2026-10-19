@@ -6,7 +6,8 @@
       "path": "ssgnc.c",
       "symbols": [
         "SsGetNck"
-      ]
+      ],
+      "cleanedSha256": "3de2d054eaf101b58e9ca403e24965b7f114950a27134ba3ba16495e9a8a6a76"
     }
   ]
 }
