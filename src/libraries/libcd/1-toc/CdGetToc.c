@@ -1,7 +1,9 @@
 #include "common.h"
+#include <sys/types.h>
+#include <libcd.h>
 
-static s32 CdGetToc2(s32 mode, void *loc);
+int CdGetToc2(int mode, CdlLOC *loc);
 
-s32 CdGetToc(void *loc) {
+int CdGetToc(CdlLOC *loc) {
     return CdGetToc2(1, loc);
 }

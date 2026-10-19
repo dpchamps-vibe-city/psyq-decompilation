@@ -18,4 +18,8 @@ typedef struct {
 
 extern Obj *D_000003A0;
 
+/* Debug level owned by the libcd BIOS_1 member (Libcd.lib[20] CD_debug);
+ * referenced by TOC.OBJ (Libcd.lib[1]) for its trace printing. */
+extern int CD_debug;
+
 #endif
