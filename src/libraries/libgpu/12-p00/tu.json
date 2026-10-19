@@ -6,7 +6,8 @@
       "path": "p00.c",
       "symbols": [
         "GetTPage"
-      ]
+      ],
+      "cleanedSha256": "ca435b7d87d0d48dd2a386541918c4259d0e9b24daa05f74921a8ed59659806a"
     }
   ]
 }
