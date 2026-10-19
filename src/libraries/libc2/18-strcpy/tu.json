@@ -6,7 +6,8 @@
       "path": "strcpy.c",
       "symbols": [
         "strcpy"
-      ]
+      ],
+      "cleanedSha256": "4ff13324bf0274c239a171e94b7448e489f99b51bbba0a31852cd55ee813f3dd"
     }
   ]
 }
