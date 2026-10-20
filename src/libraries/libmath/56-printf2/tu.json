@@ -18,8 +18,16 @@
       "symbol": "sprintf2"
     },
     {
+      "path": "_rodata-0.c",
+      "symbol": "__library_member_rodata_0"
+    },
+    {
       "path": "func_000000EC.c",
       "symbol": "func_000000EC"
+    },
+    {
+      "path": "_rodata-1.c",
+      "symbol": "__library_member_rodata_1"
     },
     {
       "path": "func_00000AD8.c",

@@ -12,10 +12,6 @@
     {
       "path": "GsSortObject3.c",
       "symbol": "GsSortObject3"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
     }
   ]
 }

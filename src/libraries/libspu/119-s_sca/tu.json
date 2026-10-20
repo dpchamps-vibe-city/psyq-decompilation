@@ -12,10 +12,6 @@
     {
       "path": "SpuSetCommonAttr.c",
       "symbol": "SpuSetCommonAttr"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
     }
   ]
 }

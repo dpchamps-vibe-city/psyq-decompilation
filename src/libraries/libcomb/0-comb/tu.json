@@ -30,6 +30,10 @@
       "symbol": "func_000003D8"
     },
     {
+      "path": "_rodata-0.c",
+      "symbol": "__library_member_rodata_0"
+    },
+    {
       "path": "_comb_control.c",
       "symbol": "_comb_control"
     },

@@ -26,6 +26,10 @@
       "symbol": "FntFlush"
     },
     {
+      "path": "_rodata-0.c",
+      "symbol": "__library_member_rodata_0"
+    },
+    {
       "path": "FntPrint.c",
       "symbol": "FntPrint"
     },

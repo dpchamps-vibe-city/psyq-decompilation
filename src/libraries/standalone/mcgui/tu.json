@@ -326,6 +326,10 @@
       "symbol": "func_00005AF8"
     },
     {
+      "path": "_rodata-0.c",
+      "symbol": "__library_member_rodata_0"
+    },
+    {
       "path": "func_00005CA8.c",
       "symbol": "func_00005CA8"
     },
@@ -352,6 +356,10 @@
     {
       "path": "func_00006924.c",
       "symbol": "func_00006924"
+    },
+    {
+      "path": "_rodata-1.c",
+      "symbol": "__library_member_rodata_1"
     },
     {
       "path": "func_00006B4C.c",

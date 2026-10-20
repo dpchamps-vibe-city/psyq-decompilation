@@ -10,6 +10,10 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "_rodata-0.c",
+      "symbol": "__library_member_rodata_0"
+    },
+    {
       "path": "GsLinkObject4.c",
       "symbol": "GsLinkObject4"
     },

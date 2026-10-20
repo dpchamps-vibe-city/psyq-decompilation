@@ -16,10 +16,6 @@
     {
       "path": "_mcxRxGetMem.c",
       "symbol": "_mcxRxGetMem"
-    },
-    {
-      "path": "_data.c",
-      "symbol": "__library_member_data"
     }
   ]
 }
