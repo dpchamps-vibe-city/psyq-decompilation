@@ -27,7 +27,7 @@ typedef struct {
     s32 unk8;
 } CdReadBuf;
 
-extern void func_000003F0(s32 arg0) __asm__("$Lfunc_000003F0");
+extern int func_000003F0(s32 arg0) __asm__("$Lfunc_000003F0");
 extern CdReadState D_00000A68 __asm__("$LD_00000A68");
 extern CdReadBuf D_00000A70 __asm__("$LD_00000A70");
 extern s32 CD_read_dma_mode;
