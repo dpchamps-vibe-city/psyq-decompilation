@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libsnd_81", SsQuit);
+#include "common.h"
+#include <libsnd.h>
+#include <libspu.h>
+
+void SsQuit(void) {
+    SpuQuit();
+}

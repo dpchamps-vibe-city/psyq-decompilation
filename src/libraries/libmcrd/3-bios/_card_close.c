@@ -1,1 +1,6 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmcrd_3", _card_close);
+#include "common.h"
+#include <libapi.h>
+
+s32 _card_close(void) {
+    return StopCARD();
+}

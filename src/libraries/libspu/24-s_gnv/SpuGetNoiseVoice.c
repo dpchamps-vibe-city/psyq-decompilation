@@ -1,1 +1,8 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libspu_24", SpuGetNoiseVoice);
+#include "common.h"
+#include <libspu.h>
+
+u32 _SpuGetAnyVoice();                          /* extern */
+
+unsigned long SpuGetNoiseVoice(void) {
+    return _SpuGetAnyVoice(0xCA, 0xCB);
+}

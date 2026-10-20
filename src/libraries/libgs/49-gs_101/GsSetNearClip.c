@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgs_49", GsSetNearClip);
+#include "common.h"
+
+extern s32 GsCLIP3near;
+
+void GsSetNearClip(s32 arg0) {
+    GsCLIP3near = arg0;
+}

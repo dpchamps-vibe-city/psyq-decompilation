@@ -1,1 +1,10 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgs_41", GsSetLsMatrix);
+#include "common.h"
+#include <sys/types.h>
+#include <libgte.h>
+#include <libgpu.h>
+#include <libgs.h>
+
+void GsSetLsMatrix(MATRIX *mp) {
+    SetRotMatrix(mp);
+    SetTransMatrix(mp);
+}

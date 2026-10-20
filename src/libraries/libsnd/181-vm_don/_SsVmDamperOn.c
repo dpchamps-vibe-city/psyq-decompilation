@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libsnd_181", _SsVmDamperOn);
+#include "common.h"
+
+extern s16 _svm_damper;
+
+void _SsVmDamperOn(void) {
+    _svm_damper = 2;
+}

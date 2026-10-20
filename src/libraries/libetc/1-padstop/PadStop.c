@@ -1,1 +1,8 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libetc_1", PadStop);
+#include "common.h"
+#include <libapi.h>
+#include <sys/types.h>
+#include <libetc.h>
+
+void PadStop(void) {
+    StopPAD();
+}

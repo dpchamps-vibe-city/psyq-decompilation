@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmcrd_0", MemCardEnd);
+#include "common.h"
+#include <libapi.h>
+#include <libmcrd.h>
+
+void MemCardEnd(void) {
+    StopCARD();
+}

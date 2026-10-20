@@ -1,1 +1,9 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libcd_28", CdLastPos);
+#include "common.h"
+#include <sys/types.h>
+#include <libcd.h>
+
+extern CdlLOC CD_pos;
+
+CdlLOC *CdLastPos(void) {
+    return &CD_pos;
+}

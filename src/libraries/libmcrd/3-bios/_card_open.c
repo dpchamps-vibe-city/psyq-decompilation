@@ -1,1 +1,8 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmcrd_3", _card_open);
+#include "common.h"
+#include <libapi.h>
+
+void _card_open(s32 arg0) {
+    InitCARD(arg0);
+    StartCARD();
+    _bu_init();
+}

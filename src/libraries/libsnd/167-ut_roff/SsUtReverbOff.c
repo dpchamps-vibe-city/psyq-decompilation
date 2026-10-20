@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libsnd_167", SsUtReverbOff);
+#include "common.h"
+#include <libsnd.h>
+#include <libspu.h>
+
+void SsUtReverbOff(void) {
+    SpuSetReverb(0);
+}
