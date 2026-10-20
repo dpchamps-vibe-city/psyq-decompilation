@@ -27,3 +27,11 @@ CC1FLAGS_libcd_1 := -mhard-float
 # The one `lbu` (0x114/0x13C) is the zero-only test, which GCC may load
 # unsigned regardless. This is a whole-TU source-language property.
 CC1FLAGS_libcd_4 := -fsigned-char
+
+# libcd_20 (BIOS_1.OBJ): the whole member shows no cross-function inlining.
+# Evidence: CD_sync (0x564), CD_ready (0x7e4) and CD_datasync (0x1330) all issue
+# a direct `jal CD_flush` to the 21-instruction CD_flush defined earlier in the
+# same member; CD_cw (0xaac) likewise calls CD_sync. Under the baseline flags the
+# compiler treats CD_flush as inlineable and expands it inside CD_datasync
+# (measured: no jal, inlined flush body, extra $21 save).
+CC1FLAGS_libcd_20 := -fno-inline-functions
