@@ -1,33 +1,21 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libcd_20", func_00000090);
-
-
-/* PARKED by autoloop on 2026-10-20.
- * Reason: blocked (capability: harness part model cannot split generated data).
- * The best non-matching attempt is preserved verbatim below, disabled.
- * Human decision needed: notes/human-needed-approvals/libcd_20::func_00000090.md
- */
-
-#if 0
-/* Best non-matching attempt, preserved for the next session.
- * build/candidates/func_00000090/exp7-computed-goto.c  — 305/345 words
- * (all dbr/mach/greg/lreg stages agree; the 40 residual words are exactly +0x20
- *  on .data/.bss lo16 immediates — pure section-placement gap, not a semantic miss).
- * A switch-based variant (build/candidates/func_00000090/exp6-tidy.c, 303/345)
- * gives the same residual shape.
- */
-
 #include "common.h"
 
-extern volatile u8 *LD_00001B3C asm("$LD_00001B3C");
-extern volatile u8 *LD_00001B40 asm("$LD_00001B40");
-extern volatile u8 *LD_00001B48 asm("$LD_00001B48");
-extern volatile u8 *LD_00001B4C asm("$LD_00001B4C");
-extern volatile u8 B_00001B54[] asm("$LD_00001B54");
-extern u8 B_00001B80[] asm("$LB_00001B80");
-extern u8 B_00001B88[] asm("$LB_00001B88");
-extern u8 B_00001B90[] asm("$LB_00001B90");
-extern u32 D_0000193C[] asm("$LD_0000193C");
-extern u32 D_00001A3C[] asm("$LD_00001A3C");
+/* CD-ROM controller registers: status/index (0x1F801800), interrupt flag
+ * (0x1F801803), response FIFO (0x1F801801) and interrupt enable (0x1F801802). */
+extern volatile u8 *D_00001B3C;
+extern volatile u8 *D_00001B40;
+extern volatile u8 *D_00001B48;
+extern volatile u8 *D_00001B4C;
+/* Interrupt state of the sync, ready and data callbacks. */
+extern volatile u8 D_00001B54[];
+/* Last response bytes for CdSync, CdReady and the data interrupt. */
+extern u8 B_00001B80[];
+extern u8 B_00001B88[];
+extern u8 B_00001B90[];
+/* Per command: it answers with a second (complete) interrupt; its response
+ * starts with the drive status byte. */
+extern u32 D_0000193C[];
+extern u32 D_00001A3C[];
 
 extern u8 CD_com;
 extern s32 CD_status;
@@ -36,55 +24,48 @@ extern s32 CD_nopen;
 extern s32 CD_debug;
 extern char *CD_comstr[];
 
-extern void *JT_000017C0[] asm("$LRO_STR_00001610");
-
-#define CGOTO(p) goto *(p)
-
-extern char CD_str_disk[] asm("$LRO_STR_00001778");
-extern char CD_str_com[] asm("$LRO_STR_00001784");
-extern char CD_str_unknown[] asm("$LRO_STR_000017A0");
-extern char CD_str_pct[] asm("$LRO_STR_000017B4");
+extern char RO_STR_00001778[]; /* "DiskError: " */
+extern char RO_STR_00001784[]; /* "com=%s,code=(%02x:%02x)\n" */
+extern char RO_STR_000017A0[]; /* "CDROM: unknown intr" */
+extern char RO_STR_000017B4[]; /* "(%d)\n" */
 
 extern int printf(const char *, ...);
 extern int puts(const char *);
 
-s32 func_00000090(void) {
+static s32 func_00000090(void) {
     volatile u8 intr;
     volatile u8 buf[8];
     u8 *p1, *p2, *p3, *p4, *p5, *p6, *p7, *p8, *p9;
     u8 *q1, *q2, *q3, *q4, *q5, *q6, *q7, *q8, *q9;
     s32 i;
     s32 n;
-    s32 idx;
     s32 n1, n2, n3, n4, n5, n6, n7, n8, n9;
     s32 stat;
     s32 c;
 
-    static void *const keep[] = { &&L3, &&L2, &&L1, &&L4, &&L5 };
-
-    *LD_00001B3C = 1;
-    intr = *LD_00001B40 & 7;
+    *D_00001B3C = 1;
+    intr = *D_00001B40 & 7;
     if (intr == 0) {
         return 0;
     }
     stat = 0;
-    while (intr != (*LD_00001B40 & 7)) {
-        intr = *LD_00001B40 & 7;
+    while (intr != (*D_00001B40 & 7)) {
+        intr = *D_00001B40 & 7;
     }
     for (i = 0; i < 8; i++) {
-        if (!(*LD_00001B3C & 0x20)) {
+        if (!(*D_00001B3C & 0x20)) {
             break;
         }
-        buf[i] = *LD_00001B48;
+        buf[i] = *D_00001B48;
     }
     if (i < 8) {
         for (n = i; n < 8; n++) {
             buf[n] = 0;
         }
     }
-    *LD_00001B3C = 1;
-    *LD_00001B40 = 7;
-    *LD_00001B4C = 7;
+    *D_00001B3C = 1;
+    *D_00001B40 = 7;
+    *D_00001B4C = 7;
 
     if ((intr != 3) || (D_00001A3C[CD_com] != 0)) {
         if (!(CD_status & 0x10) && (buf[0] & 0x10)) {
@@ -98,22 +79,17 @@ s32 func_00000090(void) {
 
     if (intr == 5) {
         if (CD_debug >= 3) {
-            printf(CD_str_disk);
+            printf(RO_STR_00001778);
             if (CD_debug >= 3) {
-                printf(CD_str_com, CD_comstr[CD_com], CD_status, CD_status1);
+                printf(RO_STR_00001784, CD_comstr[CD_com], CD_status, CD_status1);
             }
         }
     }
 
-    idx = intr - 1;
-    if ((u32)idx < 5u) {
-        CGOTO(JT_000017C0[idx + 108]);
-    }
-    goto Ldef;
-
-L3:
+    switch (intr) {
+    case 3:
         if (stat != 0) {
-            B_00001B54[0] = 5;
+            D_00001B54[0] = 5;
             p1 = B_00001B80;
             if (p1 != 0) {
                 q1 = buf;
@@ -124,7 +100,7 @@ L3:
             return 2;
         }
         if (D_0000193C[CD_com] != 0) {
-            B_00001B54[0] = 3;
+            D_00001B54[0] = 3;
             p2 = B_00001B80;
             if (p2 != 0) {
                 q2 = buf;
@@ -134,7 +110,7 @@ L3:
             }
             return 1;
         }
-        B_00001B54[0] = 2;
+        D_00001B54[0] = 2;
         p3 = B_00001B80;
         if (p3 != 0) {
             q3 = buf;
@@ -143,8 +119,8 @@ L3:
             }
         }
         return 2;
-L2:
-        B_00001B54[0] = stat ? 5 : 2;
+    case 2:
+        D_00001B54[0] = stat ? 5 : 2;
         p4 = B_00001B80;
         if (p4 != 0) {
             q4 = buf;
@@ -153,11 +129,11 @@ L2:
             }
         }
         return 2;
-L1:
+    case 1:
         if (stat != 0 && i == 1) {
             stat = 0;
         }
-        B_00001B54[1] = stat ? 5 : 1;
+        D_00001B54[1] = stat ? 5 : 1;
         p5 = B_00001B88;
         if (p5 != 0) {
             q5 = buf;
@@ -165,13 +141,13 @@ L1:
                 *p5++ = *q5++;
             }
         }
-        *LD_00001B3C = 0;
-        *LD_00001B40 = 0;
+        *D_00001B3C = 0;
+        *D_00001B40 = 0;
         return 4;
-L4:
+    case 4:
         p6 = B_00001B90;
-        B_00001B54[2] = 4;
-        B_00001B54[1] = B_00001B54[2];
+        D_00001B54[2] = 4;
+        D_00001B54[1] = D_00001B54[2];
         q6 = buf;
         if (p6 != 0) {
             for (n6 = 7; n6 != -1; n6--) {
@@ -186,10 +162,10 @@ L4:
             }
         }
         return 4;
-L5:
+    case 5:
         p8 = B_00001B80;
-        B_00001B54[1] = 5;
-        B_00001B54[0] = B_00001B54[1];
+        D_00001B54[1] = 5;
+        D_00001B54[0] = D_00001B54[1];
         q8 = buf;
         if (p8 != 0) {
             for (n8 = 7; n8 != -1; n8--) {
@@ -204,9 +180,9 @@ L5:
             }
         }
         return 6;
-Ldef:
-    puts(CD_str_unknown);
-    printf(CD_str_pct, intr);
-    return 0;
+    default:
+        puts(RO_STR_000017A0);
+        printf(RO_STR_000017B4, intr);
+        return 0;
+    }
 }
-#endif
