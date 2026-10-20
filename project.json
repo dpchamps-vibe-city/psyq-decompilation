@@ -41,7 +41,17 @@
     ],
     "context": [
       "common.h"
-    ]
+    ],
+    "requires": {
+      "libcd.h": ["sys/types.h"],
+      "libds.h": ["sys/types.h"],
+      "libetc.h": ["sys/types.h"],
+      "libgte.h": ["sys/types.h"],
+      "libgpu.h": ["sys/types.h", "libgte.h"],
+      "libgs.h": ["sys/types.h", "libgte.h", "libgpu.h"],
+      "libhmd.h": ["sys/types.h", "libgte.h", "libgpu.h", "libgs.h"],
+      "libpress.h": ["sys/types.h"]
+    }
   },
   "selection": {
     "scope": "all-code-members"
