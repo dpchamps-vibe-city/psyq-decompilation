@@ -1,1 +1,7 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libcd_30", CdFlush);
+#include "common.h"
+
+extern void CD_flush(void);
+
+void CdFlush(void) {
+    CD_flush();
+}
