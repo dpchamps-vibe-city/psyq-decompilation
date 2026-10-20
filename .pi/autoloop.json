@@ -12,16 +12,27 @@
   "commitOnMatch": true,
   "commitOnPark": true,
   "autoFold": true,
+  "maxFunctions": 1000,
   "runtimeDir": "run_output/autoloop",
   "approvalsDir": "notes/human-needed-approvals",
   "integration": {
     "mode": "patch",
     "allowCommits": false,
-    "allowedRoots": ["src", "include", "configs", "notes", "plans"]
+    "allowedRoots": [
+      "src",
+      "include",
+      "configs",
+      "notes",
+      "plans"
+    ]
   },
   "sourcePolicy": {
     "allowEmptyMemoryBarrier": true,
     "allowStackPointerSwitch": true,
-    "allowlist": {}
+    "allowlist": {
+      "libcd_1": [
+        "flag-override"
+      ]
+    }
   }
 }
