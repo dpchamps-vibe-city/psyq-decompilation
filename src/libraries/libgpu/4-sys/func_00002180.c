@@ -10,7 +10,7 @@ s32 SetIntrMask(s32);
 void DMACallback(int, void *);
 s32 func_00002908();
 s32 func_0000293C();
-void func_00002430();
+s32 func_00002430();
 
 typedef struct {
     s32 func;
