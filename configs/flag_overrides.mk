@@ -66,4 +66,13 @@ CC1FLAGS_libds_5 := -mhard-float
 # reproducing the preheader and the 7-register save area. No FP value appears in
 # the member, so the only observed effect is this loop heuristic. Same mechanism
 # as the recorded DSTOC.OBJ (libds_5) and TOC.OBJ (libcd_1) witnesses.
-CC1FLAGS_libds_9 := -fsigned-char -mhard-float
+#
+# -fno-builtin: the original member calls the ordinary `memcpy` symbol
+# from both func_00000378 (0x490) and func_000006E0 (0x472). Under the baseline
+# flags the builtin expansion of a `<memory.h>`-declared call emits `jal bcopy`
+# instead (measured: func_00000378 compiled to 175 words with `jal bcopy` and a
+# 1-word-smaller frame). The reference memory.h deliberately declares
+# `void *memcpy()` without a prototype, so the target call can only come from a
+# compiler run in which the builtin was disabled for this TU. This 1997 cc1 has
+# only the all-builtins -fno-builtin switch, no -fno-builtin-<name>.
+CC1FLAGS_libds_9 := -fsigned-char -mhard-float -fno-builtin

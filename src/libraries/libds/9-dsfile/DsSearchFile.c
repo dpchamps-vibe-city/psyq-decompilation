@@ -16,7 +16,7 @@ extern char RO_STR_00000A48[];
 extern char RO_STR_00000A54[];
 
 static s32 func_00000358(char *, char *);
-s32 func_00000378(void);
+static s32 func_00000378(void);
 s32 func_0000063C(s32, char *);
 s32 func_000006E0(s32);
 
