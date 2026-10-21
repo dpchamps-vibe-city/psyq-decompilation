@@ -15,7 +15,7 @@ typedef struct {
 
 extern DsPlayData D_000005A8;
 extern char RO_STR_00000558[];
-extern void func_000001B8(void);
+static void func_000001B8(void);
 extern void func_000002B4(void);
 
 int DsPlay(int mode, int *tracks, int offset) {
