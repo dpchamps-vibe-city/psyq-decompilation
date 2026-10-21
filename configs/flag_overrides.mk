@@ -76,3 +76,14 @@ CC1FLAGS_libds_5 := -mhard-float
 # compiler run in which the builtin was disabled for this TU. This 1997 cc1 has
 # only the all-builtins -fno-builtin switch, no -fno-builtin-<name>.
 CC1FLAGS_libds_9 := -fsigned-char -mhard-float -fno-builtin
+
+
+# libetc_3 (INTR.OBJ): the member contains an unreferenced static function at
+# 0x69C (func_0000071C) that the original object still emits as a standalone
+# leaf. Under the project-default -O3, -finline-functions makes cc1 treat every
+# small static definition as inlineable, defer it, and then discard it because
+# nothing references it: the rebuilt .text ends at 0x6A0 and defines no such
+# function (measured). -fno-inline-functions makes cc1 compile it immediately,
+# reproducing the original unreferenced 9-word body without any caller or
+# frame; a per-file flag is required because this is a whole-TU build property.
+CC1FLAGS_libetc_3 := -fno-inline-functions

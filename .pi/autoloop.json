@@ -39,6 +39,9 @@
       ],
       "libds_9": [
         "flag-override"
+      ],
+      "libetc_3": [
+        "flag-override"
       ]
     }
   }
