@@ -6,7 +6,7 @@
 #include <memory.h>
 #include <stdio.h>
 
-u32 func_00001808();              /* static */
+static u32 func_00001808();
 
 void SetDrawOffset(DR_OFFSET *p, u_short *ofs) {
     (*(s8 *) ((u8 *) p + 3)) = 2;
