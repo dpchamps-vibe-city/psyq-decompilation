@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 u32 func_000016D8();              /* static */
-u32 func_00001770(s16 arg0, s16 arg1);              /* static */
+static u32 func_00001770(s16 arg0, s16 arg1);
 
 void SetDrawArea(DR_AREA *p, RECT *r) {
     (*(s8 *) ((u8 *) p + 3)) = 2;
