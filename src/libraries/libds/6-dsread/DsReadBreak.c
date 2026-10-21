@@ -1,1 +1,5 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libds_6", DsReadBreak);
+#include "common.h"
+
+void DsReadBreak(void) {
+    func_000004C4(0);
+}
