@@ -1,1 +1,14 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgpu_4", LoadImage);
+#include "common.h"
+#include <sys/types.h>
+#include <libetc.h>
+#include <libgte.h>
+#include <libgpu.h>
+#include <memory.h>
+#include <stdio.h>
+
+extern char RO_STR_000030B4[];
+
+int LoadImage(RECT *rect, u_long *p) {
+    func_0000046C(RO_STR_000030B4, rect);
+    return ((s32 (*)(u32, RECT *, s32, u_long *)) D_000031F0->unk8)(D_000031F0->unk20, rect, 8, p);
+}
