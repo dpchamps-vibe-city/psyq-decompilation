@@ -4,7 +4,7 @@ typedef void (*DMAFunc)(void);
 typedef DMAFunc (*DMAHandler)(s32, DMAFunc);
 
 static void func_000000C4(void);
-DMAFunc func_00000244(s32, DMAFunc);
+static DMAFunc func_00000244(s32, DMAFunc);
 void func_000002F0(DMAFunc *, s32);
 extern s32 InterruptCallback(s32, DMAFunc);
 extern DMAFunc D_0000034C[8];
