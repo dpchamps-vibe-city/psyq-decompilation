@@ -7,8 +7,8 @@ static s32 func_00000860(void) {
     s32 t;
 
     CD_flush();
-    D_00001240r.unk44++;
-    D_00001240r.timeout = (t = D_00001294[D_00001240r.command]) ? t * 0x3C : 0x1E;
-    CD_cw(D_00001240r.command, D_00001240r.param_ptr, 0, 1);
+    D_00001240.unk48++;
+    D_00001240.timeout = (t = D_00001294[D_00001240.command]) ? t * 0x3C : 0x1E;
+    CD_cw(D_00001240.command, D_00001240.param_ptr, 0, 1);
     return 0;
 }

@@ -17,7 +17,7 @@ typedef struct {
 } CombDev;
 
 extern volatile CombState B_00001288;
-extern CombDev *$LD_000011D8 __asm__("D_000011D8");
+extern CombDev *D_000011D8;
 
 static s32 func_000000D4(s32 arg0, s32 arg1);
 
@@ -32,7 +32,7 @@ static s32 func_000000D4(s32 arg0, s32 arg1) {
     B_00001288.unk8 = arg1;
     B_00001288.unk4 = arg0;
     B_00001288.unk0 = 1;
-    $LD_000011D8->unkA = (u16) ($LD_000011D8->unkA | 0x800);
-    $LD_000011D8->unkA = (u16) ($LD_000011D8->unkA | 0x20);
+    D_000011D8->unkA = (u16) (D_000011D8->unkA | 0x800);
+    D_000011D8->unkA = (u16) (D_000011D8->unkA | 0x20);
     return 0;
 }

@@ -8,16 +8,8 @@ typedef union {
     CdlLOC i;
 } LBA;
 
-typedef struct {
-    int num;
-    int parentNum;
-    LBA lba;
-    char name[0x20];
-} CdlDIR;
-
 extern s32 D_00000BD8;
 extern CdlFILE B_00000BE8[];
-extern CdlDIR dire_[] __asm__("B_000011E8");
 extern u8 B_000027E8[0x800];
 extern char RO_STR_00000B54[];
 extern char RO_STR_00000B74[];
@@ -42,7 +34,7 @@ static s32 func_000006D8(s32 arg0) {
         return 1;
     }
 
-    if (func_00000974(1, (dire_ - 1)[arg0].lba.addr, B_000027E8) != 1) {
+    if (func_00000974(1, (B_000011E8 - 1)[arg0].lba, B_000027E8) != 1) {
         if (CD_debug > 0) {
             printf(RO_STR_00000B54);
         }

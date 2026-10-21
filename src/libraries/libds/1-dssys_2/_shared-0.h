@@ -6,3 +6,28 @@
 #include "common.h"
 #include "include_asm.h"
 
+/* A queued command, and the ring of eight the queue functions share. */
+typedef struct {
+    s32 active;
+    u8 command;
+    u8 param[4];
+    u8 pad[3];
+    s32 unkC;
+    s32 unk10;
+    s32 unk14;
+} DsCommand;
+
+typedef struct {
+    DsCommand command[8];
+    s32 index;
+    s32 field4;
+    s32 count;
+} DsCq;
+
+/* The last response to a command, kept per interrupt class. */
+typedef struct {
+    s32 active;
+    u8 command;
+    u8 param[8];
+} DsInitCmd;
+

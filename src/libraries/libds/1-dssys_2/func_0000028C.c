@@ -60,7 +60,7 @@ static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3) {
     B_0000167C = 0;
     B_00001678 = 0;
     for (j = 0; j < 8; j++) {
-        DsCqCommand *cmd = &B_000015B8.command[j];
+        DsCommand *cmd = &B_000015B8.command[j];
         s32 k;
         u8 *r;
 

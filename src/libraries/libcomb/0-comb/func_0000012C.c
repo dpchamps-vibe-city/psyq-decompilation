@@ -29,7 +29,7 @@ extern u8 *B_0000128C;
 extern volatile s32 B_00001290;
 extern s16 D_00001208[];
 
-#define DEV ((CombDevView *) $LD_000011D8)
+#define DEV ((CombDevView *) D_000011D8)
 
 static s32 func_0000012C(s32 arg0, s32 arg1);
 

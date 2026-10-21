@@ -1,15 +1,5 @@
 #include "common.h"
 
-typedef struct {
-    s32 active;
-    u8 command;
-    u8 param[4];
-    u8 pad[3];
-    s32 unkC;
-    s32 unk10;
-    s32 unk14;
-} DsCommand;
-
 static void func_00000088(DsCommand *p);
 
 static void func_00000088(DsCommand *p) {

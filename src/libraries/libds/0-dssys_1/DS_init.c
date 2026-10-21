@@ -1,7 +1,5 @@
 #include "common.h"
 
-typedef void (*DslCB)(u8, u8 *);
-
 extern void CD_init(void);
 extern void CD_initvol(void);
 extern s32 DsReadMode(s32);
@@ -16,10 +14,6 @@ extern DslCB CD_cbsync;
 extern DslCB CD_cbready;
 extern s32 DS_active;
 extern s32 DS_shell;
-extern volatile DslCB B_000013A0;
-extern volatile DslCB B_0000139C;
-extern volatile DslCB B_00001398;
-extern volatile s32 LD_00001240 __asm__("D_00001240");
 
 void DS_init(void) {
     CD_init();
@@ -34,5 +28,5 @@ void DS_init(void) {
     CD_cbready = func_00000F50;
     VSyncCallbacks(0, func_00000590);
     DS_active = 1;
-    LD_00001240 = 1;
+    D_00001240.active = 1;
 }

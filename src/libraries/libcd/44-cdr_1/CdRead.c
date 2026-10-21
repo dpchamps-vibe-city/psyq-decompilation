@@ -1,41 +1,41 @@
-extern volatile CdReadState cd __asm__("D_00000A68");
+extern volatile CdReadState D_00000A68;
 extern s32 CD_read_dma_mode;
 static int func_000003F0(s32 arg0);
 
 int CdRead(int sectors, u_long *buf, int mode) {
     s32 i;
 
-    if (cd.unk24 != 0) {
+    if (D_00000A68.unk24 != 0) {
         i = VSync(-1);
-        while (cd.unk24 != 0) {
+        while (D_00000A68.unk24 != 0) {
             if ((u32)(VSync(-1) - i) >= 0x79) {
-                CdSyncCallback(cd.unk28);
-                cd.unk24 = 0;
+                CdSyncCallback(D_00000A68.unk28);
+                D_00000A68.unk24 = 0;
                 break;
             }
         }
     }
-    cd.unkC = mode;
-    switch (cd.unkC & 0x30) {
+    D_00000A68.unkC = mode;
+    switch (D_00000A68.unkC & 0x30) {
     case 0x00:
-        cd.unk10 = 0x200;
+        D_00000A68.unk10 = 0x200;
         break;
     case 0x20:
-        cd.unk10 = 0x249;
+        D_00000A68.unk10 = 0x249;
         break;
     default:
-        cd.unk10 = 0x246;
+        D_00000A68.unk10 = 0x246;
         break;
     }
-    cd.unkC |= 0x20;
-    cd.unk4 = (u32)buf;
-    cd.unk0 = sectors;
-    cd.unk28 = CdSyncCallback(0);
-    cd.unk2C = CdReadyCallback(0);
+    D_00000A68.unkC |= 0x20;
+    D_00000A68.unk4 = (u32)buf;
+    D_00000A68.unk0 = sectors;
+    D_00000A68.unk28 = CdSyncCallback(0);
+    D_00000A68.unk2C = CdReadyCallback(0);
     if (CD_read_dma_mode & 1) {
-        cd.unk30 = CdDataCallback(0);
+        D_00000A68.unk30 = CdDataCallback(0);
     }
-    cd.unk1C = VSync(-1);
+    D_00000A68.unk1C = VSync(-1);
     if (CdStatus() & 0xE0) {
         CdControlB(9, 0, 0);
     }

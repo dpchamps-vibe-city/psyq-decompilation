@@ -1,7 +1,6 @@
 #include "common.h"
 
-extern volatile s32 LD_00001240 __asm__("D_00001240");
 
 void DS_restart(void) {
-    LD_00001240 = 1;
+    D_00001240.active = 1;
 }

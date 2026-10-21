@@ -22,6 +22,10 @@
       "symbol": "func_00000384"
     },
     {
+      "path": "func_000005A0.c",
+      "symbol": "func_000005A0"
+    },
+    {
       "path": "func_00000A04.c",
       "symbol": "func_00000A04"
     },
@@ -60,6 +64,10 @@
     {
       "path": "SpuStSetStreamFinishedCallback.c",
       "symbol": "SpuStSetStreamFinishedCallback"
+    },
+    {
+      "path": "func_000011E4.c",
+      "symbol": "func_000011E4"
     },
     {
       "path": "_data.c",

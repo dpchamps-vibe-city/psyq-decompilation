@@ -1,4 +1,4 @@
-extern volatile CdReadState cd __asm__("D_00000A68");
+extern volatile CdReadState D_00000A68;
 static int func_000003F0(s32 arg0);
 
 int CdReadSync(int mode, u_char *result) {
@@ -8,8 +8,8 @@ int CdReadSync(int mode, u_char *result) {
 
     /* p anchors the read state at unk1C; p[-7] is unk0, p[-2] is unk14 and
      * p[-1] is unk18. q is unk24. */
-    p = &cd.unk1C;
-    q = &cd.unk24;
+    p = &D_00000A68.unk1C;
+    q = &D_00000A68.unk24;
     do {
         ret = -1;
         if (VSync(-1) <= p[0] + 0x4B0) {

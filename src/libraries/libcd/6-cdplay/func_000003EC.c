@@ -34,7 +34,7 @@ static void func_000003EC(void) {
             }
             D_0000066C[D_000007FC] = B_000009A8;
         }
-        CdReadyCallback(cbdataready);
+        CdReadyCallback(func_00000260);
         CdControl(3U, &B_00000818[D_0000066C[D_000007FC]].minute, 0);
     }
 }

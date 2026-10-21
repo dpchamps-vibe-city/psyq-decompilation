@@ -6,3 +6,50 @@
 #include "common.h"
 #include "include_asm.h"
 
+typedef void (*DslCB)(u8, u8 *);
+
+typedef struct {
+    u8 minute;
+    u8 second;
+    u8 sector;
+    u8 track;
+} DslLOC;
+
+/* The library's command and drive state (.data 0x1240). */
+typedef struct {
+    s32 active;
+    u8 command;             /* 0x04 */
+    u8 param[4];            /* 0x05 */
+    u8 pad9[3];
+    u8 *param_ptr;          /* 0x0C */
+    u8 result[8];           /* 0x10 */
+    u8 status;              /* 0x18 */
+    u8 pad19[3];
+    s32 unk1C;              /* 0x1C */
+    s32 system[3];          /* 0x20: DS_system_status */
+    u8 lastcom;             /* 0x2C */
+    u8 lastmode;            /* 0x2D */
+    DslLOC lastpos;         /* 0x2E */
+    u8 lastseek;            /* 0x32 */
+    u8 lastread;            /* 0x33 */
+    u8 flags[4];            /* 0x34 */
+    s32 unk38;              /* 0x38 */
+    s32 shell_open;         /* 0x3C */
+    s32 unk40;              /* 0x40 */
+    s32 timeout;            /* 0x44 */
+    s32 unk48;              /* 0x48 */
+    s32 unk4C;              /* 0x4C */
+    u8 unk50;               /* 0x50 */
+    u8 unk51;               /* 0x51 */
+} DsState;
+
+extern s32 D_00001238[2];
+extern DsState D_00001240;
+extern s32 D_00001294[32];  /* per command: timeout in seconds, 0 for the default */
+extern s32 D_00001314[32];
+extern s32 D_00001394;
+extern volatile DslCB B_00001398;   /* vsync */
+extern volatile DslCB B_0000139C;   /* sync */
+extern volatile DslCB B_000013A0;   /* ready */
+extern volatile DslCB B_000013A4;   /* start */
+

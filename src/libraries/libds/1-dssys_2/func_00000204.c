@@ -2,12 +2,10 @@
 
 int SetIntrMask(int);
 
-#define func_00000204 $Lfunc_00000204
+static DsCommand *func_00000204(void);
 
-static DsCqCommand *func_00000204(void);
-
-static DsCqCommand *func_00000204(void) {
-    DsCqCommand *(*self)(void);
+static DsCommand *func_00000204(void) {
+    DsCommand *(*self)(void);
     s32 mask;
     s32 idx;
 
@@ -25,7 +23,3 @@ static DsCqCommand *func_00000204(void) {
     return &B_000015B8.command[idx];
 }
 
-#undef func_00000204
-
-#define PUBLISHED_ENTRY() static DsCqCommand *func_00000204(void) { return $Lfunc_00000204(); }
-PUBLISHED_ENTRY();

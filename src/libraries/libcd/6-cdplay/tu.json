@@ -14,6 +14,10 @@
       "symbol": "CdPlay"
     },
     {
+      "path": "func_00000260.c",
+      "symbol": "func_00000260"
+    },
+    {
       "path": "func_000003EC.c",
       "symbol": "func_000003EC"
     },

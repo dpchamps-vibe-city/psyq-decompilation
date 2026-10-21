@@ -12,6 +12,10 @@
     {
       "path": "CdRead2.c",
       "symbol": "CdRead2"
+    },
+    {
+      "path": "func_000000EC.c",
+      "symbol": "func_000000EC"
     }
   ]
 }

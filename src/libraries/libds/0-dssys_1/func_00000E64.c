@@ -2,25 +2,25 @@
 
 static void func_00000E64(s32 arg0, u8 *arg1) {
     if ((arg0 & 0xFF) == 2) {
-        if (DDx.command == 0xE) {
-            if ((DDx.lastmode ^ DDx.param[0]) & 0x80) {
-                DDx.unkC = 0xF;
-                DDx.unk8 = arg0 & 0xFF;
-                DDx.unk28 = 3;
+        if (D_00001240.command == 0xE) {
+            if ((D_00001240.lastmode ^ D_00001240.param[0]) & 0x80) {
+                D_00001240.system[1] = 0xF;
+                D_00001240.system[0] = arg0 & 0xFF;
+                D_00001240.unk40 = 3;
             }
-            DDx.lastmode = DDx.param[0];
+            D_00001240.lastmode = D_00001240.param[0];
         }
     }
     if ((arg0 & 0xFF) == 5) {
-        if (DDx.status & 0x10) {
-            DDx.unk8 = 2;
-            DDx.unkC = 0xC;
-            if ((B_0000139C != 0) && (DDx.active != 0)) {
+        if (D_00001240.status & 0x10) {
+            D_00001240.system[0] = 2;
+            D_00001240.system[1] = 0xC;
+            if ((B_0000139C != 0) && (D_00001240.active != 0)) {
                 B_0000139C(5, arg1);
             }
         } else {
-            DDx.unk8 = 1;
-            DDx.unkC = 0xB;
+            D_00001240.system[0] = 1;
+            D_00001240.system[1] = 0xB;
         }
     }
 }

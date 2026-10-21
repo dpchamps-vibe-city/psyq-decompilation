@@ -1,7 +1,6 @@
 #include "common.h"
 
-extern u8 D_0000126E __asm__("D_00001238+54");
 
 u8 *DS_lastpos(void) {
-    return &D_0000126E;
+    return (u8 *)&D_00001240.lastpos;
 }

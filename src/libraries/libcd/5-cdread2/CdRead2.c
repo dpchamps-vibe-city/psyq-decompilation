@@ -23,4 +23,3 @@ int CdRead2(long mode) {
     CdControl(CdlReadS, 0, 0);
 }
 
-#include "cdread2_private.h"

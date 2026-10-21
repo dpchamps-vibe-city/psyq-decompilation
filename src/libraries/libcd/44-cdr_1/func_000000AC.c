@@ -1,46 +1,4 @@
 #include "common.h"
-#include <sys/types.h>
-#include <libcd.h>
-#include <libetc.h>
-#include <stdio.h>
-
-typedef struct {
-    u32 unk0;
-    u32 unk4;
-    u_long *unk8;
-    u32 unkC;
-    s32 unk10;
-    s32 unk14;
-    s32 unk18;
-    s32 unk1C;
-    s32 unk20;
-    s32 unk24;
-    CdlCB unk28;
-    CdlCB unk2C;
-    void (*unk30)();
-    u8 *unk34;
-} CdReadState;
-
-typedef struct {
-    u_long *unk0;
-    u32 unk4;
-    s32 unk8;
-} CdReadBuf;
-
-static int func_000003F0(s32 arg0);
-extern CdReadState D_00000A68;
-extern CdReadBuf D_00000A70;
-extern s32 CD_read_dma_mode;
-extern s32 D_00000A88;
-extern void (*CD_cbread)(u8, u8 *);
-extern char RO_STR_00000A18[];
-
-/* Keep the callback's link name in this TU part so regenerated assembly
- * fragments use the same local symbol as the compiled callback. */
-static void func_00000078(void);
-static void T_00000320(void);
-
-#include "cdr1_private_head.h"
 
 static void func_000000AC(u8 arg0, u8 *arg1) {
     u_long sp10[4];
@@ -60,7 +18,7 @@ static void func_000000AC(u8 arg0, u8 *arg1) {
                     CdDataCallback(0);
                     CdGetSector2(sp10, 3);
                     CdDataSync(0);
-                    CdDataCallback(T_00000320);
+                    CdDataCallback(func_00000320);
                 } else {
                     CdGetSector(sp10, 3);
                 }
@@ -115,4 +73,3 @@ static void func_000000AC(u8 arg0, u8 *arg1) {
     }
 }
 
-#include "cdr1_private_tail.h"

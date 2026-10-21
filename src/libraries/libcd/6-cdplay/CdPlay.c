@@ -79,4 +79,3 @@ s32 CdPlay(s32 mode, s32 *track, s32 offset) {
     return D_000007FC;
 }
 
-#include "cdplay_private.h"

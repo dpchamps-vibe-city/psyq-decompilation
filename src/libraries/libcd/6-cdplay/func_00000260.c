@@ -1,4 +1,6 @@
-static void cbdataready(u_char com, u_char *result)
+#include "common.h"
+
+static void func_00000260(u_char com, u_char *result)
 {
     s32 i;
     s32 n;

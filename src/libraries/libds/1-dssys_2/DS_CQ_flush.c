@@ -1,26 +1,9 @@
 #include "common.h"
 
-typedef struct {
-    s32 active;
-    u8 command;
-    u8 param[4];
-    u8 pad[3];
-    s32 unkC;
-    s32 unk10;
-    s32 unk14;
-} DsCqCommand;
-
-typedef struct {
-    DsCqCommand command[8];
-    s32 index;
-    s32 field4;
-    s32 count;
-} DsCq;
-
 extern DsCq B_000015B8;
 
 void DS_CQ_flush(void) {
-    DsCqCommand *p;
+    DsCommand *p;
     s32 *q;
     s32 i;
     s32 j;

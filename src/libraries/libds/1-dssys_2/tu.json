@@ -74,6 +74,18 @@
       "symbol": "DsQueueLen"
     },
     {
+      "path": "func_000012C8.c",
+      "symbol": "func_000012C8"
+    },
+    {
+      "path": "func_0000136C.c",
+      "symbol": "func_0000136C"
+    },
+    {
+      "path": "func_00001440.c",
+      "symbol": "func_00001440"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

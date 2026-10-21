@@ -3,13 +3,11 @@
 s32 DS_system_status(s32 arg0);
 s32 DS_cw(u8 com, s32 param);
 
-#define func_0000047C $Lfunc_0000047C
-
 static s32 func_0000047C(void);
 
 static s32 func_0000047C(void) {
     s32 ret;
-    DsCqCommand *cmd;
+    DsCommand *cmd;
     s32 (*self)(void);
 
     self = func_0000047C;
@@ -28,7 +26,3 @@ static s32 func_0000047C(void) {
     return ret;
 }
 
-#undef func_0000047C
-
-#define PUBLISHED_ENTRY() static s32 func_0000047C(void) { return $Lfunc_0000047C(); }
-PUBLISHED_ENTRY();

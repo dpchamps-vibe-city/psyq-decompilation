@@ -1,6 +1,6 @@
-static void T_00000320(void);
+#include "common.h"
 
-static void T_00000320(void) {
+static void func_00000320(void) {
     volatile CdReadState *cd;
 
     cd = (volatile CdReadState *)&D_00000A68;

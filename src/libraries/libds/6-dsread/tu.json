@@ -22,6 +22,10 @@
       "symbol": "func_000001D4"
     },
     {
+      "path": "func_0000034C.c",
+      "symbol": "func_0000034C"
+    },
+    {
       "path": "DsReadSync.c",
       "symbol": "DsReadSync"
     },

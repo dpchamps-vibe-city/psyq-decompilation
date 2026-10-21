@@ -1,8 +1,8 @@
 #include "common.h"
 
 /* The original member's .data holds the four CD-ROM register addresses at
- * .data+0 and .data+12. The generated data fragment gives those static
- * labels $LD names, so the source types are attached to those labels. */
+ * .data+0 and .data+12; the extracted data part defines them under these
+ * listing names. */
 extern volatile u8 *D_000000F0;
 extern volatile u8 *D_000000FC;
 

@@ -10,8 +10,16 @@
       "path": "_shared-0.h"
     },
     {
+      "path": "func_00000078.c",
+      "symbol": "func_00000078"
+    },
+    {
       "path": "func_000000AC.c",
       "symbol": "func_000000AC"
+    },
+    {
+      "path": "func_00000320.c",
+      "symbol": "func_00000320"
     },
     {
       "path": "func_000003F0.c",

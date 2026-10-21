@@ -22,7 +22,7 @@ typedef struct {
 
 extern volatile CombCmd B_00001278;
 
-#define DEV ((CombDevReg *) $LD_000011D8)
+#define DEV ((CombDevReg *) D_000011D8)
 
 static s32 func_00000380(s32 arg0, s32 arg1);
 

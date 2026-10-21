@@ -3,19 +3,18 @@
 s32 DS_system_status(s32 arg0);
 s32 DS_cw(u8 com, s32 param);
 void rescpy(u8 *dst, u8 *src);
-void func_00000710_3() __asm__("func_00000710");
 static void func_000000B8(void);
 
-extern DsCommand $LB_00001588 __asm__("B_00001588");
+extern DsInitCmd B_00001588[];
 extern void (*GlobalCallback)(u8, u8 *);
 extern s32 B_0000167C;
 extern s32 B_00001678;
 extern s32 B_00001680;
 
 static void func_000004EC(u8 com, u8 *param) {
-    DsCqCommand *cmdq;
-    DsCqCommand *cmd;
-    DsCqCommand *cmd2;
+    DsCommand *cmdq;
+    DsCommand *cmd;
+    DsCommand *cmd2;
     DsCq *q;
     s32 off;
     s32 *index;
@@ -25,12 +24,12 @@ static void func_000004EC(u8 com, u8 *param) {
     s32 status;
 
     index = &B_000015B8.field4;
-    cmdq = (DsCqCommand *)((u8 *)index - 0xC4);
+    cmdq = (DsCommand *)((u8 *)index - 0xC4);
     cmd = &cmdq[*index];
     if (cmd->active != 0) {
-        $LB_00001588.active = cmd->active;
-        $LB_00001588.command = com;
-        rescpy($LB_00001588.param, param);
+        B_00001588[0].active = cmd->active;
+        B_00001588[0].command = com;
+        rescpy(B_00001588[0].param, param);
         switch (com & 0xFF) {
         case 2:
             next = *index + 1;
@@ -42,7 +41,7 @@ static void func_000004EC(u8 com, u8 *param) {
             if (cmdq[where].active == cmd->active) {
                 goto equal2;
             }
-            func_00000710_3(cmd->active, 2, param);
+            ((void (*)())func_00000710)(cmd->active, 2, param);
             if (cmd->unk10 != 0) {
                 ((void (*)(u8, u8 *))cmd->unk10)(2, param);
             }
@@ -61,7 +60,7 @@ static void func_000004EC(u8 com, u8 *param) {
                     cmd->unk14--;
                 }
             } else {
-                func_00000710_3(cmd->active, 5, param);
+                ((void (*)())func_00000710)(cmd->active, 5, param);
                 if (cmd->unk10 != 0) {
                     ((void (*)(u8, u8 *))cmd->unk10)(5, param);
                 }
@@ -80,7 +79,7 @@ done:
         if (*cnt > 0 && DS_system_status(0) == status) {
             off = B_0000167C * 0x18;
             q = (DsCq *)((u8 *)cnt - 0xC8);
-            cmd2 = (DsCqCommand *)((u8 *)q + off);
+            cmd2 = (DsCommand *)((u8 *)q + off);
             if (cmd2->active != 0) {
                 DS_cw(cmd2->command, cmd2->unkC);
             }
