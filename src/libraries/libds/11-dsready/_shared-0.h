@@ -6,3 +6,5 @@
 #include "common.h"
 #include "include_asm.h"
 
+
+static void func_00000500(void);
