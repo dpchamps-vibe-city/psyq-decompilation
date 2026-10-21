@@ -23,7 +23,8 @@
       "include",
       "configs",
       "notes",
-      "plans"
+      "plans",
+      ".pi/autoloop.json"
     ]
   },
   "sourcePolicy": {
@@ -31,6 +32,9 @@
     "allowStackPointerSwitch": true,
     "allowlist": {
       "libcd_1": [
+        "flag-override"
+      ],
+      "libds_5": [
         "flag-override"
       ]
     }

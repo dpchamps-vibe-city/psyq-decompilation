@@ -35,3 +35,14 @@ CC1FLAGS_libcd_4 := -fsigned-char
 # compiler treats CD_flush as inlineable and expands it inside CD_datasync
 # (measured: no jal, inlined flush body, extra $21 save).
 CC1FLAGS_libcd_20 := -fno-inline-functions
+
+# DSTOC.OBJ (libds_5): the target hoists the 0x66666667 division constant out
+# of its track loop (measured: lui/ori into $20 before the loop, single mult
+# inside). loop.c moves it only when threshold*savings*lifetime >= insn_count;
+# with the project-default -msoft-float n_non_fixed_regs=28 so threshold=29 < 30
+# and the constant stays inside the loop. -mhard-float makes the 32 FP registers
+# non-fixed (n_non_fixed_regs=60, threshold=61) and the same source hoists it,
+# reproducing the target's preheader and its $20 save slot. No FP value appears
+# in the member, so the only observed effect is this loop heuristic. Same
+# mechanism as the recorded TOC.OBJ (libcd_1) witness.
+CC1FLAGS_libds_5 := -mhard-float
