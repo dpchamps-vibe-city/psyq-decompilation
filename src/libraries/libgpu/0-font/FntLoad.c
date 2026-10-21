@@ -9,7 +9,6 @@ extern u16 B_00005B48;
 extern u16 B_00005B4A;
 extern s32 D_00000D30;
 extern u_long D_00000D38[];
-extern u_long Font[];
 
 void FntLoad(int tx, int ty) {
     B_00005B4A = LoadClut2(&D_00000D38[0], tx, ty + 0x80);

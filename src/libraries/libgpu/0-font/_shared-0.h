@@ -6,3 +6,22 @@
 #include "common.h"
 #include "include_asm.h"
 
+#include <sys/types.h>
+#include <libgte.h>
+#include <libgpu.h>
+
+/* FONT.OBJ's font state table.  The original relocations address each entry
+ * member directly (Font+16 drmode, Font+28 step, Font+32/36 sprt/text,
+ * Font+40 pos, Font+44 flag) with a 0x30 stride, so Font is an array of these
+ * entries.  FntLoad clears the table with memset(Font, 0, 0x180). */
+typedef struct {
+	TILE		tile;		/* 0x000 */
+	DR_MODE		drmode;		/* 0x010 */
+	int		step;		/* 0x01C */
+	SPRT_8		*sprt;		/* 0x020 */
+	u_char		*text;		/* 0x024 */
+	int		pos;		/* 0x028 */
+	int		flag;		/* 0x02C */
+} FENTRY;				/* 0x030 */
+
+extern FENTRY Font[];
