@@ -1,9 +1,9 @@
 #include "common.h"
 
 extern s32 CD_debug;
-extern char track_overflow[] __asm__("$LRO_STR_00000648");
+extern char RO_STR_00000648[];
 
-void func_000003EC(void) {
+static void func_000003EC(void) {
     s32 temp_a1;
     s32 var_v1;
     u_char *var_v0;
@@ -30,7 +30,7 @@ void func_000003EC(void) {
         temp_a1 = D_0000066C[D_000007FC];
         if (B_000009A8 < temp_a1) {
             if (CD_debug >= 2) {
-                printf(track_overflow, temp_a1);
+                printf(RO_STR_00000648, temp_a1);
             }
             D_0000066C[D_000007FC] = B_000009A8;
         }

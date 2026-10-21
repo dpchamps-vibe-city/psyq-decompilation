@@ -17,11 +17,11 @@ INCLUDE_ASM("build/libraries/nonmatchings/libcd_44", func_000003F0);
 #include <stdio.h>
 
 extern s32 CD_read_dma_mode;
-extern volatile CdReadState cd __asm__("$LD_00000A68");
-extern char CdRead_shell_open[] __asm__("$LRO_STR_00000A18+24");
-extern char CdRead_retry[] __asm__("$LRO_STR_00000A18+48");
+extern volatile CdReadState cd __asm__("D_00000A68");
+extern char CdRead_shell_open[] __asm__("RO_STR_00000A18+24");
+extern char CdRead_retry[] __asm__("RO_STR_00000A18+48");
 
-int func_000003F0(s32 arg0) __asm__("$Lfunc_000003F0");
+int func_000003F0(s32 arg0) __asm__("func_000003F0");
 
 int func_000003F0(s32 arg0) {
     u8 sp10;

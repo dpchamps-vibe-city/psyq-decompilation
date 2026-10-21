@@ -16,7 +16,7 @@ extern int CD_debug;
 extern char *CD_comstr[];
 extern char *CD_intstr[];
 
-extern s32 D_000019BC[2][64] __asm__("$LD_000019BC");
+extern s32 D_000019BC[2][64] __asm__("D_000019BC");
 extern u8 CD_pos[];
 extern u8 CD_mode;
 extern u8 CD_com;
@@ -27,18 +27,18 @@ extern volatile u8 *D_00001B4C;
 extern volatile u8 D_00001B54[];
 extern u8 B_00001B80[];
 extern u8 B_00001B88[];
-extern s32 B_00001B98 __asm__("$LB_00001B98");
-extern s32 B_00001B9Crd __asm__("$LB_00001B98+4");
-extern s32 B_00001B9Cwr __asm__("$LB_00001B9C");
-extern char *B_00001BA0 __asm__("$LB_00001BA0");
+extern s32 B_00001B98 __asm__("B_00001B98");
+extern s32 B_00001B9Crd __asm__("B_00001B98+4");
+extern s32 B_00001B9Cwr __asm__("B_00001B9C");
+extern char *B_00001BA0 __asm__("B_00001BA0");
 extern void (*CD_cbready)(u8, u8 *);
 extern void (*CD_cbsync)(u8, u8 *);
 
-extern char RO_STR_0000174C[] __asm__("$LRO_STR_0000174C");
-extern char RO_STR_0000175C[] __asm__("$LRO_STR_0000175C");
-extern char RO_STR_000017E8[] __asm__("$LRO_STR_000017E8");
-extern char RO_STR_000017F0[] __asm__("$LRO_STR_000017F0");
-extern char RO_STR_00001800[] __asm__("$LRO_STR_00001800");
+extern char RO_STR_0000174C[] __asm__("RO_STR_0000174C");
+extern char RO_STR_0000175C[] __asm__("RO_STR_0000175C");
+extern char RO_STR_000017E8[] __asm__("RO_STR_000017E8");
+extern char RO_STR_000017F0[] __asm__("RO_STR_000017F0");
+extern char RO_STR_00001800[] __asm__("RO_STR_00001800");
 
 extern s32 CD_sync(s32, u8 *);
 extern void CD_flush(void);

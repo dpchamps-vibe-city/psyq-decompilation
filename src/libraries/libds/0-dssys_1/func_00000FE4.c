@@ -10,12 +10,12 @@ typedef struct {
     u8 flags[4];
 } DsDataFe4;
 
-extern DsDataFe4 DDf __asm__("$LD_00001238");
-extern s32 D_00001314[] __asm__("$LD_00001238+220");
+extern DsDataFe4 DDf __asm__("D_00001238");
+extern s32 D_00001314[] __asm__("D_00001238+220");
 
 extern void rescpy(u8 *dst, u8 *src);
 
-void func_00000FE4(u8 arg0, u8 *arg1) {
+static void func_00000FE4(u8 arg0, u8 *arg1) {
     u8 *p;
     s32 n;
     u8 status;

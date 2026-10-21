@@ -49,9 +49,9 @@ typedef struct {
 	u8 unk39;
 } DsSystem;
 
-extern volatile s32 LD_00001240 __asm__("$LD_00001240");
-extern DsResult LD_0000124C __asm__("$LD_0000124C");
-extern DsSystem LD_00001258 __asm__("$LD_00001258");
+extern volatile s32 LD_00001240 __asm__("D_00001240");
+extern DsResult D_0000124C;
+extern DsSystem LD_00001258 __asm__("D_00001258");
 
 #define SYS ((DsCommand *) &LD_00001240)
 
@@ -68,9 +68,9 @@ void DS_reset_members(void) {
     for (; i >= 0; i--) {
         *p-- = 0;
     }
-    LD_0000124C.status = 0;
+    D_0000124C.status = 0;
     i = 7;
-    q = (u8 *) &LD_0000124C + 0xB;
+    q = (u8 *) &D_0000124C + 0xB;
     for (; i >= 0; i--) {
         *q-- = 0;
     }

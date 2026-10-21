@@ -18,7 +18,7 @@ static s32 func_0000047C(void) {
     if (DS_system_status(0) != 1) {
         ret = 0;
     } else {
-        cmd = &$LB_000015B8.command[$LB_000015B8.field4];
+        cmd = &B_000015B8.command[B_000015B8.field4];
         if (cmd->active == 0) {
             ret = 0;
         } else {

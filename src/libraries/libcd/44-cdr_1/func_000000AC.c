@@ -27,18 +27,18 @@ typedef struct {
     s32 unk8;
 } CdReadBuf;
 
-extern int func_000003F0(s32 arg0) __asm__("$Lfunc_000003F0");
-extern CdReadState D_00000A68 __asm__("$LD_00000A68");
-extern CdReadBuf D_00000A70 __asm__("$LD_00000A70");
+static int func_000003F0(s32 arg0);
+extern CdReadState D_00000A68;
+extern CdReadBuf D_00000A70;
 extern s32 CD_read_dma_mode;
-extern s32 D_00000A88 __asm__("$LD_00000A88");
+extern s32 D_00000A88;
 extern void (*CD_cbread)(u8, u8 *);
-extern char CdRead_sector_error[] __asm__("$LRO_STR_00000A18");
+extern char RO_STR_00000A18[];
 
 /* Keep the callback's link name in this TU part so regenerated assembly
  * fragments use the same local symbol as the compiled callback. */
-static void func_00000078(void) __asm__("$Lfunc_00000078");
-static void func_00000320(void) __asm__("$LT_00000320");
+static void func_00000078(void);
+static void T_00000320(void);
 
 #include "cdr1_private_head.h"
 
@@ -60,13 +60,13 @@ static void func_000000AC(u8 arg0, u8 *arg1) {
                     CdDataCallback(0);
                     CdGetSector2(sp10, 3);
                     CdDataSync(0);
-                    CdDataCallback(func_00000320);
+                    CdDataCallback(T_00000320);
                 } else {
                     CdGetSector(sp10, 3);
                 }
                 sect = &D_00000A88;
                 if (CdPosToInt((CdlLOC *)sp10) != *sect) {
-                    puts(CdRead_sector_error);
+                    puts(RO_STR_00000A18);
                     st = (volatile CdReadState *)((u8 *)sect - 0x20);
                     st->unk14 = -1;
                 }

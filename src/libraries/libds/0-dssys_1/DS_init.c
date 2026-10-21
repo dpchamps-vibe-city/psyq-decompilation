@@ -8,18 +8,18 @@ extern s32 DsReadMode(s32);
 extern void VSyncCallbacks(s32, void (*)(u8, u8 *, s32 *, s32 *));
 extern void DS_reset_members(void);
 
-static void func_00000590(u8, u8 *, s32 *, s32 *) __asm__("$Lfunc_00000590");
-static void func_000008E8(u8, u8 *) __asm__("$Lfunc_000008E8");
-static void func_00000F50(u8, u8 *) __asm__("$Lfunc_00000F50");
+static void func_00000590(u8, u8 *, s32 *, s32 *);
+static void func_000008E8(u8, u8 *);
+static void func_00000F50(u8, u8 *);
 
 extern DslCB CD_cbsync;
 extern DslCB CD_cbready;
 extern s32 DS_active;
 extern s32 DS_shell;
-extern volatile DslCB B_000013A0 __asm__("$LB_000013A0");
-extern volatile DslCB B_0000139C __asm__("$LB_0000139C");
-extern volatile DslCB B_00001398 __asm__("$LB_00001398");
-extern volatile s32 LD_00001240 __asm__("$LD_00001240");
+extern volatile DslCB B_000013A0;
+extern volatile DslCB B_0000139C;
+extern volatile DslCB B_00001398;
+extern volatile s32 LD_00001240 __asm__("D_00001240");
 
 void DS_init(void) {
     CD_init();

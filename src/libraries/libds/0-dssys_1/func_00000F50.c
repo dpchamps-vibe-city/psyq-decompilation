@@ -1,6 +1,6 @@
 #include "common.h"
 
-void func_00000F50(u8 arg0, u8 *arg1) {
+static void func_00000F50(u8 arg0, u8 *arg1) {
     u8 temp_s0;
 
     temp_s0 = arg0 & 0xFF;

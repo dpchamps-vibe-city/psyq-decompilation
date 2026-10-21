@@ -31,10 +31,10 @@ typedef struct {
     u8 unk39;
 } DsDataB;
 
-extern DsDataB DDx __asm__("$LD_00001238");
-extern volatile DslCB B_000013A4 __asm__("$LB_000013A4");
+extern DsDataB DDx __asm__("D_00001238");
+extern volatile DslCB B_000013A4 __asm__("B_000013A4");
 
-void func_00000BDC(s32 arg0, u8 *arg1) {
+static void func_00000BDC(s32 arg0, u8 *arg1) {
     if (DDx.unkC == 0xC) {
         DDx.unkC = 0xD;
     }

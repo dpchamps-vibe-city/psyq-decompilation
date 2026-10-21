@@ -5,7 +5,7 @@
 extern s32 CD_cw(s32 com, u8 *param, u8 *result, s32 mode);
 extern void (*CD_cbsync)(u8, u8 *);
 extern u8 CD_status;
-extern s32 LD_00000430[] asm("$LD_00000430");
+extern s32 D_00000430[];
 extern s32 CD_sync(s32 mode, u8 *result);
 
 int CdControlB(u_char com, u_char *param, u_char *result) {
@@ -19,7 +19,7 @@ int CdControlB(u_char com, u_char *param, u_char *result) {
     s32 *base;
 
     c = com & 0xFF;
-    base = LD_00000430;
+    base = D_00000430;
     saved = CD_cbsync;
     for (i = 3, one = 1, table = base + c, end = -1; i != end; i--) {
         CD_cbsync = 0;

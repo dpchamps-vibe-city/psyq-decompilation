@@ -27,9 +27,9 @@ typedef struct {
     s32 unkC;
 } DsSyncCmd;
 
-extern DsSyncEntry DsSyncOut_ __asm__("$LB_00001578");
-extern DsSyncEntry DsSyncQ_[] __asm__("$LB_00001688");
-extern s32 DsSyncIndex_ __asm__("$LB_00001708");
+extern DsSyncEntry DsSyncOut_ __asm__("B_00001578");
+extern DsSyncEntry DsSyncQ_[] __asm__("B_00001688");
+extern s32 DsSyncIndex_ __asm__("B_00001708");
 
 void DS_sync(u8 *arg0);
 void rescpy(u8 *dst, u8 *src);

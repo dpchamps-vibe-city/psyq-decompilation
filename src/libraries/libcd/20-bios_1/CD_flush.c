@@ -5,7 +5,7 @@ extern volatile u8 *D_00001B40;
 extern volatile u8 *D_00001B4C;
 extern volatile u8 D_00001B54[];
 /* CD control register; local data label in the original member. */
-extern s32 *D_00001B44 __asm__("$LD_00001B44");
+extern s32 *D_00001B44;
 
 void CD_flush(void) {
     *D_00001B3C = 1;

@@ -8,12 +8,12 @@ typedef struct {
     u8 param[8];
 } DsInitCmd;
 
-extern DsInitCmd B_00001588[] __asm__("$LB_00001588");
-extern u8 B_0000158D[] __asm__("$LB_0000158D");
-extern u8 B_0000159D[] __asm__("$LB_0000159D");
-extern u8 B_000015AD[] __asm__("$LB_000015AD");
-extern u8 B_00001688B[] __asm__("$LB_00001688");
-extern s32 B_00001708 __asm__("$LB_00001708");
+extern DsInitCmd B_00001588[];
+extern u8 B_0000158D[];
+extern u8 B_0000159D[];
+extern u8 B_000015AD[];
+extern u8 B_00001688[];
+extern s32 B_00001708;
 
 s32 DS_system_active(void);
 void DS_init(void);
@@ -24,10 +24,10 @@ void DS_vsync_callback(DsInitCB);
 void ER_clear(void);
 int DsReadySystemMode(int);
 int DsQueueLen(void);
-extern void DsInitFlush(DsCommand *) __asm__("$Lfunc_00000088");
-extern void DsInitReadyCb(u8, u8 *) __asm__("$Lfunc_00000088+4836");
-extern void DsInitStartCb(u8, u8 *) __asm__("$Lfunc_00000088+5048");
-extern void DsInitVsyncCb(u8, u8 *) __asm__("$Lfunc_00000088+4672");
+extern void DsInitFlush(DsCommand *) __asm__("func_00000088");
+extern void DsInitReadyCb(u8, u8 *) __asm__("func_00000088+4836");
+extern void DsInitStartCb(u8, u8 *) __asm__("func_00000088+5048");
+extern void DsInitVsyncCb(u8, u8 *) __asm__("func_00000088+4672");
 
 int DsInit(void) {
     s32 i;
@@ -59,13 +59,13 @@ int DsInit(void) {
             B_000015AD[i] = 0;
         }
         for (j = 0; j < 8; j++) {
-            DsInitFlush((DsCommand *)&$LB_000015B8.command[j]);
+            DsInitFlush((DsCommand *)&B_000015B8.command[j]);
         }
-        $LB_0000167C = 0;
-        $LB_00001678 = 0;
-        $LB_00001680 = 0;
+        B_0000167C = 0;
+        B_00001678 = 0;
+        B_00001680 = 0;
         for (k = 7, off = 0x70; k >= 0; k--, off -= 0x10) {
-            *(s32 *)(B_00001688B + off) = 0;
+            *(s32 *)(B_00001688 + off) = 0;
         }
         B_00001708 = 0;
         DS_init();

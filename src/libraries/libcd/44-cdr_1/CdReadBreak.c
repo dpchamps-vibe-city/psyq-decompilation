@@ -1,4 +1,4 @@
-extern volatile CdReadState cd __asm__("$LD_00000A68");
+extern volatile CdReadState cd __asm__("D_00000A68");
 
 void CdReadBreak(void) {
     s32 i;

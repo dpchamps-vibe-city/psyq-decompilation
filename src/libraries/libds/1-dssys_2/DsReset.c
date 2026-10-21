@@ -23,23 +23,23 @@ typedef struct {
     s32 count;
 } DsResetCq;
 
-extern DsResetInitCmd DsResetB1588[] __asm__("$LB_00001588");
-extern u8 DsResetB158D[] __asm__("$LB_0000158D");
-extern u8 DsResetB159D[] __asm__("$LB_0000159D");
-extern u8 DsResetB15AD[] __asm__("$LB_000015AD");
-extern DsResetCq DsResetB15B8 __asm__("$LB_000015B8");
-extern u8 DsResetB1688[] __asm__("$LB_00001688");
-extern s32 DsResetB1708 __asm__("$LB_00001708");
-extern s32 DsResetB1678 __asm__("$LB_00001678");
-extern s32 DsResetB167C __asm__("$LB_0000167C");
-extern s32 DsResetB1680 __asm__("$LB_00001680");
+extern DsResetInitCmd DsResetB1588[] __asm__("B_00001588");
+extern u8 B_0000158D[];
+extern u8 B_0000159D[];
+extern u8 B_000015AD[];
+extern DsResetCq DsResetB15B8 __asm__("B_000015B8");
+extern u8 B_00001688[];
+extern s32 B_00001708;
+extern s32 B_00001678;
+extern s32 B_0000167C;
+extern s32 B_00001680;
 extern void (*GlobalCallback)(u8, u8 *);
 
 void DS_stop(void);
 void ER_clear(void);
 int DsReadySystemMode(int);
 void DS_restart(void);
-extern void DsResetFlush(DsResetCqCmd *) __asm__("$Lfunc_00000088");
+extern void DsResetFlush(DsResetCqCmd *) __asm__("func_00000088");
 
 int DsReset(void) {
     s32 i;
@@ -63,20 +63,20 @@ int DsReset(void) {
     p[1].command = 0;
     p[0].command = 0;
     for (i = 0; i < 8; i++) {
-        DsResetB158D[i] = 0;
-        DsResetB159D[i] = 0;
-        DsResetB15AD[i] = 0;
+        B_0000158D[i] = 0;
+        B_0000159D[i] = 0;
+        B_000015AD[i] = 0;
     }
     for (j = 0; j < 8; j++) {
         DsResetFlush((DsResetCqCmd *)&DsResetB15B8.command[j]);
     }
-    DsResetB167C = 0;
-    DsResetB1678 = 0;
-    DsResetB1680 = 0;
+    B_0000167C = 0;
+    B_00001678 = 0;
+    B_00001680 = 0;
     for (k = 7, off = 0x70; k >= 0; k--, off -= 0x10) {
-        *(s32 *)(DsResetB1688 + off) = 0;
+        *(s32 *)(B_00001688 + off) = 0;
     }
-    DsResetB1708 = 0;
+    B_00001708 = 0;
     ER_clear();
     DsReadySystemMode(0);
     DS_restart();

@@ -3,8 +3,8 @@
 #include <libcd.h>
 #include <strings.h>
 
-extern CdlFILE B_00000208 __asm__("$LB_00000208");
-extern char CdReadFile_ver[] __asm__("$LRO_STR_000001F8");
+extern CdlFILE B_00000208;
+extern char RO_STR_000001F8[];
 
 int CdReadFile(char *file, u_long *addr, int nbyte) {
     s8 name[80];
@@ -20,7 +20,7 @@ int CdReadFile(char *file, u_long *addr, int nbyte) {
             }
         }
         if (name[nsec - 2] != ';') {
-            strcat(name, CdReadFile_ver);
+            strcat(name, RO_STR_000001F8);
         }
         if (CdSearchFile(&B_00000208, name) == 0) {
             return 0;

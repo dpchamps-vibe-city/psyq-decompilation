@@ -2,7 +2,7 @@
 
 s32 strncmp(s8 *s1, s8 *s2, s32 n);
 
-static s32 func_00000350(s8 *s1, s8 *s2) __asm__("$Lfunc_00000350");
+static s32 func_00000350(s8 *s1, s8 *s2);
 
 static s32 func_00000350(s8 *s1, s8 *s2) {
     if (0) {

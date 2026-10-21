@@ -19,7 +19,7 @@ typedef struct {
     u16 curmvolr;
 } SpuRegs;
 
-extern SpuRegs *D_00001B50 __asm__("$LD_00001B50");
+extern SpuRegs *D_00001B50;
 
 s32 CD_initvol(void) {
     u8 param[4];

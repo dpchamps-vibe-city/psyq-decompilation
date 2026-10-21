@@ -1,11 +1,11 @@
 #include "common.h"
 
-extern s32 D_00001394 __asm__("$LD_00001238+348");
-extern s32 D_00001284 __asm__("$LD_00001238+76");
-static s32 func_000003B8(u8, u8 *) __asm__("$Lfunc_000003B8");
-static s32 func_00000860() __asm__("$Lfunc_00000860");
+extern s32 D_00001394 __asm__("D_00001238+348");
+extern s32 D_00001284 __asm__("D_00001238+76");
+static s32 func_000003B8(u8, u8 *);
+static s32 func_00000860();
 
-void func_00000590(u8 arg0, u8 *arg1, s32 *arg2, s32 *arg3) {
+static void func_00000590(u8 arg0, u8 *arg1, s32 *arg2, s32 *arg3) {
     u8 sp10;
     s32 *p;
     u8 *q;

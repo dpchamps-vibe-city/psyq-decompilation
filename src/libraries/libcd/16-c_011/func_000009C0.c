@@ -12,9 +12,9 @@ INCLUDE_ASM("build/libraries/nonmatchings/libcd_16", func_000009C0);
 /* Best non-matching attempt, preserved for the next session. */
 #include "common.h"
 
-extern volatile u8 *LD_00000B88 asm("$LD_00000B88");
-extern volatile u32 *LD_00000BA0 asm("$LD_00000BA0");
-extern volatile u32 *LD_00000BA4 asm("$LD_00000BA4");
+extern volatile u8 *LD_00000B88 asm("D_00000B88");
+extern volatile u32 *LD_00000BA0 asm("D_00000BA0");
+extern volatile u32 *LD_00000BA4 asm("D_00000BA4");
 extern int printf(const char *, ...);
 
 void func_000009C0(s32 arg0, void *arg1, s32 arg2, s32 arg3, u32 arg4, s32 arg5, s32 arg6) {

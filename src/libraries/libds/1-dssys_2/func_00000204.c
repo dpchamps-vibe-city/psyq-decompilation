@@ -13,16 +13,16 @@ static DsCqCommand *func_00000204(void) {
 
     self = func_00000204;
     (void) self;
-    if ($LB_000015B8.count >= 8) {
+    if (B_000015B8.count >= 8) {
         return 0;
     }
     mask = SetIntrMask(0);
-    idx = $LB_000015B8.index + $LB_000015B8.count;
+    idx = B_000015B8.index + B_000015B8.count;
     if (idx >= 8) {
         idx -= 8;
     }
     SetIntrMask(mask);
-    return &$LB_000015B8.command[idx];
+    return &B_000015B8.command[idx];
 }
 
 #undef func_00000204

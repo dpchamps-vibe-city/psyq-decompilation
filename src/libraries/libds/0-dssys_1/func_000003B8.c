@@ -18,14 +18,14 @@ typedef struct {
     u8 unk39;        /* 0x51 */
 } DsRoot;
 
-extern DsRoot D_00001240r __asm__("$LD_00001240");
-extern s32 D_00001294[] __asm__("$LD_00001294");
+extern DsRoot D_00001240r __asm__("D_00001240");
+extern s32 D_00001294[];
 
 extern void CD_flush(void);
 extern s32 CD_cw(s32 com, u8 *param, u8 *result, s32 mode);
 extern void parcpy(u8 *dst, u8 *src);
 
-s32 func_000003B8(u8 com, u8 *param) {
+static s32 func_000003B8(u8 com, u8 *param) {
     s32 t;
 
     CD_flush();

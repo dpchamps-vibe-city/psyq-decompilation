@@ -10,7 +10,7 @@ typedef struct {
     s32 unk14;
 } DsCommand;
 
-static void func_00000088(DsCommand *p) __asm__("$Lfunc_00000088");
+static void func_00000088(DsCommand *p);
 
 static void func_00000088(DsCommand *p) {
     s32 i;

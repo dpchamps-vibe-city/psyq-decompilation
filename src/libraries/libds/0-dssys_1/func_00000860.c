@@ -3,7 +3,7 @@
 extern void CD_flush(void);
 extern s32 CD_cw(s32 com, u8 *param, u8 *result, s32 mode);
 
-s32 func_00000860(void) {
+static s32 func_00000860(void) {
     s32 t;
 
     CD_flush();

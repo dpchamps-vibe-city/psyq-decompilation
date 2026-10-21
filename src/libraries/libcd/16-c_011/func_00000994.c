@@ -1,6 +1,6 @@
 #include "common.h"
 
-static void func_00000994(void *, void *, u32, s32) __asm__("$Lfunc_00000994");
+static void func_00000994(void *, void *, u32, s32);
 
 static void func_00000994(void *arg0, void *arg1, u32 arg2, s32 arg3) {
     s32 temp_v0;

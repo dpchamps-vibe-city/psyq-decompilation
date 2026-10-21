@@ -1,6 +1,6 @@
-static void func_00000320(void) __asm__("$LT_00000320");
+static void T_00000320(void);
 
-static void func_00000320(void) {
+static void T_00000320(void) {
     volatile CdReadState *cd;
 
     cd = (volatile CdReadState *)&D_00000A68;

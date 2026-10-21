@@ -8,7 +8,7 @@ extern void (*CD_cbready)(u8, u8 *);
 extern void (*CD_cbsync)(u8, u8 *);
 extern s32 func_00000090(void);
 
-static void func_00001534(void) __asm__("$Lfunc_00001534");
+static void func_00001534(void);
 
 static void func_00001534(void) {
     u8 intr;

@@ -31,15 +31,15 @@ extern DirEntry $LB_000011E8[];
 
 extern void *memcpy(void *, void *, u32);
 extern s32 strncmp(s8 *, s8 *, s32);
-extern s32 func_00000974(s32, s32, u8 *) __asm__("$Lfunc_00000974");
+extern s32 func_00000974(s32, s32, u8 *) __asm__("func_00000974");
 
-extern char str_pvd_err[] __asm__("$LRO_STR_00000A74");
-extern char str_cd001[] __asm__("$LRO_STR_00000AA0");
-extern char str_fmt_err[] __asm__("$LRO_STR_00000AA8");
-extern char str_pt_err[] __asm__("$LRO_STR_00000AD8");
-extern char str_search[] __asm__("$LRO_STR_00000AFC");
-extern char str_entry[] __asm__("$LRO_STR_00000B1C");
-extern char str_count[] __asm__("$LRO_STR_00000B30");
+extern char str_pvd_err[] __asm__("RO_STR_00000A74");
+extern char str_cd001[] __asm__("RO_STR_00000AA0");
+extern char str_fmt_err[] __asm__("RO_STR_00000AA8");
+extern char str_pt_err[] __asm__("RO_STR_00000AD8");
+extern char str_search[] __asm__("RO_STR_00000AFC");
+extern char str_entry[] __asm__("RO_STR_00000B1C");
+extern char str_count[] __asm__("RO_STR_00000B30");
 
 static s32 func_00000370(void) {
     u8 *p;

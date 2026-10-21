@@ -30,58 +30,58 @@ typedef struct {
     u8 unk39;
 } DsData;
 
-extern DsData DD __asm__("$LD_00001238");
+extern DsData D_00001238;
 
-s32 func_000009F8(s32 com, u8 *param) {
+static s32 func_000009F8(s32 com, u8 *param) {
     u8 cmd;
 
     if ((com & 0xFF) == 2) {
-        cmd = DD.command;
+        cmd = D_00001238.command;
         if (cmd == 0xE) {
-            if ((DD.lastmode ^ DD.param[0]) & 0x80) {
-                DD.unkC = 0xF;
-                DD.unk8 = 2;
-                DD.unk28 = 3;
+            if ((D_00001238.lastmode ^ D_00001238.param[0]) & 0x80) {
+                D_00001238.unkC = 0xF;
+                D_00001238.unk8 = 2;
+                D_00001238.unk28 = 3;
             } else {
-                DD.unk8 = 1;
-                DD.unkC = 0xB;
+                D_00001238.unk8 = 1;
+                D_00001238.unkC = 0xB;
             }
-            DD.lastmode = DD.param[0];
+            D_00001238.lastmode = D_00001238.param[0];
         } else if (cmd == 3) {
-            DD.unkC = 0x10;
-            DD.unk8 = 2;
-            DD.lastread = cmd;
-            DD.unk34 = 0x4B0;
+            D_00001238.unkC = 0x10;
+            D_00001238.unk8 = 2;
+            D_00001238.lastread = cmd;
+            D_00001238.unk34 = 0x4B0;
         } else if (cmd == 6 || cmd == 0x1B) {
-            DD.unkC = 0x11;
-            DD.unk8 = 2;
-            DD.lastread = cmd;
-            DD.unk34 = 0x4B0;
+            D_00001238.unkC = 0x11;
+            D_00001238.unk8 = 2;
+            D_00001238.lastread = cmd;
+            D_00001238.unk34 = 0x4B0;
         } else {
-            switch (DD.command) {
+            switch (D_00001238.command) {
             case 2:
-                *(DslLOC *)&DD.lastpos = *(DslLOC *)&DD.param[0];
+                *(DslLOC *)&D_00001238.lastpos = *(DslLOC *)&D_00001238.param[0];
                 break;
             case 21:
             case 22:
-                DD.lastseek = DD.command;
+                D_00001238.lastseek = D_00001238.command;
                 break;
             case 3:
             case 6:
             case 27:
-                DD.lastread = DD.command;
+                D_00001238.lastread = D_00001238.command;
                 break;
             }
-            DD.unk8 = 1;
-            DD.unkC = 0xB;
+            D_00001238.unk8 = 1;
+            D_00001238.unkC = 0xB;
         }
     } else {
-        if (DD.status & 0x10) {
-            DD.unk8 = 2;
-            DD.unkC = 0xC;
+        if (D_00001238.status & 0x10) {
+            D_00001238.unk8 = 2;
+            D_00001238.unkC = 0xC;
         } else {
-            DD.unk8 = 1;
-            DD.unkC = 0xB;
+            D_00001238.unk8 = 1;
+            D_00001238.unkC = 0xB;
         }
     }
     if (B_0000139C != 0 && LD_00001240 != 0) {

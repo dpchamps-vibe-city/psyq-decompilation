@@ -5,7 +5,7 @@ typedef struct {
     s32 unk44;
 } DsCommandState;
 
-extern DsCommandState D_00001284s __asm__("$LD_00001238+76");
+extern DsCommandState D_00001284s __asm__("D_00001238+76");
 
 typedef struct {
     u8 status;
@@ -13,14 +13,14 @@ typedef struct {
     s32 unk4;
 } DsSysLite;
 
-extern DsSysLite D_00001258_sys __asm__("$LD_00001238+32");
+extern DsSysLite D_00001258_sys __asm__("D_00001238+32");
 
-static s32 func_000009F8(s32, u8 *) __asm__("$Lfunc_000009F8");
-static void func_00000BDC(s32 arg0, u8 *arg1) __asm__("$Lfunc_00000BDC");
-static void func_00000E64(s32 arg0, u8 *arg1) __asm__("$Lfunc_00000E64");
-static void func_00000FE4(u8 arg0, u8 *arg1) __asm__("$Lfunc_00000FE4");
+static s32 func_000009F8(s32, u8 *);
+static void func_00000BDC(s32 arg0, u8 *arg1);
+static void func_00000E64(s32 arg0, u8 *arg1);
+static void func_00000FE4(u8 arg0, u8 *arg1);
 
-void func_000008E8(u8 arg0, u8 *arg1) {
+static void func_000008E8(u8 arg0, u8 *arg1) {
     DsCommandState *cmd;
     u8 temp_s0;
     u8 var_s1;

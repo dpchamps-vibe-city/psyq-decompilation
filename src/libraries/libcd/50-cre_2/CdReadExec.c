@@ -3,7 +3,7 @@
 #include <libcd.h>
 #include <kernel.h>
 
-extern struct EXEC exec __asm__("$LB_00000150");
+extern struct EXEC B_00000150;
 
 struct EXEC *CdReadExec(char *file) {
     u_long buf[0x200];
@@ -21,8 +21,8 @@ struct EXEC *CdReadExec(char *file) {
     if (CdReadSync(0, 0) != 0) {
         return 0;
     }
-    exec = *(struct EXEC *)(p + 4);
-    exec.s_addr = 0;
-    exec.s_size = 0;
-    return &exec;
+    B_00000150 = *(struct EXEC *)(p + 4);
+    B_00000150.s_addr = 0;
+    B_00000150.s_size = 0;
+    return &B_00000150;
 }

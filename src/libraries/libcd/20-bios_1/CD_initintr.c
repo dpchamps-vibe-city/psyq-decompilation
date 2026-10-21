@@ -8,7 +8,7 @@ extern s32 CD_status;
 extern s32 CD_status1;
 
 s32 InterruptCallback(s32, void (*)(void));
-static void func_00001534(void) __asm__("$Lfunc_00001534");
+static void func_00001534(void);
 
 void CD_initintr(void) {
     CD_cbready = 0;

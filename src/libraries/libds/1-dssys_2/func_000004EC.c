@@ -3,14 +3,14 @@
 s32 DS_system_status(s32 arg0);
 s32 DS_cw(u8 com, s32 param);
 void rescpy(u8 *dst, u8 *src);
-void func_00000710_3() __asm__("$Lfunc_00000710");
-void func_000000B8(void) __asm__("$Lfunc_000000B8");
+void func_00000710_3() __asm__("func_00000710");
+static void func_000000B8(void);
 
-extern DsCommand $LB_00001588 __asm__("$LB_00001588");
+extern DsCommand $LB_00001588 __asm__("B_00001588");
 extern void (*GlobalCallback)(u8, u8 *);
-extern s32 $LB_0000167C __asm__("$LB_0000167C");
-extern s32 $LB_00001678 __asm__("$LB_00001678");
-extern s32 $LB_00001680 __asm__("$LB_00001680");
+extern s32 B_0000167C;
+extern s32 B_00001678;
+extern s32 B_00001680;
 
 static void func_000004EC(u8 com, u8 *param) {
     DsCqCommand *cmdq;
@@ -24,7 +24,7 @@ static void func_000004EC(u8 com, u8 *param) {
     s32 where;
     s32 status;
 
-    index = &$LB_000015B8.field4;
+    index = &B_000015B8.field4;
     cmdq = (DsCqCommand *)((u8 *)index - 0xC4);
     cmd = &cmdq[*index];
     if (cmd->active != 0) {
@@ -76,9 +76,9 @@ done:
     }
     status = DS_system_status(0);
     if (status == 1) {
-        cnt = &$LB_00001680;
+        cnt = &B_00001680;
         if (*cnt > 0 && DS_system_status(0) == status) {
-            off = $LB_0000167C * 0x18;
+            off = B_0000167C * 0x18;
             q = (DsCq *)((u8 *)cnt - 0xC8);
             cmd2 = (DsCqCommand *)((u8 *)q + off);
             if (cmd2->active != 0) {

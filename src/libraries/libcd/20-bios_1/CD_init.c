@@ -8,14 +8,14 @@ extern s32 CD_status;
 extern s32 CD_status1;
 extern volatile u8 *D_00001B3C;
 extern volatile u8 *D_00001B40;
-extern s32 *D_00001B44 __asm__("$LD_00001B44");
+extern s32 *D_00001B44;
 extern volatile u8 *D_00001B4C;
 extern volatile u8 D_00001B54[];
-extern u8 D_00001B58 __asm__("$LD_00001B58");
-extern char RO_STR_00001840[] __asm__("$LRO_STR_00001840");
-extern char RO_STR_0000184C[] __asm__("$LRO_STR_0000184C");
+extern u8 D_00001B58;
+extern char RO_STR_00001840[];
+extern char RO_STR_0000184C[];
 
-static void func_00001534(void) __asm__("$Lfunc_00001534");
+static void func_00001534(void);
 
 extern s32 CD_cw(u8 com, u8 *param, u8 *result, s32 mode);
 extern s32 CD_sync(s32 mode, u8 *result);

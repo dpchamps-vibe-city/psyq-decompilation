@@ -2,7 +2,7 @@
 #include <libapi.h>
 #include <memory.h>
 
-static s32 func_00000070(s32 chan, s32 block, u8 *buf) __asm__("$Lfunc_00000070");
+static s32 func_00000070(s32 chan, s32 block, u8 *buf);
 
 static s32 func_00000070(s32 chan, s32 block, u8 *buf) {
     u8 temp[0x80];

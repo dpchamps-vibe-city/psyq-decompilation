@@ -17,7 +17,7 @@ typedef struct {
     s32 count;
 } DsCq;
 
-extern DsCq $LB_000015B8 __asm__("$LB_000015B8");
+extern DsCq B_000015B8;
 
 void DS_CQ_flush(void) {
     DsCqCommand *p;
@@ -26,12 +26,12 @@ void DS_CQ_flush(void) {
     s32 j;
     u8 *r;
 
-    q = &$LB_000015B8.count;
+    q = &B_000015B8.count;
     q[0] = 0;
     q[-1] = 0;
     q[-2] = 0;
     for (i = 0; i < 8; i++) {
-        p = &$LB_000015B8.command[i];
+        p = &B_000015B8.command[i];
         j = 3;
         r = (u8 *) p + 3;
         p->active = 0;

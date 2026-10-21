@@ -5,13 +5,13 @@ typedef struct {
     void (*cb)(u8, u8 *);
 } DsCb;
 
-extern s32 $LB_00001678 __asm__("$LB_00001678");
-extern s32 $LB_0000167C __asm__("$LB_0000167C");
-extern s32 $LB_00001680 __asm__("$LB_00001680");
+extern s32 B_00001678;
+extern s32 B_0000167C;
+extern s32 B_00001680;
 
-void func_00000710(s32, u8, u8 *, s32) __asm__("$Lfunc_00000710");
+static void func_00000710(s32, u8, u8 *, s32);
 
-static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3) __asm__("$Lfunc_0000028C");
+static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3);
 
 static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3) {
     DsCb callbacks[8];
@@ -27,16 +27,16 @@ static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3) {
         callbacks[i].id = 0;
         callbacks[i].cb = 0;
     }
-    slot = $LB_000015B8.index;
+    slot = B_000015B8.index;
     previd = 0;
     last = -1;
-    for (i = 0; i < $LB_000015B8.count; i++) {
-        id = $LB_000015B8.command[slot].active;
+    for (i = 0; i < B_000015B8.count; i++) {
+        id = B_000015B8.command[slot].active;
         if (id != previd) {
             func_00000710(id, arg0, arg1, arg3);
             previd = id;
         }
-        cb = $LB_000015B8.command[slot].unk10;
+        cb = B_000015B8.command[slot].unk10;
         arg3 = -1;
         if (cb != 0) {
             if (last == arg3) {
@@ -56,11 +56,11 @@ static void func_0000028C(u8 arg0, u8 *arg1, s32 arg2, s32 arg3) {
             slot = 0;
         }
     }
-    $LB_00001680 = 0;
-    $LB_0000167C = 0;
-    $LB_00001678 = 0;
+    B_00001680 = 0;
+    B_0000167C = 0;
+    B_00001678 = 0;
     for (j = 0; j < 8; j++) {
-        DsCqCommand *cmd = &$LB_000015B8.command[j];
+        DsCqCommand *cmd = &B_000015B8.command[j];
         s32 k;
         u8 *r;
 

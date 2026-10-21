@@ -1,7 +1,7 @@
 #include "common.h"
 #include <libcd.h>
 
-static s32 func_00000974(s32, s32, u8 *) __asm__("$Lfunc_00000974");
+static s32 func_00000974(s32, s32, u8 *);
 
 static s32 func_00000974(s32 arg0, s32 arg1, u8 *arg2) {
     CdlLOC sp10;

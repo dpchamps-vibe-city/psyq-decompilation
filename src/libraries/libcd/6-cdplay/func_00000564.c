@@ -1,6 +1,6 @@
 #include "common.h"
 
-void func_00000564(void) {
+static void func_00000564(void) {
     u_char result[8];
 
     D_00000800 = 0;

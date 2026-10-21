@@ -1,13 +1,13 @@
 #include "common.h"
 
-extern volatile u8 *LD_00000B88 asm("$LD_00000B88");
-extern volatile u8 *LD_00000B90 asm("$LD_00000B90");
-extern volatile u8 *LD_00000B94 asm("$LD_00000B94");
-extern volatile u32 *LD_00000B98 asm("$LD_00000B98");
-extern volatile u32 *LD_00000B9C asm("$LD_00000B9C");
-extern volatile u32 *LD_00000BA8 asm("$LD_00000BA8");
-extern volatile u32 *LD_00000BB8 asm("$LD_00000BB8");
-extern volatile u16 *B_00000BD8 asm("$LB_00000BD8");
+extern volatile u8 *D_00000B88;
+extern volatile u8 *D_00000B90;
+extern volatile u8 *D_00000B94;
+extern volatile u32 *D_00000B98;
+extern volatile u32 *D_00000B9C;
+extern volatile u32 *D_00000BA8;
+extern volatile u32 *D_00000BB8;
+extern volatile u16 *B_00000BD8;
 
 extern s32 StFinalSector;
 extern s32 StRgb24;
@@ -35,8 +35,8 @@ extern void init_ring_status(s32, s32);
 extern void data_ready_callback(void);
 typedef struct { u8 b[4]; } Word4;
 
-extern void func_00000994(void *, void *, u32, s32) asm("$Lfunc_00000994");
-extern void func_000009C0(s32, void *, s32, s32, u32, s32, s32) asm("$Lfunc_000009C0");
+static void func_00000994(void *, void *, u32, s32);
+static void func_000009C0(s32, void *, s32, s32, u32, s32, s32);
 
 void StCdInterrupt(void) {
     volatile u16 st[3];
@@ -51,7 +51,7 @@ void StCdInterrupt(void) {
     if (StFinalSector == 1) {
         return;
     }
-    if ((StRgb24 != 0) && ((*LD_00000BA8 & 0x01000000) != 0)) {
+    if ((StRgb24 != 0) && ((*D_00000BA8 & 0x01000000) != 0)) {
         StCdIntrFlag = 1;
         if (StEmu_Addr != 0) {
             StEmu_Idx += 1;
@@ -78,18 +78,18 @@ void StCdInterrupt(void) {
         debug_cause = 4;
         return;
     }
-    *LD_00000B88 = 0;
-    *LD_00000B94 = 0;
-    *LD_00000B88 = 0;
-    *LD_00000B94 = 0x80;
-    *LD_00000B98 = 0x20943;
-    *LD_00000B9C = 0x1323;
+    *D_00000B88 = 0;
+    *D_00000B94 = 0;
+    *D_00000B88 = 0;
+    *D_00000B94 = 0x80;
+    *D_00000B98 = 0x20943;
+    *D_00000B9C = 0x1323;
     if (StMode == 0) {
         for (i = 0; i < 4; i++) {
-            buf[i] = *LD_00000B90;
+            buf[i] = *D_00000B90;
         }
         for (i = 0; i < 8; i++) {
-            (void)*LD_00000B90;
+            (void)*D_00000B90;
         }
     }
     mode = 0x11000000;
@@ -98,11 +98,11 @@ void StCdInterrupt(void) {
     } else {
         func_000009C0(3, B_00000BD8, 0, 8, mode, 0, 0);
     }
-    while (*LD_00000BB8 & 0x01000000) {
+    while (*D_00000BB8 & 0x01000000) {
     }
     *(Word4 *)((u8 *)B_00000BD8 + 0x1C) = *(Word4 *)buf;
-    *LD_00000B98 = 0x20843;
-    *LD_00000B9C = 0x1325;
+    *D_00000B98 = 0x20843;
+    *D_00000B9C = 0x1325;
     if ((StSTART_FLAG == 1) && (StStartFrame != 0)) {
         if (StStartFrame != B_00000BD8[4]) {
             B_00000BD8[0] = 0;
@@ -191,10 +191,10 @@ void StCdInterrupt(void) {
     StRingBase = (u32 *)((u8 *)StRingAddr + (StRingSize << 5) + StRingIdx1 * 0x7E0);
     mode = 0x11000000;
     if (StRgb24 != 0) {
-        *LD_00000B98 = 0x20943;
-        *LD_00000B9C = 0x1323;
+        *D_00000B98 = 0x20943;
+        *D_00000B9C = 0x1323;
     } else {
-        *LD_00000B98 = 0x21020843;
+        *D_00000B98 = 0x21020843;
         mode = 0x11400100;
     }
     if ((B_00000BD8[3] - 1) == B_00000BD8[2]) {
@@ -214,7 +214,7 @@ void StCdInterrupt(void) {
     } else {
         func_000009C0(3, StRingBase, 0, 0x1F8, mode, 0, 0);
     }
-    *LD_00000B9C = 0x1325;
+    *D_00000B9C = 0x1325;
     B_00000BD8[0] = 3;
     StRingIdx1 += 1;
     if ((StEmu_Addr != 0) && (StFinalSector != 0)) {

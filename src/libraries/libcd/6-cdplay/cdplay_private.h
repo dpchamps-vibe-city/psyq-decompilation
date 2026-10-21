@@ -15,7 +15,7 @@ static void cbdataready(u_char com, u_char *result)
     if (com == 4) {
         CdReadyCallback(0);
         if (CD_debug >= 2) {
-            printf(CdPlay_dataend, D_000007FC, VSync(-1));
+            printf(RO_STR_00000600, D_000007FC, VSync(-1));
         }
         D_000007FC++;
         D_00000808[0] = D_0000066C[D_000007FC];
@@ -24,7 +24,7 @@ static void cbdataready(u_char com, u_char *result)
         if (!(result[0] & 1)) {
             D_00000800 = 1;
             if (CD_debug >= 2) {
-                printf(CdPlay_error, CdIntstr(5), result[0], result[1]);
+                printf(RO_STR_0000062C, CdIntstr(5), result[0], result[1]);
             }
             if (!(result[0] & 0x11)) {
                 func_000003EC();

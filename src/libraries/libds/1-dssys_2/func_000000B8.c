@@ -19,11 +19,11 @@ typedef struct {
     s32 count;
 } DsQueue;
 
-extern DsQueue $LB_000015B8 __asm__("$LB_000015B8");
-extern DsCommand commands[] __asm__("$LB_000015B8");
-extern s32 $LB_00001678 __asm__("$LB_00001678");
+extern DsQueue $LB_000015B8 __asm__("B_000015B8");
+extern DsCommand commands[] __asm__("B_000015B8");
+extern s32 $LB_00001678 __asm__("B_00001678");
 
-static void func_000000B8(void) __asm__("$Lfunc_000000B8");
+static void func_000000B8(void) __asm__("func_000000B8");
 
 static void func_000000B8(void) {
     s32 *ip;

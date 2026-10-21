@@ -17,7 +17,7 @@ INCLUDE_ASM("build/libraries/nonmatchings/libcd_38", CdControl);
 extern s32 CD_cw(s32 com, u8 *param, u8 *result, s32 mode);
 extern void (*CD_cbsync)(u8, u8 *);
 extern u8 CD_status;
-extern s32 LD_00000430[] asm("$LD_00000430");
+extern s32 LD_00000430[] asm("D_00000430");
 
 int CdControl(u_char com, u_char *param, u_char *result) {
     void (*saved)(u8, u8 *);

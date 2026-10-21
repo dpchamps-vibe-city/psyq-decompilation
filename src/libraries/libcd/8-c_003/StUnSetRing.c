@@ -3,8 +3,8 @@
 /* The original member's .data holds the four CD-ROM register addresses at
  * .data+0 and .data+12. The generated data fragment gives those static
  * labels $LD names, so the source types are attached to those labels. */
-extern volatile u8 *D_000000F0 asm("$LD_000000F0");
-extern volatile u8 *D_000000FC asm("$LD_000000FC");
+extern volatile u8 *D_000000F0;
+extern volatile u8 *D_000000FC;
 
 extern s32 EnterCriticalSection(void);
 extern void ExitCriticalSection(void);

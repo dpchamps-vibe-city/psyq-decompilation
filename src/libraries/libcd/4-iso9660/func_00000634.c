@@ -7,10 +7,10 @@ typedef struct {
     char name[32];
 } DirEntry;
 
-extern DirEntry $LB_000011E8[];
+extern DirEntry B_000011E8[];
 extern int strcmp();
 
-static s32 func_00000634(s32 arg0, s8 *arg1) __asm__("$Lfunc_00000634");
+static s32 func_00000634(s32 arg0, s8 *arg1);
 
 static s32 func_00000634(s32 arg0, s8 *arg1) {
     s32 i;
@@ -20,11 +20,11 @@ static s32 func_00000634(s32 arg0, s8 *arg1) {
     }
 
     for (i = 0; i < 0x80; i++) {
-        if ($LB_000011E8[i].parent == 0) {
+        if (B_000011E8[i].parent == 0) {
             break;
         }
-        if ($LB_000011E8[i].parent == arg0) {
-            if (strcmp(arg1, $LB_000011E8[i].name) == 0) {
+        if (B_000011E8[i].parent == arg0) {
+            if (strcmp(arg1, B_000011E8[i].name) == 0) {
                 return i + 1;
             }
         }

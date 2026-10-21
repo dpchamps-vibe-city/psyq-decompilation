@@ -2,14 +2,14 @@
 #include <sys/types.h>
 #include <libds.h>
 
-extern volatile u8 *D_00000170 __asm__("$LD_00000170");
-extern volatile u8 *D_00000174 __asm__("$LD_00000174");
-extern volatile s32 *D_00000178 __asm__("$LD_00000178");
-extern volatile s32 *D_0000017C __asm__("$LD_0000017C");
-extern volatile s32 *D_00000180 __asm__("$LD_00000180");
-extern volatile s32 *D_00000184 __asm__("$LD_00000184");
-extern volatile u32 *D_00000188 __asm__("$LD_00000188");
-extern volatile s32 *D_0000018C __asm__("$LD_0000018C");
+extern volatile u8 *D_00000170;
+extern volatile u8 *D_00000174;
+extern volatile s32 *D_00000178;
+extern volatile s32 *D_0000017C;
+extern volatile s32 *D_00000180;
+extern volatile s32 *D_00000184;
+extern volatile u32 *D_00000188;
+extern volatile s32 *D_0000018C;
 
 s32 CD_getsector(void *arg0, s32 arg1) {
     *D_00000170 = 0;

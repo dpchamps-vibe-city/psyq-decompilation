@@ -5,22 +5,22 @@
 #include <stdio.h>
 
 extern s32 CD_debug;
-extern char CdPlay_noToc[] __asm__("$LRO_STR_000005D8");
-extern char CdPlay_dataend[] __asm__("$LRO_STR_00000600");
-extern char CdPlay_error[] __asm__("$LRO_STR_0000062C");
+extern char RO_STR_000005D8[];
+extern char RO_STR_00000600[];
+extern char RO_STR_0000062C[];
 
-static void func_000003EC(void) __asm__("$Lfunc_000003EC");
-static void func_00000564(void) __asm__("$Lfunc_00000564");
+static void func_000003EC(void);
+static void func_00000564(void);
 
-extern s32 D_00000668 __asm__("$LD_00000668");
-extern s32 D_0000066C[] __asm__("$LD_0000066C");
-extern s32 D_000007FC __asm__("$LD_000007FC");
-extern s32 D_00000800 __asm__("$LD_00000800");
-extern s32 D_00000804 __asm__("$LD_00000804");
-extern s32 D_00000808[] __asm__("$LD_00000808");
-extern CdlLOC B_00000818[] __asm__("$LB_00000818");
-extern s32 B_000009A8 __asm__("$LB_000009A8");
-extern u_char B_000009B0[] __asm__("$LB_000009B0");
+extern s32 D_00000668;
+extern s32 D_0000066C[];
+extern s32 D_000007FC;
+extern s32 D_00000800;
+extern s32 D_00000804;
+extern s32 D_00000808[];
+extern CdlLOC B_00000818[];
+extern s32 B_000009A8;
+extern u_char B_000009B0[];
 
 s32 CdPlay(s32 mode, s32 *track, s32 offset) {
     u_char param[8];
@@ -49,7 +49,7 @@ s32 CdPlay(s32 mode, s32 *track, s32 offset) {
     } else {
         if (!(B_000009A8 = CdGetToc(B_00000818))) {
             if (CD_debug >= 2) {
-                printf(CdPlay_noToc);
+                printf(RO_STR_000005D8);
             }
             D_000007FC = -1;
             return -1;

@@ -1,6 +1,6 @@
-extern volatile CdReadState cd __asm__("$LD_00000A68");
+extern volatile CdReadState cd __asm__("D_00000A68");
 extern s32 CD_read_dma_mode;
-extern int func_000003F0(s32 arg0) __asm__("$Lfunc_000003F0");
+static int func_000003F0(s32 arg0);
 
 int CdRead(int sectors, u_long *buf, int mode) {
     s32 i;

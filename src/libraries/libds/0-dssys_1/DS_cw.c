@@ -10,8 +10,8 @@ typedef struct {
     s32 f44;
 } DsSys;
 
-extern DsSys D_00001240 __asm__("$LD_00001240");
-static s32 func_000003B8(u8, u8 *) __asm__("$Lfunc_000003B8");
+extern DsSys D_00001240;
+static s32 func_000003B8(u8, u8 *);
 
 s32 DS_cw(u8 com, u8 *param) {
     if (D_00001240.f44 > 0) {

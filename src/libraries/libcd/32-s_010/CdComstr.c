@@ -1,7 +1,7 @@
 #include "common.h"
 
 extern char *CD_comstr[];
-extern char RO_STR_000000B0[] __asm__("$LRO_STR_000000B0");
+extern char RO_STR_000000B0[];
 
 char *CdComstr(u8 com) {
     if (com >= 0x1C) {

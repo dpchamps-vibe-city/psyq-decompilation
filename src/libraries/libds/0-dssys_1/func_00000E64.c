@@ -1,6 +1,6 @@
 #include "common.h"
 
-void func_00000E64(s32 arg0, u8 *arg1) {
+static void func_00000E64(s32 arg0, u8 *arg1) {
     if ((arg0 & 0xFF) == 2) {
         if (DDx.command == 0xE) {
             if ((DDx.lastmode ^ DDx.param[0]) & 0x80) {

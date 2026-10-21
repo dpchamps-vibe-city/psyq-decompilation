@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <strings.h>
 
-extern char str_command_error[] __asm__("$LRO_STR_000001E0");
+extern char RO_STR_000001E0[];
 
 int CdGetDiskType(void) {
     CdlLOC sp10;
@@ -42,7 +42,7 @@ int CdGetDiskType(void) {
             var_v0 = 0x10;
             if (!(sp818[0] & 0x10)) {
                 if ((sp818[0] & 1) && (sp818[1] & 0x40)) {
-                    printf(str_command_error);
+                    printf(RO_STR_000001E0);
                     return 1;
                 }
                 var_v0 = sp818[0] & 2;
@@ -52,7 +52,7 @@ int CdGetDiskType(void) {
         }
         CdControl(9, NULL, NULL);
         CdGetSector(sp18, 0x200);
-        if (strncmp(&sp18[1], str_command_error + 16, 5) != 0) {
+        if (strncmp(&sp18[1], RO_STR_000001E0 + 16, 5) != 0) {
             return 1;
         }
         return 2;
