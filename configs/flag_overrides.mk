@@ -87,3 +87,12 @@ CC1FLAGS_libds_9 := -fsigned-char -mhard-float -fno-builtin
 # reproducing the original unreferenced 9-word body without any caller or
 # frame; a per-file flag is required because this is a whole-TU build property.
 CC1FLAGS_libetc_3 := -fno-inline-functions
+
+# libgpu_0 (FNT.OBJ): no override. A -fno-strength-reduce override was tried
+# (and retired here) to explain the member's raw-biv sprite addressing, but it
+# was a wrong reading of the same fingerprint: under the project's baseline -O3
+# FntFlush with the walking-pointer sprite source is byte-exact (199/199 words,
+# zero population/schedule/allocation residual), and the retired override made
+# it 198/199. The original bytes' `addiu $18,$18,0x10` plus base-relative
+# offsets 0x4..0xD is the ordinary strength-reduced giv of a `SPRT_8 *sp`
+# walking pointer, and FntOpen/FntLoad/SetDumpFnt match under the same baseline.
