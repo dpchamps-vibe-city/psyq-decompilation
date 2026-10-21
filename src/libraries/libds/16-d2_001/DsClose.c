@@ -1,1 +1,10 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libds_16", DsClose);
+#include "common.h"
+#include <sys/types.h>
+#include <libds.h>
+
+void DS_close(void);
+
+
+void DsClose(void) {
+    DS_close();
+}
