@@ -7,6 +7,28 @@
 - **Preserved attempt:** library measurements have no staged ranking; kept the current complete TU, including neighboring functions/data
 - **Parking notes:** src/libraries/libcd/44-cdr_1/func_000000AC.c: pre-attempt source restored; attempt archived at /home/dave/Documents/code/psyq-decomp/run_output/autoloop/attempts/libcd_44::func_000003F0.func_000000AC.c.2026-10-20T16-51-24-833Z.parked.c
 
+## Recovery verification
+
+A later full-project check exposed a packaging failure despite all 616
+instruction words matching: the rebuilt native object had an extra undefined
+`func_00000078` symbol (first differing `.OBJ` record #29). The compiled callback
+used `$Lfunc_00000078`, but retained assembly referenced the unprefixed name.
+
+The split generator's `sourceReferences` scans the TU's manifest parts, not
+headers included by those parts. The callback's explicit asm-name declaration
+was hidden in `cdr1_private_head.h`, while its C identifier appeared in the TU
+parts. Moving that existing declaration into `func_000000AC.c` makes it visible
+to both the compiler and split generator. Regenerated assembly now references
+`$Lfunc_00000078` consistently; no assembly, flags, or target bytes were edited.
+
+The redundant disabled neighbour copy was removed from `func_000000AC.c`;
+its parked archive listed above remains available. `func_000003F0` itself stays
+parked on its original extraction. `npm run diff -- libcd_44::func_000000AC`
+now verifies the complete native object, including symbols and relocations,
+not just the selected function's words. After split regeneration,
+`npm run check-all` verifies all 2164 configured library members as byte-exact;
+the project-wide source-policy check passes for all 348 compiled functions.
+
 ## What the loop needs
 
 Every tier on the escalation ladder returned without a byte-exact match. The function
