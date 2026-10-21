@@ -111,3 +111,17 @@ CC1FLAGS_libetc_3 := -fno-inline-functions
 # is this loop heuristic. Same mechanism as the recorded TOC.OBJ (libcd_1),
 # DSTOC.OBJ (libds_5) and DSFILE.OBJ (libds_9) witnesses.
 CC1FLAGS_libgpu_2 := -mhard-float
+
+# OTAG.OBJ (libgpu_3) needs -mhard-float for the same loop.c threshold mechanism.
+# Evidence: DumpOTag's loop hoists the loop-invariant address of the primitive
+# type-name table D_STR_000004F0 out of the walk (preheader `lui $20,%hi` /
+# `addiu $20,$20,%lo` = la, in-loop `addu $v0,$v0,$20; lw $a1,0($v0)`) and its
+# frame saves six registers ($16-$20 + $ra, 0x28). Under the project-default
+# -msoft-float n_non_fixed_regs=28 so threshold=29 and the address stays inside
+# the loop (measured: `lw $a1,D_STR_000004F0($v0)` macro in-loop, frame 0x28 with
+# five saves, no $20). -mhard-float raises n_non_fixed_regs to 60, threshold to
+# 61, the movable becomes desirable and the preheader/$20 save area reproduce.
+# No FP value appears in the member (0 COP2 words); the only observed effect is
+# this loop heuristic. Same mechanism as libgpu_2 (KPRINTF.OBJ), libcd_1
+# (TOC.OBJ), libds_5 (DSTOC.OBJ) and libds_9 (DSFILE.OBJ).
+CC1FLAGS_libgpu_3 := -mhard-float
