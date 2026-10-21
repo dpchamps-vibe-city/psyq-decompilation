@@ -1,1 +1,15 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgpu_9", LoadClut2);
+#include "common.h"
+#include <sys/types.h>
+#include <libgte.h>
+#include <libgpu.h>
+
+u_short LoadClut2(u_long *clut, int x, int y) {
+    RECT rect;
+
+    rect.x = x;
+    rect.y = y;
+    rect.w = 0x10;
+    rect.h = 1;
+    LoadImage(&rect, clut);
+    return GetClut(x, y);
+}
