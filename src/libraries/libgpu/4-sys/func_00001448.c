@@ -11,7 +11,7 @@ extern u8 GEnv;
 u32 func_000016D8();              /* static */
 u32 func_00001770(s16 arg0, s16 arg1);              /* static */
 u32 func_00001808();              /* static */
-u32 func_000016B8(u8 arg0, u8 arg1, u16 arg2);      /* static */
+static u32 func_000016B8(s32 arg0, s32 arg1, s32 arg2);
 u32 func_00001824(RECT *arg0);                      /* static */
 
 static void func_00001448(DR_ENV *arg0, DRAWENV *arg1) {
