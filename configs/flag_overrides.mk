@@ -96,3 +96,18 @@ CC1FLAGS_libetc_3 := -fno-inline-functions
 # it 198/199. The original bytes' `addiu $18,$18,0x10` plus base-relative
 # offsets 0x4..0xD is the ordinary strength-reduced giv of a `SPRT_8 *sp`
 # walking pointer, and FntOpen/FntLoad/SetDumpFnt match under the same baseline.
+
+
+# libgpu_2 (KPRINTF.OBJ) needs -mhard-float. Evidence: loop.c decides a
+# move-insn with `threshold * savings * lifetime >= insn_count`, and the target
+# hoists the 0x824F decimal-digit constant that this source materializes inside
+# the loop body (measured: `li $8,33359` in the loop, frame/regs 7/0, 368-byte
+# .text difference chain). The same source compiled with -mhard-float raises
+# n_non_fixed_regs from 28 to 60, so threshold goes from 29 to 61,
+# 61*1*23 >= insn_count makes the movable desirable, and the rebuilt function is
+# byte-exact (282/282 words, zero population/schedule/allocation residual,
+# frame 568, regs 8/0=$16-$22, preheader `li $22,0xcccccccd; li $21,0x824f`).
+# No FP value appears in the member (0 COP2 words), so the only observed effect
+# is this loop heuristic. Same mechanism as the recorded TOC.OBJ (libcd_1),
+# DSTOC.OBJ (libds_5) and DSFILE.OBJ (libds_9) witnesses.
+CC1FLAGS_libgpu_2 := -mhard-float

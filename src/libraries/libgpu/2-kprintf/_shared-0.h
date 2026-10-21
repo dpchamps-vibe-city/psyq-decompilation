@@ -6,6 +6,18 @@
 #include "common.h"
 #include "include_asm.h"
 
+/* The reference libgpu.h declares KanjiFntPrint with an old-style empty
+ * parameter list in its C branch, which cannot be followed by the variadic
+ * definition the original object shows (KPRINTF.OBJ's KanjiFntPrint saves
+ * $4-$7 and takes the address of its first parameter for va_start).  Keep the
+ * header's other declarations and supply the real prototype. */
+#define _KANJIFNTPRINT_
+#include <sys/types.h>
+#include <libgte.h>
+#include <libgpu.h>
+
+int KanjiFntPrint(int id, ...);
+
 
 /* PARKED by /auto_decompilation_loop on 2026-10-21T13:18:47.816Z.
  * Reason: escalation-exhausted.

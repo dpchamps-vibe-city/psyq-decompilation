@@ -42,6 +42,9 @@
       ],
       "libetc_3": [
         "flag-override"
+      ],
+      "libgpu_2": [
+        "flag-override"
       ]
     }
   }
