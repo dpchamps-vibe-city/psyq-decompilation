@@ -2,7 +2,7 @@
 
 typedef void (*VBlankFunc)(void);
 
-void func_000000C8(void);
+static void func_000000C8(void);
 void func_00000134(s32, VBlankFunc);
 void func_00000160(VBlankFunc *, s32);
 extern s32 InterruptCallback(s32, VBlankFunc);
