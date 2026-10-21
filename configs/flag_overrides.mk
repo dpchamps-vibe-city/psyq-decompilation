@@ -46,3 +46,24 @@ CC1FLAGS_libcd_20 := -fno-inline-functions
 # in the member, so the only observed effect is this loop heuristic. Same
 # mechanism as the recorded TOC.OBJ (libcd_1) witness.
 CC1FLAGS_libds_5 := -mhard-float
+
+# DSFILE.OBJ (libds_9) needs both overrides; they are independent, whole-TU
+# properties of the original build.
+#
+# -fsigned-char: the whole member reads plain char as SIGNED. Every plain-char
+# load in DsSearchFile is `lb` (the `name` parameter at 0xE0, the parse loop's
+# `*p` at 0x118/0x13C/0x14C, `path[0]` at 0x1C0, and the file table's
+# `B_00000BE0[i].name[0]` at 0x268), while the project default -funsigned-char
+# emits `lbu` there. The only `lbu`s (0x11C/0x140) are the zero-only test and
+# the byte copy, which GCC loads unsigned regardless. Same whole-TU property as
+# ISO9660.OBJ (libcd_4).
+#
+# -mhard-float: the target hoists the two loop invariants of its path parser out
+# of the outer loop: `'\\'` into $21 and `-1` into $20 in the preheader, and it
+# saves $16-$22 (frame 0x50). Under the project-default -msoft-float those
+# constants are rematerialized inside the loop and the frame is 0x48 (6 saved
+# registers); -mhard-float raises n_non_fixed_regs and loop.c moves them,
+# reproducing the preheader and the 7-register save area. No FP value appears in
+# the member, so the only observed effect is this loop heuristic. Same mechanism
+# as the recorded DSTOC.OBJ (libds_5) and TOC.OBJ (libcd_1) witnesses.
+CC1FLAGS_libds_9 := -fsigned-char -mhard-float

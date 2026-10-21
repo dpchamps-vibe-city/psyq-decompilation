@@ -36,6 +36,9 @@
       ],
       "libds_5": [
         "flag-override"
+      ],
+      "libds_9": [
+        "flag-override"
       ]
     }
   }
