@@ -9,7 +9,7 @@
 extern u8 GEnv;
 extern char RO_STR_00003134[];
 
-void func_00001448(DR_ENV *arg0, DRAWENV *arg1);    /* static */
+static void func_00001448(DR_ENV *arg0, DRAWENV *arg1);
 
 void DrawOTagEnv(u_long *p, DRAWENV *env) {
     DR_ENV *temp_s0;
