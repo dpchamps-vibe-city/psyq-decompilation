@@ -8,7 +8,16 @@
 
 #include <sys/types.h>
 #include <libgte.h>
+
+/* The reference libgpu.h declares FntPrint with an old-style empty parameter
+ * list in its C branch, which cannot be followed by the variadic definition
+ * the original object shows (FNT.OBJ's FntPrint saves $4-$7 and takes the
+ * address of its first parameter for va_start).  Keep the header's other
+ * declarations and supply the real prototype. */
+#define _FNTPRINT_
 #include <libgpu.h>
+
+int FntPrint(int id, ...);
 
 /* FONT.OBJ's font state table.  The original relocations address each entry
  * member directly (Font+16 drmode, Font+28 step, Font+32/36 sprt/text,
