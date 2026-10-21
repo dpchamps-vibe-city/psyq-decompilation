@@ -1,1 +1,9 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libds_36", DsDataCallback);
+#include "common.h"
+#include <sys/types.h>
+#include <libds.h>
+
+void *DMACallback();                     /* extern */
+
+void *DsDataCallback(void (*func)()) {
+    return DMACallback(3, func);
+}
