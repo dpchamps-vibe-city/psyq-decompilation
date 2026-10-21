@@ -5,7 +5,7 @@
 #include <libetc.h>
 #include <stdio.h>
 
-void func_000001F0();             /* static */
+static void func_000001F0(s32, s32);
 extern volatile s32 *D_000002A0;
 extern volatile s32 *D_000002A4;
 extern volatile s32 D_000002AC;
