@@ -125,3 +125,16 @@ CC1FLAGS_libgpu_2 := -mhard-float
 # this loop heuristic. Same mechanism as libgpu_2 (KPRINTF.OBJ), libcd_1
 # (TOC.OBJ), libds_5 (DSTOC.OBJ) and libds_9 (DSFILE.OBJ).
 CC1FLAGS_libgpu_3 := -mhard-float
+
+# SYS.OBJ (libgpu_4) has no cross-function inlining. Evidence: the target's
+# LoadImage2 at 0x2B20 contains a direct `jal func_0000293C` (0x2B78) to the
+# static function defined earlier in the same member (0x293C), with a nop in
+# the call delay slot. Under the baseline -O3, flag_inline_functions has
+# func_0000293C's saved insns available by the time LoadImage2 is expanded and
+# inlines the entire ~40-word timeout body inside it (measured: 132 candidate
+# instrs vs the target's 59, inlined VSync/SetIntrMask/printf chain). With
+# -fno-inline-functions the same source is byte-exact (59/59 words, zero
+# population/schedule/allocation residual). Nearby overrides carry the same
+# flag for other members (libcd_20 BIOS_1.OBJ, libetc_3 INTR.OBJ); no
+# libgpu_4 function shows cross-function inlining in the original bytes.
+CC1FLAGS_libgpu_4 := -fno-inline-functions

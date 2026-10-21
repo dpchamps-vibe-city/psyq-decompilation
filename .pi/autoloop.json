@@ -48,6 +48,9 @@
       ],
       "libgpu_3": [
         "flag-override"
+      ],
+      "libgpu_4": [
+        "flag-override"
       ]
     }
   }
