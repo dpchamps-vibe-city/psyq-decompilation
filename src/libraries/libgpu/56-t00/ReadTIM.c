@@ -4,7 +4,7 @@
 #include <libgpu.h>
 #include <stdio.h>
 
-s32 func_000000EC();      /* static */
+static s32 func_000000EC();      /* static */
 
 TIM_IMAGE *ReadTIM(TIM_IMAGE *timimg) {
     s32 temp_v0;

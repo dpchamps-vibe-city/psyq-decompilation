@@ -6,3 +6,9 @@
 #include "common.h"
 #include "include_asm.h"
 
+
+/* Original .bss reservation (16 bytes); the first word is the current TIM
+ * address used by OpenTIM and ReadTIM. Static so the reduced original's
+ * section-relative relocation is preserved instead of introducing a new
+ * external symbol. */
+static unsigned long *B_00000238;
