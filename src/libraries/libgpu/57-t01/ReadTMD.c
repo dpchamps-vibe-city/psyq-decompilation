@@ -5,7 +5,7 @@
 #include <memory.h>
 #include <stdio.h>
 
-s32 func_000004D4();      /* static */
+static s32 func_000004D4();
 extern SVECTOR *B_00001888;
 extern SVECTOR *B_0000188C;
 extern void *B_00001890;
