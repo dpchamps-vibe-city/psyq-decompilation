@@ -1,1 +1,9 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgs_59", GsDrawOt);
+#include "common.h"
+#include <sys/types.h>
+#include <libgte.h>
+#include <libgpu.h>
+#include <libgs.h>
+
+void GsDrawOt(GsOT *ot) {
+    DrawOTag((u_long *) ot->tag);
+}
