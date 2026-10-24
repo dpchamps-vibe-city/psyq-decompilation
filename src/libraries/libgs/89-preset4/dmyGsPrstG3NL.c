@@ -1,1 +1,19 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgs_89", dmyGsPrstG3NL);
+#include "common.h"
+#include <sys/types.h>
+#include <stdio.h>
+#include <libetc.h>
+#include <libgte.h>
+#include <libgpu.h>
+#include <libgs.h>
+
+extern s32 D_000024B8;
+extern char RO_STR_00001ED8[];
+
+PACKET *dmyGsPrstG3NL(TMD_P_F3 *op, VERT *vp, VERT *np, PACKET *pk,
+                      int n, int shift, GsOT *ot, u_long *scratch) {
+    if (D_000024B8 == 0) {
+        printf(RO_STR_00001ED8 + 100);
+        D_000024B8 = 1;
+    }
+    return pk;
+}
