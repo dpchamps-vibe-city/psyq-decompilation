@@ -60,12 +60,5 @@
         "flag-override"
       ]
     }
-  },
-  "parkedFunctions": {
-    "libgs_87::GsSortObject5": {
-      "reason": "blocked",
-      "detail": "context-exhausted analysis: 4608-byte function (1152 insn, 150 blocks, 3 dispatch loops, 48 switch cases). Uses local GsFCALL5-layout function table. C draft written to src/libraries/libgs/87-preset2/GsSortObject5.c based on reverse-engineered case-to-function mapping from original .s assembly. Requires iterative compile-measure to adjust loop B/C stride arithmetic, case-order mapping, and shared-fragment pointer semantics. Complex due to 16x3 switch-case entries with distinct stride/spill logic rewritten through shared jalr/post-call fragments.",
-      "timestamp": 1792863139174
-    }
   }
 }

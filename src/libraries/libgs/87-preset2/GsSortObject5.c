@@ -1,3 +1,10 @@
+INCLUDE_ASM("build/libraries/nonmatchings/libgs_87", GsSortObject5);
+
+/* Unverified draft from 794aaa2b, preserved for future reconstruction.
+ * Parking must retain the original assembly, not compile this incomplete C.
+ * See notes/human-needed-approvals/libgs_87::GsSortObject5.md.
+ */
+#if 0
 #include <psyq.h>
 
 void GsSortObject5(GsDOBJ5 *objp, GsOT *ot, int shift, u_long *scratch)
@@ -520,3 +527,4 @@ loopC_stride_16:
     s += p[1];
     goto loopC_check;
 }
+#endif
