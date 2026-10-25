@@ -138,3 +138,16 @@ CC1FLAGS_libgpu_3 := -mhard-float
 # flag for other members (libcd_20 BIOS_1.OBJ, libetc_3 INTR.OBJ); no
 # libgpu_4 function shows cross-function inlining in the original bytes.
 CC1FLAGS_libgpu_4 := -fno-inline-functions
+
+# libgs_94 (OBJT2.OBJ): the target hoists four loop-invariant table addresses
+# out of the primitive walk (preheader computes &GsFCALL4.f3g[col],
+# 12*GsNDIV, &GsFCALL4.f3[div][col], &GsFCALL4.g3g[col] and stores them at
+# sp+0x20..0x2c, frame 0x58 with ten saved registers). Under the project-default
+# -msoft-float n_non_fixed_regs=28 (threshold 29) the same source hoists only
+# 12*div and the two 4*index scalings and folds the table addresses into the
+# per-case loads (frame 0x50, eight saved registers). -mhard-float raises
+# n_non_fixed_regs to 60 (threshold 61), making those address movables
+# desirable. No FP value appears in the member (0 COP2 words), so the only
+# observed effect is this loop heuristic. Same mechanism as the recorded
+# libgpu_3 (OTAG.OBJ), libgpu_2, libcd_1, libds_5 and libds_9 witnesses.
+CC1FLAGS_libgs_94 := -mhard-float
