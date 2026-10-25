@@ -1,20 +1,23 @@
 {
   "ladder": [
     {
-      "provider": "qwen36-llama",
-      "model": "qwen3.8-27b",
-      "thinking": "medium",
-      "label": "qwen3.8-27b",
-      "checkpointAtTokens": 100000
-    },
-    {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking": "xhigh",
+      "label": "gpt-6.1-sol",
+      "checkpointAtTokens": 300000
+    }
+  ],
+  "subagents": {
+    "quantity": 3,
+    "model":     {
       "provider": "runinfra",
       "model": "deepseek-v4-1-flash-1017",
       "thinking": "high",
       "label": "deepseek-v4-1-flash-1017",
       "checkpointAtTokens": 350000
     }
-  ],
+  },
   "singleTier": true,
   "commitOnMatch": true,
   "commitOnPark": true,

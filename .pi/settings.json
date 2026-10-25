@@ -1,5 +1,6 @@
 {
   "packages": [
-    "../../psx-decompilation-harness"
+    "../../psx-decompilation-harness",
+    "npm:pi-subagents"
   ]
 }
