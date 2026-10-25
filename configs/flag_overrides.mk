@@ -151,3 +151,10 @@ CC1FLAGS_libgpu_4 := -fno-inline-functions
 # observed effect is this loop heuristic. Same mechanism as the recorded
 # libgpu_3 (OTAG.OBJ), libgpu_2, libcd_1, libds_5 and libds_9 witnesses.
 CC1FLAGS_libgs_94 := -mhard-float
+
+# libgs_95 (OBJT3.OBJ): GsSortObject4J shows the identical signature - frame
+# 0x58 with ten saved registers, preheader hoists &GsFCALL4.f3g[col], 12*div,
+# &GsFCALL4.f3[div][col] and &GsFCALL4.g3g[col] to sp+0x20..0x2c. Under the
+# default -msoft-float only the scalar movables hoist (frame 0x50). Same
+# n_non_fixed_regs threshold mechanism as libgs_94; no COP2 words in member.
+CC1FLAGS_libgs_95 := -mhard-float
