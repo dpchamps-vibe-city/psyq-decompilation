@@ -5,7 +5,7 @@
 #include <libgpu.h>
 #include <libgs.h>
 
-void func_0000096C(VERTC *a, VERTC *b, VERTC *c, GsADIV_GT4 *s) {
+static void func_0000096C(VERTC *a, VERTC *b, VERTC *c, GsADIV_GT4 *s) {
     u_long *pk;
 
     gte_ldv3(a, b, c);
