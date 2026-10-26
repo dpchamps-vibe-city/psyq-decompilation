@@ -64,6 +64,9 @@
       ],
       "libgs_95": [
         "flag-override"
+      ],
+      "libgte_224": [
+        "flag-override"
       ]
     }
   }

@@ -158,3 +158,11 @@ CC1FLAGS_libgs_94 := -mhard-float
 # default -msoft-float only the scalar movables hoist (frame 0x50). Same
 # n_non_fixed_regs threshold mechanism as libgs_94; no COP2 words in member.
 CC1FLAGS_libgs_95 := -mhard-float
+
+# libgte_224 (PPMFT.OBJ): the original func_000013FC calls the earlier
+# 18-word static max-absolute-value helper at 0x6BC (jal at 0x1688).
+# Baseline -O3 inlines it and drops the entry, moving pers_map 0x684->0x63c.
+# With -fno-inline-functions the same complete TU reproduces the original
+# native .OBJ SHA-256 c63999e6dadb33f695e1687514a828a7a579dbc983e72578fd7b817ac77ff342.
+# No contrary cross-function-inlining witness; see notes/research/ppmft-no-inline-functions.md.
+CC1FLAGS_libgte_224 := -fno-inline-functions
