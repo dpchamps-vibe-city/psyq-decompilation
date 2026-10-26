@@ -7,7 +7,7 @@
 #include <libhmd.h>
 
 /* Retained Sony HMD DATG4_CM.C: sukima. */
-void func_000009D8(VERTC *v0, VERTC *v1, VERTC *v2, GsADIV_GT4 *ifo)
+static void func_000009D8(VERTC *v0, VERTC *v1, VERTC *v2, GsADIV_GT4 *ifo)
 {
     POLY_GT3 *si;
 
