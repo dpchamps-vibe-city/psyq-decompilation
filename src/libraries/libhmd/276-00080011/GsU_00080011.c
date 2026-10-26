@@ -16,7 +16,8 @@ typedef struct {
     u_short v2, v3;
 } HMD_P_FT4;
 
-static int func_00000504();
+/* Retained HMD/00080011.C declares Adiv_ft4 as void. */
+static void func_00000504(u_long *, GsADIV_FT4 *, int);
 
 u_long *GsU_00080011(GsARGUNIT *sp)
 {
