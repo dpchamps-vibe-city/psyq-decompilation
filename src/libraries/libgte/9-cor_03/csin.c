@@ -1,1 +1,10 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgte_9", csin);
+int csin(int a)
+{
+    if (a < 0) {
+        a = -a;
+        a %= 4096;
+        return -csin_1(a);
+    }
+    a %= 4096;
+    return csin_1(a);
+}
