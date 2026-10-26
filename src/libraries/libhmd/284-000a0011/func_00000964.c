@@ -6,7 +6,7 @@
 #include <libgs.h>
 #include <libhmd.h>
 
-void func_00000964(VERT *v0, VERT *v1, VERT *v2, GsADIV_FT4 *ifo)
+static void func_00000964(VERT *v0, VERT *v1, VERT *v2, GsADIV_FT4 *ifo)
 {
     POLY_FT3 *si;
 
