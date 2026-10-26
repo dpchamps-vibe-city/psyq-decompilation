@@ -7,7 +7,7 @@
 
 void func_00000774(VERT *a, VERT *b, VERT *c, GsADIV_FT3 *s);
 static int func_0000087C(POLY_FT3 *p, GsADIV_FT3 *s);
-void func_000009C8(VERT *d, VERT *a, VERT *b);
+static void func_000009C8(VERT *d, VERT *a, VERT *b);
 
 static void func_000003EC(GsADIV_P_FT3 *p, GsADIV_FT3 *s, int level)
 {
