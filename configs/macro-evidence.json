@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "macros": []
+  "macros": [
+    {
+      "name": "gte_ReadDQA",
+      "header": "include/libgte-regs.h",
+      "definitionSha256": "8c8dfc444e91c3ff04ec2c11429b29e7a0f32789709799227011eebb9b8bc307",
+      "operation": "Read the GTE depth-cue scale control register DQA ($27) into a general register, including the R3000 cfc2 interlock nop.",
+      "rationale": "Two independent libgte members start with cfc2 of control register $27 (C2_DQA in gtereg.h) followed by nop; the SDK's own C-side read sequences in inline_c.h (gte_ReadGeomScreen) use the same cfc2+nop shape.",
+      "witnesses": ["libgte_20::p2otz", "libgte_21::otz2p"]
+    },
+    {
+      "name": "gte_ReadDQB",
+      "header": "include/libgte-regs.h",
+      "definitionSha256": "4c856fe4aabf1f0092c43f57341ec3c063845d8c92524e679ce2b399a571bb7c",
+      "operation": "Read the GTE depth-cue offset control register DQB ($28) into a general register, including the R3000 cfc2 interlock nop.",
+      "rationale": "Two independent libgte members read control register $28 (C2_DQB in gtereg.h) with cfc2 followed by nop; the same cfc2+nop shape appears in the SDK's C-side read macros in inline_c.h.",
+      "witnesses": ["libgte_20::p2otz", "libgte_21::otz2p"]
+    }
+  ]
 }
