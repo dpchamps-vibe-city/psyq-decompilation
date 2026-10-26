@@ -1,1 +1,63 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgs_169", GsTMDfastG4GNL);
+#include "common.h"
+#include <sys/types.h>
+#include <libgte.h>
+#include <inline_c.h>
+#include <libgpu.h>
+#include <libgs.h>
+
+PACKET *GsTMDfastG4GNL(TMD_P_G4G *op, VERT *vp, VERT *np, PACKET *input, int n,
+                       int shift, GsOT *ot, u_long *scratch)
+{
+    GsADIV_G4 *s;
+    PACKET *pk;
+    u_long *flg;
+    long *otz;
+    u_long flgmask;
+    u_long tagmask;
+    u_long packetlen;
+    int i;
+
+    pk = input;
+    s = (GsADIV_G4 *)scratch;
+    s->org = (u_long *)ot->org;
+    s->shift = shift;
+    i = 0;
+    if (i < n) {
+        flg = (u_long *)&s->flg;
+        flgmask = 0x80000000;
+        otz = &s->otz;
+        tagmask = 0x00FFFFFF;
+        packetlen = 0x08000000;
+        do {
+            gte_ldv3(&vp[op->v0], &vp[op->v1], &vp[op->v2]);
+            gte_rtpt();
+            *(u_long *)(pk + 4) = *(u_long *)&op->r0;
+            gte_stflg(flg);
+            if (!(s->flg & flgmask)) {
+                gte_nclip();
+                *(u_long *)(pk + 0xC) = *(u_long *)&op->r1;
+                gte_stopz(otz);
+                if (s->otz > 0) {
+                    gte_stsxy3_g4(pk);
+                    gte_ldv0(&vp[op->v3]);
+                    gte_rtps();
+                    *(u_long *)(pk + 0x14) = *(u_long *)&op->r2;
+                    gte_stflg(flg);
+                    if (!(s->flg & flgmask)) {
+                        gte_stsxy(pk + 0x20);
+                        gte_avsz4();
+                        *(u_long *)(pk + 0x1C) = *(u_long *)&op->r3;
+                        gte_stotz(otz);
+                        s->tag = &s->org[s->otz >> s->shift];
+                        *(u_long *)pk = (*s->tag & tagmask) | packetlen;
+                        *s->tag = (u_long)pk & tagmask;
+                        pk += 0x24;
+                    }
+                }
+            }
+            i++;
+            op++;
+        } while (i < n);
+    }
+    return pk;
+}
