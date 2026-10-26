@@ -1,1 +1,66 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libgte_231", GsTMDdivNF3B);
+#include "common.h"
+#include <sys/types.h>
+
+typedef struct {
+    unsigned long length;
+    u_long *org;
+    unsigned long offset;
+    unsigned long point;
+    u_long *tag;
+} GsOT;
+
+#include <libgte.h>
+#include <libgpu.h>
+
+typedef struct {
+    u_char out, in, dummy, cd;
+    u_char r0, g0, b0, code;
+    u_short v0, v1;
+    u_short v2, p;
+} TMD_P_NF3;
+
+extern u_char GsTON;
+extern u_long *RCpolyF3A(u_long *p, DIVPOLYGON3 *divp, long mode, CRVECTOR3 *cr);
+
+u_long *GsTMDdivNF3B(TMD_P_NF3 *primtop, SVECTOR *vertop,
+                     POLY_F3 *s, u_long n, u_long shift, GsOT *otp,
+                     DIVPOLYGON3 *divp)
+{
+    u_long i;
+    long otz;
+    long p;
+    long flag;
+    RVECTOR *r0;
+    RVECTOR *r1;
+    RVECTOR *r2;
+    CRVECTOR3 *cr;
+    long *sxy1;
+
+    r0 = &divp->r0;
+    r1 = &divp->r1;
+    r2 = &divp->r2;
+    cr = divp->cr;
+
+    divp->cr[0].r0 = r0;
+    divp->cr[0].r1 = r1;
+    divp->cr[0].r2 = r2;
+
+    for (i = 0; i < n; i++) {
+        sxy1 = (long *)&r1->sxy;
+        r0->v = vertop[primtop->v0];
+        r1->v = vertop[primtop->v1];
+        r2->v = vertop[primtop->v2];
+        otz = RotAverage3(&r0->v, &r1->v, &r2->v,
+                          (long *)&r0->sxy, sxy1, (long *)&r2->sxy,
+                          &p, &flag);
+        ReadSZfifo3((long *)&r0->sz,
+                    (long *)&r1->sz,
+                    (long *)&r2->sz);
+        divp->ot = &otp->org[((u_short)otz - otp->offset) >> shift];
+        *(u_long *)&divp->rgbc = *(u_long *)&primtop->r0;
+        divp->rgbc.cd = primtop->cd | (GsTON << 1);
+        s = (POLY_F3 *)RCpolyF3A((u_long *)s, divp, 0, cr);
+        primtop++;
+    }
+    return (u_long *)s;
+}
