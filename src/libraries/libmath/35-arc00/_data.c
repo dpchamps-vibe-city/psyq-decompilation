@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_35", __library_member_data);
+/* ARC00's .rdata consists solely of atan's compiler-emitted double literals. */
