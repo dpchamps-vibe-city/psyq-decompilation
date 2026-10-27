@@ -13,6 +13,8 @@ extern char RO_STR_00001ACC[];
 /* LIBMCRD.OBJ .data+8: func_00000AAC resets/increments this signed
  * retry counter and compares it against four. */
 extern s32 D_00001B30;
+/* Matching write callback func_00000D14 uses .data+12. */
+extern s32 D_00001B34;
 
 /* BIOS.OBJ helpers read globals, not incoming arguments. Check/get return
  * event words in v0; clear's result is unused by these callers. */
