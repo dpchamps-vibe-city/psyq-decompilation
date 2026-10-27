@@ -1,1 +1,8 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmcrd_2", UserFuncInit);
+#include "common.h"
+
+extern s32 D_000001A8;
+
+void UserFuncInit(void)
+{
+    D_000001A8 = -1;
+}
