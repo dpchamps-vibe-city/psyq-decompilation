@@ -1,5 +1,5 @@
 #include "common.h"
-#include "/home/dave/Documents/code/psyq-decomp/build/subagents/1ee81f42-552a-432b-877a-0498ed6fdc7f/162be034-3cb6-4afe-9532-c969c3cb7aa7/libmcx_transfer.h"
+#include "libmcx_transfer.h"
 
 int _mcxRxGetMem(unsigned char value) {
     int rest;
