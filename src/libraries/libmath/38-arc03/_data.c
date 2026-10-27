@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_38", __library_member_data);
+/* ARC03's .rdata consists solely of acos's compiler-emitted double literals. */
