@@ -7,7 +7,7 @@
 
 void gte_rotate_z_matrix(MATRIX *arg0, s32 arg1);
 void Gssub_make_matrix(MATRIX *out, s16 x, s16 y, s32 mode);
-void func_00000438(GsRVIEWUNIT *arg0, GsRVIEWUNIT *arg1);
+static void func_00000438(GsRVIEWUNIT *arg0, GsRVIEWUNIT *arg1);
 
 int GsSetRefViewUnit(GsRVIEWUNIT *pv) {
     GsRVIEWUNIT lv;
