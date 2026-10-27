@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_56", __library_member_rodata_1);
+/* func_00000AD8 emits the original 10.0, 0.01 and 10.0 literals. */
