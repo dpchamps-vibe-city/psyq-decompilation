@@ -1,1 +1,6 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_57", atof);
+#include "common.h"
+#include <libmath.h>
+
+double atof(char *arg0) {
+    return strtod(arg0, 0);
+}
