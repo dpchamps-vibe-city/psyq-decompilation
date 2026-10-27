@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_46", __library_member_data);
+/* LOG01's .rdata consists solely of log10's compiler-emitted double literal. */
