@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_41", __library_member_data);
+/* FLOOR01's .rdata consists solely of ceil's compiler-emitted double literal. */
