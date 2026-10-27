@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_39", __library_member_data);
+/* EXP's .rdata consists solely of exp's compiler-emitted double literals. */
