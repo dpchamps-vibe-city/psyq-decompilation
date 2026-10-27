@@ -14,4 +14,9 @@ extern int _mcxCmdSeq;
 /* Original _mcxChkRsrv stores incoming $a0 to _mcxPort at .text+0x2E0. */
 int _mcxChkRsrv(int port);
 
+/* MCXCMD12 command callbacks; MCXCMD13 and the other command setters store
+ * these in _mcxFuncGetTx / _mcxFuncApplyRx. */
+int _mcxTxWriteDev(void);
+int _mcxRxWriteDev(int value);
+
 #endif
