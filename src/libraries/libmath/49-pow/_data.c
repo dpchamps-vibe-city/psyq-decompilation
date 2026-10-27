@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_49", __library_member_data);
+/* POW.OBJ's 32-byte .rdata is emitted by pow's four double literals. */
