@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_43", __library_member_data);
+/* LDEXP00's .rdata consists solely of ldexp's compiler-emitted double literals. */
