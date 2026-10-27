@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_37", __library_member_data);
+/* ARC02's .rdata consists solely of asin's compiler-emitted double literals. */
