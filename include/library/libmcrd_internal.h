@@ -1,6 +1,13 @@
 #ifndef LIBMCRD_INTERNAL_H
 #define LIBMCRD_INTERNAL_H
 
+/* LIBMCRD.OBJ .text+0x18FC is a local (non-exported) path helper;
+ * its callers use the same channel/output-buffer contract. */
+static void func_000018FC(long chan, char *path);
+
+/* Retained six-byte device-path template copied by that helper. */
+extern char RO_STR_00001B1C[];
+
 /* LIBMCRD.OBJ retained diagnostic string at .rdata+0, MemCardExist use. */
 extern char RO_STR_00001958[];
 
