@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_55", __library_member_data);
+/* sqrt's 1.0 and 0.5 literals emit the original 16-byte constant pool. */
