@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_52", __library_member_data);
+/* The function's double literals supply the complete original constant pool. */

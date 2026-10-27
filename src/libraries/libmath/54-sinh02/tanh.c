@@ -1,1 +1,21 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_54", tanh);
+#include "common.h"
+#include <libmath.h>
+
+extern int __ltdf2(double, double);
+extern int __gtdf2(double, double);
+extern double __negdf2(double);
+extern double __adddf3(double, double);
+extern double __subdf3(double, double);
+extern double __muldf3(double, double);
+extern double __divdf3(double, double);
+
+double tanh(double x)
+{
+    double y;
+
+    if (x < 0.0 ? -x > 0.001 : x > 0.001) {
+        y = exp(x * -2.0);
+        return 2.0 / (y + 1.0) - 1.0;
+    }
+    return x * (1.0 - x * x / 3.0);
+}
