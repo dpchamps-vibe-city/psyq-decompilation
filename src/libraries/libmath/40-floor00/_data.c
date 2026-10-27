@@ -1,1 +1,1 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libmath_40", __library_member_data);
+/* FLOOR00's .rdata consists solely of floor's compiler-emitted double literal. */
