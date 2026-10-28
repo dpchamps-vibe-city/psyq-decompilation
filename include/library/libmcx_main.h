@@ -1,0 +1,31 @@
+#ifndef LIBRARY_LIBMCX_MAIN_H
+#define LIBRARY_LIBMCX_MAIN_H
+
+#include "libmcx_init.h"
+
+/* Command sequence is shared with the interrupt-driven MCXRESI state
+ * machine; MCXMAIN clears it after completing volatile hardware writes. */
+extern volatile int _mcxCmdSeq;
+extern volatile int _mcxStat;
+extern int _mcxPass;
+int _mcxChkRsrv(int port);
+
+/* MCXMAIN _mcxDsrEntry reads these words and installs the MCXRESI
+ * interrupt record in SysDeqIntRP's second argument. */
+extern int _mcxIntRestSize;
+extern int _mcxCallFromC;
+extern int _mcxPort;
+extern McxInterruptRecord _mcxTblDsrEnt;
+
+/* MCXMAIN data+0/+4 hold SIO0 0x1F801040 and I_STAT 0x1F801070.
+ * The handler stores a halfword at SIO+0xA and accesses I_STAT/I_MASK
+ * as words at offsets0/4. */
+extern volatile unsigned short *D_000006F0;
+extern volatile unsigned int *D_000006F4;
+
+/* MCXRESI _mcxStepSio and MCXDSR _mcxFastDsrEnt read globals, not
+ * incoming argument registers. _mcxDsrEntry tests StepSio's result. */
+int _mcxStepSio(void);
+void _mcxFastDsrEnt(void);
+
+#endif
