@@ -46,4 +46,12 @@ extern void (*_padFuncClrCmdNo)(PadInfo2 *);
 extern int (*_padFuncSendAuto)(PadInfo2 *);
 extern void (*_padFuncRecvAuto)(PadInfo2 *);
 
+/* PDRESRES _padCmdParaMode reads a0 as the record and stores a1
+ * through sb at +0x24; PDTAPRES ignores its result. */
+void _padCmdParaMode(PadInfo2 *, int mode);
+
+/* PDRESRES _padSendAtLoadInfo reads only incoming a0; a1 is
+ * overwritten before use. PDTAPRES ignores its result. */
+void _padSendAtLoadInfo(PadInfo2 *);
+
 #endif
