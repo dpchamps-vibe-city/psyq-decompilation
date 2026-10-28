@@ -11,6 +11,13 @@ extern u8 B_000013A0[];
 extern u8 B_00001B20[];
 extern u8 B_00001B68[];
 
+/* PDTAPINI PadInitMtap: two per-port last-result words, cleared at init. */
+extern int _mtapLastResult[2];
+
+/* PDTAPRES member 18 installs the multitap port driver callbacks;
+ * PadInitMtap calls it with no arguments and ignores any result. */
+void _padInitMtapPort(void);
+
 /* PDRESRES .data+8/+0x10/+0x14/+0x20/+0x28/+0x2C callback objects.
  * PDRESRES _padIntPad supplies an integer result to NextPort (0x1F0).
  * _padChkRC2wait consumes SendAuto's word result (0x1620..0x1638),
