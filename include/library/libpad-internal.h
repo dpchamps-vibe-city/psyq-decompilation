@@ -34,13 +34,21 @@ struct PadInfo2 {
     u8 modeEqual;
     u8 pad54[9];
     /* PDCMD2 Rx writes six command-table response bytes +0x5D..0x62
-     * and reads the number of types at +0xE9. Record extent unknown. */
+     * and reads the number of types at +0xE9. Unnamed bytes remain opaque. */
     u8 actAlignResponse[6];
     u8 pad63[0x81];
     u8 prevMode;
-    u8 padE5[4];
+    u8 padE5[3];
+    /* PDENT1 PadChkMtap indexes _padInfoDir with stride 0xF0 and
+     * reads this byte at +0xE8; PDDIR/PDMTAP agree on the stride. */
+    u8 mtapType;
     u8 actAlignCount;
+    u8 padEA[6];
 };
+
+/* PDENT1 loads a pointer to the record array and tests the word mode. */
+extern PadInfo2 *_padInfoDir;
+extern int _padModeMtap;
 
 /* Installed targets PDDIR func_00000604 / PDMTAP func_000006E4
  * read only the integer port in a0 and return the per-port pointer. */
