@@ -7,6 +7,9 @@
  * machine; MCXMAIN clears it after completing volatile hardware writes. */
 extern volatile int _mcxCmdSeq;
 extern volatile int _mcxStat;
+/* MCXMAIN McxSync reads the pending command number once (listing
+ * .text+0x584 lui/lw) and clears it in every completion tail (.text+0x6DC). */
+extern int _mcxFuncNo;
 extern int _mcxPass;
 int _mcxChkRsrv(int port);
 

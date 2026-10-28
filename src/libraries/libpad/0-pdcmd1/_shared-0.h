@@ -5,4 +5,5 @@
  */
 #include "common.h"
 #include "include_asm.h"
+#include "library/libpad-internal.h"
 
