@@ -31,6 +31,9 @@ void _mcxFastDsrEnt(void);
 /* MCXMAIN timer state: SetRC2wait stores the captured counter, requested
  * delay and wrap accumulator at original BSS+4/+8/+12; ChkRC2wait
  * reads these words in its signed elapsed-time comparison. */
+/* SioRW captures the receive-byte register in original BSS+0. */
+extern int B_00000700;
+int _mcxChkRC2wait(void);
 extern int B_00000704;
 extern int B_00000708;
 extern int B_0000070C;
