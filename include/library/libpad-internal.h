@@ -41,7 +41,12 @@ struct PadInfo2 {
     u8 requestCommand;
     u8 currentCommand;
     u8 previousCommand;
-    u8 pad3A[0xC];
+    u8 pad3A[2];
+    /* PDDIRRES initializes these byte-buffer pointers; PDMTAP derives
+     * the four child-record views from them with an eight-byte stride. */
+    u8 *data3C;
+    u8 *data40;
+    u8 pad44[2];
     u8 commandState;
     /* PDCMD3 PadSetMainMode stores request/lock/equality bytes at
      * +0x51/+0x52/+0x53 and compares with the byte at +0xE4. */
