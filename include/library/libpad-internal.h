@@ -3,27 +3,38 @@
 
 #include "common.h"
 
-/* Partial view of the libpad per-port status record returned by the
- * _padFuncPort2Info callback. Only the fields this project's original code
- * witnesses are named; offsets 0x30..0x33 are not exercised here.
- * Original-code evidence (whole-library word census):
- *   +0x28  pointer, stored with `sw` and reloaded with `lw`
- *          (libpad_0 PadSetAct, libpad_8 _padSetGunPort, libpad_11/17/18)
- *   +0x34  byte, stored with `sb` and reloaded with `lbu`
- *          (same sites; libpad_17 func_000002CC reads it as a loop bound)
- */
-typedef struct {
-    u8 pad0[0x28];
-    u8 *actTable;   /* +0x28: active actuator table */
+/* Partial per-port record. PDCMD2 PadSetActAlign stores prepare/apply
+ * callbacks at +0x14/+0x18, its SDK byte-buffer argument at +0x20 and
+ * a command state byte at +0x46. Its Tx helper passes +0x20 to
+ * _padSetCmd; that callee stores the pointer at +0x2C. */
+typedef struct PadInfo2 PadInfo2;
+struct PadInfo2 {
+    u8 pad0[0x14];
+    void (*prepareCommand)(PadInfo2 *);
+    int (*applyResponse)(PadInfo2 *);
+    u8 pad1C[4];
+    u8 *commandTable;
+    u8 pad24[4];
+    /* PDCMD1 PadSetAct, PDRESRES and PDDIR/PDMTAP witness +0x28
+     * as a pointer (sw/lw), and +0x34 as a byte (sb/lbu). */
+    u8 *actTable;
     u8 pad2C[8];
-    u8 actSize;     /* +0x34: active actuator table length */
-} PadInfo2;
+    u8 actSize;
+    u8 pad35[0x11];
+    u8 commandState;
+};
 
-/* Slot installed by _padInitDirPort/_padInitMtapPort with func_00000604 /
- * func_000006E4, both of which read only $a0 (`andi $a0,0xF0`) and return a
- * PadInfo2 pointer, so the callback takes one integer port argument. */
+/* Installed targets PDDIR func_00000604 / PDMTAP func_000006E4
+ * read only the integer port in a0 and return the per-port pointer. */
 typedef PadInfo2 *(*PadGetPort2InfoFunc)(int port);
-
 extern PadGetPort2InfoFunc _padFuncPort2Info;
+
+/* PDDIR func_00000A80 / PDMTAP func_000010F8 consume a0 as the
+ * per-port record and return a Boolean engine-busy result in v0. */
+extern int (*_padFuncChkEng)(PadInfo2 *);
+
+/* PDRESRES _padSetCmd stores a1/a3 as bytes at +0x37/+0x36 and
+ * a2 as a word at +0x2C; PDCMD2 supplies its byte-buffer pointer. */
+void _padSetCmd(PadInfo2 *, int command, unsigned char *data, int length);
 
 #endif
