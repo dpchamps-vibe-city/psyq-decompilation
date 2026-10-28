@@ -142,6 +142,16 @@ void _padGunExitHook(void);
  * a2 as a word at +0x2C; PDCMD2 supplies its byte-buffer pointer. */
 void _padSetCmd(PadInfo2 *, int command, unsigned char *data, int length);
 
+/* PDRESRES _padCmdParaMode stores a1 as the command byte at +0x24 and the
+ * request command 0x43 at +0x37; PDDIRRES func_00000624 calls it with 0/1
+ * and PDMTAPRES func_00000754 calls it with the same two selectors. */
+void _padCmdParaMode(PadInfo2 *, int mode);
+
+/* PDRESRES _padSendAtLoadInfo reads only incoming a0 as the per-port
+ * record and dispatches on its +0x46 command state; PDDIRRES
+ * func_00000624 and PDMTAPRES func_00000754 call it with one argument. */
+void _padSendAtLoadInfo(PadInfo2 *);
+
 /* PDGUNRES _padSetGunPort reads/writes the three port-state bytes at
  * 0x568..0x56A. The original target references 0x568 and 0x569 through
  * two independent HI/LO relocation pairs (data+0x28 and data+0x29), i.e.
