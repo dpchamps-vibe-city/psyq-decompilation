@@ -81,6 +81,14 @@ struct PadInfo2 {
 /* PDDIR/PDMTAP init: engine-enabled flag, cleared then set. */
 extern int _padIntExec;
 
+/* PDMTAPRES func_00000468 accumulates this word-limited task budget: it
+ * adds the per-type byte at actAlignData[type*5+3] when the sum stays below
+ * 0x3D, and adds 0xA for the digital-pad act-table case under the same
+ * limit. The word at this symbol is DEFINED by the sibling library member
+ * libpad_19 (build/libraries/nonmatchings/libpad_19/__library_member_data.s),
+ * so this TU only declares it. */
+extern int _padTotalCurr;
+
 /* PDDIRRES _padInitDirPort installs the direct/port driver callbacks;
  * PDDIR/PDMTAP call it with no arguments and ignore any result. */
 void _padInitDirPort(void);
