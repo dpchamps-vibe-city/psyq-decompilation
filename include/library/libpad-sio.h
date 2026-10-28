@@ -33,7 +33,13 @@ extern int _padFixResult[2];
 /* Original same-member calls: Init consumes a0 and returns the tested
  * status; func_000005AC consumes only a0 and its result is unused. */
 int _padInitSioMode(PadInfo2 *info);
-void func_000005AC(PadInfo2 *info);
+/* PDRESRES local helper: absent from the original external symbol records;
+ * its same-TU caller _padIntPad supplies the per-port record. */
+static void func_000005AC(PadInfo2 *info);
+
+/* PDRESRES .data+0x90: five relocated state-handler pointers. The dispatch
+ * preserves incoming a0 (PadInfo2 *) and tests each handler's v0 result. */
+extern int (*D_00001F80[5])(PadInfo2 *);
 
 /* Original reset/wait helpers: Set stores incoming a0; Chk and Clr
  * read no incoming arguments and return tested status values. */
