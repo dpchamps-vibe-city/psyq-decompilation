@@ -1,19 +1,6 @@
 /* Original member: LIBMCX.LIB[14] MCXCMD15.OBJ */
 #include "common.h"
-#include "libmcx_transfer.h"
-#include "/home/dave/Documents/code/psyq-decomp/build/subagents/1ee81f42-552a-432b-877a-0498ed6fdc7f/a9f39e80-be7d-4ffc-adca-d16415f8e56e/internal-volatile-seq.h"
-
-/* MCXCMD15 .data+0x570: SIO0 register pointer (MMIO 0x1F801040), +4 status.
- * .data+0x574: I_STAT pointer (MMIO 0x1F801070). */
-extern vu8 *D_00000570;
-extern vu32 *D_00000574;
-extern u8 _mcxRxBuf[];
-extern u8 _mcxTxBuf[];
-extern s32 _mcxPass;
-
-s32 _mcxChkRC2wait(void);
-void _mcxSetRC2wait(s32 cmd);
-s32 _mcxSioRW(s32 data);
+#include "libmcx_cmd15.h"
 
 static s32 func_00000294(s32 value) {
     s32 rest;
