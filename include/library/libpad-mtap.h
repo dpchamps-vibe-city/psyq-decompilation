@@ -14,6 +14,21 @@ extern u8 B_00001B68[];
 /* PDTAPINI PadInitMtap: two per-port last-result words, cleared at init. */
 extern int _mtapLastResult[2];
 
+/* PDTAPRES .data+8 holds SIO0 base 0x1F801040. NextPort clears the
+ * halfword control register at +0xA through this independent object. */
+extern volatile u8 *D_000011B8;
+
+/* PDRESRES owns the word engine state and two per-channel result words;
+ * PDTAPRES NextPort indexes the results and advances the channel. */
+extern int _padSioChan;
+extern int _padSioState;
+extern int _padFixResult[2];
+int _padInitSioMode(PadInfo2 *);
+
+/* PDTAPRES _mtapFailAuto's recursive call at .text+0xE4C explicitly
+ * supplies a1=-1 at +0xE50, independently witnessing the error argument. */
+void _mtapFailAuto(PadInfo2 *, int result);
+
 /* PDTAPRES member 18 installs the multitap port driver callbacks;
  * PadInitMtap calls it with no arguments and ignores any result. */
 void _padInitMtapPort(void);
