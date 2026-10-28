@@ -51,6 +51,11 @@ extern PadGetPort2InfoFunc _padFuncPort2Info;
  * per-port record and return a Boolean engine-busy result in v0. */
 extern int (*_padFuncChkEng)(PadInfo2 *);
 
+/* PDDIR/PDMTAP init install the record-clearing callback; PadEnableCom
+ * and PDCMD3 Rx call it with the per-port record in a0 and ignore its
+ * result. The callback is loaded from this pointer object before jalr. */
+extern void (*_padFuncClrInfo)(PadInfo2 *);
+
 /* PDRESRES _padSetCmd stores a1/a3 as bytes at +0x37/+0x36 and
  * a2 as a word at +0x2C; PDCMD2 supplies its byte-buffer pointer. */
 void _padSetCmd(PadInfo2 *, int command, unsigned char *data, int length);
