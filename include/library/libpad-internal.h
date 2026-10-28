@@ -13,7 +13,10 @@ struct PadInfo2 {
     /* PDCMD2 Rx reads this pointer at +4 and byte +2 of each
      * five-byte entry as a per-type limit. */
     u8 *actAlignData;
-    u8 pad08[0xC];
+    u8 pad08[8];
+    /* PDENT2 PadGetState compares this pointer against the record itself
+     * before it reads the +0x39 command byte. */
+    PadInfo2 *root;
     void (*prepareCommand)(PadInfo2 *);
     int (*applyResponse)(PadInfo2 *);
     u8 pad1C[4];
@@ -22,13 +25,25 @@ struct PadInfo2 {
     /* PDCMD1 PadSetAct, PDRESRES and PDDIR/PDMTAP witness +0x28
      * as a pointer (sw/lw), and +0x34 as a byte (sb/lbu). */
     u8 *actTable;
-    u8 pad2C[8];
+    u8 pad2C[4];
+    /* PDENT2 PadGetState reads byte 0 of this pointer; PDRESRES
+     * func_00000734 builds the command frame in the buffer it addresses. */
+    u8 *commandBuffer;
     u8 actSize;
-    u8 pad35[0x11];
+    u8 pad35[2];
+    /* Command handshake bytes. PDENT2 PadGetState treats any non-zero value
+     * as busy; PDRESRES moves +0x37 into +0x38 and +0x38 into +0x39. */
+    u8 requestCommand;
+    u8 currentCommand;
+    u8 previousCommand;
+    u8 pad3A[0xC];
     u8 commandState;
     /* PDCMD3 PadSetMainMode stores request/lock/equality bytes at
      * +0x51/+0x52/+0x53 and compares with the byte at +0xE4. */
-    u8 pad47[0xA];
+    u8 pad47[2];
+    /* PDENT2 PadGetState returns and switches on this byte. */
+    u8 state;
+    u8 pad4A[7];
     u8 mode;
     u8 lock;
     u8 modeEqual;
