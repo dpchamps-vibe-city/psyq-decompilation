@@ -9,7 +9,11 @@
  * _padSetCmd; that callee stores the pointer at +0x2C. */
 typedef struct PadInfo2 PadInfo2;
 struct PadInfo2 {
-    u8 pad0[0x14];
+    u8 pad00[4];
+    /* PDCMD2 Rx reads this pointer at +4 and byte +2 of each
+     * five-byte entry as a per-type limit. */
+    u8 *actAlignData;
+    u8 pad08[0xC];
     void (*prepareCommand)(PadInfo2 *);
     int (*applyResponse)(PadInfo2 *);
     u8 pad1C[4];
@@ -22,6 +26,20 @@ struct PadInfo2 {
     u8 actSize;
     u8 pad35[0x11];
     u8 commandState;
+    /* PDCMD3 PadSetMainMode stores request/lock/equality bytes at
+     * +0x51/+0x52/+0x53 and compares with the byte at +0xE4. */
+    u8 pad47[0xA];
+    u8 mode;
+    u8 lock;
+    u8 modeEqual;
+    u8 pad54[9];
+    /* PDCMD2 Rx writes six command-table response bytes +0x5D..0x62
+     * and reads the number of types at +0xE9. Record extent unknown. */
+    u8 actAlignResponse[6];
+    u8 pad63[0x81];
+    u8 prevMode;
+    u8 padE5[4];
+    u8 actAlignCount;
 };
 
 /* Installed targets PDDIR func_00000604 / PDMTAP func_000006E4
