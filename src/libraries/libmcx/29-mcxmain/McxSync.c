@@ -1,7 +1,5 @@
 #include "common.h"
 #include "libmcx_main.h"
-extern int _mcxFuncNo;
-
 #include "libmcx_cmd15.h"
 
 int McxSync(int mode, long *cmd, long *stat) {
