@@ -19,5 +19,8 @@ extern volatile unsigned int *D_00000180;
  * MCXINIT sets both argument registers for ChangeClearRCnt (3,0). */
 int SysDeqIntRP(int priority, void *record);
 int ChangeClearRCnt(int counter, int enabled);
+/* MCXINIT McxStopCom calls this without arguments and ignores its result;
+ * MCXDSR .text+0x164 reads no incoming argument registers. */
+void _mcxStopFastDsr(void);
 
 #endif
