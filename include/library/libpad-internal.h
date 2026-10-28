@@ -15,7 +15,9 @@ struct PadInfo2 {
     /* PDCMD2 Rx reads this pointer at +4 and byte +2 of each
      * five-byte entry as a per-type limit. */
     u8 *actAlignData;
-    u8 pad08[4];
+    /* PDENT5 PadInfoComb loads the combination-table pointer at +8;
+     * PDDIR func_00000160 clears it with a word store. */
+    u8 *combTable;
     /* PDGUNRES _padSetGunPort dereferences +0xC as the mtap child-record
      * array (stride 0xF0, four entries) and adds row offsets to it. */
     PadInfo2 *child;

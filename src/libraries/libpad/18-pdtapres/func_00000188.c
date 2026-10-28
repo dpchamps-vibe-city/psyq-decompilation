@@ -18,7 +18,7 @@ static void func_00000188(PadInfo2 *info) {
         info->padEA[0] = 0;
         info->idTable = 0;
         info->actAlignData = 0;
-        *(u32 *)info->pad08 = 0;
+        info->combTable = 0;
         info->requestCommand = 0;
         info->currentCommand = 0;
         info->previousCommand = 0;
