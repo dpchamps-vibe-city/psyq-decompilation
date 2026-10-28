@@ -22,7 +22,7 @@ extern MemCB B_00001BD0;
 extern char RO_STR_00001A54[];
 extern void _clr_card_event(void);
 static void func_000018FC(long, char *);
-static s32 T_00000580(s32 *);
+static s32 func_00000580(s32 *);
 
 long MemCardOpen(long chan, char *file, long flag)
 {
@@ -55,7 +55,7 @@ long MemCardOpen(long chan, char *file, long flag)
                 state->unk04 = 0;
                 state->unk08 = 0;
                 *(long *)((char *)B_00001B48 + 0x40) = chan;
-                UserFuncOpen(T_00000580);
+                UserFuncOpen(func_00000580);
             }
             MemCardSync(0, 0, &result);
             MemCardCallback(B_00001BD0);

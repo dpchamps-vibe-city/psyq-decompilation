@@ -10,7 +10,7 @@ extern s32 B_00001B88;
 
 extern void func_000018FC(long port, char *path);
 static s32 func_000017FC(s32);
-static s32 T_00000580(s32 *);
+static s32 func_00000580(s32 *);
 
 extern MemCB B_00001BD0;
 
@@ -57,7 +57,7 @@ long MemCardGetDirentry(long chan, char *name, struct DIRENTRY *dir, long *files
                     active->unk04 = 0;
                     active->unk08 = 0;
                     B_00001B88 = chan;
-                    UserFuncOpen(T_00000580);
+                    UserFuncOpen(func_00000580);
                 }
                 MemCardSync(0, NULL, &result);
                 MemCardCallback(B_00001BD0);

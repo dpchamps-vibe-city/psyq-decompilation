@@ -18,6 +18,10 @@
       "symbol": "func_00000100"
     },
     {
+      "path": "func_00000124.c",
+      "symbol": "func_00000124"
+    },
+    {
       "path": "_data.c",
       "symbol": "__library_member_data"
     }

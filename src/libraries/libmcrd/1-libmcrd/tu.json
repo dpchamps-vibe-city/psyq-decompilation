@@ -46,6 +46,10 @@
       "symbol": "MemCardAccept"
     },
     {
+      "path": "func_00000580.c",
+      "symbol": "func_00000580"
+    },
+    {
       "path": "MemCardOpen.c",
       "symbol": "MemCardOpen"
     },
