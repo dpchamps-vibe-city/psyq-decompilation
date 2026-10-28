@@ -54,6 +54,9 @@ void _padWaitRXready(void);
 extern s32 B_00001FA4;
 extern s32 B_00001FA8;
 extern u32 B_00001FAC;
+/* PDRESRES .bss+0x0 combination-table payload write cursor. The private
+ * response helper (func_000010AC) stores the next payload address here. */
+extern u8 *B_00001FA0;
 
 /* The exchanges write the second argument's low byte to SIO data,
  * returning the received byte or a negative timeout status. _padSioRW
