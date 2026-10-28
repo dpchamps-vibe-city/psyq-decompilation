@@ -62,7 +62,10 @@ struct PadInfo2 {
     u8 mode;
     u8 lock;
     u8 modeEqual;
-    u8 pad54[9];
+    u8 pad54[3];
+    /* PDDIRRES func_00000388 clears +0x57..0x5C, then writes these
+     * bytes according to the command response; func_000002CC reads them. */
+    u8 actGate[6];
     /* PDCMD2 Rx writes six command-table response bytes +0x5D..0x62
      * and reads the number of types at +0xE9. Unnamed bytes remain opaque. */
     u8 actAlignResponse[6];
@@ -98,6 +101,10 @@ void _padInitDirPort(void);
 /* PDENT1 loads a pointer to the record array and tests the word mode. */
 extern PadInfo2 *_padInfoDir;
 extern int _padModeMtap;
+
+/* PDDIRRES func_00000388 reads/writes this imported word and compares
+ * its sums with signed slti against 61. */
+extern int _padTotalCurr;
 
 /* Installed targets PDDIR func_00000604 / PDMTAP func_000006E4
  * read only the integer port in a0 and return the per-port pointer. */
