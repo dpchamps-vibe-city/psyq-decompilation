@@ -15,7 +15,10 @@ struct PadInfo2 {
     /* PDCMD2 Rx reads this pointer at +4 and byte +2 of each
      * five-byte entry as a per-type limit. */
     u8 *actAlignData;
-    u8 pad08[8];
+    u8 pad08[4];
+    /* PDGUNRES _padSetGunPort dereferences +0xC as the mtap child-record
+     * array (stride 0xF0, four entries) and adds row offsets to it. */
+    PadInfo2 *child;
     /* PDENT2 PadGetState compares this pointer against the record itself
      * before it reads the +0x39 command byte. */
     PadInfo2 *root;
@@ -91,5 +94,17 @@ extern void (*_padFuncClrInfo)(PadInfo2 *);
 /* PDRESRES _padSetCmd stores a1/a3 as bytes at +0x37/+0x36 and
  * a2 as a word at +0x2C; PDCMD2 supplies its byte-buffer pointer. */
 void _padSetCmd(PadInfo2 *, int command, unsigned char *data, int length);
+
+/* PDGUNRES _padSetGunPort reads/writes the three port-state bytes at
+ * 0x568..0x56A. The original target references 0x568 and 0x569 through
+ * two independent HI/LO relocation pairs (data+0x28 and data+0x29), i.e.
+ * they are separate objects, not elements of one array. Declaring them as
+ * separate byte objects is what restores that code shape; a single
+ * D_00000568[4] makes the compiler share one base and emits base+1.
+ * D_00000568 and D_0000056A must be DEFINED at those addresses by the
+ * member data definition (see DATA_SYMBOL_REQUEST.md in the worker dir). */
+extern u8 D_00000568;
+extern u8 D_00000569;
+extern u8 D_0000056A;
 
 #endif
