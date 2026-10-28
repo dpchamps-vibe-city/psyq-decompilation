@@ -73,6 +73,13 @@ struct PadInfo2 {
     u8 padEA[6];
 };
 
+/* PDDIR/PDMTAP init: engine-enabled flag, cleared then set. */
+extern int _padIntExec;
+
+/* PDDIRRES _padInitDirPort installs the direct/port driver callbacks;
+ * PDDIR/PDMTAP call it with no arguments and ignore any result. */
+void _padInitDirPort(void);
+
 /* PDENT1 loads a pointer to the record array and tests the word mode. */
 extern PadInfo2 *_padInfoDir;
 extern int _padModeMtap;
