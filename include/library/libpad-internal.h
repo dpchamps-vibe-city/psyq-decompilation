@@ -91,6 +91,24 @@ extern int (*_padFuncChkEng)(PadInfo2 *);
  * result. The callback is loaded from this pointer object before jalr. */
 extern void (*_padFuncClrInfo)(PadInfo2 *);
 
+/* PDGUN .data: saved gun port records, their original command buffers and
+ * the per-port command length. PDGUN/_padSetGunPort write the length back as
+ * a word (sw) while a reader that only needs the +0x34 byte field narrows the
+ * load to lbu, so the element is a word and the stride is 4. */
+extern PadInfo2 *_padGunSavePadPtr[2];
+extern u8 *_padGunSaveTxBuf[2];
+extern u32 _padGunSaveTxLen[2];
+
+/* PDGN1INI installs the no-argument PDGUN callbacks; PDGN1EXI clears
+ * their pointer objects along with the run flag. */
+extern s32 _padGunExec;
+extern void (*_padFuncIntGun)(void);
+extern void (*_padFuncSetGunPort)(void);
+extern void (*_padFuncGetGunPos)(void);
+
+/* PDHOKRES: gun hook called with no arguments and no result. */
+void _padGunExitHook(void);
+
 /* PDRESRES _padSetCmd stores a1/a3 as bytes at +0x37/+0x36 and
  * a2 as a word at +0x2C; PDCMD2 supplies its byte-buffer pointer. */
 void _padSetCmd(PadInfo2 *, int command, unsigned char *data, int length);
