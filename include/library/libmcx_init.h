@@ -1,0 +1,23 @@
+#ifndef LIBRARY_LIBMCX_INIT_H
+#define LIBRARY_LIBMCX_INIT_H
+
+/* MCXRESI _mcxTblCardEnt is four words: next link, handler, readiness
+ * callback and reserved word. MCXINIT's private enqueue walks offset0. */
+typedef struct McxInterruptRecord {
+    struct McxInterruptRecord *next;
+    int (*handler)(void);
+    int (*ready)(void);
+    unsigned int reserved;
+} McxInterruptRecord;
+
+extern McxInterruptRecord _mcxTblCardEnt;
+/* MCXINIT .data+0 holds I_STAT 0x1F801070; McxStartCom accesses its
+ * acknowledgement and mask words at offsets0 and4. */
+extern volatile unsigned int *D_00000180;
+
+/* SysDeqIntRP agrees with the independently matched LIBAPI PAD callers.
+ * MCXINIT sets both argument registers for ChangeClearRCnt (3,0). */
+int SysDeqIntRP(int priority, void *record);
+int ChangeClearRCnt(int counter, int enabled);
+
+#endif
