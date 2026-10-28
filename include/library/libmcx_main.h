@@ -28,4 +28,11 @@ extern volatile unsigned int *D_000006F4;
 int _mcxStepSio(void);
 void _mcxFastDsrEnt(void);
 
+/* MCXMAIN timer state: SetRC2wait stores the captured counter, requested
+ * delay and wrap accumulator at original BSS+4/+8/+12; ChkRC2wait
+ * reads these words in its signed elapsed-time comparison. */
+extern int B_00000704;
+extern int B_00000708;
+extern int B_0000070C;
+
 #endif
