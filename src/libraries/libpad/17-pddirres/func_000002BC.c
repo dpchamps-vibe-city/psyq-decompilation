@@ -1,1 +1,10 @@
-INCLUDE_ASM("build/libraries/nonmatchings/libpad_17", func_000002BC);
+#include "common.h"
+#include <libpad.h>
+#include "libpad-internal.h"
+
+void func_000002BC(PadInfo2 *info) {
+    u8 command = info->requestCommand;
+
+    info->requestCommand = 0;
+    info->currentCommand = command;
+}
