@@ -48,4 +48,17 @@ int _padChkRC2wait(void);
 int _padClrIntSio0(void);
 void _padWaitRXready(void);
 
+/* PDRESRES .bss+0x4/+0x8/+0xC timer state. _padSioRW records
+ * counter/mode snapshots at 0x1F801120/0x1F801124 and the timeout;
+ * _padSioRW2 compares signed elapsed counts with that timeout. */
+extern s32 B_00001FA4;
+extern s32 B_00001FA8;
+extern u32 B_00001FAC;
+
+/* The exchanges write the second argument's low byte to SIO data,
+ * returning the received byte or a negative timeout status. _padSioRW
+ * also tests the incoming argument's sign for its initial exchange. */
+int _padSioRW(PadInfo2 *info, int data);
+int _padSioRW2(PadInfo2 *pad, int data);
+
 #endif

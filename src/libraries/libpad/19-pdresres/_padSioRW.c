@@ -1,10 +1,6 @@
 #include "common.h"
 #include "libpad-sio.h"
 
-extern u32 B_00001FA4;
-extern u32 B_00001FA8;
-extern u32 B_00001FAC;
-
 int _padSioRW(PadInfo2 *info, int data) {
     int recv;
     int len;
