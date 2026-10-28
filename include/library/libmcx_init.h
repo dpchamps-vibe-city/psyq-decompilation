@@ -15,6 +15,14 @@ extern McxInterruptRecord _mcxTblCardEnt;
  * acknowledgement and mask words at offsets0 and4. */
 extern volatile unsigned int *D_00000180;
 
+/* MCXINIT private enqueue loads a queue-table pointer through data+4
+ * (D_00000184, initialized to 0x100), indexing eight-byte entries. */
+typedef struct McxInterruptQueue {
+    McxInterruptRecord *head;
+    unsigned int reserved;
+} McxInterruptQueue;
+extern McxInterruptQueue **D_00000184;
+
 /* SysDeqIntRP agrees with the independently matched LIBAPI PAD callers.
  * MCXINIT sets both argument registers for ChangeClearRCnt (3,0). */
 int SysDeqIntRP(int priority, void *record);
