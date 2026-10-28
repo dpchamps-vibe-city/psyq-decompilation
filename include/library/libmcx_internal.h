@@ -10,6 +10,8 @@ extern long *_mcxPtrCmdBuf0;
 extern int (*_mcxFuncGetTx)(void);
 extern int (*_mcxFuncApplyRx)(int);
 extern int _mcxCmdSeq;
+/* MCXCMD25 McxExecFlag stores a word; MCXCMD15's declaration agrees. */
+extern int _mcxPass;
 
 /* Original _mcxChkRsrv stores incoming $a0 to _mcxPort at .text+0x2E0. */
 int _mcxChkRsrv(int port);
