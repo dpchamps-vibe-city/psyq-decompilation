@@ -9,7 +9,9 @@
  * _padSetCmd; that callee stores the pointer at +0x2C. */
 typedef struct PadInfo2 PadInfo2;
 struct PadInfo2 {
-    u8 pad00[4];
+    /* PDENT3 PadInfoMode's InfoModeIdTable reads halfword entries
+     * through the pointer at +0. */
+    u16 *idTable;
     /* PDCMD2 Rx reads this pointer at +4 and byte +2 of each
      * five-byte entry as a per-type limit. */
     u8 *actAlignData;
@@ -43,7 +45,10 @@ struct PadInfo2 {
     u8 pad47[2];
     /* PDENT2 PadGetState returns and switches on this byte. */
     u8 state;
-    u8 pad4A[7];
+    u8 pad4A[2];
+    /* PDENT3 PadInfoMode selector 100 returns the word at +0x4C. */
+    s32 unk4C;
+    u8 pad50;
     u8 mode;
     u8 lock;
     u8 modeEqual;
@@ -51,9 +56,13 @@ struct PadInfo2 {
     /* PDCMD2 Rx writes six command-table response bytes +0x5D..0x62
      * and reads the number of types at +0xE9. Unnamed bytes remain opaque. */
     u8 actAlignResponse[6];
-    u8 pad63[0x81];
+    u8 pad63[0x80];
+    /* PDENT3 PadInfoMode bounds InfoModeIdTable with byte +0xE3. */
+    u8 idCount;
     u8 prevMode;
-    u8 padE5[3];
+    u8 padE5;
+    /* PDENT3 PadInfoMode's InfoModeCurExID reads halfword +0xE6. */
+    u16 exId;
     /* PDENT1 PadChkMtap indexes _padInfoDir with stride 0xF0 and
      * reads this byte at +0xE8; PDDIR/PDMTAP agree on the stride. */
     u8 mtapType;
