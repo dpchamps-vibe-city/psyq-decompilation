@@ -1,9 +1,5 @@
 #include "common.h"
-
-extern volatile u_long *D_0000087C;
-extern char RO_STR_00000708[];
-
-static void func_00000684(char *msg);
+#include "libpress_internal.h"
 
 static s32 func_000005D8(void) {
     volatile s32 timeout = 0x100000;
