@@ -4,6 +4,9 @@
 #include "common.h"
 #include <sys/types.h>
 
+/* LIBPRESS.OBJ BUILD.OBJ (libpress_3): start of the VLC code table at .data+0. */
+extern u8 D_00000160;
+
 /* LIBPRESS.OBJ native relocations at 0x6B4, 0x6C4 and 0x6A4. */
 extern s32 *D_00000870;
 extern volatile u_long *D_0000087C;
